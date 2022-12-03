@@ -22,7 +22,7 @@
 	</DamageDef>
 
 
-	<HediffDef ParentName="BurnBase">
+	<HediffDef ParentName="DiseaseBase">
     <defName>Terrified</defName>
     <label>terrified</label>
     <labelNoun>terror</labelNoun>
