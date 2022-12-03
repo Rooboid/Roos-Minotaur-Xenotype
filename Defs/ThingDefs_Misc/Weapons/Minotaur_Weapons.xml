@@ -46,6 +46,7 @@
 			<AccuracyLong>0.96</AccuracyLong>
 			<RangedWeapon_Cooldown>1.65</RangedWeapon_Cooldown>
 			<MaxHitPoints>250</MaxHitPoints>
+			<RoyalFavorValue>2</RoyalFavorValue>
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.05</MoveSpeed>
@@ -185,6 +186,7 @@
 			<AccuracyLong>0.53</AccuracyLong>
 			<RangedWeapon_Cooldown>2.30</RangedWeapon_Cooldown>
 			<MaxHitPoints>250</MaxHitPoints>
+			<RoyalFavorValue>2</RoyalFavorValue>
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.07</MoveSpeed>
@@ -283,6 +285,29 @@
 		<soundExplosion>Explosion_Terrify</soundExplosion>
 		</DamageDef>
 		
+		<!--   	Mageia Damage (Sound) -->
+		
+			<DamageDef ParentName="Flame">
+		<defName>Mageia_Sound</defName>
+		<label>mageia</label>
+		<hediff>Ringing</hediff>
+		<externalViolence>true</externalViolence>
+		<defaultDamage>20</defaultDamage>
+		<canInterruptJobs>true</canInterruptJobs>
+		<combatLogRules>Damage_Terrify</combatLogRules>
+		<makesAnimalsFlee>true</makesAnimalsFlee>
+		<impactSoundType>Bullet</impactSoundType>
+		<armorCategory>Blunt</armorCategory>
+		<isRanged>true</isRanged>
+		<!-- Effects -->
+		<damageEffecter>Mageia_Effect_Red</damageEffecter>
+		<explosionCellFleck>HerculeanFleckA</explosionCellFleck>
+		<explosionColorCenter>(1, 1, 1)</explosionColorCenter>
+		<explosionColorEdge>(0.3, 0.70, 0.88, 0.05)</explosionColorEdge>
+		<soundExplosion>Explosion_Mageia</soundExplosion>
+		</DamageDef>
+		
+		
 		
 <!--==============================================-->
 
@@ -322,6 +347,7 @@
 			<Mass>20</Mass>
 			<MarketValue>930</MarketValue>
 			<MaxHitPoints>250</MaxHitPoints>
+			<RoyalFavorValue>2</RoyalFavorValue>
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.08</MoveSpeed>
@@ -391,13 +417,14 @@
 		<relicChance>1</relicChance>
 		<smeltable>false</smeltable>
 		<thingSetMakerTags>
-			<li>RewardStandardQualitySuper</li>
+			<li>RewardStandardMidFreq</li>
 		</thingSetMakerTags>
 				<!-- Battle Data -->
 		<statBases>
 			<Mass>5.6</Mass>
 			<MarketValue>530</MarketValue>
 			<MaxHitPoints>250</MaxHitPoints>
+			<RoyalFavorValue>2</RoyalFavorValue>
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.015</MoveSpeed>
@@ -541,18 +568,18 @@
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>RBM_Oxenammer</defName>
     <label>oxenammer</label>
-    <description>A tyrannically imposing hammer, imposible for a baseline human to use. It's weight makes it exhausting to carry around and slow to swing, but it can crush bones into stardust in just one move.</description>
+    <description>A tyrannically imposing hammer, imposible for a baseline human to use. It's weight makes it exhausting to carry around, but it can crush bones into stardust in just one swing.</description>
 	<descriptionHyperlinks>
 	<GeneDef>RBM_Herculean</GeneDef>
 	</descriptionHyperlinks>
 		<!-- Basic Data -->
 		<possessionCount>1</possessionCount>
 		<rotateInShelves>false</rotateInShelves>
-		<uiIconScale>1</uiIconScale>
+		<uiIconScale>0.7</uiIconScale>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponMelee/RBM_Oxenammer/RBM_Oxenammer</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>2.4</drawSize>
+			<drawSize>1.3</drawSize>
 		</graphicData>
 		<!-- Trading -->
 		<techLevel>Archotech</techLevel>
@@ -576,11 +603,10 @@
 			<MarketValue>1000</MarketValue>
 			<MaxHitPoints>250</MaxHitPoints>
 			<RoyalFavorValue>2</RoyalFavorValue>
-			<Beauty>2</Beauty>
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.15</MoveSpeed>
-			<MeleeHitChance>-0.2</MeleeHitChance>
+			<MeleeHitChance>-0.15</MeleeHitChance>
 			<MeleeDodgeChance>-0.8</MeleeDodgeChance>
 			<RestFallRateFactor>0.08</RestFallRateFactor>
 		</equippedStatOffsets>
@@ -596,15 +622,15 @@
         <capacities>
           <li>Demolish</li>
         </capacities>
-        <power>52</power>
-        <cooldownTime>8</cooldownTime>
+        <power>38</power>
+        <cooldownTime>6</cooldownTime>
 		        <extraMeleeDamages>
           <li>
-            <def>Mageia_Hot</def>
+            <def>Earthshatter</def>
             <amount>9</amount>
           </li>
         </extraMeleeDamages>
-		<armorPenetration>0.5</armorPenetration>
+		<armorPenetration>0.4</armorPenetration>
       </li>
     </tools>
 	    <comps>
@@ -636,12 +662,96 @@
 		<armorCategory>Blunt</armorCategory>
 		<isRanged>true</isRanged>
 		<!-- Effects -->
-		<damageEffecter>Mageia_Effect_Red</damageEffecter>
+		<damageEffecter>RBM_EarthshatterEffect</damageEffecter>
 		<explosionCellFleck>TerrorFleckLarge</explosionCellFleck>
 		<explosionColorCenter>(1, 1, 1)</explosionColorCenter>
 		<explosionColorEdge>(0.3, 0.70, 0.88, 0.05)</explosionColorEdge>
 		<soundExplosion>Explosion_Terrify</soundExplosion>
 		</DamageDef>
+		
+		
+		<!--======================- Tunbell -========================-->
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>RBM_Tunbell</defName>
+    <label>tunbell</label>
+    <description>An obsidian staff that resembles a large tuning fork with a cowbell attached to it. It's so heavy that only pawns with the Herculean trait can equip it.</description>
+	<descriptionHyperlinks>
+	<GeneDef>RBM_Herculean</GeneDef>
+	</descriptionHyperlinks>
+		<!-- Basic Data -->
+		<possessionCount>1</possessionCount>
+		<rotateInShelves>false</rotateInShelves>
+		<uiIconScale>0.8</uiIconScale>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/RBM_Tunbell/RBM_Tunbell</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<!-- Trading -->
+		<techLevel>Archotech</techLevel>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<tradeNeverStack>true</tradeNeverStack>
+		<tradeability>Sellable</tradeability>
+		<!-- Obtaining -->
+		<recipeMaker IsNull="True"/>
+		<soundInteract>RBM_Tunbell_Equip</soundInteract>
+		<relicChance>3</relicChance>
+		<smeltable>false</smeltable>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+				<!-- Battle Data -->
+		<statBases>
+			<Mass>9.5</Mass>
+			<MarketValue>530</MarketValue>
+			<MaxHitPoints>250</MaxHitPoints>
+			<RoyalFavorValue>2</RoyalFavorValue>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.05</MoveSpeed>
+		</equippedStatOffsets>
+		<weaponTags>
+			<li>HerculeanWeapon</li>
+		</weaponTags>
+    <weaponClasses>
+      <li>Melee</li>
+    </weaponClasses>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>0.6</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>1.7</cooldownTime>
+		<armorPenetration>0.8</armorPenetration>
+				        <extraMeleeDamages>
+          <li>
+            <def>Mageia_Sound</def>
+            <amount>9</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	    <comps>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerMinotaurArt</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>      
+    </comps>
+  </ThingDef>
 
 
 

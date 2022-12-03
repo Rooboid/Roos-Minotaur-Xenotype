@@ -2,13 +2,13 @@
 <Defs>
 
 
-	<!--   	Petrification Damage -->
+	<!--   	Terror Damage -->
 
 	<DamageDef ParentName="Flame">
 		<defName>Terrified</defName>
 		<label>terrified</label>
 		<workerClass>DamageWorker_AddInjury</workerClass>
-		<hediff>Terrified</hediff>
+		<hediff>HeDiffTerrified</hediff>
 		<externalViolence>true</externalViolence>
 		<defaultDamage>20</defaultDamage>
 		<canInterruptJobs>true</canInterruptJobs>
@@ -22,14 +22,14 @@
 	</DamageDef>
 
 
-	<HediffDef ParentName="BurnBase">
-    <defName>Terrified</defName>
+	<HediffDef ParentName="InfectionBase">
+    <defName>HeDiffTerrified</defName>
     <label>terrified</label>
     <labelNoun>terror</labelNoun>
     <description>Abhorrent visions haunt the mind.</description>
     <comps>
       <li Class="HediffCompProperties_Disappears">
-        <disappearsAfterTicks>100</disappearsAfterTicks>
+        <disappearsAfterTicks>500~1700</disappearsAfterTicks>
         <showRemainingTime>false</showRemainingTime>
       </li>
       <li Class="HediffCompProperties_RemoveIfOtherHediff">
@@ -37,10 +37,17 @@
         <stages>2~</stages>
         <mtbHours>0</mtbHours>
       </li>
+	        <li Class="HediffCompProperties_GiveRandomSituationalThought">
+        <thoughtDefs>
+          <li>Terrified_Thought_Small</li>
+          <li>Terrified_Thought_Med</li>
+          <li>Terrified_Thought_Large</li>
+        </thoughtDefs>
+      </li>
     </comps>
     <injuryProps>
-      <destroyedLabel>Terrified</destroyedLabel>
-      <destroyedOutLabel>Terrified</destroyedOutLabel>
+      <destroyedLabel>terrified</destroyedLabel>
+      <destroyedOutLabel>terrified</destroyedOutLabel>
     </injuryProps>
 	<stages>
 			<li>
@@ -55,35 +62,109 @@
 			</li>
 		</stages>
   </HediffDef>
+  
+  	<HediffDef ParentName="InjuryBase">
+    <defName>Ringing</defName>
+    <label>ears ringing</label>
+    <labelNoun>ringing</labelNoun>
+    <description>A shrill sound has temporarily impaired the hearing of this pawn. Tend it to avoid permanent hearing loss.</description>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <severityPerDayTended>-1</severityPerDayTended>
+      </li>
+	        <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.3</severityPerDay>
+      </li>
+    </comps>
+	    <stages>
+      <li>
+        <label>minor</label>
+        <minSeverity>0.1</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Hearing</capacity>
+            <setMax>0.8</setMax>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>major</label>
+        <minSeverity>0.90</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Hearing</capacity>
+            <setMax>0.5</setMax>
+          </li>
+        </capMods>
+        <hediffGivers>
+          <li Class="HediffGiver_Random">
+            <hediff>HearingLoss</hediff>
+            <mtbDays>1.5</mtbDays>
+        <partsToAffect>
+          <li>Ear</li>
+        </partsToAffect>
+          </li>
+        </hediffGivers>
+      </li>
+    </stages>
+	    <injuryProps>
+      <painPerSeverity>0.0125</painPerSeverity>
+      <averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
+      <bleedRate>0</bleedRate>
+      <canMerge>false</canMerge>
+    </injuryProps>
+  </HediffDef>
 	
   
 	<!-- Terrified Thoughts -->
   
-	<ThoughtDef>
-		<defName>Terrified_Thought</defName>
-		<durationDays>1.3</durationDays>
-		<nullifyingTraits>
-			<li>Psychopath</li>
-			<li>Bloodlust</li>
-		</nullifyingTraits>
-		<stages>
-			<li>
-				<label>shaken up</label>
-				<description>I can't stop thinking about a vision that haunted me recently...I can't stop thinking about it.</description>
-				<baseMoodEffect>-3</baseMoodEffect>
-			</li>
-					<li>
-				<label>anxious</label>
-				<description>I can't stop thinking about a vision that haunted me recently...it's making me feel anxious.</description>
-				<baseMoodEffect>-5</baseMoodEffect>
-			</li>
-						<li>
-				<label>traumatised</label>
-				<description>My mind is filled with twisted thoughts and visions...visions of loved ones, visions of my future, visions of pain.</description>
-				<baseMoodEffect>-10</baseMoodEffect>
-			</li>
-					</stages>
-	</ThoughtDef>
+<ThoughtDef>
+	<defName>Terrified_Thought_Small</defName>
+	<durationDays>1</durationDays>
+	<nullifyingTraits>
+		<li>Psychopath</li>
+		<li>Bloodlust</li>
+	</nullifyingTraits>
+	<stages>
+		<li>
+			<label>shaken up</label>
+			<description>I can't stop thinking about a vision that haunted me recently...I can't stop thinking about it.</description>
+			<baseMoodEffect>-3</baseMoodEffect>
+		</li>
+	</stages>
+</ThoughtDef>
+
+<ThoughtDef>
+	<defName>Terrified_Thought_Med</defName>
+	<durationDays>1.5</durationDays>
+	<nullifyingTraits>
+		<li>Psychopath</li>
+		<li>Bloodlust</li>
+	</nullifyingTraits>
+	<stages>
+		<li>
+			<label>anxious</label>
+			<description>I can't stop thinking about a vision that haunted me recently...it's making me feel anxious.</description>
+			<baseMoodEffect>-5</baseMoodEffect>
+		</li>
+	</stages>
+</ThoughtDef>
+
+<ThoughtDef>
+	<defName>Terrified_Thought_Large</defName>
+	<durationDays>3</durationDays>
+	<nullifyingTraits>
+		<li>Psychopath</li>
+		<li>Bloodlust</li>
+	</nullifyingTraits>
+	<stages>
+		<li>
+			<label>traumatised</label>
+			<description>My mind is filled with twisted thoughts and visions...visions of loved ones, visions of my future, visions of pain.</description>
+			<baseMoodEffect>-10</baseMoodEffect>
+		</li>
+	</stages>
+</ThoughtDef>
 
 	<!-- Terrified Combat Log Rule -->
   
@@ -103,23 +184,23 @@
 		</rulePack>
 	</RulePackDef>
 	
-	<!-- Terrified Break -->
-	<MentalStateDef ParentName="BaseMentalState">
-		<defName>RBM_TerrifiedFlee</defName>
-		<label>terrified</label>
-		<stateClass>MentalState_PanicFlee</stateClass>
-		<minTicksBeforeRecovery>100</minTicksBeforeRecovery>
-		<maxTicksBeforeRecovery>6000</maxTicksBeforeRecovery>
-		<category>Misc</category>
-		<nameColor>(0.65, 0.9, 0.93)</nameColor>
-		<beginLetterLabel IsNull="True"/>
-		<beginLetter IsNull="True"/>
-		<recoveryMessage IsNull="True"/>
-		<baseInspectLine>Terrified.</baseInspectLine>
-		<blockNormalThoughts>true</blockNormalThoughts>
-		<moodRecoveryThought>Terrified_Thought</moodRecoveryThought>
-		<stateEffecter>RBM_TerrifiedEffect</stateEffecter>
-		<inCaravanCanDo>false</inCaravanCanDo>
-	</MentalStateDef>
-		
+<!-- Terrified Break -->
+
+<MentalStateDef ParentName="BaseMentalState">
+	<defName>RBM_TerrifiedFlee</defName>
+	<label>terrified</label>
+	<stateClass>MentalState_PanicFlee</stateClass>
+	<minTicksBeforeRecovery>500</minTicksBeforeRecovery>
+	<maxTicksBeforeRecovery>6000</maxTicksBeforeRecovery>
+	<category>Misc</category>
+	<nameColor>(0.65, 0.9, 0.93)</nameColor>
+	<beginLetterLabel IsNull="True"/>
+	<beginLetter IsNull="True"/>
+	<recoveryMessage IsNull="True"/>
+	<baseInspectLine>Terrified.</baseInspectLine>
+	<blockNormalThoughts>true</blockNormalThoughts>
+	<stateEffecter>RBM_TerrifiedEffect</stateEffecter>
+	<inCaravanCanDo>false</inCaravanCanDo>
+</MentalStateDef>
+	
 </Defs>

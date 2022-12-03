@@ -258,7 +258,7 @@
     </subSounds>
   </SoundDef>
   
-            <!-- Weapon - Labrys -->
+            <!-- Weapon - Oxenammer -->
 	
 	    <SoundDef>
     <defName>RBM_Oxenammer_Equip</defName>
@@ -270,6 +270,26 @@
         <grains>
           <li Class="AudioGrain_Clip">
             <clipPath>RBM_Weapons/RBM_Oxenammer/RBM_Oxenammer_Equip</clipPath>
+          </li>
+        </grains>
+        <volumeRange>37</volumeRange>
+        <pitchRange>0.93~1.13</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+              <!-- Weapon - Oxenammer -->
+	
+	    <SoundDef>
+    <defName>RBM_Tunbell_Equip</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>2</maxSimultaneous>
+    <subSounds>
+      <li>
+        <muteWhenPaused>True</muteWhenPaused>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>RBM_Weapons/RBM_Tunbell/RBM_Tunbell_Equip</clipPath>
           </li>
         </grains>
         <volumeRange>37</volumeRange>
