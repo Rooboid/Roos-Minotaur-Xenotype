@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- Bovine Voice Sounds -->
+
+	<SoundDef>
+		<defName>RBM_BovineCall</defName>
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>RBM_BovineCall</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>10</volumeRange>
+				<pitchRange>0.95~1.05</pitchRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>RBM_BovineDeath</defName>
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>RBM_BovineDeath</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>10</volumeRange>
+				<pitchRange>0.95~1.05</pitchRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>RBM_BovineWounded</defName>
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>RBM_BovineWounded</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>10</volumeRange>
+				<pitchRange>0.95~1.05</pitchRange>
+				<sustainLoop>False</sustainLoop>
+				<repeatMode>NeverTwice</repeatMode>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+		<!-- See Red - Ability Sounds -->
+
+	<SoundDef>
+    <defName>SeeRed_Cast</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>2</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>RBM_SeeRed/Cast</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>70</volumeRange>
+        <muteWhenPaused>true</muteWhenPaused>
+        <tempoAffectedByGameSpeed>true</tempoAffectedByGameSpeed>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  	<SoundDef>
+    <defName>SeeRed_Warmup</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>2</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>RBM_SeeRed/Warmup</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>50</volumeRange>
+        <muteWhenPaused>true</muteWhenPaused>
+        <tempoAffectedByGameSpeed>true</tempoAffectedByGameSpeed>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <!-- Explosion - Petrify -->
+  
+    	<SoundDef>
+    <defName>Explosion_Terrify</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>2</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>RBM_Terrified/Explosion</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>50</volumeRange>
+        <muteWhenPaused>true</muteWhenPaused>
+        <tempoAffectedByGameSpeed>true</tempoAffectedByGameSpeed>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+    <!-- Explosion - Mageia -->
+  
+    	<SoundDef>
+    <defName>Explosion_Mageia</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>2</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>RBM_Mageia/</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>25</volumeRange>
+		<pitchRange>0.93~1.13</pitchRange>
+        <muteWhenPaused>true</muteWhenPaused>
+        <tempoAffectedByGameSpeed>true</tempoAffectedByGameSpeed>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+      <!-- Weapon - Bullslinger -->
+	
+	    <SoundDef>
+    <defName>RBM_Bullslinger_Equip</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>2</maxSimultaneous>
+    <subSounds>
+      <li>
+        <muteWhenPaused>True</muteWhenPaused>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>RBM_Weapons/RBM_Bullslinger/RBM_Bullslinger_Equip</clipPath>
+          </li>
+        </grains>
+        <volumeRange>37</volumeRange>
+        <pitchRange>0.93~1.13</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  	    <SoundDef>
+    <defName>RBM_Bullslinger_Fire</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>2</maxSimultaneous>
+    <subSounds>
+      <li>
+	  <onCamera>True</onCamera>   
+        <muteWhenPaused>True</muteWhenPaused>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>RBM_Weapons/RBM_Bullslinger/RBM_Bullslinger_Fire</clipPath>
+          </li>
+        </grains>
+        <volumeRange>42</volumeRange>
+        <pitchRange>0.93~1.13</pitchRange>
+      </li>
+	        <li>
+	  <onCamera>False</onCamera>   
+        <muteWhenPaused>True</muteWhenPaused>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>RBM_Weapons/RBM_Bullslinger/RBM_Bullslinger_Fire</clipPath>
+          </li>
+        </grains>
+				<volumeRange>10</volumeRange>
+				<pitchRange>0.93~1.13</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+        <!-- Weapon - TaurailGun -->
+	
+	    <SoundDef>
+    <defName>RBM_TaurailGun_Equip</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>2</maxSimultaneous>
+    <subSounds>
+      <li>
+        <muteWhenPaused>True</muteWhenPaused>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>RBM_Weapons/RBM_TaurailGun/RBM_TaurailGun_Equip</clipPath>
+          </li>
+        </grains>
+        <volumeRange>37</volumeRange>
+        <pitchRange>0.93~1.13</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+    	    <SoundDef>
+    <defName>RBM_TaurailGun_Fire</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>2</maxSimultaneous>
+    <subSounds>
+      <li>
+	  <onCamera>True</onCamera>   
+        <muteWhenPaused>True</muteWhenPaused>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>RBM_Weapons/RBM_TaurailGun/RBM_TaurailGun_Fire</clipPath>
+          </li>
+        </grains>
+        <volumeRange>42</volumeRange>
+        <pitchRange>0.93~1.13</pitchRange>
+      </li>
+	        <li>
+	  <onCamera>False</onCamera>   
+        <muteWhenPaused>True</muteWhenPaused>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>RBM_Weapons/RBM_TaurailGun/RBM_TaurailGun_Fire</clipPath>
+          </li>
+        </grains>
+				<volumeRange>10</volumeRange>
+				<pitchRange>0.93~1.13</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+          <!-- Weapon - Labrys -->
+	
+	    <SoundDef>
+    <defName>RBM_Labrys_Equip</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>2</maxSimultaneous>
+    <subSounds>
+      <li>
+        <muteWhenPaused>True</muteWhenPaused>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>RBM_Weapons/RBM_Labrys/RBM_Labrys_Equip</clipPath>
+          </li>
+        </grains>
+        <volumeRange>37</volumeRange>
+        <pitchRange>0.93~1.13</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+            <!-- Weapon - Labrys -->
+	
+	    <SoundDef>
+    <defName>RBM_Oxenammer_Equip</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>2</maxSimultaneous>
+    <subSounds>
+      <li>
+        <muteWhenPaused>True</muteWhenPaused>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>RBM_Weapons/RBM_Oxenammer/RBM_Oxenammer_Equip</clipPath>
+          </li>
+        </grains>
+        <volumeRange>37</volumeRange>
+        <pitchRange>0.93~1.13</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+ 
+
+</Defs>

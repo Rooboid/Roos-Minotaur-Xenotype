@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Bullslinger-->
+
+
+	<ThingDef ParentName="BaseWeaponNeolithic">
+		<defName>RBM_Bullslinger</defName>
+		<label>bullslinger</label>
+		<description>An ancient, obsidian bow of unknown origin, passed down by countless generations of minotaur. It fires blisteringly cold arrows, accurate enough to trim the nosehair of a pigskin from five acres away, providing that the user is absolutely focused. It is so heavy that only pawns with the Herculean gene may equip it.</description>
+		<!-- <descriptionShort>An ancient, obsidian bow that fires chilling arrows, giving the target frostbite. Only Herculean pawns can wield it.</descriptionShort -->
+		<descriptionHyperlinks>
+			<GeneDef>RBM_Herculean</GeneDef>
+		</descriptionHyperlinks>
+		<!-- Basic Data -->
+		<possessionCount>1</possessionCount>
+		<rotateInShelves>false</rotateInShelves>
+		<uiIconScale>0.8</uiIconScale>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/RBM_Bullslinger/RBM_Bullslinger</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<!-- Trading -->
+		<techLevel>Archotech</techLevel>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<tradeNeverStack>true</tradeNeverStack>
+		<tradeability>Sellable</tradeability>
+		<!-- Obtaining -->
+		<recipeMaker IsNull="True"/>
+		<soundInteract>RBM_Bullslinger_Equip</soundInteract>
+		<relicChance>3</relicChance>
+		<smeltable>false</smeltable>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+		<!-- Battle Data -->
+		<statBases>
+			<Mass>5.2</Mass>
+			<MarketValue>750</MarketValue>
+			<AccuracyTouch>0.45</AccuracyTouch>
+			<AccuracyShort>0.69</AccuracyShort>
+			<AccuracyMedium>0.87</AccuracyMedium>
+			<AccuracyLong>0.96</AccuracyLong>
+			<RangedWeapon_Cooldown>1.65</RangedWeapon_Cooldown>
+			<MaxHitPoints>250</MaxHitPoints>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.05</MoveSpeed>
+		</equippedStatOffsets>
+		<weaponTags>
+			<li>HerculeanWeapon</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Ranged</li>
+			<li>RangedLight</li>
+		</weaponClasses>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Proj_ObsidianArrow</defaultProjectile>
+				<warmupTime>1.8</warmupTime>
+				<range>35.5</range>
+				<soundCast>Bow_Recurve</soundCast>
+				<soundCastTail>RBM_Bullslinger_Fire</soundCastTail>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>limb</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<!-- Comps -->
+		<comps>
+			<li Class="CompProperties_TargetEffect_FleckOnTarget">
+				<fleckDef>HerculeanFleckA</fleckDef>
+			</li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerMinotaurArt</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>      
+    </comps>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="BaseProjectileNeolithic">
+		<defName>Proj_ObsidianArrow</defName>
+		<label>obsidian arrow</label>
+		<category>Projectile</category>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Projectile</altitudeLayer>
+		<useHitPoints>False</useHitPoints>
+		<neverMultiSelect>True</neverMultiSelect>
+		<graphicData>
+			<texPath>Things/Projectile/RBM_ObsidianArrow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+      <damageDef>Mageia_Cold</damageDef>
+      <speed>68</speed>
+	  <preExplosionSpawnThingDef>Filth_Water</preExplosionSpawnThingDef>
+	  <preExplosionSpawnChance>0.8</preExplosionSpawnChance>
+      <screenShakeFactor>0.8</screenShakeFactor>
+	  <stoppingPower>1.2</stoppingPower>
+	  <armorPenetrationBase>0.29</armorPenetrationBase>
+		</projectile>
+	</ThingDef>
+	
+		<!--   	Mageia Damage -->
+
+	<DamageDef ParentName="Flame">
+		<defName>Mageia_Cold</defName>
+		<label>mageia</label>
+		<workerClass>DamageWorker_Frostbite</workerClass>
+		<hediff>Frostbite</hediff>
+		<externalViolence>true</externalViolence>
+		<defaultDamage>20</defaultDamage>
+		<canInterruptJobs>true</canInterruptJobs>
+		<combatLogRules>Damage_Terrify</combatLogRules>
+		<makesAnimalsFlee>true</makesAnimalsFlee>
+		<impactSoundType>Bullet</impactSoundType>
+		<armorCategory>Heat</armorCategory>
+		<isRanged>true</isRanged>
+		<!-- Effects -->
+		<damageEffecter>Mageia_Effect_Blue</damageEffecter>
+		<explosionCellFleck>HerculeanFleckA</explosionCellFleck>
+		<explosionColorCenter>(1, 1, 1)</explosionColorCenter>
+		<explosionColorEdge>(0.3, 0.70, 0.88, 0.05)</explosionColorEdge>
+		<soundExplosion>Explosion_Mageia</soundExplosion>
+		</DamageDef>
+		
+		<!--==============================================-->
+		
+		<!-- Taurail Gun-->
+		
+			<ThingDef ParentName="BaseWeapon">
+		<defName>RBM_TaurailGun</defName>
+		<label>taurail gun</label>
+		<description>An ancient, obsidian railgun powered by a glowing gemstone. Little is known about this fabled weapon, other than that victims of its blast seldom live to tell the tale. This railgun so massive that only pawns with the Herculean gene can equip it.</description>
+		<descriptionHyperlinks>
+			<GeneDef>RBM_Herculean</GeneDef>
+		</descriptionHyperlinks>
+		<!-- Basic Data -->
+		<possessionCount>1</possessionCount>
+		<rotateInShelves>false</rotateInShelves>
+		<uiIconScale>0.8</uiIconScale>
+		<equippedAngleOffset>-45</equippedAngleOffset>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/RBM_TaurailGun/RBM_TaurailGun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.8</drawSize>
+		</graphicData>
+		<!-- Trading -->
+		<techLevel>Archotech</techLevel>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<tradeNeverStack>true</tradeNeverStack>
+		<tradeability>Sellable</tradeability>
+		<!-- Obtaining -->
+		<recipeMaker IsNull="True"/>
+		<soundInteract>RBM_TaurailGun_Equip</soundInteract>
+		<relicChance>3</relicChance>
+		<smeltable>false</smeltable>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<!-- Battle Data -->
+		<statBases>
+			<Mass>7.5</Mass>
+			<MarketValue>1870</MarketValue>
+			<AccuracyTouch>0.55</AccuracyTouch>
+			<AccuracyShort>0.67</AccuracyShort>
+			<AccuracyMedium>0.77</AccuracyMedium>
+			<AccuracyLong>0.53</AccuracyLong>
+			<RangedWeapon_Cooldown>2.30</RangedWeapon_Cooldown>
+			<MaxHitPoints>250</MaxHitPoints>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.07</MoveSpeed>
+		</equippedStatOffsets>
+		<weaponTags>
+			<li>HerculeanWeapon</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>RangedLight</li>
+		</weaponClasses>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Proj_ObsidianBullet</defaultProjectile>
+				<warmupTime>3.5</warmupTime>
+				<range>29.8</range>
+				<forcedMissRadius>3.1</forcedMissRadius>
+				<soundCast>RBM_TaurailGun_Fire</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>15</muzzleFlashScale>
+				        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>rail</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>1.8</cooldownTime>
+			</li>
+						<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>11.2</power>
+				<cooldownTime>1.2</cooldownTime>
+			</li>
+		</tools>
+		<!-- Comps -->
+		<comps>
+			<li Class="CompProperties_TargetEffect_FleckOnTarget">
+				<fleckDef>HerculeanFleckA</fleckDef>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	  <ThingDef ParentName="BaseBullet">
+    <defName>Proj_ObsidianBullet</defName>
+    <label>obsidian bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/RBM_ObsidianBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Mageia_Hot</damageDef>
+	   <explosionRadius>3.5</explosionRadius>
+      <explosionRadiusDisplayPadding>1</explosionRadiusDisplayPadding>
+      <postExplosionGasType>ToxGas</postExplosionGasType> <!-- Change to custom gas-->
+	  <ai_IsIncendiary>true</ai_IsIncendiary>
+      <damageAmountBase>16</damageAmountBase>
+      <armorPenetrationBase>0.56</armorPenetrationBase>
+      <speed>72</speed>
+	  <screenShakeFactor>0.8</screenShakeFactor>
+	  <stoppingPower>1.5</stoppingPower>
+    </projectile>
+  </ThingDef>
+  
+  		<!--   	Mageia Damage -->
+
+	<DamageDef ParentName="Flame">
+		<defName>Mageia_Hot</defName>
+		<label>mageia</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<deathMessage>{0} has been eradicated.</deathMessage>
+		<hediff>Shredded</hediff>
+		<externalViolence>true</externalViolence>
+		<defaultDamage>20</defaultDamage>
+		<canInterruptJobs>true</canInterruptJobs>
+		<!-- <combatLogRules>Damage_Terrify</combatLogRules> -->
+		<makesAnimalsFlee>true</makesAnimalsFlee>
+		<impactSoundType>Bullet</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<isRanged>true</isRanged>
+		<!-- Effects -->
+		<damageEffecter>Mageia_Effect_Red</damageEffecter>
+		<explosionCellFleck>TerrorFleckLarge</explosionCellFleck>
+		<explosionColorCenter>(1, 1, 1)</explosionColorCenter>
+		<explosionColorEdge>(0.3, 0.70, 0.88, 0.05)</explosionColorEdge>
+		<soundExplosion>Explosion_Terrify</soundExplosion>
+		</DamageDef>
+		
+		
+<!--==============================================-->
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>RBM_Labrys</defName>
+    <label>labrys</label>
+    <description>An oversized, obsidian axe known for it's significance in minotaur culture. Only pawns with the Herculean gene can equip it though, it's ridiculously heavy.</description>
+	<descriptionHyperlinks>
+	<GeneDef>RBM_Herculean</GeneDef>
+	</descriptionHyperlinks>
+		<!-- Basic Data -->
+		<possessionCount>1</possessionCount>
+		<rotateInShelves>false</rotateInShelves>
+		<uiIconScale>0.8</uiIconScale>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/RBM_Labrys/RBM_Labrys</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2.3</drawSize>
+		</graphicData>
+		<!-- Trading -->
+		<techLevel>Archotech</techLevel>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<tradeNeverStack>true</tradeNeverStack>
+		<tradeability>Sellable</tradeability>
+		<!-- Obtaining -->
+		<recipeMaker IsNull="True"/>
+		<soundInteract>RBM_Labrys_Equip</soundInteract>
+		<relicChance>3</relicChance>
+		<smeltable>false</smeltable>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+				<!-- Battle Data -->
+		<statBases>
+			<Mass>20</Mass>
+			<MarketValue>930</MarketValue>
+			<MaxHitPoints>250</MaxHitPoints>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.08</MoveSpeed>
+		</equippedStatOffsets>
+		<weaponTags>
+			<li>HerculeanWeapon</li>
+		</weaponTags>
+    <weaponClasses>
+      <li>Melee</li>
+    </weaponClasses>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2.3</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>45</power>
+        <cooldownTime>4.3</cooldownTime>
+		<armorPenetration>0.43</armorPenetration>
+      </li>
+    </tools>
+	    <comps>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerMinotaurArt</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>      
+    </comps>
+  </ThingDef>
+  
+  <!--==============================================-->
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>RBM_Damacles</defName>
+    <label>damacles</label>
+    <description>A heavy, obsidian sword with many tales surrounding it in bovine cultures. In exchange for it's blinding attack speed and chance to land a critical hit during battle, you feel incredibly anxious just holding this cursed blade. Only pawns with the Herculean gene can equip it.</description>
+	<descriptionHyperlinks>
+	<GeneDef>RBM_Herculean</GeneDef>
+	</descriptionHyperlinks>
+		<!-- Basic Data -->
+		<possessionCount>1</possessionCount>
+		<rotateInShelves>false</rotateInShelves>
+		<uiIconScale>1.2</uiIconScale>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/RBM_Damacles/RBM_Damacles</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.7</drawSize>
+		</graphicData>
+		<!-- Trading -->
+		<techLevel>Archotech</techLevel>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<tradeNeverStack>true</tradeNeverStack>
+		<tradeability>Sellable</tradeability>
+		<!-- Obtaining -->
+		<recipeMaker IsNull="True"/>
+		<soundInteract>RBM_Labrys_Equip</soundInteract>
+		<relicChance>1</relicChance>
+		<smeltable>false</smeltable>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+				<!-- Battle Data -->
+		<statBases>
+			<Mass>5.6</Mass>
+			<MarketValue>530</MarketValue>
+			<MaxHitPoints>250</MaxHitPoints>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.015</MoveSpeed>
+			<SocialImpact>0.2</SocialImpact>
+			<MentalBreakThreshold>0.35</MentalBreakThreshold>
+		</equippedStatOffsets>
+		<weaponTags>
+			<li>HerculeanWeapon</li>
+		</weaponTags>
+    <weaponClasses>
+      <li>Melee</li>
+    </weaponClasses>
+    <tools>
+	      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>0.7</power>
+        <cooldownTime>0.4</cooldownTime>
+      </li>
+	        <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>1</power>
+        <cooldownTime>0.5</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>3.5</power>
+        <cooldownTime>0.7</cooldownTime>
+		<armorPenetration>0.13</armorPenetration>
+      </li>
+	        <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>2.5</power>
+        <cooldownTime>0.9</cooldownTime>
+		<armorPenetration>0.13</armorPenetration>
+      </li>
+	        <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>2.8</power>
+        <cooldownTime>0.8</cooldownTime>
+		<armorPenetration>0.05</armorPenetration>
+      </li>
+	  	        <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>2.2</power>
+        <cooldownTime>1</cooldownTime>
+		<armorPenetration>0.02</armorPenetration>
+      </li>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>0.4</cooldownTime>
+      </li>
+	        <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>1</power>
+        <cooldownTime>0.5</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>1</power>
+        <cooldownTime>0.7</cooldownTime>
+		<armorPenetration>0.13</armorPenetration>
+      </li>
+	        <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>0.9</cooldownTime>
+		<armorPenetration>0.13</armorPenetration>
+      </li>
+	        <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>0.8</cooldownTime>
+		<armorPenetration>0.05</armorPenetration>
+      </li>
+	  	        <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>2.7</power>
+        <cooldownTime>1</cooldownTime>
+		<armorPenetration>0.02</armorPenetration>
+      </li>
+	  	 <li>
+        <label>critical hit</label> <!-- TODO: An effect would be nice -->
+		<labelUsedInLogging>true</labelUsedInLogging>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>8.5</power>
+        <cooldownTime>0.27</cooldownTime>
+		<armorPenetration>0.1</armorPenetration>
+      </li>
+    </tools>
+	    <comps>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerMinotaurArt</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>      
+    </comps>
+  </ThingDef>
+
+
+  <!--==============================================-->
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>RBM_Oxenammer</defName>
+    <label>oxenammer</label>
+    <description>A tyrannically imposing hammer, imposible for a baseline human to use. It's weight makes it exhausting to carry around and slow to swing, but it can crush bones into stardust in just one move.</description>
+	<descriptionHyperlinks>
+	<GeneDef>RBM_Herculean</GeneDef>
+	</descriptionHyperlinks>
+		<!-- Basic Data -->
+		<possessionCount>1</possessionCount>
+		<rotateInShelves>false</rotateInShelves>
+		<uiIconScale>1</uiIconScale>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/RBM_Oxenammer/RBM_Oxenammer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2.4</drawSize>
+		</graphicData>
+		<!-- Trading -->
+		<techLevel>Archotech</techLevel>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<tradeNeverStack>true</tradeNeverStack>
+		<tradeability>Sellable</tradeability>
+		<!-- Obtaining -->
+		<recipeMaker IsNull="True"/>
+		<soundInteract>RBM_Oxenammer_Equip</soundInteract>
+		<meleeHitSound>Explosion_Terrify</meleeHitSound>
+		<relicChance>1</relicChance>
+		<smeltable>false</smeltable>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+				<!-- Battle Data -->
+		<statBases>
+			<Mass>25</Mass>
+			<MarketValue>1000</MarketValue>
+			<MaxHitPoints>250</MaxHitPoints>
+			<RoyalFavorValue>2</RoyalFavorValue>
+			<Beauty>2</Beauty>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.15</MoveSpeed>
+			<MeleeHitChance>-0.2</MeleeHitChance>
+			<MeleeDodgeChance>-0.8</MeleeDodgeChance>
+			<RestFallRateFactor>0.08</RestFallRateFactor>
+		</equippedStatOffsets>
+		<weaponTags>
+			<li>HerculeanWeapon</li>
+		</weaponTags>
+    <weaponClasses>
+      <li>Melee</li>
+    </weaponClasses>
+    <tools>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Demolish</li>
+        </capacities>
+        <power>52</power>
+        <cooldownTime>8</cooldownTime>
+		        <extraMeleeDamages>
+          <li>
+            <def>Mageia_Hot</def>
+            <amount>9</amount>
+          </li>
+        </extraMeleeDamages>
+		<armorPenetration>0.5</armorPenetration>
+      </li>
+    </tools>
+	    <comps>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerMinotaurArt</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>      
+			<li Class="CompProperties_TargetEffect_FleckOnTarget">
+				<fleckDef>HerculeanFleckA</fleckDef>
+			</li>
+		</comps>
+  </ThingDef>
+  
+    		<!--   	Earthshatter Damage -->
+
+	<DamageDef ParentName="Flame">
+		<defName>Earthshatter</defName>
+		<label>earthshatter</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<deathMessage>{0} has been destroyed under the weight of an oxenammer.</deathMessage>
+		<hediff>Crush</hediff>
+		<externalViolence>true</externalViolence>
+		<defaultDamage>20</defaultDamage>
+		<canInterruptJobs>true</canInterruptJobs>
+		<!-- <combatLogRules>Damage_Terrify</combatLogRules> -->
+		<makesAnimalsFlee>true</makesAnimalsFlee>
+		<!-- <impactSoundType>ThumpCannon_Impact</impactSoundType> -->
+		<armorCategory>Blunt</armorCategory>
+		<isRanged>true</isRanged>
+		<!-- Effects -->
+		<damageEffecter>Mageia_Effect_Red</damageEffecter>
+		<explosionCellFleck>TerrorFleckLarge</explosionCellFleck>
+		<explosionColorCenter>(1, 1, 1)</explosionColorCenter>
+		<explosionColorEdge>(0.3, 0.70, 0.88, 0.05)</explosionColorEdge>
+		<soundExplosion>Explosion_Terrify</soundExplosion>
+		</DamageDef>
+
+
+
+</Defs>

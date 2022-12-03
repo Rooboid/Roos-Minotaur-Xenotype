@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<XenotypeDef>
+		<defName>RBM_Minotaur</defName>
+		<label>minotaur</label>
+		<!-- Desc -->
+		<description>The ancient origins of the minotaur remain shrouded in mystery, helped naught by their hostility toward humans. Man once reared not only cattle, but also the minotaur- branding them with hot irons as labourers, cannon fodder or protectors of nobility. Today, minotaur civilisations can be found as far away from humans as possible- less-so for the minotaur’s safety, and more-so the humans’. \n\nThe minotaur race comprises of cows and bulls: the former of which produce milk, bear young, and typically possess a peaceful temperament. Bulls, however, are characterised by their incessant aggression, herculean strength and ability to impregnate cows. Both bulls and cows can hormonally be male or female- something not seen in their quadrupedal counterpart.</description>
+		<descriptionShort>Standing at a staggering seven to nine feet tall, the ancient minotaur are known to thrive in even the most bitter corners of the world, thanks to their staggering might, hardy stomachs and cloven hooves. Minotaur cows are able to produce milk and bear children, whereas Minotaur bulls are characterised by their untameable aggression and impenetrable strength.</descriptionShort>
+		<!-- Stats -->
+		<iconPath>UI/XenotypeIcons/MinotaurBull</iconPath>
+		<inheritable>true</inheritable>
+		<nameMaker>NamerPersonMinotaur_Male</nameMaker>
+		<nameMakerFemale>NamerPersonMinotaur_Female</nameMakerFemale>
+    <chanceToUseNameMaker>69</chanceToUseNameMaker> <!-- Nice -->
+		<combatPowerFactor>2</combatPowerFactor>
+		<genes>
+			<!-- Ability -->
+			<li>RBM_BovineTemper</li>
+			<!-- Cosmetic -->
+			<li>RBM_BovineHead</li>
+			<li>RBM_BovineEars</li>
+			<li>RBM_BovineHorns</li>
+			<li>RBM_BovineVoice</li>
+			<li>RBM_UnguligradeLegs</li>
+			<li>RBM_EstrousCycle</li>
+			<li>RBM_RuminantStomach</li>
+			<li>RBM_Herculean</li>
+			<li>Body_Fat</li>
+			<li>Body_Standard</li>
+			<li>Body_Hulk</li>
+			<!-- Skins -->
+			<li>RBM_EarthySkin</li>
+			<li>Skin_InkBlack</li>
+			<li>Skin_SlateGray</li>
+			<li>Skin_LightGray</li>
+			<li>Skin_SheerWhite</li>
+			<li>Skin_Orange</li>
+			<!-- Cow Only -->
+			<li>RBM_Lactation</li>
+			<li>RBM_IncreasedLactation</li>
+			<!-- Skills -->
+			<li>AptitudePoor_Intellectual</li>
+			<li>AptitudePoor_Social</li>
+		</genes>
+	</XenotypeDef>
+
+</Defs>

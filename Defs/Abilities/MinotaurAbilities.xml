@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AbilityCategoryDef>
+		<defName>Minotaur</defName>
+		<displayOrder>1500</displayOrder>
+	</AbilityCategoryDef>
+  
+	<!-- See Red: Ability -->
+
+	<AbilityDef>
+		<defName>RBM_SeeRed</defName>
+		<label>see red</label>
+		<description>The user erupts into a monstrous rage, terrifying those around them. The user will attack both friends and foes with unrelenting strength and speed until they exhaust themselves or drop dead.</description>
+		<jobDef>CastAbilityOnThingWithoutWeapon</jobDef>
+		<iconPath>UI/GeneIcons/RBM_Ability_SeeRed</iconPath>
+		<writeCombatLog>True</writeCombatLog>
+		<category>Minotaur</category>
+		<displayOrder>50</displayOrder>
+		<cooldownTicksRange>60000</cooldownTicksRange>
+		<aiCanUse>true</aiCanUse>
+		<warmupStartSound>SeeRed_Warmup</warmupStartSound>
+		<ai_SearchAOEForTargets>true</ai_SearchAOEForTargets>
+		<statBases>
+			<Ability_Duration>300</Ability_Duration>
+		</statBases>
+		<targetRequired>false</targetRequired>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<showCastingProgressBar>true</showCastingProgressBar>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupEffecter>SeeRed_Warmup</warmupEffecter>
+			<warmupTime>1.5</warmupTime>
+			<soundCast>SeeRed_Cast</soundCast>
+			<requireLineOfSight>false</requireLineOfSight>
+			<range>6</range>
+			<drawAimPie>false</drawAimPie>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>HeDiffSeeRed</hediffDef>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+			</li>
+			<li Class="CompProperties_AbilityGiveMentalState">
+				<compClass>CompAbilityEffect_GiveMentalState</compClass>
+				<stateDef>Berserk</stateDef>
+				<casterEffect>RBM_BerserkEffect</casterEffect>
+				<stateDefForMechs>BerserkMechanoid</stateDefForMechs>
+				<durationMultiplier>PainShockThreshold</durationMultiplier>
+				<psychic>False</psychic>
+			</li>
+			<li Class="CompProperties_AbilityTerrify">
+				<terrorRadius>5.5</terrorRadius>
+			</li>
+		</comps>
+	</AbilityDef>
+	
+	<!-- See Red Components -->
+	
+	<!-- See Red HeDiff -->
+  
+	<HediffDef>
+		<defName>HeDiffSeeRed</defName>
+		<label>seeing red</label>
+		<labelNoun>bovine outrage</labelNoun>
+		<description>Total loss of physical restraint.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1</initialSeverity>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.7</severityPerDay>
+			</li>
+			      <li Class="HediffCompProperties_Effecter">
+				<stateEffecter>RBM_TerrifiedEffect</stateEffecter>
+      </li>
+		</comps>
+		<stages>
+			<li>
+				<minSeverity>0</minSeverity>
+				<label>aftermath</label>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.1</setMax>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.60</minSeverity>
+				<label>exhausted</label>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.10</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.10</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.85</minSeverity>
+				<label>diminishing</label>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.10</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.25</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.93</minSeverity>
+				<label>intense</label>
+				<statOffsets>
+					<MeleeHitChance>15</MeleeHitChance>
+					<PainShockThreshold>2</PainShockThreshold>
+					<StaggerDurationFactor>0</StaggerDurationFactor>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.50</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.80</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+
+	<!-- TODO: Make this have same effect as Berserk -->
+
+	<MentalStateDef ParentName="BaseMentalState">
+		<defName>RBM_Berserk</defName>
+		<stateClass>MentalState_Berserk</stateClass>
+		<label>berserk</label>
+		<category>Aggro</category>
+		<blockInteractionRecipientExcept>
+			<li>Insult</li>
+		</blockInteractionRecipientExcept>
+		<blockRandomInteraction>true</blockRandomInteraction>
+		<blockNormalThoughts>true</blockNormalThoughts>
+		<nameColor>(0.9,0.2,0.5)</nameColor>
+		<beginLetter>{0} has erupted into a monstrous rage.\n\n[PAWN_pronoun] will destroy anyone in [PAWN_possessive] way until they exhaust themselves or drop dead.</beginLetter>
+		<minTicksBeforeRecovery>40000</minTicksBeforeRecovery>
+		<maxTicksBeforeRecovery>60000</maxTicksBeforeRecovery>
+		<recoveryMtbDays>0.166</recoveryMtbDays>
+		<recoveryMessage>{0}'s monstrous rage has come to an end.</recoveryMessage>
+		<baseInspectLine>Mental state: Berserk</baseInspectLine>
+		<stateEffecter>RBM_BerserkEffect</stateEffecter>
+		<tale>MentalStateBerserk</tale>
+		<recoverFromSleep>true</recoverFromSleep>
+		<inCaravanCanDo>true</inCaravanCanDo>
+	</MentalStateDef>
+
+
+</Defs>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<XenotypeIconDef>
+		<defName>RBM_Minotaur</defName>
+		<texPath>UI/XenotypeIcons/MinotaurBull</texPath>
+	</XenotypeIconDef>
+
+</Defs>
