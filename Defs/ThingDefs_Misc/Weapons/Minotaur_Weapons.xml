@@ -543,7 +543,7 @@
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>RBM_Tunbell</defName>
 		<label>tunbell</label>
-		<description>An obsidian staff that resembles a large tuning fork with a cowbell attached to it. It's so heavy that only pawns with the Herculean trait can equip it.</description>
+		<description>An obsidian staff that resembles a large tuning fork with a cowbell attached to it. It's shrill chimes can cause it's victims tinnitus. It's so heavy that only pawns with the Herculean trait can equip it.</description>
 		<descriptionHyperlinks>
 			<GeneDef>RBM_Herculean</GeneDef>
 		</descriptionHyperlinks>
@@ -594,7 +594,7 @@
 					<li>Blunt</li>
 				</capacities>
 				<power>6</power>
-				<cooldownTime>0.6</cooldownTime>
+				<cooldownTime>0.8</cooldownTime>
 			</li>
 			<li>
 				<label>head</label>
@@ -603,11 +603,95 @@
 				</capacities>
 				<power>16.5</power>
 				<cooldownTime>1.7</cooldownTime>
-				<armorPenetration>0.8</armorPenetration>
+				<armorPenetration>0.05</armorPenetration>
 				<extraMeleeDamages>
 					<li>
 						<def>Mageia_Sound</def>
 						<amount>20</amount>
+					</li>
+				</extraMeleeDamages>
+			</li>
+		</tools>
+		<comps>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerMinotaurArt</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+	</ThingDef>
+	
+		<!--====================== Tunbell ======================-->
+	
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>RBM_Midaspear</defName>
+		<label>midaspear</label>
+		<description>An obsidian weapon with a gold-encrusted spearhead. It's so long and heavy that only a Herculean pawn can equip it.</description>
+		<descriptionHyperlinks>
+			<GeneDef>RBM_Herculean</GeneDef>
+		</descriptionHyperlinks>
+		<!-- Basic Data -->
+		<possessionCount>1</possessionCount>
+		<rotateInShelves>false</rotateInShelves>
+		<uiIconScale>0.8</uiIconScale>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/RBM_Midaspear/RBM_Midaspear</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<!-- Trading -->
+		<techLevel>Archotech</techLevel>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<tradeNeverStack>true</tradeNeverStack>
+		<tradeability>Sellable</tradeability>
+		<!-- Obtaining -->
+		<recipeMaker IsNull="True"/>
+		<soundInteract>RBM_Labrys_Equip</soundInteract>
+		<relicChance>1</relicChance>
+		<smeltable>false</smeltable>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+		<!-- Battle Data -->
+		<statBases>
+			<Mass>9.5</Mass>
+			<MarketValue>750</MarketValue>
+			<MaxHitPoints>250</MaxHitPoints>
+			<RoyalFavorValue>2</RoyalFavorValue>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.02</MoveSpeed>
+		</equippedStatOffsets>
+		<weaponTags>
+			<li>HerculeanWeapon</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Melee</li>
+		</weaponClasses>
+		<tools>
+			<li>
+				<label>shaft</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>0.8</cooldownTime>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>0.8</cooldownTime>
+				<armorPenetration>0.50</armorPenetration>
+				<extraMeleeDamages>
+					<li>
+						<def>Mageia_Gold</def>
+						<amount>5</amount>
 					</li>
 				</extraMeleeDamages>
 			</li>

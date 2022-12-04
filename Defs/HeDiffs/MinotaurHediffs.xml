@@ -113,7 +113,7 @@
 			</li>
 						<li Class="HediffCompProperties_RemoveIfOtherHediff">
 				<otherHediff>HearingLoss</otherHediff>
-				<mtbHours>0</mtbHours>
+				<mtbHours>0.5</mtbHours>
 			</li>
 		</comps>
 		<stages>
@@ -140,7 +140,6 @@
 					<li Class="HediffGiver_Random">
 						<hediff>HearingLoss</hediff>
 						<mtbDays>0.5</mtbDays>
-						<!-- TODO: Could it just effect one ear at a time? -->
 						<partsToAffect>
 							<li>Ear</li>
 						</partsToAffect>
