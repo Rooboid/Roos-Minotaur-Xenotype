@@ -5,9 +5,37 @@
 		<defName>Minotaur</defName>
 		<displayOrder>1500</displayOrder>
 	</AbilityCategoryDef>
-  
-	<!-- See Red: Ability -->
-
+	
+	<!--====================== Ability: See Red ======================-->
+	<!-- Depends on:
+	- Effecters:
+	RBM_SeeRed_Warmup
+	RBM_BerserkEffect
+	
+	- Sounds:
+	SeeRed_Cast
+	
+	- HeDiffs:
+	HeDiffSeeRed
+	HeDiffTerrified
+	
+	- MentalStates:
+	RBM_Berserk
+	RBM_TerrifiedFlee
+	
+	- Damage:
+	Terrified
+	
+	- Thoughts:
+	Terrified_Thought_Small
+	Terrified_Thought_Med
+	Terrified_Thought_Large
+	
+	Combat Rule: 
+	Damage_Terrify
+	
+	-->
+	
 	<AbilityDef>
 		<defName>RBM_SeeRed</defName>
 		<label>see red</label>
@@ -19,7 +47,7 @@
 		<displayOrder>50</displayOrder>
 		<cooldownTicksRange>60000</cooldownTicksRange>
 		<aiCanUse>true</aiCanUse>
-		<warmupStartSound>SeeRed_Warmup</warmupStartSound>
+		<warmupStartSound>RBM_SeeRedWarmup</warmupStartSound>
 		<ai_SearchAOEForTargets>true</ai_SearchAOEForTargets>
 		<statBases>
 			<Ability_Duration>300</Ability_Duration>
@@ -29,7 +57,7 @@
 		<showCastingProgressBar>true</showCastingProgressBar>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
-			<warmupEffecter>SeeRed_Warmup</warmupEffecter>
+			<warmupEffecter>RBM_SeeRed_Warmup</warmupEffecter>
 			<warmupTime>1.5</warmupTime>
 			<soundCast>SeeRed_Cast</soundCast>
 			<requireLineOfSight>false</requireLineOfSight>
@@ -60,14 +88,17 @@
 		</comps>
 	</AbilityDef>
 	
-	<!-- See Red Components -->
+	
+	<!--====================== Ability: See Red (Components) ======================-->
+	<!-- I've not put these in the HeDiffs or MentalStates documents because they would feel lonely without the AbilityDef :( -->
+	
 	
 	<!-- See Red HeDiff -->
-  
 	<HediffDef>
 		<defName>HeDiffSeeRed</defName>
 		<label>seeing red</label>
-		<labelNoun>bovine outrage</labelNoun>
+		<labelNoun>outrage</labelNoun>
+		<defaultLabelColor>(0.3, 0.7, 9)</defaultLabelColor>
 		<description>Total loss of physical restraint.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<initialSeverity>1</initialSeverity>
@@ -75,9 +106,9 @@
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>-0.7</severityPerDay>
 			</li>
-			      <li Class="HediffCompProperties_Effecter">
+			<li Class="HediffCompProperties_Effecter">
 				<stateEffecter>RBM_TerrifiedEffect</stateEffecter>
-      </li>
+			</li>
 		</comps>
 		<stages>
 			<li>
@@ -139,10 +170,12 @@
 			</li>
 		</stages>
 	</HediffDef>
-
-
+	
+	
+	<!-- See Red: Mental State -->
+	
 	<!-- TODO: Make this have same effect as Berserk -->
-
+	
 	<MentalStateDef ParentName="BaseMentalState">
 		<defName>RBM_Berserk</defName>
 		<stateClass>MentalState_Berserk</stateClass>
@@ -165,6 +198,4 @@
 		<recoverFromSleep>true</recoverFromSleep>
 		<inCaravanCanDo>true</inCaravanCanDo>
 	</MentalStateDef>
-
-
 </Defs>

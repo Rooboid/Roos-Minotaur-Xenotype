@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<!--====================== Terrified ======================-->
+	<!-- Forced onto pawns affected by the gas cloud produced by the ability: SeeRed. -->
+	<!-- More Details: This primarily acts as a middleman to give pawns the mental state, RBM_TerrifiedFlee, and the thoughts Terrified_Thought... in one operation-->
+	
+	<HediffDef ParentName="InfectionBase">
+		<defName>HeDiffTerrified</defName>
+		<label>terrified</label>
+		<labelNoun>terror</labelNoun>
+		 <defaultLabelColor>(0.3, 0.7, 9)</defaultLabelColor>
+		<description>Abhorrent visions haunt the mind.</description>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>500~1700</disappearsAfterTicks>
+				<showRemainingTime>false</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_RemoveIfOtherHediff">
+				<otherHediff>HeDiffSeeRed</otherHediff>
+				<stages>2~</stages>
+				<mtbHours>0</mtbHours>
+			</li>
+			<li Class="HediffCompProperties_GiveRandomSituationalThought">
+				<thoughtDefs>
+					<li>Terrified_Thought_Small</li>
+					<li>Terrified_Thought_Med</li>
+					<li>Terrified_Thought_Large</li>
+				</thoughtDefs>
+			</li>
+		</comps>
+		<injuryProps>
+			<destroyedLabel>terrified</destroyedLabel>
+			<destroyedOutLabel>terrified</destroyedOutLabel>
+		</injuryProps>
+		<stages>
+			<li>
+				<minSeverity>0</minSeverity>
+				<label>terrified</label>
+				<mentalStateGivers>
+					<li>
+						<mentalState>RBM_TerrifiedFlee</mentalState>
+						<mtbDays>0</mtbDays>
+					</li>
+				</mentalStateGivers>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	
+	<!--====================== Bruise (Sound) ======================-->
+	<!-- A minimally altered bruise HeDiff inflicted by the Tunbell. -->
+	<!-- More Details: Acts as an invisible middleman to give pawns the HeDiff, Ringing, specifically to their ears using the HediffGiver_Random Class. Melee weapons cannot inflict HeDiffs to specific body parts upon attack, just the body parts they are aimed at. It felt weird seeing pawns having 'ringing' in their legs, so this is the only way I could think to do it.-->
+	
+	<HediffDef ParentName="InjuryBase">
+		<defName>BruiseSound</defName>
+		<label>bruise</label>
+		<labelNoun>a bruise</labelNoun>
+		<description>A bruise.</description>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>10</disappearsAfterTicks>
+				<showRemainingTime>false</showRemainingTime>
+			</li>
+		</comps>
+		<injuryProps>
+			<painPerSeverity>0.0125</painPerSeverity>
+			<averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
+			<canMerge>false</canMerge>
+			<destroyedLabel>Destroyed</destroyedLabel>
+		</injuryProps>
+		<stages>
+			<li>
+				<minSeverity>0.1</minSeverity>
+				<becomeVisible>false</becomeVisible>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>Ringing</hediff>
+						<partsToAffect>
+							<li>Ear</li>
+						</partsToAffect>
+						<countToAffect>2</countToAffect>
+					</li>
+				</hediffGivers>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	
+	<!--====================== Ringing ======================-->
+	<!-- Inflicted by the Tunbell, using Bruisesound as a prompter for it to appear.-->
+	<!-- More Details: Pawns with this HeDiff will progressively get worse if untended, resulting in possible HearingLoss.-->
+	<!-- TODO: Make this work properly. -->
+	
+	
+	<HediffDef>
+		<defName>Ringing</defName>
+		<label>ears ringing</label>
+		<labelNoun>ringing</labelNoun>
+		<defaultLabelColor>(274, 154, 45)</defaultLabelColor>
+		    <hediffClass>HediffWithComps</hediffClass>
+		<tendable>true</tendable>
+		<displayWound>false</displayWound>
+		<labelNounPretty>{0} in the {1}</labelNounPretty>
+		<description>Tend to this pawn soon to prevent permanent hearing loss.</description>
+		<comps>
+			<li Class="HediffCompProperties_TendDuration">
+				<severityPerDayTended>-500</severityPerDayTended>
+			</li>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>200</severityPerDay>
+			</li>
+						<li Class="HediffCompProperties_RemoveIfOtherHediff">
+				<otherHediff>HearingLoss</otherHediff>
+				<mtbHours>0</mtbHours>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>minor</label>
+				<minSeverity>0.1</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Hearing</capacity>
+						<setMax>0.8</setMax>
+					</li>
+				</capMods>
+			</li>
+						<li>
+				<label>worsening</label>
+				<minSeverity>50</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Hearing</capacity>
+						<setMax>0.5</setMax>
+					</li>
+				</capMods>
+								<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>HearingLoss</hediff>
+						<mtbDays>0.5</mtbDays>
+						<!-- TODO: Could it just effect one ear at a time? -->
+						<partsToAffect>
+							<li>Ear</li>
+						</partsToAffect>
+					</li>
+				</hediffGivers>
+			</li>
+			<li>
+				<label>major</label>
+				<minSeverity>90</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Hearing</capacity>
+						<setMax>0.5</setMax>
+					</li>
+				</capMods>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>HearingLoss</hediff>
+						<mtbDays>0.1</mtbDays>
+						<partsToAffect>
+							<li>Ear</li>
+						</partsToAffect>
+					</li>
+				</hediffGivers>
+			</li>
+		</stages>
+		<injuryProps>
+			<painPerSeverity>0</painPerSeverity>
+			<averagePainPerSeverityPermanent>0</averagePainPerSeverityPermanent>
+			<bleedRate>0</bleedRate>
+			<canMerge>false</canMerge>
+		</injuryProps>
+	</HediffDef>
+</Defs>

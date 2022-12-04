@@ -1,159 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-
-	<!--   	Terror Damage -->
-
-	<DamageDef ParentName="Flame">
-		<defName>Terrified</defName>
-		<label>terrified</label>
-		<workerClass>DamageWorker_AddInjury</workerClass>
-		<hediff>HeDiffTerrified</hediff>
-		<externalViolence>true</externalViolence>
-		<defaultDamage>20</defaultDamage>
-		<canInterruptJobs>true</canInterruptJobs>
-		<combatLogRules>Damage_Terrify</combatLogRules>
-		<makesAnimalsFlee>true</makesAnimalsFlee>
-		<!-- Effects -->
-		<explosionCellFleck>TerrorFleck</explosionCellFleck>
-		<explosionColorEdge>(0.3, 0.70, 0.88, 0.05)</explosionColorEdge>
-		<soundExplosion>Explosion_Terrify</soundExplosion>
-
-	</DamageDef>
-
-
-	<HediffDef ParentName="InfectionBase">
-    <defName>HeDiffTerrified</defName>
-    <label>terrified</label>
-    <labelNoun>terror</labelNoun>
-    <description>Abhorrent visions haunt the mind.</description>
-    <comps>
-      <li Class="HediffCompProperties_Disappears">
-        <disappearsAfterTicks>500~1700</disappearsAfterTicks>
-        <showRemainingTime>false</showRemainingTime>
-      </li>
-      <li Class="HediffCompProperties_RemoveIfOtherHediff">
-        <otherHediff>HeDiffSeeRed</otherHediff>
-        <stages>2~</stages>
-        <mtbHours>0</mtbHours>
-      </li>
-	        <li Class="HediffCompProperties_GiveRandomSituationalThought">
-        <thoughtDefs>
-          <li>Terrified_Thought_Small</li>
-          <li>Terrified_Thought_Med</li>
-          <li>Terrified_Thought_Large</li>
-        </thoughtDefs>
-      </li>
-    </comps>
-    <injuryProps>
-      <destroyedLabel>terrified</destroyedLabel>
-      <destroyedOutLabel>terrified</destroyedOutLabel>
-    </injuryProps>
-	<stages>
-			<li>
-				<minSeverity>0</minSeverity>
-				<label>terrified</label>
-				<mentalStateGivers>
-					<li>
-						<mentalState>RBM_TerrifiedFlee</mentalState>
-						<mtbDays>0</mtbDays>
-					</li>
-				</mentalStateGivers>
-			</li>
-		</stages>
-  </HediffDef>
-  
-  
-  
-  
-    <HediffDef ParentName="InjuryBase">
-    <defName>BruiseSound</defName>
-    <label>bruise</label>
-    <labelNoun>a bruise</labelNoun>
-    <description>A bruise.</description>
-    <comps>
-      <li Class="HediffCompProperties_Disappears">
-        <disappearsAfterTicks>10</disappearsAfterTicks>
-        <showRemainingTime>false</showRemainingTime>
-      </li>
-    </comps>
-    <injuryProps>
-      <painPerSeverity>0.0125</painPerSeverity>
-      <averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
-      <canMerge>false</canMerge>
-      <destroyedLabel>Destroyed</destroyedLabel>
-    </injuryProps>
-		    <stages>
-          <li>
-		  <minSeverity>0.1</minSeverity>
-		  <becomeVisible>false</becomeVisible>
-        <hediffGivers>
-          <li Class="HediffGiver_Random">
-        <hediff>Ringing</hediff>
-        <partsToAffect>
-          <li>Ear</li>
-        </partsToAffect>
-        <countToAffect>2</countToAffect>
-          </li>
-        </hediffGivers>
-      </li>
-    </stages>
-  </HediffDef>
-  
-  	<HediffDef ParentName="InjuryBase">
-    <defName>Ringing</defName>
-    <label>ears ringing</label>
-    <labelNoun>ringing</labelNoun>
-    <description>Tend to this pawn soon to avoid permanent hearing loss.</description>
-    <comps>
-      <li Class="HediffCompProperties_TendDuration">
-        <severityPerDayTended>-1</severityPerDayTended>
-      </li>
-	        <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>0.5</severityPerDay>
-      </li>
-    </comps>
-	    <stages>
-      <li>
-        <label>minor</label>
-        <minSeverity>0.1</minSeverity>
-        <capMods>
-          <li>
-            <capacity>Hearing</capacity>
-            <setMax>0.8</setMax>
-          </li>
-        </capMods>
-      </li>
-      <li>
-        <label>major</label>
-        <minSeverity>0.90</minSeverity>
-        <capMods>
-          <li>
-            <capacity>Hearing</capacity>
-            <setMax>0.5</setMax>
-          </li>
-        </capMods>
-        <hediffGivers>
-          <li Class="HediffGiver_Random">
-            <hediff>HearingLoss</hediff>
-            <mtbDays>0.8</mtbDays>
-        <partsToAffect>
-          <li>Ear</li>
-        </partsToAffect>
-          </li>
-        </hediffGivers>
-      </li>
-    </stages>
-	    <injuryProps>
-      <painPerSeverity>0.0125</painPerSeverity>
-      <averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
-      <bleedRate>0</bleedRate>
-      <canMerge>false</canMerge>
-    </injuryProps>
-  </HediffDef>
-	
-  
-	<!-- Terrified Thoughts -->
+<!-- Terrified Thoughts -->
   
 <ThoughtDef>
 	<defName>Terrified_Thought_Small</defName>
@@ -204,6 +52,8 @@
 </ThoughtDef>
 
 	<!-- Terrified Combat Log Rule -->
+	
+	<!-- TODO: Does this work? -->
   
 	<RulePackDef>
 		<defName>Damage_Terrify</defName>

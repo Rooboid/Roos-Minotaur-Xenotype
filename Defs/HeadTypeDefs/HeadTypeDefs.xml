@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!-- Bases -->
+	<!--====================== Bases ======================-->
   
   <HeadTypeDef Name="BovineAverageFBase" ParentName="AverageBase" Abstract="True">
     <randomChosen>false</randomChosen>
@@ -35,7 +35,7 @@
     </requiredGenes>
   </HeadTypeDef>
   
-    <!-- Average -->
+	<!--====================== Average Heads ======================-->
 
   <HeadTypeDef ParentName="BovineAverageFBase">
     <defName>RBM_AverageHeadF1</defName>
@@ -67,7 +67,7 @@
     <graphicPath>Things/Pawn/Humanlike/Heads/RBM_HeadAv3/Male/RBM_HeadAv3</graphicPath>
   </HeadTypeDef>
   
-    <!-- Narrow -->
+	<!--====================== Narrow Heads ======================-->
 	
 	  <HeadTypeDef ParentName="BovineNarrowFBase">
     <defName>RBM_NarrowHeadF1</defName>

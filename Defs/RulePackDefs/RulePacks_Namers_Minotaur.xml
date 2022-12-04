@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!-- Surname -->
+	<!--====================== Minotaur Surnames ======================-->
 
 	<RulePackDef Name="NamerMinotaurBase" Abstract="True">
 		<rulePack>
@@ -55,7 +55,7 @@
 		</rulePack>
 	</RulePackDef>
 		
-	<!-- Forename Male -->
+	<!--====================== Minotaur Forenames (Male) ======================-->
 		
 	<RulePackDef ParentName="NamerMinotaurBase">
 		<defName>NamerPersonMinotaur_Male</defName>
@@ -75,7 +75,7 @@
 		</rulePack>
 	</RulePackDef>
 		
-	<!-- Forename Female -->
+	<!--====================== Minotaur Forenames (Female) ======================-->
 		
 	<RulePackDef ParentName="NamerMinotaurBase">
 		<defName>NamerPersonMinotaur_Female</defName>
@@ -94,6 +94,10 @@
 			</rulesFiles>
 		</rulePack>
 	</RulePackDef>
+	
+	<!--====================== Herculean Minotaur Weapon Names ======================-->
+	
+	<!--TODO: Why isn't this working? -->
 		
 	<RulePackDef>
 		<defName>NamerMinotaurArt</defName>
@@ -103,11 +107,9 @@
 		<rulePack>
 			<rulesStrings>
 				<!-- General -->
-				<li>r_art_name->[ConceptBadass]</li>
 				<li>r_art_name->[MinoGod]'s [ConceptBadass]</li>
 				<li>r_art_name->[MinoGod]'s [MinoThing]</li>
 				<li>r_art_name->[MinoGod] in [ColorBadass]</li>
-				<li>r_art_name->[ConceptBadass] [ColorBadass]</li>
 				<li>r_art_name->[MinoThing] of [MinoGod]</li>
 				<li>r_art_name->[MinoUni]: The [MinoTitle]</li>
 		
@@ -220,8 +222,6 @@
 
 			</rulesStrings>
 			<rulesFiles>
-				<li>MinoUni->Names/ForenamesUnisex_Minotaur</li>
-				<li>MinoUni->Names/ForenamesUnisex_Minotaur</li>
 				<li>MinoUni->Names/ForenamesUnisex_Minotaur</li>
 			</rulesFiles>
 		</rulePack>
