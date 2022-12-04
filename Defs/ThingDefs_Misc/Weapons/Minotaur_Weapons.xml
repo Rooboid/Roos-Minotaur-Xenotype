@@ -290,7 +290,7 @@
 			<DamageDef ParentName="Flame">
 		<defName>Mageia_Sound</defName>
 		<label>mageia</label>
-		<hediff>Ringing</hediff>
+		<hediff>BruiseSound</hediff>
 		<externalViolence>true</externalViolence>
 		<defaultDamage>20</defaultDamage>
 		<canInterruptJobs>true</canInterruptJobs>
@@ -305,6 +305,25 @@
 		<explosionColorCenter>(1, 1, 1)</explosionColorCenter>
 		<explosionColorEdge>(0.3, 0.70, 0.88, 0.05)</explosionColorEdge>
 		<soundExplosion>Explosion_Mageia</soundExplosion>
+		</DamageDef>
+		
+				<!--   	Crit Damage -->
+		
+			<DamageDef ParentName="Flame">
+		<defName>CritHit</defName>
+		<label>critical hit</label>
+		<hediff>Cut</hediff>
+		<externalViolence>true</externalViolence>
+		<defaultDamage>20</defaultDamage>
+		<canInterruptJobs>true</canInterruptJobs>
+		<combatLogRules>Damage_Crit</combatLogRules>
+		<makesAnimalsFlee>true</makesAnimalsFlee>
+		<impactSoundType>Slice</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<isRanged>false</isRanged>
+		<!-- Effects -->
+		<damageEffecter>RBM_CritEffect</damageEffecter>
+		<soundExplosion>RBM_CriticalHitSound</soundExplosion>
 		</DamageDef>
 		
 		
@@ -443,23 +462,23 @@
         <capacities>
           <li>Poke</li>
         </capacities>
-        <power>0.7</power>
-        <cooldownTime>0.4</cooldownTime>
+        <power>2.2</power>
+        <cooldownTime>0.7</cooldownTime>
       </li>
 	        <li>
         <label>handle</label>
         <capacities>
           <li>Poke</li>
         </capacities>
-        <power>1</power>
-        <cooldownTime>0.5</cooldownTime>
+        <power>2.2</power>
+        <cooldownTime>0.7</cooldownTime>
       </li>
       <li>
         <label>point</label>
         <capacities>
           <li>Stab</li>
         </capacities>
-        <power>3.5</power>
+        <power>2.2</power>
         <cooldownTime>0.7</cooldownTime>
 		<armorPenetration>0.13</armorPenetration>
       </li>
@@ -468,8 +487,8 @@
         <capacities>
           <li>Stab</li>
         </capacities>
-        <power>2.5</power>
-        <cooldownTime>0.9</cooldownTime>
+        <power>2.2</power>
+        <cooldownTime>0.7</cooldownTime>
 		<armorPenetration>0.13</armorPenetration>
       </li>
 	        <li>
@@ -477,8 +496,8 @@
         <capacities>
           <li>Cut</li>
         </capacities>
-        <power>2.8</power>
-        <cooldownTime>0.8</cooldownTime>
+        <power>2.2</power>
+        <cooldownTime>0.7</cooldownTime>
 		<armorPenetration>0.05</armorPenetration>
       </li>
 	  	        <li>
@@ -487,7 +506,7 @@
           <li>Cut</li>
         </capacities>
         <power>2.2</power>
-        <cooldownTime>1</cooldownTime>
+        <cooldownTime>0.7</cooldownTime>
 		<armorPenetration>0.02</armorPenetration>
       </li>
       <li>
@@ -495,23 +514,23 @@
         <capacities>
           <li>Poke</li>
         </capacities>
-        <power>2</power>
-        <cooldownTime>0.4</cooldownTime>
+        <power>2.2</power>
+       <cooldownTime>0.7</cooldownTime>
       </li>
 	        <li>
         <label>handle</label>
         <capacities>
           <li>Poke</li>
         </capacities>
-        <power>1</power>
-        <cooldownTime>0.5</cooldownTime>
+        <power>0.5</power>
+        <cooldownTime>0.1</cooldownTime>
       </li>
       <li>
         <label>point</label>
         <capacities>
           <li>Stab</li>
         </capacities>
-        <power>1</power>
+        <power>2.2</power>
         <cooldownTime>0.7</cooldownTime>
 		<armorPenetration>0.13</armorPenetration>
       </li>
@@ -520,8 +539,8 @@
         <capacities>
           <li>Stab</li>
         </capacities>
-        <power>2</power>
-        <cooldownTime>0.9</cooldownTime>
+        <power>2.2</power>
+        <cooldownTime>0.7</cooldownTime>
 		<armorPenetration>0.13</armorPenetration>
       </li>
 	        <li>
@@ -529,8 +548,8 @@
         <capacities>
           <li>Cut</li>
         </capacities>
-        <power>2</power>
-        <cooldownTime>0.8</cooldownTime>
+        <power>2.2</power>
+        <cooldownTime>0.7</cooldownTime>
 		<armorPenetration>0.05</armorPenetration>
       </li>
 	  	        <li>
@@ -538,19 +557,25 @@
         <capacities>
           <li>Cut</li>
         </capacities>
-        <power>2.7</power>
-        <cooldownTime>1</cooldownTime>
+        <power>2.2</power>
+        <cooldownTime>0.7</cooldownTime>
 		<armorPenetration>0.02</armorPenetration>
       </li>
 	  	 <li>
-        <label>critical hit</label> <!-- TODO: An effect would be nice -->
+        <label>critical hit</label>
 		<labelUsedInLogging>true</labelUsedInLogging>
         <capacities>
           <li>Cut</li>
         </capacities>
-        <power>8.5</power>
-        <cooldownTime>0.27</cooldownTime>
+        <power>2.2</power>
+        <cooldownTime>0.7</cooldownTime>
 		<armorPenetration>0.1</armorPenetration>
+				        <extraMeleeDamages>
+          <li>
+            <def>CritHit</def>
+            <amount>100</amount>
+          </li>
+        </extraMeleeDamages>
       </li>
     </tools>
 	    <comps>
@@ -752,6 +777,32 @@
       </li>      
     </comps>
   </ThingDef>
+  
+  
+    <RulePackDef>
+    <defName>Damage_Crit</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_logentry(p=1.0)->[INITIATOR_definite] [crit_past] [RECIPIENT_definite] with a critical hit.</li>
+        
+        <li>crit_past->sliced</li>
+		<li>crit_past->ambushed</li>
+		<li>crit_past->rushed</li>
+		<li>crit_past->assaulted</li>
+		<li>crit_past->pierced</li>
+		<li>crit_past->tore</li>
+		<li>crit_past->wounded</li>
+		<li>crit_past->impaled</li>
+		<li>crit_past->lunged at</li>
+		<li>crit_past->punctured</li>
+		<li>crit_past->thrusted at</li>
+		<li>crit_past->charged at</li>
+		<li>crit_past->surprised</li>
+		<li>crit_past->astonished</li>
+		<li>crit_past->had at</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
 
 
 

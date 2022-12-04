@@ -297,6 +297,26 @@
       </li>
     </subSounds>
   </SoundDef>
+  
+                <!-- Weapon - Oxenammer -->
+	
+	    <SoundDef>
+    <defName>RBM_CriticalHitSound</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>2</maxSimultaneous>
+    <subSounds>
+      <li>
+        <muteWhenPaused>True</muteWhenPaused>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>RBM_CriticalHit/RBM_CriticalHit</clipPath>
+          </li>
+        </grains>
+        <volumeRange>37</volumeRange>
+        <pitchRange>0.7~1.4</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
  
 
 </Defs>

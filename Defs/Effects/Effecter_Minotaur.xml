@@ -356,6 +356,19 @@
         <scale>2</scale>
         <angle>-45~45</angle>
       </li>
+	        <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <moteDef>Mote_EarthshatterCloud</moteDef>
+        <burstCount>1</burstCount>
+        <speed>0.3~0.7</speed>
+        <scale>2~5</scale>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+	        <li>
+        <subEffecterClass>SubEffecter_SoundTriggered</subEffecterClass>
+        <soundDef>Explosion_Rocket</soundDef>
+        <spawnLocType>OnTarget</spawnLocType>
+      </li>
     </children>
   </EffecterDef>
   
@@ -450,6 +463,70 @@
     <fadeOutTime>1</fadeOutTime>
     <growthRate>-0.5</growthRate>
   </FleckDef>
+  
+  
+  <!-- Critical Hit Mote -->
 	
+		  			<ThingDef ParentName="MoteBase">
+		<defName>Mote_CriticalHit</defName>
+		<graphicData>
+			<texPath>Things/Mote/RBM_CriticalHit/RBM_CriticalHit</texPath>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<altitudeLayer>MoteLow</altitudeLayer>
+		<drawOffscreen>false</drawOffscreen>
+		<mote>
+			<fadeInTime>0.2</fadeInTime>
+			<solidTime>0.5</solidTime>
+			<fadeOutTime>0.5</fadeOutTime>
+			<growthRate>0</growthRate>
+		</mote>
+	</ThingDef>
+	
+			<!-- Critical Hit Effect  -->
+	
+	<EffecterDef>
+    <defName>RBM_CritEffect</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <scale>1</scale>
+        <positionRadius>0.5</positionRadius>
+        <moteDef>Mote_CriticalHit</moteDef>
+        <speed>0.2</speed>
+        <angle>0~0</angle>
+      </li>
+	        <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <moteDef>Mote_EarthshatterCloud</moteDef>
+        <burstCount>5~10</burstCount>
+        <speed>0.3~0.7</speed>
+        <scale>0.7~1.5</scale>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+				<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<fleckDef>HerculeanFleckA</fleckDef>
+				<burstCount>1</burstCount>
+				<scale>1.5~5</scale>
+				<spawnLocType>OnSource</spawnLocType>
+				<ticksBetweenMotes>150</ticksBetweenMotes>
+				<attachToSpawnThing>true</attachToSpawnThing>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<fleckDef>HerculeanFleckB</fleckDef>
+				<scale>1</scale>
+				<spawnLocType>OnSource</spawnLocType>
+				<ticksBetweenMotes>150</ticksBetweenMotes>
+				<positionRadius>0</positionRadius>
+			</li>
+      <li>
+        <subEffecterClass>SubEffecter_SoundTriggered</subEffecterClass>
+        <soundDef>RBM_CriticalHitSound</soundDef>
+        <spawnLocType>OnTarget</spawnLocType>
+      </li>
+		</children>
+	</EffecterDef>
 	
 </Defs>
