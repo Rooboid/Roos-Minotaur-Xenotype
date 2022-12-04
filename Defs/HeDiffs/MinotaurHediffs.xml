@@ -181,12 +181,39 @@
 	<hediffClass>HediffWithComps</hediffClass>
     <description>Pawn has been affected by the Midas touch and will drop gold upon death.</description>
     <descriptionHyperlinks><ThingDef>RBM_Midaspear</ThingDef></descriptionHyperlinks>
-    <comps>
+<!--     <comps>
       <li Class="HediffCompProperties_MidasTouch">
-	  <!-- Anything needed here? -->
       </li>
-    </comps>
+    </comps> -->
   </HediffDef>
+  
+  		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>10</disappearsAfterTicks>
+				<showRemainingTime>false</showRemainingTime>
+			</li>
+		</comps>
+		<injuryProps>
+			<painPerSeverity>0.0125</painPerSeverity>
+			<averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
+			<canMerge>false</canMerge>
+			<destroyedLabel>Destroyed</destroyedLabel>
+		</injuryProps>
+		<stages>
+			<li>
+				<minSeverity>0.1</minSeverity>
+				<becomeVisible>false</becomeVisible>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>Ringing</hediff>
+						<partsToAffect>
+							<li>Ear</li>
+						</partsToAffect>
+						<countToAffect>2</countToAffect>
+					</li>
+				</hediffGivers>
+			</li>
+		</stages>
 	
 	
 	

@@ -628,7 +628,7 @@
 		<label>midaspear</label>
 		<description>An obsidian weapon with a gold-encrusted spearhead. It's so long and heavy that only a Herculean pawn can equip it.</description>
 		<descriptionHyperlinks>
-			<GeneDef>RBM_Herculean</GeneDef>
+		<GeneDef>RBM_Herculean</GeneDef>
 		</descriptionHyperlinks>
 		<!-- Basic Data -->
 		<possessionCount>1</possessionCount>
@@ -704,6 +704,5 @@
 			</li>
 		</comps>
 	</ThingDef>
-	
 
 </Defs>
