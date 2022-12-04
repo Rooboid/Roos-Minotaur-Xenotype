@@ -9,41 +9,205 @@
 		<match Class="PatchOperationAdd">
 			<xpath>Defs/ThoughtDef[defName="GroinUncovered_Disapproved_Male"]/nullifyingGenes</xpath>
 			<value>
-			<li MayRequire="Ludeon.RimWorld.Biotech">RBM_UnguligradeLegs</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">RBM_UnguligradeLegs</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThoughtDef[defName="GroinUncovered_Disapproved_Social_Male"]/nullifyingGenes</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThoughtDef[defName="GroinUncovered_Disapproved_Social_Male"]/nullifyingGenes</xpath>
+			<value>
+				<li MayRequire="Ludeon.RimWorld.Biotech">RBM_UnguligradeLegs</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThoughtDef[defName="GroinOrChestUncovered_Disapproved_Male"]/nullifyingGenes</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThoughtDef[defName="GroinOrChestUncovered_Disapproved_Male"]/nullifyingGenes</xpath>
+			<value>
+				<li MayRequire="Ludeon.RimWorld.Biotech">RBM_UnguligradeLegs</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThoughtDef[defName="GroinOrChestUncovered_Disapproved_Social_Male"]/nullifyingGenes</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThoughtDef[defName="GroinOrChestUncovered_Disapproved_Social_Male"]/nullifyingGenes</xpath>
+			<value>
+				<li MayRequire="Ludeon.RimWorld.Biotech">RBM_UnguligradeLegs</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<!--Chunk Patches-->
+	<!--Makes all Vanilla Chunks equippable by Herculean pawns-->
+	
+	
+		<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="ChunkBase"]/thingClass</xpath>
+		<match Class="PatchOperationSetName">
+			<xpath>Defs/ThingDef[defName="ChunkBase"]/thingClass</xpath>
+			<name>ThingWithComps</name>
+		</match>
+	</Operation>
+	
+			<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="ChunkBase"]/statBases</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="ChunkBase"]/statBases</xpath>
+			<value>
+			<AccuracyTouch>0.45</AccuracyTouch>
+			<AccuracyShort>0.69</AccuracyShort>
+			<AccuracyMedium>0.87</AccuracyMedium>
+			<AccuracyLong>0.96</AccuracyLong>
 			</value>
 		</match>
 	</Operation>
 	
 		<Operation Class="PatchOperationConditional">
-		<xpath>Defs/ThoughtDef[defName="GroinUncovered_Disapproved_Social_Male"]/nullifyingGenes</xpath>
+		<xpath>Defs/ThingDef[defName="ChunkBase"]/equippedStatOffsets</xpath>
 		<match Class="PatchOperationAdd">
-			<xpath>Defs/ThoughtDef[defName="GroinUncovered_Disapproved_Social_Male"]/nullifyingGenes</xpath>
+			<xpath>Defs/ThingDef[defName="ChunkBase"]/equippedStatOffsets</xpath>
 			<value>
-			<li MayRequire="Ludeon.RimWorld.Biotech">RBM_UnguligradeLegs</li>
+			<MoveSpeed>-0.15</MoveSpeed>
+			</value>
+		</match>
+<!-- 				<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="ChunkBase"]</xpath>
+			<value>
+			<equippedStatOffsets>
+			<MoveSpeed>-0.05</MoveSpeed>
+			</equippedStatOffsets>
+			</value>
+		</nomatch> -->
+	</Operation>
+
+<!-- 				<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="ChunkBase"]</xpath>
+			<value>
+			<equippedStatOffsets>
+			<MoveSpeed>-0.05</MoveSpeed>
+			</equippedStatOffsets>
+			</value>
+		</nomatch> -->
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<!-- 	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="ChunkBase"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="ChunkBase"]</xpath>
+			<value>
+				<comps>
+					<li>
+						<compClass>CompEquippable</compClass>
+					</li>
+					<li Class="CompProperties_Explosive">
+						<explosiveRadius>7.8</explosiveRadius>
+						<explosiveDamageType>Bomb</explosiveDamageType>
+						<requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+					</li>
+					<li Class="CompProperties_Forbiddable"/>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="ChunkBase"]/comps</xpath>
+			<value>
+				<li>
+					<li>
+						<compClass>CompEquippable</compClass>
+					</li>
+					<li Class="CompProperties_Explosive">
+						<explosiveRadius>7.8</explosiveRadius>
+						<explosiveDamageType>Bomb</explosiveDamageType>
+						<requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+					</li>
+					<li Class="CompProperties_Forbiddable"/>
+				</li>
+			</value>
+		</match>
+	</Operation> -->
+	
+
+	
+<!-- 	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="ChunkBase"]/statBases</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="ChunkBase"]</xpath>
+			<value>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>-8</Beauty>
+			<Cleanliness>-2</Cleanliness>
+			<AccuracyTouch>0.45</AccuracyTouch>
+			<AccuracyShort>0.69</AccuracyShort>
+			<AccuracyMedium>0.87</AccuracyMedium>
+			<AccuracyLong>0.96</AccuracyLong>
+		</statBases>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="ChunkBase"]/statBases</xpath>
+			<value>
+			<AccuracyTouch>0.45</AccuracyTouch>
+			<AccuracyShort>0.69</AccuracyShort>
+			<AccuracyMedium>0.87</AccuracyMedium>
+			<AccuracyLong>0.96</AccuracyLong>
 			</value>
 		</match>
 	</Operation>
 	
-			<Operation Class="PatchOperationConditional">
-		<xpath>Defs/ThoughtDef[defName="GroinOrChestUncovered_Disapproved_Male"]/nullifyingGenes</xpath>
-		<match Class="PatchOperationAdd">
-			<xpath>Defs/ThoughtDef[defName="GroinOrChestUncovered_Disapproved_Male"]/nullifyingGenes</xpath>
+
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="ChunkBase"]/techLevel</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="ChunkBase"]</xpath>
 			<value>
-			<li MayRequire="Ludeon.RimWorld.Biotech">RBM_UnguligradeLegs</li>
+		<techLevel>Neolithic</techLevel>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="ChunkBase"]/techLevel</xpath>
+			<value>
+		<techLevel>Neolithic</techLevel>
 			</value>
 		</match>
 	</Operation>
 	
-				<Operation Class="PatchOperationConditional">
-		<xpath>Defs/ThoughtDef[defName="GroinOrChestUncovered_Disapproved_Social_Male"]/nullifyingGenes</xpath>
-		<match Class="PatchOperationAdd">
-			<xpath>Defs/ThoughtDef[defName="GroinOrChestUncovered_Disapproved_Social_Male"]/nullifyingGenes</xpath>
+
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="ChunkBase"]/equipmentType</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="ChunkBase"]</xpath>
 			<value>
-			<li MayRequire="Ludeon.RimWorld.Biotech">RBM_UnguligradeLegs</li>
+		<equipmentType>Primary</equipmentType>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="ChunkBase"]/equipmentType</xpath>
+			<value>
+			<equipmentType>Primary</equipmentType>
 			</value>
 		</match>
 	</Operation>
-	
-	
+	 -->
 	
 </Patch>

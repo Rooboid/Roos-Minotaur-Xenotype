@@ -95,25 +95,27 @@
 	</DamageDef>
 	
 		<!--====================== Mageia Damage (Gold) ======================-->
-	<!-- Used by the Tunbell. Causes BruiseSound hediff which causes ringing ears. Check HeDiff Defs for more details. -->
 	
 	<DamageDef ParentName="Flame">
 		<defName>Mageia_Gold</defName>
 		<label>gold</label>
-		<hediff>MidasTouch</hediff>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<deathMessage>{0} has been eradicated.</deathMessage>
+		<!-- <hediff>MidasTouch</hediff> -->
 		<externalViolence>true</externalViolence>
 		<defaultDamage>20</defaultDamage>
 		<canInterruptJobs>true</canInterruptJobs>
+		<!-- <combatLogRules>Damage_Terrify</combatLogRules> -->
 		<makesAnimalsFlee>true</makesAnimalsFlee>
 		<impactSoundType>Bullet</impactSoundType>
 		<armorCategory>Sharp</armorCategory>
-		<isRanged>false</isRanged>
+		<isRanged>true</isRanged>
 		<!-- Effects -->
-		<damageEffecter>Mageia_Effect_Sound</damageEffecter>
-		<explosionCellFleck>HerculeanFleckA</explosionCellFleck>
+		<damageEffecter>Mageia_Effect_Red</damageEffecter>
+		<explosionCellFleck>TerrorFleckLarge</explosionCellFleck>
 		<explosionColorCenter>(1, 1, 1)</explosionColorCenter>
 		<explosionColorEdge>(0.3, 0.70, 0.88, 0.05)</explosionColorEdge>
-		<soundExplosion>RBM_Tunbell_Fire</soundExplosion>
+		<soundExplosion>Explosion_Terrify</soundExplosion>
 	</DamageDef>
 
 	
