@@ -196,6 +196,57 @@
 	</HediffDef>
 
 
+<!-- Brand -->
+
+
+<!--   <RecipeDef ParentName="SurgeryFlesh">
+  <defName>BrandSurgery</defName>
+    <workerClass>Recipe_Surgery</workerClass>
+    <workAmount>500</workAmount>
+    <minAllowedAge>16</minAllowedAge>
+	<addsHediff>Brand</addsHediff>
+	<incompatibleWithHediffTags><li>Brand</li></incompatibleWithHediffTags>
+	<isViolation>true</isViolation>
+    <recipeUsers>
+      <li>Human</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter><categories><li>Medicine</li></categories></filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <HediffDef>
+    <defName>Brand</defName>
+    <label>branded</label>
+    <labelNoun>a brand scar</labelNoun>
+	<hediffClass>HediffWithComps</hediffClass>
+    <description>A scar in the shape of a motif, burned onto the skin with a branding iron.</description>
+	<displayWound>true</displayWound>
+    <stages>
+      <li>
+<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.15</SlaveSuppressionOffset>
+	  <SuppressionPower>-0.1</SuppressionPower>
+	  	  <painOffset>0.2</painOffset>
+      </li>
+    </stages>
+	    <comps>
+      <li Class="HediffCompProperties_GetsPermanent">
+        <permanentLabel>brand scar</permanentLabel>
+      </li>
+    </comps>
+	    <tags>
+      <li>Brand</li>
+    </tags>
+  </HediffDef> -->
+
 
 
 </Defs>
