@@ -490,7 +490,7 @@
     <children>
       <li>
         <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
-        <scale>1</scale>
+        <scale>1.5</scale>
         <positionRadius>0.5</positionRadius>
         <moteDef>Mote_CriticalHit</moteDef>
         <speed>0.2</speed>
