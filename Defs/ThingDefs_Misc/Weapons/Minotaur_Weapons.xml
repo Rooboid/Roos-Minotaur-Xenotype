@@ -373,7 +373,7 @@
 			<li>Melee</li>
 		</weaponClasses>
 		<tools>
-		<!-- Pawns will usually try to use the 'tool' with the highest DPS. Since critical hit is lower in power, pawns will use this significantly less than the other 'tools'. The extra CritHit damage isn't factored into their decision. -->
+			<!-- Pawns will usually try to use the 'tool' with the highest DPS. Since critical hit is lower in power, pawns will use this significantly less than the other 'tools'. The extra CritHit damage isn't factored into their decision. -->
 			<li>
 				<label>handle</label>
 				<capacities>
@@ -427,8 +427,8 @@
 	</ThingDef>
 	
 	
-		<!--Damacles: Rule Set -->
-		<!--TODO: Why isn't this working? -->
+	<!--Damacles: Rule Set -->
+	<!--TODO: Why isn't this working? -->
 	
 	<RulePackDef>
 		<defName>Damage_Crit</defName>
@@ -621,14 +621,14 @@
 		</comps>
 	</ThingDef>
 	
-		<!--====================== Midaspear ======================-->
+	<!--====================== Midaspear ======================-->
 	
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>RBM_Midaspear</defName>
 		<label>midaspear</label>
 		<description>An obsidian weapon with a gold-encrusted spearhead. It's so long and heavy that only a Herculean pawn can equip it.</description>
 		<descriptionHyperlinks>
-		<GeneDef>RBM_Herculean</GeneDef>
+			<GeneDef>RBM_Herculean</GeneDef>
 		</descriptionHyperlinks>
 		<!-- Basic Data -->
 		<possessionCount>1</possessionCount>
@@ -703,6 +703,100 @@
 				<minQualityForArtistic>Excellent</minQualityForArtistic>
 			</li>
 		</comps>
+	</ThingDef>
+	
+	<!--====================== Boulder ======================-->
+	
+	<ThingDef ParentName="BaseGun">
+		<defName>RBM_Boulder</defName>
+		<label>boulder</label>
+		<description>A massive boulder. Easy to come by, hard to lift, impossible to roll up a hill. Herculean pawns can throw these at foes for devastating damage.</description>
+		<descriptionHyperlinks>
+			<GeneDef>RBM_Herculean</GeneDef>
+		</descriptionHyperlinks>
+		<!-- Basic Data -->
+		<possessionCount>1</possessionCount>
+		<rotateInShelves>false</rotateInShelves>
+		<tickerType>Normal</tickerType>
+		<uiIconScale>0.8</uiIconScale>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/RBM_Boulder/RBM_Boulder</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<!-- Trading -->
+		<techLevel>Neolithic</techLevel>
+		<tradeTags>
+			<li>WeaponRanged</li>
+		</tradeTags>
+		<tradeNeverStack>false</tradeNeverStack>
+		<tradeability>Buyable</tradeability>
+		<!-- Obtaining -->
+		<recipeMaker IsNull="True"/>
+		<soundInteract>ChunkRock_Drop</soundInteract>
+		<relicChance>3</relicChance>
+		<smeltable>false</smeltable>
+		<thingSetMakerTags>
+			<li>SingleUseWeapon</li>
+		</thingSetMakerTags>
+		<!-- Battle Data -->
+		<statBases>
+			<Mass>5.2</Mass>
+			<MarketValue>750</MarketValue>
+			<AccuracyTouch>0.45</AccuracyTouch>
+			<AccuracyShort>0.69</AccuracyShort>
+			<AccuracyMedium>0.87</AccuracyMedium>
+			<AccuracyLong>0.96</AccuracyLong>
+			<RangedWeapon_Cooldown>1.65</RangedWeapon_Cooldown>
+			<MaxHitPoints>250</MaxHitPoints>
+			<RoyalFavorValue>2</RoyalFavorValue>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.05</MoveSpeed>
+		</equippedStatOffsets>
+		<weaponTags>
+			<li>HerculeanWeapon</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Ranged</li>
+			<li>RangedLight</li>
+		</weaponClasses>
+		<verbs>
+			<li>
+        <verbClass>Verb_ShootOneUse</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Proj_Chunk_Default</defaultProjectile>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <warmupTime>4.5</warmupTime>
+        <ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
+        <range>35.9</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>ThrowGrenade</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <onlyManualCast>true</onlyManualCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>14</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>melee</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>30</power>
+				<cooldownTime>8</cooldownTime>
+			</li>
+		</tools>
+		    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>7.8</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+      </li>
+    </comps>
 	</ThingDef>
 
 </Defs>
