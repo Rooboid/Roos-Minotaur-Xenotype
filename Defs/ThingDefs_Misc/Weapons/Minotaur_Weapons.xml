@@ -621,7 +621,7 @@
 		</comps>
 	</ThingDef>
 	
-		<!--====================== Tunbell ======================-->
+		<!--====================== Midaspear ======================-->
 	
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>RBM_Midaspear</defName>

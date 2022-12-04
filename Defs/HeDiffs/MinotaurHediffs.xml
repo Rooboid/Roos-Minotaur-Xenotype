@@ -173,4 +173,21 @@
 			<canMerge>false</canMerge>
 		</injuryProps>
 	</HediffDef>
+	
+	  <HediffDef>
+    <defName>MidasTouch</defName>
+    <label>midas touch</label>
+    <labelNoun>midas touch</labelNoun>
+    <description>Pawn has been affected by the Midas touch and will drop gold upon death.</description>
+    <descriptionHyperlinks><ThingDef>RBM_Midaspear</ThingDef></descriptionHyperlinks>
+    <comps>
+      <li Class="HediffCompProperties_MidasTouch">
+	  <!-- Anything needed here? -->
+      </li>
+    </comps>
+  </HediffDef>
+	
+	
+	
+	
 </Defs>
