@@ -14,7 +14,7 @@
 		<description>Abhorrent visions haunt the mind.</description>
 		<comps>
 			<li Class="HediffCompProperties_Disappears">
-				<disappearsAfterTicks>500~1700</disappearsAfterTicks>
+				<disappearsAfterTicks>5000</disappearsAfterTicks>
 				<showRemainingTime>false</showRemainingTime>
 			</li>
 			<li Class="HediffCompProperties_RemoveIfOtherHediff">
