@@ -178,6 +178,7 @@
     <defName>MidasTouch</defName>
     <label>midas touch</label>
     <labelNoun>midas touch</labelNoun>
+	<hediffClass>HediffWithComps</hediffClass>
     <description>Pawn has been affected by the Midas touch and will drop gold upon death.</description>
     <descriptionHyperlinks><ThingDef>RBM_Midaspear</ThingDef></descriptionHyperlinks>
     <comps>
