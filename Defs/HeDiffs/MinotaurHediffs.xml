@@ -174,17 +174,28 @@
 		</injuryProps>
 	</HediffDef>
 	
-	  <HediffDef>
-    <defName>MidasTouch</defName>
-    <label>midas touch</label>
-    <labelNoun>midas touch</labelNoun>
-	<hediffClass>HediffWithComps</hediffClass>
-    <description>Pawn has been affected by the Midas touch and will drop gold upon death.</description>
-    <descriptionHyperlinks><ThingDef>RBM_Midaspear</ThingDef></descriptionHyperlinks>
-<!--     <comps>
-      <li Class="HediffCompProperties_MidasTouch">
-      </li>
-    </comps> -->
-  </HediffDef>
+	<HediffDef>
+		<defName>MidasTouch</defName>
+		<label>midas touch</label>
+		<labelNoun>midas touch</labelNoun>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>Pawn has been affected by the Midas touch and will drop gold upon death.</description>
+		<descriptionHyperlinks><ThingDef>RBM_Midaspear</ThingDef></descriptionHyperlinks>
+		<comps>
+			<li Class="HediffCompProperties_MidasTouch">
+				<fleck>AcidCloud</fleck>
+				<moteCount>6</moteCount>
+				<moteOffsetRange>0.25~0.75</moteOffsetRange>
+				<filth>Filth_Slime</filth>
+				<sound>DeathAcidifier</sound>
+				<goldAmount>50</goldAmount>
+				<destroyBody>true</destroyBody>
+				<destroyItems>true</destroyItems>
+			</li>
+		</comps>
+	</HediffDef>
+
+
+
 
 </Defs>
