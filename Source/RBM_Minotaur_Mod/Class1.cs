@@ -12,53 +12,6 @@ namespace Rimworld
         public static DamageDef Terrified;
     }
 
-    /*
-[DefOf]
-public static class HediffDefOf
-{
-    public static HediffDef HeDiffTerrified;
-}
-
-
-public class JobGiver_FleeSeeingRed : ThinkNode_JobGiver
-{
-
-    protected override Job TryGiveJob(Pawn pawn)
-    {
-        for (int index = 0; index < this.hediffs.Count; index++)
-        {
-            if (pawn.health.hediffSet.HasHediff())
-            {
-                HediffStage curStage = this.hediffs[index].CurStage;
-                if (curStage != null)
-                {
-                    a *= curStage.hungerRateFactor;
-                }
-            }
-        }
-        {
-            return null;
-        }
-        pawn.jobs.StartJob(flee)
-
-        Thing enragedPawn = pawn.mindState.knownExploder;
-        if ((float)(pawn.Position - knownExploder.Position).LengthHorizontalSquared > 81f)
-        {
-            return null;
-        }
-        IntVec3 result;
-        if (!RCellFinder.TryFindDirectFleeDestination(knownExploder.Position, 9f, pawn, out result))
-        {
-            return null;
-        }
-        Job job = JobMaker.MakeJob(JobDefOf.Goto, result);
-        job.locomotionUrgency = LocomotionUrgency.Sprint;
-        return job;
-    }
-
-    public const float FleeDist = 9f;
-    */
-
     public class CompAbilityEffect_Terrify : CompAbilityEffect
     {
         public new CompProperties_AbilityTerrify Props
@@ -146,7 +99,8 @@ public class JobGiver_FleeSeeingRed : ThinkNode_JobGiver
 
             Thing thing = ThingMaker.MakeThing(ThingDefOf.Gold, null);
             thing.stackCount = Props.goldAmount;
-            GenPlace.TryPlaceThing(thing, base.Pawn.Position, base.Pawn.Map, ThingPlaceMode.Near, null, null, default(Rot4));
+            GenSpawn.Spawn(thing, base.Pawn.Position, base.Pawn.Map, WipeMode.VanishOrMoveAside);
+            //thing.Position = base.Pawn.Corpse.Position;
 
             if (this.Props.mote != null || this.Props.fleck != null)
             {
@@ -175,64 +129,6 @@ public class JobGiver_FleeSeeingRed : ThinkNode_JobGiver
             }
         }
 
-        /*
-        public new CorpseDestroy_NoReport()
-        {
-            if (pawn.ownership != null)
-            {
-                pawn.ownership.UnclaimAll();
-            }
-
-            if (pawn.equipment != null)
-            {
-                pawn.equipment.DestroyAllEquipment();
-            }
-
-            pawn.inventory.DestroyAll();
-            if (pawn.apparel != null)
-            {
-                pawn.apparel.DestroyAll();
-            }
-        }
-        
-
-        public void NoNotifyDestroy(DestroyMode mode = DestroyMode.Vanish)
-        {
-            Pawn pawn = null;
-            if (!Bugged)
-            {
-                pawn = InnerPawn;
-                NotifyColonistBar();
-                innerContainer.Clear();
-            }
-
-            base.Destroy(mode);
-            if (pawn != null)
-            {
-                if (pawn.ownership != null)
-                {
-                    pawn.ownership.UnclaimAll();
-                }
-                if (pawn.equipment != null)
-                {
-                    pawn.equipment.DestroyAllEquipment(DestroyMode.Vanish);
-                }
-                pawn.inventory.DestroyAll(DestroyMode.Vanish);
-                if (pawn.apparel != null)
-                {
-                    pawn.apparel.DestroyAll(DestroyMode.Vanish);
-                }
-                if (!PawnGenerator.IsBeingGenerated(pawn))
-                {
-                    Ideo ideo = pawn.Ideo;
-                    if (ideo == null)
-                    {
-                        return;
-                    }
-                }
-            }
-        }
-        */
         public override void Notify_PawnDied()
         {
             //Pawn.Ideo?.Notify_MemberDied(Pawn);
@@ -240,6 +136,7 @@ public class JobGiver_FleeSeeingRed : ThinkNode_JobGiver
 
             if (this.Props.destroyBody)
             {
+
                 base.Pawn.Corpse.DeSpawn(DestroyMode.Vanish);
 
                 Pawn.Corpse.InnerPawn = null;
@@ -259,9 +156,12 @@ public class JobGiver_FleeSeeingRed : ThinkNode_JobGiver
                     Pawn.apparel.DestroyAll();
                 }
             }
-            Pawn.Ideo?.RecacheColonistBelieverCount();
-            Pawn.Ideo?.RecachePrecepts();
+            //Pawn.Ideo?.RecacheColonistBelieverCount();
+            //Pawn.Ideo?.RecachePrecepts();
             Pawn.Ideo?.Notify_MemberCorpseDestroyed(Pawn);
+
+
+            
         }
 
     }

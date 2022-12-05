@@ -113,11 +113,7 @@
         <range>10</range>
         <mote>Mote_Danger</mote>
         <hideMoteWhenNotDrafted>false</hideMoteWhenNotDrafted>
-        <targetingParameters>
-          <canTargetPawns>true</canTargetPawns>
-		  <onlyTargetColonists>false</onlyTargetColonists>
-		  <mapObjectTargetsMustBeAutoAttackable>true</mapObjectTargetsMustBeAutoAttackable>
-        </targetingParameters>
+		<onlyPawnsInSameFaction>false</onlyPawnsInSameFaction>
         <hediff>HeDiffTerrified</hediff>
       </li>
 		</comps>
