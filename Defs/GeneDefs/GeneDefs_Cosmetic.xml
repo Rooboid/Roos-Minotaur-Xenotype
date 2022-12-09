@@ -211,19 +211,13 @@
 	<GeneDef>
 		<defName>RBM_UnguligradeLegs</defName>
 		<label>unguligrade legs</label>
-		<description>Carriers of this gene have sturdy, unguligrade legs with cloven hooves, perfect for hotfooting it out of trouble, but not-so-perfect for keeping the floor clean. The fur on their legs extends up to their stomachs, covering up their modesty.</description>
+		<description>Carriers of this gene are born with sturdy legs with cloven hooves. The fur on their legs extends up to their stomachs, covering up their modesty.</description>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>-1</biostatMet>
 		<displayCategory>Miscellaneous</displayCategory>
 		<displayOrderInCategory>330</displayOrderInCategory>
 		<iconPath>UI/GeneIcons/RBM_BovineLegs</iconPath>
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
-		<statOffsets>
-			<StaggerDurationFactor>-0.5</StaggerDurationFactor>
-			<MoveSpeed>0.2</MoveSpeed>
-			<FilthRate>1.3</FilthRate>
-			<MeleeDodgeChance>5</MeleeDodgeChance>
-		</statOffsets>
 		<symbolPack>
 			<prefixSymbols>
 				<li><symbol>faun</symbol></li>

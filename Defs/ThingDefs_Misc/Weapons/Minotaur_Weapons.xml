@@ -707,14 +707,14 @@
 	
 	<!--====================== Boulder ======================-->
 	
-	<ThingDef ParentName="BaseGun">
+<!-- 	<ThingDef ParentName="BaseGun">
 		<defName>RBM_Boulder</defName>
 		<label>boulder</label>
 		<description>A massive boulder. Easy to come by, hard to lift, impossible to roll up a hill. Herculean pawns can throw these at foes for devastating damage.</description>
 		<descriptionHyperlinks>
 			<GeneDef>RBM_Herculean</GeneDef>
 		</descriptionHyperlinks>
-		<!-- Basic Data -->
+		Basic Data
 		<possessionCount>1</possessionCount>
 		<rotateInShelves>false</rotateInShelves>
 		<tickerType>Normal</tickerType>
@@ -724,14 +724,14 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1</drawSize>
 		</graphicData>
-		<!-- Trading -->
+		Trading
 		<techLevel>Neolithic</techLevel>
 		<tradeTags>
 			<li>WeaponRanged</li>
 		</tradeTags>
 		<tradeNeverStack>false</tradeNeverStack>
 		<tradeability>Buyable</tradeability>
-		<!-- Obtaining -->
+		Obtaining
 		<recipeMaker IsNull="True"/>
 		<soundInteract>ChunkRock_Drop</soundInteract>
 		<relicChance>3</relicChance>
@@ -739,7 +739,7 @@
 		<thingSetMakerTags>
 			<li>SingleUseWeapon</li>
 		</thingSetMakerTags>
-		<!-- Battle Data -->
+		Battle Data
 		<statBases>
 			<Mass>5.2</Mass>
 			<MarketValue>750</MarketValue>
@@ -797,6 +797,6 @@
         <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
       </li>
     </comps>
-	</ThingDef>
+	</ThingDef> -->
 
 </Defs>

@@ -144,7 +144,6 @@
 	<!--====================== Earthshatter Damage ======================-->
 	<!-- Used by the Oxenammer. -->
 	
-	<!-- TODO: Fix the rocks only going in one direction and apply that to the crit effect-->
 	
 	<DamageDef ParentName="Flame">
 		<defName>Earthshatter</defName>
@@ -155,9 +154,7 @@
 		<externalViolence>true</externalViolence>
 		<defaultDamage>20</defaultDamage>
 		<canInterruptJobs>true</canInterruptJobs>
-		<!-- <combatLogRules>Damage_Terrify</combatLogRules> -->
 		<makesAnimalsFlee>true</makesAnimalsFlee>
-		<!-- <impactSoundType>ThumpCannon_Impact</impactSoundType> -->
 		<armorCategory>Blunt</armorCategory>
 		<isRanged>true</isRanged>
 		<!-- Effects -->
