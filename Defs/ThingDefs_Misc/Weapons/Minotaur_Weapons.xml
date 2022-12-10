@@ -7,7 +7,7 @@
 	<ThingDef ParentName="BaseWeaponNeolithic">
 		<defName>RBM_Bullslinger</defName>
 		<label>bullslinger</label>
-		<description>An ancient, obsidian bow of unknown origin, passed down by countless generations of minotaur. It fires blisteringly cold arrows, accurate enough to trim the nosehair of a pigskin from five acres away, providing that the user is absolutely focused. It is so heavy that only pawns with the Herculean gene may equip it.</description>
+		<description>An ancient, obsidian bow of unknown origin, passed down by countless generations of minotaur. It fires blisteringly cold arrows, accurate enough to trim the nosehair of a pigskin from five acres away. It is so heavy that only pawns with the Herculean gene may equip it.</description>
 		<descriptionHyperlinks>
 			<GeneDef>RBM_Herculean</GeneDef>
 		</descriptionHyperlinks>
@@ -23,7 +23,7 @@
 		<!-- Trading -->
 		<techLevel>Archotech</techLevel>
 		<tradeTags>
-			<li>ExoticMisc</li>
+			<li>HerculeanFabled</li>
 		</tradeTags>
 		<tradeNeverStack>true</tradeNeverStack>
 		<tradeability>Sellable</tradeability>
@@ -38,7 +38,7 @@
 		<!-- Battle Data -->
 		<statBases>
 			<Mass>5.2</Mass>
-			<MarketValue>750</MarketValue>
+			<MarketValue>2000</MarketValue>
 			<AccuracyTouch>0.45</AccuracyTouch>
 			<AccuracyShort>0.69</AccuracyShort>
 			<AccuracyMedium>0.87</AccuracyMedium>
@@ -141,7 +141,7 @@
 		<!-- Trading -->
 		<techLevel>Archotech</techLevel>
 		<tradeTags>
-			<li>ExoticMisc</li>
+			<li>HerculeanFabled</li>
 		</tradeTags>
 		<tradeNeverStack>true</tradeNeverStack>
 		<tradeability>Sellable</tradeability>
@@ -156,7 +156,7 @@
 		<!-- Battle Data -->
 		<statBases>
 			<Mass>7.5</Mass>
-			<MarketValue>1870</MarketValue>
+			<MarketValue>3500</MarketValue>
 			<AccuracyTouch>0.55</AccuracyTouch>
 			<AccuracyShort>0.67</AccuracyShort>
 			<AccuracyMedium>0.77</AccuracyMedium>
@@ -248,7 +248,7 @@
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>RBM_Labrys</defName>
 		<label>labrys</label>
-		<description>An oversized, obsidian axe known for it's significance in minotaur culture. Only pawns with the Herculean gene can equip it though, it's ridiculously heavy.</description>
+		<description>An oversized obsidian axe often seen as the linchpin of minotaur culture. Only pawns with the Herculean gene can equip it as it's ridiculously heavy.</description>
 		<descriptionHyperlinks>
 			<GeneDef>RBM_Herculean</GeneDef>
 		</descriptionHyperlinks>
@@ -264,7 +264,7 @@
 		<!-- Trading -->
 		<techLevel>Archotech</techLevel>
 		<tradeTags>
-			<li>ExoticMisc</li>
+			<li>HerculeanFabled</li>
 		</tradeTags>
 		<tradeNeverStack>true</tradeNeverStack>
 		<tradeability>Sellable</tradeability>
@@ -279,7 +279,7 @@
 		<!-- Battle Data -->
 		<statBases>
 			<Mass>20</Mass>
-			<MarketValue>930</MarketValue>
+			<MarketValue>2450</MarketValue>
 			<MaxHitPoints>250</MaxHitPoints>
 			<RoyalFavorValue>2</RoyalFavorValue>
 		</statBases>
@@ -326,7 +326,7 @@
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>RBM_Damacles</defName>
 		<label>damacles</label>
-		<description>A heavy, obsidian sword with many tales surrounding it in bovine cultures. In exchange for it's blinding attack speed and chance to land a critical hit during battle, you feel incredibly anxious just holding this cursed blade. Only pawns with the Herculean gene can equip it.</description>
+		<description>A heavy, obsidian sword with many tales surrounding it in certain cultures. In exchange for its blinding attack speed and chance to land a critical hit during battle, holding it brings an incredibly anxious feeling to the wielder. Only pawns with the Herculean gene can equip it.</description>
 		<descriptionHyperlinks>
 			<GeneDef>RBM_Herculean</GeneDef>
 		</descriptionHyperlinks>
@@ -342,7 +342,7 @@
 		<!-- Trading -->
 		<techLevel>Archotech</techLevel>
 		<tradeTags>
-			<li>ExoticMisc</li>
+			<li>HerculeanFabled</li>
 		</tradeTags>
 		<tradeNeverStack>true</tradeNeverStack>
 		<tradeability>Sellable</tradeability>
@@ -357,7 +357,7 @@
 		<!-- Battle Data -->
 		<statBases>
 			<Mass>5.6</Mass>
-			<MarketValue>530</MarketValue>
+			<MarketValue>1300</MarketValue>
 			<MaxHitPoints>250</MaxHitPoints>
 			<RoyalFavorValue>2</RoyalFavorValue>
 		</statBases>
@@ -460,7 +460,7 @@
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>RBM_Oxenammer</defName>
 		<label>oxenammer</label>
-		<description>A tyrannically imposing hammer, imposible for a baseline human to use. It's weight makes it exhausting to carry around, but it can crush bones into stardust in just one swing.</description>
+		<description>A tyrannically imposing hammer, impossible for a baseline human to use. Its weight makes it exhausting to carry around, but it can crush bones into stardust in just one swing.</description>
 		<descriptionHyperlinks>
 			<GeneDef>RBM_Herculean</GeneDef>
 		</descriptionHyperlinks>
@@ -476,7 +476,7 @@
 		<!-- Trading -->
 		<techLevel>Archotech</techLevel>
 		<tradeTags>
-			<li>ExoticMisc</li>
+			<li>HerculeanFabled</li>
 		</tradeTags>
 		<tradeNeverStack>true</tradeNeverStack>
 		<tradeability>Sellable</tradeability>
@@ -492,7 +492,7 @@
 		<!-- Battle Data -->
 		<statBases>
 			<Mass>25</Mass>
-			<MarketValue>1000</MarketValue>
+			<MarketValue>2580</MarketValue>
 			<MaxHitPoints>250</MaxHitPoints>
 			<RoyalFavorValue>2</RoyalFavorValue>
 		</statBases>
@@ -543,7 +543,7 @@
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>RBM_Tunbell</defName>
 		<label>tunbell</label>
-		<description>An obsidian staff that resembles a large tuning fork with a cowbell attached to it. It's shrill chimes can cause it's victims tinnitus. It's so heavy that only pawns with the Herculean trait can equip it.</description>
+		<description>An obsidian staff that resembles a large tuning fork with a cowbell attached to it. Its shrill chimes can cause it's victims to suffer with tinnitus. It's so heavy that only pawns with the Herculean trait can equip it.</description>
 		<descriptionHyperlinks>
 			<GeneDef>RBM_Herculean</GeneDef>
 		</descriptionHyperlinks>
@@ -559,7 +559,7 @@
 		<!-- Trading -->
 		<techLevel>Archotech</techLevel>
 		<tradeTags>
-			<li>ExoticMisc</li>
+			<li>HerculeanFabled</li>
 		</tradeTags>
 		<tradeNeverStack>true</tradeNeverStack>
 		<tradeability>Sellable</tradeability>
@@ -574,7 +574,7 @@
 		<!-- Battle Data -->
 		<statBases>
 			<Mass>9.5</Mass>
-			<MarketValue>530</MarketValue>
+			<MarketValue>1760</MarketValue>
 			<MaxHitPoints>250</MaxHitPoints>
 			<RoyalFavorValue>2</RoyalFavorValue>
 		</statBases>
@@ -626,7 +626,7 @@
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>RBM_Midaspear</defName>
 		<label>midaspear</label>
-		<description>An obsidian weapon with a gold-encrusted spearhead. It's so long and heavy that only a Herculean pawn can equip it.</description>
+		<description>An obsidian weapon with a gold-encrusted spearhead. An ancient fable describes this weapon as being able to turn its victims' corpses into gold. It's so long and heavy that only a Herculean pawn can equip it.</description>
 		<descriptionHyperlinks>
 			<GeneDef>RBM_Herculean</GeneDef>
 		</descriptionHyperlinks>
@@ -642,7 +642,7 @@
 		<!-- Trading -->
 		<techLevel>Archotech</techLevel>
 		<tradeTags>
-			<li>ExoticMisc</li>
+			<li>HerculeanFabled</li>
 		</tradeTags>
 		<tradeNeverStack>true</tradeNeverStack>
 		<tradeability>Sellable</tradeability>
@@ -657,7 +657,7 @@
 		<!-- Battle Data -->
 		<statBases>
 			<Mass>9.5</Mass>
-			<MarketValue>750</MarketValue>
+			<MarketValue>3500</MarketValue>
 			<MaxHitPoints>250</MaxHitPoints>
 			<RoyalFavorValue>2</RoyalFavorValue>
 		</statBases>
@@ -707,14 +707,14 @@
 	
 	<!--====================== Boulder ======================-->
 	
-	<ThingDef ParentName="BaseGun">
+<!-- 	<ThingDef ParentName="BaseGun">
 		<defName>RBM_Boulder</defName>
 		<label>boulder</label>
 		<description>A massive boulder. Easy to come by, hard to lift, impossible to roll up a hill. Herculean pawns can throw these at foes for devastating damage.</description>
 		<descriptionHyperlinks>
 			<GeneDef>RBM_Herculean</GeneDef>
 		</descriptionHyperlinks>
-		<!-- Basic Data -->
+		Basic Data
 		<possessionCount>1</possessionCount>
 		<rotateInShelves>false</rotateInShelves>
 		<tickerType>Normal</tickerType>
@@ -724,14 +724,14 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1</drawSize>
 		</graphicData>
-		<!-- Trading -->
+		Trading
 		<techLevel>Neolithic</techLevel>
 		<tradeTags>
 			<li>WeaponRanged</li>
 		</tradeTags>
 		<tradeNeverStack>false</tradeNeverStack>
 		<tradeability>Buyable</tradeability>
-		<!-- Obtaining -->
+		Obtaining
 		<recipeMaker IsNull="True"/>
 		<soundInteract>ChunkRock_Drop</soundInteract>
 		<relicChance>3</relicChance>
@@ -739,7 +739,7 @@
 		<thingSetMakerTags>
 			<li>SingleUseWeapon</li>
 		</thingSetMakerTags>
-		<!-- Battle Data -->
+		Battle Data
 		<statBases>
 			<Mass>5.2</Mass>
 			<MarketValue>750</MarketValue>
@@ -797,6 +797,6 @@
         <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
       </li>
     </comps>
-	</ThingDef>
+	</ThingDef> -->
 
 </Defs>

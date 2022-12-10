@@ -324,21 +324,11 @@
 	  	  	        <li>
         <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
 		<fleckDef>Fleck_EarthshatterRock</fleckDef>
-        <chancePerTick>0.25</chancePerTick>
+        <chancePerTick>0.05</chancePerTick>
+		<rotationRate>5~10</rotationRate>
 		<burstCount>1~3</burstCount>
         <scale>2.5</scale>
 		<positionRadius>0.5</positionRadius>
-        <angle>0~180</angle>
-        <speed>1</speed>
-      </li>
-	  	  	        <li>
-        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
-		<fleckDef>Fleck_EarthshatterRock</fleckDef>
-        <chancePerTick>0.25</chancePerTick>
-		<burstCount>1~3</burstCount>
-        <scale>2.5</scale>
-		<positionRadius>0.02</positionRadius>
-        <angle>0~360</angle>
         <speed>1</speed>
       </li>
 	  	  	        <li>

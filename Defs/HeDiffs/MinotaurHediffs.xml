@@ -103,7 +103,7 @@
 		<tendable>true</tendable>
 		<displayWound>false</displayWound>
 		<labelNounPretty>{0} in the {1}</labelNounPretty>
-		<description>Tend to this pawn soon to prevent permanent hearing loss.</description>
+		<description>Tend this soon to prevent permanent hearing loss.</description>
 		<comps>
 			<li Class="HediffCompProperties_TendDuration">
 				<severityPerDayTended>-500</severityPerDayTended>
@@ -135,7 +135,7 @@
 						<capacity>Hearing</capacity>
 						<setMax>0.5</setMax>
 					</li>
-				</capMods>
+				</capMods> <!-- TODO: Change HediffGiver_Random to not give a letter -->
 								<hediffGivers>
 					<li Class="HediffGiver_Random">
 						<hediff>HearingLoss</hediff>
@@ -143,6 +143,7 @@
 						<partsToAffect>
 							<li>Ear</li>
 						</partsToAffect>
+						<countToAffect>2</countToAffect>
 					</li>
 				</hediffGivers>
 			</li>
@@ -162,6 +163,7 @@
 						<partsToAffect>
 							<li>Ear</li>
 						</partsToAffect>
+						<countToAffect>2</countToAffect>
 					</li>
 				</hediffGivers>
 			</li>
@@ -194,59 +196,49 @@
 			</li>
 		</comps>
 	</HediffDef>
+	
+		<!--====================== Unguligrade Legs ======================-->
+	<!-- Given to pawns with the according gene. -->
+	<!-- TODO: Replace legs with these -->
+	
+  <!-- Cloven Hoof -->
 
-
-<!-- Brand -->
-
-
-<!--   <RecipeDef ParentName="SurgeryFlesh">
-  <defName>BrandSurgery</defName>
-    <workerClass>Recipe_Surgery</workerClass>
-    <workAmount>500</workAmount>
-    <minAllowedAge>16</minAllowedAge>
-	<addsHediff>Brand</addsHediff>
-	<incompatibleWithHediffTags><li>Brand</li></incompatibleWithHediffTags>
-	<isViolation>true</isViolation>
-    <recipeUsers>
-      <li>Human</li>
-    </recipeUsers>
-    <ingredients>
-      <li>
-        <filter><categories><li>Medicine</li></categories></filter>
-        <count>2</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <categories>
-        <li>Medicine</li>
-      </categories>
-    </fixedIngredientFilter>
-  </RecipeDef>
-
-  <HediffDef>
-    <defName>Brand</defName>
-    <label>branded</label>
-    <labelNoun>a brand scar</labelNoun>
-	<hediffClass>HediffWithComps</hediffClass>
-    <description>A scar in the shape of a motif, burned onto the skin with a branding iron.</description>
-	<displayWound>true</displayWound>
-    <stages>
-      <li>
-<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.15</SlaveSuppressionOffset>
-	  <SuppressionPower>-0.1</SuppressionPower>
-	  	  <painOffset>0.2</painOffset>
-      </li>
-    </stages>
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>UnguligradeLegPart</defName>
+    <label>unguligrade leg</label>
+    <labelNoun>an unguligrade leg</labelNoun>
+    <description>An unguligrade leg with a cloven hoof, perfect for hotfooting it out of trouble, but not-so-perfect for keeping the floor clean.</description>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1</partEfficiency>
+    </addedPartProps>
 	    <comps>
-      <li Class="HediffCompProperties_GetsPermanent">
-        <permanentLabel>brand scar</permanentLabel>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>hoof</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>8</power>
+            <cooldownTime>2</cooldownTime>
+            <soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+            <soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+          </li>
+        </tools>
       </li>
     </comps>
-	    <tags>
-      <li>Brand</li>
-    </tags>
-  </HediffDef> -->
-
-
+	    <stages>
+      <li>
+        <minSeverity>0</minSeverity>
+		<statOffsets>
+			<StaggerDurationFactor>-0.5</StaggerDurationFactor>
+			<MoveSpeed>0.2</MoveSpeed>
+			<FilthRate>1.3</FilthRate>
+			<MeleeDodgeChance>5</MeleeDodgeChance>
+		</statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
 
 </Defs>
