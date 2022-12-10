@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-	<!-- Cosmetic -->
+		<!--====================== Cosmetic Genes ======================-->
 
 	<!-- Bovine Ears -->
 
@@ -79,7 +79,7 @@
 		<defName>RBM_BovineHead</defName>
 		<label>bovine head</label>
 		<labelShortAdj>bovine</labelShortAdj>
-		<description>Carriers of this gene possess a bovine head. They will oppose eating beef.</description>
+		<description>Carriers of this gene possess a bovine head. They don't enjoy the thought of consuming beef.</description>
 		<iconPath>UI/GeneIcons/RBM_BovineHead</iconPath>
 		<biostatMet>1</biostatMet>
 		<displayCategory>Miscellaneous</displayCategory>
@@ -111,15 +111,13 @@
             </thoughtsAsIngredient>
           </li>
         </extraThoughtsFromIngestion>  -->
-		<statOffsets>
-			<ComfyTemperatureMin>-3</ComfyTemperatureMin>
-			<EatingSpeed>0.5</EatingSpeed>
-		</statOffsets>
-		<missingGeneRomanceChanceFactor>0.5</missingGeneRomanceChanceFactor>
+		<missingGeneRomanceChanceFactor>0.7</missingGeneRomanceChanceFactor>
 		<!-- NoseRing -->
 		<graphicData>
 			<graphicPaths>
 				<li>Things/Pawn/Humanlike/Markings/Head_NoseRing/Ring</li>
+				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
+				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
 				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
 			</graphicPaths>
 			<visibleNorth>false</visibleNorth>
@@ -149,7 +147,7 @@
 		<defName>RBM_EarthySkin</defName>
 		<label>earthy skin</label>
 		<labelShortAdj>earthen</labelShortAdj>
-		<description>Carriers of this gene possess skin of mild and earthy colours. Some carriers also possess bovine markings on their faces.</description>
+		<description>Carriers of this gene possess skin of mild and earthy colours, oftentimes with patchy markings on their faces.</description>
 		<randomBrightnessFactor>5</randomBrightnessFactor>
 		<skinColorOverride>(200, 140, 110)</skinColorOverride>
 		<displayOrderInCategory>99</displayOrderInCategory>
@@ -159,6 +157,8 @@
 				<li>Things/Pawn/Humanlike/Markings/Head_Bull2/Bull2</li>
 				<li>Things/Pawn/Humanlike/Markings/Head_Bull3/Bull3</li>
 				<li>Things/Pawn/Humanlike/Markings/Head_Bull4/Bull4</li>
+				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
+				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
 				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
 			</graphicPaths>
 			<visibleNorth>false</visibleNorth>
@@ -178,12 +178,13 @@
 		</symbolPack>
 	</GeneDef>
 	
-	<!-- Vocal -->
+			<!--====================== Vocal Genes ======================-->
+			<!-- Bovine Voice-->
 	
 	<GeneDef ParentName="GeneVoiceBase">
 		<defName>RBM_BovineVoice</defName>
 		<label>bovine voice</label>
-		<description>Holders of this gene will often moo when pleased or exhale a loud puff from their nostrils when agitated.</description>
+		<description>Carriers of this gene will moo when pleased and exhale a loud puff from their nostrils when agitated.</description>
 		<iconPath>UI/GeneIcons/RBM_BovineVoice</iconPath>
 		<displayOrderInCategory>135</displayOrderInCategory>
 		<soundCall>RBM_BovineCall</soundCall>
@@ -206,12 +207,13 @@
 		</symbolPack>
 	</GeneDef>
 	
-	<!-- Functional -->
+			<!--====================== Functional Genes ======================-->
+			<!-- Unguligrade Legs-->
 		
 	<GeneDef>
 		<defName>RBM_UnguligradeLegs</defName>
 		<label>unguligrade legs</label>
-		<description>Carriers of this gene are born with sturdy legs with cloven hooves. The fur on their legs extends up to their stomachs, covering up their modesty.</description>
+		<description>Carriers of this gene are born with sturdy legs and cloven hooves. The fur on their legs extends up to their stomachs, covering up their modesty.</description>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>-1</biostatMet>
 		<displayCategory>Miscellaneous</displayCategory>
@@ -234,12 +236,14 @@
 			</suffixSymbols>
 		</symbolPack>
 	</GeneDef>
+	
+	<!-- Herculean-->
   
 	<GeneDef>
 		<defName>RBM_Herculean</defName>
 		<label>Herculean</label>
-		<description>Carriers of this gene stand at over seven feet tall. Their herculean bodies prove them to be excellent pack mules, formidable foes in battle, and rather painful lovers. There are some weapons that only Herculean pawns can lift.</description>
-		<biostatCpx>1</biostatCpx>
+		<description>Carriers of this gene are staggeringly strong. Their herculean bodies prove them to be excellent pack mules, formidable foes in battle and rather painful lovers. There are some weapons that only Herculean pawns can equip.</description>
+		<biostatCpx>2</biostatCpx>
 		<biostatMet>-3</biostatMet>
 		<displayCategory>Miscellaneous</displayCategory>
 		<displayOrderInCategory>580</displayOrderInCategory>
@@ -276,11 +280,13 @@
 		</symbolPack>
 	</GeneDef>
 	
+	<!-- Bovine Temper-->
+	
 		<GeneDef>
 		<defName>RBM_BovineTemper</defName>
 		<label>Bovine Temper</label>
-		<description>Carriers of this gene have a short temper and become frighteneningly aggressive when enraged. They possess the ability to 'See Red', a horrifying state of outrage wherin the user unleashes devastating attacks upon anyone who stands in their way.</description>
-		<biostatCpx>0</biostatCpx>
+		<description>Carriers of this gene have a short temper and become frighteneningly aggressive when enraged. They possess the ability to 'See Red', a horrifying state of outrage that can only be ended by total exhaustion or death.</description>
+		<biostatCpx>1</biostatCpx>
 		<biostatMet>1</biostatMet>
 		<displayCategory>Ability</displayCategory>
 		<displayOrderInCategory>200</displayOrderInCategory>
@@ -315,13 +321,14 @@
 		</symbolPack>
 	</GeneDef>
 
+	<!-- Ruminant Stomach-->
 	<!-- TODO -->
 	
 	<GeneDef>
 		<defName>RBM_RuminantStomach</defName>
 		<label>ruminant stomach</label>
-		<description>Carriers of this gene grow an intricate digestive system- slightly more hardy than a multi-fold stomach. They can digest plant matter and haygrass with ease.</description>
-		<biostatCpx>2</biostatCpx>
+		<description>Carriers of this gene have an intricate digestive system that is slightly more hardy than a multi-fold stomach. They can digest plant matter and haygrass with ease.</description>
+		<biostatCpx>3</biostatCpx>
 		<biostatMet>-2</biostatMet>
 		<displayCategory>Miscellaneous</displayCategory>
 		<displayOrderInCategory>11</displayOrderInCategory>
@@ -349,12 +356,13 @@
 		</symbolPack>
 	</GeneDef>
   
+	<!-- Estrous Cycle-->
 	<!-- TODO -->
 	
 	<GeneDef ParentName="FertilityBase">
 		<defName>RBM_EstrousCycle</defName>
 		<label>estrous cycle</label>
-		<description>Carriers of this gene go into heat during Aprimay. While in heat, they will crave lovin' more than usual and become more emotionally capricious.</description>
+		<description>Carriers of this gene go into heat during Aprimay. While in heat, they will crave lovin' more than usual at the cost of also feeling more aggressive.</description>
 		<biostatCpx>1</biostatCpx>
 		<minAgeActive>18</minAgeActive>
 		<displayCategory>Reproduction</displayCategory>
@@ -374,67 +382,5 @@
 			</suffixSymbols>
 		</symbolPack>
 	</GeneDef>
-	
-	<GeneDef>
-		<defName>RBM_Lactation</defName>
-		<label>lactation</label>
-		<description>Carriers of this gene naturally produce milk.</description>
-		<biostatCpx>1</biostatCpx>
-		<biostatMet>-1</biostatMet>
-		<minAgeActive>18</minAgeActive>
-		<exclusionTags>
-			<li>Lactation</li>
-		</exclusionTags>
-		<displayCategory>Miscellaneous</displayCategory>
-		<displayOrderInCategory>600</displayOrderInCategory>
-		<iconPath>UI/GeneIcons/RBM_Lactation</iconPath>
-		<iconColor>(0.75, 0.75, 0.75)</iconColor>
-		<randomChosen>true</randomChosen>
-		<symbolPack>
-			<prefixSymbols>
-				<li><symbol>mam</symbol></li>
-				<li><symbol>estro</symbol></li>
-				<li><symbol>galacta</symbol></li>
-			</prefixSymbols>
-			<suffixSymbols>
-				<li><symbol>gogue</symbol></li>
-				<li><symbol>mary</symbol></li>
-				<li><symbol>der</symbol></li>
-			</suffixSymbols>
-		</symbolPack>
-	</GeneDef>
-  
-	
-	<GeneDef>
-		<defName>RBM_IncreasedLactation</defName>
-		<label>increased lactation</label>
-		<description>Carriers of this gene produce a large amount of milk, but experience pain if unmilked for more than a day.</description>
-		<biostatCpx>2</biostatCpx>
-		<biostatMet>-2</biostatMet>
-		<minAgeActive>18</minAgeActive>
-		<exclusionTags>
-			<li>Lactation</li>
-		</exclusionTags>
-		<displayCategory>Miscellaneous</displayCategory>
-		<displayOrderInCategory>601</displayOrderInCategory>
-		<iconPath>UI/GeneIcons/RBM_IncreasedLactation</iconPath>
-		<iconColor>(0.75, 0.75, 0.75)</iconColor>
-		<randomChosen>true</randomChosen>
-		<symbolPack>
-			<prefixSymbols>
-				<li><symbol>giga</symbol></li>
-				<li><symbol>estro</symbol></li>
-				<li><symbol>ud</symbol></li>
-			</prefixSymbols>
-			<suffixSymbols>
-				<li><symbol>gogue</symbol></li>
-				<li><symbol>mary</symbol></li>
-				<li><symbol>der</symbol></li>
-			</suffixSymbols>
-		</symbolPack>
-	</GeneDef>
-
-
- 
 
 </Defs>
