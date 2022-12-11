@@ -2,7 +2,7 @@
 <Defs>
 
 	<!--====================== Terror Damage ======================-->
-	<!-- Inflicted unto pawns by the ability SeeRed -->
+	<!-- Inflicted upon pawns by the ability SeeRed -->
 	
 		<DamageDef ParentName="Flame">
 		<defName>Terrified</defName>
@@ -107,15 +107,14 @@
 		<canInterruptJobs>true</canInterruptJobs>
 		<!-- <combatLogRules>Damage_Terrify</combatLogRules> -->
 		<makesAnimalsFlee>true</makesAnimalsFlee>
-		<impactSoundType>Bullet</impactSoundType>
+		<impactSoundType>Slice</impactSoundType>
 		<armorCategory>Sharp</armorCategory>
-		<isRanged>true</isRanged>
 		<!-- Effects -->
 		<damageEffecter>Mageia_Effect_Red</damageEffecter>
 		<explosionCellFleck>TerrorFleckLarge</explosionCellFleck>
 		<explosionColorCenter>(1, 1, 1)</explosionColorCenter>
 		<explosionColorEdge>(0.3, 0.70, 0.88, 0.05)</explosionColorEdge>
-		<soundExplosion>Explosion_Terrify</soundExplosion>
+		<soundExplosion>Explosion_Stun</soundExplosion>
 	</DamageDef>
 
 	

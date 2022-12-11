@@ -10,7 +10,7 @@
 	<isFighter>True</isFighter>
 	<label>minotaur guardian</label>
 	<maxGenerationAge>50</maxGenerationAge>
-    <combatPower>150</combatPower>
+    <combatPower>120</combatPower>
 	<invNutrition>3.55</invNutrition>
     <chemicalAddictionChance>0.03</chemicalAddictionChance>
     <initialWillRange>2~3</initialWillRange>
@@ -23,7 +23,7 @@
         </categories>
       </li>
     </backstoryFiltersOverride>
-    <weaponMoney>3000~20000</weaponMoney>
+    <weaponMoney>1000~15000</weaponMoney>
 	<weaponTags>
       <li>HerculeanWeapon</li>
     </weaponTags>
@@ -63,88 +63,177 @@
       </xenotypeChances>
     </xenotypeSet>
 	    <inventoryOptions>
-      <skipChance>0.9</skipChance>
+      <skipChance>0.7</skipChance>
       <subOptionsChooseOne>
         <li>
-          <thingDef>Gold</thingDef>
-          <countRange>10</countRange>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>3</countRange>
         </li>
       </subOptionsChooseOne>
     </inventoryOptions>
 	<gearHealthRange>1</gearHealthRange>
   </PawnKindDef>
   
-    <!-- Protected Monarch -->
-
-    <PawnKindDef>
-    <defName>RBM_ProtectedMonarch</defName>
+      <PawnKindDef ParentName="ImperialTrooperBase">
+    <defName>RBM_MinotaurGuardianLow</defName>
 	<race>Human</race>
 	<defaultFactionType>Ancients</defaultFactionType>
-	<minTitleRequired>Knight</minTitleRequired>
-	<isFighter>False</isFighter>
-	<label>protected monarch</label>
+	<isFighter>True</isFighter>
+	<label>trooper</label>
 	<maxGenerationAge>50</maxGenerationAge>
-    <combatPower>85</combatPower>
+    <combatPower>80</combatPower>
 	<invNutrition>3.55</invNutrition>
-    <chemicalAddictionChance>0.08</chemicalAddictionChance>
-    <initialWillRange>0~3</initialWillRange>
-	<initialResistanceRange>10~36</initialResistanceRange>
+    <chemicalAddictionChance>0.05</chemicalAddictionChance>
+    <initialWillRange>2~3</initialWillRange>
+	<initialResistanceRange>5~18</initialResistanceRange>
     <itemQuality>Excellent</itemQuality>
 	    <backstoryFiltersOverride>
       <li>
         <categories>
-          <li>ImperialRoyal</li>
-		  <li>ProtectedMonarch</li>
+          <li>Minotaur</li>
+		  <li>ImperialFighter</li>
+		  <li>ImperialCommon</li>
         </categories>
       </li>
     </backstoryFiltersOverride>
+    <weaponMoney>3000~8000</weaponMoney>
+	<weaponTags>
+      <li>IndustrialGunAdvanced</li>
+	  <li>UltratechMelee</li>
+    </weaponTags>
     <apparelColor>(35,35,35)</apparelColor>
-    <apparelRequired>
-      <li>Apparel_Pants</li>
-      <li>Apparel_Cape</li>
-	  <li>Apparel_CollarShirt</li>
-    </apparelRequired>
-	<apparelAllowHeadgearChance>75</apparelAllowHeadgearChance>
+	<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
     <specificApparelRequirements Inherit="False">
       <li>
         <bodyPartGroup>FullHead</bodyPartGroup>
-        <color>(240,35,47)</color>
+        <color>(220,220,220)</color>
       </li>
       <li>
         <bodyPartGroup>Torso</bodyPartGroup>
-        <apparelLayer>Shell</apparelLayer>
-        <stuff>Hyperweave</stuff>
-		<color>(160,38,38)</color>
-      </li>
-	        <li>
-        <bodyPartGroup>Torso</bodyPartGroup>
         <apparelLayer>OnSkin</apparelLayer>
-        <stuff>Hyperweave</stuff>
-		<color>(135,165,170)</color>
+		<color>(35,35,35)</color>
       </li>
       <li>
         <bodyPartGroup>Legs</bodyPartGroup>
         <apparelLayer>OnSkin</apparelLayer>
-        <stuff>Cloth</stuff>
-		<color>(35,35,35)</color>
+		<color>(220,220,220)</color>
       </li>
     </specificApparelRequirements>
-	<techHediffsChance>0.25</techHediffsChance>
-    <techHediffsMoney>1000~2500</techHediffsMoney>
-    <techHediffsMaxAmount>2</techHediffsMaxAmount>
     <techHediffsDisallowTags>
       <li>PainCauser</li>
     </techHediffsDisallowTags>
     <useFactionXenotypes>false</useFactionXenotypes>
     <xenotypeSet>
       <xenotypeChances>
-        <Genie MayRequire="Ludeon.RimWorld.Biotech">0.3</Genie>
-		<Highmate MayRequire="Ludeon.RimWorld.Biotech">0.3</Highmate>
+        <RBM_Minotaur MayRequire="Ludeon.RimWorld.Biotech">1</RBM_Minotaur>
       </xenotypeChances>
     </xenotypeSet>
 	<gearHealthRange>1</gearHealthRange>
   </PawnKindDef>
   
+        <PawnKindDef ParentName="TribalPenitentBase">
+    <defName>RBM_MinotaurFeral</defName>
+	<race>Human</race>
+	<defaultFactionType>TribeSavage</defaultFactionType>
+	<isFighter>True</isFighter>
+	<label>feral minotaur</label>
+	<maxGenerationAge>60</maxGenerationAge>
+    <combatPower>50</combatPower>
+	<invNutrition>0</invNutrition>
+    <chemicalAddictionChance>0.08</chemicalAddictionChance>
+    <initialWillRange>2~3</initialWillRange>
+	<initialResistanceRange>5~18</initialResistanceRange>
+    <itemQuality>Normal</itemQuality>
+	    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>MinotaurWild</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <weaponMoney>3000~8000</weaponMoney>
+	<weaponTags>
+      <li>NeolithicMeleeAdvanced</li>
+    </weaponTags>
+    <apparelColor>(35,35,35)</apparelColor>
+	<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+    <apparelRequired>
+    </apparelRequired>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet>
+      <xenotypeChances>
+        <RBM_Minotaur MayRequire="Ludeon.RimWorld.Biotech">1</RBM_Minotaur>
+      </xenotypeChances>
+    </xenotypeSet>
+	<gearHealthRange>1</gearHealthRange>
+  </PawnKindDef>
+  
+    <!-- Protected Monarch -->
+
+<PawnKindDef>
+	<defName>RBM_ProtectedMonarch</defName>
+	<race>Human</race>
+	<defaultFactionType>Ancients</defaultFactionType>
+	<minTitleRequired>Knight</minTitleRequired>
+	<trader>true</trader>
+	<combatPower>20</combatPower>
+	<label>protected monarch</label>
+	<invNutrition>3.55</invNutrition>
+	<chemicalAddictionChance>0.08</chemicalAddictionChance>
+	<initialWillRange>0~3</initialWillRange>
+	<initialResistanceRange>10~36</initialResistanceRange>
+	<itemQuality>Excellent</itemQuality>
+	<backstoryFiltersOverride>
+		<li>
+			<categories>
+				<li>ProtectedMonarch</li>
+			</categories>
+		</li>
+	</backstoryFiltersOverride>
+	<apparelColor>(35,35,35)</apparelColor>
+	<apparelRequired>
+		<li>Apparel_Pants</li>
+		<li>Apparel_Cape</li>
+		<li>Apparel_CollarShirt</li>
+	</apparelRequired>
+	<specificApparelRequirements Inherit="False">
+		<li>
+			<bodyPartGroup>FullHead</bodyPartGroup>
+			<color>(240,35,47)</color>
+		</li>
+		<li>
+			<bodyPartGroup>Torso</bodyPartGroup>
+			<apparelLayer>Shell</apparelLayer>
+			<color>(160,38,38)</color>
+		</li>
+		<li>
+			<bodyPartGroup>Torso</bodyPartGroup>
+			<apparelLayer>OnSkin</apparelLayer>
+			<color>(135,165,170)</color>
+		</li>
+		<li>
+			<bodyPartGroup>Legs</bodyPartGroup>
+			<apparelLayer>OnSkin</apparelLayer>
+			<color>(35,35,35)</color>
+		</li>
+	</specificApparelRequirements>
+	<techHediffsChance>0.25</techHediffsChance>
+	<techHediffsMoney>1000~2500</techHediffsMoney>
+	<techHediffsMaxAmount>2</techHediffsMaxAmount>
+	<techHediffsDisallowTags>
+		<li>PainCauser</li>
+	</techHediffsDisallowTags>
+	<useFactionXenotypes>false</useFactionXenotypes>
+	<xenotypeSet>
+		<xenotypeChances>
+			<Genie MayRequire="Ludeon.RimWorld.Biotech">0.3</Genie>
+			<Highmate MayRequire="Ludeon.RimWorld.Biotech">0.3</Highmate>
+			<Baseliner MayRequire="Ludeon.RimWorld.Biotech">0.4</Baseliner>
+		</xenotypeChances>
+	</xenotypeSet>
+	<gearHealthRange>1</gearHealthRange>
+</PawnKindDef>
+
     <!-- Minotaur Marauder -->
 	
 	    <PawnKindDef ParentName="PirateBase" Name="PirateKindBase">
@@ -152,6 +241,20 @@
 	<race>Human</race>
 	<label>minotaur marauder</label>
 	<defaultFactionType>Pirate</defaultFactionType>
+		<backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>Minotaur</li>
+		  <li>MinotaurWild</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+		<useFactionXenotypes>false</useFactionXenotypes>
+	    <xenotypeSet>
+      <xenotypeChances>
+        <RBM_Minotaur MayRequire="Ludeon.RimWorld.Biotech">1</RBM_Minotaur>
+      </xenotypeChances>
+    </xenotypeSet>
 	<isFighter>True</isFighter>
     <combatPower>65</combatPower>
     <maxGenerationAge>65</maxGenerationAge>
@@ -179,8 +282,8 @@
       <skipChance>0.95</skipChance>
       <subOptionsChooseOne>
         <li>
-          <thingDef>Meat_Human</thingDef>
-          <countRange>25</countRange>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>2</countRange>
         </li>
       </subOptionsChooseOne>
     </inventoryOptions>
@@ -201,7 +304,6 @@
 		<color>(35,35,35)</color>
       </li>
     </specificApparelRequirements>
-
   </PawnKindDef>
   
       <!-- Minotaur Fighter -->

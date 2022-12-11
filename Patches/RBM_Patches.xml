@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-	<!--Groin Patches (Now THAT sounds funny out of content)-->
-	<!--Pawns with Unguligrade Legs won't recieve a debuff for having an uncovered groin-->
+	<!--============================== Unguligrade Legs - Patches ============================-->
+	<!--Pawns with unguligrade legs won't recieve a debuff for having an uncovered groin-->
+	
+	<!--No GroinUncovered_Disapproved_Male thought when pawns have unguligrade legs-->
 	
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThoughtDef[defName="GroinUncovered_Disapproved_Male"]/nullifyingGenes</xpath>
@@ -14,6 +16,8 @@
 		</match>
 	</Operation>
 	
+		<!--No GroinUncovered_Disapproved_Social_Male thought when pawns have unguligrade legs-->
+	
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThoughtDef[defName="GroinUncovered_Disapproved_Social_Male"]/nullifyingGenes</xpath>
 		<match Class="PatchOperationAdd">
@@ -23,6 +27,8 @@
 			</value>
 		</match>
 	</Operation>
+	
+	<!--No GroinOrChestUncovered_Disapproved_Male thought when pawns have unguligrade legs-->
 	
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThoughtDef[defName="GroinOrChestUncovered_Disapproved_Male"]/nullifyingGenes</xpath>
@@ -34,6 +40,8 @@
 		</match>
 	</Operation>
 	
+	<!--No GroinOrChestUncovered_Disapproved_Social_Male thought when pawns have unguligrade legs-->
+	
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThoughtDef[defName="GroinOrChestUncovered_Disapproved_Social_Male"]/nullifyingGenes</xpath>
 		<match Class="PatchOperationAdd">
@@ -44,591 +52,11 @@
 		</match>
 	</Operation>
 	
-	<!--Chunk Patches-->
-	<!-- Makes all Vanilla Chunks equippable by Herculean pawns -->
-	
-	
-	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/ThingDef[@Name="ChunkBase"]/thingClass</xpath>
-		<match Class="PatchOperationReplace">
-			<xpath>Defs/ThingDef[@Name="ChunkBase"]/thingClass</xpath>
-			<value>
-				<thingClass>ThingWithComps</thingClass>
-			</value>
-		</match>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[@Name="ChunkBase"]</xpath>
-			<value>
-				<thingClass>ThingWithComps</thingClass>
-			</value>
-		</nomatch>
-	</Operation>
-	
-	<!--Give ChunkBase accuracy values-->
-	
-	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/ThingDef[@Name="ChunkBase"]/statBases</xpath>
-		<match Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[@Name="ChunkBase"]/statBases</xpath>
-			<value>
-				<AccuracyTouch>0.45</AccuracyTouch>
-				<AccuracyShort>0.69</AccuracyShort>
-				<AccuracyMedium>0.87</AccuracyMedium>
-				<AccuracyLong>0.96</AccuracyLong>
-			</value>
-		</match>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[@Name="ChunkBase"]</xpath>
-			<value>
-				<statBases>
-					<MaxHitPoints>300</MaxHitPoints>
-					<Flammability>0</Flammability>
-					<Beauty>-8</Beauty>
-					<Cleanliness>-2</Cleanliness>
-				</statBases>
-			</value>
-		</nomatch>
-	</Operation>
-	
-	<!--Give ChunkBase equippedstatoffset values-->
-	
-	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/ThingDef[@Name="ChunkBase"]/equippedStatOffsets</xpath>
-		<match Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[@Name="ChunkBase"]/equippedStatOffsets</xpath>
-			<value>
-				<MoveSpeed>-0.15</MoveSpeed>
-			</value>
-		</match>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[@Name="ChunkBase"]</xpath>
-			<value>
-				<equippedStatOffsets>
-					<MoveSpeed>-0.05</MoveSpeed>
-				</equippedStatOffsets>
-			</value>
-		</nomatch>
-	</Operation>
-	
-	
-	<!--Give ChunkBase comp values-->
-	
-	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/ThingDef[@Name="ChunkBase"]/comps</xpath>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[@Name="ChunkBase"]</xpath>
-			<value>
-				<comps>
-					<li>
-						<compClass>CompEquippable</compClass>
-					</li>
-					<li Class="CompProperties_Explosive">
-						<explosiveRadius>7.8</explosiveRadius>
-						<explosiveDamageType>Bomb</explosiveDamageType>
-						<requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
-					</li>
-					<li Class="CompProperties_Forbiddable"/>
-				</comps>
-			</value>
-		</nomatch>
-		<match Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[@Name="ChunkBase"]/comps</xpath>
-			<value>
-				<li>
-					<compClass>CompEquippable</compClass>
-				</li>
-				<li Class="CompProperties_Explosive">
-					<explosiveRadius>7.8</explosiveRadius>
-					<explosiveDamageType>Bomb</explosiveDamageType>
-					<requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
-				</li>
-				<li Class="CompProperties_Forbiddable"/>
-			</value>
-		</match>
-	</Operation>
-		
-	<!--Give ChunkBase tech level-->
-	
-	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/ThingDef[@Name="ChunkBase"]/techLevel</xpath>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[@Name="ChunkBase"]</xpath>
-			<value>
-				<techLevel>Neolithic</techLevel>
-			</value>
-		</nomatch>
-		<match Class="PatchOperationReplace">
-			<xpath>Defs/ThingDef[@Name="ChunkBase"]/techLevel</xpath>
-			<value>
-				<techLevel>Neolithic</techLevel>
-			</value>
-		</match>
-	</Operation>
-	
-	<!--Give ChunkBase equipment type-->
-	
-	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/ThingDef[@Name="ChunkBase"]/equipmentType</xpath>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[@Name="ChunkBase"]</xpath>
-			<value>
-				<equipmentType>Primary</equipmentType>
-			</value>
-		</nomatch>
-		<match Class="PatchOperationReplace">
-			<xpath>Defs/ThingDef[@Name="ChunkBase"]/equipmentType</xpath>
-			<value>
-				<equipmentType>Primary</equipmentType>
-			</value>
-		</match>
-	</Operation>
-	
-	<!--Give ChunkBase ticker type-->
-	
-	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/ThingDef[@Name="ChunkBase"]/tickerType</xpath>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[@Name="ChunkBase"]</xpath>
-			<value>
-				<tickerType>Normal</tickerType>
-			</value>
-		</nomatch>
-		<match Class="PatchOperationReplace">
-			<xpath>Defs/ThingDef[@Name="ChunkBase"]/tickerType</xpath>
-			<value>
-				<tickerType>Normal</tickerType>
-			</value>
-		</match>
-	</Operation>
-	
-	<!--Give ChunkBase Sound-->
-	
-	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/ThingDef[@Name="ChunkBase"]/soundInteract</xpath>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[@Name="ChunkBase"]</xpath>
-			<value>
-				<soundInteract>ChunkRock_Drop</soundInteract>
-			</value>
-		</nomatch>
-		<match Class="PatchOperationReplace">
-			<xpath>Defs/ThingDef[@Name="ChunkBase"]/soundInteract</xpath>
-			<value>
-				<soundInteract>ChunkRock_Drop</soundInteract>
-			</value>
-		</match>
-	</Operation>
-	
-	<!--Give ChunkBase WeaponTags-->
-	
-	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/ThingDef[@Name="ChunkBase"]/weaponTags</xpath>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[@Name="ChunkBase"]</xpath>
-			<value>
-				<weaponTags>
-					<li>HerculeanWeapon</li>
-				</weaponTags>
-			</value>
-		</nomatch>
-		<match Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[@Name="ChunkBase"]/weaponTags</xpath>
-			<value>
-				<li>HerculeanWeapon</li>
-			</value>
-		</match>
-	</Operation>
-	
-	<!--Give ChunkBase WeaponClasses-->
-	
-	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/ThingDef[@Name="ChunkBase"]/weaponClasses</xpath>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[@Name="ChunkBase"]</xpath>
-			<value>
-				<weaponClasses>
-					<li>Ranged</li>
-					<li>RangedLight</li>
-				</weaponClasses>
-			</value>
-		</nomatch>
-		<match Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[@Name="ChunkBase"]/weaponTags</xpath>
-			<value>
-				<li>Ranged</li>
-				<li>RangedLight</li>
-			</value>
-		</match>
-	</Operation>
-	
-	<!--Give ChunkBase WeaponClasses-->
-	
-	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/ThingDef[@Name="ChunkBase"]/tools</xpath>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[@Name="ChunkBase"]</xpath>
-			<value>
-				<tools>
-					<li>
-						<label>melee</label>
-						<capacities>
-							<li>Blunt</li>
-						</capacities>
-						<power>22.5</power>
-						<cooldownTime>8</cooldownTime>
-					</li>
-				</tools>
-			</value>
-		</nomatch>
-		<match Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[@Name="ChunkBase"]/weaponTags</xpath>
-			<value>
-				<li>
-					<label>melee</label>
-					<capacities>
-						<li>Blunt</li>
-					</capacities>
-					<power>22.5</power>
-					<cooldownTime>8</cooldownTime>
-				</li>
-			</value>
-		</match>
-	</Operation>
-	
-	
-	<!--Give ChunkBase WeaponClasses-->
-	
-	
-	<!--Steel Chunk-->
-	
-	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/ThingDef[defName="ChunkSlagSteel"]/verbs</xpath>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[defName="ChunkSlagSteel"]</xpath>
-			<value>
-				<verbs>
-					<li>
-						<verbClass>Verb_ShootOneUse</verbClass>
-						<hasStandardCommand>true</hasStandardCommand>
-						<defaultProjectile>Proj_Chunk_Steel</defaultProjectile>
-						<forcedMissRadius>2.9</forcedMissRadius>
-						<warmupTime>4.5</warmupTime>
-						<ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
-						<range>15.6</range>
-						<burstShotCount>1</burstShotCount>
-						<soundCast>ThrowGrenade</soundCast>
-						<soundCastTail>GunTail_Heavy</soundCastTail>
-						<onlyManualCast>true</onlyManualCast>
-						<targetParams>
-							<canTargetLocations>true</canTargetLocations>
-						</targetParams>
-						<muzzleFlashScale>14</muzzleFlashScale>
-					</li>
-				</verbs>
-			</value>
-		</nomatch>
-		<match Class="PatchOperationReplace">
-			<xpath>Defs/ThingDef[defName="ChunkSlagSteel"]/verbs</xpath>
-			<value>
-				<verbs>
-					<li>
-						<verbClass>Verb_ShootOneUse</verbClass>
-						<hasStandardCommand>true</hasStandardCommand>
-						<defaultProjectile>Proj_Chunk_Steel</defaultProjectile>
-						<forcedMissRadius>2.9</forcedMissRadius>
-						<warmupTime>4.5</warmupTime>
-						<ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
-						<range>15.6</range>
-						<burstShotCount>1</burstShotCount>
-						<soundCast>ThrowGrenade</soundCast>
-						<soundCastTail>GunTail_Heavy</soundCastTail>
-						<onlyManualCast>true</onlyManualCast>
-						<targetParams>
-							<canTargetLocations>true</canTargetLocations>
-						</targetParams>
-						<muzzleFlashScale>14</muzzleFlashScale>
-					</li>
-				</verbs>
-			</value>
-		</match>
-	</Operation>
-	
-	<!--Sandstone-->
-	
-	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/ThingDef[defName="ChunkSandstone"]/verbs</xpath>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[defName="ChunkSandstone"]</xpath>
-			<value>
-				<verbs>
-					<li>
-						<verbClass>Verb_ShootOneUse</verbClass>
-						<hasStandardCommand>true</hasStandardCommand>
-						<defaultProjectile>Proj_Chunk_Sandstone</defaultProjectile>
-						<forcedMissRadius>2.9</forcedMissRadius>
-						<warmupTime>4.5</warmupTime>
-						<ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
-						<range>15.6</range>
-						<burstShotCount>1</burstShotCount>
-						<soundCast>ThrowGrenade</soundCast>
-						<soundCastTail>GunTail_Heavy</soundCastTail>
-						<onlyManualCast>true</onlyManualCast>
-						<targetParams>
-							<canTargetLocations>true</canTargetLocations>
-						</targetParams>
-						<muzzleFlashScale>14</muzzleFlashScale>
-					</li>
-				</verbs>
-			</value>
-		</nomatch>
-		<match Class="PatchOperationReplace">
-			<xpath>Defs/ThingDef[defName="ChunkSandstone"]/verbs</xpath>
-			<value>
-				<verbs>
-					<li>
-						<verbClass>Verb_ShootOneUse</verbClass>
-						<hasStandardCommand>true</hasStandardCommand>
-						<defaultProjectile>Proj_Chunk_Sandstone</defaultProjectile>
-						<forcedMissRadius>2.9</forcedMissRadius>
-						<warmupTime>4.5</warmupTime>
-						<ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
-						<range>15.6</range>
-						<burstShotCount>1</burstShotCount>
-						<soundCast>ThrowGrenade</soundCast>
-						<soundCastTail>GunTail_Heavy</soundCastTail>
-						<onlyManualCast>true</onlyManualCast>
-						<targetParams>
-							<canTargetLocations>true</canTargetLocations>
-						</targetParams>
-						<muzzleFlashScale>14</muzzleFlashScale>
-					</li>
-				</verbs>
-			</value>
-		</match>
-	</Operation>
-	
-	<!--Sanstone-->
-	
-	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/ThingDef[defName="ChunkGranite"]/verbs</xpath>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[defName="ChunkGranite"]</xpath>
-			<value>
-				<verbs>
-					<li>
-						<verbClass>Verb_ShootOneUse</verbClass>
-						<hasStandardCommand>true</hasStandardCommand>
-						<defaultProjectile>Proj_Chunk_Granite</defaultProjectile>
-						<forcedMissRadius>2.9</forcedMissRadius>
-						<warmupTime>4.5</warmupTime>
-						<ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
-						<range>15.6</range>
-						<burstShotCount>1</burstShotCount>
-						<soundCast>ThrowGrenade</soundCast>
-						<soundCastTail>GunTail_Heavy</soundCastTail>
-						<onlyManualCast>true</onlyManualCast>
-						<targetParams>
-							<canTargetLocations>true</canTargetLocations>
-						</targetParams>
-						<muzzleFlashScale>14</muzzleFlashScale>
-					</li>
-				</verbs>
-			</value>
-		</nomatch>
-		<match Class="PatchOperationReplace">
-			<xpath>Defs/ThingDef[defName="ChunkGranite"]/verbs</xpath>
-			<value>
-				<verbs>
-					<li>
-						<verbClass>Verb_ShootOneUse</verbClass>
-						<hasStandardCommand>true</hasStandardCommand>
-						<defaultProjectile>Proj_Chunk_Granite</defaultProjectile>
-						<forcedMissRadius>2.9</forcedMissRadius>
-						<warmupTime>4.5</warmupTime>
-						<ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
-						<range>15.6</range>
-						<burstShotCount>1</burstShotCount>
-						<soundCast>ThrowGrenade</soundCast>
-						<soundCastTail>GunTail_Heavy</soundCastTail>
-						<onlyManualCast>true</onlyManualCast>
-						<targetParams>
-							<canTargetLocations>true</canTargetLocations>
-						</targetParams>
-						<muzzleFlashScale>14</muzzleFlashScale>
-					</li>
-				</verbs>
-			</value>
-		</match>
-	</Operation>
-	
-	<!--Limestone-->
-	
-	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/ThingDef[defName="ChunkLimestone"]/verbs</xpath>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[defName="ChunkLimestone"]</xpath>
-			<value>
-				<verbs>
-					<li>
-						<verbClass>Verb_ShootOneUse</verbClass>
-						<hasStandardCommand>true</hasStandardCommand>
-						<defaultProjectile>Proj_Chunk_Limestone</defaultProjectile>
-						<forcedMissRadius>2.9</forcedMissRadius>
-						<warmupTime>4.5</warmupTime>
-						<ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
-						<range>15.6</range>
-						<burstShotCount>1</burstShotCount>
-						<soundCast>ThrowGrenade</soundCast>
-						<soundCastTail>GunTail_Heavy</soundCastTail>
-						<onlyManualCast>true</onlyManualCast>
-						<targetParams>
-							<canTargetLocations>true</canTargetLocations>
-						</targetParams>
-						<muzzleFlashScale>14</muzzleFlashScale>
-					</li>
-				</verbs>
-			</value>
-		</nomatch>
-		<match Class="PatchOperationReplace">
-			<xpath>Defs/ThingDef[defName="ChunkLimestone"]/verbs</xpath>
-			<value>
-				<verbs>
-					<li>
-						<verbClass>Verb_ShootOneUse</verbClass>
-						<hasStandardCommand>true</hasStandardCommand>
-						<defaultProjectile>Proj_Chunk_Limestone</defaultProjectile>
-						<forcedMissRadius>2.9</forcedMissRadius>
-						<warmupTime>4.5</warmupTime>
-						<ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
-						<range>15.6</range>
-						<burstShotCount>1</burstShotCount>
-						<soundCast>ThrowGrenade</soundCast>
-						<soundCastTail>GunTail_Heavy</soundCastTail>
-						<onlyManualCast>true</onlyManualCast>
-						<targetParams>
-							<canTargetLocations>true</canTargetLocations>
-						</targetParams>
-						<muzzleFlashScale>14</muzzleFlashScale>
-					</li>
-				</verbs>
-			</value>
-		</match>
-	</Operation>
-	
-	<!--Limestone-->
-	
-	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/ThingDef[defName="ChunkSlate"]/verbs</xpath>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[defName="ChunkSlate"]</xpath>
-			<value>
-				<verbs>
-					<li>
-						<verbClass>Verb_ShootOneUse</verbClass>
-						<hasStandardCommand>true</hasStandardCommand>
-						<defaultProjectile>Proj_Chunk_Slate</defaultProjectile>
-						<forcedMissRadius>2.9</forcedMissRadius>
-						<warmupTime>4.5</warmupTime>
-						<ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
-						<range>15.6</range>
-						<burstShotCount>1</burstShotCount>
-						<soundCast>ThrowGrenade</soundCast>
-						<soundCastTail>GunTail_Heavy</soundCastTail>
-						<onlyManualCast>true</onlyManualCast>
-						<targetParams>
-							<canTargetLocations>true</canTargetLocations>
-						</targetParams>
-						<muzzleFlashScale>14</muzzleFlashScale>
-					</li>
-				</verbs>
-			</value>
-		</nomatch>
-		<match Class="PatchOperationReplace">
-			<xpath>Defs/ThingDef[defName="ChunkSlate"]/verbs</xpath>
-			<value>
-				<verbs>
-					<li>
-						<verbClass>Verb_ShootOneUse</verbClass>
-						<hasStandardCommand>true</hasStandardCommand>
-						<defaultProjectile>Proj_Chunk_Slate</defaultProjectile>
-						<forcedMissRadius>2.9</forcedMissRadius>
-						<warmupTime>4.5</warmupTime>
-						<ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
-						<range>15.6</range>
-						<burstShotCount>1</burstShotCount>
-						<soundCast>ThrowGrenade</soundCast>
-						<soundCastTail>GunTail_Heavy</soundCastTail>
-						<onlyManualCast>true</onlyManualCast>
-						<targetParams>
-							<canTargetLocations>true</canTargetLocations>
-						</targetParams>
-						<muzzleFlashScale>14</muzzleFlashScale>
-					</li>
-				</verbs>
-			</value>
-		</match>
-	</Operation>
-	
-	<!--Limestone-->
-	
-	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/ThingDef[defName="ChunkMarble"]/verbs</xpath>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[defName="ChunkMarble"]</xpath>
-			<value>
-				<verbs>
-					<li>
-						<verbClass>Verb_ShootOneUse</verbClass>
-						<hasStandardCommand>true</hasStandardCommand>
-						<defaultProjectile>Proj_Chunk_Marble</defaultProjectile>
-						<forcedMissRadius>2.9</forcedMissRadius>
-						<warmupTime>4.5</warmupTime>
-						<ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
-						<range>15.6</range>
-						<burstShotCount>1</burstShotCount>
-						<soundCast>ThrowGrenade</soundCast>
-						<soundCastTail>GunTail_Heavy</soundCastTail>
-						<onlyManualCast>true</onlyManualCast>
-						<targetParams>
-							<canTargetLocations>true</canTargetLocations>
-						</targetParams>
-						<muzzleFlashScale>14</muzzleFlashScale>
-					</li>
-				</verbs>
-			</value>
-		</nomatch>
-		<match Class="PatchOperationReplace">
-			<xpath>Defs/ThingDef[defName="ChunkMarble"]/verbs</xpath>
-			<value>
-				<verbs>
-					<li>
-						<verbClass>Verb_ShootOneUse</verbClass>
-						<hasStandardCommand>true</hasStandardCommand>
-						<defaultProjectile>Proj_Chunk_Marble</defaultProjectile>
-						<forcedMissRadius>2.9</forcedMissRadius>
-						<warmupTime>4.5</warmupTime>
-						<ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
-						<range>15.6</range>
-						<burstShotCount>1</burstShotCount>
-						<soundCast>ThrowGrenade</soundCast>
-						<soundCastTail>GunTail_Heavy</soundCastTail>
-						<onlyManualCast>true</onlyManualCast>
-						<targetParams>
-							<canTargetLocations>true</canTargetLocations>
-						</targetParams>
-						<muzzleFlashScale>14</muzzleFlashScale>
-					</li>
-				</verbs>
-			</value>
-		</match>
-	</Operation>
-	
-	
-	<!--PawnKind Patches-->
-	<!--Patches related to generating minotaur PawnKinds-->
-	
+<!--============================== Apparel - Patches ============================-->
+	<!-- Unless you have Britannic Rim - Core installed, this patch adds a tailcoat to the game. If Britannic Rim is installed, we'll use the tailcoat introduced by that mod instead. -->	
 	
 	<!--Add Tailcoat-->
+	
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Rooboid.Britannic.Core</li>
@@ -708,6 +136,11 @@
 		</nomatch>
 	</Operation>
 
+	<!--============================== DLC Apparel - Patches ============================-->
+	<!-- If you have the correct Rimworld DLC, certain PawnKinds will spawn with apparel exclusive to that DLC. -->
+	
+	<!--Add Royalty apparel to Minotaur Guardian (High)-->
+
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Royalty</li>
@@ -724,6 +157,8 @@
 			</value>
 		</match>
 	</Operation>
+	
+	<!--Add Ideology apparel to Minotaur Guardian (High)-->
 
 	<Operation Class="PatchOperationFindMod">
 		<mods>
@@ -736,6 +171,23 @@
 			</value>
 		</match>
 	</Operation>
+	
+	<!--Add Ideology apparel to Minotaur Feral-->
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Ideology</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/PawnKindDef[defName="RBM_MinotaurFeral"]/apparelRequired</xpath>
+			<value>
+				<li>Apparel_Collar</li>
+				<li>Apparel_BodyStrap</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<!--Add Royalty apparel to protected monarchs-->
 
 	<Operation Class="PatchOperationFindMod">
 		<mods>
@@ -753,59 +205,11 @@
 			</value>
 		</match>
 	</Operation>
-
-	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/FactionDef[defName="Pirate"]/pawnGroupMakers</xpath>
-		<match Class="PatchOperationAdd">
-			<xpath>Defs/FactionDef[defName="Pirate"]/pawnGroupMakers</xpath>
-			<value>
-				<li>
-					<kindDef>Combat</kindDef>
-					<commonality>80</commonality>
-					<options>
-						<RBM_MinotaurMarauder>10</RBM_MinotaurMarauder>
-						<Drifter>10</Drifter>
-						<Thrasher>3</Thrasher>
-						<Scavenger>10</Scavenger>
-						<Pirate>10</Pirate>
-						<Grenadier_EMP>0.25</Grenadier_EMP>
-						<Grenadier_Smoke>0.25</Grenadier_Smoke>
-						<Grenadier_Destructive>2</Grenadier_Destructive>
-						<Mercenary_Gunner>10</Mercenary_Gunner>
-						<Mercenary_Heavy>6</Mercenary_Heavy>
-						<Mercenary_Slasher>3</Mercenary_Slasher>
-						<Mercenary_Sniper>7</Mercenary_Sniper>
-						<Mercenary_Elite>10</Mercenary_Elite>
-						<PirateBoss>5</PirateBoss>
-					</options>
-				</li>
-			</value>
-		</match>
-	</Operation>
 	
-	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/FactionDef[defName="OutlanderFactionBase"]/pawnGroupMakers</xpath>
-		<match Class="PatchOperationAdd">
-			<xpath>Defs/FactionDef[defName="OutlanderFactionBase"]/pawnGroupMakers</xpath>
-			<value>
-				<li>
-					<kindDef>Combat</kindDef>
-					<options>
-						<RBM_MinotaurFighter>7</RBM_MinotaurFighter>
-						<Town_Guard>10</Town_Guard>
-						<Grenadier_Destructive>1.5</Grenadier_Destructive>
-						<Mercenary_Slasher>7</Mercenary_Slasher>
-						<Mercenary_Gunner>5</Mercenary_Gunner>
-						<Mercenary_Elite>10</Mercenary_Elite>
-						<Town_Councilman>10</Town_Councilman>
-					</options>
-				</li>
-			</value>
-		</match>
-	</Operation>
+	<!--============================== Faction Xenotype - Patches ============================-->
+	<!-- Adds the minotaur to the potential xenos spotted in each faction. Alter these values if you want them to be more or less common. -->
 	
-	<!--Faction-->
-	<!--Adds Minotaurs to Xenotype Spawns-->
+	<!--Adds minotaur to outlander factions-->
 	
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/FactionDef[defName="OutlanderFactionBase"]/xenotypeSet/xenotypeChances</xpath>
@@ -816,6 +220,8 @@
 			</value>
 		</match>
 	</Operation>
+	
+	<!--Adds minotaur to pirate factions-->
 	
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/FactionDef[defName="PirateBandBase"]/xenotypeSet/xenotypeChances</xpath>
@@ -832,6 +238,8 @@
 			</value>
 		</match>
 	</Operation>
+	
+	<!--Adds minotaur to tribal (rough) factions-->
 	
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/FactionDef[defName="TribeRough"]/xenotypeSet/xenotypeChances</xpath>
@@ -853,6 +261,20 @@
 		</nomatch>
 	</Operation>
 	
+	<!--Adds minotaur to the empire faction (if the royalty DLC is installed)-->
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/FactionDef[defName="Empire"]</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/FactionDef[defName="Empire"]/xenotypeSet/xenotypeChances</xpath>
+			<value>
+				<RBM_Minotaur MayRequire="Ludeon.RimWorld.Biotech">0.05</RBM_Minotaur>
+			</value>
+		</match>
+	</Operation>
+	
+	<!--Adds minotaur to the pool of possible pawns used for the 'wild man' event-->
+	
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/PawnKindDef[defName="WildMan"]/xenotypeSet/xenotypeChances</xpath>
 		<match Class="PatchOperationAdd">
@@ -873,41 +295,158 @@
 		</nomatch>
 	</Operation>
 	
+	<!--============================== PawnKind Spawns - Patches ============================-->
+	<!-- PawnKinds added by this mod will be added to the spawn pools of certain raids. -->
+	
+	<!--Creates a new trade caravan for the empire faction, in which minotaur guardians with herculean weapons may accompany them-->
+	
 	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/PawnKindDef[defName="WildMan"]/xenotypeSet/xenotypeChances</xpath>
+		<xpath>Defs/FactionDef[defName="Empire"]/pawnGroupMakers</xpath>
 		<match Class="PatchOperationAdd">
-			<xpath>Defs/PawnKindDef[defName="WildMan"]/xenotypeSet/xenotypeChances</xpath>
+			<xpath>Defs/FactionDef[defName="Empire"]/pawnGroupMakers</xpath>
 			<value>
-				<RBM_Minotaur MayRequire="Ludeon.RimWorld.Biotech">0.08</RBM_Minotaur>
-			</value>
-		</match>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/PawnKindDef[defName="WildMan"]</xpath>
-			<value>
-				<xenotypeSet>
-					<xenotypeChances>
-						<RBM_Minotaur MayRequire="Ludeon.RimWorld.Biotech">0.08</RBM_Minotaur>
-					</xenotypeChances>
-				</xenotypeSet>
-			</value>
-		</nomatch>
-	</Operation>
-	
-	
-	
-	
-	
-		<Operation Class="PatchOperationConditional">
-		<xpath>Defs/TraderKindDef[defName="Orbital_BulkGoods"]/stockGenerators</xpath>
-		<match Class="PatchOperationAdd">
-			<xpath>Defs/TraderKindDef[defName="Orbital_BulkGoods"]/stockGenerators</xpath>
-			<value>
-				<li Class="StockGenerator_BuyTradeTag"><tag>HerculeanFabled</tag></li>
+				<li>
+					<kindDef>Trader</kindDef>
+					<traders>
+						<RBM_ProtectedMonarch>1</RBM_ProtectedMonarch>
+					</traders>
+					<carriers>
+						<Muffalo>6</Muffalo>
+						<Alpaca>2</Alpaca>
+						<Elephant>1</Elephant>
+					</carriers>
+					<guards>
+						<RBM_MinotaurGuardianHigh>3</RBM_MinotaurGuardianHigh>
+						<RBM_MinotaurGuardianLow>10</RBM_MinotaurGuardianLow>
+						<Empire_Fighter_Trooper>1</Empire_Fighter_Trooper>
+						<Empire_Fighter_Janissary>0.05</Empire_Fighter_Janissary>
+					</guards>
+				</li>
 			</value>
 		</match>
 	</Operation>
+	
+	<!--Adds minotaur with herculean weapons to empire raids-->
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/FactionDef[defName="Empire"]/pawnGroupMakers</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/FactionDef[defName="Empire"]/pawnGroupMakers/li[2]/options</xpath>
+			<value>
+				<RBM_MinotaurGuardianHigh>0.5</RBM_MinotaurGuardianHigh>
+				<RBM_MinotaurGuardianLow>1</RBM_MinotaurGuardianLow>
+			</value>
+		</match>
+	</Operation>
+	
+	<!--Adds minotaur with herculean weapons to empire settlement defences-->
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/FactionDef[defName="OutlanderFactionBase"]/pawnGroupMakers</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/FactionDef[defName="OutlanderFactionBase"]/pawnGroupMakers/li[4]/options</xpath>
+			<value>
+				<RBM_MinotaurGuardianHigh>0.5</RBM_MinotaurGuardianHigh>
+			</value>
+		</match>
+	</Operation>
+	
+	<!--Adds minotaur to outlander raids-->
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/FactionDef[defName="OutlanderFactionBase"]/pawnGroupMakers</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/FactionDef[defName="OutlanderFactionBase"]/pawnGroupMakers/li[1]/options</xpath>
+			<value>
+				<RBM_MinotaurGuardianHigh>0.1</RBM_MinotaurGuardianHigh>
+			</value>
+		</match>
+	</Operation>
+	
+	<!--Adds minotaur to outlander raids-->
 
-
-
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/FactionDef[defName="OutlanderFactionBase"]/pawnGroupMakers</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/FactionDef[defName="OutlanderFactionBase"]/pawnGroupMakers/li[2]</xpath>
+			<value>
+				<li>
+					<kindDef>Combat</kindDef>
+					<options>
+						<RBM_MinotaurFighter>1</RBM_MinotaurFighter>
+						<RBM_MinotaurGuardianHigh>0.2</RBM_MinotaurGuardianHigh>
+					</options>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<!--Adds minotaur to outlander settlement defences-->
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/FactionDef[defName="OutlanderFactionBase"]/pawnGroupMakers</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/FactionDef[defName="OutlanderFactionBase"]/pawnGroupMakers/li[4]</xpath>
+			<value>
+				<li>
+					<kindDef>Combat</kindDef>
+					<options>
+						<RBM_MinotaurFighter>3</RBM_MinotaurFighter>
+						<RBM_MinotaurGuardianHigh>0.4</RBM_MinotaurGuardianHigh>
+					</options>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<!--Adds feral minotaur to tribal raids-->
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/FactionDef[defName="TribeBase"]/pawnGroupMakers</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/FactionDef[defName="TribeBase"]/pawnGroupMakers/li[3]/options</xpath>
+			<value>
+				<RBM_MinotaurFeral>0.4</RBM_MinotaurFeral>
+			</value>
+		</match>
+	</Operation>
+	
+	<!--Adds feral minotaur to pirate raids-->
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/FactionDef[defName="Pirate"]/pawnGroupMakers</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/FactionDef[defName="Pirate"]/pawnGroupMakers/li[2]/options</xpath>
+			<value>
+				<RBM_MinotaurFeral>1</RBM_MinotaurFeral>
+			</value>
+		</match>
+	</Operation>
+	
+	<!--Adds feral minotaur and minotaur marauder to pirate raids-->
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/FactionDef[defName="Pirate"]/pawnGroupMakers</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/FactionDef[defName="Pirate"]/pawnGroupMakers/li[4]/options</xpath>
+			<value>
+				<RBM_MinotaurFeral>0.5</RBM_MinotaurFeral>
+				<RBM_MinotaurMarauder>5</RBM_MinotaurMarauder>
+			</value>
+		</match>
+	</Operation>
+	
+	<!--Adds minotaur with herculean weapons and minotaur marauder to pirate settlement defences-->
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/FactionDef[defName="Pirate"]/pawnGroupMakers</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/FactionDef[defName="Pirate"]/pawnGroupMakers/li[5]/options</xpath>
+			<value>
+				<RBM_MinotaurGuardianHigh>0.2</RBM_MinotaurGuardianHigh>
+				<RBM_MinotaurMarauder>0.8</RBM_MinotaurMarauder>
+			</value>
+		</match>
+	</Operation>
 	
 </Patch>

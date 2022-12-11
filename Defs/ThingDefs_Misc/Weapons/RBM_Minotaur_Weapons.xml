@@ -26,7 +26,6 @@
 			<li>HerculeanFabled</li>
 		</tradeTags>
 		<tradeNeverStack>true</tradeNeverStack>
-		<tradeability>Sellable</tradeability>
 		<!-- Obtaining -->
 		<recipeMaker IsNull="True"/>
 		<soundInteract>RBM_Bullslinger_Equip</soundInteract>
@@ -38,7 +37,7 @@
 		<!-- Battle Data -->
 		<statBases>
 			<Mass>5.2</Mass>
-			<MarketValue>2000</MarketValue>
+			<MarketValue>1000</MarketValue>
 			<AccuracyTouch>0.45</AccuracyTouch>
 			<AccuracyShort>0.69</AccuracyShort>
 			<AccuracyMedium>0.87</AccuracyMedium>
@@ -46,6 +45,7 @@
 			<RangedWeapon_Cooldown>1.65</RangedWeapon_Cooldown>
 			<MaxHitPoints>250</MaxHitPoints>
 			<RoyalFavorValue>2</RoyalFavorValue>
+			<SellPriceFactor>0.50</SellPriceFactor>
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.05</MoveSpeed>
@@ -144,19 +144,19 @@
 			<li>HerculeanFabled</li>
 		</tradeTags>
 		<tradeNeverStack>true</tradeNeverStack>
-		<tradeability>Sellable</tradeability>
+		
 		<!-- Obtaining -->
 		<recipeMaker IsNull="True"/>
 		<soundInteract>RBM_TaurailGun_Equip</soundInteract>
 		<relicChance>3</relicChance>
 		<smeltable>false</smeltable>
 		<thingSetMakerTags>
-			<li>RewardStandardQualitySuper</li>
+			<li>RewardStandardLowFreq</li>
 		</thingSetMakerTags>
 		<!-- Battle Data -->
 		<statBases>
 			<Mass>7.5</Mass>
-			<MarketValue>3500</MarketValue>
+			<MarketValue>2500</MarketValue>
 			<AccuracyTouch>0.55</AccuracyTouch>
 			<AccuracyShort>0.67</AccuracyShort>
 			<AccuracyMedium>0.77</AccuracyMedium>
@@ -248,7 +248,7 @@
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>RBM_Labrys</defName>
 		<label>labrys</label>
-		<description>An oversized obsidian axe often seen as the linchpin of minotaur culture. Only pawns with the Herculean gene can equip it as it's ridiculously heavy.</description>
+		<description>An oversized obsidian axe that's seen as a symbol of minotaur culture. Only pawns with the Herculean gene can equip it as it's ridiculously heavy.</description>
 		<descriptionHyperlinks>
 			<GeneDef>RBM_Herculean</GeneDef>
 		</descriptionHyperlinks>
@@ -266,20 +266,19 @@
 		<tradeTags>
 			<li>HerculeanFabled</li>
 		</tradeTags>
-		<tradeNeverStack>true</tradeNeverStack>
-		<tradeability>Sellable</tradeability>
+		<tradeNeverStack>true</tradeNeverStack>	
 		<!-- Obtaining -->
 		<recipeMaker IsNull="True"/>
 		<soundInteract>RBM_Labrys_Equip</soundInteract>
 		<relicChance>3</relicChance>
 		<smeltable>false</smeltable>
 		<thingSetMakerTags>
-			<li>RewardStandardQualitySuper</li>
+			<li>RewardStandardLowFreq</li>
 		</thingSetMakerTags>
 		<!-- Battle Data -->
 		<statBases>
 			<Mass>20</Mass>
-			<MarketValue>2450</MarketValue>
+			<MarketValue>1900</MarketValue>
 			<MaxHitPoints>250</MaxHitPoints>
 			<RoyalFavorValue>2</RoyalFavorValue>
 		</statBases>
@@ -326,7 +325,7 @@
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>RBM_Damacles</defName>
 		<label>damacles</label>
-		<description>A heavy, obsidian sword with many tales surrounding it in certain cultures. In exchange for its blinding attack speed and chance to land a critical hit during battle, holding it brings an incredibly anxious feeling to the wielder. Only pawns with the Herculean gene can equip it.</description>
+		<description>A heavy, obsidian sword with many tales surrounding it in certain cultures. In exchange for its blinding attack speed and chance to land a critical hit during battle, holding it imparts an incredibly anxious feeling onto the wielder. Only pawns with the Herculean gene can equip it.</description>
 		<descriptionHyperlinks>
 			<GeneDef>RBM_Herculean</GeneDef>
 		</descriptionHyperlinks>
@@ -345,7 +344,7 @@
 			<li>HerculeanFabled</li>
 		</tradeTags>
 		<tradeNeverStack>true</tradeNeverStack>
-		<tradeability>Sellable</tradeability>
+		
 		<!-- Obtaining -->
 		<recipeMaker IsNull="True"/>
 		<soundInteract>RBM_Labrys_Equip</soundInteract>
@@ -357,7 +356,7 @@
 		<!-- Battle Data -->
 		<statBases>
 			<Mass>5.6</Mass>
-			<MarketValue>1300</MarketValue>
+			<MarketValue>900</MarketValue>
 			<MaxHitPoints>250</MaxHitPoints>
 			<RoyalFavorValue>2</RoyalFavorValue>
 		</statBases>
@@ -478,8 +477,7 @@
 		<tradeTags>
 			<li>HerculeanFabled</li>
 		</tradeTags>
-		<tradeNeverStack>true</tradeNeverStack>
-		<tradeability>Sellable</tradeability>
+		<tradeNeverStack>true</tradeNeverStack>		
 		<!-- Obtaining -->
 		<recipeMaker IsNull="True"/>
 		<soundInteract>RBM_Oxenammer_Equip</soundInteract>
@@ -487,12 +485,12 @@
 		<relicChance>1</relicChance>
 		<smeltable>false</smeltable>
 		<thingSetMakerTags>
-			<li>RewardStandardQualitySuper</li>
+			<li>RewardStandardLowFreq</li>
 		</thingSetMakerTags>
 		<!-- Battle Data -->
 		<statBases>
 			<Mass>25</Mass>
-			<MarketValue>2580</MarketValue>
+			<MarketValue>1800</MarketValue>
 			<MaxHitPoints>250</MaxHitPoints>
 			<RoyalFavorValue>2</RoyalFavorValue>
 		</statBases>
@@ -543,7 +541,7 @@
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>RBM_Tunbell</defName>
 		<label>tunbell</label>
-		<description>An obsidian staff that resembles a large tuning fork with a cowbell attached to it. Its shrill chimes can cause it's victims to suffer with tinnitus. It's so heavy that only pawns with the Herculean trait can equip it.</description>
+		<description>An obsidian staff that resembles a large tuning fork with a cowbell attached to it. It's shrill chimes can cause it's victims to suffer with tinnitus. It's so heavy that only pawns with the Herculean trait can equip it.</description>
 		<descriptionHyperlinks>
 			<GeneDef>RBM_Herculean</GeneDef>
 		</descriptionHyperlinks>
@@ -561,8 +559,7 @@
 		<tradeTags>
 			<li>HerculeanFabled</li>
 		</tradeTags>
-		<tradeNeverStack>true</tradeNeverStack>
-		<tradeability>Sellable</tradeability>
+		<tradeNeverStack>true</tradeNeverStack>	
 		<!-- Obtaining -->
 		<recipeMaker IsNull="True"/>
 		<soundInteract>RBM_Tunbell_Equip</soundInteract>
@@ -574,7 +571,7 @@
 		<!-- Battle Data -->
 		<statBases>
 			<Mass>9.5</Mass>
-			<MarketValue>1760</MarketValue>
+			<MarketValue>1300</MarketValue>
 			<MaxHitPoints>250</MaxHitPoints>
 			<RoyalFavorValue>2</RoyalFavorValue>
 		</statBases>
@@ -626,7 +623,7 @@
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>RBM_Midaspear</defName>
 		<label>midaspear</label>
-		<description>An obsidian weapon with a gold-encrusted spearhead. An ancient fable describes this weapon as being able to turn its victims' corpses into gold. It's so long and heavy that only a Herculean pawn can equip it.</description>
+		<description>An obsidian weapon with a gold-encrusted spearhead. Ancient fables describes this weapon as being able to turn its victims' corpses into gold. It's so long and heavy that only a Herculean pawn can equip it.</description>
 		<descriptionHyperlinks>
 			<GeneDef>RBM_Herculean</GeneDef>
 		</descriptionHyperlinks>
@@ -644,8 +641,7 @@
 		<tradeTags>
 			<li>HerculeanFabled</li>
 		</tradeTags>
-		<tradeNeverStack>true</tradeNeverStack>
-		<tradeability>Sellable</tradeability>
+		<tradeNeverStack>true</tradeNeverStack>	
 		<!-- Obtaining -->
 		<recipeMaker IsNull="True"/>
 		<soundInteract>RBM_Labrys_Equip</soundInteract>
@@ -657,7 +653,7 @@
 		<!-- Battle Data -->
 		<statBases>
 			<Mass>9.5</Mass>
-			<MarketValue>3500</MarketValue>
+			<MarketValue>1800</MarketValue>
 			<MaxHitPoints>250</MaxHitPoints>
 			<RoyalFavorValue>2</RoyalFavorValue>
 		</statBases>
@@ -704,99 +700,4 @@
 			</li>
 		</comps>
 	</ThingDef>
-	
-	<!--====================== Boulder ======================-->
-	
-<!-- 	<ThingDef ParentName="BaseGun">
-		<defName>RBM_Boulder</defName>
-		<label>boulder</label>
-		<description>A massive boulder. Easy to come by, hard to lift, impossible to roll up a hill. Herculean pawns can throw these at foes for devastating damage.</description>
-		<descriptionHyperlinks>
-			<GeneDef>RBM_Herculean</GeneDef>
-		</descriptionHyperlinks>
-		Basic Data
-		<possessionCount>1</possessionCount>
-		<rotateInShelves>false</rotateInShelves>
-		<tickerType>Normal</tickerType>
-		<uiIconScale>0.8</uiIconScale>
-		<graphicData>
-			<texPath>Things/Item/Equipment/WeaponRanged/RBM_Boulder/RBM_Boulder</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1</drawSize>
-		</graphicData>
-		Trading
-		<techLevel>Neolithic</techLevel>
-		<tradeTags>
-			<li>WeaponRanged</li>
-		</tradeTags>
-		<tradeNeverStack>false</tradeNeverStack>
-		<tradeability>Buyable</tradeability>
-		Obtaining
-		<recipeMaker IsNull="True"/>
-		<soundInteract>ChunkRock_Drop</soundInteract>
-		<relicChance>3</relicChance>
-		<smeltable>false</smeltable>
-		<thingSetMakerTags>
-			<li>SingleUseWeapon</li>
-		</thingSetMakerTags>
-		Battle Data
-		<statBases>
-			<Mass>5.2</Mass>
-			<MarketValue>750</MarketValue>
-			<AccuracyTouch>0.45</AccuracyTouch>
-			<AccuracyShort>0.69</AccuracyShort>
-			<AccuracyMedium>0.87</AccuracyMedium>
-			<AccuracyLong>0.96</AccuracyLong>
-			<RangedWeapon_Cooldown>1.65</RangedWeapon_Cooldown>
-			<MaxHitPoints>250</MaxHitPoints>
-			<RoyalFavorValue>2</RoyalFavorValue>
-		</statBases>
-		<equippedStatOffsets>
-			<MoveSpeed>-0.05</MoveSpeed>
-		</equippedStatOffsets>
-		<weaponTags>
-			<li>HerculeanWeapon</li>
-		</weaponTags>
-		<weaponClasses>
-			<li>Ranged</li>
-			<li>RangedLight</li>
-		</weaponClasses>
-		<verbs>
-			<li>
-        <verbClass>Verb_ShootOneUse</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Proj_Chunk_Default</defaultProjectile>
-        <forcedMissRadius>1.9</forcedMissRadius>
-        <warmupTime>4.5</warmupTime>
-        <ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
-        <range>35.9</range>
-        <burstShotCount>1</burstShotCount>
-        <soundCast>ThrowGrenade</soundCast>
-        <soundCastTail>GunTail_Heavy</soundCastTail>
-        <onlyManualCast>true</onlyManualCast>
-        <targetParams>
-          <canTargetLocations>true</canTargetLocations>
-        </targetParams>
-        <muzzleFlashScale>14</muzzleFlashScale>
-			</li>
-		</verbs>
-		<tools>
-			<li>
-				<label>melee</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>30</power>
-				<cooldownTime>8</cooldownTime>
-			</li>
-		</tools>
-		    <comps>
-      <li Class="CompProperties_Explosive">
-        <explosiveRadius>7.8</explosiveRadius>
-        <explosiveDamageType>Bomb</explosiveDamageType>
-        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
-      </li>
-    </comps>
-	</ThingDef> -->
-
 </Defs>

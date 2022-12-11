@@ -201,13 +201,13 @@
 	<!-- Given to pawns with the according gene. -->
 	<!-- TODO: Replace legs with these -->
 	
-  <!-- Cloven Hoof -->
+  <!-- Unguligrade Legs -->
 
   <HediffDef ParentName="AddedBodyPartBase">
     <defName>UnguligradeLegPart</defName>
     <label>unguligrade leg</label>
     <labelNoun>an unguligrade leg</labelNoun>
-    <description>An unguligrade leg with a cloven hoof, perfect for hotfooting it out of trouble, but not-so-perfect for keeping the floor clean.</description>
+    <description>An unguligrade leg with a cloven hoof, perfect for hotfooting it out of trouble, not-so-perfect for keeping the floor clean.</description>
     <addedPartProps>
       <solid>true</solid>
       <partEfficiency>1</partEfficiency>
@@ -232,9 +232,9 @@
       <li>
         <minSeverity>0</minSeverity>
 		<statOffsets>
-			<StaggerDurationFactor>-0.5</StaggerDurationFactor>
+			<StaggerDurationFactor>-0.3</StaggerDurationFactor>
 			<MoveSpeed>0.2</MoveSpeed>
-			<FilthRate>1.3</FilthRate>
+			<FilthRate>1.5</FilthRate>
 			<MeleeDodgeChance>5</MeleeDodgeChance>
 		</statOffsets>
       </li>

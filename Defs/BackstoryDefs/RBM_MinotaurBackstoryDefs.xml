@@ -3,12 +3,15 @@
 
 	<!--============================== Guardians - Childhood ============================-->
 	
+	<!--============================== Powerhouse ============================-->
+	<!-- Strong in fighting stats. -->
+	
 	<BackstoryDef>
 		<defName>RBM_Powerhouse</defName>
 		<title>powerhouse</title>
 		<titleShort>guardian</titleShort>
 		<slot>Childhood</slot>
-		<baseDesc>[PAWN_nameDef]’s purpose was written before [PAWN_pronoun] was even born: to become a guardian. To serve, live and die for the nobility. The nobles that guardians served usually belonged to physically weak but mentally superb races, such as genies or various types of space elf, so it was paramount that [PAWN_nameDef] was bred to have enough strength for two.</baseDesc>
+		<baseDesc>[PAWN_nameDef]’s purpose was written before [PAWN_pronoun] was even born: to become a guardian: to serve, live and die for their master. The individuals that guardians usually serve belong to physically weak but mentally superb races, such as genies or a type of space elf, so it was paramount that [PAWN_nameDef] was bred to have enough strength for two.</baseDesc>
 		<spawnCategories>
 			<li>MinotaurGuardian</li>
 		</spawnCategories>
@@ -37,6 +40,10 @@
 			<li>Violent</li>
 		</requiredWorkTags>
 	</BackstoryDef>
+	
+	<!--============================== Prospective Guardian ============================-->
+	<!-- Well rounded. -->
+	
 	<BackstoryDef>
 		<defName>RBM_ProspectiveGuardian</defName>
 		<title>prospective guardian</title>
@@ -72,6 +79,10 @@
 			<li>Violent</li>
 		</requiredWorkTags>
 	</BackstoryDef>
+	
+	<!--============================== Rejected Guardian ============================-->
+	<!-- Physically strong, emotionally weak. -->
+	
 	<BackstoryDef>
 		<defName>RBM_RejectedGuardian</defName>
 		<title>rejected guardian</title>
@@ -107,12 +118,16 @@
 			<li>Violent</li>
 		</requiredWorkTags>
 	</BackstoryDef>
+	
+	<!--============================== Friendly Guardian ============================-->
+	<!-- Strong in fighting stats, weak in domestic stats. -->
+	
 	<BackstoryDef>
 		<defName>RBM_FriendlyGuardian</defName>
 		<title>friendly guardian</title>
 		<titleShort>guardian</titleShort>
 		<slot>Childhood</slot>
-		<baseDesc>[PAWN_nameDef] was born to protect a young monarch, yet their relationship was more akin to siblinghood than anything else. As the two of them aged, learned, and played together, their bond became totally unbreakable.</baseDesc>
+		<baseDesc>[PAWN_nameDef] was born to protect a young monarch, yet their relationship was more akin to siblinghood than anything else. As the two of them aged, learned, and played together, their bond became totally unbreakable. As much of [PAWN_possessive] time was spent playfighting with [PAWN_possessive] young master, [PAWN_nameDef] rarely had much time to practise [PAWN_possessive] domestic skills.</baseDesc>
 		<spawnCategories>
 			<li>MinotaurGuardian</li>
 		</spawnCategories>
@@ -126,8 +141,12 @@
 				<value>6</value>
 			</li>
 			<li>
-				<key>Social</key>
-				<value>-4</value>
+				<key>Cooking</key>
+				<value>-2</value>
+			</li>
+			<li>
+				<key>Plants</key>
+				<value>-2</value>
 			</li>
 		</skillGains>
 		<forcedTraits>
@@ -142,6 +161,10 @@
 			<li>Violent</li>
 		</requiredWorkTags>
 	</BackstoryDef>
+	
+	<!--============================== Lab-Grown Guardian ============================-->
+	<!-- Very strong all-rounder. -->
+	
 	<BackstoryDef>
 		<defName>RBM_Lab-GrownGuardian</defName>
 		<title>lab-grown guardian</title>
@@ -158,11 +181,15 @@
 			</li>
 			<li>
 				<key>Melee</key>
-				<value>3</value>
+				<value>5</value>
 			</li>
 			<li>
 				<key>Cooking</key>
-				<value>2</value>
+				<value>4</value>
+			</li>
+			<li>
+				<key>Medicine</key>
+				<value>6</value>
 			</li>
 		</skillGains>
 		<forcedTraits>
@@ -177,13 +204,18 @@
 			<li>Violent</li>
 		</requiredWorkTags>
 	</BackstoryDef>
+	
 	<!--============================== Guardians - Adulthood ============================-->
+	
+	<!--============================== Brave Guardian ============================-->
+	<!-- Strong Shooting. -->
+	
 	<BackstoryDef>
 		<defName>RBM_BraveGuardian</defName>
 		<title>guardian</title>
 		<titleShort>guardian</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>[PAWN_nameDef] was a guardian to a nobleperson. Though the relationship was initially rocky, the two gained an unbreakable, unconditional bond capable of weathering even the fiercest of storms. [PAWN_nameDef] isn’t afraid to look death in the eye for [PAWN_possessive] master.</baseDesc>
+		<baseDesc>[PAWN_nameDef] was a guardian to a very important figure in society. Though the relationship was initially rocky, the two gained an unbreakable, unconditional bond capable of weathering even the fiercest of storms. [PAWN_nameDef] isn’t afraid to look death in the eye for [PAWN_possessive] master.</baseDesc>
 		<spawnCategories>
 			<li>MinotaurGuardian</li>
 		</spawnCategories>
@@ -197,8 +229,8 @@
 				<value>3</value>
 			</li>
 			<li>
-				<key>Cooking</key>
-				<value>2</value>
+				<key>Medicine</key>
+				<value>5</value>
 			</li>
 		</skillGains>
 		<forcedTraits>
@@ -210,6 +242,10 @@
 			<Nudist>0</Nudist>
 		</disallowedTraits>
 	</BackstoryDef>
+	
+	<!--============================== Stoic Guardian ============================-->
+	<!-- High artistic, low social and fighting gains. -->
+	
 	<BackstoryDef>
 		<defName>RBM_StoicGuardian</defName>
 		<title>guardian</title>
@@ -222,7 +258,7 @@
 		<skillGains>
 			<li>
 				<key>Shooting</key>
-				<value>2</value>
+				<value>3</value>
 			</li>
 			<li>
 				<key>Social</key>
@@ -230,7 +266,7 @@
 			</li>
 			<li>
 				<key>Artistic</key>
-				<value>5</value>
+				<value>7</value>
 			</li>
 		</skillGains>
 		<forcedTraits>
@@ -243,6 +279,10 @@
 			<Kind>0</Kind>
 		</disallowedTraits>
 	</BackstoryDef>
+	
+	<!--============================== Compassionate Guardian ============================-->
+	<!-- Good medicine and social gains. -->
+	
 	<BackstoryDef>
 		<defName>RBM_CompassionateGuardian</defName>
 		<title>guardian</title>
@@ -254,15 +294,15 @@
 		</spawnCategories>
 		<skillGains>
 			<li>
-				<key>Shooting</key>
-				<value>3</value>
-			</li>
-			<li>
 				<key>Melee</key>
 				<value>5</value>
 			</li>
 			<li>
 				<key>Social</key>
+				<value>7</value>
+			</li>
+						<li>
+				<key>Medicine</key>
 				<value>3</value>
 			</li>
 		</skillGains>
@@ -275,6 +315,10 @@
 			<Nudist>0</Nudist>
 		</disallowedTraits>
 	</BackstoryDef>
+	
+	<!--============================== Pining Guardian ============================-->
+	<!-- Juicy story primer, incredible shooting gains in exchange for depressive trait. -->
+	
 	<BackstoryDef>
 		<defName>RBM_PiningGuardian</defName>
 		<title>guardian</title>
@@ -308,6 +352,10 @@
 			<Nudist>0</Nudist>
 		</disallowedTraits>
 	</BackstoryDef>
+	
+	<!--============================== Clumsy Guardian ============================-->
+	<!-- Pretty terrible all-round. -->
+	
 	<BackstoryDef>
 		<defName>RBM_ClumsyGuardian</defName>
 		<title>guardian</title>
@@ -344,6 +392,10 @@
 			<Nudist>0</Nudist>
 		</disallowedTraits>
 	</BackstoryDef>
+	
+	<!--============================== Compassionate Guardian ============================-->
+	<!-- Stellar violent gains. -->
+	
 	<BackstoryDef>
 		<defName>RBM_StandardGuardian</defName>
 		<title>guardian</title>
@@ -364,11 +416,11 @@
 			</li>
 			<li>
 				<key>Cooking</key>
-				<value>5</value>
+				<value>3</value>
 			</li>
 			<li>
-				<key>Intellectual</key>
-				<value>3</value>
+				<key>Medicine</key>
+				<value>4</value>
 			</li>
 		</skillGains>
 		<disallowedTraits>
@@ -377,6 +429,10 @@
 			<Nudist>0</Nudist>
 		</disallowedTraits>
 	</BackstoryDef>
+	
+	<!--============================== Compassionate Guardian ============================-->
+	<!-- Stellar gains all-round. -->
+	
 	<BackstoryDef>
 		<defName>RBM_ElegantGuardian</defName>
 		<title>guardian</title>
@@ -401,7 +457,15 @@
 			</li>
 			<li>
 				<key>Social</key>
-				<value>2</value>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Medicine</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Intellectual</key>
+				<value>3</value>
 			</li>
 		</skillGains>
 		<forcedTraits>
@@ -413,12 +477,16 @@
 			<Nudist>0</Nudist>
 		</disallowedTraits>
 	</BackstoryDef>
+	
+	<!--============================== Illicit Guardian ============================-->
+	<!-- Spicy! Decent gains all-around with stunted social. Forced bisexual in case their master is the same gender. -->
+	
 	<BackstoryDef>
 		<defName>RBM_IllicitGuardian</defName>
 		<title>guardian</title>
 		<titleShort>guardian</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>[PAWN_nameDef] developed illicit relations with [PAWN_possessive] master, punishable by death should the royal family find out. The two strategized the location and time of their steamy rendezvous in order to evade the public eye, until eventually, the two ended their relationship. [PAWN_nameDef] continues to guard [PAWN_possessive] master with a strained heart.</baseDesc>
+		<baseDesc>[PAWN_nameDef] developed illicit relations with [PAWN_possessive] master, punishable by death should the royal family find out. The two strategized the location and time of their steamy rendezvous in order to evade the public eye, until eventually, the two ended their relationship. [PAWN_nameDef] continued to guard [PAWN_possessive] master with a strained heart.</baseDesc>
 		<spawnCategories>
 			<li>MinotaurGuardian</li>
 		</spawnCategories>
@@ -449,6 +517,10 @@
 			<Nudist>0</Nudist>
 		</disallowedTraits>
 	</BackstoryDef>
+	
+	<!--============================== Animal Guardian ============================-->
+	<!-- Poor gains in violent stats, but fantastic at animal rearing. -->
+	
 	<BackstoryDef>
 		<defName>RBM_AnimalGuardian</defName>
 		<title>guardian</title>
@@ -484,8 +556,9 @@
 	
 	<!--============================== Minotaur - Childhood ============================-->
 	
-	
-		<BackstoryDef>
+	<!--============================== Show Calf ============================-->
+	<!-- Unusual for a minotaur: high social and beautiful. -->
+	<BackstoryDef>
 		<defName>RBM_ShowCalf</defName>
 		<title>show calf</title>
 		<titleShort>diva</titleShort>
@@ -509,7 +582,10 @@
 		</disallowedTraits>
 	</BackstoryDef>
 	
-			<BackstoryDef>
+	<!--============================== Runaway ============================-->
+	<!-- Good story primer for the history of treatment of the minotaur. -->
+	
+	<BackstoryDef>
 		<defName>RBM_Runaway</defName>
 		<title>runaway</title>
 		<titleShort>runaway</titleShort>
@@ -517,6 +593,7 @@
 		<baseDesc>[PAWN_nameDef] was taken from [PAWN_possessive] family at birth: a standard procedure on a minotaur farm. These farms were typically established and maintained by humans, who would slaughter their minotaur for their desirable cuts of meat. [PAWN_nameDef] didn’t take too kindly to the thought of being someone’s supper, and so, escaped captivity in the dead of night.</baseDesc>
 		<spawnCategories>
 			<li>Minotaur</li>
+			<li>MinotaurWild</li>
 		</spawnCategories>
 		<skillGains>
 			<li>
@@ -532,12 +609,15 @@
 		</disallowedTraits>
 	</BackstoryDef>
 	
-				<BackstoryDef>
+	<!--============================== Isolated ============================-->
+	<!-- Gives some manual labour gains. -->
+	
+	<BackstoryDef>
 		<defName>RBM_Isolated</defName>
 		<title>isolated</title>
 		<titleShort>isolated</titleShort>
 		<slot>Childhood</slot>
-		<baseDesc>[PAWN_nameDef] whittled away much of [PAWN_possesive] childhood nestled between the breasts of a mountainous tundra. The hamlet that surrounded [PAWN_objective] was quaint, but violently anti-human, with [PAWN_nameDef]’s father even warning [PAWN_objective] to check under their bed every night for humans.</baseDesc>
+		<baseDesc>[PAWN_nameDef] whittled away much of [PAWN_possessive] childhood nestled between the breasts of a mountainous tundra. The hamlet that surrounded [PAWN_objective] was quaint, but violently anti-human, with [PAWN_nameDef]’s father even warning [PAWN_objective] to check under their bed every night for humans.</baseDesc>
 		<spawnCategories>
 			<li>Minotaur</li>
 		</spawnCategories>
@@ -548,7 +628,7 @@
 			</li>
 			<li>
 				<key>Plants</key>
-				<value>3</value>
+				<value>5</value>
 			</li>
 			<li>
 				<key>Construction</key>
@@ -557,7 +637,10 @@
 		</skillGains>
 	</BackstoryDef>
 	
-				<BackstoryDef>
+	<!--============================== Maze Dweller ============================-->
+	<!-- What would a minotaur mod be without a labyrinth-based backstory? -->
+	
+	<BackstoryDef>
 		<defName>RBM_MazeDweller</defName>
 		<title>maze dweller</title>
 		<titleShort>protector</titleShort>
@@ -565,6 +648,7 @@
 		<baseDesc>[PAWN_nameDef] was raised in a vast labyrinth, destined to guard the treasures that lay within there. But those shining, unknown treasures were just too tempting for [PAWN_nameDef]’s mother, who ultimately ventured into the golden vault and never returned.</baseDesc>
 		<spawnCategories>
 			<li>Minotaur</li>
+			<li>MinotaurWild</li>
 		</spawnCategories>
 		<skillGains>
 			<li>
@@ -575,7 +659,7 @@
 				<key>Melee</key>
 				<value>3</value>
 			</li>
-						<li>
+			<li>
 				<key>Plants</key>
 				<value>2</value>
 			</li>
@@ -588,7 +672,10 @@
 		</disallowedTraits>
 	</BackstoryDef>
 	
-					<BackstoryDef>
+	<!--============================== Wild Beast ============================-->
+	<!-- Used primarily by feral minotaur PawnKinds, gives excellent proficiency on the battlefield, but unable to do pretty much anything else. -->
+	
+	<BackstoryDef>
 		<defName>RBM_WildBeast</defName>
 		<title>wild beast</title>
 		<titleShort>beast</titleShort>
@@ -596,6 +683,7 @@
 		<baseDesc>[PAWN_nameDef] was found and reared by a tribe like a wild animal.</baseDesc>
 		<spawnCategories>
 			<li>Minotaur</li>
+			<li>MinotaurWild</li>
 		</spawnCategories>
 		<skillGains>
 			<li>
@@ -607,20 +695,21 @@
 				<value>5</value>
 			</li>
 		</skillGains>
-		<forcedTraits>
-			<Recluse>0</Recluse>
-		</forcedTraits>
 		<disallowedTraits>
 			<NaturalMood>2</NaturalMood>
+			<TooSmart>0</TooSmart>
 		</disallowedTraits>
-				<workDisables>
+		<workDisables>
 			<li>ManualSkilled</li>
 			<li>Social</li>
 			<li>Intellectual</li>
 		</workDisables>
 	</BackstoryDef>
 	
-						<BackstoryDef>
+	<!--============================== City Dweller (Successful Fella) ============================-->
+	<!-- Unlike most minotaur, gives social buffs and melee debuffs. -->
+	
+	<BackstoryDef>
 		<defName>RBM_CityDweller</defName>
 		<title>city dweller</title>
 		<titleShort>youngster</titleShort>
@@ -632,7 +721,7 @@
 		<skillGains>
 			<li>
 				<key>Social</key>
-				<value>5</value>
+				<value>7</value>
 			</li>
 			<li>
 				<key>Melee</key>
@@ -647,7 +736,10 @@
 	
 	<!--============================== Minotaur - Adulthood ============================-->
 	
-						<BackstoryDef>
+	<!--============================== Human Fighter ============================-->
+	<!-- Reference to bullfighting traditions. Gives incredible melee gain. -->
+	
+	<BackstoryDef>
 		<defName>RBM_HumanFighter</defName>
 		<title>human fighter</title>
 		<titleShort>fighter</titleShort>
@@ -668,13 +760,16 @@
 		<disallowedTraits>
 			<Wimp>0</Wimp>
 		</disallowedTraits>
-				<workDisables>
+		<workDisables>
 			<li>ManualSkilled</li>
 			<li>Intellectual</li>
 		</workDisables>
 	</BackstoryDef>
 	
-							<BackstoryDef>
+	<!--============================== Logger ============================-->
+	<!-- Nice muscle-based buffs, but no intellectual. -->
+	
+	<BackstoryDef>
 		<defName>RBM_Logger</defName>
 		<title>logger</title>
 		<titleShort>logger</titleShort>
@@ -688,11 +783,11 @@
 				<key>Melee</key>
 				<value>3</value>
 			</li>
-						<li>
+			<li>
 				<key>Plants</key>
 				<value>7</value>
 			</li>
-						<li>
+			<li>
 				<key>Construction</key>
 				<value>2</value>
 			</li>
@@ -700,12 +795,15 @@
 		<disallowedTraits>
 			<Wimp>0</Wimp>
 		</disallowedTraits>
-				<workDisables>
+		<workDisables>
 			<li>Intellectual</li>
 		</workDisables>
 	</BackstoryDef>
 	
-		<BackstoryDef>
+	<!--============================== Cut of Meat ============================-->
+	<!-- Good lore building for the minotaur, can be used by standard minotaur and feral minotaur alike. -->
+	
+	<BackstoryDef>
 		<defName>RBM_CutOfMeat</defName>
 		<title>cut of meat</title>
 		<titleShort>berserk</titleShort>
@@ -713,6 +811,7 @@
 		<baseDesc>[PAWN_nameDef] was sold to an intergalactic butcher for [PAWN_possessive] delectable meat. Upon entering the trade ship, [PAWN_nameDef] broke free from [PAWN_possessive] shackles and made mincemeat of each and every one of the crew, leaving not one survivor to tell the tale, but [PAWN_objective].</baseDesc>
 		<spawnCategories>
 			<li>Minotaur</li>
+			<li>MinotaurWild</li>
 		</spawnCategories>
 		<skillGains>
 			<li>
@@ -720,20 +819,23 @@
 				<value>7</value>
 			</li>
 		</skillGains>
-				<forcedTraits>
+		<forcedTraits>
 			<Nerves>-1</Nerves>
 		</forcedTraits>
 		<disallowedTraits>
 			<Wimp>0</Wimp>
 		</disallowedTraits>
-				<workDisables>
+		<workDisables>
 			<li>Social</li>
 			<li>Cooking</li>
 			<li>Firefighting</li>
 		</workDisables>
-		</BackstoryDef>
+	</BackstoryDef>
+	
+	<!--============================== Xenohustler ============================-->
+	<!-- Good for spacer minotaur, buffs social, but disables undignified work types. -->
 		
-				<BackstoryDef>
+	<BackstoryDef>
 		<defName>RBM_Xenohustler</defName>
 		<title>xenohustler</title>
 		<titleShort>xenohustler</titleShort>
@@ -748,20 +850,23 @@
 				<value>6</value>
 			</li>
 		</skillGains>
-				<forcedTraits>
+		<forcedTraits>
 			<Beauty>1</Beauty>
 			<Bisexual>0</Bisexual>
 		</forcedTraits>
 		<disallowedTraits>
 			<Wimp>0</Wimp>
 		</disallowedTraits>
-				<workDisables>
+		<workDisables>
 			<li>ManualDumb</li>
 			<li>Animals</li>
 		</workDisables>
-		</BackstoryDef>
+	</BackstoryDef>
+	
+	<!--============================== Treasurekeeper ============================-->
+	<!-- Good melee buff, but disables social and skilled work. -->
 		
-						<BackstoryDef>
+	<BackstoryDef>
 		<defName>RBM_Treasurekeeper</defName>
 		<title>treasurekeeper</title>
 		<titleShort>treasurekeeper</titleShort>
@@ -776,140 +881,60 @@
 				<value>8</value>
 			</li>
 		</skillGains>
-				<forcedTraits>
+		<forcedTraits>
 			<Undergrounder>0</Undergrounder>
 		</forcedTraits>
 		<disallowedTraits>
 			<Greedy>0</Greedy>
 		</disallowedTraits>
-				<workDisables>
+		<workDisables>
 			<li>ManualSkilled</li>
 			<li>Social</li>
 		</workDisables>
-		</BackstoryDef>
-
-
-	
-	<!--============================== Protected Monarchs ============================-->
-	
-		<BackstoryDef>
-		<defName>RBM_RoyalYouth</defName>
-		<title>royal youth</title>
-		<titleShort>monarch</titleShort>
-		<slot>Childhood</slot>
-		<baseDesc>[PAWN_nameDef] was practically born into a life of luxury and opulence, residing between the walls of a fanciful palace that wouldn’t look amiss in Elysium. [PAWN_nameDef] grew up alongside a minotaur guardian, who protected and nurtured [PAWN_possessive] every need.</baseDesc>
-		<spawnCategories>
-			<li>ProtectedMonarch</li>
-		</spawnCategories>
-		<skillGains>
-			<li>
-				<key>Social</key>
-				<value>10</value>
-			</li>
-		</skillGains>
-		<forcedTraits>
-			<Bisexual>0</Bisexual>
-		</forcedTraits>
-		<disallowedTraits>
-			<Ascetic>0</Ascetic>
-			<Pyromaniac>0</Pyromaniac>
-			<Nudist>0</Nudist>
-		</disallowedTraits>
-		<workDisables>
-			<li>ManualDumb</li>
-		</workDisables>
 	</BackstoryDef>
 	
-			<BackstoryDef>
-		<defName>RBM_ProtectedMonarch</defName>
-		<title>protected monarch</title>
-		<titleShort>monarch</titleShort>
+	<!--============================== Feral ============================-->
+	<!-- These pawns may as well be wargs, they can't do much but fight. Only for feral minotaur PawnKinds. -->
+	
+		<BackstoryDef>
+		<defName>RBM_Feral</defName>
+		<title>feral</title>
+		<titleShort>feral</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>As a member of the nobility, wherever [PAWN_nameDef] stepped, so did their minotaur guardian, standing only a bull’s breath behind them. Their destinies are forever intertwined and bound by blood.</baseDesc>
+		<baseDesc>[PAWN_nameDef] returned to the wild like a feral beast. Those who came toe-to-hoof with [PAWN_nameDef] might have preferred a swift end, but this was never to be.</baseDesc>
 		<spawnCategories>
-			<li>ProtectedMonarch</li>
+			<li>MinotaurWild</li>
 		</spawnCategories>
+	<bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Hulk</bodyTypeFemale>
 		<skillGains>
 			<li>
-				<key>Social</key>
-				<value>10</value>
+				<key>Melee</key>
+				<value>12</value>
+			</li>
+			<li>
+				<key>Animals</key>
+				<value>5</value>
 			</li>
 		</skillGains>
 		<forcedTraits>
-			<Greedy>0</Greedy>
+			<Psychopath>0</Psychopath>
+			<Nudist>0</Nudist>
 		</forcedTraits>
 		<disallowedTraits>
-			<Ascetic>0</Ascetic>
-			<Pyromaniac>0</Pyromaniac>
-			<Nudist>0</Nudist>
+			<Wimp>0</Wimp>
+			<TooSmart>0</TooSmart>
 		</disallowedTraits>
 		<workDisables>
 			<li>ManualSkilled</li>
-			<li>Cooking</li>
-			<li>Mining</li>
-			<li>Crafting</li>
+			<li>Social</li>
+			<li>Firefighting</li>
+			<li>Caring</li>
+			<li>Intellectual</li>
+			<li>Shooting</li>
 		</workDisables>
+		    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
 	</BackstoryDef>
-	
-				<BackstoryDef>
-		<defName>RBM_IndependentMonarch</defName>
-		<title>protected monarch</title>
-		<titleShort>monarch</titleShort>
-		<slot>Adulthood</slot>
-		<baseDesc>Resting [PAWN_possessive] head in the lap of luxury eventually took it’s toll on [PAWN_nameDef], who decided to embark [PAWN_objective] on the journey of living like the common folk. Now, that’s all well and good, but for someone who had never seen a frying pan before…independence was more than a lifetime away for [PAWN_objective]…</baseDesc>
-		<spawnCategories>
-			<li>ProtectedMonarch</li>
-		</spawnCategories>
-		<skillGains>
-			<li>
-				<key>Cooking</key>
-				<value>1</value>
-			</li>
-						<li>
-				<key>Shooting</key>
-				<value>5</value>
-			</li>
-			<li>
-				<key>Social</key>
-				<value>-3</value>
-			</li>
-		</skillGains>
-		<forcedTraits>
-			<Wimp>0</Wimp>
-		</forcedTraits>
-	</BackstoryDef>
-	
-		<BackstoryDef>
-		<defName>RBM_SearchingMonarch</defName>
-		<title>protected monarch</title>
-		<titleShort>monarch</titleShort>
-		<slot>Adulthood</slot>
-		<baseDesc>[PAWN_nameDef] and [PAWN_possessive] minotaur guardian roamed the rim together in search of ancient treasures and artefacts, much to the objection [PAWN_nameDef]’s family, who looked down their noses at [PAWN_possessive] escapades.</baseDesc>
-		<spawnCategories>
-			<li>ProtectedMonarch</li>
-		</spawnCategories>
-		<skillGains>
-			<li>
-				<key>Mining</key>
-				<value>5</value>
-			</li>
-						<li>
-				<key>Plants</key>
-				<value>2</value>
-			</li>
-			<li>
-				<key>Intellectual</key>
-				<value>7</value>
-			</li>
-		</skillGains>
-		<forcedTraits>
-			<Nimble>0</Nimble>
-		</forcedTraits>
-	</BackstoryDef>
-
-	
-	
-	
-	
-	
 </Defs>
