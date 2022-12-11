@@ -102,7 +102,7 @@
 		<!-- BeefEat Thoughts
 		        <extraThoughtsFromIngestion>
           <li>
-            <meatSource>Humanlike</meatSource>
+            <meatSource>Meat_Cow</meatSource>
             <thoughtsDirect>
               <li>AteHumanlikeMeatDirectCannibal</li>
             </thoughtsDirect>
@@ -327,7 +327,7 @@
 	<GeneDef>
 		<defName>RBM_RuminantStomach</defName>
 		<label>ruminant stomach</label>
-		<description>Carriers of this gene have an intricate digestive system that is slightly more hardy than a multi-fold stomach. They can digest plant matter and haygrass with ease.</description>
+		<description>Carriers of this gene are born with intricate digestive system that is slightly more hardy than a multi-fold stomach. They can digest plant matter and haygrass with ease.</description>
 		<biostatCpx>3</biostatCpx>
 		<biostatMet>-2</biostatMet>
 		<displayCategory>Miscellaneous</displayCategory>

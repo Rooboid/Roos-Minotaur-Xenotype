@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--====================== Genetic HeDiffs ======================-->
+	<!-- HeDiffs added to pawns by minotaur genes -->
+	
+	<!--====================== Heat ======================-->
+	<!-- Applied to pawns with the gene "Estrous Cycle" in Aprimay. -->
+		
+<HediffDef>
+	<defName>EstrousHeat</defName>
+	<label>in heat</label>
+	<labelNoun>heat</labelNoun>
+	<defaultLabelColor>(250, 150, 180)</defaultLabelColor>
+	<hediffClass>HediffWithComps</hediffClass>
+	<everCurableByItem>false</everCurableByItem>
+	<tendable>false</tendable>
+	<displayWound>false</displayWound>
+	<description>This pawn is currently in heat.</description>
+	<comps>
+		<li Class="HediffCompProperties_RemoveIfOtherHediff">
+			<otherHediff>Sterilized</otherHediff>
+		</li>
+		<li Class="HediffCompProperties_Disappears">
+			<showRemainingTime>true</showRemainingTime>
+			<disappearsAfterTicks>9000000</disappearsAfterTicks><!-- 1 quadrum -->
+		</li>
+	</comps>
+	
+	<!--TODO: I think we need to patch: private static float LovinMtbSinglePawnFactor(Pawn pawn) because lovinMTBFactor can only be applied by a gene... -->
+		
+	<stages>
+		<li>
+			<statOffsets>
+			<MentalBreakThreshold>0.12</MentalBreakThreshold>
+			</statOffsets>
+<!-- 			<statFactors>
+          	<lovinMTBFactor>0.4</lovinMTBFactor>
+			</statFactors> -->
+		</li>
+	</stages>
+</HediffDef>
+
+</Defs>
+	
