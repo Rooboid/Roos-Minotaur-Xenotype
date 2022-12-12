@@ -25,9 +25,9 @@ namespace RBM_Minotaur_Mod
 
         [HarmonyPatch(typeof(LovePartnerRelationUtility), nameof(LovePartnerRelationUtility.GetLovinMtbHours))]
         [HarmonyPostfix]
-        public static void GetLovinMtbHours_Postfix(ref float __result, Pawn pawn)
+        public static void GetLovinMtbHours_Postfix(ref float __result, Pawn pawn, Pawn partner)
         {
-            if (pawn.health.hediffSet.HasHediff(RBM_HediffDefOf.EstrousHeat))
+            if (pawn.health.hediffSet.HasHediff(RBM_HediffDefOf.EstrousHeat) || partner.health.hediffSet.HasHediff(RBM_HediffDefOf.EstrousHeat))
             {
                 Log.Message("Lovin MTB Adjusted. Was: " + (__result).ToString());
                 __result = __result / 4;
