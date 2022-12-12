@@ -49,5 +49,4 @@ namespace Rimworld
         }
         public float terrorRadius;
     }
-
 }
