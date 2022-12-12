@@ -313,7 +313,7 @@
 		<comps>
 			<li Class="CompProperties_Art">
 				<nameMaker>NamerMinotaurArt</nameMaker>
-				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+				<descriptionMaker>ArtDescription_MinotaurWeapon</descriptionMaker>
 				<minQualityForArtistic>Excellent</minQualityForArtistic>
 			</li>
 		</comps>
@@ -419,7 +419,7 @@
 		<comps>
 			<li Class="CompProperties_Art">
 				<nameMaker>NamerMinotaurArt</nameMaker>
-				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+				<descriptionMaker>ArtDescription_MinotaurWeapon</descriptionMaker>
 				<minQualityForArtistic>Excellent</minQualityForArtistic>
 			</li>
 		</comps>
@@ -526,7 +526,7 @@
 		<comps>
 			<li Class="CompProperties_Art">
 				<nameMaker>NamerMinotaurArt</nameMaker>
-				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+				<descriptionMaker>ArtDescription_MinotaurWeapon</descriptionMaker>
 				<minQualityForArtistic>Excellent</minQualityForArtistic>
 			</li>
 			<li Class="CompProperties_TargetEffect_FleckOnTarget">
@@ -612,7 +612,7 @@
 		<comps>
 			<li Class="CompProperties_Art">
 				<nameMaker>NamerMinotaurArt</nameMaker>
-				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+				<descriptionMaker>ArtDescription_MinotaurWeapon</descriptionMaker>
 				<minQualityForArtistic>Excellent</minQualityForArtistic>
 			</li>
 		</comps>
@@ -695,7 +695,7 @@
 		<comps>
 			<li Class="CompProperties_Art">
 				<nameMaker>NamerMinotaurArt</nameMaker>
-				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+				<descriptionMaker>ArtDescription_MinotaurWeapon</descriptionMaker>
 				<minQualityForArtistic>Excellent</minQualityForArtistic>
 			</li>
 		</comps>
