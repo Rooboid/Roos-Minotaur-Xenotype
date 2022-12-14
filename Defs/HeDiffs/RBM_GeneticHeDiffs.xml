@@ -4,8 +4,8 @@
 	<!--====================== Genetic HeDiffs ======================-->
 	<!-- HeDiffs added to pawns by minotaur genes -->
 	
-	<!--====================== Heat ======================-->
-	<!-- Applied to pawns with the gene "Estrous Cycle" in Aprimay. -->
+	<!--====================== Estrous Heat ======================-->
+	<!-- Applied to pawns with the gene "Estrous Cycle" in Aprimay. PawnLovinMTB hours are adjusted in C#, but MentalBreakThreshold is adjusted in XML.-->
 		
 <HediffDef>
 	<defName>EstrousHeat</defName>
@@ -26,20 +26,56 @@
 			<disappearsAfterTicks>9000000</disappearsAfterTicks><!-- 1 quadrum -->
 		</li>
 	</comps>
-	
-	<!--TODO: I think we need to patch: private static float LovinMtbSinglePawnFactor(Pawn pawn) because lovinMTBFactor can only be applied by a gene... -->
-		
 	<stages>
 		<li>
 			<statOffsets>
 			<MentalBreakThreshold>0.12</MentalBreakThreshold>
 			</statOffsets>
-<!-- 			<statFactors>
-          	<lovinMTBFactor>0.4</lovinMTBFactor>
-			</statFactors> -->
 		</li>
 	</stages>
 </HediffDef>
+
+		<!--====================== Unguligrade Legs ======================-->
+	<!-- Given to pawns with the "Unguligrade Legs" gene. -->
+	<!-- TODO: Replace legs with these -->
+	
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>UnguligradeLegPart</defName>
+    <label>unguligrade leg</label>
+    <labelNoun>an unguligrade leg</labelNoun>
+    <description>An unguligrade leg with a cloven hoof, perfect for hotfooting it out of trouble, not-so-perfect for keeping the floor clean.</description>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1</partEfficiency>
+    </addedPartProps>
+	    <comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>hoof</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>8</power>
+            <cooldownTime>2</cooldownTime>
+            <soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+            <soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+          </li>
+        </tools>
+      </li>
+    </comps>
+	    <stages>
+      <li>
+        <minSeverity>0</minSeverity>
+		<statOffsets>
+			<StaggerDurationFactor>-0.3</StaggerDurationFactor>
+			<MoveSpeed>0.2</MoveSpeed>
+			<FilthRate>1.5</FilthRate>
+			<MeleeDodgeChance>5</MeleeDodgeChance>
+		</statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
 
 </Defs>
 	
