@@ -42,6 +42,29 @@ namespace RBM_Minotaur_Mod
         }
     }
 
+    public class JobGiver_PawnInHeatSeason : ThinkNode_JobGiver
+    {
+        protected override Job TryGiveJob(Pawn pawn)
+        {
+            if (pawn.RaceProps.Humanlike && pawn.genes.HasGene(RBM_GeneDefOf.RBM_EstrousCycle))
+            {
+                if ((GenLocalDate.Season(pawn.Tile) == Season.Spring) && !(pawn.health.hediffSet.HasHediff(RBM_HediffDefOf.EstrousHeat)))
+                {
+                    pawn.health.AddHediff(RBM_HediffDefOf.EstrousHeat);
+                    Log.Message(pawn.Name + "is in heat.");
+                }
+                else if (!(GenLocalDate.Season(pawn.Tile) == Season.Spring) && (pawn.health.hediffSet.HasHediff(RBM_HediffDefOf.EstrousHeat)))
+                {
+                    Hediff HeatHediff = pawn.health.hediffSet.GetFirstHediffOfDef(RBM_HediffDefOf.EstrousHeat);
+                    pawn.health.RemoveHediff(HeatHediff);
+                    Log.Message(pawn.Name + "is no longer in heat.");
+                }
+            }
+            return null;
+
+        }
+    }
+}
 
     [DefOf]
     public static class RBM_HediffDefOf
@@ -55,48 +78,5 @@ namespace RBM_Minotaur_Mod
         public static GeneDef RBM_EstrousCycle;
     }
 
-    public class ThinkNode_ConditionalPawnInHeatSeason : ThinkNode_Conditional
-    {
-        protected override bool Satisfied(Pawn pawn)                                //Thinknode is satifified if the pawn:
-        {
-            bool geneFlag = false, seasonFlag = false, hediffFlag = true;
-            if (pawn.RaceProps.Humanlike == true)
-            {
-                if (pawn.genes.HasGene(RBM_GeneDefOf.RBM_EstrousCycle) == true)
-                {
-                    geneFlag = true;
-                    if ((GenLocalDate.Season(pawn.Tile) == Season.Spring))
-                    {
-                        seasonFlag = true;
-                        if (!(pawn.health.hediffSet.HasHediff(RBM_HediffDefOf.EstrousHeat)))
-                        {
-                            hediffFlag = false;
-                        }
-                    }
-                    
-                }
 
-            Log.Message("Humanlike Pawn Checked. Has gene: " + geneFlag.ToString() + " is correct season: " + seasonFlag.ToString() + " is already in heat: " + hediffFlag.ToString());
-            }
-            return (                                                                 
-                pawn.RaceProps.Humanlike ||                                        //is not human
-                pawn.genes.HasGene(RBM_GeneDefOf.RBM_EstrousCycle) ||              //Does not have the Estrous Cycle Gene
-                (GenLocalDate.Season(pawn.Tile) == Season.Spring) ||               //is not on a tile where the season is currently Spring
-                !(pawn.health.hediffSet.HasHediff(RBM_HediffDefOf.EstrousHeat))      //is already in heat
-            );
-        }
-
-    }
-
-    public class JobGiver_PawnInHeatSeason : ThinkNode_JobGiver
-    {
-        protected override Job TryGiveJob(Pawn pawn)
-        {
-            Log.Message(pawn.Name + "is in heat.");
-            pawn.health.AddHediff(RBM_HediffDefOf.EstrousHeat);
-            return (Job)null;
-        }
-    }
-
-}
 
