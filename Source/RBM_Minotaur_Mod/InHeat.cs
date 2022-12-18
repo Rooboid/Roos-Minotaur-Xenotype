@@ -51,13 +51,13 @@ namespace RBM_Minotaur_Mod
                 if ((GenLocalDate.Season(pawn.Tile) == Season.Spring) && !(pawn.health.hediffSet.HasHediff(RBM_HediffDefOf.EstrousHeat)))
                 {
                     pawn.health.AddHediff(RBM_HediffDefOf.EstrousHeat);
-                    Log.Message(pawn.Name + "is in heat.");
+                    Log.Message(pawn.Name + " is in heat.");
                 }
                 else if (!(GenLocalDate.Season(pawn.Tile) == Season.Spring) && (pawn.health.hediffSet.HasHediff(RBM_HediffDefOf.EstrousHeat)))
                 {
                     Hediff HeatHediff = pawn.health.hediffSet.GetFirstHediffOfDef(RBM_HediffDefOf.EstrousHeat);
                     pawn.health.RemoveHediff(HeatHediff);
-                    Log.Message(pawn.Name + "is no longer in heat.");
+                    Log.Message(pawn.Name + " is no longer in heat.");
                 }
             }
             return null;
@@ -66,17 +66,17 @@ namespace RBM_Minotaur_Mod
     }
 }
 
-    [DefOf]
-    public static class RBM_HediffDefOf
-    {
-        public static HediffDef EstrousHeat;
-    }
+[DefOf]
+public static class RBM_HediffDefOf
+{
+    public static HediffDef EstrousHeat;
+}
 
-    [DefOf]
-    public static class RBM_GeneDefOf
-    {
-        public static GeneDef RBM_EstrousCycle;
-    }
+[DefOf]
+public static class RBM_GeneDefOf
+{
+    public static GeneDef RBM_EstrousCycle;
+}
 
 
 
