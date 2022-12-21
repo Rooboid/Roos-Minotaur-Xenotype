@@ -21,19 +21,32 @@
 		<li Class="HediffCompProperties_RemoveIfOtherHediff">
 			<otherHediff>Sterilized</otherHediff>
 		</li>
-		<li Class="HediffCompProperties_Disappears">
-			<showRemainingTime>true</showRemainingTime>
-			<disappearsAfterTicks>9000000</disappearsAfterTicks><!-- 1 quadrum -->
-		</li>
 	</comps>
 	<stages>
 		<li>
 			<statOffsets>
-			<MentalBreakThreshold>0.12</MentalBreakThreshold>
+			<MentalBreakThreshold>0.05</MentalBreakThreshold>
 			</statOffsets>
 		</li>
 	</stages>
 </HediffDef>
+
+<!-- Estrous Heat Thought-->
+
+  <ThoughtDef>
+    <defName>EstrousHeatThought</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>EstrousHeat</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Adult</developmentalStageFilter>
+    <stages>
+      <li>
+        <label>in heat</label>
+        <description>Being in heat really affects my emotions.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
 
 		<!--====================== Unguligrade Legs ======================-->
 	<!-- Given to pawns with the "Unguligrade Legs" gene. -->
