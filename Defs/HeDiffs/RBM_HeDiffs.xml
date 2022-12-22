@@ -111,9 +111,9 @@
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>200</severityPerDay>
 			</li>
-						<li Class="HediffCompProperties_RemoveIfOtherHediff">
+				<li Class="HediffCompProperties_RemoveIfOtherHediff">
 				<otherHediff>HearingLoss</otherHediff>
-				<mtbHours>0.5</mtbHours>
+				<mtbHours>1</mtbHours>
 			</li>
 		</comps>
 		<stages>
@@ -184,7 +184,7 @@
 		<description>Pawn has been affected by the Midas touch and will drop gold upon death.</description>
 		<descriptionHyperlinks><ThingDef>RBM_Midaspear</ThingDef></descriptionHyperlinks>
 		<comps>
-			<li Class="HediffCompProperties_MidasTouch">
+			<li Class="RBM_Minotaur_Mod.HediffCompProperties_MidasTouch">
 				<fleck>AcidCloud</fleck>
 				<moteCount>6</moteCount>
 				<moteOffsetRange>0.25~0.75</moteOffsetRange>

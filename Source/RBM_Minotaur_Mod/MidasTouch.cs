@@ -4,10 +4,9 @@ using UnityEngine;
 using Verse.Sound;
 
 
-namespace Rimworld
+namespace RBM_Minotaur_Mod
 {
     //Midas Touch Death Effect
-
     public class HediffCompProperties_MidasTouch : HediffCompProperties
     {
         public HediffCompProperties_MidasTouch()
@@ -26,7 +25,6 @@ namespace Rimworld
         public bool destroyBody = true;
         public bool destroyItems = true;
     }
-
 
     public class HediffComp_MidasTouch : HediffComp
     {
