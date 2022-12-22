@@ -46,7 +46,7 @@ namespace RBM_Minotaur_Mod
     {
         protected override Job TryGiveJob(Pawn pawn)
         {
-            if (pawn.RaceProps.Humanlike && pawn.genes.HasGene(RBM_GeneDefOf.RBM_EstrousCycle))
+            if (pawn.RaceProps.Humanlike && pawn.genes.HasGene(RBM_GeneDefOf.RBM_EstrousCycle) && pawn.ageTracker.Adult)
             {
                 if ((GenLocalDate.Season(pawn.Tile) == Season.Spring) && !(pawn.health.hediffSet.HasHediff(RBM_HediffDefOf.EstrousHeat)))
                 {
