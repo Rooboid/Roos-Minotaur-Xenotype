@@ -52,7 +52,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HeDiffDefs.cs" />
     <Compile Include="InHeat.cs" />
+    <Compile Include="RBM_GeneDefOf.cs" />
     <Compile Include="SeeRed.cs" />
     <Compile Include="MidasTouch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

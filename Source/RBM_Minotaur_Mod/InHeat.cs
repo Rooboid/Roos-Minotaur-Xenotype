@@ -6,6 +6,7 @@ using RimWorld;
 
 
 
+
 namespace RBM_Minotaur_Mod
 {
     [StaticConstructorOnStartup]
@@ -66,17 +67,7 @@ namespace RBM_Minotaur_Mod
     }
 }
 
-[DefOf]
-public static class RBM_HediffDefOf
-{
-    public static HediffDef EstrousHeat;
-}
 
-[DefOf]
-public static class RBM_GeneDefOf
-{
-    public static GeneDef RBM_EstrousCycle;
-}
 
 
 
