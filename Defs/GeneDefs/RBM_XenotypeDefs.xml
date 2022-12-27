@@ -12,7 +12,7 @@
 		<inheritable>true</inheritable>
 		<nameMaker>NamerPersonMinotaur_Male</nameMaker>
 		<nameMakerFemale>NamerPersonMinotaur_Female</nameMakerFemale>
-    <chanceToUseNameMaker>69</chanceToUseNameMaker> <!-- Nice -->
+    <chanceToUseNameMaker>0</chanceToUseNameMaker> <!-- Nice -->
 		<combatPowerFactor>2</combatPowerFactor>
 		<genes>
 			<!-- Ability -->

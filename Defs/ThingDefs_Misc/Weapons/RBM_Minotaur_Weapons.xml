@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+  <WeaponClassDef>
+    <defName>RBME_HerculeanClass</defName>
+    <label>herculean</label>
+  </WeaponClassDef>
+
 
 	<!--====================== Bullslinger ======================-->
 	
@@ -56,6 +61,7 @@
 		<weaponClasses>
 			<li>Ranged</li>
 			<li>RangedLight</li>
+			<li>RBME_HerculeanClass</li>
 		</weaponClasses>
 		<verbs>
 			<li>
@@ -142,6 +148,7 @@
 		<techLevel>Archotech</techLevel>
 		<tradeTags>
 			<li>HerculeanFabled</li>
+			<li>TaurailGun</li>
 		</tradeTags>
 		<tradeNeverStack>true</tradeNeverStack>
 		
@@ -173,6 +180,7 @@
 		</weaponTags>
 		<weaponClasses>
 			<li>RangedLight</li>
+			<li>RBME_HerculeanClass</li>
 		</weaponClasses>
 		<verbs>
 			<li>
@@ -243,6 +251,7 @@
 	</ThingDef>
 	
 	
+	
 	<!--====================== Labrys ======================-->
 	
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
@@ -290,6 +299,7 @@
 		</weaponTags>
 		<weaponClasses>
 			<li>Melee</li>
+			<li>RBME_HerculeanClass</li>
 		</weaponClasses>
 		<tools>
 			<li>
@@ -370,6 +380,7 @@
 		</weaponTags>
 		<weaponClasses>
 			<li>Melee</li>
+			<li>RBME_HerculeanClass</li>
 		</weaponClasses>
 		<tools>
 			<!-- Pawns will usually try to use the 'tool' with the highest DPS. Since critical hit is lower in power, pawns will use this significantly less than the other 'tools'. The extra CritHit damage isn't factored into their decision. -->
@@ -505,6 +516,7 @@
 		</weaponTags>
 		<weaponClasses>
 			<li>Melee</li>
+			<li>RBME_HerculeanClass</li>
 		</weaponClasses>
 		<tools>
 			<li>
@@ -583,6 +595,7 @@
 		</weaponTags>
 		<weaponClasses>
 			<li>Melee</li>
+			<li>RBME_HerculeanClass</li>
 		</weaponClasses>
 		<tools>
 			<li>
@@ -665,6 +678,7 @@
 		</weaponTags>
 		<weaponClasses>
 			<li>Melee</li>
+			<li>RBME_HerculeanClass</li>
 		</weaponClasses>
 		<tools>
 			<li>
