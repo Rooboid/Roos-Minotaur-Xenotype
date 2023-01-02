@@ -52,6 +52,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MentalStateDefs.cs" />
+    <Compile Include="RBM_Utils.cs" />
     <Compile Include="ObsidianBullet.cs" />
     <Compile Include="HeDiffDefs.cs" />
     <Compile Include="InHeat.cs" />

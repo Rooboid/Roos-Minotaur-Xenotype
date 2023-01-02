@@ -79,13 +79,6 @@
 			<li Class="RBM_Minotaur_Mod.CompProperties_AbilityTerrify">
 				<terrorRadius>5.5</terrorRadius>
 			</li>
-
-			<li Class = "CompProperties_AbilityForceJob">
-				<compClass>CompAbilityEffect_ForceJob</compClass>
-				<jobDef>FleeAndCower</jobDef>
-				<durationMultiplier>MoveSpeed</durationMultiplier>
-				<psychic>False</psychic>
-			</li>
 		</comps>
 	</AbilityDef>
 

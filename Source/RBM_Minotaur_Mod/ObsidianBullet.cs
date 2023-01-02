@@ -2,8 +2,10 @@
 using RimWorld;
 using System.Collections.Generic;
 using Verse;
+using Verse.AI;
+using static UnityEngine.GraphicsBuffer;
 
-namespace RBM_Minotaur
+namespace RBM_Minotaur_Mod
 {
 
     [StaticConstructorOnStartup]
@@ -26,11 +28,14 @@ namespace RBM_Minotaur
                 List<Pawn> mapPawns = map.mapPawns.AllPawnsSpawned;
                 for (int i = 0; i < mapPawns.Count; i++)
                 {
-                    if (mapPawns[i].RaceProps.Humanlike)
+                    if (mapPawns[i].RaceProps.Humanlike && mapPawns[i].Downed == false && mapPawns[i].InMentalState == false)
                     {
                         if (position.InHorDistOf(mapPawns[i].Position, explosionRadius))
                         {
-                            mapPawns[i].health.AddHediff(RBM_HediffDefOf.HeDiffTerrified);
+                            LocalTargetInfo t = new LocalTargetInfo(RBM_Utils.genFleeTile(mapPawns[i].Position, position, 10));
+                            Job job = new Job(JobDefOf.FleeAndCower, t);
+                            mapPawns[i].mindState.mentalStateHandler.TryStartMentalState(RBM_MentalStateDefOf.RBM_TerrifiedFlee, "scared by something nearby", true, false, null, true);
+                            mapPawns[i].jobs.TryTakeOrderedJob(job, JobTag.Misc);
                         }
                     }
                 }

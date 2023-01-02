@@ -8,13 +8,21 @@
 
 	<HediffDef ParentName="InfectionBase">
 		<defName>HeDiffTerrified</defName>
-		<label>terrified</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>Terrified</label>
 		<labelNoun>terror</labelNoun>
 		<defaultLabelColor>(0.3, 0.7, 9)</defaultLabelColor>
 		<description>Abhorrent visions haunt the mind.</description>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<makesSickThought>false</makesSickThought>
+		<tendable>false</tendable>
+		<makesAlert>false</makesAlert>
+		<maxSeverity>4.0</maxSeverity>
+		<isBad>true</isBad>
+		<initialSeverity>1</initialSeverity>
 		<comps>
 			<li Class="HediffCompProperties_Disappears">
-				<disappearsAfterTicks>5000</disappearsAfterTicks>
+				<disappearsAfterTicks>200</disappearsAfterTicks>
 				<showRemainingTime>false</showRemainingTime>
 			</li>
 			<li Class="HediffCompProperties_RemoveIfOtherHediff">
