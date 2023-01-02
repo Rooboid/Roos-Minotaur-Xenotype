@@ -52,6 +52,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ObsidianBullet.cs" />
     <Compile Include="HeDiffDefs.cs" />
     <Compile Include="InHeat.cs" />
     <Compile Include="RBM_GeneDefOf.cs" />

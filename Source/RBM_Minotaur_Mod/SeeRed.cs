@@ -3,7 +3,6 @@ using RimWorld;
 using System.Collections.Generic;
 
 
-
 namespace RBM_Minotaur_Mod
 {
     [StaticConstructorOnStartup]
@@ -35,7 +34,7 @@ namespace RBM_Minotaur_Mod
                 List<Pawn> mapPawns = pawn.Map.mapPawns.AllPawnsSpawned;
                 for (int i = 0; i < mapPawns.Count; i++)
                 {
-                    if (mapPawns[i].RaceProps.Humanlike && mapPawns[i].Faction == pawn.Faction && mapPawns[i] != pawn)
+                    if (mapPawns[i].RaceProps.Humanlike && mapPawns[i] != pawn)
                     {
                         if (pawn.Position.InHorDistOf(mapPawns[i].Position, this.Props.terrorRadius))
                         {
