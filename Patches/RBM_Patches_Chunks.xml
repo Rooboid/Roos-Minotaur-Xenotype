@@ -2,9 +2,9 @@
 <Patch>
 	<!--============================== Rock Chunks - Patches ============================-->
 	<!-- Turns all Vanilla Chunks into equippable weapons for Herculean pawns. Remove this patch file if you are encountering conflicts with other mods that alter chunks, or just don't want the added functionality. -->
-	
+
 	<!--Give ChunkBase a ThingClass-->
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[@Name="ChunkBase"]/thingClass</xpath>
 		<match Class="PatchOperationReplace">
@@ -20,9 +20,9 @@
 			</value>
 		</nomatch>
 	</Operation>
-	
+
 	<!--Give ChunkBase accuracy values-->
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[@Name="ChunkBase"]/statBases</xpath>
 		<match Class="PatchOperationAdd">
@@ -46,9 +46,9 @@
 			</value>
 		</nomatch>
 	</Operation>
-	
+
 	<!--Give ChunkBase equippedstatoffset values-->
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[@Name="ChunkBase"]/equippedStatOffsets</xpath>
 		<match Class="PatchOperationAdd">
@@ -66,9 +66,9 @@
 			</value>
 		</nomatch>
 	</Operation>
-		
+
 	<!--Give ChunkBase comp values-->
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[@Name="ChunkBase"]/comps</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -102,9 +102,9 @@
 			</value>
 		</match>
 	</Operation>
-		
+
 	<!--Give ChunkBase tech level-->
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[@Name="ChunkBase"]/techLevel</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -120,9 +120,9 @@
 			</value>
 		</match>
 	</Operation>
-	
+
 	<!--Give ChunkBase equipment type-->
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[@Name="ChunkBase"]/equipmentType</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -138,9 +138,9 @@
 			</value>
 		</match>
 	</Operation>
-	
+
 	<!--Give ChunkBase ticker type-->
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[@Name="ChunkBase"]/tickerType</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -156,9 +156,9 @@
 			</value>
 		</match>
 	</Operation>
-	
+
 	<!--Give ChunkBase Sound-->
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[@Name="ChunkBase"]/soundInteract</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -174,9 +174,9 @@
 			</value>
 		</match>
 	</Operation>
-	
+
 	<!--Give ChunkBase WeaponTags-->
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[@Name="ChunkBase"]/weaponTags</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -196,9 +196,9 @@
 			</value>
 		</match>
 	</Operation>
-	
+
 	<!--Give ChunkBase WeaponClasses-->
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[@Name="ChunkBase"]/weaponClasses</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -218,9 +218,9 @@
 			</value>
 		</match>
 	</Operation>
-	
+
 	<!--Give ChunkBase WeaponClasses-->
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[@Name="ChunkBase"]/tools</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -252,9 +252,9 @@
 			</value>
 		</match>
 	</Operation>
-	
+
 	<!--Steel Chunk-->
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[defName="ChunkSlagSteel"]/verbs</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -306,9 +306,9 @@
 			</value>
 		</match>
 	</Operation>
-	
+
 	<!--Sandstone Chunk-->
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[defName="ChunkSandstone"]/verbs</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -360,9 +360,9 @@
 			</value>
 		</match>
 	</Operation>
-	
+
 	<!--Granite Chunk-->
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[defName="ChunkGranite"]/verbs</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -414,9 +414,9 @@
 			</value>
 		</match>
 	</Operation>
-	
+
 	<!--Limestone Chunk-->
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[defName="ChunkLimestone"]/verbs</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -468,9 +468,9 @@
 			</value>
 		</match>
 	</Operation>
-	
+
 	<!--Slate Chunk-->
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[defName="ChunkSlate"]/verbs</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -522,9 +522,9 @@
 			</value>
 		</match>
 	</Operation>
-	
+
 	<!--Marble Chunk-->
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[defName="ChunkMarble"]/verbs</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -576,9 +576,9 @@
 			</value>
 		</match>
 	</Operation>
-	
+
 	<!--Allows feral minotaurs to equip chunks-->
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/PawnKindDef[defName="RBM_MinotaurFeral"]/weaponTags</xpath>
 		<match Class="PatchOperationAdd">
@@ -588,5 +588,5 @@
 			</value>
 		</match>
 	</Operation>
-	
-	</Patch>
+
+</Patch>

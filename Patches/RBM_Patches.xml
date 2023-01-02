@@ -3,9 +3,9 @@
 
 	<!--============================== Unguligrade Legs - Patches ============================-->
 	<!--Pawns with unguligrade legs won't recieve a debuff for having an uncovered groin-->
-	
+
 	<!--No GroinUncovered_Disapproved_Male thought when pawns have unguligrade legs-->
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThoughtDef[defName="GroinUncovered_Disapproved_Male"]/nullifyingGenes</xpath>
 		<match Class="PatchOperationAdd">
@@ -15,9 +15,9 @@
 			</value>
 		</match>
 	</Operation>
-	
-		<!--No GroinUncovered_Disapproved_Social_Male thought when pawns have unguligrade legs-->
-	
+
+	<!--No GroinUncovered_Disapproved_Social_Male thought when pawns have unguligrade legs-->
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThoughtDef[defName="GroinUncovered_Disapproved_Social_Male"]/nullifyingGenes</xpath>
 		<match Class="PatchOperationAdd">
@@ -27,9 +27,9 @@
 			</value>
 		</match>
 	</Operation>
-	
+
 	<!--No GroinOrChestUncovered_Disapproved_Male thought when pawns have unguligrade legs-->
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThoughtDef[defName="GroinOrChestUncovered_Disapproved_Male"]/nullifyingGenes</xpath>
 		<match Class="PatchOperationAdd">
@@ -39,9 +39,9 @@
 			</value>
 		</match>
 	</Operation>
-	
+
 	<!--No GroinOrChestUncovered_Disapproved_Social_Male thought when pawns have unguligrade legs-->
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThoughtDef[defName="GroinOrChestUncovered_Disapproved_Social_Male"]/nullifyingGenes</xpath>
 		<match Class="PatchOperationAdd">
@@ -51,12 +51,12 @@
 			</value>
 		</match>
 	</Operation>
-	
-<!--============================== Apparel - Patches ============================-->
-	<!-- Unless you have Britannic Rim - Core installed, this patch adds a tailcoat to the game. If Britannic Rim is installed, we'll use the tailcoat introduced by that mod instead. -->	
-	
+
+	<!--============================== Apparel - Patches ============================-->
+	<!-- Unless you have Britannic Rim - Core installed, this patch adds a tailcoat to the game. If Britannic Rim is installed, we'll use the tailcoat introduced by that mod instead. -->
+
 	<!--Add Tailcoat-->
-	
+
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Rooboid.Britannic.Core</li>
@@ -138,7 +138,7 @@
 
 	<!--============================== DLC Apparel - Patches ============================-->
 	<!-- If you have the correct Rimworld DLC, certain PawnKinds will spawn with apparel exclusive to that DLC. -->
-	
+
 	<!--Add Royalty apparel to Minotaur Guardian (High)-->
 
 	<Operation Class="PatchOperationFindMod">
@@ -157,7 +157,7 @@
 			</value>
 		</match>
 	</Operation>
-	
+
 	<!--Add Ideology apparel to Minotaur Guardian (High)-->
 
 	<Operation Class="PatchOperationFindMod">
@@ -171,9 +171,9 @@
 			</value>
 		</match>
 	</Operation>
-	
+
 	<!--Add Ideology apparel to Minotaur Feral-->
-	
+
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Ideology</li>
@@ -186,7 +186,7 @@
 			</value>
 		</match>
 	</Operation>
-	
+
 	<!--Add Royalty apparel to protected monarchs-->
 
 	<Operation Class="PatchOperationFindMod">
@@ -205,12 +205,12 @@
 			</value>
 		</match>
 	</Operation>
-	
+
 	<!--============================== Faction Xenotype - Patches ============================-->
 	<!-- Adds the minotaur to the potential xenos spotted in each faction. Alter these values if you want them to be more or less common. -->
-	
+
 	<!--Adds minotaur to outlander factions-->
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/FactionDef[defName="OutlanderFactionBase"]/xenotypeSet/xenotypeChances</xpath>
 		<match Class="PatchOperationAdd">
@@ -220,9 +220,9 @@
 			</value>
 		</match>
 	</Operation>
-	
+
 	<!--Adds minotaur to pirate factions-->
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/FactionDef[defName="PirateBandBase"]/xenotypeSet/xenotypeChances</xpath>
 		<match Class="PatchOperationAdd">
@@ -238,9 +238,9 @@
 			</value>
 		</match>
 	</Operation>
-	
+
 	<!--Adds minotaur to tribal (rough) factions-->
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/FactionDef[defName="TribeRough"]/xenotypeSet/xenotypeChances</xpath>
 		<match Class="PatchOperationAdd">
@@ -260,9 +260,9 @@
 			</value>
 		</nomatch>
 	</Operation>
-	
+
 	<!--Adds minotaur to the empire faction (if the royalty DLC is installed)-->
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/FactionDef[defName="Empire"]</xpath>
 		<match Class="PatchOperationAdd">
@@ -272,9 +272,9 @@
 			</value>
 		</match>
 	</Operation>
-	
+
 	<!--Adds minotaur to the pool of possible pawns used for the 'wild man' event-->
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/PawnKindDef[defName="WildMan"]/xenotypeSet/xenotypeChances</xpath>
 		<match Class="PatchOperationAdd">
@@ -294,12 +294,12 @@
 			</value>
 		</nomatch>
 	</Operation>
-	
+
 	<!--============================== PawnKind Spawns - Patches ============================-->
 	<!-- PawnKinds added by this mod will be added to the spawn pools of certain raids. -->
-	
+
 	<!--Creates a new trade caravan for the empire faction, in which minotaur guardians with herculean weapons may accompany them-->
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/FactionDef[defName="Empire"]/pawnGroupMakers</xpath>
 		<match Class="PatchOperationAdd">
@@ -325,9 +325,9 @@
 			</value>
 		</match>
 	</Operation>
-	
+
 	<!--Adds minotaur with herculean weapons to empire raids-->
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/FactionDef[defName="Empire"]/pawnGroupMakers</xpath>
 		<match Class="PatchOperationAdd">
@@ -338,9 +338,9 @@
 			</value>
 		</match>
 	</Operation>
-	
+
 	<!--Adds minotaur with herculean weapons to empire settlement defences-->
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/FactionDef[defName="OutlanderFactionBase"]/pawnGroupMakers</xpath>
 		<match Class="PatchOperationAdd">
@@ -350,9 +350,9 @@
 			</value>
 		</match>
 	</Operation>
-	
+
 	<!--Adds minotaur to outlander raids-->
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/FactionDef[defName="OutlanderFactionBase"]/pawnGroupMakers</xpath>
 		<match Class="PatchOperationAdd">
@@ -362,7 +362,7 @@
 			</value>
 		</match>
 	</Operation>
-	
+
 	<!--Adds minotaur to outlander raids-->
 
 	<Operation Class="PatchOperationConditional">
@@ -380,9 +380,9 @@
 			</value>
 		</match>
 	</Operation>
-	
+
 	<!--Adds minotaur to outlander settlement defences-->
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/FactionDef[defName="OutlanderFactionBase"]/pawnGroupMakers</xpath>
 		<match Class="PatchOperationAdd">
@@ -398,9 +398,9 @@
 			</value>
 		</match>
 	</Operation>
-	
+
 	<!--Adds feral minotaur to tribal raids-->
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/FactionDef[defName="TribeBase"]/pawnGroupMakers</xpath>
 		<match Class="PatchOperationAdd">
@@ -410,9 +410,9 @@
 			</value>
 		</match>
 	</Operation>
-	
+
 	<!--Adds feral minotaur to pirate raids-->
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/FactionDef[defName="Pirate"]/pawnGroupMakers</xpath>
 		<match Class="PatchOperationAdd">
@@ -422,9 +422,9 @@
 			</value>
 		</match>
 	</Operation>
-	
+
 	<!--Adds feral minotaur and minotaur marauder to pirate raids-->
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/FactionDef[defName="Pirate"]/pawnGroupMakers</xpath>
 		<match Class="PatchOperationAdd">
@@ -435,9 +435,9 @@
 			</value>
 		</match>
 	</Operation>
-	
+
 	<!--Adds minotaur with herculean weapons and minotaur marauder to pirate settlement defences-->
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/FactionDef[defName="Pirate"]/pawnGroupMakers</xpath>
 		<match Class="PatchOperationAdd">
@@ -448,5 +448,5 @@
 			</value>
 		</match>
 	</Operation>
-	
+
 </Patch>

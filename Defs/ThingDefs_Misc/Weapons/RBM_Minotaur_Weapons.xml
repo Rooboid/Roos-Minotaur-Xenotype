@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <WeaponClassDef>
-    <defName>RBME_HerculeanClass</defName>
-    <label>herculean</label>
-  </WeaponClassDef>
+	<WeaponClassDef>
+		<defName>RBME_HerculeanClass</defName>
+		<label>herculean</label>
+	</WeaponClassDef>
 
 
 	<!--====================== Bullslinger ======================-->
-	
+
 	<ThingDef ParentName="BaseWeaponNeolithic">
 		<defName>RBM_Bullslinger</defName>
 		<label>bullslinger</label>
@@ -97,10 +97,10 @@
 			</li>
 		</comps>
 	</ThingDef>
-	
-	
+
+
 	<!-- Obsidian Arrow (Projectile fired by the Bullslinger) -->
-	
+
 	<ThingDef ParentName="BaseProjectileNeolithic">
 		<defName>Proj_ObsidianArrow</defName>
 		<label>obsidian arrow</label>
@@ -123,10 +123,10 @@
 			<armorPenetrationBase>0.29</armorPenetrationBase>
 		</projectile>
 	</ThingDef>
-	
-	
+
+
 	<!--====================== Taurail Gun ======================-->
-	
+
 	<ThingDef ParentName="BaseWeapon">
 		<defName>RBM_TaurailGun</defName>
 		<label>taurail gun</label>
@@ -151,7 +151,7 @@
 			<li>TaurailGun</li>
 		</tradeTags>
 		<tradeNeverStack>true</tradeNeverStack>
-		
+
 		<!-- Obtaining -->
 		<recipeMaker IsNull="True"/>
 		<soundInteract>RBM_TaurailGun_Equip</soundInteract>
@@ -223,10 +223,10 @@
 			</li>
 		</comps>
 	</ThingDef>
-	
-	
+
+
 	<!-- Obsidian Bullet (Projectile fired by the Taurail Gun) -->
-	
+
 	<ThingDef ParentName="BaseBullet">
 		<defName>Proj_ObsidianBullet</defName>
 		<label>obsidian bullet</label>
@@ -243,11 +243,11 @@
 			<speed>72</speed>
 		</projectile>
 	</ThingDef>
-	
-	
-	
+
+
+
 	<!--====================== Labrys ======================-->
-	
+
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>RBM_Labrys</defName>
 		<label>labrys</label>
@@ -269,7 +269,7 @@
 		<tradeTags>
 			<li>HerculeanFabled</li>
 		</tradeTags>
-		<tradeNeverStack>true</tradeNeverStack>	
+		<tradeNeverStack>true</tradeNeverStack>
 		<!-- Obtaining -->
 		<recipeMaker IsNull="True"/>
 		<soundInteract>RBM_Labrys_Equip</soundInteract>
@@ -322,10 +322,10 @@
 			</li>
 		</comps>
 	</ThingDef>
-	
-	
+
+
 	<!--====================== Damacles ======================-->
-	
+
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>RBM_Damacles</defName>
 		<label>damacles</label>
@@ -348,7 +348,7 @@
 			<li>HerculeanFabled</li>
 		</tradeTags>
 		<tradeNeverStack>true</tradeNeverStack>
-		
+
 		<!-- Obtaining -->
 		<recipeMaker IsNull="True"/>
 		<soundInteract>RBM_Labrys_Equip</soundInteract>
@@ -429,11 +429,11 @@
 			</li>
 		</comps>
 	</ThingDef>
-	
-	
+
+
 	<!--Damacles: Rule Set -->
 	<!--TODO: Why isn't this working? -->
-	
+
 	<RulePackDef>
 		<defName>Damage_Crit</defName>
 		<rulePack>
@@ -457,10 +457,10 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
-	
-	
+
+
 	<!--====================== Oxenammer ======================-->
-	
+
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>RBM_Oxenammer</defName>
 		<label>oxenammer</label>
@@ -482,7 +482,7 @@
 		<tradeTags>
 			<li>HerculeanFabled</li>
 		</tradeTags>
-		<tradeNeverStack>true</tradeNeverStack>		
+		<tradeNeverStack>true</tradeNeverStack>
 		<!-- Obtaining -->
 		<recipeMaker IsNull="True"/>
 		<soundInteract>RBM_Oxenammer_Equip</soundInteract>
@@ -540,10 +540,10 @@
 			</li>
 		</comps>
 	</ThingDef>
-	
-	
+
+
 	<!--====================== Tunbell ======================-->
-	
+
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>RBM_Tunbell</defName>
 		<label>tunbell</label>
@@ -565,7 +565,7 @@
 		<tradeTags>
 			<li>HerculeanFabled</li>
 		</tradeTags>
-		<tradeNeverStack>true</tradeNeverStack>	
+		<tradeNeverStack>true</tradeNeverStack>
 		<!-- Obtaining -->
 		<recipeMaker IsNull="True"/>
 		<soundInteract>RBM_Tunbell_Equip</soundInteract>
@@ -624,9 +624,9 @@
 			</li>
 		</comps>
 	</ThingDef>
-	
+
 	<!--====================== Midaspear ======================-->
-	
+
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>RBM_Midaspear</defName>
 		<label>midaspear</label>
@@ -648,7 +648,7 @@
 		<tradeTags>
 			<li>HerculeanFabled</li>
 		</tradeTags>
-		<tradeNeverStack>true</tradeNeverStack>	
+		<tradeNeverStack>true</tradeNeverStack>
 		<!-- Obtaining -->
 		<recipeMaker IsNull="True"/>
 		<soundInteract>RBM_Labrys_Equip</soundInteract>

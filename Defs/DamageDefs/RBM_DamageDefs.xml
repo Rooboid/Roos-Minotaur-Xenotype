@@ -3,8 +3,8 @@
 
 	<!--====================== Terror Damage ======================-->
 	<!-- Inflicted upon pawns by the ability SeeRed -->
-	
-		<DamageDef ParentName="Flame">
+
+	<DamageDef ParentName="Flame">
 		<defName>Terrified</defName>
 		<label>terrified</label>
 		<workerClass>DamageWorker_AddInjury</workerClass>
@@ -18,12 +18,12 @@
 		<explosionCellFleck>TerrorFleck</explosionCellFleck>
 		<explosionColorEdge>(0.3, 0.70, 0.88, 0.05)</explosionColorEdge>
 		<soundExplosion>Explosion_Terrify</soundExplosion>
-		</DamageDef>
+	</DamageDef>
 
 
 	<!--====================== Mageia Damage (Cold) ======================-->
 	<!-- Used by the Bullslinger's Obsidian Arrows -->
-	
+
 	<DamageDef ParentName="Flame">
 		<defName>Mageia_Cold</defName>
 		<label>mageia</label>
@@ -44,11 +44,11 @@
 		<explosionColorEdge>(0.3, 0.70, 0.88, 0.05)</explosionColorEdge>
 		<soundExplosion>Explosion_Mageia</soundExplosion>
 	</DamageDef>
-	
-	
+
+
 	<!--====================== Mageia Damage (Hot) ======================-->
 	<!-- Used by the Taurail Gun's Obsidian Bullets -->
-	
+
 	<DamageDef ParentName="Flame">
 		<defName>Mageia_Hot</defName>
 		<label>mageia</label>
@@ -70,11 +70,11 @@
 		<explosionColorEdge>(0.3, 0.70, 0.88, 0.05)</explosionColorEdge>
 		<soundExplosion>Explosion_Terrify</soundExplosion>
 	</DamageDef>
-	
-	
+
+
 	<!--====================== Mageia Damage (Sound) ======================-->
 	<!-- Used by the Tunbell. Causes BruiseSound hediff which causes ringing ears. Check HeDiff Defs for more details. -->
-	
+
 	<DamageDef ParentName="Flame">
 		<defName>Mageia_Sound</defName>
 		<label>mageia</label>
@@ -93,9 +93,9 @@
 		<explosionColorEdge>(0.3, 0.70, 0.88, 0.05)</explosionColorEdge>
 		<soundExplosion>RBM_Tunbell_Fire</soundExplosion>
 	</DamageDef>
-	
-		<!--====================== Mageia Damage (Gold) ======================-->
-	
+
+	<!--====================== Mageia Damage (Gold) ======================-->
+
 	<DamageDef ParentName="Flame">
 		<defName>Mageia_Gold</defName>
 		<label>gold</label>
@@ -117,11 +117,11 @@
 		<soundExplosion>Explosion_Stun</soundExplosion>
 	</DamageDef>
 
-	
-	
+
+
 	<!--====================== Crit Damage ======================-->
 	<!-- Used by the Damacles when landing critical hits. -->
-	
+
 	<DamageDef ParentName="Flame">
 		<defName>CritHit</defName>
 		<label>critical hit</label>
@@ -138,12 +138,12 @@
 		<damageEffecter>RBM_CritEffect</damageEffecter>
 		<soundExplosion>RBM_CriticalHitSound</soundExplosion>
 	</DamageDef>
-	
-	
+
+
 	<!--====================== Earthshatter Damage ======================-->
 	<!-- Used by the Oxenammer. -->
-	
-	
+
+
 	<DamageDef ParentName="Flame">
 		<defName>Earthshatter</defName>
 		<label>earthshatter</label>

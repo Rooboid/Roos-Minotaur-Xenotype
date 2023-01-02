@@ -3,10 +3,10 @@
 
 	<!--============================== Vanilla Expanded Framework ============================-->
 	<!--The mod functions perfectly fine without Vanilla Expanded Framework, but extra features are added by it if it's installed-->
-	
+
 	<!-- Estrous Heat Patches-->
-	
-<!-- 		<Operation Class="PatchOperationFindMod">
+
+	<!-- 		<Operation Class="PatchOperationFindMod">
 		<mods>
 		<li>Vanilla Expanded Framework</li>
 		</mods>
@@ -62,5 +62,5 @@
 			</value>
 		</match>
 	</Operation> -->
-	
+
 </Patch>

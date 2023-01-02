@@ -5,7 +5,7 @@
 		<defName>Minotaur</defName>
 		<displayOrder>1500</displayOrder>
 	</AbilityCategoryDef>
-	
+
 	<!--====================== Ability: See Red ======================-->
 	<!-- Depends on:
 	- Effecters:
@@ -35,7 +35,7 @@
 	Damage_Terrify
 	
 	-->
-	
+
 	<AbilityDef>
 		<defName>RBM_SeeRed</defName>
 		<label>see red</label>
@@ -79,7 +79,7 @@
 			<li Class="RBM_Minotaur_Mod.CompProperties_AbilityTerrify">
 				<terrorRadius>5.5</terrorRadius>
 			</li>
-			
+
 			<li Class = "CompProperties_AbilityForceJob">
 				<compClass>CompAbilityEffect_ForceJob</compClass>
 				<jobDef>FleeAndCower</jobDef>
@@ -88,12 +88,12 @@
 			</li>
 		</comps>
 	</AbilityDef>
-	
-	
+
+
 	<!--====================== Ability: See Red (Components) ======================-->
 	<!-- I've not put these in the HeDiffs or MentalStates documents because they would feel lonely without the AbilityDef :( -->
-	
-	
+
+
 	<!-- See Red HeDiff -->
 	<HediffDef>
 		<defName>HeDiffSeeRed</defName>
@@ -178,12 +178,12 @@
 			</li>
 		</stages>
 	</HediffDef>
-	
-	
+
+
 	<!-- See Red: Mental State -->
-	
+
 	<!-- TODO: Make this have same effect as Berserk -->
-	
+
 	<MentalStateDef ParentName="BaseMentalState">
 		<defName>RBM_Berserk</defName>
 		<stateClass>MentalState_Berserk</stateClass>

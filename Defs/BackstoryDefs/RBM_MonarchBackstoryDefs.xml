@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<!--============================== Protected Monarchs ============================-->
+	<!--============================== Protected Monarchs ============================-->
 
 	<!--============================== Royal Youth ============================-->
 	<!-- Standard protected monarch childhood for Protected Monarch PawnKinds. -->
-	
+
 	<BackstoryDef>
 		<defName>RBM_RoyalYouth</defName>
 		<title>royal youth</title>
@@ -32,10 +32,10 @@
 		<bodyTypeMale>Thin</bodyTypeMale>
 		<bodyTypeFemale>Thin</bodyTypeFemale>
 	</BackstoryDef>
-	
+
 	<!--============================== Protected Monarch ============================-->
 	<!-- Standard protected monarch adulthood for Protected Monarch PawnKinds. -->
-	
+
 	<BackstoryDef>
 		<defName>RBM_ProtectedMonarch</defName>
 		<title>protected monarch</title>
@@ -59,7 +59,7 @@
 			<Pyromaniac>0</Pyromaniac>
 			<Nudist>0</Nudist>
 		</disallowedTraits>
-				<workDisables>
+		<workDisables>
 			<li>ManualDumb</li>
 			<li>Cooking</li>
 			<li>Mining</li>
@@ -69,10 +69,10 @@
 		<bodyTypeMale>Thin</bodyTypeMale>
 		<bodyTypeFemale>Thin</bodyTypeFemale>
 	</BackstoryDef>
-	
+
 	<!--============================== Independent Monarch ============================-->
 	<!-- A more competent monarch, with less work restrictions. -->
-	
+
 	<BackstoryDef>
 		<defName>RBM_IndependentMonarch</defName>
 		<title>protected monarch</title>
@@ -99,16 +99,16 @@
 		<forcedTraits>
 			<Wimp>0</Wimp>
 		</forcedTraits>
-				<workDisables>
+		<workDisables>
 			<li>ManualDumb</li>
 		</workDisables>
 		<bodyTypeMale>Thin</bodyTypeMale>
 		<bodyTypeFemale>Thin</bodyTypeFemale>
 	</BackstoryDef>
-	
+
 	<!--============================== Searching Monarch ============================-->
 	<!-- The most competent kind of monarch, with generous buffs to intellectual and mining. -->
-	
+
 	<BackstoryDef>
 		<defName>RBM_SearchingMonarch</defName>
 		<title>protected monarch</title>
@@ -135,7 +135,7 @@
 		<forcedTraits>
 			<Nimble>0</Nimble>
 		</forcedTraits>
-				<workDisables>
+		<workDisables>
 			<li>ManualDumb</li>
 			<li>Cooking</li>
 		</workDisables>
