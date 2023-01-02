@@ -113,7 +113,7 @@
 			</li>
 				<li Class="HediffCompProperties_RemoveIfOtherHediff">
 				<otherHediff>HearingLoss</otherHediff>
-				<mtbHours>1</mtbHours>
+				<mtbHours>0</mtbHours>
 			</li>
 		</comps>
 		<stages>
@@ -139,7 +139,7 @@
 								<hediffGivers>
 					<li Class="HediffGiver_Random">
 						<hediff>HearingLoss</hediff>
-						<mtbDays>0.5</mtbDays>
+						<mtbDays>0</mtbDays>
 						<partsToAffect>
 							<li>Ear</li>
 						</partsToAffect>
@@ -159,7 +159,7 @@
 				<hediffGivers>
 					<li Class="HediffGiver_Random">
 						<hediff>HearingLoss</hediff>
-						<mtbDays>0.1</mtbDays>
+						<mtbDays>0</mtbDays>
 						<partsToAffect>
 							<li>Ear</li>
 						</partsToAffect>

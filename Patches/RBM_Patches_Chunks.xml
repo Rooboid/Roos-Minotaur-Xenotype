@@ -184,6 +184,7 @@
 			<value>
 				<weaponTags>
 					<li>HerculeanWeapon</li>
+					<li>Chunk</li>
 				</weaponTags>
 			</value>
 		</nomatch>
@@ -191,6 +192,7 @@
 			<xpath>Defs/ThingDef[@Name="ChunkBase"]/weaponTags</xpath>
 			<value>
 				<li>HerculeanWeapon</li>
+				<li>Chunk</li>
 			</value>
 		</match>
 	</Operation>
@@ -209,7 +211,7 @@
 			</value>
 		</nomatch>
 		<match Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[@Name="ChunkBase"]/weaponTags</xpath>
+			<xpath>Defs/ThingDef[@Name="ChunkBase"]/weaponClasses</xpath>
 			<value>
 				<li>Ranged</li>
 				<li>RangedLight</li>
