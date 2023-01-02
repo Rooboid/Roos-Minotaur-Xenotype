@@ -5,16 +5,24 @@
 	<!--====================== Terrified ======================-->
 	<!-- Forced onto pawns affected by the gas cloud produced by the ability: SeeRed. -->
 	<!-- More Details: This primarily acts as a middleman to give pawns the mental state, RBM_TerrifiedFlee, and the thoughts Terrified_Thought... in one operation-->
-	
+
 	<HediffDef ParentName="InfectionBase">
 		<defName>HeDiffTerrified</defName>
-		<label>terrified</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>Terrified</label>
 		<labelNoun>terror</labelNoun>
-		 <defaultLabelColor>(0.3, 0.7, 9)</defaultLabelColor>
+		<defaultLabelColor>(0.3, 0.7, 9)</defaultLabelColor>
 		<description>Abhorrent visions haunt the mind.</description>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<makesSickThought>false</makesSickThought>
+		<tendable>false</tendable>
+		<makesAlert>false</makesAlert>
+		<maxSeverity>4.0</maxSeverity>
+		<isBad>true</isBad>
+		<initialSeverity>1</initialSeverity>
 		<comps>
 			<li Class="HediffCompProperties_Disappears">
-				<disappearsAfterTicks>5000</disappearsAfterTicks>
+				<disappearsAfterTicks>200</disappearsAfterTicks>
 				<showRemainingTime>false</showRemainingTime>
 			</li>
 			<li Class="HediffCompProperties_RemoveIfOtherHediff">
@@ -47,12 +55,12 @@
 			</li>
 		</stages>
 	</HediffDef>
-	
-	
+
+
 	<!--====================== Bruise (Sound) ======================-->
 	<!-- A minimally altered bruise HeDiff inflicted by the Tunbell. -->
 	<!-- More Details: Acts as an invisible middleman to give pawns the HeDiff, Ringing, specifically to their ears using the HediffGiver_Random Class. Melee weapons cannot inflict HeDiffs to specific body parts upon attack, just the body parts they are aimed at. It felt weird seeing pawns having 'ringing' in their legs, so this is the only way I could think to do it.-->
-	
+
 	<HediffDef ParentName="InjuryBase">
 		<defName>BruiseSound</defName>
 		<label>bruise</label>
@@ -86,20 +94,20 @@
 			</li>
 		</stages>
 	</HediffDef>
-	
-	
+
+
 	<!--====================== Ringing ======================-->
 	<!-- Inflicted by the Tunbell, using Bruisesound as a prompter for it to appear.-->
 	<!-- More Details: Pawns with this HeDiff will progressively get worse if untended, resulting in possible HearingLoss.-->
 	<!-- TODO: Make this work properly. -->
-	
-	
+
+
 	<HediffDef>
 		<defName>Ringing</defName>
 		<label>ears ringing</label>
 		<labelNoun>ringing</labelNoun>
 		<defaultLabelColor>(274, 154, 45)</defaultLabelColor>
-		    <hediffClass>HediffWithComps</hediffClass>
+		<hediffClass>HediffWithComps</hediffClass>
 		<tendable>true</tendable>
 		<displayWound>false</displayWound>
 		<labelNounPretty>{0} in the {1}</labelNounPretty>
@@ -111,7 +119,7 @@
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>200</severityPerDay>
 			</li>
-				<li Class="HediffCompProperties_RemoveIfOtherHediff">
+			<li Class="HediffCompProperties_RemoveIfOtherHediff">
 				<otherHediff>HearingLoss</otherHediff>
 				<mtbHours>0</mtbHours>
 			</li>
@@ -127,7 +135,7 @@
 					</li>
 				</capMods>
 			</li>
-						<li>
+			<li>
 				<label>worsening</label>
 				<minSeverity>50</minSeverity>
 				<capMods>
@@ -136,7 +144,7 @@
 						<setMax>0.5</setMax>
 					</li>
 				</capMods>
-								<hediffGivers>
+				<hediffGivers>
 					<li Class="HediffGiver_Random">
 						<hediff>HearingLoss</hediff>
 						<mtbDays>0</mtbDays>
@@ -175,14 +183,16 @@
 			<canMerge>false</canMerge>
 		</injuryProps>
 	</HediffDef>
-	
+
 	<HediffDef>
 		<defName>MidasTouch</defName>
 		<label>midas touch</label>
 		<labelNoun>midas touch</labelNoun>
 		<hediffClass>HediffWithComps</hediffClass>
 		<description>Pawn has been affected by the Midas touch and will drop gold upon death.</description>
-		<descriptionHyperlinks><ThingDef>RBM_Midaspear</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>RBM_Midaspear</ThingDef>
+		</descriptionHyperlinks>
 		<comps>
 			<li Class="RBM_Minotaur_Mod.HediffCompProperties_MidasTouch">
 				<fleck>AcidCloud</fleck>

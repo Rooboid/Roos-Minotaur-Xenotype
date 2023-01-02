@@ -2,10 +2,10 @@
 <Defs>
 
 	<!--============================== Guardians - Childhood ============================-->
-	
+
 	<!--============================== Powerhouse ============================-->
 	<!-- Strong in fighting stats. -->
-	
+
 	<BackstoryDef>
 		<defName>RBM_Powerhouse</defName>
 		<title>powerhouse</title>
@@ -40,10 +40,10 @@
 			<li>Violent</li>
 		</requiredWorkTags>
 	</BackstoryDef>
-	
+
 	<!--============================== Prospective Guardian ============================-->
 	<!-- Well rounded. -->
-	
+
 	<BackstoryDef>
 		<defName>RBM_ProspectiveGuardian</defName>
 		<title>prospective guardian</title>
@@ -79,10 +79,10 @@
 			<li>Violent</li>
 		</requiredWorkTags>
 	</BackstoryDef>
-	
+
 	<!--============================== Rejected Guardian ============================-->
 	<!-- Physically strong, emotionally weak. -->
-	
+
 	<BackstoryDef>
 		<defName>RBM_RejectedGuardian</defName>
 		<title>rejected guardian</title>
@@ -118,10 +118,10 @@
 			<li>Violent</li>
 		</requiredWorkTags>
 	</BackstoryDef>
-	
+
 	<!--============================== Friendly Guardian ============================-->
 	<!-- Strong in fighting stats, weak in domestic stats. -->
-	
+
 	<BackstoryDef>
 		<defName>RBM_FriendlyGuardian</defName>
 		<title>friendly guardian</title>
@@ -161,10 +161,10 @@
 			<li>Violent</li>
 		</requiredWorkTags>
 	</BackstoryDef>
-	
+
 	<!--============================== Lab-Grown Guardian ============================-->
 	<!-- Very strong all-rounder. -->
-	
+
 	<BackstoryDef>
 		<defName>RBM_Lab-GrownGuardian</defName>
 		<title>lab-grown guardian</title>
@@ -204,12 +204,12 @@
 			<li>Violent</li>
 		</requiredWorkTags>
 	</BackstoryDef>
-	
+
 	<!--============================== Guardians - Adulthood ============================-->
-	
+
 	<!--============================== Brave Guardian ============================-->
 	<!-- Strong Shooting. -->
-	
+
 	<BackstoryDef>
 		<defName>RBM_BraveGuardian</defName>
 		<title>guardian</title>
@@ -242,10 +242,10 @@
 			<Nudist>0</Nudist>
 		</disallowedTraits>
 	</BackstoryDef>
-	
+
 	<!--============================== Stoic Guardian ============================-->
 	<!-- High artistic, low social and fighting gains. -->
-	
+
 	<BackstoryDef>
 		<defName>RBM_StoicGuardian</defName>
 		<title>guardian</title>
@@ -279,10 +279,10 @@
 			<Kind>0</Kind>
 		</disallowedTraits>
 	</BackstoryDef>
-	
+
 	<!--============================== Compassionate Guardian ============================-->
 	<!-- Good medicine and social gains. -->
-	
+
 	<BackstoryDef>
 		<defName>RBM_CompassionateGuardian</defName>
 		<title>guardian</title>
@@ -301,7 +301,7 @@
 				<key>Social</key>
 				<value>7</value>
 			</li>
-						<li>
+			<li>
 				<key>Medicine</key>
 				<value>3</value>
 			</li>
@@ -315,10 +315,10 @@
 			<Nudist>0</Nudist>
 		</disallowedTraits>
 	</BackstoryDef>
-	
+
 	<!--============================== Pining Guardian ============================-->
 	<!-- Juicy story primer, incredible shooting gains in exchange for depressive trait. -->
-	
+
 	<BackstoryDef>
 		<defName>RBM_PiningGuardian</defName>
 		<title>guardian</title>
@@ -352,10 +352,10 @@
 			<Nudist>0</Nudist>
 		</disallowedTraits>
 	</BackstoryDef>
-	
+
 	<!--============================== Clumsy Guardian ============================-->
 	<!-- Pretty terrible all-round. -->
-	
+
 	<BackstoryDef>
 		<defName>RBM_ClumsyGuardian</defName>
 		<title>guardian</title>
@@ -392,10 +392,10 @@
 			<Nudist>0</Nudist>
 		</disallowedTraits>
 	</BackstoryDef>
-	
+
 	<!--============================== Standard Guardian ============================-->
 	<!-- Stellar violent gains. -->
-	
+
 	<BackstoryDef>
 		<defName>RBM_StandardGuardian</defName>
 		<title>guardian</title>
@@ -429,10 +429,10 @@
 			<Nudist>0</Nudist>
 		</disallowedTraits>
 	</BackstoryDef>
-	
+
 	<!--============================== Compassionate Guardian ============================-->
 	<!-- Stellar gains all-round. -->
-	
+
 	<BackstoryDef>
 		<defName>RBM_ElegantGuardian</defName>
 		<title>guardian</title>
@@ -477,10 +477,10 @@
 			<Nudist>0</Nudist>
 		</disallowedTraits>
 	</BackstoryDef>
-	
+
 	<!--============================== Illicit Guardian ============================-->
 	<!-- Spicy! Decent gains all-around with stunted social. Forced bisexual in case their master is the same gender. -->
-	
+
 	<BackstoryDef>
 		<defName>RBM_IllicitGuardian</defName>
 		<title>guardian</title>
@@ -517,10 +517,10 @@
 			<Nudist>0</Nudist>
 		</disallowedTraits>
 	</BackstoryDef>
-	
+
 	<!--============================== Animal Guardian ============================-->
 	<!-- Poor gains in violent stats, but fantastic at animal rearing. -->
-	
+
 	<BackstoryDef>
 		<defName>RBM_AnimalGuardian</defName>
 		<title>guardian</title>
@@ -553,9 +553,9 @@
 			<Nudist>0</Nudist>
 		</disallowedTraits>
 	</BackstoryDef>
-	
+
 	<!--============================== Minotaur - Childhood ============================-->
-	
+
 	<!--============================== Show Calf ============================-->
 	<!-- Unusual for a minotaur: high social and beautiful. -->
 	<BackstoryDef>
@@ -581,10 +581,10 @@
 			<Ascetic>0</Ascetic>
 		</disallowedTraits>
 	</BackstoryDef>
-	
+
 	<!--============================== Runaway ============================-->
 	<!-- Good story primer for the history of treatment of the minotaur. -->
-	
+
 	<BackstoryDef>
 		<defName>RBM_Runaway</defName>
 		<title>runaway</title>
@@ -608,10 +608,10 @@
 			<SpeedOffset>-2</SpeedOffset>
 		</disallowedTraits>
 	</BackstoryDef>
-	
+
 	<!--============================== Isolated ============================-->
 	<!-- Gives some manual labour gains. -->
-	
+
 	<BackstoryDef>
 		<defName>RBM_Isolated</defName>
 		<title>isolated</title>
@@ -636,10 +636,10 @@
 			</li>
 		</skillGains>
 	</BackstoryDef>
-	
+
 	<!--============================== Maze Dweller ============================-->
 	<!-- What would a minotaur mod be without a labyrinth-based backstory? -->
-	
+
 	<BackstoryDef>
 		<defName>RBM_MazeDweller</defName>
 		<title>maze dweller</title>
@@ -671,10 +671,10 @@
 			<NaturalMood>2</NaturalMood>
 		</disallowedTraits>
 	</BackstoryDef>
-	
+
 	<!--============================== Wild Beast ============================-->
 	<!-- Used primarily by feral minotaur PawnKinds, gives excellent proficiency on the battlefield, but unable to do pretty much anything else. -->
-	
+
 	<BackstoryDef>
 		<defName>RBM_WildBeast</defName>
 		<title>wild beast</title>
@@ -705,10 +705,10 @@
 			<li>Intellectual</li>
 		</workDisables>
 	</BackstoryDef>
-	
+
 	<!--============================== City Dweller (Successful Fella) ============================-->
 	<!-- Unlike most minotaur, gives social buffs and melee debuffs. -->
-	
+
 	<BackstoryDef>
 		<defName>RBM_CityDweller</defName>
 		<title>city dweller</title>
@@ -732,13 +732,13 @@
 			<Kind>0</Kind>
 		</forcedTraits>
 	</BackstoryDef>
-	
-	
+
+
 	<!--============================== Minotaur - Adulthood ============================-->
-	
+
 	<!--============================== Human Fighter ============================-->
 	<!-- Reference to bullfighting traditions. Gives incredible melee gain. -->
-	
+
 	<BackstoryDef>
 		<defName>RBM_HumanFighter</defName>
 		<title>human fighter</title>
@@ -765,10 +765,10 @@
 			<li>Intellectual</li>
 		</workDisables>
 	</BackstoryDef>
-	
+
 	<!--============================== Logger ============================-->
 	<!-- Nice muscle-based buffs, but no intellectual. -->
-	
+
 	<BackstoryDef>
 		<defName>RBM_Logger</defName>
 		<title>logger</title>
@@ -799,10 +799,10 @@
 			<li>Intellectual</li>
 		</workDisables>
 	</BackstoryDef>
-	
+
 	<!--============================== Cut of Meat ============================-->
 	<!-- Good lore building for the minotaur, can be used by standard minotaur and feral minotaur alike. -->
-	
+
 	<BackstoryDef>
 		<defName>RBM_CutOfMeat</defName>
 		<title>cut of meat</title>
@@ -831,10 +831,10 @@
 			<li>Firefighting</li>
 		</workDisables>
 	</BackstoryDef>
-	
+
 	<!--============================== Xenohustler ============================-->
 	<!-- Good for spacer minotaur, buffs social, but disables undignified work types. -->
-		
+
 	<BackstoryDef>
 		<defName>RBM_Xenohustler</defName>
 		<title>xenohustler</title>
@@ -862,10 +862,10 @@
 			<li>Animals</li>
 		</workDisables>
 	</BackstoryDef>
-	
+
 	<!--============================== Treasurekeeper ============================-->
 	<!-- Good melee buff, but disables social and skilled work. -->
-		
+
 	<BackstoryDef>
 		<defName>RBM_Treasurekeeper</defName>
 		<title>treasurekeeper</title>
@@ -892,11 +892,11 @@
 			<li>Social</li>
 		</workDisables>
 	</BackstoryDef>
-	
+
 	<!--============================== Feral ============================-->
 	<!-- These pawns may as well be wargs, they can't do much but fight. Only for feral minotaur PawnKinds. -->
-	
-		<BackstoryDef>
+
+	<BackstoryDef>
 		<defName>RBM_Feral</defName>
 		<title>feral</title>
 		<titleShort>feral</titleShort>
@@ -905,8 +905,8 @@
 		<spawnCategories>
 			<li>MinotaurWild</li>
 		</spawnCategories>
-	<bodyTypeMale>Hulk</bodyTypeMale>
-    <bodyTypeFemale>Hulk</bodyTypeFemale>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
 		<skillGains>
 			<li>
 				<key>Melee</key>
@@ -933,8 +933,8 @@
 			<li>Intellectual</li>
 			<li>Shooting</li>
 		</workDisables>
-		    <requiredWorkTags>
-      <li>Violent</li>
-    </requiredWorkTags>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
 	</BackstoryDef>
 </Defs>
