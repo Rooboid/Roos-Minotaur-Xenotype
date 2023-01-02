@@ -206,6 +206,20 @@
 		</match>
 	</Operation>
 	
+	<!--Add Knight title to protected monarchs-->
+	
+		<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/PawnKindDef[defName="RBM_ProtectedMonarch"]</xpath>
+			<value>
+			<minTitleRequired>Knight</minTitleRequired>
+			</value>
+		</match>
+	</Operation>
+	
 	<!--============================== Faction Xenotype - Patches ============================-->
 	<!-- Adds the minotaur to the potential xenos spotted in each faction. Alter these values if you want them to be more or less common. -->
 	

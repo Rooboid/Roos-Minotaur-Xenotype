@@ -74,7 +74,7 @@
 	<gearHealthRange>1</gearHealthRange>
   </PawnKindDef>
   
-      <PawnKindDef ParentName="ImperialTrooperBase">
+      <PawnKindDef ParentName="SpaceRefugeeBase">
     <defName>RBM_MinotaurGuardianLow</defName>
 	<race>Human</race>
 	<defaultFactionType>Ancients</defaultFactionType>
@@ -174,7 +174,6 @@
 	<defName>RBM_ProtectedMonarch</defName>
 	<race>Human</race>
 	<defaultFactionType>Ancients</defaultFactionType>
-	<minTitleRequired>Knight</minTitleRequired>
 	<trader>true</trader>
 	<combatPower>20</combatPower>
 	<label>protected monarch</label>

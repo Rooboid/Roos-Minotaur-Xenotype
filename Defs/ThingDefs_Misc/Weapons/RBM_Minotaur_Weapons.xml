@@ -12,7 +12,7 @@
 	<ThingDef ParentName="BaseWeaponNeolithic">
 		<defName>RBM_Bullslinger</defName>
 		<label>bullslinger</label>
-		<description>An ancient, obsidian bow of unknown origin, passed down by countless generations of minotaur. It fires blisteringly cold arrows, accurate enough to trim the nosehair of a pigskin from five acres away. It is so heavy that only pawns with the Herculean gene may equip it.</description>
+		<description>An ancient, obsidian bow of unknown origin, passed down by countless generations of minotaur. It fires blisteringly cold arrows, accurate enough to trim the nosehair of a pigskin from five acres away. /n/nIt is so heavy that only pawns with the Herculean gene may equip it.</description>
 		<descriptionHyperlinks>
 			<GeneDef>RBM_Herculean</GeneDef>
 		</descriptionHyperlinks>
@@ -43,9 +43,9 @@
 		<statBases>
 			<Mass>5.2</Mass>
 			<MarketValue>1000</MarketValue>
-			<AccuracyTouch>0.45</AccuracyTouch>
-			<AccuracyShort>0.69</AccuracyShort>
-			<AccuracyMedium>0.87</AccuracyMedium>
+			<AccuracyTouch>0.33</AccuracyTouch>
+			<AccuracyShort>0.44</AccuracyShort>
+			<AccuracyMedium>0.77</AccuracyMedium>
 			<AccuracyLong>0.96</AccuracyLong>
 			<RangedWeapon_Cooldown>1.65</RangedWeapon_Cooldown>
 			<MaxHitPoints>250</MaxHitPoints>
@@ -130,7 +130,7 @@
 	<ThingDef ParentName="BaseWeapon">
 		<defName>RBM_TaurailGun</defName>
 		<label>taurail gun</label>
-		<description>An ancient, obsidian railgun powered by a glowing gemstone. Little is known about this fabled weapon, other than that victims of its blast seldom live to tell the tale. This railgun so massive that only pawns with the Herculean gene can equip it.</description>
+		<description>An ancient, obsidian railgun powered by a glowing gemstone. Little is known about this fabled weapon, other than that victims of its blast seldom live to tell the tale. Those unfortunate enough to be in it's impact zone and still survive will become terrified. /n/nThis railgun so massive that only pawns with the Herculean gene can equip it.</description>
 		<descriptionHyperlinks>
 			<GeneDef>RBM_Herculean</GeneDef>
 		</descriptionHyperlinks>
@@ -151,7 +151,6 @@
 			<li>TaurailGun</li>
 		</tradeTags>
 		<tradeNeverStack>true</tradeNeverStack>
-		
 		<!-- Obtaining -->
 		<recipeMaker IsNull="True"/>
 		<soundInteract>RBM_TaurailGun_Equip</soundInteract>
@@ -239,8 +238,7 @@
 			<damageDef>Mageia_Hot</damageDef>
 			<explosionRadius>3.5</explosionRadius>
 			<explosionRadiusDisplayPadding>1</explosionRadiusDisplayPadding>
-			<postExplosionGasType>ToxGas</postExplosionGasType>
-			<!-- Change to custom gas-->
+			<postExplosionGasType>BlindSmoke</postExplosionGasType>
 			<ai_IsIncendiary>true</ai_IsIncendiary>
 			<damageAmountBase>16</damageAmountBase>
 			<armorPenetrationBase>0.56</armorPenetrationBase>
@@ -257,7 +255,7 @@
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>RBM_Labrys</defName>
 		<label>labrys</label>
-		<description>An oversized obsidian axe that's seen as a symbol of minotaur culture. Only pawns with the Herculean gene can equip it as it's ridiculously heavy.</description>
+		<description>An oversized, obsidian axe that's seen as a symbol of minotaur culture. Though it's weight can be shifted with some effort, only pawns with the Herculean gene are strong enough to swing it in battle.</description>
 		<descriptionHyperlinks>
 			<GeneDef>RBM_Herculean</GeneDef>
 		</descriptionHyperlinks>
@@ -335,7 +333,7 @@
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>RBM_Damacles</defName>
 		<label>damacles</label>
-		<description>A heavy, obsidian sword with many tales surrounding it in certain cultures. In exchange for its blinding attack speed and chance to land a critical hit during battle, holding it imparts an incredibly anxious feeling onto the wielder. Only pawns with the Herculean gene can equip it.</description>
+		<description>A heavy, obsidian sword with many tales surrounding it in certain cultures. In exchange for its blinding attack speed and chance to land a critical hit during battle, holding it imparts an incredibly anxious feeling onto the wielder. /n/nOnly pawns with the Herculean gene can equip it.</description>
 		<descriptionHyperlinks>
 			<GeneDef>RBM_Herculean</GeneDef>
 		</descriptionHyperlinks>
@@ -353,8 +351,7 @@
 		<tradeTags>
 			<li>HerculeanFabled</li>
 		</tradeTags>
-		<tradeNeverStack>true</tradeNeverStack>
-		
+		<tradeNeverStack>true</tradeNeverStack>	
 		<!-- Obtaining -->
 		<recipeMaker IsNull="True"/>
 		<soundInteract>RBM_Labrys_Equip</soundInteract>
@@ -470,7 +467,7 @@
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>RBM_Oxenammer</defName>
 		<label>oxenammer</label>
-		<description>A tyrannically imposing hammer, impossible for a baseline human to use. Its weight makes it exhausting to carry around, but it can crush bones into stardust in just one swing.</description>
+		<description>A tyrannical hammer, impossible for a baseliner to wield in battle. Its immense weight makes it exhausting to carry around, but it can crush bones into stardust in just one swing.</description>
 		<descriptionHyperlinks>
 			<GeneDef>RBM_Herculean</GeneDef>
 		</descriptionHyperlinks>
@@ -553,7 +550,7 @@
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>RBM_Tunbell</defName>
 		<label>tunbell</label>
-		<description>An obsidian staff that resembles a large tuning fork with a cowbell attached to it. It's shrill chimes can cause it's victims to suffer with tinnitus. It's so heavy that only pawns with the Herculean trait can equip it.</description>
+		<description>An elusive, obsidian staff that resembles a large tuning fork. Its shrill chimes can cause its victims to suffer with tinnitus. /n/nIt's so heavy and unwieldy that only pawns with the Herculean trait can equip it.</description>
 		<descriptionHyperlinks>
 			<GeneDef>RBM_Herculean</GeneDef>
 		</descriptionHyperlinks>
@@ -589,6 +586,7 @@
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.05</MoveSpeed>
+			<MeleeHitChance>-0.3</MeleeHitChance>
 		</equippedStatOffsets>
 		<weaponTags>
 			<li>HerculeanWeapon</li>
@@ -636,7 +634,7 @@
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>RBM_Midaspear</defName>
 		<label>midaspear</label>
-		<description>An obsidian weapon with a gold-encrusted spearhead. Ancient fables describes this weapon as being able to turn its victims' corpses into gold. It's so long and heavy that only a Herculean pawn can equip it.</description>
+		<description>An obsidian weapon with a gold-encrusted spearhead. Ancient fables describe this weapon as being able to turn its victims' corpses into gold. /n/nIt's so long and heavy that only a Herculean pawn can equip it.</description>
 		<descriptionHyperlinks>
 			<GeneDef>RBM_Herculean</GeneDef>
 		</descriptionHyperlinks>
