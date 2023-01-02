@@ -234,19 +234,13 @@
 			<texPath>Things/Projectile/RBM_ObsidianBullet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<thingClass>Projectile_Explosive</thingClass>
+		<thingClass>RBM_Minotaur.Projectile_ObsidianBullet</thingClass>
 		<projectile>
 			<damageDef>Mageia_Hot</damageDef>
 			<explosionRadius>3.5</explosionRadius>
-			<explosionRadiusDisplayPadding>1</explosionRadiusDisplayPadding>
-			<postExplosionGasType>ToxGas</postExplosionGasType>
-			<!-- Change to custom gas-->
-			<ai_IsIncendiary>true</ai_IsIncendiary>
 			<damageAmountBase>16</damageAmountBase>
 			<armorPenetrationBase>0.56</armorPenetrationBase>
 			<speed>72</speed>
-			<screenShakeFactor>0.8</screenShakeFactor>
-			<stoppingPower>1.5</stoppingPower>
 		</projectile>
 	</ThingDef>
 	
