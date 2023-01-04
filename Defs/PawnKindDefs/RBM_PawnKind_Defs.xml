@@ -74,7 +74,7 @@
 	<gearHealthRange>1</gearHealthRange>
   </PawnKindDef>
   
-      <PawnKindDef ParentName="SpaceRefugeeBase">
+      <PawnKindDef>
     <defName>RBM_MinotaurGuardianLow</defName>
 	<race>Human</race>
 	<defaultFactionType>Ancients</defaultFactionType>

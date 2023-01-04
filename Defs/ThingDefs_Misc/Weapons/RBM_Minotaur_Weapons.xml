@@ -161,7 +161,7 @@
 		<!-- Battle Data -->
 		<statBases>
 			<Mass>7.5</Mass>
-			<MarketValue>2500</MarketValue>
+			<MarketValue>3500</MarketValue>
 			<AccuracyTouch>0.55</AccuracyTouch>
 			<AccuracyShort>0.67</AccuracyShort>
 			<AccuracyMedium>0.77</AccuracyMedium>
@@ -175,6 +175,7 @@
 		</equippedStatOffsets>
 		<weaponTags>
 			<li>HerculeanWeapon</li>
+			<li>TaurailGun</li>
 		</weaponTags>
 		<weaponClasses>
 			<li>RangedLight</li>
