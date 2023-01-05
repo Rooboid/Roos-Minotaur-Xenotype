@@ -32,7 +32,7 @@
 			<warmupTime>1.5</warmupTime>
 			<soundCast>SeeRed_Cast</soundCast>
 			<requireLineOfSight>false</requireLineOfSight>
-			<range>8</range>
+			<range>2</range>
 			<drawAimPie>false</drawAimPie>
 			<targetParams>
 				<canTargetSelf>true</canTargetSelf>
@@ -58,6 +58,8 @@
 
 
 	<!-- See Red HeDiff -->
+	
+	
 	<HediffDef>
 		<defName>HeDiffSeeRed</defName>
 		<label>seeing red</label>
@@ -142,10 +144,7 @@
 		</stages>
 	</HediffDef>
 
-
 	<!-- See Red: Mental State -->
-
-	<!-- TODO: Make this have same effect as Berserk -->
 
 	<MentalStateDef ParentName="BaseMentalState">
 		<defName>RBM_Berserk</defName>
