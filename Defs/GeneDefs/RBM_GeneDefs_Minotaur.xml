@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-		<!--====================== Cosmetic Genes ======================-->
+	<!--====================== Cosmetic Genes ======================-->
 
 	<!-- Bovine Ears -->
 
@@ -111,7 +111,7 @@
             </thoughtsAsIngredient>
           </li>
         </extraThoughtsFromIngestion>  -->
-		<missingGeneRomanceChanceFactor>0.7</missingGeneRomanceChanceFactor>
+		<missingGeneRomanceChanceFactor>0.8</missingGeneRomanceChanceFactor>
 		<!-- NoseRing -->
 		<graphicData>
 			<graphicPaths>
@@ -126,7 +126,6 @@
 			<visibleNorth>false</visibleNorth>
 			<layer>PostTattoo</layer>
 		</graphicData>
-		<!-- Symbols -->
 		<symbolPack>
 			<prefixSymbols>
 				<li><symbol>bull</symbol></li>
@@ -144,7 +143,8 @@
 		</symbolPack>
 	</GeneDef>
 	
-	<!-- Earthy Skin-->
+	<!-- Earthy Skin -->
+	<!--TODO: Edit Tattoos -->
 	
 	<GeneDef ParentName="GeneSkinColorOverride">
 		<defName>RBM_EarthySkin</defName>
@@ -181,8 +181,8 @@
 		</symbolPack>
 	</GeneDef>
 	
-			<!--====================== Vocal Genes ======================-->
-			<!-- Bovine Voice-->
+	<!--====================== Vocal Genes ======================-->
+	<!-- Bovine Voice -->
 	
 	<GeneDef ParentName="GeneVoiceBase">
 		<defName>RBM_BovineVoice</defName>
@@ -210,8 +210,8 @@
 		</symbolPack>
 	</GeneDef>
 	
-			<!--====================== Functional Genes ======================-->
-			<!-- Unguligrade Legs-->
+	<!--====================== Functional Genes ======================-->
+	<!-- Unguligrade Legs -->
 		
 	<GeneDef>
 		<defName>RBM_UnguligradeLegs</defName>
@@ -238,9 +238,23 @@
 				<li><symbol>ped</symbol></li>
 			</suffixSymbols>
 		</symbolPack>
+		<!-- These effects will occur if you ARE running vanilla framework expanded. If not, a patch is added to tie the gene buffs to the pawn, as opposed to the body part -->
+		<modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<hediffsToBodyParts>
+					<li>
+						<hediff>UnguligradeLegPart</hediff>
+						<bodyparts>
+							<li>Leg</li>
+							<li>Leg</li>
+						</bodyparts>
+					</li>
+				</hediffsToBodyParts>
+			</li>
+		</modExtensions>
 	</GeneDef>
 	
-	<!-- Herculean-->
+	<!-- Herculean -->
   
 	<GeneDef>
 		<defName>RBM_Herculean</defName>
@@ -281,11 +295,19 @@
 				<li><symbol>rile</symbol></li>
 			</suffixSymbols>
 		</symbolPack>
+		<modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<caravanCarryingFactor>1.3</caravanCarryingFactor>
+				<skillRecreation>Melee</skillRecreation>
+				<bodyScaleFactor>1.3,1.3</bodyScaleFactor>
+				<headScaleFactor>1.1,1.1</headScaleFactor>
+			</li>
+		</modExtensions>
 	</GeneDef>
 	
-	<!-- Bovine Temper-->
+	<!-- Bovine Temper -->
 	
-		<GeneDef>
+	<GeneDef>
 		<defName>RBM_BovineTemper</defName>
 		<label>Bovine Temper</label>
 		<description>Carriers of this gene have a short temper and become frighteneningly aggressive when enraged. They possess the ability to 'See Red', a horrifying state of outrage that can only be ended by total exhaustion or death.</description>
@@ -293,7 +315,7 @@
 		<biostatMet>1</biostatMet>
 		<displayCategory>Ability</displayCategory>
 		<displayOrderInCategory>200</displayOrderInCategory>
-		<iconPath>UI/GeneIcons/RBM_Bull</iconPath>
+		<iconPath>UI/GeneIcons/RBM_BovineTemper</iconPath>
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<abilities>
 			<li>RBM_SeeRed</li>
@@ -306,9 +328,9 @@
 		<prisonBreakMTBFactor>5</prisonBreakMTBFactor>
 		<!-- Symbol -->
 		<symbolPack>
-		      <wholeNameSymbols>
-        <li><symbol>minotaur</symbol></li>
-      </wholeNameSymbols>
+			<wholeNameSymbols>
+				<li><symbol>minotaur</symbol></li>
+			</wholeNameSymbols>
 			<prefixSymbols>
 				<li><symbol>bull</symbol></li>
 				<li><symbol>steer</symbol></li>
@@ -324,7 +346,7 @@
 		</symbolPack>
 	</GeneDef>
 
-	<!-- Ruminant Stomach-->
+	<!-- Ruminant Stomach -->
 	<!-- TODO -->
 	
 	<GeneDef>
@@ -359,8 +381,7 @@
 		</symbolPack>
 	</GeneDef>
   
-	<!-- Estrous Cycle-->
-	<!-- TODO -->
+	<!-- Estrous Cycle -->
 	
 	<GeneDef ParentName="FertilityBase">
 		<defName>RBM_EstrousCycle</defName>

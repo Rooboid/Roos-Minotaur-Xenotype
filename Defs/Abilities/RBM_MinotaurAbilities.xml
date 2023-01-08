@@ -6,40 +6,10 @@
 		<displayOrder>1500</displayOrder>
 	</AbilityCategoryDef>
 
-	<!--====================== Ability: See Red ======================-->
-	<!-- Depends on:
-	- Effecters:
-	RBM_SeeRed_Warmup
-	RBM_BerserkEffect
-	
-	- Sounds:
-	SeeRed_Cast
-	
-	- HeDiffs:
-	HeDiffSeeRed
-	HeDiffTerrified
-	
-	- MentalStates:
-	RBM_Berserk
-	RBM_TerrifiedFlee
-	
-	- Damage:
-	Terrified
-	
-	- Thoughts:
-	Terrified_Thought_Small
-	Terrified_Thought_Med
-	Terrified_Thought_Large
-	
-	Combat Rule: 
-	Damage_Terrify
-	
-	-->
-
 	<AbilityDef>
 		<defName>RBM_SeeRed</defName>
 		<label>see red</label>
-		<description>The user erupts into a monstrous rage, terrifying those around them. The user will attack both friends and foes with unrelenting strength and speed until they exhaust themselves or drop dead.</description>
+		<description>The user erupts into a monstrous rage, terrifying those around them. The user will attack both friends and foes with unrelenting strength and speed until they either exhaust themselves or drop dead.</description>
 		<jobDef>CastAbilityOnThingWithoutWeapon</jobDef>
 		<iconPath>UI/GeneIcons/RBM_Ability_SeeRed</iconPath>
 		<writeCombatLog>True</writeCombatLog>
@@ -62,7 +32,7 @@
 			<warmupTime>1.5</warmupTime>
 			<soundCast>SeeRed_Cast</soundCast>
 			<requireLineOfSight>false</requireLineOfSight>
-			<range>8</range>
+			<range>2</range>
 			<drawAimPie>false</drawAimPie>
 			<targetParams>
 				<canTargetSelf>true</canTargetSelf>
@@ -88,6 +58,8 @@
 
 
 	<!-- See Red HeDiff -->
+	
+	
 	<HediffDef>
 		<defName>HeDiffSeeRed</defName>
 		<label>seeing red</label>
@@ -172,10 +144,7 @@
 		</stages>
 	</HediffDef>
 
-
 	<!-- See Red: Mental State -->
-
-	<!-- TODO: Make this have same effect as Berserk -->
 
 	<MentalStateDef ParentName="BaseMentalState">
 		<defName>RBM_Berserk</defName>

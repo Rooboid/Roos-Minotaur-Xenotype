@@ -205,7 +205,7 @@
 			</value>
 		</match>
 	</Operation>
-
+	
 	<!--============================== Faction Xenotype - Patches ============================-->
 	<!-- Adds the minotaur to the potential xenos spotted in each faction. Alter these values if you want them to be more or less common. -->
 

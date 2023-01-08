@@ -101,7 +101,7 @@
 		<label>gold</label>
 		<workerClass>DamageWorker_AddInjury</workerClass>
 		<deathMessage>{0} has been eradicated.</deathMessage>
-		<!-- <hediff>MidasTouch</hediff> -->
+		<hediff>BruiseGold</hediff>
 		<externalViolence>true</externalViolence>
 		<defaultDamage>20</defaultDamage>
 		<canInterruptJobs>true</canInterruptJobs>
