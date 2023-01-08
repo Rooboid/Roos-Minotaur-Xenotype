@@ -1,6 +1,6 @@
-﻿using Verse;
-using RimWorld;
+﻿using RimWorld;
 using UnityEngine;
+using Verse;
 using Verse.Sound;
 
 
@@ -39,7 +39,7 @@ namespace RBM_Minotaur_Mod
 
         public override void Notify_PawnKilled()
         {
-            
+
             if (!base.Pawn.Spawned)
             {
                 return;
