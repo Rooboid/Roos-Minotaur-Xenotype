@@ -5,5 +5,6 @@ using Verse;
 public static class RBM_GeneDefOf
 {
     public static GeneDef RBM_EstrousCycle;
+    public static GeneDef RBM_RuminantStomach;
 }
 
