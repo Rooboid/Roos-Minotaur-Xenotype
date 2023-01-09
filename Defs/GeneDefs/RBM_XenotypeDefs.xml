@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-
 	<XenotypeDef>
-		<defName>RBM_Minotaur</defName>
+		<defName>RBM_Minotaur</defName> <!-- TODO: Description -->
 		<label>minotaur</label>
 		<!-- Desc -->
 		<description>The ancient origins of the minotaur remain shrouded in mystery, helped naught by their hostility toward humans. Man once reared not only cattle, but also the minotaur- branding them with hot irons as labourers, cannon fodder or protectors of nobility. Today, minotaur civilisations can be found as far away from humans as possible- less-so for the minotaur’s safety, and more-so the humans’. \n\nThe minotaur race comprises of cows and bulls: the former of which produce milk, bear young, and typically possess a peaceful temperament. Bulls, however, are characterised by their incessant aggression, herculean strength and ability to impregnate cows. Both bulls and cows can hormonally be male or female- something not seen in their quadrupedal counterpart.</description>
@@ -41,5 +40,4 @@
 			<li>AptitudePoor_Social</li>
 		</genes>
 	</XenotypeDef>
-
 </Defs>

@@ -6,7 +6,6 @@
 		<label>herculean</label>
 	</WeaponClassDef>
 
-
 	<!--====================== Bullslinger ======================-->
 
 	<ThingDef ParentName="BaseWeaponNeolithic">
@@ -98,7 +97,6 @@
 		</comps>
 	</ThingDef>
 
-
 	<!-- Obsidian Arrow (Projectile fired by the Bullslinger) -->
 
 	<ThingDef ParentName="BaseProjectileNeolithic">
@@ -123,7 +121,6 @@
 			<armorPenetrationBase>0.29</armorPenetrationBase>
 		</projectile>
 	</ThingDef>
-
 
 	<!--====================== Taurail Gun ======================-->
 
@@ -223,7 +220,6 @@
 		</comps>
 	</ThingDef>
 
-
 	<!-- Obsidian Bullet (Projectile fired by the Taurail Gun) -->
 
 	<ThingDef ParentName="BaseBullet">
@@ -242,8 +238,6 @@
 			<speed>72</speed>
 		</projectile>
 	</ThingDef>
-
-
 
 	<!--====================== Labrys ======================-->
 
@@ -321,7 +315,6 @@
 			</li>
 		</comps>
 	</ThingDef>
-
 
 	<!--====================== Damacles ======================-->
 
@@ -427,7 +420,6 @@
 		</comps>
 	</ThingDef>
 
-
 	<!--Damacles: Rule Set -->
 	<!--TODO: Why isn't this working? -->
 
@@ -454,7 +446,6 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
-
 
 	<!--====================== Oxenammer ======================-->
 
@@ -537,7 +528,6 @@
 			</li>
 		</comps>
 	</ThingDef>
-
 
 	<!--====================== Tunbell ======================-->
 

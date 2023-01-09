@@ -2,7 +2,7 @@
 <Defs>
 
 	<!--====================== Bovine Voice Sounds ======================-->
-	<!-- Pawns with the bovine voice gene will use these sounds. -->
+	<!-- Pawns with the bovine voice gene will use these sounds -->
 	
 	<!-- Bovine Call -->
 	
@@ -23,7 +23,6 @@
 		</subSounds>
 	</SoundDef>
 	
-	
 	<!-- Bovine Death -->
 	
 	<SoundDef>
@@ -42,7 +41,6 @@
 			</li>
 		</subSounds>
 	</SoundDef>
-	
 	
 	<!-- Bovine Wounded -->
 	
@@ -64,12 +62,10 @@
 		</subSounds>
 	</SoundDef>
 	
-	
 	<!--====================== Ability Sounds ======================-->
-	<!-- Sounds related to the ability SeeRed.-->
+	<!-- Sounds related to the ability SeeRed-->
 	
-	
-	<!-- SeeRed: Ability is Warming Up -->
+	<!-- SeeRed: Ability is warming up -->
 	
 	<SoundDef>
 		<defName>RBM_SeeRedWarmup</defName>
@@ -90,8 +86,7 @@
 		</subSounds>
 	</SoundDef>
 	
-	
-	<!-- SeeRed: Ability is Cast -->
+	<!-- SeeRed: Ability is cast -->
 	
 	<SoundDef>
 		<defName>SeeRed_Cast</defName>
@@ -112,10 +107,8 @@
 		</subSounds>
 	</SoundDef>
 	
-	
 	<!--====================== Impact Sounds ======================-->
 	<!-- Kaboom!-->
-	
 	
 	<!-- Impact: Terrify -->
 	
@@ -137,7 +130,6 @@
 			</li>
 		</subSounds>
 	</SoundDef>
-	
 	
 	<!-- Impact: Mageia -->
 	
@@ -183,7 +175,6 @@
 		</subSounds>
 	</SoundDef>
 	
-	
 	<!-- Impact: Critical Hit -->
 	
 	<SoundDef>
@@ -204,11 +195,10 @@
 		</subSounds>
 	</SoundDef>
 	
-	
 	<!--====================== Weapon Sounds ======================-->
-	<!-- Sounds used by the herculean weapons.-->
+	<!-- Sounds used by the herculean weapons that aren't impacts -->
 	
-	
+	<!--====================== Bullslinger ======================-->
 	<!-- Bullslinger: Equip -->
 	
 	<SoundDef>
@@ -228,7 +218,6 @@
 			</li>
 		</subSounds>
 	</SoundDef>
-	
 	
 	<!-- Bullslinger: Fire -->
 	
@@ -262,7 +251,7 @@
 		</subSounds>
 	</SoundDef>
 	
-	
+	<!--====================== Taurail Gun ======================-->
 	<!-- Taurail Gun: Equip -->
 	
 	<SoundDef>
@@ -282,7 +271,6 @@
 			</li>
 		</subSounds>
 	</SoundDef>
-	
 	
 	<!-- Taurail Gun: Fire -->
 	
@@ -316,7 +304,7 @@
 		</subSounds>
 	</SoundDef>
 	
-	
+	<!--====================== Labrys ======================-->
 	<!-- Labrys: Equip -->
 	
 	<SoundDef>
@@ -337,7 +325,7 @@
 		</subSounds>
 	</SoundDef>
 	
-	
+	<!--====================== Oxenammer ======================-->
 	<!-- Oxenammer: Equip -->
 	
 	<SoundDef>
@@ -358,7 +346,7 @@
 		</subSounds>
 	</SoundDef>
 	
-	
+	<!--====================== Tunbell ======================-->
 	<!-- Tunbell: Equip -->
 	
 	<SoundDef>

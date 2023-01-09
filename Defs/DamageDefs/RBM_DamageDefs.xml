@@ -20,9 +20,8 @@
 		<soundExplosion>Explosion_Terrify</soundExplosion>
 	</DamageDef>
 
-
 	<!--====================== Mageia Damage (Cold) ======================-->
-	<!-- Used by the Bullslinger's Obsidian Arrows -->
+	<!-- Used by the Bullslinger's obsidian arrows -->
 
 	<DamageDef ParentName="Flame">
 		<defName>Mageia_Cold</defName>
@@ -45,9 +44,8 @@
 		<soundExplosion>Explosion_Mageia</soundExplosion>
 	</DamageDef>
 
-
 	<!--====================== Mageia Damage (Hot) ======================-->
-	<!-- Used by the Taurail Gun's Obsidian Bullets -->
+	<!-- Used by the Taurail Gun's obsidian bullets -->
 
 	<DamageDef ParentName="Flame">
 		<defName>Mageia_Hot</defName>
@@ -70,7 +68,6 @@
 		<explosionColorEdge>(0.3, 0.70, 0.88, 0.05)</explosionColorEdge>
 		<soundExplosion>Explosion_Terrify</soundExplosion>
 	</DamageDef>
-
 
 	<!--====================== Mageia Damage (Sound) ======================-->
 	<!-- Used by the Tunbell. Causes BruiseSound hediff which causes ringing ears. Check HeDiff Defs for more details. -->
@@ -95,6 +92,7 @@
 	</DamageDef>
 
 	<!--====================== Mageia Damage (Gold) ======================-->
+	<!-- Used by the Midaspear. TODO: Make this effecter -->
 
 	<DamageDef ParentName="Flame">
 		<defName>Mageia_Gold</defName>
@@ -117,10 +115,8 @@
 		<soundExplosion>Explosion_Stun</soundExplosion>
 	</DamageDef>
 
-
-
 	<!--====================== Crit Damage ======================-->
-	<!-- Used by the Damacles when landing critical hits. -->
+	<!-- Used by the Damacles when landing critical hits -->
 
 	<DamageDef ParentName="Flame">
 		<defName>CritHit</defName>
@@ -139,10 +135,8 @@
 		<soundExplosion>RBM_CriticalHitSound</soundExplosion>
 	</DamageDef>
 
-
 	<!--====================== Earthshatter Damage ======================-->
-	<!-- Used by the Oxenammer. -->
-
+	<!-- Used by the Oxenammer -->
 
 	<DamageDef ParentName="Flame">
 		<defName>Earthshatter</defName>

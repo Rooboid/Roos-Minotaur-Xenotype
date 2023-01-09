@@ -316,10 +316,10 @@
 						<Elephant>1</Elephant>
 					</carriers>
 					<guards>
-						<RBM_MinotaurGuardianHigh>3</RBM_MinotaurGuardianHigh>
-						<RBM_MinotaurGuardianLow>10</RBM_MinotaurGuardianLow>
-						<Empire_Fighter_Trooper>1</Empire_Fighter_Trooper>
-						<Empire_Fighter_Janissary>0.05</Empire_Fighter_Janissary>
+						<RBM_MinotaurGuardianHigh>0.05</RBM_MinotaurGuardianHigh>
+						<RBM_MinotaurGuardianLow>2</RBM_MinotaurGuardianLow>
+						<Empire_Fighter_Trooper>3</Empire_Fighter_Trooper>
+						<Empire_Fighter_Janissary>0.5</Empire_Fighter_Janissary>
 					</guards>
 				</li>
 			</value>
@@ -448,5 +448,25 @@
 			</value>
 		</match>
 	</Operation>
+	
+	<!--Vanilla Apparel Expanded - Accessories Patches-->
+	<!--Add Backpacks to Minotaur Fighters-->
+	
+ 	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Apparel Expanded — Accessories</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/PawnKindDef[defName="RBM_MinotaurFighter"]</xpath>
+			<value>
+    <apparelRequired>
+      <li>VAEA_Apparel_Backpack</li>
+    </apparelRequired>
+			</value>
+		</match>
+	</Operation>
+	
+	
+	
 
 </Patch>

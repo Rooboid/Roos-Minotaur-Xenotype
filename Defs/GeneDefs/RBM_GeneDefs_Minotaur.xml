@@ -2,7 +2,6 @@
 <Defs>
 
 	<!--====================== Cosmetic Genes ======================-->
-
 	<!-- Bovine Ears -->
 
 	<GeneDef ParentName="GeneEarsBase">
@@ -238,7 +237,7 @@
 				<li><symbol>ped</symbol></li>
 			</suffixSymbols>
 		</symbolPack>
-		<!-- These effects will occur if you ARE running vanilla framework expanded. If not, a patch is added to tie the gene buffs to the pawn, as opposed to the body part -->
+		<!-- Thee following will occur if you ARE running vanilla framework expanded. If not, a patch is added to tie the gene buffs to the pawn, as opposed to the body part -->
 		<modExtensions>
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
 				<hediffsToBodyParts>
@@ -406,5 +405,4 @@
 			</suffixSymbols>
 		</symbolPack>
 	</GeneDef>
-
 </Defs>

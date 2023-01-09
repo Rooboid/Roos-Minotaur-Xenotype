@@ -1,6 +1,8 @@
-
-	<!-- Terrified Break -->
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
+	<!-- Terrified Break TODO: Do we need this? -->
+	
 	<MentalStateDef ParentName="BaseMentalState">
 		<defName>RBM_TerrifiedFlee</defName>
 		<label>terrified</label>
