@@ -10,7 +10,7 @@
         <xpath>Defs/ThingDef[defName="Hay"]/ingestible</xpath>
         <value>
             <preferability>RawTasty</preferability>
-            <foodType>Plant</foodType>
+            <foodType>VegetableOrFruit</foodType>
             <maxNumToIngestAtOnce>50</maxNumToIngestAtOnce>
             <optimalityOffsetHumanlikes>16</optimalityOffsetHumanlikes>
         </value>
@@ -20,6 +20,13 @@
         <xpath>Defs/ThingDef[defName="Hay"]/statBases</xpath>
         <value>
             <Nutrition>0.05</Nutrition>
+        </value>
+    </Operation>
+
+        <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Hay"]</xpath>
+        <value>
+            <socialPropernessMatters>true</socialPropernessMatters>
         </value>
     </Operation>
 

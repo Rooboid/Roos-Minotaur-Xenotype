@@ -11,7 +11,7 @@
 	<AbilityDef>
 		<defName>RBM_SeeRed</defName>
 		<label>see red</label>
-		<description>The user erupts into a monstrous rage, terrifying those around them. The user will attack both friends and foes with unrelenting strength and speed until they either exhaust themselves or drop dead.</description>
+		<description>The user erupts into a monstrous rage, terrifying those around them. The user will attack both friends and foes with unrelenting strength and speed until they exhaust themselves or drop dead.</description>
 		<jobDef>CastAbilityOnThingWithoutWeapon</jobDef>
 		<iconPath>UI/GeneIcons/RBM_Ability_SeeRed</iconPath>
 		<writeCombatLog>True</writeCombatLog>
@@ -34,7 +34,7 @@
 			<warmupTime>1.5</warmupTime>
 			<soundCast>SeeRed_Cast</soundCast>
 			<requireLineOfSight>false</requireLineOfSight>
-			<range>2</range>
+			<range>2.5</range>
 			<drawAimPie>false</drawAimPie>
 			<targetParams>
 				<canTargetSelf>true</canTargetSelf>
@@ -49,7 +49,7 @@
 			</li>
 
 			<li Class="RBM_Minotaur_Mod.CompProperties_AbilityTerrify">
-				<terrorRadius>5.5</terrorRadius>
+				<terrorRadius>4.5</terrorRadius>
 			</li>
 		</comps>
 	</AbilityDef>
@@ -63,13 +63,13 @@
 		<defName>HeDiffSeeRed</defName>
 		<label>seeing red</label>
 		<labelNoun>outrage</labelNoun>
-		<defaultLabelColor>(0.3, 0.7, 9)</defaultLabelColor>
+		<defaultLabelColor>(250, 150, 180)</defaultLabelColor>
 		<description>Total loss of physical restraint.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<initialSeverity>1</initialSeverity>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>-0.7</severityPerDay>
+				<severityPerDay>-0.85</severityPerDay>
 			</li>
 			<li Class="HediffCompProperties_Effecter">
 				<stateEffecter>RBM_TerrifiedEffect</stateEffecter>
@@ -88,7 +88,7 @@
 				</capMods>
 			</li>
 			<li>
-				<minSeverity>0.60</minSeverity>
+				<minSeverity>0.87</minSeverity>
 				<label>exhausted</label>
 				<capMods>
 					<li>
@@ -102,7 +102,7 @@
 				</capMods>
 			</li>
 			<li>
-				<minSeverity>0.85</minSeverity>
+				<minSeverity>0.92</minSeverity>
 				<label>diminishing</label>
 				<capMods>
 					<li>
@@ -116,7 +116,7 @@
 				</capMods>
 			</li>
 			<li>
-				<minSeverity>0.93</minSeverity>
+				<minSeverity>0.96</minSeverity>
 				<label>intense</label>
 				<statOffsets>
 					<MeleeHitChance>15</MeleeHitChance>

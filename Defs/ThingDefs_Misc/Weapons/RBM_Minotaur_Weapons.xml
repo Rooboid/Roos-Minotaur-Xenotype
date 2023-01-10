@@ -629,7 +629,7 @@
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponMelee/RBM_Midaspear/RBM_Midaspear</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>2</drawSize>
+			<drawSize>1.7</drawSize>
 		</graphicData>
 		<!-- Trading -->
 		<techLevel>Archotech</techLevel>
@@ -695,5 +695,28 @@
 				<minQualityForArtistic>Excellent</minQualityForArtistic>
 			</li>
 		</comps>
+		<modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VFECore.ThingDefExtension">
+				<weaponCarryDrawOffsets>
+					<north>
+						<drawOffset>(0.25, 0, 0.40)</drawOffset>
+						<angleOffset>270</angleOffset>
+					</north>
+					<east>
+						<drawOffset>(0, 0, 0.35)</drawOffset>
+						<angleOffset>270</angleOffset>
+					</east>
+					<south>
+						<drawOffset>(-0.25, 0, 0.40)</drawOffset>
+						<angleOffset>270</angleOffset>
+					</south>
+					<west>
+						<drawOffset>(0, 0, 0.35)</drawOffset>
+						<angleOffset>180</angleOffset>
+					</west>
+				</weaponCarryDrawOffsets>
+				<usableWithShields>true</usableWithShields>
+			</li>
+		</modExtensions>
 	</ThingDef>
 </Defs>
