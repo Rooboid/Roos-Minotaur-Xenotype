@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!-- Categories
-
   <StyleItemCategoryDef>
-    <defName>RBM_BovineStyle</defName>
+    <defName>RBM_Bovine</defName>
     <label>bovine</label>
   </StyleItemCategoryDef>
-
-
 
   <TattooDef>
     <defName>RBM_BodyCowA</defName>
     <label>bovine spots</label>
     <texPath>Things/Pawn/Humanlike/Tattoos/Body_Cow1/Cow1</texPath>
     <tattooType>Body</tattooType>
-    <category>RBM_BovineStyle</category>
+    <category>RBM_Bovine</category>
 	<requiredGene>RBM_EarthySkin</requiredGene>
 	<visibleNorth>True</visibleNorth>
     <styleTags>
@@ -28,7 +24,7 @@
     <label>bovine patches</label>
     <texPath>Things/Pawn/Humanlike/Tattoos/Body_Cow2/Cow2</texPath>
     <tattooType>Body</tattooType>
-    <category>RBM_BovineStyle</category>
+    <category>RBM_Bovine</category>
 	<requiredGene>RBM_EarthySkin</requiredGene>
 	<visibleNorth>True</visibleNorth>
     <styleTags>
@@ -41,7 +37,7 @@
     <label>bovine jersey</label>
     <texPath>Things/Pawn/Humanlike/Tattoos/Body_Cow3/Cow3</texPath>
     <tattooType>Body</tattooType>
-    <category>RBM_BovineStyle</category>
+    <category>RBM_Bovine</category>
 	<requiredGene>RBM_EarthySkin</requiredGene>
 	<visibleNorth>True</visibleNorth>
     <styleTags>
@@ -49,12 +45,12 @@
     </styleTags>
   </TattooDef>
   
-        <TattooDef>
+    <TattooDef>
     <defName>RBM_BodyBullA</defName>
     <label>bovine how now</label>
     <texPath>Things/Pawn/Humanlike/Tattoos/Body_Bull1/Bull1</texPath>
     <tattooType>Body</tattooType>
-    <category>RBM_BovineStyle</category>
+    <category>RBM_Bovine</category>
 	<requiredGene>RBM_EarthySkin</requiredGene>
 	<visibleNorth>True</visibleNorth>
     <styleTags>
@@ -67,7 +63,7 @@
     <label>bovine how now</label>
     <texPath>Things/Pawn/Humanlike/Tattoos/Body_Bull2/Bull2</texPath>
     <tattooType>Body</tattooType>
-    <category>RBM_BovineStyle</category>
+    <category>RBM_Bovine</category>
 	<requiredGene>RBM_EarthySkin</requiredGene>
 	<visibleNorth>True</visibleNorth>
     <styleTags>
@@ -80,12 +76,12 @@
     <label>bovine how now</label>
     <texPath>Things/Pawn/Humanlike/Tattoos/Body_Bull3/Bull3</texPath>
     <tattooType>Body</tattooType>
-    <category>RBM_BovineStyle</category>
+    <category>RBM_Bovine</category>
 	<requiredGene>RBM_EarthySkin</requiredGene>
 	<visibleNorth>True</visibleNorth>
     <styleTags>
       <li>TattooBodyBovine</li>
     </styleTags>
-  </TattooDef> -->
+  </TattooDef>
   
 </Defs>

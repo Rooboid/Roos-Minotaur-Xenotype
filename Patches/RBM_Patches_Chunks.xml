@@ -79,7 +79,7 @@
 						<compClass>CompEquippable</compClass>
 					</li>
 					<li Class="CompProperties_Explosive">
-						<explosiveRadius>7.8</explosiveRadius>
+						<explosiveRadius>5.3</explosiveRadius>
 						<explosiveDamageType>Bomb</explosiveDamageType>
 						<requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
 					</li>

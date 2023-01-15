@@ -2,7 +2,7 @@
 <Defs>
 
 	<!--====================== Terror Damage ======================-->
-	<!-- Inflicted upon pawns by the ability SeeRed -->
+	<!-- Inflicted upon pawns by the ability SeeRed. -->
 
 	<DamageDef ParentName="Flame">
 		<defName>Terrified</defName>
@@ -21,7 +21,7 @@
 	</DamageDef>
 
 	<!--====================== Mageia Damage (Cold) ======================-->
-	<!-- Used by the Bullslinger's obsidian arrows -->
+	<!-- Used by the Bullslinger's obsidian arrows. -->
 
 	<DamageDef ParentName="Flame">
 		<defName>Mageia_Cold</defName>
@@ -31,7 +31,6 @@
 		<externalViolence>true</externalViolence>
 		<defaultDamage>20</defaultDamage>
 		<canInterruptJobs>true</canInterruptJobs>
-		<combatLogRules>Damage_Terrify</combatLogRules>
 		<makesAnimalsFlee>true</makesAnimalsFlee>
 		<impactSoundType>Bullet</impactSoundType>
 		<armorCategory>Heat</armorCategory>
@@ -45,7 +44,7 @@
 	</DamageDef>
 
 	<!--====================== Mageia Damage (Hot) ======================-->
-	<!-- Used by the Taurail Gun's obsidian bullets -->
+	<!-- Used by the Taurail Gun's obsidian bullets. -->
 
 	<DamageDef ParentName="Flame">
 		<defName>Mageia_Hot</defName>
@@ -92,7 +91,7 @@
 	</DamageDef>
 
 	<!--====================== Mageia Damage (Gold) ======================-->
-	<!-- Used by the Midaspear. TODO: Make this effecter -->
+	<!-- Used by the Midaspear. -->
 
 	<DamageDef ParentName="Flame">
 		<defName>Mageia_Gold</defName>
@@ -107,16 +106,10 @@
 		<makesAnimalsFlee>true</makesAnimalsFlee>
 		<impactSoundType>Slice</impactSoundType>
 		<armorCategory>Sharp</armorCategory>
-		<!-- Effects -->
-		<damageEffecter>Mageia_Effect_Red</damageEffecter>
-		<explosionCellFleck>TerrorFleckLarge</explosionCellFleck>
-		<explosionColorCenter>(1, 1, 1)</explosionColorCenter>
-		<explosionColorEdge>(0.3, 0.70, 0.88, 0.05)</explosionColorEdge>
-		<soundExplosion>Explosion_Stun</soundExplosion>
 	</DamageDef>
 
 	<!--====================== Crit Damage ======================-->
-	<!-- Used by the Damacles when landing critical hits -->
+	<!-- Used by the Damacles when landing critical hits. -->
 
 	<DamageDef ParentName="Flame">
 		<defName>CritHit</defName>
@@ -136,7 +129,7 @@
 	</DamageDef>
 
 	<!--====================== Earthshatter Damage ======================-->
-	<!-- Used by the Oxenammer -->
+	<!-- Used by the Oxenammer. -->
 
 	<DamageDef ParentName="Flame">
 		<defName>Earthshatter</defName>

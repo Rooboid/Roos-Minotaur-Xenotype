@@ -153,7 +153,7 @@
 		</subSounds>
 	</SoundDef>
 	
-		<!-- Impact: Chunk -->
+	<!-- Impact: Chunk -->
 	
 	<SoundDef>
 		<defName>Explosion_Chunk</defName>
@@ -227,17 +227,6 @@
 		<maxSimultaneous>2</maxSimultaneous>
 		<subSounds>
 			<li>
-				<onCamera>True</onCamera>
-				<muteWhenPaused>True</muteWhenPaused>
-				<grains>
-					<li Class="AudioGrain_Clip">
-						<clipPath>RBM_Weapons/RBM_Bullslinger/RBM_Bullslinger_Fire</clipPath>
-					</li>
-				</grains>
-				<volumeRange>42</volumeRange>
-				<pitchRange>0.93~1.13</pitchRange>
-			</li>
-			<li>
 				<onCamera>False</onCamera>
 				<muteWhenPaused>True</muteWhenPaused>
 				<grains>
@@ -245,7 +234,7 @@
 						<clipPath>RBM_Weapons/RBM_Bullslinger/RBM_Bullslinger_Fire</clipPath>
 					</li>
 				</grains>
-				<volumeRange>10</volumeRange>
+				<volumeRange>42</volumeRange>
 				<pitchRange>0.93~1.13</pitchRange>
 			</li>
 		</subSounds>
@@ -367,7 +356,7 @@
 		</subSounds>
 	</SoundDef>
 	
-		<!-- Tunbell: Fire -->
+	<!-- Tunbell: Fire -->
 	
 	<SoundDef>
 		<defName>RBM_Tunbell_Fire</defName>
@@ -386,4 +375,50 @@
 			</li>
 		</subSounds>
 	</SoundDef>
+	
+	<!--====================== Midaspear ======================-->
+	<!-- Midaspear: Turn into gold -->
+	
+	<SoundDef>
+		<defName>RBM_Midaspear_Hit</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>2</maxSimultaneous>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>RBM_Weapons/RBM_Midaspear</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>37</volumeRange>
+				<pitchRange>0.93~1.13</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- Cleaning gold filth type -->
+	
+	<SoundDef>
+		<defName>Interact_CleanFilth_Gold</defName>
+		<sustain>True</sustain>
+		<context>MapOnly</context>
+		<maxVoices>2</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>RBM_GoldFilth</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>5~7</volumeRange>
+				<pitchRange>1~1.1</pitchRange>
+				<distRange>0~40</distRange>
+				<repeatMode>NeverTwice</repeatMode>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
 </Defs>
