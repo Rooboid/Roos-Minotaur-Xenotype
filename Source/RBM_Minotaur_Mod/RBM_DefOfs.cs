@@ -27,5 +27,5 @@ public static class RBM_HediffDefOf
 [DefOf]
 public static class RBM_WeaponClassDefOf
 {
-    public static WeaponClassDef RBME_HerculeanClass; 
+    public static WeaponClassDef RBM_HerculeanClass; 
 }

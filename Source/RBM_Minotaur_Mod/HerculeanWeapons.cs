@@ -1,38 +1,29 @@
 ﻿using HarmonyLib;
 using RimWorld;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Verse;
+using System;
 
-namespace RBM_Minotaur
+
+[HarmonyPatch]
+public static class CanEquip_Minotaur
 {
-    internal class HerculeanWeapons
+    [HarmonyPatch(typeof(EquipmentUtility), nameof(EquipmentUtility.CanEquip), new Type[] { typeof(Thing), typeof(Pawn), typeof(string), typeof(bool) }, new ArgumentType[] {ArgumentType.Normal, ArgumentType.Normal, ArgumentType.Out, ArgumentType.Normal} )]
+    [HarmonyPostfix]
+    public static bool CanEquip_Postfix(bool __result, Thing thing, Pawn pawn, out string cantReason, bool checkBonded = true)
     {
-        [HarmonyPatch(typeof(bool), nameof(EquipmentUtility.CanEquip))]
-        [HarmonyPostfix]
-        public static bool CanEquip_Postfix(bool __result, Thing thing, Pawn pawn)
+        cantReason = null;
+
+        if(thing.def.weaponClasses != null && !thing.def.weaponClasses.Contains(RBM_WeaponClassDefOf.RBM_HerculeanClass))
         {
-            if(__result == true)
-            {
-                return true;
-            }
+            return __result;
+        }
 
-            if(thing.def.weaponClasses != null && !thing.def.weaponClasses.Contains(RBM_WeaponClassDefOf.RBME_HerculeanClass))
-            {
-                Log.Message("Can't equip! Its not a minotaur weapon.");
-                return false;
-            }
-
-            if (pawn.story?.traits != null && pawn.genes.HasGene(RBM_GeneDefOf.RBM_Herculean))
-            {
-                Log.Message("I can equip this! Watch and learn bucko.");
-                return true;
-            }
-            Log.Message("Can't equip! I'm not Herculean...");
+        if (pawn.story?.traits != null && !pawn.genes.HasGene(RBM_GeneDefOf.RBM_Herculean))
+        {
+            cantReason = "Pawn is not Herculean";
             return false;
         }
+        return true;
     }
 }
+

@@ -7,8 +7,6 @@ using System;
 [HarmonyPatch]
 public static class WillEat_Minotaur
 {
-    
-
     [HarmonyPatch(typeof(FoodUtility), nameof(FoodUtility.WillEat_NewTemp), new Type[] { typeof(Pawn), typeof(ThingDef), typeof(Pawn), typeof(bool), typeof(bool) })]
     [HarmonyPostfix]
     public static bool WillEat_NewTemp_Postfix(bool __result, Pawn p, ThingDef food, Pawn getter, bool careIfNotAcceptableForTitle, bool allowVenerated)
