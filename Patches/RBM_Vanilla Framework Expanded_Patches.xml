@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!--============================== Vanilla Framework Expanded Patches ============================-->
+	<!-- Most of the Vanilla Framework Expanded functionality is in the Defs themselves -->
+	
+	<!--Attach buffs to unguligrade legs (HeDiff) as opposed to unguligrade legs (Gene)-->
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Expanded Framework</li>
+		</mods>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/GeneDef[defName="RBM_UnguligradeLegs"]</xpath>
+			<value>
+				<statOffsets>
+					<StaggerDurationFactor>-0.3</StaggerDurationFactor>
+					<MoveSpeed>0.2</MoveSpeed>
+					<FilthRate>1.5</FilthRate>
+					<MeleeDodgeChance>5</MeleeDodgeChance>
+				</statOffsets>
+			</value>
+		</nomatch>
+	</Operation>
+	
+</Patch>

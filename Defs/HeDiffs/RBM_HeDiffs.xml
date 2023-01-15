@@ -12,7 +12,7 @@
 		<label>Terrified</label>
 		<labelNoun>terror</labelNoun>
 		<defaultLabelColor>(0.3, 0.7, 9)</defaultLabelColor>
-		<description>Abhorrent visions haunt the mind.</description>
+		<description>Abhorrent visions are haunting this pawn's mind, making them terrified.</description>
 		<scenarioCanAdd>false</scenarioCanAdd>
 		<makesSickThought>false</makesSickThought>
 		<tendable>false</tendable>
@@ -29,13 +29,6 @@
 				<otherHediff>HeDiffSeeRed</otherHediff>
 				<stages>2~</stages>
 				<mtbHours>0</mtbHours>
-			</li>
-			<li Class="HediffCompProperties_GiveRandomSituationalThought">
-				<thoughtDefs>
-					<li>Terrified_Thought_Small</li>
-					<li>Terrified_Thought_Med</li>
-					<li>Terrified_Thought_Large</li>
-				</thoughtDefs>
 			</li>
 		</comps>
 		<injuryProps>
@@ -59,7 +52,7 @@
 
 	<!--====================== Bruise (Sound) ======================-->
 	<!-- A minimally altered bruise HeDiff inflicted by the Tunbell. -->
-	<!-- More Details: Acts as an invisible middleman to give pawns the HeDiff, Ringing, specifically to their ears using the HediffGiver_Random Class. Melee weapons cannot inflict HeDiffs to specific body parts upon attack, just the body parts they are aimed at. It felt weird seeing pawns having 'ringing' in their legs, so this is the only way I could think to do it.-->
+	<!-- More Details: Acts as an invisible middleman to give pawns the HeDiff, Ringing, specifically to their ears using the HediffGiver_Random Class. Melee weapons cannot inflict HeDiffs to specific body parts upon attack, just the body parts they are aimed at. It felt weird seeing pawns having 'ringing' in their legs, so this is the only way I could think to do it. -->
 
 	<HediffDef ParentName="InjuryBase">
 		<defName>BruiseSound</defName>
@@ -99,9 +92,7 @@
 	<!--====================== Ringing ======================-->
 	<!-- Inflicted by the Tunbell, using Bruisesound as a prompter for it to appear.-->
 	<!-- More Details: Pawns with this HeDiff will progressively get worse if untended, resulting in possible HearingLoss.-->
-	<!-- TODO: Make this work properly. -->
-
-
+	
 	<HediffDef>
 		<defName>Ringing</defName>
 		<label>ears ringing</label>
@@ -111,7 +102,7 @@
 		<tendable>true</tendable>
 		<displayWound>false</displayWound>
 		<labelNounPretty>{0} in the {1}</labelNounPretty>
-		<description>Tend this soon to prevent permanent hearing loss.</description>
+		<description>Untended, ringing ears can lead to permanent hearing loss.</description>
 		<comps>
 			<li Class="HediffCompProperties_TendDuration">
 				<severityPerDayTended>-500</severityPerDayTended>
@@ -185,9 +176,9 @@
 	</HediffDef>
 	
 	
-		<!--====================== Bruise (Gold) ======================-->
+	<!--====================== Bruise (Gold) ======================-->
 	<!-- A minimally altered bruise HeDiff inflicted by the Midaspear. -->
-	<!-- More Details: Acts as an invisible middleman to give pawns the HeDiff, MidasTouch.-->
+	<!-- More Details: Acts as an invisible middleman to randomly give pawns the HeDiff, MidasTouch.-->
 
 	<HediffDef ParentName="InjuryBase">
 		<defName>BruiseGold</defName>
@@ -222,27 +213,34 @@
 		</stages>
 	</HediffDef>
 	
+	<!--====================== MidasTouch ======================-->
+	<!-- Randomly given to pawns hit with BruiseGold -->
 	
+	<!-- TODO: Can we change fleck to effecter? -->
 
 	<HediffDef>
 		<defName>MidasTouch</defName>
 		<label>midas touch</label>
 		<labelNoun>midas touch</labelNoun>
 		<hediffClass>HediffWithComps</hediffClass>
-		<description>Pawn has been affected by the Midas touch and will drop gold upon death.</description>
+		<initialSeverity>1</initialSeverity>
+		<description>Pawns affected by the Midas touch and will have their equipment turned to gold upon death.</description>
 		<descriptionHyperlinks>
 			<ThingDef>RBM_Midaspear</ThingDef>
 		</descriptionHyperlinks>
 		<comps>
 			<li Class="RBM_Minotaur_Mod.HediffCompProperties_MidasTouch">
-				<fleck>AcidCloud</fleck>
+				<fleck>Fleck_Gold</fleck>
 				<moteCount>6</moteCount>
 				<moteOffsetRange>0.25~0.75</moteOffsetRange>
-				<filth>Filth_Slime</filth>
-				<sound>DeathAcidifier</sound>
+				<filth>RBM_FilthGold</filth>
+				<sound>RBM_Midaspear_Hit</sound>
 				<goldAmount>50</goldAmount>
 				<destroyBody>true</destroyBody>
 				<destroyItems>true</destroyItems>
+			</li>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-25</severityPerDay>
 			</li>
 		</comps>
 	</HediffDef>

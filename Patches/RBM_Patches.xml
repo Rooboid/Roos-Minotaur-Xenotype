@@ -231,7 +231,7 @@
 				<li>
 					<xenotypeSet>
 						<xenotypeChances>
-							<RBM_Minotaur MayRequire="Ludeon.RimWorld.Biotech">0.30</RBM_Minotaur>
+							<RBM_Minotaur MayRequire="Ludeon.RimWorld.Biotech">0.03</RBM_Minotaur>
 						</xenotypeChances>
 					</xenotypeSet>
 				</li>
@@ -246,7 +246,7 @@
 		<match Class="PatchOperationAdd">
 			<xpath>Defs/FactionDef[defName="TribeRough"]/xenotypeSet/xenotypeChances</xpath>
 			<value>
-				<RBM_Minotaur MayRequire="Ludeon.RimWorld.Biotech">0.30</RBM_Minotaur>
+				<RBM_Minotaur MayRequire="Ludeon.RimWorld.Biotech">0.02</RBM_Minotaur>
 			</value>
 		</match>
 		<nomatch Class="PatchOperationAdd">
@@ -254,7 +254,7 @@
 			<value>
 				<xenotypeSet>
 					<xenotypeChances>
-						<RBM_Minotaur MayRequire="Ludeon.RimWorld.Biotech">0.30</RBM_Minotaur>
+						<RBM_Minotaur MayRequire="Ludeon.RimWorld.Biotech">0.02</RBM_Minotaur>
 					</xenotypeChances>
 				</xenotypeSet>
 			</value>
@@ -268,7 +268,7 @@
 		<match Class="PatchOperationAdd">
 			<xpath>Defs/FactionDef[defName="Empire"]/xenotypeSet/xenotypeChances</xpath>
 			<value>
-				<RBM_Minotaur MayRequire="Ludeon.RimWorld.Biotech">0.05</RBM_Minotaur>
+				<RBM_Minotaur MayRequire="Ludeon.RimWorld.Biotech">0.02</RBM_Minotaur>
 			</value>
 		</match>
 	</Operation>
@@ -280,7 +280,7 @@
 		<match Class="PatchOperationAdd">
 			<xpath>Defs/PawnKindDef[defName="WildMan"]/xenotypeSet/xenotypeChances</xpath>
 			<value>
-				<RBM_Minotaur MayRequire="Ludeon.RimWorld.Biotech">0.08</RBM_Minotaur>
+				<RBM_Minotaur MayRequire="Ludeon.RimWorld.Biotech">0.2</RBM_Minotaur>
 			</value>
 		</match>
 		<nomatch Class="PatchOperationAdd">
@@ -288,7 +288,7 @@
 			<value>
 				<xenotypeSet>
 					<xenotypeChances>
-						<RBM_Minotaur MayRequire="Ludeon.RimWorld.Biotech">0.08</RBM_Minotaur>
+						<RBM_Minotaur MayRequire="Ludeon.RimWorld.Biotech">0.2</RBM_Minotaur>
 					</xenotypeChances>
 				</xenotypeSet>
 			</value>
@@ -298,7 +298,7 @@
 	<!--============================== PawnKind Spawns - Patches ============================-->
 	<!-- PawnKinds added by this mod will be added to the spawn pools of certain raids. -->
 
-	<!--Creates a new trade caravan for the empire faction, in which minotaur guardians with herculean weapons may accompany them-->
+	<!-- Creates a new trade caravan for the empire faction, in which minotaur guardians with herculean weapons may accompany them -->
 
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/FactionDef[defName="Empire"]/pawnGroupMakers</xpath>
@@ -316,10 +316,10 @@
 						<Elephant>1</Elephant>
 					</carriers>
 					<guards>
-						<RBM_MinotaurGuardianHigh>3</RBM_MinotaurGuardianHigh>
-						<RBM_MinotaurGuardianLow>10</RBM_MinotaurGuardianLow>
-						<Empire_Fighter_Trooper>1</Empire_Fighter_Trooper>
-						<Empire_Fighter_Janissary>0.05</Empire_Fighter_Janissary>
+						<RBM_MinotaurGuardianHigh>0.02</RBM_MinotaurGuardianHigh>
+						<RBM_MinotaurGuardianLow>1</RBM_MinotaurGuardianLow>
+						<Empire_Fighter_Trooper>3</Empire_Fighter_Trooper>
+						<Empire_Fighter_Janissary>1</Empire_Fighter_Janissary>
 					</guards>
 				</li>
 			</value>
@@ -333,7 +333,7 @@
 		<match Class="PatchOperationAdd">
 			<xpath>Defs/FactionDef[defName="Empire"]/pawnGroupMakers/li[2]/options</xpath>
 			<value>
-				<RBM_MinotaurGuardianHigh>0.5</RBM_MinotaurGuardianHigh>
+				<RBM_MinotaurGuardianHigh>0.3</RBM_MinotaurGuardianHigh>
 				<RBM_MinotaurGuardianLow>1</RBM_MinotaurGuardianLow>
 			</value>
 		</match>
@@ -346,7 +346,7 @@
 		<match Class="PatchOperationAdd">
 			<xpath>Defs/FactionDef[defName="OutlanderFactionBase"]/pawnGroupMakers/li[4]/options</xpath>
 			<value>
-				<RBM_MinotaurGuardianHigh>0.5</RBM_MinotaurGuardianHigh>
+				<RBM_MinotaurGuardianHigh>1</RBM_MinotaurGuardianHigh>
 			</value>
 		</match>
 	</Operation>
@@ -358,7 +358,7 @@
 		<match Class="PatchOperationAdd">
 			<xpath>Defs/FactionDef[defName="OutlanderFactionBase"]/pawnGroupMakers/li[1]/options</xpath>
 			<value>
-				<RBM_MinotaurGuardianHigh>0.1</RBM_MinotaurGuardianHigh>
+				<RBM_MinotaurGuardianHigh>0.2</RBM_MinotaurGuardianHigh>
 			</value>
 		</match>
 	</Operation>
@@ -391,8 +391,8 @@
 				<li>
 					<kindDef>Combat</kindDef>
 					<options>
-						<RBM_MinotaurFighter>3</RBM_MinotaurFighter>
-						<RBM_MinotaurGuardianHigh>0.4</RBM_MinotaurGuardianHigh>
+						<RBM_MinotaurFighter>4</RBM_MinotaurFighter>
+						<RBM_MinotaurGuardianHigh>0.2</RBM_MinotaurGuardianHigh>
 					</options>
 				</li>
 			</value>
@@ -406,7 +406,7 @@
 		<match Class="PatchOperationAdd">
 			<xpath>Defs/FactionDef[defName="TribeBase"]/pawnGroupMakers/li[3]/options</xpath>
 			<value>
-				<RBM_MinotaurFeral>0.4</RBM_MinotaurFeral>
+				<RBM_MinotaurFeral>1</RBM_MinotaurFeral>
 			</value>
 		</match>
 	</Operation>
@@ -418,12 +418,12 @@
 		<match Class="PatchOperationAdd">
 			<xpath>Defs/FactionDef[defName="Pirate"]/pawnGroupMakers/li[2]/options</xpath>
 			<value>
-				<RBM_MinotaurFeral>1</RBM_MinotaurFeral>
+				<RBM_MinotaurFeral>0.6</RBM_MinotaurFeral>
 			</value>
 		</match>
 	</Operation>
 
-	<!--Adds feral minotaur and minotaur marauder to pirate raids-->
+	<!-- Adds feral minotaur and minotaur marauder to pirate raids -->
 
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/FactionDef[defName="Pirate"]/pawnGroupMakers</xpath>
@@ -431,22 +431,41 @@
 			<xpath>Defs/FactionDef[defName="Pirate"]/pawnGroupMakers/li[4]/options</xpath>
 			<value>
 				<RBM_MinotaurFeral>0.5</RBM_MinotaurFeral>
-				<RBM_MinotaurMarauder>5</RBM_MinotaurMarauder>
+				<RBM_MinotaurMarauder>2</RBM_MinotaurMarauder>
+				<RBM_MinotaurFighter>4</RBM_MinotaurFighter>
 			</value>
 		</match>
 	</Operation>
 
-	<!--Adds minotaur with herculean weapons and minotaur marauder to pirate settlement defences-->
+	<!-- Adds minotaur marauders and minotaur fighters to pirate settlement defences -->
 
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/FactionDef[defName="Pirate"]/pawnGroupMakers</xpath>
 		<match Class="PatchOperationAdd">
 			<xpath>Defs/FactionDef[defName="Pirate"]/pawnGroupMakers/li[5]/options</xpath>
 			<value>
-				<RBM_MinotaurGuardianHigh>0.2</RBM_MinotaurGuardianHigh>
-				<RBM_MinotaurMarauder>0.8</RBM_MinotaurMarauder>
+				<RBM_MinotaurMarauder>1.5</RBM_MinotaurMarauder>
+				<RBM_MinotaurFighter>1</RBM_MinotaurFighter>
 			</value>
 		</match>
 	</Operation>
+	
+	<!-- Vanilla Apparel Expanded - Accessories Patches -->
+	<!-- Adds backpacks to minotaur fighters -->
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Apparel Expanded — Accessories</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/PawnKindDef[defName="RBM_MinotaurFighter"]</xpath>
+			<value>
+				<apparelRequired>
+					<li>VAEA_Apparel_Backpack</li>
+				</apparelRequired>
+			</value>
+		</match>
+	</Operation>
+
 
 </Patch>

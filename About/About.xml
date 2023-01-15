@@ -6,5 +6,38 @@
 		<li>1.4</li>
 </supportedVersions>
 <packageId>Rooboid.Minotaur</packageId>
-<description>Description</description>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+	</loadAfter>
+<description>Adds a new xenotype to Rimworld: the minotaur. These herculean beasts are made of sheer muscle and hay, and excel in melee-based combat thanks to their devastating tempers and strength. 
+
+&lt;size=25&gt;• Features&lt;/size&gt;
+
+• 10 new genes that make up the minotaur xenotype.
+• 30 minotaur backstories to go with various new pawn types.
+• 7 fabled weapons with their own unique effects and sounds.
+• 6 bovine tattoos and skin markings.
+• 1 new frightening ability: “SeeRed”.
+• Oh, and rock chunks are now throwable as weapons!
+
+&lt;size=25&gt;• For More…&lt;/size&gt;
+
+If you’re looking for more features, check out Roo’s Minotaur Xenotype Expanded, which fleshes out the minotaur xenotype with factions, apparel, hairstyles and more. For more information on mod compatibilities, bugs or plans for the future, please visit my steam workshop page or receive behind-the-scenes updates on my patreon: https://www.patreon.com/Rooboid
+
+&lt;size=25&gt;• Credits&lt;/size&gt;
+
+&lt;size=20&gt;Mod:&lt;/size&gt;
+• Graphics and XML: Rooboid
+• C# and emotional support: Zelan
+
+&lt;size=20&gt;FreeSound:&lt;/size&gt;
+johnathanjansen, christyboy100, deathscyp, thimblerig, soundsnapfx, dwoboyle, raclure, richcraftstudios, zerolagtime, unfa, department64, wax-vibe, lesaucisson, triqystudio, nox-sound and stinkhorn
+
+&lt;size=20&gt;Patreon:&lt;/size&gt;
+Mangulwort, panatakan yen, Alexandre, Galen, Only, Greg Bunger, D-Train, 1Sopel6, WoolyPie, Dodo, Josh and Prince
+</description>
 </ModMetaData>

@@ -101,9 +101,9 @@
 		
 	<RulePackDef>
 		<defName>NamerMinotaurArt</defName>
-		<!--     <include>
-      <li>ArtNameUtility</li>
-    </include> -->
+		    <include>
+			<li>ArtNameUtility</li>
+			</include>
 		<rulePack>
 			<rulesStrings>
 				<!-- General -->
@@ -219,7 +219,6 @@
 				<li>MinoTitle->Mad</li>
 				<li>MinoTitle->Brave</li>
 		
-
 			</rulesStrings>
 			<rulesFiles>
 				<li>MinoUni->Names/ForenamesUnisex_Minotaur</li>
@@ -229,9 +228,9 @@
 	
 		<RulePackDef>
 		<defName>ArtDescription_MinotaurWeapon</defName>
-		<!--     <include>
-      <li>ArtNameUtility</li>
-    </include> -->
+		<include>
+		<li>ArtNameUtility</li>
+		</include>
 		<rulePack>
 			<rulesStrings>
 				<!-- General -->
@@ -267,16 +266,17 @@
 				<li>MinoInscription->a portrait of what appears to resemble [Character]</li>
 				<li>MinoInscription->a winding, intricate meander pattern, envelopping the entirity of the weapon</li>
 				<li>MinoInscription->an uncountable amount of claw marks</li>
-				<li>MinoInscription->an erotic depiction of a unidentified xenotype</li>
+				<li>MinoInscription->an erotic depiction of an unidentified xenotype</li>
 				<li>MinoInscription->what appears to be a map. The land it depicts seems to be that of a far-away world</li>
 				<li>MinoInscription->a tally chart, presumably the weapons fatalities</li>
 				<li>MinoInscription->the words 'The sins we often regret are the sins we never commit'</li>
 				<li>MinoInscription->the words 'Grab the bull by the horns'</li>
-				<li>MinoInscription->endless, winding patterns of a grape vine- each grape stained with blood</li>
+				<li>MinoInscription->endless, winding patterns grape vines- each grape stained with blood</li>
 				<li>MinoInscription->the image of a trojan horse</li>
 				<li>MinoInscription->the words 'The meaning of life is'... The rest of the etching has been scratched and lost to time</li>
 				<li>MinoInscription->an image of a young minotaur</li>
 				<li>MinoInscription->ancient glowing symbols</li>
+				<li>MinoInscription->an image of a minotaur smashing up what seems to be an archotech machine</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>

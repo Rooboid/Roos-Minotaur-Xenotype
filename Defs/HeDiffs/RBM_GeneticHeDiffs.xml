@@ -2,7 +2,94 @@
 <Defs>
 
 	<!--====================== Genetic HeDiffs ======================-->
-	<!-- HeDiffs added to pawns by minotaur genes. -->
+	<!-- HeDiffs added to pawns by minotaur genes -->
+	
+	<!--====================== See Red ======================-->
+	<!-- Applied to pawns who use the ability "See Red". Sends pawn into a very brief mental rage before incapacitating them for a while. -->
+	
+		<HediffDef>
+		<defName>HeDiffSeeRed</defName>
+		<label>seeing red</label>
+		<labelNoun>outrage</labelNoun>
+		<defaultLabelColor>(250, 150, 180)</defaultLabelColor>
+		<description>Total loss of physical restraint.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1</initialSeverity>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.85</severityPerDay>
+			</li>
+			<li Class="HediffCompProperties_Effecter">
+				<stateEffecter>RBM_TerrifiedEffect</stateEffecter>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+		<stages>
+			<li>
+				<minSeverity>0</minSeverity>
+				<label>aftermath</label>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.1</setMax>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.88</minSeverity>
+				<label>exhausted</label>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.10</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.10</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.93</minSeverity>
+				<label>diminishing</label>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.10</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.25</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.97</minSeverity>
+				<label>intense</label>
+				<statOffsets>
+					<MeleeHitChance>15</MeleeHitChance>
+					<PainShockThreshold>2</PainShockThreshold>
+					<StaggerDurationFactor>0</StaggerDurationFactor>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.50</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.80</offset>
+					</li>
+				</capMods>
+				<mentalStateGivers>
+					<li>
+						<mentalState>Berserk</mentalState>
+						<mtbDays>0</mtbDays>
+					</li>
+				</mentalStateGivers>
+			</li>
+		</stages>
+	</HediffDef>
 	
 	<!--====================== Estrous Heat ======================-->
 	<!-- Applied to pawns with the gene "Estrous Cycle" in Aprimay. PawnLovinMTB hours are adjusted in C#, but MentalBreakThreshold is adjusted in XML. -->
