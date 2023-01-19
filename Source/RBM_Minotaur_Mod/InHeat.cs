@@ -1,5 +1,6 @@
 ﻿using HarmonyLib;
 using RimWorld;
+using System.Collections.Generic;
 using Verse;
 using Verse.AI;
 
@@ -42,26 +43,25 @@ namespace RBM_Minotaur_Mod
         }
     }
 
-    public class JobGiver_PawnInHeatSeason : ThinkNode_JobGiver
+    public class Gene_RBM_EstrousCycle : Gene
     {
-        protected override Job TryGiveJob(Pawn pawn)
+        public override void Tick()
         {
-            if (pawn.RaceProps.Humanlike && pawn.genes.HasGene(RBM_GeneDefOf.RBM_EstrousCycle) && pawn.ageTracker.Adult)
+            base.Tick();
+            if (this.pawn.IsHashIntervalTick(1440))
             {
-                if ((GenLocalDate.Season(pawn.Tile) == Season.Spring) && !(pawn.health.hediffSet.HasHediff(RBM_HediffDefOf.EstrousHeat)))
+                if ((GenLocalDate.Season(this.pawn.Tile) == Season.Spring) && !this.pawn.health.hediffSet.HasHediff(RBM_HediffDefOf.EstrousHeat))
                 {
-                    pawn.health.AddHediff(RBM_HediffDefOf.EstrousHeat);
-                    Log.Message(pawn.Name + " is in heat.");
+                    this.pawn.health.AddHediff(RBM_HediffDefOf.EstrousHeat);
+                    Log.Message(this.pawn.Name + " is in heat.");
                 }
-                else if (!(GenLocalDate.Season(pawn.Tile) == Season.Spring) && (pawn.health.hediffSet.HasHediff(RBM_HediffDefOf.EstrousHeat)))
+                else if (!(GenLocalDate.Season(this.pawn.Tile) == Season.Spring) && this.pawn.health.hediffSet.HasHediff(RBM_HediffDefOf.EstrousHeat))
                 {
-                    Hediff HeatHediff = pawn.health.hediffSet.GetFirstHediffOfDef(RBM_HediffDefOf.EstrousHeat);
-                    pawn.health.RemoveHediff(HeatHediff);
-                    Log.Message(pawn.Name + " is no longer in heat.");
+                    Hediff HeatHediff = this.pawn.health.hediffSet.GetFirstHediffOfDef(RBM_HediffDefOf.EstrousHeat);
+                    this.pawn.health.RemoveHediff(HeatHediff);
+                    Log.Message(this.pawn.Name + " is no longer in heat.");
                 }
             }
-            return null;
-
         }
     }
 }
