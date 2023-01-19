@@ -22,6 +22,7 @@ public static class RBM_HediffDefOf
 {
     public static HediffDef HeDiffTerrified;
     public static HediffDef EstrousHeat;
+    public static HediffDef MidasTouch;
 }
 
 [DefOf]
