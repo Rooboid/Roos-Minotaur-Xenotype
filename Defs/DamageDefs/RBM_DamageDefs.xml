@@ -109,7 +109,7 @@
 	</DamageDef>
 
 	<!--====================== Crit Damage ======================-->
-	<!-- Used by the Damacles when landing critical hits. -->
+	<!-- Used by the Damocles when landing critical hits. -->
 
 	<DamageDef ParentName="Flame">
 		<defName>CritHit</defName>

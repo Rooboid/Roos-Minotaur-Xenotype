@@ -124,7 +124,7 @@
 						<clipFolderPath>RBM_Terrified/Explosion</clipFolderPath>
 					</li>
 				</grains>
-				<volumeRange>50</volumeRange>
+				<volumeRange>30</volumeRange>
 				<muteWhenPaused>true</muteWhenPaused>
 				<tempoAffectedByGameSpeed>true</tempoAffectedByGameSpeed>
 			</li>
@@ -180,10 +180,9 @@
 	<SoundDef>
 		<defName>RBM_CriticalHitSound</defName>
 		<context>MapOnly</context>
-		<maxSimultaneous>2</maxSimultaneous>
+		<maxSimultaneous>1</maxSimultaneous>
 		<subSounds>
 			<li>
-				<muteWhenPaused>True</muteWhenPaused>
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>RBM_CriticalHit/RBM_CriticalHit</clipPath>
@@ -207,7 +206,6 @@
 		<maxSimultaneous>2</maxSimultaneous>
 		<subSounds>
 			<li>
-				<muteWhenPaused>True</muteWhenPaused>
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>RBM_Weapons/RBM_Bullslinger/RBM_Bullslinger_Equip</clipPath>
@@ -224,11 +222,9 @@
 	<SoundDef>
 		<defName>RBM_Bullslinger_Fire</defName>
 		<context>MapOnly</context>
-		<maxSimultaneous>2</maxSimultaneous>
+		<maxSimultaneous>1</maxSimultaneous>
 		<subSounds>
 			<li>
-				<onCamera>False</onCamera>
-				<muteWhenPaused>True</muteWhenPaused>
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>RBM_Weapons/RBM_Bullslinger/RBM_Bullslinger_Fire</clipPath>
@@ -249,7 +245,6 @@
 		<maxSimultaneous>2</maxSimultaneous>
 		<subSounds>
 			<li>
-				<muteWhenPaused>True</muteWhenPaused>
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>RBM_Weapons/RBM_TaurailGun/RBM_TaurailGun_Equip</clipPath>
@@ -269,8 +264,6 @@
 		<maxSimultaneous>2</maxSimultaneous>
 		<subSounds>
 			<li>
-				<onCamera>True</onCamera>
-				<muteWhenPaused>True</muteWhenPaused>
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>RBM_Weapons/RBM_TaurailGun/RBM_TaurailGun_Fire</clipPath>
@@ -280,8 +273,6 @@
 				<pitchRange>0.93~1.13</pitchRange>
 			</li>
 			<li>
-				<onCamera>False</onCamera>
-				<muteWhenPaused>True</muteWhenPaused>
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>RBM_Weapons/RBM_TaurailGun/RBM_TaurailGun_Fire</clipPath>
@@ -302,7 +293,6 @@
 		<maxSimultaneous>2</maxSimultaneous>
 		<subSounds>
 			<li>
-				<muteWhenPaused>True</muteWhenPaused>
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>RBM_Weapons/RBM_Labrys/RBM_Labrys_Equip</clipPath>
@@ -323,13 +313,31 @@
 		<maxSimultaneous>2</maxSimultaneous>
 		<subSounds>
 			<li>
-				<muteWhenPaused>True</muteWhenPaused>
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>RBM_Weapons/RBM_Oxenammer/RBM_Oxenammer_Equip</clipPath>
 					</li>
 				</grains>
 				<volumeRange>37</volumeRange>
+				<pitchRange>0.93~1.13</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+		<!-- Oxenammer: Fire -->
+	
+	<SoundDef>
+		<defName>RBM_Oxenammer_Fire</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipPath>RBM_Weapons/RBM_Oxenammer/RBM_Oxenammer_Fire</clipPath>
+					</li>
+				</grains>
+				<volumeRange>35</volumeRange>
 				<pitchRange>0.93~1.13</pitchRange>
 			</li>
 		</subSounds>
@@ -344,7 +352,6 @@
 		<maxSimultaneous>2</maxSimultaneous>
 		<subSounds>
 			<li>
-				<muteWhenPaused>True</muteWhenPaused>
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>RBM_Weapons/RBM_Tunbell/RBM_Tunbell_Equip</clipPath>
@@ -364,7 +371,6 @@
 		<maxSimultaneous>2</maxSimultaneous>
 		<subSounds>
 			<li>
-				<muteWhenPaused>True</muteWhenPaused>
 				<grains>
 					<li Class="AudioGrain_Folder">
 						<clipFolderPath>RBM_Weapons/RBM_Tunbell/RBM_TunbellFire</clipFolderPath>
@@ -385,7 +391,6 @@
 		<maxSimultaneous>2</maxSimultaneous>
 		<subSounds>
 			<li>
-				<muteWhenPaused>True</muteWhenPaused>
 				<grains>
 					<li Class="AudioGrain_Folder">
 						<clipFolderPath>RBM_Weapons/RBM_Midaspear</clipFolderPath>
@@ -413,7 +418,7 @@
 						<clipFolderPath>RBM_GoldFilth</clipFolderPath>
 					</li>
 				</grains>
-				<volumeRange>5~7</volumeRange>
+				<volumeRange>7~20</volumeRange>
 				<pitchRange>1~1.1</pitchRange>
 				<distRange>0~40</distRange>
 				<repeatMode>NeverTwice</repeatMode>

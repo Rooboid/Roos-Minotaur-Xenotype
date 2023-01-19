@@ -27,7 +27,7 @@
 	</RulePackDef>
 	
 	<!--====================== Critical Hit - Combat Rule ======================-->
-	<!-- Used by the Damacles -->
+	<!-- Used by the Damocles -->
 	
 		<RulePackDef>
 		<defName>Damage_Crit</defName>

@@ -35,7 +35,7 @@
 			<warmupTime>1.5</warmupTime>
 			<soundCast>SeeRed_Cast</soundCast>
 			<requireLineOfSight>false</requireLineOfSight>
-			<range>2.5</range>
+			<range>2.7</range>
 			<drawAimPie>false</drawAimPie>
 			<targetParams>
 				<canTargetSelf>true</canTargetSelf>
@@ -51,6 +51,7 @@
 
 			<li Class="RBM_Minotaur_Mod.CompProperties_AbilityTerrify">
 				<terrorRadius>4.5</terrorRadius>
+				<fleeDistance>15</fleeDistance>
 			</li>
 		</comps>
 	</AbilityDef>

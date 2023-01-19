@@ -69,8 +69,8 @@
 				<defaultProjectile>Proj_ObsidianArrow</defaultProjectile>
 				<warmupTime>1.8</warmupTime>
 				<range>35.5</range>
-				<soundCast>Bow_Recurve</soundCast>
-				<soundCastTail>RBM_Bullslinger_Fire</soundCastTail>
+				<soundCast>RBM_Bullslinger_Fire</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
 			</li>
 		</verbs>
 		<tools>
@@ -318,11 +318,11 @@
 		</comps>
 	</ThingDef>
 
-	<!--====================== Damacles ======================-->
+	<!--====================== Damocles ======================-->
 
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-		<defName>RBM_Damacles</defName>
-		<label>damacles</label>
+		<defName>RBM_Damocles</defName>
+		<label>damocles</label>
 		<description>A heavy, obsidian sword with many tales surrounding it in certain cultures. In exchange for its blinding attack speed and chance to land a critical hit during battle, holding it imparts an incredibly anxious feeling onto the wielder. \n\nOnly pawns with the Herculean gene can equip it.</description>
 		<descriptionHyperlinks>
 			<GeneDef>RBM_Herculean</GeneDef>
@@ -332,7 +332,7 @@
 		<rotateInShelves>false</rotateInShelves>
 		<uiIconScale>1.2</uiIconScale>
 		<graphicData>
-			<texPath>Things/Item/Equipment/WeaponMelee/RBM_Damacles/RBM_Damacles</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/RBM_Damocles/RBM_Damocles</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.7</drawSize>
 		</graphicData>
@@ -421,10 +421,6 @@
 		</comps>
 	</ThingDef>
 
-	<!--Damacles: Rule Set -->
-
-
-
 	<!--====================== Oxenammer ======================-->
 
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
@@ -452,7 +448,7 @@
 		<!-- Obtaining -->
 		<recipeMaker IsNull="True"/>
 		<soundInteract>RBM_Oxenammer_Equip</soundInteract>
-		<meleeHitSound>Explosion_Terrify</meleeHitSound>
+		<meleeHitSound>Artillery_HitThickRoof</meleeHitSound>
 		<relicChance>1</relicChance>
 		<smeltable>false</smeltable>
 		<thingSetMakerTags>
@@ -466,9 +462,9 @@
 			<RoyalFavorValue>2</RoyalFavorValue>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.15</MoveSpeed>
-			<MeleeHitChance>-0.25</MeleeHitChance>
-			<MeleeDodgeChance>-0.8</MeleeDodgeChance>
+			<MoveSpeed>-0.18</MoveSpeed>
+			<MeleeHitChance>-0.15</MeleeHitChance>
+			<MeleeDodgeChance>-0.9</MeleeDodgeChance>
 			<RestFallRateFactor>0.15</RestFallRateFactor>
 		</equippedStatOffsets>
 		<weaponTags>
@@ -485,7 +481,7 @@
 					<li>Demolish</li>
 				</capacities>
 				<power>38</power>
-				<cooldownTime>6</cooldownTime>
+				<cooldownTime>5.3</cooldownTime>
 				<extraMeleeDamages>
 					<li>
 						<def>Earthshatter</def>

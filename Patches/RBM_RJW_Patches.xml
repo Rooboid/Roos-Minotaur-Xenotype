@@ -6,16 +6,16 @@
 	<!-- Makes pawns in heat more sexually active and slightly more vulnerable -->
 	
 	
-		<Operation Class="PatchOperationFindMod">
+	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>RimJobWorld</li>
 		</mods>
 		<match Class="PatchOperationAdd">
 			<xpath>Defs/HediffDef[defName="EstrousHeat"]/stages/li[1]/statOffsets</xpath>
 			<value>
-					<SexFrequency>0.3</SexFrequency>
-					<Vulnerability>0.05</Vulnerability>
-					<SexSatisfaction>0.15</SexSatisfaction>
+				<SexFrequency>0.3</SexFrequency>
+				<Vulnerability>0.05</Vulnerability>
+				<SexSatisfaction>0.15</SexSatisfaction>
 			</value>
 		</match>
 	</Operation>

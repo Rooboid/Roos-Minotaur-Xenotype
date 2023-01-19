@@ -40,7 +40,7 @@ namespace RBM_Minotaur_Mod
                     {
                         if (mapPawns[i].Position.InHorDistOf(pawn.Position, this.Props.terrorRadius))
                         {
-                            LocalTargetInfo t = new LocalTargetInfo(RBM_Utils.genFleeTile(mapPawns[i].DrawPos, pawn.DrawPos, 10));
+                            LocalTargetInfo t = new LocalTargetInfo(RBM_Utils.genFleeTile(mapPawns[i].DrawPos, pawn.DrawPos, this.Props.fleeDistance));
                             Job job = new Job(JobDefOf.FleeAndCower, t);
                             mapPawns[i].mindState.mentalStateHandler.TryStartMentalState(RBM_MentalStateDefOf.RBM_TerrifiedFlee, "scared by something nearby", true, false, null, true);
                             mapPawns[i].jobs.TryTakeOrderedJob(job, JobTag.Misc);
@@ -63,5 +63,6 @@ namespace RBM_Minotaur_Mod
             this.compClass = typeof(CompAbilityEffect_Terrify);
         }
         public float terrorRadius;
+        public int fleeDistance;
     }
 }

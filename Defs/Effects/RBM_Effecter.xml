@@ -305,7 +305,7 @@
 			</li>
 			<li>
 				<subEffecterClass>SubEffecter_SoundTriggered</subEffecterClass>
-				<soundDef>Explosion_Rocket</soundDef>
+				<soundDef>RBM_Oxenammer_Fire</soundDef>
 				<spawnLocType>OnTarget</spawnLocType>
 			</li>
 		</children>

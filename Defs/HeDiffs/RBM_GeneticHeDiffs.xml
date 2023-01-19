@@ -36,7 +36,7 @@
 				</capMods>
 			</li>
 			<li>
-				<minSeverity>0.88</minSeverity>
+				<minSeverity>0.89</minSeverity>
 				<label>exhausted</label>
 				<capMods>
 					<li>
@@ -64,7 +64,7 @@
 				</capMods>
 			</li>
 			<li>
-				<minSeverity>0.97</minSeverity>
+				<minSeverity>0.96</minSeverity>
 				<label>intense</label>
 				<statOffsets>
 					<MeleeHitChance>15</MeleeHitChance>
