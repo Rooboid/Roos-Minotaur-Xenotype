@@ -537,7 +537,7 @@
 				<positionRadius>0.5</positionRadius>
 				<moteDef>Mote_CriticalHit</moteDef>
 				<speed>0.2</speed>
-				<angle>0~0</angle>
+				<angle>0</angle>
 			</li>
 			<li>
 				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
@@ -579,25 +579,19 @@
 		<randomGraphics>
 			<li>
 				<graphicClass>Graphic_Fleck</graphicClass>
-				<texPath>Things/Mote/RBM_Gold/RBM_Coins/RBM_CoinA</texPath>
+				<texPath>Things/Mote/RBM_Gold/RBM_GoldA</texPath>
 				<shaderType>TransparentPostLight</shaderType>
 				<renderInstanced>true</renderInstanced>
 			</li>
 			<li>
 				<graphicClass>Graphic_Fleck</graphicClass>
-				<texPath>Things/Mote/RBM_Gold/RBM_Coins/RBM_CoinB</texPath>
+				<texPath>Things/Mote/RBM_Gold/RBM_GoldB</texPath>
 				<shaderType>TransparentPostLight</shaderType>
 				<renderInstanced>true</renderInstanced>
 			</li>
 			<li>
 				<graphicClass>Graphic_Fleck</graphicClass>
-				<texPath>Things/Mote/RBM_Gold/RBM_Coins/RBM_CoinC</texPath>
-				<shaderType>TransparentPostLight</shaderType>
-				<renderInstanced>true</renderInstanced>
-			</li>
-			<li>
-				<graphicClass>Graphic_Fleck</graphicClass>
-				<texPath>Things/Mote/RBM_Gold/RBM_Coins/RBM_CoinD</texPath>
+				<texPath>Things/Mote/RBM_Gold/RBM_GoldC</texPath>
 				<shaderType>TransparentPostLight</shaderType>
 				<renderInstanced>true</renderInstanced>
 			</li>
@@ -608,39 +602,5 @@
 		<fadeOutTime>0.5</fadeOutTime>
 		<growthRate>-0.1</growthRate>
 	</FleckDef>
-	
-	<!-- Gold Effecter -->
-	
-	<EffecterDef>
-		<defName>RBM_GoldEffect</defName>
-		<children>
-			<li>
-				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
-				<fleckDef>Fleck_Gold</fleckDef>
-				<burstCount>3</burstCount>
-				<scale>0.8~1.2</scale>
-				<spawnLocType>OnSource</spawnLocType>
-				<positionRadius>0.5</positionRadius>
-				<speed>2</speed>
-				<rotationRate>-60~60</rotationRate>
-				<ticksBetweenMotes>60</ticksBetweenMotes>
-				<attachToSpawnThing>true</attachToSpawnThing>
-			</li>
-			<li>
-				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
-				<moteDef>Mote_EarthshatterCloud</moteDef>
-				<burstCount>5~10</burstCount>
-				<speed>0.5~1</speed>
-				<scale>0.7~1.5</scale>
-				<spawnLocType>OnSource</spawnLocType>
-			</li>
-			<li>
-				<subEffecterClass>SubEffecter_SoundTriggered</subEffecterClass>
-				<soundDef>RBM_Midaspear_Hit</soundDef>
-				<spawnLocType>OnTarget</spawnLocType>
-			</li>
-		</children>
-	</EffecterDef>
-	
 	
 </Defs>

@@ -111,16 +111,37 @@
             </thoughtsAsIngredient>
           </li>
         </extraThoughtsFromIngestion>  -->
-		<!-- NoseRing -->
+		<!-- Nosering and Markings -->
 		<graphicData>
 			<graphicPaths>
+			<!-- Blank (Duplicated for increased commonality) -->
+				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
+				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
+				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
+				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
+				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
+				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
+				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
+				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
+				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
+				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
+				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
+				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
+				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
+				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
+				<!-- Nosering -->
 				<li>Things/Pawn/Humanlike/Markings/Head_NoseRing/Ring</li>
-				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
-				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
-				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
-				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
-				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
-				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
+				<li>Things/Pawn/Humanlike/Markings/Head_NoseRing/Ring</li>
+				<li>Things/Pawn/Humanlike/Markings/Head_NoseRing/Ring</li>
+				<!-- Markings -->
+				<li>Things/Pawn/Humanlike/Markings/Head_Bull1/Bull1</li>
+				<li>Things/Pawn/Humanlike/Markings/Head_Bull2/Bull2</li>
+				<li>Things/Pawn/Humanlike/Markings/Head_Bull3/Bull3</li>
+				<li>Things/Pawn/Humanlike/Markings/Head_Bull4/Bull4</li>
+				<li>Things/Pawn/Humanlike/Markings/Head_Cow1/Cow1</li>
+				<li>Things/Pawn/Humanlike/Markings/Head_Cow2/Cow2</li>
+				<li>Things/Pawn/Humanlike/Markings/Head_Cow3/Cow3</li>
+				<li>Things/Pawn/Humanlike/Markings/Head_Cow4/Cow4</li>
 			</graphicPaths>
 			<visibleNorth>false</visibleNorth>
 			<layer>PostTattoo</layer>
@@ -143,39 +164,16 @@
 	</GeneDef>
 	
 	<!-- Earthy Skin -->
-	<!--TODO: Edit Tattoos -->
 	
 	<GeneDef ParentName="GeneSkinColorOverride">
 		<defName>RBM_EarthySkin</defName>
 		<label>earthy skin</label>
 		<labelShortAdj>earthen</labelShortAdj>
-		<description>Carriers of this gene possess skin of mild and earthy colours, sometimes with patchy markings on their faces.</description>
-		<randomBrightnessFactor>5</randomBrightnessFactor>
+		<description>Carriers of this gene possess skin of mild and earthy colours.</description>
+		<randomBrightnessFactor>6</randomBrightnessFactor>
 		<skinColorOverride>(200, 140, 110)</skinColorOverride>
 		<displayOrderInCategory>99</displayOrderInCategory>
 		<graphicData>
-			<graphicPaths>
-				<li>Things/Pawn/Humanlike/Markings/Head_Bull1/Bull1</li>
-				<li>Things/Pawn/Humanlike/Markings/Head_Bull2/Bull2</li>
-				<li>Things/Pawn/Humanlike/Markings/Head_Bull3/Bull3</li>
-				<li>Things/Pawn/Humanlike/Markings/Head_Bull4/Bull4</li>
-				<li>Things/Pawn/Humanlike/Markings/Head_Cow1/Cow1</li>
-				<li>Things/Pawn/Humanlike/Markings/Head_Cow2/Cow2</li>
-				<li>Things/Pawn/Humanlike/Markings/Head_Cow3/Cow3</li>
-				<li>Things/Pawn/Humanlike/Markings/Head_Cow4/Cow4</li>
-				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
-				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
-				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
-				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
-				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
-				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
-				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
-				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
-				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
-				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
-				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
-				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
-			</graphicPaths>
 			<visibleNorth>false</visibleNorth>
 			<layer>PostSkin</layer>
 		</graphicData>

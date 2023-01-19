@@ -205,7 +205,7 @@
 			<xpath>Defs/ThingDef[@Name="ChunkBase"]</xpath>
 			<value>
 				<weaponClasses>
-					<li>Ranged</li>
+					<li>RBM_HerculeanClass</li>
 					<li>RangedLight</li>
 				</weaponClasses>
 			</value>
@@ -213,7 +213,7 @@
 		<match Class="PatchOperationAdd">
 			<xpath>Defs/ThingDef[@Name="ChunkBase"]/weaponClasses</xpath>
 			<value>
-				<li>Ranged</li>
+				<li>RBM_HerculeanClass</li>
 				<li>RangedLight</li>
 			</value>
 		</match>
