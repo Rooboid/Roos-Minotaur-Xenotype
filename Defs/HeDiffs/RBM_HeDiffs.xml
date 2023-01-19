@@ -212,18 +212,20 @@
 			  <li Class="HediffCompProperties_Discoverable">
 				<sendLetterWhenDiscovered>true</sendLetterWhenDiscovered>
 				<discoverLetterLabel>Midas Touch</discoverLetterLabel>
-				<discoverLetterText>{0} is under the effects of Midas Touch. If [PAWN_pronoun] dies [PAWN_pronoun] will be turned into gold, along with all of [PAWN_possessive] posessions.</discoverLetterText>
+				<discoverLetterText>{0} is under the effects of Midas Touch. [PAWN_pronoun] will be turned into gold if [PAWN_pronoun] dies, along with all of [PAWN_possessive] posessions.</discoverLetterText>
 			  </li>
 		</comps>
 
 		<stages>
 			<li>
-			  <label>invisible</label>
+			  <label>hidden</label>
 			  <minSeverity>.001</minSeverity>
+			  <becomeVisible>false</becomeVisible>
 			</li>
 			  <li>
 			  <label>active</label>
 			  <minSeverity>.5</minSeverity>
+			  <becomeVisible>true</becomeVisible>
 			  <capMods>
 				<li>
 				  <capacity>Moving</capacity>
