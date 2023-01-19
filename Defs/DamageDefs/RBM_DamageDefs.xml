@@ -98,7 +98,7 @@
 		<label>gold</label>
 		<workerClass>DamageWorker_AddInjury</workerClass>
 		<deathMessage>{0} has been eradicated.</deathMessage>
-		<hediff>BruiseGold</hediff>
+		<hediff>Bruise</hediff>
 		<externalViolence>true</externalViolence>
 		<defaultDamage>20</defaultDamage>
 		<canInterruptJobs>true</canInterruptJobs>
@@ -106,6 +106,12 @@
 		<makesAnimalsFlee>true</makesAnimalsFlee>
 		<impactSoundType>Slice</impactSoundType>
 		<armorCategory>Sharp</armorCategory>
+		<additionalHediffs>
+			<li>
+				<hediff>MidasTouch</hediff>
+				<severityPerDamageDealt>.03</severityPerDamageDealt>
+			</li>
+		</additionalHediffs>
 	</DamageDef>
 
 	<!--====================== Crit Damage ======================-->

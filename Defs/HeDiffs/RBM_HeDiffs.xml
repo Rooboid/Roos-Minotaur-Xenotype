@@ -175,43 +175,7 @@
 		</injuryProps>
 	</HediffDef>
 	
-	
-	<!--====================== Bruise (Gold) ======================-->
-	<!-- A minimally altered bruise HeDiff inflicted by the Midaspear. -->
-	<!-- More Details: Acts as an invisible middleman to randomly give pawns the HeDiff, MidasTouch.-->
 
-	<HediffDef ParentName="InjuryBase">
-		<defName>BruiseGold</defName>
-		<label>bruise</label>
-		<labelNoun>a bruise</labelNoun>
-		<description>A bruise.</description>
-		<comps>
-			<li Class="HediffCompProperties_Disappears">
-				<disappearsAfterTicks>10</disappearsAfterTicks>
-				<showRemainingTime>false</showRemainingTime>
-			</li>
-		</comps>
-		<injuryProps>
-			<painPerSeverity>0.0125</painPerSeverity>
-			<averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
-			<canMerge>false</canMerge>
-			<destroyedLabel>Destroyed</destroyedLabel>
-		</injuryProps>
-		<stages>
-			<li>
-				<minSeverity>0.1</minSeverity>
-				<becomeVisible>false</becomeVisible>
-				<hediffGivers>
-					<li Class="HediffGiver_Random">
-						<hediff>MidasTouch</hediff>
-						<partsToAffect>
-							<li>Brain</li>
-						</partsToAffect>
-					</li>
-				</hediffGivers>
-			</li>
-		</stages>
-	</HediffDef>
 	
 	<!--====================== MidasTouch ======================-->
 	<!-- Randomly given to pawns hit with BruiseGold -->
@@ -223,8 +187,7 @@
 		<label>midas touch</label>
 		<labelNoun>midas touch</labelNoun>
 		<hediffClass>HediffWithComps</hediffClass>
-		<initialSeverity>1</initialSeverity>
-		<description>Pawns affected by the Midas touch and will have their equipment turned to gold upon death.</description>
+		<description>Pawn and Equipment will be turned to gold upon death.</description>
 		<descriptionHyperlinks>
 			<ThingDef>RBM_Midaspear</ThingDef>
 		</descriptionHyperlinks>
@@ -239,10 +202,51 @@
 				<destroyBody>true</destroyBody>
 				<destroyItems>true</destroyItems>
 			</li>
-			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>-25</severityPerDay>
-			</li>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
+				<disappearsAfterTicks>
+				  <min>400</min>
+				  <max>600</max>
+				</disappearsAfterTicks>
+			  </li>
+			  <li Class="HediffCompProperties_Discoverable">
+				<sendLetterWhenDiscovered>true</sendLetterWhenDiscovered>
+				<discoverLetterLabel>Midas Touch</discoverLetterLabel>
+				<discoverLetterText>{0} is under the effects of Midas Touch. If [PAWN_pronoun] dies [PAWN_pronoun] will be turned into gold, along with all of [PAWN_possessive] posessions.</discoverLetterText>
+			  </li>
 		</comps>
+
+		<stages>
+			<li>
+			  <label>invisible</label>
+			  <minSeverity>.001</minSeverity>
+			</li>
+			  <li>
+			  <label>active</label>
+			  <minSeverity>.5</minSeverity>
+			  <capMods>
+				<li>
+				  <capacity>Moving</capacity>
+				  <offset>-0.8</offset>
+				</li>
+			  </capMods>
+			</li>
+		  </stages>
+
 	</HediffDef>
+
+	<ThoughtDef>
+		<defName>MidasTouch</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>MidasTouch</hediff>
+		<validWhileDespawned>false</validWhileDespawned>
+		<stages>
+			<li>
+				<label>touched by midas</label>
+				<description>I'm being turned into gold!</description>
+				<baseMoodEffect>-12</baseMoodEffect>
+			</li>
+		</stages>
+  	</ThoughtDef>
 
 </Defs>
