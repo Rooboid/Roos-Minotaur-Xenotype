@@ -30,3 +30,10 @@ public static class RBM_WeaponClassDefOf
 {
     public static WeaponClassDef RBM_HerculeanClass; 
 }
+
+[DefOf]
+public static class RBM_ThoughtDefOf
+{
+    public static ThoughtDef RBM_Crushed;
+}
+
