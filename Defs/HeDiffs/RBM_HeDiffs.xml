@@ -4,7 +4,7 @@
 
 	<!--====================== Terrified ======================-->
 	<!-- Forced onto pawns affected by the gas cloud produced by the ability: SeeRed. -->
-	<!-- More Details: This primarily acts as a middleman to give pawns the mental state, RBM_TerrifiedFlee, and the thoughts Terrified_Thought... in one operation-->
+	<!-- More Details: This primarily acts as a middleman to give pawns the mental state, RBM_TerrifiedFlee -->
 
 	<HediffDef ParentName="InfectionBase">
 		<defName>HeDiffTerrified</defName>
@@ -178,16 +178,14 @@
 
 	
 	<!--====================== MidasTouch ======================-->
-	<!-- Randomly given to pawns hit with BruiseGold -->
-	
-	<!-- TODO: Can we change fleck to effecter? -->
+	<!-- Given to pawns attacked with the Midaspear -->
 
 	<HediffDef>
 		<defName>MidasTouch</defName>
 		<label>midas touch</label>
 		<labelNoun>midas touch</labelNoun>
 		<hediffClass>HediffWithComps</hediffClass>
-		<description>Pawn and Equipment will be turned to gold upon death.</description>
+		<description>Pawn and equipment will be turned to gold upon death.</description>
 		<descriptionHyperlinks>
 			<ThingDef>RBM_Midaspear</ThingDef>
 		</descriptionHyperlinks>
