@@ -50,6 +50,11 @@ namespace RBM_Minotaur_Mod
             base.Tick();
             if (this.pawn.IsHashIntervalTick(1440))
             {
+                if(!this.pawn.Spawned)
+                {
+                    return;
+                }
+
                 if ((GenLocalDate.Season(this.pawn.Tile) == Season.Spring) && !this.pawn.health.hediffSet.HasHediff(RBM_HediffDefOf.EstrousHeat))
                 {
                     this.pawn.health.AddHediff(RBM_HediffDefOf.EstrousHeat);
