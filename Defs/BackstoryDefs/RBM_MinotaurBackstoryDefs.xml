@@ -221,7 +221,7 @@
 
 	<BackstoryDef>
 		<defName>RBM_BraveGuardian</defName>
-		<title>guardian</title>
+		<title>brave guardian</title>
 		<titleShort>guardian</titleShort>
 		<slot>Adulthood</slot>
 		<baseDesc>[PAWN_nameDef] was a guardian to a very important figure in society. Though the relationship was initially rocky, the two gained an unbreakable, unconditional bond capable of weathering even the fiercest of storms. [PAWN_nameDef] isn’t afraid to look death in the eye for [PAWN_possessive] master.</baseDesc>
@@ -259,7 +259,7 @@
 
 	<BackstoryDef>
 		<defName>RBM_StoicGuardian</defName>
-		<title>guardian</title>
+		<title>stoic guardian</title>
 		<titleShort>guardian</titleShort>
 		<slot>Adulthood</slot>
 		<baseDesc>[PAWN_nameDef] matured into a disciplined and stoic guardian to [PAWN_possessive] master, uttering not even a sound unless it was by their request. Though [PAWN_possessive] spoke very little, [PAWN_possessive] was capable of penning the most saccharine and passionate poetry known to man. Well, that is, if man was ever able to see it.</baseDesc>
@@ -298,7 +298,7 @@
 	
 	<BackstoryDef>
 		<defName>RBM_CompassionateGuardian</defName>
-		<title>guardian</title>
+		<title>compassionate guardian</title>
 		<titleShort>guardian</titleShort>
 		<slot>Adulthood</slot>
 		<baseDesc>[PAWN_nameDef] was a loving and compassionate guardian to [PAWN_possessive] master, readily repurposing [PAWN_possessive] body as a comforting pillow to them when days had been tough.</baseDesc>
@@ -336,7 +336,7 @@
 
 	<BackstoryDef>
 		<defName>RBM_PiningGuardian</defName>
-		<title>guardian</title>
+		<title>pining guardian</title>
 		<titleShort>guardian</titleShort>
 		<slot>Adulthood</slot>
 		<baseDesc>[PAWN_nameDef]’s unrequited feelings of love for [PAWN_possessive] master have forever brought [PAWN_objective] shame and anguish. Watching them fall in love with potential suitors over and over again has only worsened the wound that [PAWN_nameDef] has to hide.</baseDesc>
@@ -375,7 +375,7 @@
 
 	<BackstoryDef>
 		<defName>RBM_ClumsyGuardian</defName>
-		<title>guardian</title>
+		<title>clumsy guardian</title>
 		<titleShort>guardian</titleShort>
 		<slot>Adulthood</slot>
 		<baseDesc>Out of all of the guardians out there, [PAWN_nameDef] is certainly one of them. Though [PAWN_pronoun] really tries [PAWN_possessive] best, nothing can ever seem to go right for [PAWN_objective] and [PAWN_possessive] master.</baseDesc>
@@ -456,7 +456,7 @@
 
 	<BackstoryDef>
 		<defName>RBM_ElegantGuardian</defName>
-		<title>guardian</title>
+		<title>elegant guardian</title>
 		<titleShort>guardian</titleShort>
 		<slot>Adulthood</slot>
 		<baseDesc>[PAWN_nameDef] serves their master diligently. Whether it’s slaying a foe on the battlefield or pouring the finest cup of tea on this side of the rim, [PAWN_nameDef] executes such duties with finesse and class.</baseDesc>
@@ -506,7 +506,7 @@
 
 	<BackstoryDef>
 		<defName>RBM_IllicitGuardian</defName>
-		<title>guardian</title>
+		<title>illicit guardian</title>
 		<titleShort>guardian</titleShort>
 		<slot>Adulthood</slot>
 		<baseDesc>[PAWN_nameDef] developed illicit relations with [PAWN_possessive] master, punishable by death should the royal family find out. The two strategized the location and time of their steamy rendezvous in order to evade the public eye, until eventually, the two ended their relationship. [PAWN_nameDef] continued to guard [PAWN_possessive] master with a strained heart.</baseDesc>
@@ -548,7 +548,7 @@
 
 	<BackstoryDef>
 		<defName>RBM_AnimalGuardian</defName>
-		<title>guardian</title>
+		<title>tender guardian</title>
 		<titleShort>guardian</titleShort>
 		<slot>Adulthood</slot>
 		<baseDesc>[PAWN_nameDef] not only cared for [PAWN_possessive] master, but cared for each and every one of the darling animals residing in the royal stables.</baseDesc>
