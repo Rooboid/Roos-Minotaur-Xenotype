@@ -30,7 +30,7 @@ wagon
 wailer
 wellington
 wheya
-wheystrapp
+whey
 willow
 vlacca
 vlactus
@@ -139,7 +139,6 @@ pieno
 piim
 pilar
 pine
-piosteer
 platys
 plough
 poot
@@ -218,9 +217,7 @@ macey
 mady
 leuce
 levaur
-ligustrum
 logo
-loingarde
 leto
 krilliam
 krowa
@@ -230,14 +227,12 @@ lakica
 lakto
 lambaste
 lash
-latifrons
 latundra
 lavon
 leaherd
 lebedyn
 leche
 kefir
-kekropis
 kernel
 khash
 kinemus
@@ -256,11 +251,10 @@ hornhard
 horst
 hostilos
 hovem
-hryhoriy
 huckleberry
 hunt
 iam
-ianherde
+herde
 iara
 ibon
 imber
@@ -273,7 +267,6 @@ grietje
 gust
 guts
 halt
-halynayov
 hanger
 hanne
 hanwoo
@@ -293,12 +286,9 @@ fodder
 fracas
 fran
 fray
-fulminare
 fume
 fyodor
 firn
-flannfeofan
-feverfew
 fibulla
 filet
 farah
@@ -315,7 +305,6 @@ eon
 equinox
 echo
 elfriede
-engisteer
 duet
 dume
 đura
@@ -324,10 +313,8 @@ earth
 dolomist
 dolos
 dorian
-demville
 dendeng
 deriba
-deuntray
 livlain
 coward
 cowbell
@@ -357,7 +344,6 @@ demain
 demensaur
 demsky
 demy
-cornbyrne
 cortado
 corvin
 coleo
@@ -416,7 +402,6 @@ bowfyn
 brandy
 brash
 brito
-britomartis
 briwaer
 brixtaun
 babcock
@@ -431,7 +416,6 @@ batali
 bellum
 belmont
 beresford
-bergscheck
 bergschrund
 bermooda
 bertolli
@@ -442,7 +426,6 @@ betula
 bia
 bicep
 bifteck
-devereaux
 ryde
 lemnos
 crannon
@@ -453,7 +436,6 @@ annatto
 annest
 antanas
 apricus
-arcthorne
 argive
 argive
 asado
@@ -467,7 +449,6 @@ aubrac
 augeas
 auguste
 aurora
-automedon
 axis
 ayran
 bigua
@@ -498,7 +479,6 @@ drudgerr
 dryades
 echo
 eius
-elenagtos
 eon
 eos
 equinox
@@ -514,7 +494,6 @@ genesis
 goretam
 grete
 greve
-hellburne
 hellebore
 hellenes
 hestris
@@ -552,7 +531,6 @@ mar
 matagot
 mechado
 meliora
-melpomene
 mogdrun
 natas
 naut
@@ -596,7 +574,6 @@ tache
 tanagra
 taphos
 targe
-telemea
 telete
 telos
 tereis

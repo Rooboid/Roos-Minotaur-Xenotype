@@ -426,4 +426,48 @@
 		</subSounds>
 	</SoundDef>
 	
+		<!-- Cleaning gold filth type -->
+  
+  	<SoundDef>
+		<defName>RBM_Lactation</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>2</maxSimultaneous>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>RBM_Lactation</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>5</volumeRange>
+				<muteWhenPaused>true</muteWhenPaused>
+				<sustainLoop>true</sustainLoop>
+				<tempoAffectedByGameSpeed>true</tempoAffectedByGameSpeed>
+			</li>
+		</subSounds>
+	</SoundDef>
+  
+  	<!--====================== Cowbell ======================-->
+	<!-- For cowbell apparel -->
+	
+	<SoundDef>
+		<defName>RBM_Cowbell</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>2</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>RBM_Cowbell</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>37</volumeRange>
+				<pitchRange>0.93~1.13</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+
+	
 </Defs>

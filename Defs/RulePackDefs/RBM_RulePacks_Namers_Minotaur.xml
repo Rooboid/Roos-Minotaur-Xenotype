@@ -101,9 +101,9 @@
 		
 	<RulePackDef>
 		<defName>NamerMinotaurArt</defName>
-		    <include>
+		<include>
 			<li>ArtNameUtility</li>
-			</include>
+		</include>
 		<rulePack>
 			<rulesStrings>
 				<!-- General -->
@@ -226,10 +226,10 @@
 		</rulePack>
 	</RulePackDef>
 	
-		<RulePackDef>
+	<RulePackDef>
 		<defName>ArtDescription_MinotaurWeapon</defName>
 		<include>
-		<li>ArtNameUtility</li>
+			<li>ArtNameUtility</li>
 		</include>
 		<rulePack>
 			<rulesStrings>

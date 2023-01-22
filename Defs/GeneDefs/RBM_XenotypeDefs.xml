@@ -35,6 +35,8 @@
 			<!-- Skills -->
 			<li>AptitudePoor_Intellectual</li>
 			<li>AptitudePoor_Social</li>
+			<!-- Optional -->
+			<li>RBM_PeriodicLactation</li>
 		</genes>
 	</XenotypeDef>
 </Defs>

@@ -114,7 +114,7 @@
 		<!-- Nosering and Markings -->
 		<graphicData>
 			<graphicPaths>
-			<!-- Blank (Duplicated for increased commonality) -->
+				<!-- Blank (Duplicated for increased commonality) -->
 				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
 				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
 				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
@@ -349,6 +349,43 @@
 				<li><symbol>gus</symbol></li>
 				<li><symbol>ford</symbol></li>
 				<li><symbol>taur</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<!-- Periodic Lactation -->
+	
+	<GeneDef>
+		<defName>RBM_PeriodicLactation</defName>
+		<label>periodic lactation</label>
+		<description>Carriers of this gene periodically produce milk. They can manually do this by using their ability, or automatically do this by using a milking machine.</description>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>1</biostatMet>
+		<displayCategory>Ability</displayCategory>
+		<displayOrderInCategory>200</displayOrderInCategory>
+		<iconPath>UI/GeneIcons/RBM_IncreasedLactation</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<abilities>
+			<li>RBM_Lactation</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>RBM_Lactation</AbilityDef>
+		</descriptionHyperlinks>
+		<!-- Symbol -->
+		<symbolPack>
+			<wholeNameSymbols>
+				<li><symbol>minotaur</symbol></li>
+			</wholeNameSymbols>
+			<prefixSymbols>
+				<li><symbol>calci</symbol></li>
+				<li><symbol>lact</symbol></li>
+				<li><symbol>lai</symbol></li>
+				<li><symbol>mino</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>che</symbol></li>
+				<li><symbol>lac</symbol></li>
+				<li><symbol>mula</symbol></li>
 			</suffixSymbols>
 		</symbolPack>
 	</GeneDef>

@@ -203,35 +203,35 @@
 			<li Class="HediffCompProperties_Disappears">
 				<showRemainingTime>True</showRemainingTime>
 				<disappearsAfterTicks>
-				  <min>400</min>
-				  <max>600</max>
+					<min>400</min>
+					<max>600</max>
 				</disappearsAfterTicks>
-			  </li>
-			  <li Class="HediffCompProperties_Discoverable">
+			</li>
+			<li Class="HediffCompProperties_Discoverable">
 				<sendLetterWhenDiscovered>true</sendLetterWhenDiscovered>
 				<discoverLetterLabel>Midas Touch</discoverLetterLabel>
 				<discoverLetterText>{0} is under the effects of Midas Touch. [PAWN_pronoun] will be turned into gold if [PAWN_pronoun] dies, along with all of [PAWN_possessive] posessions.</discoverLetterText>
-			  </li>
+			</li>
 		</comps>
 
 		<stages>
 			<li>
-			  <label>hidden</label>
-			  <minSeverity>.001</minSeverity>
-			  <becomeVisible>false</becomeVisible>
+				<label>hidden</label>
+				<minSeverity>.001</minSeverity>
+				<becomeVisible>false</becomeVisible>
 			</li>
-			  <li>
-			  <label>active</label>
-			  <minSeverity>.5</minSeverity>
-			  <becomeVisible>true</becomeVisible>
-			  <capMods>
-				<li>
-				  <capacity>Moving</capacity>
-				  <offset>-0.8</offset>
-				</li>
-			  </capMods>
+			<li>
+				<label>active</label>
+				<minSeverity>.5</minSeverity>
+				<becomeVisible>true</becomeVisible>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.8</offset>
+					</li>
+				</capMods>
 			</li>
-		  </stages>
+		</stages>
 
 	</HediffDef>
 
@@ -247,6 +247,6 @@
 				<baseMoodEffect>-12</baseMoodEffect>
 			</li>
 		</stages>
-  	</ThoughtDef>
+	</ThoughtDef>
 
 </Defs>

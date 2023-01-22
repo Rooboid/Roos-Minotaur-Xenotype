@@ -4,7 +4,7 @@ aella
 alatau
 alethia
 almokor
-amazon
+amazo
 anka
 anthos
 borghild
@@ -26,7 +26,6 @@ elaine
 electra
 elin
 emmira
-ericatyle
 erinnyes
 eris
 esme
@@ -117,7 +116,6 @@ tesyn
 tethys
 thea
 themis
-threatevera
 timao
 tineke
 tonette
@@ -205,7 +203,6 @@ kaia
 rhapsody
 aria
 sonnet
-lachesis
 leto
 limos
 lipara
@@ -365,7 +362,6 @@ carolynne
 caryn
 cattlia
 cattlily
-catylcerebia
 ceto
 chardonnay
 cheddar
@@ -445,7 +441,6 @@ viveka
 vovazia
 vurda
 wagyu
-wagyulrika
 waltraude
 urania
 urda
@@ -481,7 +476,6 @@ straccita
 spring
 stampaige
 tampearl
-stanicleia
 sophia
 sofielda
 sanna
@@ -511,7 +505,6 @@ phoebe
 poddy
 perry
 paneer
-paraskevi
 pasturia
 pat
 patty
@@ -638,7 +631,7 @@ gugalanna
 gustava
 gwendolyn
 gwenillian
-hallimi
+halmi
 gouda
 grazelle
 grazie
@@ -657,7 +650,6 @@ fogera
 freya
 frommie
 feebe
-faisselle
 ethel
 eubote
 eufima

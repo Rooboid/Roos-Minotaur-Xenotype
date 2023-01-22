@@ -55,5 +55,48 @@
 			</li>
 		</comps>
 	</AbilityDef>
+	
+		<AbilityDef>
+		<defName>RBM_Lactation</defName>
+		<label>lactation</label>
+		<description>Pawns with this gene can periodically produce milk.</description>
+		<jobDef>CastAbilityOnThingWithoutWeapon</jobDef>
+		<iconPath>UI/GeneIcons/RBM_IncreasedLactation</iconPath>
+		<category>Minotaur</category>
+		<displayOrder>50</displayOrder>
+		<cooldownTicksRange>180000</cooldownTicksRange>
+		<aiCanUse>false</aiCanUse>
+		<warmupStartSound>RBM_Lactation</warmupStartSound>
+		<statBases>
+			<Ability_Duration>300</Ability_Duration>
+			<Ability_EffectRadius>4.5</Ability_EffectRadius>
+		</statBases>
+		<targetRequired>false</targetRequired>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<showCastingProgressBar>true</showCastingProgressBar>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupEffecter>RBM_SeeRed_Warmup</warmupEffecter>
+			<warmupTime>20</warmupTime>
+			<soundCast>RBM_Cowbell</soundCast>
+			<requireLineOfSight>false</requireLineOfSight>
+			<range>0</range>
+			<drawAimPie>false</drawAimPie>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+      <li Class="CompProperties_AbilityRequiresCapacity">
+        <capacity>Manipulation</capacity>
+      </li>
+	        <li Class="CompProperties_AbilitySpawn">
+        <thingDef>Milk</thingDef>
+        <allowOnBuildings>False</allowOnBuildings>
+      </li>
+		</comps>
+	</AbilityDef>
+	
+	
 
 </Defs>

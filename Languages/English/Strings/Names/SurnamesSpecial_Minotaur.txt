@@ -24,10 +24,9 @@ garde
 forte
 hilte
 bullbrande
-byllseye
+bullseye
 hatchet
 fellswood
-bottleneck
 deltavich
 gammasson
 finchorne
@@ -44,7 +43,7 @@ synsvich
 rauissyn
 singarde
 shergarde
-byreknuckle
+byre
 wagyu
 caerus
 eris
@@ -60,7 +59,6 @@ stanisbon
 helios
 maia
 hydra
-andromeda
 antlia
 auriga
 aquila
@@ -71,7 +69,7 @@ gemini
 mensa
 borion
 aldemir
-virgo
+virgus
 sirius
 kentaurus
 archtrapp

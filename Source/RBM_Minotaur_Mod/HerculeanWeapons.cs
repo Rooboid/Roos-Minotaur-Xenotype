@@ -13,7 +13,7 @@ public static class CanEquip_Minotaur
     {
         cantReason = null;
 
-        if(thing.def.weaponClasses != null && !thing.def.weaponClasses.Contains(RBM_WeaponClassDefOf.RBM_HerculeanClass))
+        if( (thing.def.weaponClasses != null || !thing.def.weaponClasses.Contains(RBM_WeaponClassDefOf.RBM_HerculeanClass) ) && (thing.def.apparel.tags != null || !thing.def.apparel.tags.Contains("HerculeanApparel")))
         {
             return __result;
         }

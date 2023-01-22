@@ -572,7 +572,7 @@
 		</children>
 	</EffecterDef>
 	
-		<!-- Gold Fleck -->
+	<!-- Gold Fleck -->
 	
 	<FleckDef ParentName="FleckBase_RandomGraphic_Thrown">
 		<defName>Fleck_Gold</defName>

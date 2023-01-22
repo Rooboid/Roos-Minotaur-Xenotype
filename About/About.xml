@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-<name>Roo's Minotaur Xenotype</name>
-<author>Rooboid</author>
-<supportedVersions>
+	<name>Roo's Minotaur Xenotype</name>
+	<author>Rooboid</author>
+	<supportedVersions>
 		<li>1.4</li>
-</supportedVersions>
-<packageId>Rooboid.Minotaur</packageId>
+	</supportedVersions>
+	<packageId>Rooboid.Minotaur</packageId>
 	<loadAfter>
 		<li>Ludeon.RimWorld</li>
 		<li>Ludeon.RimWorld.Royalty</li>
@@ -13,7 +13,15 @@
 		<li>Ludeon.RimWorld.Biotech</li>
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 	</loadAfter>
-<description>Adds a new xenotype to Rimworld: the minotaur. These herculean beasts are made of sheer muscle and hay, and excel in melee-based combat thanks to their devastating tempers and strength. 
+	<modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld</downloadUrl>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<description>Adds a new xenotype to Rimworld: the minotaur. These herculean beasts are made of sheer muscle and hay, and excel in melee-based combat thanks to their devastating tempers and strength. 
 
 &lt;size=25&gt;• Features&lt;/size&gt;
 
@@ -39,5 +47,5 @@ johnathanjansen, christyboy100, deathscyp, thimblerig, soundsnapfx, dwoboyle, ra
 
 &lt;size=20&gt;Patreon:&lt;/size&gt;
 Mangulwort, panatakan yen, Alexandre, Galen, Only, Greg Bunger, D-Train, 1Sopel6, WoolyPie, Dodo, Josh and Prince
-</description>
+	</description>
 </ModMetaData>

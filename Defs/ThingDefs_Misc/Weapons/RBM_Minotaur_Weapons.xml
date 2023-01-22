@@ -139,7 +139,7 @@
 		<description>An ancient, obsidian railgun powered by a glowing gemstone. Little is known about this fabled weapon, other than that victims of its blast seldom live to tell the tale. Those unfortunate enough to be in it's impact zone and still survive will become terrified and flee. \n\nThis railgun so massive that only pawns with the Herculean gene can equip it.</description>
 		<!-- Basic Data -->
 		<uiIconScale>0.8</uiIconScale>
-		<equippedAngleOffset>-45</equippedAngleOffset>
+		<equippedAngleOffset>45</equippedAngleOffset>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/RBM_TaurailGun/RBM_TaurailGun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
