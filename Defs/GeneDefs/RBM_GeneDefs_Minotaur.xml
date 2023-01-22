@@ -427,7 +427,7 @@
 		<defName>RBM_EstrousCycle</defName>
 		<label>estrous cycle</label>
 		<description>Carriers of this gene go into heat during Aprimay. While in heat, they will crave lovin' more than usual at the cost of also feeling more aggressive.</description>
-		<geneClass>RBM_Minotaur_Mod.Gene_RBM_EstrousCycle</geneClass>
+		<geneClass>RBM_Minotaur.Gene_RBM_EstrousCycle</geneClass>
 		<biostatCpx>1</biostatCpx>
 		<minAgeActive>18</minAgeActive>
 		<displayCategory>Reproduction</displayCategory>

@@ -7,7 +7,7 @@ using Verse.AI;
 
 
 
-namespace RBM_Minotaur_Mod
+namespace RBM_Minotaur
 {
     [StaticConstructorOnStartup]
     public static class RBM_Minotaur

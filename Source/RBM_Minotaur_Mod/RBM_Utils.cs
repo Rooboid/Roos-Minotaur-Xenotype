@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using Verse;
 
-namespace RBM_Minotaur_Mod
+namespace RBM_Minotaur
 {
     internal class RBM_Utils
     {

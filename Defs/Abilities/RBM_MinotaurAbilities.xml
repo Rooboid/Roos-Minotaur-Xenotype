@@ -49,7 +49,7 @@
 				<replaceExisting>true</replaceExisting>
 			</li>
 
-			<li Class="RBM_Minotaur_Mod.CompProperties_AbilityTerrify">
+			<li Class="RBM_Minotaur.CompProperties_AbilityTerrify">
 				<terrorRadius>4.5</terrorRadius>
 				<fleeDistance>15</fleeDistance>
 			</li>
@@ -93,14 +93,11 @@
 			<li Class="CompProperties_AbilityRequiresCapacity">
 				<capacity>Manipulation</capacity>
 			</li>
-			<li Class="CompProperties_AbilitySpawnDetailed">
-				<spawnThingDef>Milk</spawnThingDef>
-				<spawnCount>100</spawnCount>
-				<allowOnBuildings>False</allowOnBuildings>
+			<li Class="RBM_Minotaur.CompProperties_AbilitySpawnStack">
+				<spawnedThingDef>Milk</spawnedThingDef>
+				<spawnedThingAmount>50</spawnedThingAmount>
 			</li>
 		</comps>
 	</AbilityDef>
-	
-	
 
 </Defs>
