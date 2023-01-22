@@ -49,14 +49,14 @@
 				<replaceExisting>true</replaceExisting>
 			</li>
 
-			<li Class="RBM_Minotaur_Mod.CompProperties_AbilityTerrify">
+			<li Class="RBM_Minotaur.CompProperties_AbilityTerrify">
 				<terrorRadius>4.5</terrorRadius>
 				<fleeDistance>15</fleeDistance>
 			</li>
 		</comps>
 	</AbilityDef>
 	
-		<AbilityDef>
+	<AbilityDef>
 		<defName>RBM_Lactation</defName>
 		<label>lactation</label>
 		<description>Pawns with this gene can periodically produce milk.</description>
@@ -87,16 +87,14 @@
 			</targetParams>
 		</verbProperties>
 		<comps>
-      <li Class="CompProperties_AbilityRequiresCapacity">
-        <capacity>Manipulation</capacity>
-      </li>
-	        <li Class="CompProperties_AbilitySpawn">
-        <thingDef>Milk</thingDef>
-        <allowOnBuildings>False</allowOnBuildings>
-      </li>
+      	<li Class="CompProperties_AbilityRequiresCapacity">
+        	<capacity>Manipulation</capacity>
+      	</li>
+	    <li Class="RBM_Minotaur.CompProperties_AbilitySpawnStack">
+        	<spawnedThingDef>Milk</spawnedThingDef>
+        	<spawnedThingAmount>50</spawnedThingAmount>
+      	</li>
 		</comps>
 	</AbilityDef>
-	
-	
 
 </Defs>

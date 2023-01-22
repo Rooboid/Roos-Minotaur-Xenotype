@@ -4,7 +4,7 @@ using Verse;
 using Verse.Sound;
 
 
-namespace RBM_Minotaur_Mod
+namespace RBM_Minotaur
 {
     //Midas Touch Death Effect
     public class HediffCompProperties_MidasTouch : HediffCompProperties

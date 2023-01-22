@@ -37,3 +37,8 @@ public static class RBM_ThoughtDefOf
     public static ThoughtDef RBM_Crushed;
 }
 
+[DefOf]
+public static class RBM_ThingDefOf
+{
+    public static ThingDef Milk;
+}

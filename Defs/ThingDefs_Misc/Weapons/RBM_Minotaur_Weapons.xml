@@ -223,7 +223,7 @@
 			<texPath>Things/Projectile/RBM_ObsidianBullet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<thingClass>RBM_Minotaur_Mod.Projectile_ObsidianBullet</thingClass>
+		<thingClass>RBM_Minotaur.Projectile_ObsidianBullet</thingClass>
 		<projectile>
 			<damageDef>Mageia_Hot</damageDef>
 			<explosionRadius>3.5</explosionRadius>

@@ -190,7 +190,7 @@
 			<ThingDef>RBM_Midaspear</ThingDef>
 		</descriptionHyperlinks>
 		<comps>
-			<li Class="RBM_Minotaur_Mod.HediffCompProperties_MidasTouch">
+			<li Class="RBM_Minotaur.HediffCompProperties_MidasTouch">
 				<fleck>Fleck_Gold</fleck>
 				<moteCount>6</moteCount>
 				<moteOffsetRange>0.25~0.75</moteOffsetRange>
