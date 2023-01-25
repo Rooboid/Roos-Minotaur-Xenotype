@@ -80,6 +80,7 @@
 		<showCastingProgressBar>true</showCastingProgressBar>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
+			<warmupEffecter>RBM_LactationGene</warmupEffecter>
 			<warmupTime>20</warmupTime>
 			<soundCast>RBM_Cowbell</soundCast>
 			<requireLineOfSight>false</requireLineOfSight>

@@ -603,4 +603,30 @@
 		<growthRate>-0.1</growthRate>
 	</FleckDef>
 	
+	<!--Lactation Mote-->
+  
+  <ThingDef ParentName="FoodBitBase">
+    <defName>Mote_LactateGene</defName>
+    <graphicData>
+      <texPath>Things/Mote/RBM_Lactation/RBM_LactationA</texPath>
+      <shaderType>Mote</shaderType>
+    </graphicData>
+  </ThingDef>
+	
+	<!-- Lactation Effect-->
+	
+ <EffecterDef>
+    <defName>RBM_LactationGene</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+        <scale>0.3~1</scale>
+        <ticksBetweenMotes>15</ticksBetweenMotes>
+        <positionLerpFactor>0.6</positionLerpFactor>
+        <positionRadius>0.3</positionRadius>
+        <moteDef>Mote_LactateGene</moteDef>
+      </li>
+    </children>
+  </EffecterDef>
+	
 </Defs>
