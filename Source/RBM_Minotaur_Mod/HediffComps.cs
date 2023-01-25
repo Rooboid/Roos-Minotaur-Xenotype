@@ -6,29 +6,9 @@ using Verse.Sound;
 
 namespace RBM_Minotaur
 {
-    //Midas Touch Death Effect
-    public class HediffCompProperties_MidasTouch : HediffCompProperties
-    {
-        public HediffCompProperties_MidasTouch()
-        {
-            this.compClass = typeof(HediffComp_MidasTouch);
-        }
-
-        public FleckDef fleck;
-        public ThingDef mote;
-        public int moteCount = 3;
-        public FloatRange moteOffsetRange = new FloatRange(0.2f, 0.4f);
-        public ThingDef filth;
-        public int filthCount = 10;
-        public SoundDef sound;
-        public int goldAmount = 20;
-        public bool destroyBody = true;
-        public bool destroyItems = true;
-    }
-
+    //Midas Touch Hediff Comp (on Death replace Corpse with Gold)
     public class HediffComp_MidasTouch : HediffComp
     {
-
         public HediffCompProperties_MidasTouch Props
         {
             get
@@ -41,12 +21,12 @@ namespace RBM_Minotaur
         {
             base.Notify_PawnKilled();
 
-            if (!base.Pawn.health.hediffSet.HasHediff(RBM_HediffDefOf.MidasTouch) || base.Pawn.health.hediffSet.GetFirstHediffOfDef(RBM_HediffDefOf.MidasTouch).Severity < 0.5)
+            if (!base.Pawn.RaceProps.Humanlike)
             {
                 return;
             }
 
-            if (!base.Pawn.Spawned)
+            if (base.Pawn.health.hediffSet.GetFirstHediffOfDef(RBM_DefOf.MidasTouch).Severity < 0.5)
             {
                 return;
             }
@@ -76,7 +56,7 @@ namespace RBM_Minotaur
                     FleckMaker.Static(loc, base.Pawn.Map, this.Props.fleck, 1f);
                 }
             }
-            
+
             if (this.Props.filth != null)
             {
                 FilthMaker.TryMakeFilth(base.Pawn.Position, base.Pawn.Map, this.Props.filth, this.Props.filthCount, FilthSourceFlags.None, true);
@@ -91,7 +71,12 @@ namespace RBM_Minotaur
         {
             base.Notify_PawnDied();
 
-            if (!base.Pawn.health.hediffSet.HasHediff(RBM_HediffDefOf.MidasTouch) || base.Pawn.health.hediffSet.GetFirstHediffOfDef(RBM_HediffDefOf.MidasTouch).Severity < 0.5)
+            if (!base.Pawn.RaceProps.Humanlike)
+            {
+                return;
+            }
+
+            if (base.Pawn.health.hediffSet.GetFirstHediffOfDef(RBM_DefOf.MidasTouch).Severity < 0.5)
             {
                 return;
             }
@@ -101,7 +86,9 @@ namespace RBM_Minotaur
 
             if (this.Props.destroyBody)
             {
+                //base.Pawn.Corpse.Destroy();
                 base.Pawn.Corpse.DeSpawn(DestroyMode.Vanish);
+
             }
 
             Thing thing = ThingMaker.MakeThing(ThingDefOf.Gold, null);
@@ -109,6 +96,26 @@ namespace RBM_Minotaur
 
             GenSpawn.Spawn(thing, pawnPos, map, WipeMode.VanishOrMoveAside);
         }
+    }
+
+    //Midas Touch CompProperties
+    public class HediffCompProperties_MidasTouch : HediffCompProperties
+    {
+        public HediffCompProperties_MidasTouch()
+        {
+            this.compClass = typeof(HediffComp_MidasTouch);
+        }
+
+        public FleckDef fleck;
+        public ThingDef mote;
+        public int moteCount = 3;
+        public FloatRange moteOffsetRange = new FloatRange(0.2f, 0.4f);
+        public ThingDef filth;
+        public int filthCount = 10;
+        public SoundDef sound;
+        public int goldAmount = 20;
+        public bool destroyBody = true;
+        public bool destroyItems = true;
     }
 }
 

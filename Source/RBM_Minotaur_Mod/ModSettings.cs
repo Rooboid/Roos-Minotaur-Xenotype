@@ -9,7 +9,6 @@ namespace RBM_Minotaur
         public bool settings_milkableFemales = true;
         public bool settings_milkableMales = true;
 
-
         // The part that writes our settings to file. Note that saving is by ref.
         public override void ExposeData()
         {
@@ -24,7 +23,6 @@ namespace RBM_Minotaur
     {
         // A reference to our settings.
         MinotaurSettings settings;
-
 
         // A mandatory constructor which resolves the reference to our settings.
         public RBM_Minotaur_Mod(ModContentPack content) : base(content)

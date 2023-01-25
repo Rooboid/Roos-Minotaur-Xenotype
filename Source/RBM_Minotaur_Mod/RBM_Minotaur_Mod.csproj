@@ -53,17 +53,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Harmony.cs" />
-    <Compile Include="Milking.cs" />
-    <Compile Include="Settings.cs" />
-    <Compile Include="Loving_patch.cs" />
-    <Compile Include="HerculeanWeapons.cs" />
-    <Compile Include="CowStomach.cs" />
+    <Compile Include="AbilitySpawnStack.cs" />
+    <Compile Include="ModSettings.cs" />
+    <Compile Include="GeneHerculean.cs" />
+    <Compile Include="GeneRuminantStomach.cs" />
     <Compile Include="RBM_Utils.cs" />
-    <Compile Include="ObsidianBullet.cs" />
-    <Compile Include="InHeat.cs" />
-    <Compile Include="RBM_DefOfs.cs" />
-    <Compile Include="SeeRed.cs" />
-    <Compile Include="MidasTouch.cs" />
+    <Compile Include="Projectiles.cs" />
+    <Compile Include="GeneEstrousCycle.cs" />
+    <Compile Include="DefOfs.cs" />
+    <Compile Include="AbilitySeeRed.cs" />
+    <Compile Include="HediffComps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

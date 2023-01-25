@@ -5,6 +5,7 @@ using Verse;
 namespace RBM_Minotaur
 {
     [StaticConstructorOnStartup]
+    //Sets up Harmony Patches
     public static class RBM_Minotaur
     {
         static RBM_Minotaur()

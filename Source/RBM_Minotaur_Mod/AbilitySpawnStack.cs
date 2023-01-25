@@ -5,10 +5,10 @@ using Verse;
 
 namespace RBM_Minotaur
 {
-
-    [StaticConstructorOnStartup]
+    // Spawns a stack of an item on the Pawn's location
     public class CompAbilityEffect_SpawnStack : CompAbilityEffect
     {
+        
         public new CompProperties_AbilitySpawnStack Props
         {
             get
@@ -17,11 +17,11 @@ namespace RBM_Minotaur
             }
         }
 
+        
         public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
         {
             Pawn pawn = this.parent.pawn;
             base.Apply(target, dest);
-
 
             Thing thing = ThingMaker.MakeThing(Props.spawnedThingDef);
             thing.stackCount = Props.spawnedThingAmount;
