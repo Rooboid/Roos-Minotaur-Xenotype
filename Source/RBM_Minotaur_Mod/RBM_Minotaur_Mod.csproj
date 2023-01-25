@@ -52,7 +52,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Harmony.cs" />
     <Compile Include="Milking.cs" />
     <Compile Include="Settings.cs" />
     <Compile Include="Loving_patch.cs" />
