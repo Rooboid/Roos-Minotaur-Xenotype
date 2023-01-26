@@ -31,35 +31,31 @@ namespace RBM_Minotaur
                 return;
             }
 
-            if (this.Props.destroyItems)
-            {
-                base.Pawn.equipment.DestroyAllEquipment(DestroyMode.Vanish);
-                base.Pawn.apparel.DestroyAll(DestroyMode.Vanish);
-            }
-
             if (this.Props.mote == null && this.Props.fleck == null)
             {
                 return;
             }
 
             Vector3 drawPos = base.Pawn.DrawPos;
+            Map map = base.Pawn.Map;
+
             for (int i = 0; i < this.Props.moteCount; i++)
             {
                 Vector2 vector = Rand.InsideUnitCircle * this.Props.moteOffsetRange.RandomInRange * (float)Rand.Sign;
                 Vector3 loc = new Vector3(drawPos.x + vector.x, drawPos.y, drawPos.z + vector.y);
                 if (this.Props.mote != null)
                 {
-                    MoteMaker.MakeStaticMote(loc, base.Pawn.Map, this.Props.mote, 1f, false);
+                    MoteMaker.MakeStaticMote(loc, map, this.Props.mote, 1f, false);
                 }
                 else
                 {
-                    FleckMaker.Static(loc, base.Pawn.Map, this.Props.fleck, 1f);
+                    FleckMaker.Static(loc, map, this.Props.fleck, 1f);
                 }
             }
 
             if (this.Props.filth != null)
             {
-                FilthMaker.TryMakeFilth(base.Pawn.Position, base.Pawn.Map, this.Props.filth, this.Props.filthCount, FilthSourceFlags.None, true);
+                FilthMaker.TryMakeFilth(base.Pawn.Position, map, this.Props.filth, this.Props.filthCount, FilthSourceFlags.None, true);
             }
             if (this.Props.sound != null)
             {
@@ -84,17 +80,26 @@ namespace RBM_Minotaur
             IntVec3 pawnPos = base.Pawn.Corpse.Position;
             Map map = this.parent.pawn.Corpse.Map;
 
-            if (this.Props.destroyBody)
+            if (this.Props.destroyBody && MinotaurSettings.midasRemovesCorpse)
             {
-                //base.Pawn.Corpse.Destroy();
-                base.Pawn.Corpse.DeSpawn(DestroyMode.Vanish);
-
+                if (MinotaurSettings.midasDespawnDontDestroy)
+                {
+                    base.Pawn.Corpse.DeSpawn();
+                }
+                else
+                {
+                    base.Pawn.Corpse.Destroy();
+                }
             }
 
-            Thing thing = ThingMaker.MakeThing(ThingDefOf.Gold, null);
-            thing.stackCount = Props.goldAmount;
-
-            GenSpawn.Spawn(thing, pawnPos, map, WipeMode.VanishOrMoveAside);
+            //thing.stackCount = Props.goldAmount;
+            if (MinotaurSettings.midasGoldAmount != 0 )
+            {
+                Thing thing = ThingMaker.MakeThing(ThingDefOf.Gold, null);
+                thing.stackCount = MinotaurSettings.midasGoldAmount;
+                GenSpawn.Spawn(thing, pawnPos, map, WipeMode.VanishOrMoveAside);
+            }
+            
         }
     }
 
