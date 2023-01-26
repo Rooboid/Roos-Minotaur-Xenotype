@@ -11,6 +11,7 @@ public static class RBM_DefOf
 
     //HeDiffs
     public static HediffDef HeDiffTerrified;
+    public static HediffDef HeDiffSeeRed;
     public static HediffDef EstrousHeat;
     public static HediffDef MidasTouch;
 

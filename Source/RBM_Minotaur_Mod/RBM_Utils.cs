@@ -32,7 +32,7 @@ namespace RBM_Minotaur
             IntVec3 fleeToIntVec = fleeToVector.ToIntVec3();
 
             //If no path is found, try a shorter distance
-            while (!pawn.CanReach(fleeToIntVec, PathEndMode.Touch, Danger.Deadly) && fleeDistance > 0)
+            while (!pawn.CanReach(fleeToIntVec, PathEndMode.OnCell, Danger.Deadly) && fleeDistance > 0)
             {
                 fleeDistance--;
                 Log.Message("No flee path found for " + pawn.Name + " Trying again with distance: " + fleeDistance);
@@ -68,7 +68,7 @@ namespace RBM_Minotaur
 
 
         // Apply terrify effect in an area
-        public static bool terrifyInArea(IntVec3 position, Map map, float radius = 5)
+        public static bool terrifyInArea(IntVec3 position, Map map, float radius = 5, Pawn originPawn = null)
         {
             if (map == null) { return false; }
             List<Pawn> mapPawns = map.mapPawns.AllPawnsSpawned;
@@ -79,8 +79,13 @@ namespace RBM_Minotaur
                 bool isInRange = position.InHorDistOf(mapPawns[i].Position, radius);
                 bool isDowned = mapPawns[i].Downed;
                 bool isInMentalState = mapPawns[i].InMentalState;
-                
-                if ( isHumanlike && isInRange && !isDowned && !isInMentalState )
+                bool isOriginPawn = false;
+                if (originPawn != null && originPawn == mapPawns[i])
+                {
+                    isOriginPawn = true;
+                }
+
+                if ( isHumanlike && isInRange && !isDowned && !isInMentalState && !isOriginPawn )
                 {
                     LocalTargetInfo t = new LocalTargetInfo(RBM_Utils.genFleeTile(mapPawns[i].Position, position, MinotaurSettings.SeeRedFleeRadius, mapPawns[i]));
                     Job job = new Job(JobDefOf.FleeAndCower, t);
