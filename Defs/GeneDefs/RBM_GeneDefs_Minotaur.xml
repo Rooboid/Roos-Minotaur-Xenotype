@@ -79,7 +79,7 @@
 		<defName>RBM_BovineHead</defName>
 		<label>bovine head</label>
 		<labelShortAdj>bovine</labelShortAdj>
-		<description>Carriers of this gene possess a bovine head. They don't enjoy the thought of consuming beef.</description>
+		<description>Carriers of this gene possess a bovine head.</description>
 		<iconPath>UI/GeneIcons/RBM_BovineHead</iconPath>
 		<biostatMet>1</biostatMet>
 		<displayCategory>Cosmetic</displayCategory>
@@ -99,19 +99,6 @@
 			<li>RBM_NarrowHeadM2</li>
 			<li>RBM_NarrowHeadM3</li>
 		</forcedHeadTypes>
-		<!-- BeefEat Thoughts
-		        <extraThoughtsFromIngestion>
-          <li>
-            <meatSource>Meat_Cow</meatSource>
-            <thoughtsDirect>
-              <li>AteHumanlikeMeatDirectCannibal</li>
-            </thoughtsDirect>
-            <thoughtsAsIngredient>
-              <li>AteHumanlikeMeatAsIngredientCannibal</li>
-            </thoughtsAsIngredient>
-          </li>
-        </extraThoughtsFromIngestion>  -->
-		<!-- Nosering and Markings -->
 		<graphicData>
 			<graphicPaths>
 				<!-- Blank (Duplicated for increased commonality) -->
@@ -363,7 +350,7 @@
 		<biostatMet>1</biostatMet>
 		<displayCategory>Ability</displayCategory>
 		<displayOrderInCategory>200</displayOrderInCategory>
-		<iconPath>UI/GeneIcons/RBM_IncreasedLactation</iconPath>
+		<iconPath>UI/GeneIcons/RBM_Lactation</iconPath>
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<abilities>
 			<li>RBM_Lactation</li>
