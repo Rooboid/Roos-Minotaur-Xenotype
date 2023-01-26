@@ -1,9 +1,13 @@
 ﻿using RimWorld;
+using RimWorld.BaseGen;
 using System.Collections.Generic;
 using System.Data.Common;
+using System.Security.Cryptography;
 using UnityEngine;
 using Verse;
 using Verse.AI;
+using static HarmonyLib.Code;
+using static UnityEngine.GraphicsBuffer;
 
 namespace RBM_Minotaur
 {
@@ -41,35 +45,31 @@ namespace RBM_Minotaur
 
 
         // Apply terrify effect in an area
-        public static void terrifyInArea(IntVec3 position, Map map, float radius = 5)
+        public static bool terrifyInArea(IntVec3 position, Map map, float radius = 5)
         {
-            if (map != null)
-            {
-                List<Pawn> mapPawns = map.mapPawns.AllPawnsSpawned;
-                for (int i = 0; i < mapPawns.Count; i++)
-                {
-                    if (mapPawns[i].RaceProps.Humanlike && mapPawns[i].Downed == false && mapPawns[i].InMentalState == false)
-                    {
-                        if (position.InHorDistOf(mapPawns[i].Position, radius))
-                        {
-                            LocalTargetInfo t = new LocalTargetInfo(RBM_Utils.genFleeTile(mapPawns[i].Position, position, 10));
-                            Job job = new Job(JobDefOf.FleeAndCower, t);
-                            mapPawns[i].mindState.mentalStateHandler.TryStartMentalState(RBM_DefOf.RBM_TerrifiedFlee, "scared by something nearby", true, false, null, true);
-                            mapPawns[i].jobs.TryTakeOrderedJob(job, JobTag.Misc);
-                        }
-                    }
-                }
-            }
-        }
+            if (map == null) { return false; }
+            List<Pawn> mapPawns = map.mapPawns.AllPawnsSpawned;
 
-        public static bool pawnIsHumanAndSpawned(Pawn pawn)
-        {
-            if (pawn == null || !pawn.RaceProps.Humanlike || !pawn.Spawned)
+            for (int i = 0; i < mapPawns.Count; i++)
             {
-                return false;
+                bool isHumanlike = mapPawns[i].RaceProps.Humanlike;
+                bool isInRange = position.InHorDistOf(mapPawns[i].Position, radius);
+                bool isDowned = mapPawns[i].Downed;
+                bool isInMentalState = mapPawns[i].InMentalState;
+                
+                if ( isHumanlike && isInRange && !isDowned && !isInMentalState )
+                {
+                    LocalTargetInfo t = new LocalTargetInfo(RBM_Utils.genFleeTile(mapPawns[i].Position, position, 10));
+                    Job job = new Job(JobDefOf.FleeAndCower, t);
+                    mapPawns[i].mindState.mentalStateHandler.TryStartMentalState(RBM_DefOf.RBM_TerrifiedFlee, "scared by something nearby", true, false, null, true);
+                    mapPawns[i].jobs.TryTakeOrderedJob(job, JobTag.Misc);
+                }
             }
             return true;
         }
+
+
+
 
     }
 }
