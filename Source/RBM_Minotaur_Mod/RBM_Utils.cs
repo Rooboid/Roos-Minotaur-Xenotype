@@ -13,21 +13,43 @@ namespace RBM_Minotaur
 {
     internal class RBM_Utils
     {
-        // Generate a tile to flee to
-        public static IntVec3 genFleeTile(Vector3 startPosition, Vector3 fleeFrom, int fleeDistance)
+
+
+        // Generate a tile to flee to from two points and a distance.
+        public static IntVec3 genFleeTile(IntVec3 startPosition, IntVec3 fleeFrom, float fleeDistance, Pawn pawn)
         {
+            return genFleeTile(startPosition.ToVector3(), fleeFrom.ToVector3(), fleeDistance, pawn);
+        }
+
+        public static IntVec3 genFleeTile(Vector3 startPosition, Vector3 fleeFrom, float fleeDistance, Pawn pawn)
+        {
+            //Create a direction vector (heading) and normalise
             Vector3 relativePos = (startPosition - fleeFrom);
             Vector3 NormalizedDirection = relativePos.normalized;
 
+            //Create a flee position from the vecctor and distance
             Vector3 fleeToVector = startPosition + (NormalizedDirection * fleeDistance);
             IntVec3 fleeToIntVec = fleeToVector.ToIntVec3();
 
+            //If no path is found, try a shorter distance
+            while (!pawn.CanReach(fleeToIntVec, PathEndMode.Touch, Danger.Deadly) && fleeDistance > 0)
+            {
+                fleeDistance--;
+                Log.Message("No flee path found for " + pawn.Name + " Trying again with distance: " + fleeDistance);
+                fleeToVector = startPosition + (NormalizedDirection * fleeDistance);
+                fleeToIntVec = fleeToVector.ToIntVec3();
+            }
+
+            //If still no path is found, flee to current location
+            if (fleeDistance <= 0)
+            {
+                fleeToIntVec = startPosition.ToIntVec3();
+                Log.Message("Reset flee path for " + pawn.Name + ". No path was found.");
+            }
+
             return fleeToIntVec;
         }
-        public static IntVec3 genFleeTile(IntVec3 startPosition, IntVec3 fleeFrom, int fleeDistance)
-        {
-            return genFleeTile(startPosition.ToVector3(), fleeFrom.ToVector3(), fleeDistance);
-        }
+
 
 
         // Get Heading from two coordinates
@@ -42,6 +64,7 @@ namespace RBM_Minotaur
         {
             return getDirection(from.ToVector3(), to.ToVector3());
         }
+
 
 
         // Apply terrify effect in an area
@@ -59,14 +82,21 @@ namespace RBM_Minotaur
                 
                 if ( isHumanlike && isInRange && !isDowned && !isInMentalState )
                 {
-                    LocalTargetInfo t = new LocalTargetInfo(RBM_Utils.genFleeTile(mapPawns[i].Position, position, 10));
+                    LocalTargetInfo t = new LocalTargetInfo(RBM_Utils.genFleeTile(mapPawns[i].Position, position, MinotaurSettings.SeeRedFleeRadius, mapPawns[i]));
                     Job job = new Job(JobDefOf.FleeAndCower, t);
-                    mapPawns[i].mindState.mentalStateHandler.TryStartMentalState(RBM_DefOf.RBM_TerrifiedFlee, "scared by something nearby", true, false, null, true);
+                    MentalStateDef mentalStateFlee = RBM_DefOf.RBM_TerrifiedFlee;
+                    mentalStateFlee.minTicksBeforeRecovery = MinotaurSettings.SeeRedFearDuration;
+                    mentalStateFlee.maxTicksBeforeRecovery = MinotaurSettings.SeeRedFearDuration+1;
+
+                    mapPawns[i].mindState.mentalStateHandler.TryStartMentalState(mentalStateFlee, "scared by something nearby", true, false, null, true);
                     mapPawns[i].jobs.TryTakeOrderedJob(job, JobTag.Misc);
                 }
             }
             return true;
         }
+
+
+
 
 
 

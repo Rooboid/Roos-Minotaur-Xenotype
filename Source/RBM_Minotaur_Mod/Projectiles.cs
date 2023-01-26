@@ -13,7 +13,7 @@ namespace RBM_Minotaur
             Map map = base.Map;
             base.Impact(hitThing);
             IntVec3 position = base.Position;
-            float explosionRadius = this.def.projectile.explosionRadius;
+            float explosionRadius = MinotaurSettings.TaurailFearRadius;
             DamageDef damageDef = this.def.projectile.damageDef;
             int damageAmount = this.DamageAmount;
             float armorPenetration = this.ArmorPenetration;
