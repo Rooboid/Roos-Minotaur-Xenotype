@@ -440,9 +440,10 @@
 						<clipFolderPath>RBM_Lactation</clipFolderPath>
 					</li>
 				</grains>
-				<volumeRange>5</volumeRange>
+				<volumeRange>45</volumeRange>
 				<muteWhenPaused>true</muteWhenPaused>
 				<sustainLoop>true</sustainLoop>
+				<distRange>0~40</distRange>
 				<tempoAffectedByGameSpeed>true</tempoAffectedByGameSpeed>
 			</li>
 		</subSounds>

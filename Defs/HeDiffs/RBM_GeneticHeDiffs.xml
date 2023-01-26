@@ -69,7 +69,7 @@
 				<statOffsets>
 					<MeleeHitChance>15</MeleeHitChance>
 					<PainShockThreshold>2</PainShockThreshold>
-					<StaggerDurationFactor>0</StaggerDurationFactor>
+					<StaggerDurationFactor>-0.3</StaggerDurationFactor>
 				</statOffsets>
 				<capMods>
 					<li>
