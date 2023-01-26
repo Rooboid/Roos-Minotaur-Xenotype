@@ -34,7 +34,7 @@
   
       <TattooDef>
     <defName>RBM_BodyCowC</defName>
-    <label>bovine jersey</label>
+    <label>bovine brown spots</label>
     <texPath>Things/Pawn/Humanlike/Tattoos/Body_Cow3/Cow3</texPath>
     <tattooType>Body</tattooType>
     <category>RBM_Bovine</category>
@@ -47,7 +47,7 @@
   
     <TattooDef>
     <defName>RBM_BodyBullA</defName>
-    <label>bovine how now</label>
+    <label>bovine jersey</label>
     <texPath>Things/Pawn/Humanlike/Tattoos/Body_Bull1/Bull1</texPath>
     <tattooType>Body</tattooType>
     <category>RBM_Bovine</category>
@@ -60,12 +60,12 @@
   
           <TattooDef>
     <defName>RBM_BodyBullB</defName>
-    <label>bovine how now</label>
+    <label>bovine fur</label>
     <texPath>Things/Pawn/Humanlike/Tattoos/Body_Bull2/Bull2</texPath>
     <tattooType>Body</tattooType>
     <category>RBM_Bovine</category>
 	<requiredGene>RBM_EarthySkin</requiredGene>
-	<visibleNorth>True</visibleNorth>
+	<visibleNorth>False</visibleNorth>
     <styleTags>
       <li>TattooBodyBovine</li>
     </styleTags>
@@ -73,7 +73,7 @@
   
             <TattooDef>
     <defName>RBM_BodyBullC</defName>
-    <label>bovine how now</label>
+    <label>bovine chains</label>
     <texPath>Things/Pawn/Humanlike/Tattoos/Body_Bull3/Bull3</texPath>
     <tattooType>Body</tattooType>
     <category>RBM_Bovine</category>

@@ -64,10 +64,10 @@
 		<label>lactation</label>
 		<description>Pawns can manually produce milk from their body. Pawns will automatically do this if there is a milking machine within the colony.</description>
 		<jobDef>CastAbilityOnThingWithoutWeapon</jobDef>
-		<iconPath>UI/GeneIcons/RBM_IncreasedLactation</iconPath>
+		<iconPath>UI/GeneIcons/RBM_Lactation</iconPath>
 		<category>Minotaur</category>
 		<displayOrder>50</displayOrder>
-		<cooldownTicksRange>180000</cooldownTicksRange>
+		<cooldownTicksRange>300000</cooldownTicksRange>
 		<aiCanUse>false</aiCanUse>
 		<warmupStartSound>RBM_Lactation</warmupStartSound>
 		<statBases>
@@ -96,7 +96,7 @@
 			</li>
 			<li Class="RBM_Minotaur.CompProperties_AbilitySpawnStack">
 				<spawnedThingDef>Milk</spawnedThingDef>
-				<spawnedThingAmount>50</spawnedThingAmount>
+				<spawnedThingAmount>15</spawnedThingAmount>
 			</li>
 		</comps>
 	</AbilityDef>
