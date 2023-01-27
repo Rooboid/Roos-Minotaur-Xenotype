@@ -35,7 +35,6 @@ namespace RBM_Minotaur
             while (!pawn.CanReach(fleeToIntVec, PathEndMode.OnCell, Danger.Deadly) && fleeDistance > 0)
             {
                 fleeDistance--;
-                Log.Message("No flee path found for " + pawn.Name + " Trying again with distance: " + fleeDistance);
                 fleeToVector = startPosition + (NormalizedDirection * fleeDistance);
                 fleeToIntVec = fleeToVector.ToIntVec3();
             }
@@ -44,7 +43,7 @@ namespace RBM_Minotaur
             if (fleeDistance <= 0)
             {
                 fleeToIntVec = startPosition.ToIntVec3();
-                Log.Message("Reset flee path for " + pawn.Name + ". No path was found.");
+                Log.Warning("RBM_Minotaur: Reset flee path for " + pawn.Name + ". No path was found.");
             }
 
             return fleeToIntVec;
@@ -113,13 +112,7 @@ namespace RBM_Minotaur
                 {
                     LocalTargetInfo target_location = new LocalTargetInfo(building.InteractionCell);
                     if (pawn.CanReserveAndReach(building.InteractionCell, PathEndMode.OnCell, Danger.Deadly))
-                    {
-                        if (!pawn.CanReserve((LocalTargetInfo)target_location))
-                        {
-                            Log.Message("Could not reserve");
-                            return false;
-                        }
-                        
+                    { 
                         cell = building.InteractionCell;
                         return true;
                     }

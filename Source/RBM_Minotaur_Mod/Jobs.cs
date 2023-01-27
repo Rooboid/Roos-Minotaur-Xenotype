@@ -14,7 +14,6 @@ namespace RBM_Minotaur
         {
             if (pawn.Spawned && pawn.abilities?.GetAbility(RBM_DefOf.RBM_Lactation)?.CanCast == true && pawn.workSettings.GetPriority(RBM_DefOf.BasicWorker) != 0)
             {
-                Log.Message("Milking job given to " + pawn.Name);
                 IntVec3 cellDest;
                 if (RBM_Utils.TryFindMilkingSpot(pawn, out cellDest))
                 {
@@ -26,10 +25,6 @@ namespace RBM_Minotaur
                     job.preventFriendlyFire = true;
                     job.verbToUse = pawn.abilities?.GetAbility(RBM_DefOf.RBM_Lactation).verb;
                     return job;
-                }
-                else
-                {
-                    Log.Message("...Could not find Milking Spot");
                 }
             }
             return null;
@@ -48,11 +43,9 @@ namespace RBM_Minotaur
                 Toil cast = Toils_Combat.CastVerb(TargetIndex.A, TargetIndex.B);
                 cast.WithProgressBar(TargetIndex.A, () => job.verbToUse.WarmupProgress);
                 yield return cast;
-
-                Log.Message("I finished casting");
                 yield break;
             }
-            Log.Message("Tried to start job with reserved object");
+            Log.Warning("RBM_Minotaur: Tried to start Milking job with reserved object");
             yield break;
         }
         public override string GetReport()

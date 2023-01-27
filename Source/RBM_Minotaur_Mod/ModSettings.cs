@@ -93,7 +93,7 @@ namespace RBM_Minotaur
             listingStandard.CheckboxLabeled("Despawns corpses rather than destroy", ref MinotaurSettings.midasDespawnDontDestroy, "Destroying a corpse is a volatile action, and can cause occasional errors. Despawning a pawn will may not trigger some on on-death events.");
             listingStandard.Label("Midaspear gold amount: " + MinotaurSettings.midasGoldAmount.ToString());
             listingStandard.IntAdjuster(ref MinotaurSettings.midasGoldAmount, 5);
-
+            
             if (listingStandard.ButtonText("Reset to Default"))
             {
                 MinotaurSettings.milkableFemales = MinotaurSettings.milkableFemalesDefault;

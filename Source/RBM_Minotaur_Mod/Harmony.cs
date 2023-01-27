@@ -10,9 +10,9 @@ namespace RBM_Minotaur
     {
         static RBM_Minotaur()
         {
-            Log.Message("RBM_Minotaur Static class loaded");
             Harmony harmony = new Harmony("rimworld.mod.rooboid.minotaur");
             harmony.PatchAll();
+            Log.Message("RBM_Minotaur Mod Harmony Patches Loaded");
         }
     }
 }
