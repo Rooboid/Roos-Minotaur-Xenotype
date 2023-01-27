@@ -19,7 +19,6 @@ public static class Herculean_Patches
         {
             if (!thing.def.weaponClasses.Contains(RBM_DefOf.RBM_HerculeanClass))
             {
-                Log.Message("Weapon is not Herculean");
                 return __result;
             }
         }
@@ -29,7 +28,6 @@ public static class Herculean_Patches
         {
             if (!thing.def.apparel.tags.Contains("HerculeanApparel"))
             {
-                Log.Message("Apparel is not Herculean");
                 return __result;
             }
         }
@@ -39,13 +37,9 @@ public static class Herculean_Patches
         {
             if (pawn.genes.HasGene(RBM_DefOf.RBM_Herculean))
             {
-                Log.Message("Pawn is Herculean");
-                //cantReason = "Pawn is Herculean";
                 return true;
             }
         }
-
-        Log.Message("Pawn is not Herculean");
         cantReason = "Pawn is not Herculean";
         return false;
         
@@ -59,8 +53,6 @@ public static class Herculean_Patches
     public static void MakeNewToils_Postfix(ref JobDriver_Lovin __instance, ref Verse.AI.TargetIndex ___PartnerInd)
     {
         Pawn Partner = (Pawn)((Thing)__instance.job.GetTarget(___PartnerInd));
-        Log.Message("Patched Lovin' between " + __instance.pawn.Name + " and " + Partner.Name);
-
         if (Partner.genes.HasGene(RBM_DefOf.RBM_Herculean))
         {
             __instance.pawn.needs.mood.thoughts.memories.TryGainMemory(RBM_DefOf.RBM_Crushed);

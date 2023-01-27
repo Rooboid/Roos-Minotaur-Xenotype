@@ -48,11 +48,7 @@
 				<onlyApplyToSelf>True</onlyApplyToSelf>
 				<replaceExisting>true</replaceExisting>
 			</li>
-
-			<li Class="RBM_Minotaur.CompProperties_AbilityTerrify">
-				<terrorRadius>4.5</terrorRadius>
-				<fleeDistance>15</fleeDistance>
-			</li>
+			<li Class="RBM_Minotaur.CompProperties_AbilityTerrify"/>
 		</comps>
 	</AbilityDef>
 	
@@ -96,7 +92,6 @@
 			</li>
 			<li Class="RBM_Minotaur.CompProperties_AbilitySpawnStack">
 				<spawnedThingDef>Milk</spawnedThingDef>
-				<spawnedThingAmount>15</spawnedThingAmount>
 			</li>
 		</comps>
 	</AbilityDef>
