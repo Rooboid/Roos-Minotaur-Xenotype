@@ -1,7 +1,13 @@
 ﻿using RBM_Minotaur;
 using RimWorld;
+using System.Linq;
+using System;
+using Unity.Jobs;
 using Verse;
-
+using Verse.AI;
+using UnityEngine;
+using System.Collections.Generic;
+using RimWorld.Planet;
 
 namespace RBM_Minotaur
 {
@@ -22,7 +28,7 @@ namespace RBM_Minotaur
             base.Apply(target, dest);
 
             Thing thing = ThingMaker.MakeThing(Props.spawnedThingDef);
-            thing.stackCount = Props.spawnedThingAmount;
+            thing.stackCount = MinotaurSettings.lactateMilkAmount;
 
             GenSpawn.Spawn(thing, this.parent.pawn.Position, this.parent.pawn.Map);
         }
@@ -53,10 +59,6 @@ namespace RBM_Minotaur
         }
 
         public ThingDef spawnedThingDef;
-        public int spawnedThingAmount = 25;
-            
+
     }
-
-    
-
 }

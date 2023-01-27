@@ -4,6 +4,9 @@ using Verse;
 [DefOf]
 public static class RBM_DefOf
 {
+    //Abilites
+    public static AbilityDef RBM_Lactation;
+    public static AbilityDef RBM_SeeRed;
     //Genes
     public static GeneDef RBM_EstrousCycle;
     public static GeneDef RBM_RuminantStomach;
@@ -26,4 +29,7 @@ public static class RBM_DefOf
 
     //ThingDefs
     public static ThingDef Milk;
+    public static JobDef JobDriver_GotoAndUseAbility;
+
+    public static WorkTypeDef BasicWorker;
 }

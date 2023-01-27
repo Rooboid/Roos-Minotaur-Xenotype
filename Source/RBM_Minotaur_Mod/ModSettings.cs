@@ -16,6 +16,7 @@ namespace RBM_Minotaur
         public static float SeeRedFearRadius = 8.5f;
         public static float SeeRedFleeRadius = 10.5f;
         public static int SeeRedFearDuration = 120;
+        public static int lactateMilkAmount = 25;
 
         // The part that writes our settings to file. Note that saving is by ref.
         public override void ExposeData()
@@ -29,6 +30,7 @@ namespace RBM_Minotaur
             Scribe_Values.Look(ref SeeRedFearRadius, "SeeRedFearRadius");
             Scribe_Values.Look(ref SeeRedFleeRadius, "SeeRedFleeRadius");
             Scribe_Values.Look(ref SeeRedFearDuration, "SeeRedFearDuration");
+            Scribe_Values.Look(ref lactateMilkAmount, "lactateMilkAmount");
 
             base.ExposeData();
         }
@@ -55,6 +57,8 @@ namespace RBM_Minotaur
             listingStandard.Label("Lactation Ability Settings");
             listingStandard.CheckboxLabeled("Active for female pawns", ref MinotaurSettings.milkableFemales);
             listingStandard.CheckboxLabeled("Active for male pawns", ref MinotaurSettings.milkableMales);
+            listingStandard.Label("Lactation milk amount: " + MinotaurSettings.lactateMilkAmount.ToString());
+            listingStandard.IntAdjuster(ref MinotaurSettings.lactateMilkAmount, 5);
             listingStandard.Label(" ");
 
             listingStandard.Label("See Red Ability Settings");

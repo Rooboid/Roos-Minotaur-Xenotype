@@ -102,6 +102,31 @@ namespace RBM_Minotaur
 
 
 
+        public static bool TryFindMilkingSpot(Pawn pawn, out IntVec3 cell)
+        {
+            cell = IntVec3.Zero;
+            List<Building> allBuildingsColonist = pawn.Map.listerBuildings.allBuildingsColonist;
+            for (int i = 0; i < allBuildingsColonist.Count; i++)
+            {
+                Building building = allBuildingsColonist[i];
+                if (building.def.defName == "RBM_MilkingMachine")
+                {
+                    LocalTargetInfo target_location = new LocalTargetInfo(building.InteractionCell);
+                    if (pawn.CanReserveAndReach(building.InteractionCell, PathEndMode.OnCell, Danger.Deadly))
+                    {
+                        if (!pawn.CanReserve((LocalTargetInfo)target_location))
+                        {
+                            Log.Message("Could not reserve");
+                            return false;
+                        }
+                        
+                        cell = building.InteractionCell;
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
 
 
 

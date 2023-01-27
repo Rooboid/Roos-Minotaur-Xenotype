@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="Harmony.cs" />
     <Compile Include="AbilityLactate.cs" />
+    <Compile Include="Jobs.cs" />
     <Compile Include="ModSettings.cs" />
     <Compile Include="GeneHerculean.cs" />
     <Compile Include="GeneRuminantStomach.cs" />

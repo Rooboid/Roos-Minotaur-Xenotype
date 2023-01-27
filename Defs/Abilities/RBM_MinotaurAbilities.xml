@@ -92,7 +92,6 @@
 			</li>
 			<li Class="RBM_Minotaur.CompProperties_AbilitySpawnStack">
 				<spawnedThingDef>Milk</spawnedThingDef>
-				<spawnedThingAmount>15</spawnedThingAmount>
 			</li>
 		</comps>
 	</AbilityDef>
