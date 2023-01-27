@@ -21,16 +21,16 @@ namespace RBM_Minotaur
         // The part that writes our settings to file. Note that saving is by ref.
         public override void ExposeData()
         {
-            Scribe_Values.Look(ref milkableFemales, "milkableFemales");
-            Scribe_Values.Look(ref milkableMales, "milkableMales");
-            Scribe_Values.Look(ref midasDespawnDontDestroy, "midasDestroysOrDespawns");
-            Scribe_Values.Look(ref midasRemovesCorpse, "midasRemovesCorpse");
-            Scribe_Values.Look(ref midasGoldAmount, "midasGoldAmount");
-            Scribe_Values.Look(ref TaurailFearRadius, "TaurailFearRadius");
-            Scribe_Values.Look(ref SeeRedFearRadius, "SeeRedFearRadius");
-            Scribe_Values.Look(ref SeeRedFleeRadius, "SeeRedFleeRadius");
-            Scribe_Values.Look(ref SeeRedFearDuration, "SeeRedFearDuration");
-            Scribe_Values.Look(ref lactateMilkAmount, "lactateMilkAmount");
+            Scribe_Values.Look(ref milkableFemales, "milkableFemales", true);
+            Scribe_Values.Look(ref milkableMales, "milkableMales", true);
+            Scribe_Values.Look(ref midasDespawnDontDestroy, "midasDestroysOrDespawns", false);
+            Scribe_Values.Look(ref midasRemovesCorpse, "midasRemovesCorpse", true);
+            Scribe_Values.Look(ref midasGoldAmount, "midasGoldAmount", 10);
+            Scribe_Values.Look(ref TaurailFearRadius, "TaurailFearRadius", 5.5f);
+            Scribe_Values.Look(ref SeeRedFearRadius, "SeeRedFearRadius", 8.5f);
+            Scribe_Values.Look(ref SeeRedFleeRadius, "SeeRedFleeRadius", 10.5f);
+            Scribe_Values.Look(ref SeeRedFearDuration, "SeeRedFearDuration", 120);
+            Scribe_Values.Look(ref lactateMilkAmount, "lactateMilkAmount", 25);
 
             base.ExposeData();
         }
