@@ -131,7 +131,7 @@
 				<li>Things/Pawn/Humanlike/Markings/Head_Cow4/Cow4</li>
 			</graphicPaths>
 			<visibleNorth>false</visibleNorth>
-			<layer>PostTattoo</layer>
+			<layer>PostSkin</layer>
 		</graphicData>
 		<symbolPack>
 			<prefixSymbols>
@@ -344,10 +344,11 @@
 	
 	<GeneDef>
 		<defName>RBM_PeriodicLactation</defName>
-		<label>periodic lactation</label>
-		<description>Carriers of this gene periodically produce milk. They can manually do this by using their ability, or automatically do this by using a milking machine.</description>
+		<label>lactation</label>
+		<description>Carriers of this gene produce milk periodically. Pawns with this gene can manually be milked via their ability, or automatically via a milking machine. \n\n(By default, male and female pawns can both be milked. You can change this, or disable the functionality altogether, in the mod settings menu.)
+</description>
 		<biostatCpx>1</biostatCpx>
-		<biostatMet>1</biostatMet>
+		<biostatMet>-1</biostatMet>
 		<displayCategory>Ability</displayCategory>
 		<displayOrderInCategory>200</displayOrderInCategory>
 		<iconPath>UI/GeneIcons/RBM_Lactation</iconPath>
@@ -416,6 +417,7 @@
 		<description>Carriers of this gene go into heat during Aprimay. While in heat, they will crave lovin' more than usual at the cost of also feeling more aggressive.</description>
 		<geneClass>RBM_Minotaur.Gene_RBM_EstrousCycle</geneClass>
 		<biostatCpx>1</biostatCpx>
+		<biostatMet>1</biostatMet>
 		<minAgeActive>18</minAgeActive>
 		<displayCategory>Reproduction</displayCategory>
 		<displayOrderInCategory>115</displayOrderInCategory>
