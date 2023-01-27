@@ -6,31 +6,43 @@ namespace RBM_Minotaur
 {
     public class MinotaurSettings : ModSettings
     {
+        public const bool milkableFemalesDefault = true;
+        public const bool milkableMalesDefault = true;
+        public const bool midasDespawnDontDestroyDefault = false;
+        public const bool midasRemovesCorpseDefault = true;
+        public const int midasGoldAmountDefault = 10;
+        public const float TaurailFearRadiusDefault = 5.5f;
+        public const float SeeRedFearRadiusDefault = 8.5f;
+        public const float SeeRedFleeRadiusDefault = 10.5f;
+        public const int SeeRedFearDurationDefault = 120;
+        public const int lactateMilkAmountDefault = 25;
+
+
         // The settings our mod has.
-        public static bool milkableFemales = true;
-        public static bool milkableMales = true;
-        public static bool midasDespawnDontDestroy = false;
-        public static bool midasRemovesCorpse = true;
-        public static int midasGoldAmount = 10;
-        public static float TaurailFearRadius = 5.5f;
-        public static float SeeRedFearRadius = 8.5f;
-        public static float SeeRedFleeRadius = 10.5f;
-        public static int SeeRedFearDuration = 120;
-        public static int lactateMilkAmount = 25;
+        public static bool milkableFemales = milkableFemalesDefault;
+        public static bool milkableMales = milkableMalesDefault;
+        public static bool midasDespawnDontDestroy = midasDespawnDontDestroyDefault;
+        public static bool midasRemovesCorpse = midasRemovesCorpseDefault;
+        public static int midasGoldAmount = midasGoldAmountDefault;
+        public static float TaurailFearRadius = TaurailFearRadiusDefault;
+        public static float SeeRedFearRadius = SeeRedFearRadiusDefault;
+        public static float SeeRedFleeRadius = SeeRedFleeRadiusDefault;
+        public static int SeeRedFearDuration = SeeRedFearDurationDefault;
+        public static int lactateMilkAmount = lactateMilkAmountDefault;
 
         // The part that writes our settings to file. Note that saving is by ref.
         public override void ExposeData()
         {
-            Scribe_Values.Look(ref milkableFemales, "milkableFemales", true);
-            Scribe_Values.Look(ref milkableMales, "milkableMales", true);
-            Scribe_Values.Look(ref midasDespawnDontDestroy, "midasDestroysOrDespawns", false);
-            Scribe_Values.Look(ref midasRemovesCorpse, "midasRemovesCorpse", true);
-            Scribe_Values.Look(ref midasGoldAmount, "midasGoldAmount", 10);
-            Scribe_Values.Look(ref TaurailFearRadius, "TaurailFearRadius", 5.5f);
-            Scribe_Values.Look(ref SeeRedFearRadius, "SeeRedFearRadius", 8.5f);
-            Scribe_Values.Look(ref SeeRedFleeRadius, "SeeRedFleeRadius", 10.5f);
-            Scribe_Values.Look(ref SeeRedFearDuration, "SeeRedFearDuration", 120);
-            Scribe_Values.Look(ref lactateMilkAmount, "lactateMilkAmount", 25);
+            Scribe_Values.Look(ref milkableFemales, "milkableFemales", milkableFemalesDefault);
+            Scribe_Values.Look(ref milkableMales, "milkableMales", milkableMalesDefault);
+            Scribe_Values.Look(ref midasDespawnDontDestroy, "midasDestroysOrDespawns", midasDespawnDontDestroyDefault);
+            Scribe_Values.Look(ref midasRemovesCorpse, "midasRemovesCorpse", midasRemovesCorpseDefault);
+            Scribe_Values.Look(ref midasGoldAmount, "midasGoldAmount", midasGoldAmountDefault);
+            Scribe_Values.Look(ref TaurailFearRadius, "TaurailFearRadius", TaurailFearRadiusDefault);
+            Scribe_Values.Look(ref SeeRedFearRadius, "SeeRedFearRadius", SeeRedFearRadiusDefault);
+            Scribe_Values.Look(ref SeeRedFleeRadius, "SeeRedFleeRadius", SeeRedFleeRadiusDefault);
+            Scribe_Values.Look(ref SeeRedFearDuration, "SeeRedFearDuration", SeeRedFearDurationDefault);
+            Scribe_Values.Look(ref lactateMilkAmount, "lactateMilkAmount", lactateMilkAmountDefault);
 
             base.ExposeData();
         }
@@ -79,10 +91,24 @@ namespace RBM_Minotaur
             listingStandard.Label("Midaspear Weapon Settings");
             listingStandard.CheckboxLabeled("Removes corpses after killing", ref MinotaurSettings.midasRemovesCorpse, "More fun, but makes pawns killed by the Midaspear impossible to resurrect.");
             listingStandard.CheckboxLabeled("Despawns corpses rather than destroy", ref MinotaurSettings.midasDespawnDontDestroy, "Destroying a corpse is a volatile action, and can cause occasional errors. Despawning a pawn will may not trigger some on on-death events.");
-            listingStandard.Label("Midaspear gold amount: " + MinotaurSettings.midasGoldAmount.ToString() );
+            listingStandard.Label("Midaspear gold amount: " + MinotaurSettings.midasGoldAmount.ToString());
             listingStandard.IntAdjuster(ref MinotaurSettings.midasGoldAmount, 5);
 
-            listingStandard.End();
+            if (listingStandard.ButtonText("Reset to Default"))
+            {
+                MinotaurSettings.milkableFemales = MinotaurSettings.milkableFemalesDefault;
+                MinotaurSettings.milkableMales = MinotaurSettings.milkableMalesDefault;
+                MinotaurSettings.midasDespawnDontDestroy = MinotaurSettings.midasDespawnDontDestroyDefault;
+                MinotaurSettings.midasRemovesCorpse = MinotaurSettings.midasRemovesCorpseDefault;
+                MinotaurSettings.midasGoldAmount = MinotaurSettings.midasGoldAmountDefault;
+                MinotaurSettings.TaurailFearRadius = MinotaurSettings.TaurailFearRadiusDefault;
+                MinotaurSettings.SeeRedFearRadius = MinotaurSettings.SeeRedFearRadiusDefault;
+                MinotaurSettings.SeeRedFleeRadius = MinotaurSettings.SeeRedFleeRadiusDefault;
+                MinotaurSettings.SeeRedFearDuration = MinotaurSettings.SeeRedFearDurationDefault;
+                MinotaurSettings.lactateMilkAmount = MinotaurSettings.lactateMilkAmountDefault;
+            }
+
+        listingStandard.End();
             base.DoSettingsWindowContents(inRect);
         }
 
