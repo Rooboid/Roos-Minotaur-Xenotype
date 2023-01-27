@@ -26,9 +26,11 @@ public static class RBM_DefOf
 
     //ThoughtDefs
     public static ThoughtDef RBM_Crushed;
+    public static ThoughtDef RBM_CrushedMasochist;
 
     //ThingDefs
     public static ThingDef Milk;
+
     public static JobDef JobDriver_GotoAndUseAbility;
 
     public static WorkTypeDef BasicWorker;

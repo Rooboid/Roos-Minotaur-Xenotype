@@ -55,7 +55,16 @@ public static class Herculean_Patches
         Pawn Partner = (Pawn)((Thing)__instance.job.GetTarget(___PartnerInd));
         if (Partner.genes.HasGene(RBM_DefOf.RBM_Herculean))
         {
-            __instance.pawn.needs.mood.thoughts.memories.TryGainMemory(RBM_DefOf.RBM_Crushed);
+            if (__instance.pawn.story?.traits?.HasTrait(TraitDefOf.Masochist) == true)
+            {
+                __instance.pawn.needs.mood.thoughts.memories.TryGainMemory(RBM_DefOf.RBM_CrushedMasochist);
+            }
+            else
+            {
+                __instance.pawn.needs.mood.thoughts.memories.TryGainMemory(RBM_DefOf.RBM_Crushed);
+            }
+            
+
         }
     }
 }
