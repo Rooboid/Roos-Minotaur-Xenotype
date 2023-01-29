@@ -22,6 +22,7 @@ namespace RBM_Minotaur
             }
         }
 
+        //The ability effect: spawns a stack of milk on the pawn.
         public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
         {
             Pawn pawn = this.parent.pawn;
@@ -32,8 +33,11 @@ namespace RBM_Minotaur
 
             GenSpawn.Spawn(thing, this.parent.pawn.Position, this.parent.pawn.Map);
         }
+
+        //Disables gizmo based on settings or life stage.
         public override bool GizmoDisabled(out string reason)
         {
+            reason = null;
             if (this.parent.pawn.gender == Gender.Male && !MinotaurSettings.milkableMales)
             {
                 reason = "Males Cannot Be Milked";
@@ -45,9 +49,13 @@ namespace RBM_Minotaur
                 reason = "Females Cannot Be Milked";
                 return true;
             }
-
-            reason = null;
-            return false;
+            if (!this.parent.pawn.ageTracker.Adult)
+            {
+                reason = "Pawn is not yet an adult";
+                return true;
+            }
+            bool baseIsDisabled = base.GizmoDisabled(out reason);
+            return baseIsDisabled;
         }
     }
 
@@ -61,4 +69,5 @@ namespace RBM_Minotaur
         public ThingDef spawnedThingDef;
 
     }
+
 }

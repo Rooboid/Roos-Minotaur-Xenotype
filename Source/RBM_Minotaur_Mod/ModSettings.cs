@@ -70,16 +70,16 @@ namespace RBM_Minotaur
             listingStandard.CheckboxLabeled("Active for female pawns", ref MinotaurSettings.milkableFemales);
             listingStandard.CheckboxLabeled("Active for male pawns", ref MinotaurSettings.milkableMales);
             listingStandard.Label("Lactation milk amount: " + MinotaurSettings.lactateMilkAmount.ToString());
-            listingStandard.IntAdjuster(ref MinotaurSettings.lactateMilkAmount, 5);
+            listingStandard.IntAdjuster(ref MinotaurSettings.lactateMilkAmount, 5, 5);
             listingStandard.Label(" ");
 
             listingStandard.Label("See Red Ability Settings");
             MinotaurSettings.SeeRedFearRadius = listingStandard.SliderLabeled("See Red ability radius: " + MinotaurSettings.SeeRedFearRadius.ToString(), MinotaurSettings.SeeRedFearRadius, 1f, 50f, 0.5f, "The radius within which pawns will flee from a pawn using the See Red ability.");
             MinotaurSettings.SeeRedFearRadius = (float)Math.Round(MinotaurSettings.SeeRedFearRadius * 2.0) / 2;
-            MinotaurSettings.SeeRedFleeRadius = listingStandard.SliderLabeled("See Red flee radius: " + MinotaurSettings.SeeRedFleeRadius.ToString(), MinotaurSettings.SeeRedFleeRadius, 1f, 50f, 0.5f, "The distance which pawns will flee from a pawn using the See Red ability.");
+            MinotaurSettings.SeeRedFleeRadius = listingStandard.SliderLabeled("See Red flee radius: " + MinotaurSettings.SeeRedFleeRadius.ToString(), MinotaurSettings.SeeRedFleeRadius, 1f, 50f, 0.5f, "The distance which pawns will flee from a pawn using the See Red ability. Lowest value of distance and time wins.");
             MinotaurSettings.SeeRedFleeRadius = (float)Math.Round(MinotaurSettings.SeeRedFleeRadius * 2.0) / 2;
             float SeeRedFearDurationSeconds = (float)Math.Round((float)MinotaurSettings.SeeRedFearDuration / 60.0f, 1);
-            MinotaurSettings.SeeRedFearDuration = (int)listingStandard.SliderLabeled("See Red fear duration: " + SeeRedFearDurationSeconds.ToString() + "s (" + MinotaurSettings.SeeRedFearDuration.ToString() + " ticks)", MinotaurSettings.SeeRedFearDuration, 1f, 600f, 0.5f, "The distance which pawns will flee from a pawn using the See Red ability.");
+            MinotaurSettings.SeeRedFearDuration = (int)listingStandard.SliderLabeled("See Red fear duration: " + SeeRedFearDurationSeconds.ToString() + "s (" + MinotaurSettings.SeeRedFearDuration.ToString() + " ticks)", MinotaurSettings.SeeRedFearDuration, 1f, 600f, 0.5f, "The time period which pawns will flee from a pawn using the See Red ability. Lowest value of distance and time wins.");
 
             listingStandard.Label(" ");
 
