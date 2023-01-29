@@ -40,18 +40,18 @@ namespace RBM_Minotaur
             reason = null;
             if (this.parent.pawn.gender == Gender.Male && !MinotaurSettings.milkableMales)
             {
-                reason = "Males Cannot Be Milked";
+                reason = "Males cannot Be milked due to settings.";
                 return true;
             }
 
             if (this.parent.pawn.gender == Gender.Female && !MinotaurSettings.milkableFemales)
             {
-                reason = "Females Cannot Be Milked";
+                reason = "Females cannot Be milked due to settings.";
                 return true;
             }
             if (!this.parent.pawn.ageTracker.Adult)
             {
-                reason = "Pawn is not yet an adult";
+                reason = "Pawn is not yet an adult.";
                 return true;
             }
             bool baseIsDisabled = base.GizmoDisabled(out reason);

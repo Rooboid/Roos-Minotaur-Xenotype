@@ -11,7 +11,7 @@ namespace RBM_Minotaur
         public const bool midasDespawnDontDestroyDefault = false;
         public const bool midasRemovesCorpseDefault = true;
         public const int midasGoldAmountDefault = 10;
-        public const float TaurailFearRadiusDefault = 5.5f;
+        public const float TaurailFearRadiusDefault = 3.5f;
         public const float SeeRedFearRadiusDefault = 8.5f;
         public const float SeeRedFleeRadiusDefault = 10.5f;
         public const int SeeRedFearDurationDefault = 120;
@@ -84,7 +84,7 @@ namespace RBM_Minotaur
             listingStandard.Label(" ");
 
             listingStandard.Label("Taurail Gun Weapon Settings");
-            MinotaurSettings.TaurailFearRadius = listingStandard.SliderLabeled("Taurail Gun projectile blast radius: " + MinotaurSettings.TaurailFearRadius.ToString(), MinotaurSettings.TaurailFearRadius, 1f, 50f, 0.5f, "The radius in which pawns will flee from a Taurail Gun projectile explosion.");
+            MinotaurSettings.TaurailFearRadius = listingStandard.SliderLabeled("Taurail Gun projectile blast radius: " + MinotaurSettings.TaurailFearRadius.ToString(), MinotaurSettings.TaurailFearRadius, 1f, 10f, 0.5f, "The radius in which pawns will flee from a Taurail Gun projectile explosion.");
             MinotaurSettings.TaurailFearRadius = (float)Math.Round(MinotaurSettings.TaurailFearRadius * 2.0) / 2;
             listingStandard.Label(" ");
 
