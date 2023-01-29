@@ -12,7 +12,7 @@ namespace RBM_Minotaur
     {
         protected override Job TryGiveJob(Pawn pawn)
         {
-            if (pawn.Spawned && pawn.abilities?.GetAbility(RBM_DefOf.RBM_Lactation)?.CanCast == true && !(pawn.workSettings?.GetPriority(RBM_DefOf.BasicWorker) == 0))
+            if (pawn.Spawned && pawn.abilities?.GetAbility(RBM_DefOf.RBM_Lactation)?.CanCast == true && pawn.IsColonist && !(pawn.workSettings?.GetPriority(RBM_DefOf.BasicWorker) == 0))
             {
                 IntVec3 cellDest;
                 if (RBM_Utils.TryFindMilkingSpot(pawn, out cellDest))
