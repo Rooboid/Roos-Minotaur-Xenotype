@@ -649,7 +649,7 @@
 		<title>isolated</title>
 		<titleShort>isolated</titleShort>
 		<slot>Childhood</slot>
-		<baseDesc>[PAWN_nameDef] whittled away much of [PAWN_possessive] childhood nestled in the bosom of a mountainous tundra. The hamlet that surrounded [PAWN_objective] was quaint, but violently anti-human, with [PAWN_nameDef]’s father even warning [PAWN_objective] to check under their bed every night for humans.</baseDesc>
+		<baseDesc>[PAWN_nameDef] lived most of [PAWN_possessive] childhood nestled in the bosom of a mountainous tundra. \n\nThe hamlet that surrounded [PAWN_objective] was quaint, but violently anti-human, with [PAWN_nameDef]’s father even warning [PAWN_objective] to check under [PAWN_possessive] bed every night for humans.</baseDesc>
 		<bodyTypeMale>Hulk</bodyTypeMale>
 		<bodyTypeFemale>Hulk</bodyTypeFemale>
 		<spawnCategories>
@@ -792,7 +792,7 @@
 		<skillGains>
 			<li>
 				<key>Melee</key>
-				<value>13</value>
+				<value>11</value>
 			</li>
 		</skillGains>
 		<forcedTraits>

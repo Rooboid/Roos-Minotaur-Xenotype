@@ -8,13 +8,19 @@
 	
 	<!--====================== Herculean Parent ======================-->
 	
-		<ThingDef Abstract="True" Name="HerculeanBase" ParentName="BaseWeapon">
+	<ThingDef Abstract="True" Name="HerculeanBase" ParentName="BaseWeapon">
 		<descriptionHyperlinks>
 			<GeneDef>RBM_Herculean</GeneDef>
 		</descriptionHyperlinks>
 		<!-- Basic Data -->
 		<possessionCount>1</possessionCount>
 		<rotateInShelves>false</rotateInShelves>
+		<thingCategories>
+			<li>WeaponsMelee</li>
+		</thingCategories>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
 		<!-- Trading -->
 		<techLevel>Archotech</techLevel>
 		<tradeTags>
@@ -30,6 +36,9 @@
 			<li>HerculeanWeapon</li>
 		</weaponTags>
 		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
 			<li Class="CompProperties_Art">
 				<nameMaker>NamerMinotaurArt</nameMaker>
 				<descriptionMaker>ArtDescription_MinotaurWeapon</descriptionMaker>
@@ -508,7 +517,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.7</drawSize>
 		</graphicData>
-	<!-- Obtaining -->
+		<!-- Obtaining -->
 		<soundInteract>RBM_Labrys_Equip</soundInteract>
 		<thingSetMakerTags>
 			<li>RewardStandardMidFreq</li>
