@@ -26,7 +26,7 @@
 		<tradeTags>
 			<li>HerculeanFabled</li>
 		</tradeTags>
-		<tradeNeverStack>true</tradeNeverStack>
+		<tradeNeverStack>false</tradeNeverStack>
 		<!-- Obtaining -->
 		<recipeMaker IsNull="True"/>
 		<relicChance>0.5</relicChance>
@@ -67,7 +67,7 @@
 		<!-- Battle Data -->
 		<statBases>
 			<Mass>5.2</Mass>
-			<MarketValue>1000</MarketValue>
+			<MarketValue>1700</MarketValue>
 			<AccuracyTouch>0.33</AccuracyTouch>
 			<AccuracyShort>0.44</AccuracyShort>
 			<AccuracyMedium>0.77</AccuracyMedium>
@@ -162,7 +162,7 @@
 		<!-- Battle Data -->
 		<statBases>
 			<Mass>7.5</Mass>
-			<MarketValue>3500</MarketValue>
+			<MarketValue>4500</MarketValue>
 			<AccuracyTouch>0.55</AccuracyTouch>
 			<AccuracyShort>0.67</AccuracyShort>
 			<AccuracyMedium>0.77</AccuracyMedium>
@@ -263,7 +263,7 @@
 		<!-- Battle Data -->
 		<statBases>
 			<Mass>20</Mass>
-			<MarketValue>1900</MarketValue>
+			<MarketValue>2300</MarketValue>
 			<MaxHitPoints>250</MaxHitPoints>
 			<RoyalFavorValue>2</RoyalFavorValue>
 		</statBases>
@@ -316,7 +316,7 @@
 		<!-- Battle Data -->
 		<statBases>
 			<Mass>5.6</Mass>
-			<MarketValue>900</MarketValue>
+			<MarketValue>1800</MarketValue>
 			<MaxHitPoints>250</MaxHitPoints>
 			<RoyalFavorValue>2</RoyalFavorValue>
 		</statBases>
@@ -398,7 +398,7 @@
 		<!-- Battle Data -->
 		<statBases>
 			<Mass>25</Mass>
-			<MarketValue>1800</MarketValue>
+			<MarketValue>2300</MarketValue>
 			<MaxHitPoints>250</MaxHitPoints>
 			<RoyalFavorValue>2</RoyalFavorValue>
 		</statBases>
@@ -462,7 +462,7 @@
 		<!-- Battle Data -->
 		<statBases>
 			<Mass>9.5</Mass>
-			<MarketValue>1300</MarketValue>
+			<MarketValue>2100</MarketValue>
 			<MaxHitPoints>250</MaxHitPoints>
 			<RoyalFavorValue>2</RoyalFavorValue>
 		</statBases>
@@ -525,7 +525,7 @@
 		<!-- Battle Data -->
 		<statBases>
 			<Mass>9.5</Mass>
-			<MarketValue>1800</MarketValue>
+			<MarketValue>2750</MarketValue>
 			<MaxHitPoints>250</MaxHitPoints>
 			<RoyalFavorValue>2</RoyalFavorValue>
 		</statBases>
