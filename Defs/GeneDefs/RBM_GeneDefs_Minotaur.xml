@@ -345,10 +345,10 @@
 	<GeneDef>
 		<defName>RBM_PeriodicLactation</defName>
 		<label>lactation</label>
-		<description>Carriers of this gene produce milk periodically. Pawns with this gene can manually be milked via their ability, or automatically via a milking machine. \n\n(By default, male and female pawns can both be milked. You can change this, or disable the functionality altogether, in the mod settings menu.)
-</description>
+		<description>Carriers of this gene produce milk periodically. Pawns with this gene can manually be milked via their ability, or automatically via a milking machine. \n\n(By default, male and female pawns can both be milked. You can change this, or disable the functionality altogether, in the mod settings menu.)</description>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>-1</biostatMet>
+		<minAgeActive>18</minAgeActive>
 		<displayCategory>Ability</displayCategory>
 		<displayOrderInCategory>200</displayOrderInCategory>
 		<iconPath>UI/GeneIcons/RBM_Lactation</iconPath>

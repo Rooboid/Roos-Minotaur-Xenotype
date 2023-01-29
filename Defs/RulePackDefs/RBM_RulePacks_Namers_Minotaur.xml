@@ -228,9 +228,6 @@
 	
 	<RulePackDef>
 		<defName>ArtDescription_MinotaurWeapon</defName>
-		<include>
-			<li>ArtNameUtility</li>
-		</include>
 		<rulePack>
 			<rulesStrings>
 				<!-- General -->
@@ -259,19 +256,19 @@
 				
 				
 				<li>MinoInscription->a muscular rendition of a minotaur</li>
-				<li>MinoInscription->the many names of it's victims. The list wraps around the weapon several times</li>
+				<li>MinoInscription->the many names of its victims. The list wraps around the weapon several times</li>
 				<li>MinoInscription->multiple carvings of Olympian gods</li>
 				<li>MinoInscription->some ancient, indecipherable handwriting</li>
 				<li>MinoInscription->a diagram of a minotaur's body</li>
 				<li>MinoInscription->a portrait of what appears to resemble [Character]</li>
 				<li>MinoInscription->a winding, intricate meander pattern, envelopping the entirity of the weapon</li>
 				<li>MinoInscription->an uncountable amount of claw marks</li>
-				<li>MinoInscription->an erotic depiction of an unidentified xenotype</li>
-				<li>MinoInscription->what appears to be a map. The land it depicts seems to be that of a far-away world</li>
+				<li>MinoInscription->an erotic depiction of an unidentifiable xenotype</li>
+				<li>MinoInscription->what appears to be a map. The land it depicts seems to be a far-away world</li>
 				<li>MinoInscription->a tally chart, presumably the weapons fatalities</li>
 				<li>MinoInscription->the words 'The sins we often regret are the sins we never commit'</li>
 				<li>MinoInscription->the words 'Grab the bull by the horns'</li>
-				<li>MinoInscription->endless, winding patterns grape vines- each grape stained with blood</li>
+				<li>MinoInscription->endless, winding patterns of grape vines- each grape stained with blood</li>
 				<li>MinoInscription->the image of a trojan horse</li>
 				<li>MinoInscription->the words 'The meaning of life is'... The rest of the etching has been scratched and lost to time</li>
 				<li>MinoInscription->an image of a young minotaur</li>
@@ -280,6 +277,5 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
-		
-		
+			
 </Defs>

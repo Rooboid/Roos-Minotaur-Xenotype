@@ -211,7 +211,7 @@
 						<clipPath>RBM_Weapons/RBM_Bullslinger/RBM_Bullslinger_Equip</clipPath>
 					</li>
 				</grains>
-				<volumeRange>37</volumeRange>
+				<volumeRange>60</volumeRange>
 				<pitchRange>0.93~1.13</pitchRange>
 			</li>
 		</subSounds>
@@ -230,7 +230,7 @@
 						<clipPath>RBM_Weapons/RBM_Bullslinger/RBM_Bullslinger_Fire</clipPath>
 					</li>
 				</grains>
-				<volumeRange>42</volumeRange>
+				<volumeRange>45</volumeRange>
 				<pitchRange>0.93~1.13</pitchRange>
 			</li>
 		</subSounds>
@@ -250,7 +250,7 @@
 						<clipPath>RBM_Weapons/RBM_TaurailGun/RBM_TaurailGun_Equip</clipPath>
 					</li>
 				</grains>
-				<volumeRange>37</volumeRange>
+				<volumeRange>60</volumeRange>
 				<pitchRange>0.93~1.13</pitchRange>
 			</li>
 		</subSounds>
@@ -298,7 +298,7 @@
 						<clipPath>RBM_Weapons/RBM_Labrys/RBM_Labrys_Equip</clipPath>
 					</li>
 				</grains>
-				<volumeRange>37</volumeRange>
+				<volumeRange>60</volumeRange>
 				<pitchRange>0.93~1.13</pitchRange>
 			</li>
 		</subSounds>
@@ -318,7 +318,7 @@
 						<clipPath>RBM_Weapons/RBM_Oxenammer/RBM_Oxenammer_Equip</clipPath>
 					</li>
 				</grains>
-				<volumeRange>37</volumeRange>
+				<volumeRange>60</volumeRange>
 				<pitchRange>0.93~1.13</pitchRange>
 			</li>
 		</subSounds>
@@ -357,7 +357,7 @@
 						<clipPath>RBM_Weapons/RBM_Tunbell/RBM_Tunbell_Equip</clipPath>
 					</li>
 				</grains>
-				<volumeRange>37</volumeRange>
+				<volumeRange>60</volumeRange>
 				<pitchRange>0.93~1.13</pitchRange>
 			</li>
 		</subSounds>
@@ -463,7 +463,7 @@
 						<clipFolderPath>RBM_Cowbell</clipFolderPath>
 					</li>
 				</grains>
-				<volumeRange>37</volumeRange>
+				<volumeRange>45</volumeRange>
 				<pitchRange>0.93~1.13</pitchRange>
 			</li>
 		</subSounds>
