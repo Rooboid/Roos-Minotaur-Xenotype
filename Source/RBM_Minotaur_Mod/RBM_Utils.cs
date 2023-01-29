@@ -100,7 +100,7 @@ namespace RBM_Minotaur
         }
 
 
-
+        //Tries to locate an available milking machine.
         public static bool TryFindMilkingSpot(Pawn pawn, out IntVec3 cell)
         {
             cell = IntVec3.Zero;
