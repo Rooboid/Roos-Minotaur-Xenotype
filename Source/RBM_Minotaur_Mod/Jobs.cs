@@ -12,23 +12,45 @@ namespace RBM_Minotaur
     {
         protected override Job TryGiveJob(Pawn pawn)
         {
-            if (MinotaurSettings.debugMessages) { Log.Message("RBM Is Running: (Jobs) protected override Job TryGiveJob(Pawn pawn)"); }
-            if (pawn.Spawned && pawn.abilities?.GetAbility(RBM_DefOf.RBM_Lactation)?.CanCast == true && pawn.IsColonist && !(pawn.workSettings?.GetPriority(RBM_DefOf.BasicWorker) == 0))
+            if (MinotaurSettings.debugMessages) { Log.Message("RBM Is Running: (Jobs) protected override Job TryGiveJob(Pawn " + pawn.Name + ")"); }
+            if (!pawn.Spawned)
             {
-                IntVec3 cellDest;
-                if (RBM_Utils.TryFindMilkingSpot(pawn, out cellDest))
-                {
-                    LocalTargetInfo target_location = new LocalTargetInfo(cellDest);
-                    LocalTargetInfo target_pawn = new LocalTargetInfo(pawn);
-                    Job job = JobMaker.MakeJob(RBM_DefOf.JobDriver_GotoAndUseAbility, target_pawn, target_location);
-                    //job.ability = pawn.abilities?.GetAbility(RBM_DefOf.RBM_Lactation);
-
-                    job.preventFriendlyFire = true;
-                    job.verbToUse = pawn.abilities?.GetAbility(RBM_DefOf.RBM_Lactation).verb;
-                    return job;
-                }
+                return null;
             }
-            return null;
+            if (MinotaurSettings.debugMessages) { Log.Message("RBM Job BR 0: Spawned"); }
+
+            if (!pawn.IsColonist)
+            { 
+                return null; 
+            }
+            if (MinotaurSettings.debugMessages) { Log.Message("RBM Job BR 1: Is colonist"); }
+
+            if (!pawn.abilities?.GetAbility(RBM_DefOf.RBM_Lactation)?.CanCast == true)
+            {
+                return null;
+            }
+            if (MinotaurSettings.debugMessages) { Log.Message("RBM Job BR 2: Can cast ability"); }
+
+            if ((pawn.workSettings?.GetPriority(RBM_DefOf.BasicWorker) == 0))
+            {
+                return null;
+            }
+            if (MinotaurSettings.debugMessages) { Log.Message("RBM Job BR 3: Will do basic work"); }
+
+            IntVec3 cellDest;
+            if (!RBM_Utils.TryFindMilkingSpot(pawn, out cellDest))
+            {
+                return null;
+            }
+            if (MinotaurSettings.debugMessages) { Log.Message("RBM Job BR 4: can find milking spot"); }
+
+            LocalTargetInfo target_location = new LocalTargetInfo(cellDest);
+            LocalTargetInfo target_pawn = new LocalTargetInfo(pawn);
+            Job job = JobMaker.MakeJob(RBM_DefOf.JobDriver_GotoAndUseAbility, target_pawn, target_location);
+            //job.ability = pawn.abilities?.GetAbility(RBM_DefOf.RBM_Lactation);
+            job.preventFriendlyFire = true;
+            job.verbToUse = pawn.abilities?.GetAbility(RBM_DefOf.RBM_Lactation).verb;
+            return job;
         }
 
     }
