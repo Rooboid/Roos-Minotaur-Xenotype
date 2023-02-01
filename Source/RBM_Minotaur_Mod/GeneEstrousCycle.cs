@@ -15,6 +15,7 @@ namespace RBM_Minotaur
         // Adjusts Mean Time Between Lovin' for pawns in heat
         public static void GetLovinMtbHours_Postfix(ref float __result, Pawn pawn, Pawn partner)   
         {
+            if (MinotaurSettings.debugMessages) { Log.Message("RBM Is Running: (Lovin Patch) public static void GetLovinMtbHours_Postfix(ref float __result, Pawn pawn, Pawn partner)"); }
             if (pawn.health.hediffSet.HasHediff(RBM_DefOf.EstrousHeat) || partner.health.hediffSet.HasHediff(RBM_DefOf.EstrousHeat))
             {
                 __result = __result / 4;
@@ -35,8 +36,10 @@ namespace RBM_Minotaur
                 return;
             }
 
+            if (MinotaurSettings.debugMessages) { Log.Message("public override void Tick() "); }
+
             //Return if the pawn is not spawned to stop 
-            if(!this.pawn.Spawned)
+            if (!this.pawn.Spawned)
             {
                 return;
             }

@@ -16,6 +16,7 @@ namespace RBM_Minotaur
         public const float SeeRedFleeRadiusDefault = 10.5f;
         public const int SeeRedFearDurationDefault = 120;
         public const int lactateMilkAmountDefault = 25;
+        public const bool debugMessagesDefault = false;
 
 
         // The settings our mod has.
@@ -29,6 +30,7 @@ namespace RBM_Minotaur
         public static float SeeRedFleeRadius = SeeRedFleeRadiusDefault;
         public static int SeeRedFearDuration = SeeRedFearDurationDefault;
         public static int lactateMilkAmount = lactateMilkAmountDefault;
+        public static bool debugMessages = debugMessagesDefault;
 
         // The part that writes our settings to file. Note that saving is by ref.
         public override void ExposeData()
@@ -43,6 +45,7 @@ namespace RBM_Minotaur
             Scribe_Values.Look(ref SeeRedFleeRadius, "SeeRedFleeRadius", SeeRedFleeRadiusDefault);
             Scribe_Values.Look(ref SeeRedFearDuration, "SeeRedFearDuration", SeeRedFearDurationDefault);
             Scribe_Values.Look(ref lactateMilkAmount, "lactateMilkAmount", lactateMilkAmountDefault);
+            Scribe_Values.Look(ref debugMessages, "debugMessages", debugMessagesDefault);
 
             base.ExposeData();
         }
@@ -108,7 +111,9 @@ namespace RBM_Minotaur
                 MinotaurSettings.lactateMilkAmount = MinotaurSettings.lactateMilkAmountDefault;
             }
 
-        listingStandard.End();
+            listingStandard.CheckboxLabeled("MInotaur Debug Messages Active", ref MinotaurSettings.debugMessages, "Significantly degrades performance - don't use this during normal gameplay");
+
+            listingStandard.End();
             base.DoSettingsWindowContents(inRect);
         }
 

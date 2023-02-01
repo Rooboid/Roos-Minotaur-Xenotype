@@ -25,6 +25,7 @@ namespace RBM_Minotaur
         //The ability effect: spawns a stack of milk on the pawn.
         public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
         {
+            if (MinotaurSettings.debugMessages) { Log.Message("RBM Is Running: (AbilityLactate) public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)"); }
             Pawn pawn = this.parent.pawn;
             base.Apply(target, dest);
 
@@ -37,6 +38,7 @@ namespace RBM_Minotaur
         //Disables gizmo based on settings or life stage.
         public override bool GizmoDisabled(out string reason)
         {
+            if (MinotaurSettings.debugMessages) { Log.Message("RBM Is Running: (AbilityLactate) public override bool GizmoDisabled(out string reason)"); }
             reason = null;
             if (this.parent.pawn.gender == Gender.Male && !MinotaurSettings.milkableMales)
             {

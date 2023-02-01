@@ -23,6 +23,8 @@ namespace RBM_Minotaur
 
         public static IntVec3 genFleeTile(Vector3 startPosition, Vector3 fleeFrom, float fleeDistance, Pawn pawn)
         {
+            if (MinotaurSettings.debugMessages) { Log.Message("RBM Is Running: public static IntVec3 genFleeTile(Vector3 startPosition, Vector3 fleeFrom, float fleeDistance, Pawn pawn)"); }
+            
             //Create a direction vector (heading) and normalise
             Vector3 relativePos = (startPosition - fleeFrom);
             Vector3 NormalizedDirection = relativePos.normalized;
@@ -54,6 +56,7 @@ namespace RBM_Minotaur
         // Get Heading from two coordinates
         public static Vector3 getDirection(Vector3 from, Vector3 to)
         {
+            if (MinotaurSettings.debugMessages) { Log.Message("RBM Is Running: public static Vector3 getDirection(Vector3 from, Vector3 to)"); }
             Vector3 relativePos = (to - from);
             float distance = relativePos.magnitude;
             Vector3 direction = relativePos / distance;
@@ -69,6 +72,7 @@ namespace RBM_Minotaur
         // Apply terrify effect in an area
         public static bool terrifyInArea(IntVec3 position, Map map, float radius = 5, Pawn originPawn = null)
         {
+            if (MinotaurSettings.debugMessages) { Log.Message("RBM Is Running: public static bool terrifyInArea(IntVec3 position, Map map, float radius = 5, Pawn originPawn = null)"); }
             if (map == null) { return false; }
             List<Pawn> mapPawns = map.mapPawns.AllPawnsSpawned;
 
@@ -103,6 +107,7 @@ namespace RBM_Minotaur
         //Tries to locate an available milking machine.
         public static bool TryFindMilkingSpot(Pawn pawn, out IntVec3 cell)
         {
+            if (MinotaurSettings.debugMessages) { Log.Message("RBM Is Running: public static bool TryFindMilkingSpot(Pawn pawn, out IntVec3 cell)"); }
             cell = IntVec3.Zero;
             List<Building> allBuildingsColonist = pawn.Map.listerBuildings.allBuildingsColonist;
             for (int i = 0; i < allBuildingsColonist.Count; i++)

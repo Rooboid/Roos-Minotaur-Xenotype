@@ -10,6 +10,7 @@ namespace RBM_Minotaur
     {
         protected override void Impact(Thing hitThing, bool blockedByShield = false)
         {
+            if (MinotaurSettings.debugMessages) { Log.Message("RBM Is Running: (Projectile) protected override void Impact(Thing hitThing, bool blockedByShield = false)"); }
             Map map = base.Map;
             base.Impact(hitThing);
             IntVec3 position = base.Position;

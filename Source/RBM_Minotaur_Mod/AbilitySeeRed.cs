@@ -18,6 +18,7 @@ namespace RBM_Minotaur
 
         public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
         {
+            if (MinotaurSettings.debugMessages) { Log.Message("RBM Is Running: (See Red) Apply(LocalTargetInfo target, LocalTargetInfo dest)"); }
             Pawn pawn = this.parent.pawn;
             IntVec3 position = pawn.Position;
             Map map = pawn.Map;
@@ -32,6 +33,7 @@ namespace RBM_Minotaur
 
         public override void DrawEffectPreview(LocalTargetInfo target)
         {
+            if (MinotaurSettings.debugMessages) { Log.Message("RBM Is Running: (See Red) public override void DrawEffectPreview(LocalTargetInfo target)"); }
             GenDraw.DrawRadiusRing(target.Cell, MinotaurSettings.SeeRedFearRadius);
         }
     }

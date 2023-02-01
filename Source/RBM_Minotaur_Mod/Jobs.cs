@@ -12,6 +12,7 @@ namespace RBM_Minotaur
     {
         protected override Job TryGiveJob(Pawn pawn)
         {
+            if (MinotaurSettings.debugMessages) { Log.Message("RBM Is Running: (Jobs) protected override Job TryGiveJob(Pawn pawn)"); }
             if (pawn.Spawned && pawn.abilities?.GetAbility(RBM_DefOf.RBM_Lactation)?.CanCast == true && pawn.IsColonist && !(pawn.workSettings?.GetPriority(RBM_DefOf.BasicWorker) == 0))
             {
                 IntVec3 cellDest;
@@ -35,6 +36,7 @@ namespace RBM_Minotaur
     {
         protected override IEnumerable<Toil> MakeNewToils()
         {
+            if (MinotaurSettings.debugMessages) { Log.Message("RBM Is Running: (Jobs) protected override IEnumerable<Toil> MakeNewToils()"); }
             if (ReservationUtility.Reserve(pawn, TargetB, job))
             {
                 this.FailOnDespawnedOrNull(TargetIndex.A);

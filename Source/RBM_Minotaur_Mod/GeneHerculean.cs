@@ -14,6 +14,7 @@ public static class Herculean_Patches
     [HarmonyPostfix]
     public static bool CanEquip_Postfix(bool __result, Thing thing, Pawn pawn, ref string cantReason, bool checkBonded = true)
     {
+        if (RBM_Minotaur.MinotaurSettings.debugMessages) { Log.Message("RBM Is Running: (Equip Postfix) public static bool CanEquip_Postfix(bool __result, Thing thing, Pawn pawn, ref string cantReason, bool checkBonded = true)"); }
         //Check Weapon
         if (thing.def.weaponClasses != null)
         {
@@ -52,6 +53,7 @@ public static class Herculean_Patches
     [HarmonyPostfix]
     public static void MakeNewToils_Postfix(ref JobDriver_Lovin __instance, ref Verse.AI.TargetIndex ___PartnerInd)
     {
+        if (RBM_Minotaur.MinotaurSettings.debugMessages) { Log.Message("RBM Is Running: (Equip Postfix (crushed)) public static void MakeNewToils_Postfix(ref JobDriver_Lovin __instance, ref Verse.AI.TargetIndex ___PartnerInd)"); }
         Pawn Partner = (Pawn)((Thing)__instance.job.GetTarget(___PartnerInd));
         if (Partner.genes.HasGene(RBM_DefOf.RBM_Herculean))
         {
