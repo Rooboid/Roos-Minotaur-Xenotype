@@ -15,34 +15,33 @@ namespace RBM_Minotaur
             if (MinotaurSettings.debugMessages) { Log.Message("RBM Is Running: (Jobs) protected override Job TryGiveJob(Pawn " + pawn.Name + ")"); }
             if (!pawn.Spawned)
             {
+                if (MinotaurSettings.debugMessages) { Log.Message("Can't take job: pawn is not spawned"); }
                 return null;
             }
-            if (MinotaurSettings.debugMessages) { Log.Message("RBM Job BR 0: Spawned"); }
-
+            
             if (!pawn.IsColonist)
-            { 
+            {
+                if (MinotaurSettings.debugMessages) { Log.Message("Can't take job: pawn is not colonist"); }
                 return null; 
             }
-            if (MinotaurSettings.debugMessages) { Log.Message("RBM Job BR 1: Is colonist"); }
-
+            
             if (pawn.abilities?.GetAbility(RBM_DefOf.RBM_Lactation)?.CanCast != true)
             {
+                if (MinotaurSettings.debugMessages) { Log.Message("Can't take job: cannot cast lactate ability"); }
                 return null;
             }
-            if (MinotaurSettings.debugMessages) { Log.Message("RBM Job BR 2: Can cast ability"); }
-
+            
             if ((pawn.workSettings?.GetPriority(RBM_DefOf.BasicWorker) == 0))
             {
+                if (MinotaurSettings.debugMessages) { Log.Message("Can't take job: will not do basic work"); }
                 return null;
             }
-            if (MinotaurSettings.debugMessages) { Log.Message("RBM Job BR 3: Will do basic work"); }
 
-            IntVec3 cellDest;
-            if (!RBM_Utils.TryFindMilkingSpot(pawn, out cellDest))
+            if (!RBM_Utils.TryFindMilkingSpot(pawn, out IntVec3 cellDest))
             {
+                if (MinotaurSettings.debugMessages) { Log.Message("Can't take job: cannot find a milking spot"); }
                 return null;
             }
-            if (MinotaurSettings.debugMessages) { Log.Message("RBM Job BR 4: Can find milking spot"); }
 
             LocalTargetInfo target_location = new LocalTargetInfo(cellDest);
             LocalTargetInfo target_pawn = new LocalTargetInfo(pawn);
@@ -50,6 +49,7 @@ namespace RBM_Minotaur
             //job.ability = pawn.abilities?.GetAbility(RBM_DefOf.RBM_Lactation);
             job.preventFriendlyFire = true;
             job.verbToUse = pawn.abilities?.GetAbility(RBM_DefOf.RBM_Lactation).verb;
+            if (MinotaurSettings.debugMessages) { Log.Message("Pawn can take milking job"); }
             return job;
         }
 

@@ -59,10 +59,7 @@ namespace RBM_Minotaur
             {
                 FilthMaker.TryMakeFilth(base.Pawn.Position, map, this.Props.filth, this.Props.filthCount, FilthSourceFlags.None, true);
             }
-            if (this.Props.sound != null)
-            {
-                this.Props.sound.PlayOneShot(SoundInfo.InMap(base.Pawn, MaintenanceType.None));
-            }
+            this.Props.sound?.PlayOneShot(SoundInfo.InMap(base.Pawn, MaintenanceType.None));
         }
 
         public override void Notify_PawnDied()

@@ -16,12 +16,11 @@ namespace RBM_Minotaur
 
 
         // Generate a tile to flee to from two points and a distance.
-        public static IntVec3 genFleeTile(IntVec3 startPosition, IntVec3 fleeFrom, float fleeDistance, Pawn pawn)
+        public static IntVec3 GenFleeTile(IntVec3 startPosition, IntVec3 fleeFrom, float fleeDistance, Pawn pawn)
         {
-            return genFleeTile(startPosition.ToVector3(), fleeFrom.ToVector3(), fleeDistance, pawn);
+            return GenFleeTile(startPosition.ToVector3(), fleeFrom.ToVector3(), fleeDistance, pawn);
         }
-
-        public static IntVec3 genFleeTile(Vector3 startPosition, Vector3 fleeFrom, float fleeDistance, Pawn pawn)
+        public static IntVec3 GenFleeTile(Vector3 startPosition, Vector3 fleeFrom, float fleeDistance, Pawn pawn)
         {
             if (MinotaurSettings.debugMessages) { Log.Message("RBM Is Running: public static IntVec3 genFleeTile(Vector3 startPosition, Vector3 fleeFrom, float fleeDistance, Pawn pawn)"); }
             
@@ -51,10 +50,8 @@ namespace RBM_Minotaur
             return fleeToIntVec;
         }
 
-
-
         // Get Heading from two coordinates
-        public static Vector3 getDirection(Vector3 from, Vector3 to)
+        public static Vector3 GetDirection(Vector3 from, Vector3 to)
         {
             if (MinotaurSettings.debugMessages) { Log.Message("RBM Is Running: public static Vector3 getDirection(Vector3 from, Vector3 to)"); }
             Vector3 relativePos = (to - from);
@@ -62,15 +59,13 @@ namespace RBM_Minotaur
             Vector3 direction = relativePos / distance;
             return direction;
         }
-        public static Vector3 getDirection(IntVec3 from, IntVec3 to)
+        public static Vector3 GetDirection(IntVec3 from, IntVec3 to)
         {
-            return getDirection(from.ToVector3(), to.ToVector3());
+            return GetDirection(from.ToVector3(), to.ToVector3());
         }
 
-
-
         // Apply terrify effect in an area
-        public static bool terrifyInArea(IntVec3 position, Map map, float radius = 5, Pawn originPawn = null)
+        public static bool TerrifyInArea(IntVec3 position, Map map, float radius = 5, Pawn originPawn = null)
         {
             if (MinotaurSettings.debugMessages) { Log.Message("RBM Is Running: public static bool terrifyInArea(IntVec3 position, Map map, float radius = 5, Pawn originPawn = null)"); }
             if (map == null) { return false; }
@@ -90,7 +85,7 @@ namespace RBM_Minotaur
 
                 if ( isHumanlike && isInRange && !isDowned && !isInMentalState && !isOriginPawn )
                 {
-                    LocalTargetInfo t = new LocalTargetInfo(RBM_Utils.genFleeTile(mapPawns[i].Position, position, MinotaurSettings.SeeRedFleeRadius, mapPawns[i]));
+                    LocalTargetInfo t = new LocalTargetInfo(RBM_Utils.GenFleeTile(mapPawns[i].Position, position, MinotaurSettings.SeeRedFleeRadius, mapPawns[i]));
                     Job job = new Job(JobDefOf.FleeAndCower, t);
                     MentalStateDef mentalStateFlee = RBM_DefOf.RBM_TerrifiedFlee;
                     mentalStateFlee.minTicksBeforeRecovery = MinotaurSettings.SeeRedFearDuration;
@@ -103,7 +98,6 @@ namespace RBM_Minotaur
             return true;
         }
 
-
         //Tries to locate an available milking machine.
         public static bool TryFindMilkingSpot(Pawn pawn, out IntVec3 cell)
         {
@@ -115,7 +109,7 @@ namespace RBM_Minotaur
                 Building building = allBuildingsColonist[i];
                 if (building.def.defName == "RBM_MilkingMachine")
                 {
-                    LocalTargetInfo target_location = new LocalTargetInfo(building.InteractionCell);
+                    //LocalTargetInfo target_location = new LocalTargetInfo(building.InteractionCell);
                     if (pawn.CanReserveAndReach(building.InteractionCell, PathEndMode.OnCell, Danger.Deadly))
                     { 
                         cell = building.InteractionCell;

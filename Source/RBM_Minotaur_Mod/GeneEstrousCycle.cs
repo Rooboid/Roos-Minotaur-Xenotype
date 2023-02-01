@@ -26,48 +26,48 @@ namespace RBM_Minotaur
     public class Gene_RBM_EstrousCycle : Gene
     {
         // Adds the 'In Heat' hediff to pawns with the Estrous Cycle gene in ApriMay
-        public override void Tick() 
-        {
-            base.Tick();
+        //public override void Tick() 
+        //{
+        //    base.Tick();
 
-            //Return if the hash interval is incorrect (not enough time has passed)
-            if (!this.pawn.IsHashIntervalTick(1440))
-            {
-                return;
-            }
+        //    //Return if the hash interval is incorrect (not enough time has passed)
+        //    if (!this.pawn.IsHashIntervalTick(1440))
+        //    {
+        //        return;
+        //    }
 
-            if (MinotaurSettings.debugMessages) { Log.Message("RBM Is Running: (Lovin Patch) public override void Tick() (Hash inteval passed) "); }
+        //    if (MinotaurSettings.debugMessages) { Log.Message("RBM Is Running: (Lovin Patch) public override void Tick() (Hash inteval passed) "); }
 
-            //Return if the pawn is not spawned to stop 
-            if (!this.pawn.Spawned)
-            {
-                if (MinotaurSettings.debugMessages) { Log.Message("Estrous Cycle patch applied to despawned pawn called " + this.pawn.Name + ", exiting"); }
-                return;
-            }
+        //    //Return if the pawn is not spawned to stop 
+        //    if (!this.pawn.Spawned)
+        //    {
+        //        if (MinotaurSettings.debugMessages) { Log.Message("Estrous Cycle patch applied to despawned pawn called " + this.pawn.Name + ", exiting"); }
+        //        return;
+        //    }
 
-            if (MinotaurSettings.debugMessages) { Log.Message("RBM Lovin Tick BR 1"); }
+        //    if (MinotaurSettings.debugMessages) { Log.Message("RBM Lovin Tick BR 1"); }
 
-            float latitude = Find.WorldGrid.LongLatOf(this.pawn.Map.Tile).y;
-            int absTick = GenTicks.TicksAbs;
-            bool isAprimay = GenDate.Quadrum(absTick, latitude) == Quadrum.Aprimay;
-            bool pawnHasHeatHediff = this.pawn.health.hediffSet.HasHediff(RBM_DefOf.EstrousHeat);
+        //    float latitude = Find.WorldGrid.LongLatOf(this.pawn.Map.Tile).y;
+        //    int absTick = GenTicks.TicksAbs;
+        //    bool isAprimay = GenDate.Quadrum(absTick, latitude) == Quadrum.Aprimay;
+        //    bool pawnHasHeatHediff = this.pawn.health.hediffSet.HasHediff(RBM_DefOf.EstrousHeat);
 
-            //Add Hediff if it is may
-            if (isAprimay && !pawnHasHeatHediff)
-            {
-                this.pawn.health.AddHediff(RBM_DefOf.EstrousHeat);
-            }
-            //Remove Hediff if it is not may
-            if (MinotaurSettings.debugMessages) { Log.Message("RBM Lovin Tick BR 2"); }
+        //    //Add Hediff if it is may
+        //    if (isAprimay && !pawnHasHeatHediff)
+        //    {
+        //        this.pawn.health.AddHediff(RBM_DefOf.EstrousHeat);
+        //    }
+        //    //Remove Hediff if it is not may
+        //    if (MinotaurSettings.debugMessages) { Log.Message("RBM Lovin Tick BR 2"); }
 
-            else if ( !isAprimay && pawnHasHeatHediff ) 
-            {
-                Hediff HeatHediff = this.pawn.health.hediffSet.GetFirstHediffOfDef(RBM_DefOf.EstrousHeat);
-                this.pawn.health.RemoveHediff(HeatHediff);
-            }
+        //    else if ( !isAprimay && pawnHasHeatHediff ) 
+        //    {
+        //        Hediff HeatHediff = this.pawn.health.hediffSet.GetFirstHediffOfDef(RBM_DefOf.EstrousHeat);
+        //        this.pawn.health.RemoveHediff(HeatHediff);
+        //    }
 
-            if (MinotaurSettings.debugMessages) { Log.Message("RBM BR Lovin Tick 3: finished task"); }
-        }
+        //    if (MinotaurSettings.debugMessages) { Log.Message("RBM BR Lovin Tick 3: finished task"); }
+        //}
     }
 }
 

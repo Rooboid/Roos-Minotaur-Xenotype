@@ -20,7 +20,7 @@ namespace RBM_Minotaur
             float armorPenetration = this.ArmorPenetration;
 
             GenExplosion.DoExplosion(position, map, explosionRadius, damageDef, null, damageAmount, armorPenetration, null, null, null, null, null, 0f, 1, null, false, null, 0f, 1, 0f, false, null, null, null, true, 1f, 0f, true, null, 1f);
-            RBM_Utils.terrifyInArea(position, map, explosionRadius);
+            RBM_Utils.TerrifyInArea(position, map, explosionRadius);
         }
     }
 }
