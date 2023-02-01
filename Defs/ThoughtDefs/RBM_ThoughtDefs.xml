@@ -13,6 +13,8 @@
 			<li MayRequire="Ludeon.RimWorld.Biotech">RBM_Herculean</li>
 		</nullifyingGenes>
 		<validWhileDespawned>true</validWhileDespawned>
+		<showBubble>true</showBubble>
+		<icon>Things/Mote/RBM_Crushed/RBM_Crushed</icon>
 		<developmentalStageFilter>Adult</developmentalStageFilter>
 		<durationDays>1</durationDays>
 		<stackLimit>3</stackLimit>
@@ -37,6 +39,8 @@
 			<li>Masochist</li>
 		</requiredTraits>
 		<validWhileDespawned>true</validWhileDespawned>
+		<showBubble>true</showBubble>
+		<icon>Things/Mote/RBM_Crushed/RBM_Crushed</icon>
 		<developmentalStageFilter>Adult</developmentalStageFilter>
 		<durationDays>1</durationDays>
 		<stackLimit>3</stackLimit>
