@@ -39,25 +39,29 @@ namespace RBM_Minotaur
         public override bool GizmoDisabled(out string reason)
         {
             if (MinotaurSettings.debugMessages) { Log.Message("RBM Is Running: (AbilityLactate) public override bool GizmoDisabled(out string reason)"); }
-            reason = null;
+
             if (this.parent.pawn.gender == Gender.Male && !MinotaurSettings.milkableMales)
             {
-                reason = "Males cannot Be milked due to settings.";
+                reason = "Males cannot be milked due to settings.";
                 return true;
             }
 
             if (this.parent.pawn.gender == Gender.Female && !MinotaurSettings.milkableFemales)
             {
-                reason = "Females cannot Be milked due to settings.";
+                reason = "Females cannot be milked due to settings.";
                 return true;
             }
+
             if (!this.parent.pawn.ageTracker.Adult)
             {
                 reason = "Pawn is not yet an adult.";
                 return true;
             }
-            bool baseIsDisabled = base.GizmoDisabled(out reason);
-            return baseIsDisabled;
+            if (base.GizmoDisabled(out reason))
+            {
+                return true;
+            }
+            return false;
         }
     }
 

@@ -42,7 +42,7 @@ namespace RBM_Minotaur
             {
                 return null;
             }
-            if (MinotaurSettings.debugMessages) { Log.Message("RBM Job BR 4: can find milking spot"); }
+            if (MinotaurSettings.debugMessages) { Log.Message("RBM Job BR 4: Can find milking spot"); }
 
             LocalTargetInfo target_location = new LocalTargetInfo(cellDest);
             LocalTargetInfo target_pawn = new LocalTargetInfo(pawn);
