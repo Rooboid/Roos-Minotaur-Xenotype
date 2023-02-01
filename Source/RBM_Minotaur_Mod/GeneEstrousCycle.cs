@@ -41,6 +41,7 @@ namespace RBM_Minotaur
             //Return if the pawn is not spawned to stop 
             if (!this.pawn.Spawned)
             {
+                if (MinotaurSettings.debugMessages) { Log.Message("Estrous Cycle patch applied to despawned pawn: exiting"); }
                 return;
             }
 
