@@ -36,12 +36,12 @@ namespace RBM_Minotaur
                 return;
             }
 
-            if (MinotaurSettings.debugMessages) { Log.Message("RBM Is Running: (Lovin Patch) public override void Tick() "); }
+            if (MinotaurSettings.debugMessages) { Log.Message("RBM Is Running: (Lovin Patch) public override void Tick() (Hash inteval passed) "); }
 
             //Return if the pawn is not spawned to stop 
             if (!this.pawn.Spawned)
             {
-                if (MinotaurSettings.debugMessages) { Log.Message("Estrous Cycle patch applied to despawned pawn: exiting"); }
+                if (MinotaurSettings.debugMessages) { Log.Message("Estrous Cycle patch applied to despawned pawn called " + this.pawn.Name + ", exiting"); }
                 return;
             }
 

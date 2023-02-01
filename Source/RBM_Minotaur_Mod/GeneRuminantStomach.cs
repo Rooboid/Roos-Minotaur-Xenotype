@@ -13,16 +13,23 @@ public static class WillEat_Minotaur
     public static bool WillEat_NewTemp_Postfix(bool __result, Pawn p, ThingDef food, Pawn getter, bool careIfNotAcceptableForTitle, bool allowVenerated)    
     {
         if (RBM_Minotaur.MinotaurSettings.debugMessages) { Log.Message("RBM Is Running: (Eating Patch) WillEat_NewTemp_Postfix(bool __result, Pawn p, ThingDef food, Pawn getter, bool careIfNotAcceptableForTitle, bool allowVenerated)"); }
-        if (food == ThingDefOf.Hay)
+        
+        if (food != ThingDefOf.Hay)
         {
-            if (p.genes.HasGene(RBM_DefOf.RBM_RuminantStomach))
-            {
-                return true;
-            }
-            return false;
-            
+            return __result;
         }
-        return __result;
+
+        if (!p.RaceProps.Humanlike)
+        {
+            return __result;
+        }
+
+        if (p.genes?.HasGene(RBM_DefOf.RBM_RuminantStomach) == true)
+        {
+            return true;
+        }
+
+        return false;
     }
     
     // Prevents pawns without the ruminant stomach gene from gaining nutrition from hay.
