@@ -25,7 +25,7 @@ namespace RBM_Minotaur
             }
             if (MinotaurSettings.debugMessages) { Log.Message("RBM Job BR 1: Is colonist"); }
 
-            if (!pawn.abilities?.GetAbility(RBM_DefOf.RBM_Lactation)?.CanCast == true)
+            if (pawn.abilities?.GetAbility(RBM_DefOf.RBM_Lactation)?.CanCast != true)
             {
                 return null;
             }
