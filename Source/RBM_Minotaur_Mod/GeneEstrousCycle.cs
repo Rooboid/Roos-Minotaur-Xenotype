@@ -36,13 +36,15 @@ namespace RBM_Minotaur
                 return;
             }
 
-            if (MinotaurSettings.debugMessages) { Log.Message("public override void Tick() "); }
+            if (MinotaurSettings.debugMessages) { Log.Message("RBM Is Running: (Lovin Patch) public override void Tick() "); }
 
             //Return if the pawn is not spawned to stop 
             if (!this.pawn.Spawned)
             {
                 return;
             }
+
+            if (MinotaurSettings.debugMessages) { Log.Message("RBM Lovin Tick BR 1"); }
 
             float latitude = Find.WorldGrid.LongLatOf(this.pawn.Map.Tile).y;
             int absTick = GenTicks.TicksAbs;
@@ -55,11 +57,15 @@ namespace RBM_Minotaur
                 this.pawn.health.AddHediff(RBM_DefOf.EstrousHeat);
             }
             //Remove Hediff if it is not may
+            if (MinotaurSettings.debugMessages) { Log.Message("RBM Lovin Tick BR 2"); }
+
             else if ( !isAprimay && pawnHasHeatHediff ) 
             {
                 Hediff HeatHediff = this.pawn.health.hediffSet.GetFirstHediffOfDef(RBM_DefOf.EstrousHeat);
                 this.pawn.health.RemoveHediff(HeatHediff);
             }
+
+            if (MinotaurSettings.debugMessages) { Log.Message("RBM BR Lovin Tick 3: finished task"); }
         }
     }
 }
