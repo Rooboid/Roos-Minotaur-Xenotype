@@ -167,10 +167,10 @@
 			<li>
 				<minSeverity>0</minSeverity>
 				<statOffsets>
-					<StaggerDurationFactor>-0.3</StaggerDurationFactor>
-					<MoveSpeed>0.2</MoveSpeed>
-					<FilthRate>1.5</FilthRate>
-					<MeleeDodgeChance>5</MeleeDodgeChance>
+					<StaggerDurationFactor>-0.13</StaggerDurationFactor>
+					<MoveSpeed>0.1</MoveSpeed>
+					<FilthRate>0.75</FilthRate>
+					<MeleeDodgeChance>2.5</MeleeDodgeChance>
 				</statOffsets>
 			</li>
 		</stages>

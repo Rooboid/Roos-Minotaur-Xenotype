@@ -6,7 +6,7 @@
 	<!-- Forced onto pawns affected by the gas cloud produced by the ability: SeeRed. -->
 	<!-- More Details: This primarily acts as a middleman to give pawns the mental state, RBM_TerrifiedFlee -->
 
-	<HediffDef ParentName="InfectionBase">
+	<HediffDef>
 		<defName>HeDiffTerrified</defName>
 		<hediffClass>HediffWithComps</hediffClass>
 		<label>Terrified</label>
