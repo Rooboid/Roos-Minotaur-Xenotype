@@ -32,7 +32,7 @@ namespace RBM_Minotaur
             Thing thing = ThingMaker.MakeThing(Props.spawnedThingDef);
             thing.stackCount = MinotaurSettings.lactateMilkAmount;
 
-            GenSpawn.Spawn(thing, this.parent.pawn.Position, this.parent.pawn.Map);
+            GenSpawn.Spawn(thing, pawn.Position, pawn.Map);
         }
 
         //Disables gizmo based on settings or life stage.
