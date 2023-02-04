@@ -16,7 +16,7 @@
 						<clipFolderPath>RBM_BovineCall</clipFolderPath>
 					</li>
 				</grains>
-				<volumeRange>10</volumeRange>
+				<volumeRange>10~15</volumeRange>
 				<pitchRange>0.95~1.05</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
@@ -35,7 +35,7 @@
 						<clipFolderPath>RBM_BovineDeath</clipFolderPath>
 					</li>
 				</grains>
-				<volumeRange>10</volumeRange>
+				<volumeRange>15~20</volumeRange>
 				<pitchRange>0.95~1.05</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
@@ -54,7 +54,7 @@
 						<clipFolderPath>RBM_BovineWounded</clipFolderPath>
 					</li>
 				</grains>
-				<volumeRange>10</volumeRange>
+				<volumeRange>10~20</volumeRange>
 				<pitchRange>0.95~1.05</pitchRange>
 				<sustainLoop>False</sustainLoop>
 				<repeatMode>NeverTwice</repeatMode>

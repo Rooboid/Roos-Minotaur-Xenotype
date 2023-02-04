@@ -20,8 +20,14 @@
 			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld</downloadUrl>
 			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077</steamWorkshopUrl>
 		</li>
+		<li>
+			<packageId>Ludeon.RimWorld.Biotech</packageId>
+			<displayName>Biotech</displayName>
+			<downloadUrl>https://store.steampowered.com/app/1826140/RimWorld__Biotech/?curator_clanid=25160263</downloadUrl>
+			<steamWorkshopUrl>https://store.steampowered.com/app/1826140/RimWorld__Biotech/?curator_clanid=25160263</steamWorkshopUrl>
+		</li>
 	</modDependencies>
-	<description>Adds a new xenotype to Rimworld: the minotaur. These herculean beasts are made of sheer muscle and hay, and excel in melee-based combat thanks to their devastating tempers and strength. 
+	<description>Adds a new xenotype to Rimworld: the formidable minotaur. These herculean beasts are made of sheer muscle and hay, and excel in melee-based combat thanks to their devastating tempers and strength. 
 
 &lt;size=25&gt;• Features&lt;/size&gt;
 
@@ -42,9 +48,10 @@ If you’re looking for more features, check out Roo’s Minotaur Xenotype Expan
 • Graphics and XML: Rooboid
 • C# and emotional support: Zelan
 
-&lt;size=20&gt;FreeSound:&lt;/size&gt;
-johnathanjansen, christyboy100, deathscyp, thimblerig, soundsnapfx, dwoboyle, raclure, richcraftstudios, zerolagtime, unfa, department64, wax-vibe, lesaucisson, triqystudio, nox-sound and stinkhorn
+&lt;size=20&gt;Supporters:&lt;/size&gt;
+Lambvey, Mangulwort, panatakan yen, Alexandre, Galen, Only, Greg Bunger, D-Train, 1Sopel6, WoolyPie, Dodo, Josh and Prince
 
-&lt;size=20&gt;Patreon:&lt;/size&gt;
-Lambvey, Mangulwort, panatakan yen, Alexandre, Galen, Only, Greg Bunger, D-Train, 1Sopel6, WoolyPie, Dodo, Josh and Prince</description>
+&lt;size=20&gt;Sound Effects:&lt;/size&gt;
+johnathanjansen, christyboy100, deathscyp, thimblerig, soundsnapfx, dwoboyle, raclure, richcraftstudios, zerolagtime, unfa, department64, wax-vibe, lesaucisson, triqystudio, nox-sound, FilmCow and stinkhorn
+	</description>
 </ModMetaData>

@@ -96,8 +96,6 @@
 	</RulePackDef>
 	
 	<!--====================== Herculean Minotaur Weapon Names ======================-->
-	
-	<!--TODO: Why isn't this working? -->
 		
 	<RulePackDef>
 		<defName>NamerMinotaurArt</defName>

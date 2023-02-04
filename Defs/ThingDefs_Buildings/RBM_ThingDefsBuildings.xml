@@ -4,7 +4,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>RBM_MilkingMachine</defName>
 		<label>milking machine</label>
-		<description>A machine where pawns with the lactation gene can express and store milk.</description>
+		<description>A machine where pawns with the lactation gene can produce milk. How much they produce can be toggled in the mod settings menu.</description>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<fillPercent>0.3</fillPercent>
 		<tickerType>Normal</tickerType>
@@ -27,7 +27,7 @@
 		<altitudeLayer>Building</altitudeLayer>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<thingCategories>
-			<li>BuildingsMisc</li>
+			<li>BuildingsProduction</li>
 		</thingCategories>
 		<costList>
 			<ComponentIndustrial>1</ComponentIndustrial>
@@ -43,7 +43,7 @@
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
-				<shortCircuitInRain>true</shortCircuitInRain>
+				<shortCircuitInRain>false</shortCircuitInRain>
 				<basePowerConsumption>25</basePowerConsumption>
 			</li>
 			<li Class="CompProperties_Flickable"/>
@@ -58,7 +58,7 @@
 		</stuffCategories>
 		<costStuffCount>200</costStuffCount>
 		<pathCost>50</pathCost>
-		<designationCategory>Misc</designationCategory>
+		<designationCategory>Production</designationCategory>
 		<uiOrder>2060</uiOrder>
 		<rotatable>false</rotatable>
 		<building>
