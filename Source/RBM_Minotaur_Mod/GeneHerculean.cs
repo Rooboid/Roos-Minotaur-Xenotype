@@ -15,7 +15,7 @@ public static class Herculean_Patches
     public static bool CanEquip_Postfix(bool __result, Thing thing, Pawn pawn, ref string cantReason, bool checkBonded = true)
     {
         if (RBM_Minotaur.MinotaurSettings.debugMessages) { Log.Message("RBM Is Running: (Equip Postfix) public static bool CanEquip_Postfix(bool __result, Thing thing, Pawn pawn, ref string cantReason, bool checkBonded = true)"); }
-        //Check Weapon
+        // Check Weapon
         if (thing.def.weaponClasses != null)
         {
             if (!thing.def.weaponClasses.Contains(RBM_DefOf.RBM_HerculeanClass))
@@ -24,7 +24,7 @@ public static class Herculean_Patches
             }
         }
 
-        //Check Apparel
+        // Check Apparel
         if (thing.def.apparel?.tags != null) 
         {
             if (!thing.def.apparel.tags.Contains("HerculeanApparel"))
@@ -33,7 +33,7 @@ public static class Herculean_Patches
             }
         }
 
-        //Check Pawn
+        // Check Pawn
         if (pawn.genes != null)
         {
             if (pawn.genes.HasGene(RBM_DefOf.RBM_Herculean))

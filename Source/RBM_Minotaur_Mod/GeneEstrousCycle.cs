@@ -18,7 +18,7 @@ namespace RBM_Minotaur
             if (MinotaurSettings.debugMessages) { Log.Message("RBM Is Running: (Lovin Patch) public static void GetLovinMtbHours_Postfix(ref float __result, Pawn pawn, Pawn partner)"); }
             if (pawn.health.hediffSet.HasHediff(RBM_DefOf.EstrousHeat) || partner.health.hediffSet.HasHediff(RBM_DefOf.EstrousHeat))
             {
-                __result = __result / 4;
+                __result /= 4;
             }
         }
     }

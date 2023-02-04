@@ -6,7 +6,7 @@ using Verse.Sound;
 
 namespace RBM_Minotaur
 {
-    //Midas Touch Hediff Comp (on Death replace Corpse with Gold)
+    // Midas Touch Hediff Comp (on Death replace Corpse with Gold)
     public class HediffComp_MidasTouch : HediffComp
     {
         public HediffCompProperties_MidasTouch Props
@@ -17,6 +17,7 @@ namespace RBM_Minotaur
             }
         }
 
+        // Overrides Notify_PawnKilled to create an effect when a humanlike pawn is killed under the effects of midas touch.
         public override void Notify_PawnKilled()
         {
             Log.Message("public override void Notify_PawnKilled()");
@@ -61,6 +62,8 @@ namespace RBM_Minotaur
             }
             this.Props.sound?.PlayOneShot(SoundInfo.InMap(base.Pawn, MaintenanceType.None));
         }
+
+        // Overrides Notify_PawnDied to spawn gold when a humanlike pawn is killed under the effects of midas touch.
 
         public override void Notify_PawnDied()
         {

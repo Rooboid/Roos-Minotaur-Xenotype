@@ -6,6 +6,7 @@ namespace RBM_Minotaur
 {
     public class MinotaurSettings : ModSettings
     {
+        // Default Mod Settings
         public const bool milkableFemalesDefault = true;
         public const bool milkableMalesDefault = true;
         public const bool midasDespawnDontDestroyDefault = false;
@@ -19,7 +20,7 @@ namespace RBM_Minotaur
         public const bool debugMessagesDefault = false;
 
 
-        // The settings our mod has.
+        // setting variables to defaults
         public static bool milkableFemales = milkableFemalesDefault;
         public static bool milkableMales = milkableMalesDefault;
         public static bool midasDespawnDontDestroy = midasDespawnDontDestroyDefault;
@@ -32,7 +33,7 @@ namespace RBM_Minotaur
         public static int lactateMilkAmount = lactateMilkAmountDefault;
         public static bool debugMessages = debugMessagesDefault;
 
-        // The part that writes our settings to file. Note that saving is by ref.
+        // Writes settings to file. Note that saving is by ref.
         public override void ExposeData()
         {
             Scribe_Values.Look(ref milkableFemales, "milkableFemales", milkableFemalesDefault);
@@ -54,16 +55,16 @@ namespace RBM_Minotaur
 
     public class RBM_Minotaur_Mod : Mod
     {
-        // A reference to our settings.
+        // reference to our settings.
         public MinotaurSettings settings;
 
-        // A mandatory constructor which resolves the reference to our settings.
+        // constructor which resolves the reference to our settings.
         public RBM_Minotaur_Mod(ModContentPack content) : base(content)
         {
             this.settings = GetSettings<MinotaurSettings>();
         }
 
-        // The (optional) GUI part to set your settings.
+        // The GUI part to set our settings.
         public override void DoSettingsWindowContents(Rect inRect)
         {
             Listing_Standard listingStandard = new Listing_Standard();

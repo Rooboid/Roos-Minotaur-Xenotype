@@ -5,7 +5,7 @@ using Verse.AI;
 
 namespace RBM_Minotaur
 {
-    // Bullet type that applies the terrified state in an area.
+    // Bullet type that applies the terrified state in an area - used by Taurail Gun
     public class Projectile_ObsidianBullet : Projectile_Explosive
     {
         protected override void Impact(Thing hitThing, bool blockedByShield = false)

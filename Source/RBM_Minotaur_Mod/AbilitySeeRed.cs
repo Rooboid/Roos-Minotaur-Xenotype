@@ -16,6 +16,7 @@ namespace RBM_Minotaur
             }
         }
 
+        //Main 'See Red' ability method - terrifies pawns in an area and enrages the user.
         public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
         {
             if (MinotaurSettings.debugMessages) { Log.Message("RBM Is Running: (See Red) Apply(LocalTargetInfo target, LocalTargetInfo dest)"); }

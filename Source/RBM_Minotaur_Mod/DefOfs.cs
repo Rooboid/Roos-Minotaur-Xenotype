@@ -32,7 +32,9 @@ public static class RBM_DefOf
     //ThingDefs
     public static ThingDef Milk;
 
+    //Jobdrivers
     public static JobDef JobDriver_GotoAndUseAbility;
 
+    //Worktypes
     public static WorkTypeDef BasicWorker;
 }
