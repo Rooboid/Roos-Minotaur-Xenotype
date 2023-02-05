@@ -112,7 +112,6 @@ namespace RBM_Minotaur
                     //LocalTargetInfo target_location = new LocalTargetInfo(building.InteractionCell);
                     if (pawn.CanReserveAndReach(building.InteractionCell, PathEndMode.OnCell, Danger.Deadly))
                     { 
-                        if(pawn.PathFindCostFor(pawn))
                         cell = building.InteractionCell;
                         return true;
                     }

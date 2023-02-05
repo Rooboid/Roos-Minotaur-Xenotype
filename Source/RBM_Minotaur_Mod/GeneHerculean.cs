@@ -15,34 +15,18 @@ public static class Herculean_Patches
     public static bool CanEquip_Postfix(bool __result, Thing thing, Pawn pawn, ref string cantReason, bool checkBonded = true)
     {
         if (RBM_Minotaur.MinotaurSettings.debugMessages) { Log.Message("RBM Is Running: (Equip Postfix) public static bool CanEquip_Postfix(bool __result, Thing thing, Pawn pawn, ref string cantReason, bool checkBonded = true)"); }
-        // Check Weapon
-        if (thing.def.weaponClasses != null)
+       
+        //If weapon or armour are Herculean, return true only if the parh has the herculean trait 
+        if(thing.def.weaponClasses?.Contains(RBM_DefOf.RBM_HerculeanClass) == true || thing.def.apparel?.tags?.Contains("HerculeanApparel") == true)
         {
-            if (!thing.def.weaponClasses.Contains(RBM_DefOf.RBM_HerculeanClass))
-            {
-                return __result;
-            }
-        }
-
-        // Check Apparel
-        if (thing.def.apparel?.tags != null) 
-        {
-            if (!thing.def.apparel.tags.Contains("HerculeanApparel"))
-            {
-                return __result;
-            }
-        }
-
-        // Check Pawn
-        if (pawn.genes != null)
-        {
-            if (pawn.genes.HasGene(RBM_DefOf.RBM_Herculean))
+            if (pawn.genes?.HasGene(RBM_DefOf.RBM_Herculean) == true)
             {
                 return true;
             }
+            cantReason = "Pawn is not Herculean";
+            return false;
         }
-        cantReason = "Pawn is not Herculean";
-        return false;
+        return __result;
         
     }
 
