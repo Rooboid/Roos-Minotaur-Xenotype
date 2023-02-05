@@ -1,4 +1,5 @@
 ﻿using RimWorld;
+using System.Collections.Generic;
 using Verse;
 
 [DefOf]
@@ -37,4 +38,27 @@ public static class RBM_DefOf
 
     //Worktypes
     public static WorkTypeDef BasicWorker;
+
+    public static ThingDef ChunkGranite;
+    public static ThingDef ChunkSandstone;
+    public static ThingDef ChunkLimestone;
+    public static ThingDef ChunkSlate;
+    public static ThingDef ChunkMarble;
+    public static ThingDef ChunkSlagSteel;
+
+}
+
+public static class RBM_DefLists
+{
+    public static List<ThingDef> ChunkThingDefs = new List<ThingDef>
+        {
+            RBM_DefOf.ChunkGranite,
+            RBM_DefOf.ChunkSandstone,
+            RBM_DefOf.ChunkLimestone,
+            RBM_DefOf.ChunkSlate,
+            RBM_DefOf.ChunkMarble,
+            RBM_DefOf.ChunkSlagSteel
+        };
+
+    public static List<string> IDList = new List<string>();
 }

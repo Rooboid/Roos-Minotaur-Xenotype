@@ -18,6 +18,7 @@ namespace RBM_Minotaur
         public const int SeeRedFearDurationDefault = 120;
         public const int lactateMilkAmountDefault = 25;
         public const bool debugMessagesDefault = false;
+        public const bool regenChunksDefault = true;
 
 
         // setting variables to defaults
@@ -32,6 +33,7 @@ namespace RBM_Minotaur
         public static int SeeRedFearDuration = SeeRedFearDurationDefault;
         public static int lactateMilkAmount = lactateMilkAmountDefault;
         public static bool debugMessages = debugMessagesDefault;
+        public static bool regenChunks = regenChunksDefault;
 
         // Writes settings to file. Note that saving is by ref.
         public override void ExposeData()
@@ -47,7 +49,7 @@ namespace RBM_Minotaur
             Scribe_Values.Look(ref SeeRedFearDuration, "SeeRedFearDuration", SeeRedFearDurationDefault);
             Scribe_Values.Look(ref lactateMilkAmount, "lactateMilkAmount", lactateMilkAmountDefault);
             Scribe_Values.Look(ref debugMessages, "debugMessages", debugMessagesDefault);
-
+            Scribe_Values.Look(ref regenChunks, "regenChunks", regenChunksDefault);
             base.ExposeData();
         }
     }
@@ -112,7 +114,8 @@ namespace RBM_Minotaur
                 MinotaurSettings.lactateMilkAmount = MinotaurSettings.lactateMilkAmountDefault;
             }
 
-            listingStandard.CheckboxLabeled("MInotaur Debug Messages Active", ref MinotaurSettings.debugMessages, "Significantly degrades performance - don't use this during normal gameplay");
+            listingStandard.CheckboxLabeled("Minotaur Debug Messages Active", ref MinotaurSettings.debugMessages, "Significantly degrades performance - don't use this during normal gameplay");
+            listingStandard.CheckboxLabeled("Regenerate Chunks", ref MinotaurSettings.regenChunks, "Significantly degrades performance - don't use this unless you're trying to use an existing map");
 
             listingStandard.End();
             base.DoSettingsWindowContents(inRect);
