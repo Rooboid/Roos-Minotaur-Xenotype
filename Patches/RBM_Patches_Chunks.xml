@@ -141,7 +141,7 @@
 
 	<!--Give ChunkBase ticker type-->
 
-	<Operation Class="PatchOperationConditional">
+ 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ThingDef[@Name="ChunkBase"]/tickerType</xpath>
 		<nomatch Class="PatchOperationAdd">
 			<xpath>Defs/ThingDef[@Name="ChunkBase"]</xpath>
@@ -155,7 +155,7 @@
 				<tickerType>Normal</tickerType>
 			</value>
 		</match>
-	</Operation>
+	</Operation> 
 
 	<!--Give ChunkBase Sound-->
 

@@ -12,6 +12,7 @@
 		<li>Ludeon.RimWorld.Ideology</li>
 		<li>Ludeon.RimWorld.Biotech</li>
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+		<li>MSE2.Core</li>
 	</loadAfter>
 	<modDependencies>
 		<li>

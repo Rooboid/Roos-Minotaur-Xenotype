@@ -35,6 +35,7 @@
 		<weaponTags>
 			<li>HerculeanWeapon</li>
 		</weaponTags>
+		<tradeability>Sellable</tradeability>
 		<comps>
 			<li>
 				<compClass>CompQuality</compClass>
