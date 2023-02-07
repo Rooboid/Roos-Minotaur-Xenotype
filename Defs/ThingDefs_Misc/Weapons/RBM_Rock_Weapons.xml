@@ -9,7 +9,7 @@
 		<thingClass>Projectile_Explosive</thingClass>
 		<projectile>
 			<damageDef>Bomb</damageDef>
-			<explosionRadius>2.2</explosionRadius>
+			<explosionRadius>1.5</explosionRadius>
 			<speed>25</speed>
 			<preExplosionSpawnThingDef>Filth_RubbleRock</preExplosionSpawnThingDef>
 			<soundExplode>Explosion_Chunk</soundExplode>

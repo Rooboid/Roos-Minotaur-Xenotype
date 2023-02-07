@@ -78,11 +78,11 @@
 					<li>
 						<compClass>CompEquippable</compClass>
 					</li>
-					<li Class="CompProperties_Explosive">
+<!-- 					<li Class="CompProperties_Explosive">
 						<explosiveRadius>5.3</explosiveRadius>
 						<explosiveDamageType>Bomb</explosiveDamageType>
 						<requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
-					</li>
+					</li> -->
 					<li Class="CompProperties_Forbiddable"/>
 				</comps>
 			</value>
@@ -93,11 +93,11 @@
 				<li>
 					<compClass>CompEquippable</compClass>
 				</li>
-				<li Class="CompProperties_Explosive">
+<!-- 				<li Class="CompProperties_Explosive">
 					<explosiveRadius>7.8</explosiveRadius>
 					<explosiveDamageType>Bomb</explosiveDamageType>
 					<requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
-				</li>
+				</li> -->
 				<li Class="CompProperties_Forbiddable"/>
 			</value>
 		</match>
@@ -481,7 +481,7 @@
 						<verbClass>Verb_ShootOneUse</verbClass>
 						<hasStandardCommand>true</hasStandardCommand>
 						<defaultProjectile>Proj_Chunk_Slate</defaultProjectile>
-						<forcedMissRadius>2.9</forcedMissRadius>
+						<forcedMissRadius>2.2</forcedMissRadius>
 						<warmupTime>4.5</warmupTime>
 						<ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
 						<range>15.6</range>
@@ -505,7 +505,7 @@
 						<verbClass>Verb_ShootOneUse</verbClass>
 						<hasStandardCommand>true</hasStandardCommand>
 						<defaultProjectile>Proj_Chunk_Slate</defaultProjectile>
-						<forcedMissRadius>2.9</forcedMissRadius>
+						<forcedMissRadius>2.2</forcedMissRadius>
 						<warmupTime>4.5</warmupTime>
 						<ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
 						<range>15.6</range>
@@ -535,7 +535,7 @@
 						<verbClass>Verb_ShootOneUse</verbClass>
 						<hasStandardCommand>true</hasStandardCommand>
 						<defaultProjectile>Proj_Chunk_Marble</defaultProjectile>
-						<forcedMissRadius>2.9</forcedMissRadius>
+						<forcedMissRadius>2.2</forcedMissRadius>
 						<warmupTime>4.5</warmupTime>
 						<ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
 						<range>15.6</range>
@@ -559,7 +559,7 @@
 						<verbClass>Verb_ShootOneUse</verbClass>
 						<hasStandardCommand>true</hasStandardCommand>
 						<defaultProjectile>Proj_Chunk_Marble</defaultProjectile>
-						<forcedMissRadius>2.9</forcedMissRadius>
+						<forcedMissRadius>2.2</forcedMissRadius>
 						<warmupTime>4.5</warmupTime>
 						<ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
 						<range>15.6</range>
