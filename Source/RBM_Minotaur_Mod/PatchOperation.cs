@@ -17,13 +17,10 @@ namespace RBM_Minotaur
             {
                 if (MinotaurSettings.disableChunks == false)
                 {
-                    Log.Message("RBM: Applied patch");
                     return this.match.Apply(xml);
                 }
-                Log.Message("RBM: Did not apply patch");
                 return true;
             }
-            Log.Message("RBM: match was null.");
             return false;
         }
         private PatchOperation match;
