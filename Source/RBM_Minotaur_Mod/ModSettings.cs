@@ -18,7 +18,9 @@ namespace RBM_Minotaur
         public const int SeeRedFearDurationDefault = 120;
         public const int lactateMilkAmountDefault = 25;
         public const bool debugMessagesDefault = false;
+        public const bool disableChunksDefault = false;
         public const bool regenChunksDefault = true;
+        
 
 
         // setting variables to defaults
@@ -33,6 +35,7 @@ namespace RBM_Minotaur
         public static int SeeRedFearDuration = SeeRedFearDurationDefault;
         public static int lactateMilkAmount = lactateMilkAmountDefault;
         public static bool debugMessages = debugMessagesDefault;
+        public static bool disableChunks = disableChunksDefault;
         public static bool regenChunks = regenChunksDefault;
 
         // Writes settings to file. Note that saving is by ref.
@@ -49,6 +52,7 @@ namespace RBM_Minotaur
             Scribe_Values.Look(ref SeeRedFearDuration, "SeeRedFearDuration", SeeRedFearDurationDefault);
             Scribe_Values.Look(ref lactateMilkAmount, "lactateMilkAmount", lactateMilkAmountDefault);
             Scribe_Values.Look(ref debugMessages, "debugMessages", debugMessagesDefault);
+            Scribe_Values.Look(ref disableChunks, "disableChunks", disableChunksDefault);
             Scribe_Values.Look(ref regenChunks, "regenChunks", regenChunksDefault);
             base.ExposeData();
         }
@@ -77,7 +81,6 @@ namespace RBM_Minotaur
             listingStandard.CheckboxLabeled("Active for male pawns", ref MinotaurSettings.milkableMales);
             listingStandard.Label("Lactation milk amount: " + MinotaurSettings.lactateMilkAmount.ToString());
             listingStandard.IntAdjuster(ref MinotaurSettings.lactateMilkAmount, 5, 5);
-            listingStandard.Label(" ");
 
             listingStandard.Label("See Red Ability Settings");
             MinotaurSettings.SeeRedFearRadius = listingStandard.SliderLabeled("See Red ability radius: " + MinotaurSettings.SeeRedFearRadius.ToString(), MinotaurSettings.SeeRedFearRadius, 1f, 50f, 0.5f, "The radius within which pawns will flee from a pawn using the See Red ability.");
@@ -114,8 +117,9 @@ namespace RBM_Minotaur
                 MinotaurSettings.lactateMilkAmount = MinotaurSettings.lactateMilkAmountDefault;
             }
 
-            listingStandard.CheckboxLabeled("Minotaur Debug Messages Active", ref MinotaurSettings.debugMessages, "Significantly degrades performance - don't use this during normal gameplay");
-            listingStandard.CheckboxLabeled("Regenerate Chunks", ref MinotaurSettings.regenChunks, "Significantly degrades performance - don't use this unless you're trying to use an existing map");
+            listingStandard.CheckboxLabeled("Minotaur Debug Messages Active", ref MinotaurSettings.debugMessages, "Degrades performance and spams the log with every function call this mod adds - don't use this during normal gameplay");
+            listingStandard.CheckboxLabeled("Disable Weaponised Chunks", ref MinotaurSettings.disableChunks, "Disables all of this mod's chunk changes - you must regenerate chunks after changing this.");
+            listingStandard.CheckboxLabeled("Regenerate Chunks", ref MinotaurSettings.regenChunks, "Destroys and remakes all chunks on the map - useful for fixing saves with invalid chunk properties. This setting disables itself once finished.");
 
             listingStandard.End();
             base.DoSettingsWindowContents(inRect);

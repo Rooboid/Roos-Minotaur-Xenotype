@@ -59,6 +59,7 @@
     <Compile Include="ModSettings.cs" />
     <Compile Include="GeneHerculean.cs" />
     <Compile Include="GeneRuminantStomach.cs" />
+    <Compile Include="PatchOperation.cs" />
     <Compile Include="RBM_Utils.cs" />
     <Compile Include="Projectiles.cs" />
     <Compile Include="GeneEstrousCycle.cs" />

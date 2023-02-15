@@ -51,8 +51,9 @@ namespace RBM_Minotaur
                     Log.Message("Found " + numRegen + " chunks to be regenerated");
                     if (numRegen == 0)
                     {
-                        Log.Warning("Done regenerating chunks, disabled the 'Regenerate Chunks' setting. Please re-enable if errors persist.");
+                        Log.Warning("Done regenerating chunks and disabled the 'Regenerate Chunks' setting. Please re-enable if errors persist.");
                         MinotaurSettings.regenChunks = false;
+                        RBM_DefLists.IDList = new List<string>();
                     }
                 }
             }
