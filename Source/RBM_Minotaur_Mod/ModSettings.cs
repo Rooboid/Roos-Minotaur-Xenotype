@@ -118,7 +118,7 @@ namespace RBM_Minotaur
             }
 
             listingStandard.CheckboxLabeled("Minotaur Debug Messages Active", ref MinotaurSettings.debugMessages, "Degrades performance and spams the log with every function call this mod adds - don't use this during normal gameplay");
-            listingStandard.CheckboxLabeled("Disable Weaponised Chunks", ref MinotaurSettings.disableChunks, "Disables all of this mod's chunk changes - you must regenerate chunks after changing this.");
+            listingStandard.CheckboxLabeled("Disable Weaponised Chunks", ref MinotaurSettings.disableChunks, "Disables all of this mod's chunk changes - you must regenerate chunks after changing this. Always requires restart.");
             listingStandard.CheckboxLabeled("Regenerate Chunks", ref MinotaurSettings.regenChunks, "Destroys and remakes all chunks on the map - useful for fixing saves with invalid chunk properties. This setting disables itself once finished.");
 
             listingStandard.End();
