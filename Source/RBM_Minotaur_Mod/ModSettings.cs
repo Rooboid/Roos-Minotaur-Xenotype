@@ -20,7 +20,8 @@ namespace RBM_Minotaur
         public const bool debugMessagesDefault = false;
         public const bool disableChunksDefault = false;
         public const bool regenChunksDefault = true;
-        
+        public const bool canEquipHeavyDefault = false;
+
 
 
         // setting variables to defaults
@@ -37,6 +38,7 @@ namespace RBM_Minotaur
         public static bool debugMessages = debugMessagesDefault;
         public static bool disableChunks = disableChunksDefault;
         public static bool regenChunks = regenChunksDefault;
+        public static bool canEquipHeavy = canEquipHeavyDefault;
 
         // Writes settings to file. Note that saving is by ref.
         public override void ExposeData()
@@ -54,6 +56,7 @@ namespace RBM_Minotaur
             Scribe_Values.Look(ref debugMessages, "debugMessages", debugMessagesDefault);
             Scribe_Values.Look(ref disableChunks, "disableChunks", disableChunksDefault);
             Scribe_Values.Look(ref regenChunks, "regenChunks", regenChunksDefault);
+            Scribe_Values.Look(ref canEquipHeavy, "canEquipHeavy", canEquipHeavyDefault);
             base.ExposeData();
         }
     }
@@ -76,13 +79,13 @@ namespace RBM_Minotaur
             Listing_Standard listingStandard = new Listing_Standard();
             listingStandard.Begin(inRect);
 
-            listingStandard.Label("Lactation Ability Settings");
-            listingStandard.CheckboxLabeled("Active for female pawns", ref MinotaurSettings.milkableFemales);
-            listingStandard.CheckboxLabeled("Active for male pawns", ref MinotaurSettings.milkableMales);
+            //listingStandard.Label("Lactation Ability Settings");
+            listingStandard.CheckboxLabeled("Lactation active for female pawns", ref MinotaurSettings.milkableFemales);
+            listingStandard.CheckboxLabeled("Lactation active for male pawns", ref MinotaurSettings.milkableMales);
             listingStandard.Label("Lactation milk amount: " + MinotaurSettings.lactateMilkAmount.ToString());
             listingStandard.IntAdjuster(ref MinotaurSettings.lactateMilkAmount, 5, 5);
 
-            listingStandard.Label("See Red Ability Settings");
+            //listingStandard.Label("See Red Ability Settings");
             MinotaurSettings.SeeRedFearRadius = listingStandard.SliderLabeled("See Red ability radius: " + MinotaurSettings.SeeRedFearRadius.ToString(), MinotaurSettings.SeeRedFearRadius, 1f, 50f, 0.5f, "The radius within which pawns will flee from a pawn using the See Red ability.");
             MinotaurSettings.SeeRedFearRadius = (float)Math.Round(MinotaurSettings.SeeRedFearRadius * 2.0) / 2;
             MinotaurSettings.SeeRedFleeRadius = listingStandard.SliderLabeled("See Red flee radius: " + MinotaurSettings.SeeRedFleeRadius.ToString(), MinotaurSettings.SeeRedFleeRadius, 1f, 50f, 0.5f, "The distance which pawns will flee from a pawn using the See Red ability. Lowest value of distance and time wins.");
@@ -92,9 +95,10 @@ namespace RBM_Minotaur
 
             listingStandard.Label(" ");
 
-            listingStandard.Label("Taurail Gun Weapon Settings");
+            //listingStandard.Label("Taurail Gun Weapon Settings");
             MinotaurSettings.TaurailFearRadius = listingStandard.SliderLabeled("Taurail Gun projectile blast radius: " + MinotaurSettings.TaurailFearRadius.ToString(), MinotaurSettings.TaurailFearRadius, 1f, 10f, 0.5f, "The radius in which pawns will flee from a Taurail Gun projectile explosion.");
             MinotaurSettings.TaurailFearRadius = (float)Math.Round(MinotaurSettings.TaurailFearRadius * 2.0) / 2;
+
             listingStandard.Label(" ");
 
             listingStandard.Label("Midaspear Weapon Settings");
@@ -102,7 +106,7 @@ namespace RBM_Minotaur
             listingStandard.CheckboxLabeled("Despawns corpses rather than destroy", ref MinotaurSettings.midasDespawnDontDestroy, "Destroying a corpse is a volatile action, and can cause occasional errors. Despawning a pawn will may not trigger some on on-death events.");
             listingStandard.Label("Midaspear gold amount: " + MinotaurSettings.midasGoldAmount.ToString());
             listingStandard.IntAdjuster(ref MinotaurSettings.midasGoldAmount, 5);
-            
+            listingStandard.CheckboxLabeled("Heculean pawns can equip heavy weapons", ref MinotaurSettings.canEquipHeavy, "Grants herculean pawns a trait allowing them to equip heavy weapons. May take a few seconds to apply. Does not work on pawns that had the herculean gene before this update - use dev mode to give them the gene again to fix this.");
             if (listingStandard.ButtonText("Reset to Default"))
             {
                 MinotaurSettings.milkableFemales = MinotaurSettings.milkableFemalesDefault;
@@ -115,6 +119,7 @@ namespace RBM_Minotaur
                 MinotaurSettings.SeeRedFleeRadius = MinotaurSettings.SeeRedFleeRadiusDefault;
                 MinotaurSettings.SeeRedFearDuration = MinotaurSettings.SeeRedFearDurationDefault;
                 MinotaurSettings.lactateMilkAmount = MinotaurSettings.lactateMilkAmountDefault;
+                MinotaurSettings.canEquipHeavy = MinotaurSettings.canEquipHeavyDefault;
             }
 
             listingStandard.CheckboxLabeled("Minotaur Debug Messages Active", ref MinotaurSettings.debugMessages, "Degrades performance and spams the log with every function call this mod adds - don't use this during normal gameplay");
