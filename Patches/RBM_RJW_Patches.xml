@@ -3,8 +3,7 @@
 	<!--============================== RJW Patches ============================-->
 	<!-- Changes pawn values when pawn is in heat -->
 
-	<!-- Makes pawns in heat more sexually active and slightly more vulnerable -->
-	
+	<!-- Makes pawns in heat more "hand-holdy" and slightly more vulnerable -->
 	
 	<Operation Class="PatchOperationFindMod">
 		<mods>

@@ -17,9 +17,7 @@
 			</value>
 		</match>
 	</Operation>
-	
-	
-	
+
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Fallout Traits</li>
