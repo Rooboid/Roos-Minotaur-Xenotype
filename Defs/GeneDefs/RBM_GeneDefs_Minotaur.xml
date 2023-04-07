@@ -257,6 +257,7 @@
 		<defName>RBM_Herculean</defName>
 		<label>Herculean</label>
 		<description>Carriers of this gene are staggeringly strong. Their herculean bodies prove them to be excellent pack mules, formidable foes in battle and rather painful lovers. There are some weapons that only Herculean pawns can equip.</description>
+		<geneClass>RBM_Minotaur.Gene_RBM_Herculean</geneClass>
 		<biostatCpx>2</biostatCpx>
 		<biostatMet>-3</biostatMet>
 		<displayCategory>Miscellaneous</displayCategory>

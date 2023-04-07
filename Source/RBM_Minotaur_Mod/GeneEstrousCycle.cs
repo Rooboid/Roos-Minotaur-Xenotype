@@ -15,7 +15,9 @@ namespace RBM_Minotaur
         // Adjusts Mean Time Between Lovin' for pawns in heat
         public static void GetLovinMtbHours_Postfix(ref float __result, Pawn pawn, Pawn partner)   
         {
+            //Log message if dewbug is enabled
             if (MinotaurSettings.debugMessages) { Log.Message("RBM Is Running: (Lovin Patch) public static void GetLovinMtbHours_Postfix(ref float __result, Pawn pawn, Pawn partner)"); }
+
             if (pawn.health.hediffSet.HasHediff(RBM_DefOf.EstrousHeat) || partner.health.hediffSet.HasHediff(RBM_DefOf.EstrousHeat))
             {
                 __result /= 4;
@@ -41,11 +43,8 @@ namespace RBM_Minotaur
             //Return if the pawn is not spawned to stop 
             if (!this.pawn.Spawned)
             {
-                if (MinotaurSettings.debugMessages) { Log.Message("Estrous Cycle patch applied to despawned pawn called " + this.pawn.Name + ", exiting"); }
                 return;
             }
-
-            if (MinotaurSettings.debugMessages) { Log.Message("RBM Lovin Tick BR 1"); }
 
             float latitude = Find.WorldGrid.LongLatOf(this.pawn.Map.Tile).y;
             int absTick = GenTicks.TicksAbs;
@@ -57,16 +56,14 @@ namespace RBM_Minotaur
             {
                 this.pawn.health.AddHediff(RBM_DefOf.EstrousHeat);
             }
-            //Remove Hediff if it is not may
-            if (MinotaurSettings.debugMessages) { Log.Message("RBM Lovin Tick BR 2"); }
 
+            //Remove Hediff if it is not aprimay
             else if ( !isAprimay && pawnHasHeatHediff ) 
             {
                 Hediff HeatHediff = this.pawn.health.hediffSet.GetFirstHediffOfDef(RBM_DefOf.EstrousHeat);
                 this.pawn.health.RemoveHediff(HeatHediff);
             }
 
-            if (MinotaurSettings.debugMessages) { Log.Message("RBM BR Lovin Tick 3: finished task"); }
         }
     }
 }

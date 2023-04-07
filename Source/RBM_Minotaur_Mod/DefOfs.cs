@@ -8,6 +8,7 @@ public static class RBM_DefOf
     //Abilites
     public static AbilityDef RBM_Lactation;
     public static AbilityDef RBM_SeeRed;
+
     //Genes
     public static GeneDef RBM_EstrousCycle;
     public static GeneDef RBM_RuminantStomach;
@@ -19,6 +20,9 @@ public static class RBM_DefOf
     public static HediffDef HeDiffSeeRed;
     public static HediffDef EstrousHeat;
     public static HediffDef MidasTouch;
+
+    //Traits
+    public static TraitDef RBM_Herculean_Trait;
 
     //MentalStates
     public static MentalStateDef RBM_TerrifiedFlee;
@@ -38,7 +42,8 @@ public static class RBM_DefOf
 
     //Worktypes
     public static WorkTypeDef BasicWorker;
-
+    
+    //Chunks
     public static ThingDef ChunkGranite;
     public static ThingDef ChunkSandstone;
     public static ThingDef ChunkLimestone;
