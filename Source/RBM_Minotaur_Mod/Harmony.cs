@@ -1,5 +1,4 @@
-﻿using RBM_Minotaur;
-using HarmonyLib;
+﻿using HarmonyLib;
 using Verse;
 
 namespace RBM_Minotaur

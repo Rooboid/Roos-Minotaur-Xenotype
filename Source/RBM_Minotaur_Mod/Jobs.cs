@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Verse.AI;
+﻿using System.Collections.Generic;
 using Verse;
+using Verse.AI;
 
 namespace RBM_Minotaur
 {
@@ -18,19 +14,19 @@ namespace RBM_Minotaur
                 if (MinotaurSettings.debugMessages) { Log.Message("Can't take job: pawn is not spawned"); }
                 return null;
             }
-            
+
             if (!pawn.IsColonist)
             {
                 if (MinotaurSettings.debugMessages) { Log.Message("Can't take job: pawn is not colonist"); }
-                return null; 
+                return null;
             }
-            
+
             if (pawn.abilities?.GetAbility(RBM_DefOf.RBM_Lactation)?.CanCast != true)
             {
                 if (MinotaurSettings.debugMessages) { Log.Message("Can't take job: cannot cast lactate ability"); }
                 return null;
             }
-            
+
             if ((pawn.workSettings?.GetPriority(RBM_DefOf.BasicWorker) == 0))
             {
                 if (MinotaurSettings.debugMessages) { Log.Message("Can't take job: will not do basic work"); }
