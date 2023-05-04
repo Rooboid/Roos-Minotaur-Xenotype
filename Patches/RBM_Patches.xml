@@ -329,7 +329,7 @@
 	<!--Adds minotaur with herculean weapons to empire raids-->
 
 	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/FactionDef[defName="Empire"]/pawnGroupMakers</xpath>
+		<xpath>Defs/FactionDef[defName="Empire"]/pawnGroupMakers/li[2]/options</xpath>
 		<match Class="PatchOperationAdd">
 			<xpath>Defs/FactionDef[defName="Empire"]/pawnGroupMakers/li[2]/options</xpath>
 			<value>
@@ -342,9 +342,9 @@
 	<!--Adds minotaur with herculean weapons to empire settlement defences-->
 
 	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers</xpath>
+		<xpath>Defs/FactionDef[defName="Empire"]/pawnGroupMakers/li[4]/options</xpath>
 		<match Class="PatchOperationAdd">
-			<xpath>Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[4]/options</xpath>
+			<xpath>Defs/FactionDef[defName="Empire"]/pawnGroupMakers/li[4]/options</xpath>
 			<value>
 				<RBM_MinotaurGuardianHigh>0.8</RBM_MinotaurGuardianHigh>
 			</value>
@@ -354,29 +354,12 @@
 	<!--Adds minotaur to outlander raids-->
 
 	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers</xpath>
+		<xpath>Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[1]/options</xpath>
 		<match Class="PatchOperationAdd">
 			<xpath>Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[1]/options</xpath>
 			<value>
 				<RBM_MinotaurGuardianHigh>0.2</RBM_MinotaurGuardianHigh>
-			</value>
-		</match>
-	</Operation>
-
-	<!--Adds minotaur to outlander raids-->
-
-	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers</xpath>
-		<match Class="PatchOperationAdd">
-			<xpath>Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[2]</xpath>
-			<value>
-				<li>
-					<kindDef>Combat</kindDef>
-					<options>
-						<RBM_MinotaurFighter>1</RBM_MinotaurFighter>
-						<RBM_MinotaurGuardianHigh>0.2</RBM_MinotaurGuardianHigh>
-					</options>
-				</li>
+				<RBM_MinotaurFighter>1</RBM_MinotaurFighter>
 			</value>
 		</match>
 	</Operation>
@@ -384,29 +367,24 @@
 	<!--Adds minotaur to outlander settlement defences-->
 
 	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers</xpath>
+		<xpath>Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[4]/options</xpath>
 		<match Class="PatchOperationAdd">
-			<xpath>Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[4]</xpath>
+			<xpath>Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[4]/options</xpath>
 			<value>
-				<li>
-					<kindDef>Combat</kindDef>
-					<options>
-						<RBM_MinotaurFighter>4</RBM_MinotaurFighter>
-						<RBM_MinotaurGuardianHigh>0.2</RBM_MinotaurGuardianHigh>
-					</options>
-				</li>
+				<RBM_MinotaurFighter>4</RBM_MinotaurFighter>
+				<RBM_MinotaurGuardianHigh>0.2</RBM_MinotaurGuardianHigh>
 			</value>
 		</match>
 	</Operation>
-
+	
 	<!--Adds feral minotaur to tribal raids-->
 
 	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/FactionDef[@Name="TribeBase"]/pawnGroupMakers</xpath>
+		<xpath>Defs/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[3]/options</xpath>
 		<match Class="PatchOperationAdd">
 			<xpath>Defs/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[3]/options</xpath>
 			<value>
-				<RBM_MinotaurFeral>1</RBM_MinotaurFeral>
+				<RBM_MinotaurFeral>2</RBM_MinotaurFeral>
 			</value>
 		</match>
 	</Operation>
@@ -414,25 +392,25 @@
 	<!--Adds feral minotaur to pirate raids-->
 
 	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/FactionDef[defName="Pirate"]/pawnGroupMakers</xpath>
+		<xpath>Defs/FactionDef[defName="Pirate"]/pawnGroupMakers/li[2]/options</xpath>
 		<match Class="PatchOperationAdd">
 			<xpath>Defs/FactionDef[defName="Pirate"]/pawnGroupMakers/li[2]/options</xpath>
 			<value>
-				<RBM_MinotaurFeral>0.6</RBM_MinotaurFeral>
+				<RBM_MinotaurFeral>2</RBM_MinotaurFeral>
 			</value>
 		</match>
 	</Operation>
-
+	
 	<!-- Adds feral minotaur and minotaur marauder to pirate raids -->
 
 	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/FactionDef[defName="Pirate"]/pawnGroupMakers</xpath>
+		<xpath>Defs/FactionDef[defName="Pirate"]/pawnGroupMakers/li[4]/options</xpath>
 		<match Class="PatchOperationAdd">
 			<xpath>Defs/FactionDef[defName="Pirate"]/pawnGroupMakers/li[4]/options</xpath>
 			<value>
 				<RBM_MinotaurFeral>0.5</RBM_MinotaurFeral>
 				<RBM_MinotaurMarauder>2</RBM_MinotaurMarauder>
-				<RBM_MinotaurFighter>4</RBM_MinotaurFighter>
+				<RBM_MinotaurFighter>3</RBM_MinotaurFighter>
 			</value>
 		</match>
 	</Operation>
@@ -440,9 +418,9 @@
 	<!-- Adds minotaur marauders and minotaur fighters to pirate settlement defences -->
 
 	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/FactionDef[defName="Pirate"]/pawnGroupMakers</xpath>
+		<xpath>Defs/FactionDef[defName="Pirate"]/pawnGroupMakers/li[7]/options</xpath>
 		<match Class="PatchOperationAdd">
-			<xpath>Defs/FactionDef[defName="Pirate"]/pawnGroupMakers/li[5]/options</xpath>
+			<xpath>Defs/FactionDef[defName="Pirate"]/pawnGroupMakers/li[7]/options</xpath>
 			<value>
 				<RBM_MinotaurMarauder>1.5</RBM_MinotaurMarauder>
 				<RBM_MinotaurFighter>1</RBM_MinotaurFighter>
@@ -466,5 +444,6 @@
 			</value>
 		</match>
 	</Operation>
+
 
 </Patch>

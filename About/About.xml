@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
 	<name>Roo's Minotaur Xenotype</name>
-	<author>Rooboid</author>
+	<author>Rooboid, Zelan</author>
 	<supportedVersions>
 		<li>1.4</li>
 	</supportedVersions>
@@ -45,14 +45,7 @@ If you’re looking for more features, check out Roo’s Minotaur Xenotype Expan
 
 &lt;size=25&gt;• Credits&lt;/size&gt;
 
-&lt;size=20&gt;Mod:&lt;/size&gt;
-• Graphics and XML: Rooboid
-• C# and emotional support: Zelan
-
-&lt;size=20&gt;Supporters:&lt;/size&gt;
-Lambvey, Mangulwort, panatakan yen, Alexandre, Galen, Only, Greg Bunger, D-Train, 1Sopel6, WoolyPie, Dodo, Josh and Prince
-
-&lt;size=20&gt;Sound Effects:&lt;/size&gt;
-johnathanjansen, christyboy100, deathscyp, thimblerig, soundsnapfx, dwoboyle, raclure, richcraftstudios, zerolagtime, unfa, department64, wax-vibe, lesaucisson, triqystudio, nox-sound, FilmCow and stinkhorn
-	</description>
+All credits can be found in the mod's 'About' folder.
+A special thanks to my patrons for making this mod possible and keeping me sane:
+Britton McGrane, Brandon Pollastri, Eric Celmer, Johnsilker, دانيال أيفان مولار مارتينز, Clement C, Alexandra Milan, John Hamilton, Lau Rosenkilde Birk, Thomas, Shaelyn Rivers-Green, SpaceMarines1, Daedalus, Greg Bunger, D-Train, Dodo, Prince Gerald S and Bardest	</description>
 </ModMetaData>
