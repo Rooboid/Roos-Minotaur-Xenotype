@@ -1,13 +1,8 @@
 ﻿using RimWorld;
-using RimWorld.BaseGen;
 using System.Collections.Generic;
-using System.Data.Common;
-using System.Security.Cryptography;
 using UnityEngine;
 using Verse;
 using Verse.AI;
-using static HarmonyLib.Code;
-using static UnityEngine.GraphicsBuffer;
 
 namespace RBM_Minotaur
 {
@@ -23,7 +18,7 @@ namespace RBM_Minotaur
         public static IntVec3 GenFleeTile(Vector3 startPosition, Vector3 fleeFrom, float fleeDistance, Pawn pawn)
         {
             if (MinotaurSettings.debugMessages) { Log.Message("RBM Is Running: public static IntVec3 genFleeTile(Vector3 startPosition, Vector3 fleeFrom, float fleeDistance, Pawn pawn)"); }
-            
+
             //Create a direction vector (heading) and normalise
             Vector3 relativePos = (startPosition - fleeFrom);
             Vector3 NormalizedDirection = relativePos.normalized;
@@ -83,13 +78,13 @@ namespace RBM_Minotaur
                     isOriginPawn = true;
                 }
 
-                if ( isHumanlike && isInRange && !isDowned && !isInMentalState && !isOriginPawn )
+                if (isHumanlike && isInRange && !isDowned && !isInMentalState && !isOriginPawn)
                 {
                     LocalTargetInfo t = new LocalTargetInfo(RBM_Utils.GenFleeTile(mapPawns[i].Position, position, MinotaurSettings.SeeRedFleeRadius, mapPawns[i]));
                     Job job = new Job(JobDefOf.FleeAndCower, t);
                     MentalStateDef mentalStateFlee = RBM_DefOf.RBM_TerrifiedFlee;
                     mentalStateFlee.minTicksBeforeRecovery = MinotaurSettings.SeeRedFearDuration;
-                    mentalStateFlee.maxTicksBeforeRecovery = MinotaurSettings.SeeRedFearDuration+1;
+                    mentalStateFlee.maxTicksBeforeRecovery = MinotaurSettings.SeeRedFearDuration + 1;
 
                     mapPawns[i].mindState.mentalStateHandler.TryStartMentalState(mentalStateFlee, "scared by something nearby", true, false, null, true);
                     mapPawns[i].jobs.TryTakeOrderedJob(job, JobTag.Misc);
@@ -111,7 +106,7 @@ namespace RBM_Minotaur
                 {
                     //LocalTargetInfo target_location = new LocalTargetInfo(building.InteractionCell);
                     if (pawn.CanReserveAndReach(building.InteractionCell, PathEndMode.OnCell, Danger.Deadly))
-                    { 
+                    {
                         cell = building.InteractionCell;
                         return true;
                     }

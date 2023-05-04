@@ -13,7 +13,7 @@ namespace RBM_Minotaur
         [HarmonyPatch(typeof(LovePartnerRelationUtility), nameof(LovePartnerRelationUtility.GetLovinMtbHours))]
         [HarmonyPostfix]
         // Adjusts Mean Time Between Lovin' for pawns in heat
-        public static void GetLovinMtbHours_Postfix(ref float __result, Pawn pawn, Pawn partner)   
+        public static void GetLovinMtbHours_Postfix(ref float __result, Pawn pawn, Pawn partner)
         {
             //Log message if dewbug is enabled
             if (MinotaurSettings.debugMessages) { Log.Message("RBM Is Running: (Lovin Patch) public static void GetLovinMtbHours_Postfix(ref float __result, Pawn pawn, Pawn partner)"); }
@@ -28,7 +28,7 @@ namespace RBM_Minotaur
     public class Gene_RBM_EstrousCycle : Gene
     {
         // Adds the 'In Heat' hediff to pawns with the Estrous Cycle gene in ApriMay
-        public override void Tick() 
+        public override void Tick()
         {
             base.Tick();
 
@@ -58,7 +58,7 @@ namespace RBM_Minotaur
             }
 
             //Remove Hediff if it is not aprimay
-            else if ( !isAprimay && pawnHasHeatHediff ) 
+            else if (!isAprimay && pawnHasHeatHediff)
             {
                 Hediff HeatHediff = this.pawn.health.hediffSet.GetFirstHediffOfDef(RBM_DefOf.EstrousHeat);
                 this.pawn.health.RemoveHediff(HeatHediff);

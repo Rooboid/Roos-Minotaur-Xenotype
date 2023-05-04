@@ -1,13 +1,7 @@
 ﻿using HarmonyLib;
-using RimWorld;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Verse;
-using Verse.AI;
-using Verse.Noise;
 
 namespace RBM_Minotaur
 {
@@ -19,14 +13,14 @@ namespace RBM_Minotaur
         // Regenerates Chunks with no weapon class - allows existing maps to be used when the mod is newly installed.
         public static void MapPostTick_Postfix(Map __instance)
         {
-            
+
             try
             {
                 if (__instance.IsHashIntervalTick(60) && MinotaurSettings.regenChunks == true) //Hash interval should be 3000 
                 {
                     if (MinotaurSettings.debugMessages) { Log.Message("RBM Is Running: public static void MapPostTick_Postfix(ref Map __instance)"); }
                     int numRegen = 0;
-                    
+
                     List<Thing> allThings = __instance.listerThings.AllThings;
                     for (int i = 0; i < allThings.Count; i++)
                     {

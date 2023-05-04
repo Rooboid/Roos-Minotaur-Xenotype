@@ -42,7 +42,7 @@ public static class RBM_DefOf
 
     //Worktypes
     public static WorkTypeDef BasicWorker;
-    
+
     //Chunks
     public static ThingDef ChunkGranite;
     public static ThingDef ChunkSandstone;

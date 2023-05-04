@@ -1,7 +1,7 @@
 ﻿using HarmonyLib;
 using RimWorld;
-using Verse;
 using System;
+using Verse;
 
 
 
@@ -91,7 +91,7 @@ namespace RBM_Minotaur
 
             if (MinotaurSettings.canEquipHeavy == true)
             {
-                if(pawn.story.traits.HasTrait(RBM_DefOf.RBM_Herculean_Trait) == false)
+                if (pawn.story.traits.HasTrait(RBM_DefOf.RBM_Herculean_Trait) == false)
                 {
                     pawn.story.traits.GainTrait(new Trait(RBM_DefOf.RBM_Herculean_Trait));
                 }

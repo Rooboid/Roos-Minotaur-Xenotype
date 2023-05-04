@@ -21,7 +21,7 @@ namespace RBM_Minotaur
         public override void Notify_PawnKilled()
         {
             Log.Message("public override void Notify_PawnKilled()");
-            
+
             base.Notify_PawnKilled();
 
             if (!base.Pawn.RaceProps.Humanlike)
@@ -96,13 +96,13 @@ namespace RBM_Minotaur
             }
 
             //thing.stackCount = Props.goldAmount;
-            if (MinotaurSettings.midasGoldAmount != 0 )
+            if (MinotaurSettings.midasGoldAmount != 0)
             {
                 Thing thing = ThingMaker.MakeThing(ThingDefOf.Gold, null);
                 thing.stackCount = MinotaurSettings.midasGoldAmount;
                 GenSpawn.Spawn(thing, pawnPos, map, WipeMode.VanishOrMoveAside);
             }
-            
+
         }
     }
 
