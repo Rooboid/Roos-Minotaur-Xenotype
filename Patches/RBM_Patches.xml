@@ -99,7 +99,7 @@
 						<li>Apparel</li>
 					</thingCategories>
 					<apparel>
-						<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+						<developmentalStageFilter>Adult</developmentalStageFilter>
 						<bodyPartGroups>
 							<li>Neck</li>
 							<li>Torso</li>
