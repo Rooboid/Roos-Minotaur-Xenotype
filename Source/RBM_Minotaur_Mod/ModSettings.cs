@@ -20,7 +20,7 @@ namespace RBM_Minotaur
         public const bool debugMessagesDefault = false;
         public const bool disableChunksDefault = false;
         public const bool regenChunksDefault = true;
-        public const bool canEquipHeavyDefault = false;
+        public const bool canEquipHeavyDefault = true;
 
 
 
