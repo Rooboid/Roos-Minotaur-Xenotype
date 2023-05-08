@@ -31,18 +31,6 @@ namespace RBM_Minotaur
                 return false;
             }
 
-            //If weapon or armour are VFE Heavy, return true if the pawn has the herculean trait, otherwise return __result 
-//            if (thing.def.weaponTags?.Contains("WarcasketAll") == true || thing.def.weaponTags?.Contains("HeavyGun") == true)
-//            {
-//                if (pawn.genes?.HasGene(RBM_DefOf.RBM_Herculean) == true)
-//                {
-//                    //Log.Message("Checked weapon and returned true");
-//                    return true;
-//                }
-//                return __result;
-//            }
-
-
             return __result;
         }
 
