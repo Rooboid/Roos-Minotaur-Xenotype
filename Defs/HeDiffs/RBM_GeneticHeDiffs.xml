@@ -143,6 +143,7 @@
 		<label>unguligrade leg</label>
 		<labelNoun>an unguligrade leg</labelNoun>
 		<description>An unguligrade leg with a cloven hoof, perfect for hotfooting it out of trouble, not-so-perfect for keeping the floor clean.</description>
+		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
 		<addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>1</partEfficiency>
