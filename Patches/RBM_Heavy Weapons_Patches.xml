@@ -2,6 +2,7 @@
 <Patch>
 
 	<!--  Patch for VFE Pirates-->
+	
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Vanilla Factions Expanded - Pirates</li>
@@ -23,7 +24,7 @@
 					</value>
 				</li>
 				
-				<li Class="PatchOperationConditional">
+<!-- 				<li Class="PatchOperationConditional">
 					<xpath>/Defs/GeneDef[defName="RBM_Herculean"]/forcedTraits</xpath>
 					<nomatch Class="PatchOperationAdd">
 						<xpath>/Defs/GeneDef[defName="RBM_Herculean"]</xpath>
@@ -35,13 +36,14 @@
 							</forcedTraits>
 						</value>
 					</nomatch>
-				</li>
+				</li> -->
 				
 			</operations>
 		</match>
 	</Operation>
     
 	<!--  Patch for VFE Heavy Weapons-->
+	
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Vanilla Weapons Expanded - Heavy Weapons</li>
@@ -56,7 +58,7 @@
 					</value>
 				</li>
 
-				<li Class="PatchOperationConditional">
+<!-- 				<li Class="PatchOperationConditional">
 					<xpath>/Defs/GeneDef[defName="RBM_Herculean"]/forcedTraits</xpath>
 					<nomatch Class="PatchOperationAdd">
 						<xpath>/Defs/GeneDef[defName="RBM_Herculean"]</xpath>
@@ -68,7 +70,7 @@
 							</forcedTraits>
 						</value>
 					</nomatch>
-				</li>
+				</li> -->
 
 			</operations>
 		</match>
