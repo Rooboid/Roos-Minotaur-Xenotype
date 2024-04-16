@@ -64,7 +64,7 @@ namespace RBM_Minotaur
         {
             if (MinotaurSettings.debugMessages) { Log.Message("RBM Is Running: public static bool terrifyInArea(IntVec3 position, Map map, float radius = 5, Pawn originPawn = null)"); }
             if (map == null) { return false; }
-            List<Pawn> mapPawns = map.mapPawns.AllPawnsSpawned;
+            List<Pawn> mapPawns = (List<Pawn>)map.mapPawns.AllPawnsSpawned;
 
             for (int i = 0; i < mapPawns.Count; i++)
             {
@@ -86,7 +86,7 @@ namespace RBM_Minotaur
                     mentalStateFlee.minTicksBeforeRecovery = MinotaurSettings.SeeRedFearDuration;
                     mentalStateFlee.maxTicksBeforeRecovery = MinotaurSettings.SeeRedFearDuration + 1;
 
-                    mapPawns[i].mindState.mentalStateHandler.TryStartMentalState(mentalStateFlee, "scared by something nearby", true, false, null, true);
+                    mapPawns[i].mindState.mentalStateHandler.TryStartMentalState(mentalStateFlee, "scared by something nearby", true, false, true, null);
                     mapPawns[i].jobs.TryTakeOrderedJob(job, JobTag.Misc);
                 }
             }

@@ -20,7 +20,7 @@ namespace RBM_Minotaur
         // Overrides Notify_PawnKilled to create an effect when a humanlike pawn is killed under the effects of midas touch.
         public override void Notify_PawnKilled()
         {
-            Log.Message("public override void Notify_PawnKilled()");
+            //Log.Message("public override void Notify_PawnKilled()");
 
             base.Notify_PawnKilled();
 
@@ -65,10 +65,10 @@ namespace RBM_Minotaur
 
         // Overrides Notify_PawnDied to spawn gold when a humanlike pawn is killed under the effects of midas touch.
 
-        public override void Notify_PawnDied()
+        public override void Notify_PawnDied(DamageInfo? dinfo, Hediff culprit = null)
         {
-            Log.Message("public override void Notify_PawnDied()");
-            base.Notify_PawnDied();
+            //Log.Message("public override void Notify_PawnDied()");
+            base.Notify_PawnDied(dinfo, culprit);
 
             if (!base.Pawn.RaceProps.Humanlike)
             {

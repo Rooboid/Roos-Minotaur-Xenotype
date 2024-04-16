@@ -45,7 +45,7 @@ namespace RBM_Minotaur
             Pawn Partner = (Pawn)((Thing)__instance.job.GetTarget(___PartnerInd));
             if (Partner.genes.HasGene(RBM_DefOf.RBM_Herculean))
             {
-                if (__instance.pawn.story?.traits?.HasTrait(TraitDefOf.Masochist) == true)  //Give a positive version to masochists
+                if (__instance.pawn.story?.traits?.HasTrait(RBM_DefOf.Masochist) == true)  //Give a positive version to masochists
                 {
                     __instance.pawn.needs.mood.thoughts.memories.TryGainMemory(RBM_DefOf.RBM_CrushedMasochist);
                 }

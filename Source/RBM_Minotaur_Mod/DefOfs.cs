@@ -23,6 +23,7 @@ public static class RBM_DefOf
 
     //Traits
     public static TraitDef RBM_Herculean_Trait;
+    public static TraitDef Masochist;
 
     //MentalStates
     public static MentalStateDef RBM_TerrifiedFlee;

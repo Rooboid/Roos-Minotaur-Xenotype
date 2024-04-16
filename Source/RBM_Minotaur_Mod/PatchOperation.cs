@@ -17,7 +17,7 @@ namespace RBM_Minotaur
             }
             return false;
         }
-        private PatchOperation match;
+        public PatchOperation match;
     }
 
 }
