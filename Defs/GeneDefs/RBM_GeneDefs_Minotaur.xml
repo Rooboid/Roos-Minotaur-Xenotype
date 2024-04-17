@@ -9,7 +9,7 @@
 		<label>bovine ears</label>
 		<description>Carriers of this gene possess large, bovine ears.</description>
 		<iconPath>UI/GeneIcons/RBM_BovineEars</iconPath>
-		<graphicData>
+		<!-- <graphicData>
 			<graphicPaths>
 				<li>Things/Pawn/Humanlike/Ears/RBM_Ears1/RBM_Ears1</li>
 				<li>Things/Pawn/Humanlike/Ears/RBM_Ears2/RBM_Ears2</li>
@@ -19,7 +19,24 @@
 			</graphicPaths>
 			<colorType>Skin</colorType>
 			<layer>PostSkin</layer>
-		</graphicData>
+		</graphicData> -->
+		<renderNodeProperties>
+		  <li>
+			<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+			<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+			<texPath>Things/Pawn/Humanlike/Ears/RBM_Ears1/RBM_Ears1</texPath>
+			<colorType>Skin</colorType>
+			<parentTagDef>Head</parentTagDef>
+			<useSkinShader>true</useSkinShader>
+			<useRottenColor>true</useRottenColor>
+			<rotDrawMode>Fresh, Rotting</rotDrawMode>
+			<drawData>
+			  <defaultData>
+				<layer>70</layer>
+			  </defaultData>
+			</drawData>
+		  </li>
+		</renderNodeProperties>
 		<symbolPack>
 			<prefixSymbols>
 				<li><symbol>bo</symbol></li>
@@ -32,6 +49,8 @@
 		</symbolPack>
 	</GeneDef>
 	
+	
+	
 	<!-- Bovine Horns -->
 
 	<GeneDef ParentName="GeneHeadboneBase">
@@ -39,7 +58,7 @@
 		<label>bovine horns</label>
 		<description>Carriers of this gene sport a pair of formidable horns atop their head. It's not about how big they are, it's about how you use them.</description>
 		<iconPath>UI/GeneIcons/RBM_BovineHorns</iconPath>
-		<graphicData>
+		<!-- <graphicData>
 			<graphicPaths>
 				<li>Things/Pawn/Humanlike/Horns/RBM_Horns1/RBM_Horns1</li>
 				<li>Things/Pawn/Humanlike/Horns/RBM_Horns2/RBM_Horns2</li>
@@ -52,10 +71,24 @@
 				<li>Things/Pawn/Humanlike/Horns/RBM_Horns9/RBM_Horns9</li>
 				<li>Things/Pawn/Humanlike/Horns/RBM_Horns10/RBM_Horns10</li>
 			</graphicPaths>
-			<color>(255, 255, 255)</color>
-			<layer>PostHeadgear</layer>
-			<drawNorthAfterHair>true</drawNorthAfterHair>
-		</graphicData>
+		</graphicData> -->
+		<renderNodeProperties>
+		  <li>
+			<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+			<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+			<texPath>Things/Pawn/Humanlike/Horns/RBM_Horns1/RBM_Horns1</texPath>
+			<colorType>Skin</colorType>
+			<parentTagDef>Head</parentTagDef>
+			<useSkinShader>true</useSkinShader>
+			<useRottenColor>true</useRottenColor>
+			<rotDrawMode>Fresh, Rotting</rotDrawMode>
+			<drawData>
+			  <defaultData>
+				<layer>70</layer>
+			  </defaultData>
+			</drawData>
+		  </li>
+		</renderNodeProperties>
 		<symbolPack>
 			<prefixSymbols>
 				<li><symbol>bull</symbol></li>
@@ -99,9 +132,9 @@
 			<li>RBM_NarrowHeadM2</li>
 			<li>RBM_NarrowHeadM3</li>
 		</forcedHeadTypes>
-		<graphicData>
+		<!-- <graphicData>
 			<graphicPaths>
-				<!-- Blank (Duplicated for increased commonality) -->
+
 				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
 				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
 				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
@@ -116,11 +149,11 @@
 				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
 				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
 				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
-				<!-- Nosering -->
+
 				<li>Things/Pawn/Humanlike/Markings/Head_NoseRing/Ring</li>
 				<li>Things/Pawn/Humanlike/Markings/Head_NoseRing/Ring</li>
 				<li>Things/Pawn/Humanlike/Markings/Head_NoseRing/Ring</li>
-				<!-- Markings -->
+
 				<li>Things/Pawn/Humanlike/Markings/Head_Bull1/Bull1</li>
 				<li>Things/Pawn/Humanlike/Markings/Head_Bull2/Bull2</li>
 				<li>Things/Pawn/Humanlike/Markings/Head_Bull3/Bull3</li>
@@ -132,7 +165,24 @@
 			</graphicPaths>
 			<visibleNorth>false</visibleNorth>
 			<layer>PostSkin</layer>
-		</graphicData>
+		</graphicData> -->
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Things/Pawn/Humanlike/Markings/Head_NoseRing/Ring</texPath>
+				<colorType>Skin</colorType>
+				<parentTagDef>Head</parentTagDef>
+				<useSkinShader>true</useSkinShader>
+				<useRottenColor>true</useRottenColor>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<drawData>
+				  <defaultData>
+					<layer>70</layer>
+				  </defaultData>
+				</drawData>
+			  </li>
+		</renderNodeProperties>
 		<symbolPack>
 			<prefixSymbols>
 				<li><symbol>bull</symbol></li>
@@ -160,10 +210,6 @@
 		<randomBrightnessFactor>6</randomBrightnessFactor>
 		<skinColorOverride>(200, 140, 110)</skinColorOverride>
 		<displayOrderInCategory>99</displayOrderInCategory>
-		<graphicData>
-			<visibleNorth>false</visibleNorth>
-			<layer>PostSkin</layer>
-		</graphicData>
 		<symbolPack>
 			<prefixSymbols>
 				<li><symbol>terra</symbol></li>

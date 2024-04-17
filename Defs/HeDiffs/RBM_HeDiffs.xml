@@ -26,7 +26,7 @@
 				<showRemainingTime>false</showRemainingTime>
 			</li>
 			<li Class="HediffCompProperties_RemoveIfOtherHediff">
-				<otherHediff>HeDiffSeeRed</otherHediff>
+				<hediffs><li>HeDiffSeeRed</li></hediffs>
 				<stages>2~</stages>
 				<mtbHours>0</mtbHours>
 			</li>
@@ -111,7 +111,7 @@
 				<severityPerDay>200</severityPerDay>
 			</li>
 			<li Class="HediffCompProperties_RemoveIfOtherHediff">
-				<otherHediff>HearingLoss</otherHediff>
+				<hediffs><li>HearingLoss</li></hediffs>
 				<mtbHours>0</mtbHours>
 			</li>
 		</comps>

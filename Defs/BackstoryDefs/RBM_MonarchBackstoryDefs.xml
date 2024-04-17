@@ -17,10 +17,7 @@
 			<li>ProtectedMonarch</li>
 		</spawnCategories>
 		<skillGains>
-			<li>
-				<key>Social</key>
-				<value>5</value>
-			</li>
+			<Social>5</Social>
 		</skillGains>
 		<forcedTraits>
 			<Bisexual>0</Bisexual>
@@ -47,10 +44,7 @@
 			<li>ProtectedMonarch</li>
 		</spawnCategories>
 		<skillGains>
-			<li>
-				<key>Social</key>
-				<value>3</value>
-			</li>
+			<Social>3</Social>
 		</skillGains>
 		<forcedTraits>
 			<Greedy>0</Greedy>
@@ -84,18 +78,9 @@
 			<li>ProtectedMonarch</li>
 		</spawnCategories>
 		<skillGains>
-			<li>
-				<key>Cooking</key>
-				<value>1</value>
-			</li>
-			<li>
-				<key>Shooting</key>
-				<value>3</value>
-			</li>
-			<li>
-				<key>Social</key>
-				<value>-3</value>
-			</li>
+			<Cooking>1</Cooking>
+			<Shooting>3</Shooting>
+			<Social>-3</Social>
 		</skillGains>
 		<forcedTraits>
 			<Wimp>0</Wimp>
@@ -120,18 +105,9 @@
 			<li>ProtectedMonarch</li>
 		</spawnCategories>
 		<skillGains>
-			<li>
-				<key>Mining</key>
-				<value>5</value>
-			</li>
-			<li>
-				<key>Plants</key>
-				<value>2</value>
-			</li>
-			<li>
-				<key>Intellectual</key>
-				<value>7</value>
-			</li>
+			<Mining>5</Mining>
+			<Plants>2</Plants>
+			<Intellectual>7</Intellectual>
 		</skillGains>
 		<forcedTraits>
 			<Nimble>0</Nimble>

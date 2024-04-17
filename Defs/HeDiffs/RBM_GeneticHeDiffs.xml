@@ -106,7 +106,7 @@
 		<description>This pawn is currently in heat.</description>
 		<comps>
 			<li Class="HediffCompProperties_RemoveIfOtherHediff">
-				<otherHediff>Sterilized</otherHediff>
+				<hediffs><li>Sterilized</li></hediffs>
 			</li>
 		</comps>
 		<stages>

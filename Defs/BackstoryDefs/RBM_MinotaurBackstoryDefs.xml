@@ -17,14 +17,8 @@
 			<li>MinotaurGuardian</li>
 		</spawnCategories>
 		<skillGains>
-			<li>
-				<key>Shooting</key>
-				<value>5</value>
-			</li>
-			<li>
-				<key>Melee</key>
-				<value>5</value>
-			</li>
+			<Shooting>5</Shooting>
+			<Melee>5</Melee>
 		</skillGains>
 		<forcedTraits>
 			<Tough>0</Tough>
@@ -57,18 +51,9 @@
 			<li>MinotaurGuardian</li>
 		</spawnCategories>
 		<skillGains>
-			<li>
-				<key>Shooting</key>
-				<value>3</value>
-			</li>
-			<li>
-				<key>Melee</key>
-				<value>3</value>
-			</li>
-			<li>
-				<key>Cooking</key>
-				<value>3</value>
-			</li>
+			<Shooting>3</Shooting>
+			<Melee>3</Melee>
+			<Cooking>3</Cooking>
 		</skillGains>
 		<forcedTraits>
 			<Asexual>0</Asexual>
@@ -98,18 +83,9 @@
 			<li>MinotaurGuardian</li>
 		</spawnCategories>
 		<skillGains>
-			<li>
-				<key>Shooting</key>
-				<value>7</value>
-			</li>
-			<li>
-				<key>Melee</key>
-				<value>4</value>
-			</li>
-			<li>
-				<key>Social</key>
-				<value>-4</value>
-			</li>
+			<Shooting>7</Shooting>
+			<Melee>4</Melee>
+			<Social>-4</Social>
 		</skillGains>
 		<forcedTraits>
 			<Psychopath>0</Psychopath>
@@ -139,22 +115,10 @@
 			<li>MinotaurGuardian</li>
 		</spawnCategories>
 		<skillGains>
-			<li>
-				<key>Shooting</key>
-				<value>2</value>
-			</li>
-			<li>
-				<key>Melee</key>
-				<value>6</value>
-			</li>
-			<li>
-				<key>Cooking</key>
-				<value>-2</value>
-			</li>
-			<li>
-				<key>Plants</key>
-				<value>-2</value>
-			</li>
+			<Shooting>2</Shooting>
+			<Melee>6</Melee>
+			<Cooking>-2</Cooking>
+			<Plants>-2</Plants>
 		</skillGains>
 		<forcedTraits>
 			<Kind>0</Kind>
@@ -184,22 +148,10 @@
 			<li>MinotaurGuardian</li>
 		</spawnCategories>
 		<skillGains>
-			<li>
-				<key>Shooting</key>
-				<value>8</value>
-			</li>
-			<li>
-				<key>Melee</key>
-				<value>5</value>
-			</li>
-			<li>
-				<key>Cooking</key>
-				<value>4</value>
-			</li>
-			<li>
-				<key>Medicine</key>
-				<value>6</value>
-			</li>
+			<Shooting>8</Shooting>
+			<Melee>5</Melee>
+			<Cooking>4</Cooking>
+			<Medicine>6</Medicine>
 		</skillGains>
 		<forcedTraits>
 			<FastLearner>0</FastLearner>
@@ -231,18 +183,9 @@
 			<li>MinotaurGuardian</li>
 		</spawnCategories>
 		<skillGains>
-			<li>
-				<key>Shooting</key>
-				<value>8</value>
-			</li>
-			<li>
-				<key>Melee</key>
-				<value>3</value>
-			</li>
-			<li>
-				<key>Medicine</key>
-				<value>5</value>
-			</li>
+			<Shooting>8</Shooting>
+			<Melee>3</Melee>
+			<Medicine>5</Medicine>
 		</skillGains>
 		<forcedTraits>
 			<Tough>0</Tough>
@@ -269,18 +212,9 @@
 			<li>MinotaurGuardian</li>
 		</spawnCategories>
 		<skillGains>
-			<li>
-				<key>Shooting</key>
-				<value>3</value>
-			</li>
-			<li>
-				<key>Social</key>
-				<value>-5</value>
-			</li>
-			<li>
-				<key>Artistic</key>
-				<value>7</value>
-			</li>
+			<Shooting>3</Shooting>
+			<Social>-5</Social>
+			<Artistic>7</Artistic>
 		</skillGains>
 		<forcedTraits>
 			<Nerves>2</Nerves>
@@ -308,18 +242,9 @@
 			<li>MinotaurGuardian</li>
 		</spawnCategories>
 		<skillGains>
-			<li>
-				<key>Melee</key>
-				<value>5</value>
-			</li>
-			<li>
-				<key>Social</key>
-				<value>7</value>
-			</li>
-			<li>
-				<key>Medicine</key>
-				<value>3</value>
-			</li>
+			<Melee>5</Melee>
+			<Social>7</Social>
+			<Medicine>3</Medicine>
 		</skillGains>
 		<forcedTraits>
 			<Kind>0</Kind>
@@ -346,18 +271,9 @@
 			<li>MinotaurGuardian</li>
 		</spawnCategories>
 		<skillGains>
-			<li>
-				<key>Shooting</key>
-				<value>10</value>
-			</li>
-			<li>
-				<key>Melee</key>
-				<value>5</value>
-			</li>
-			<li>
-				<key>Social</key>
-				<value>3</value>
-			</li>
+			<Shooting>10</Shooting>
+			<Melee>5</Melee>
+			<Social>3</Social>
 		</skillGains>
 		<forcedTraits>
 			<NaturalMood>-2</NaturalMood>
@@ -385,22 +301,10 @@
 			<li>MinotaurGuardian</li>
 		</spawnCategories>
 		<skillGains>
-			<li>
-				<key>Shooting</key>
-				<value>-5</value>
-			</li>
-			<li>
-				<key>Melee</key>
-				<value>5</value>
-			</li>
-			<li>
-				<key>Cooking</key>
-				<value>-3</value>
-			</li>
-			<li>
-				<key>Crafting</key>
-				<value>-3</value>
-			</li>
+			<Shooting>-5</Shooting>
+			<Melee>5</Melee>
+			<Cooking>-3</Cooking>
+			<Crafting>-3</Crafting>
 		</skillGains>
 		<forcedTraits>
 			<Nerves>-1</Nerves>
@@ -427,22 +331,10 @@
 			<li>MinotaurGuardian</li>
 		</spawnCategories>
 		<skillGains>
-			<li>
-				<key>Shooting</key>
-				<value>10</value>
-			</li>
-			<li>
-				<key>Melee</key>
-				<value>9</value>
-			</li>
-			<li>
-				<key>Cooking</key>
-				<value>3</value>
-			</li>
-			<li>
-				<key>Medicine</key>
-				<value>4</value>
-			</li>
+			<Shooting>10</Shooting>
+			<Melee>9</Melee>
+			<Cooking>3</Cooking>
+			<Medicine>4</Medicine>
 		</skillGains>
 		<disallowedTraits>
 			<Wimp>0</Wimp>
@@ -466,30 +358,12 @@
 			<li>MinotaurGuardian</li>
 		</spawnCategories>
 		<skillGains>
-			<li>
-				<key>Shooting</key>
-				<value>11</value>
-			</li>
-			<li>
-				<key>Melee</key>
-				<value>5</value>
-			</li>
-			<li>
-				<key>Cooking</key>
-				<value>7</value>
-			</li>
-			<li>
-				<key>Social</key>
-				<value>3</value>
-			</li>
-			<li>
-				<key>Medicine</key>
-				<value>3</value>
-			</li>
-			<li>
-				<key>Intellectual</key>
-				<value>3</value>
-			</li>
+			<Shooting>11</Shooting>
+			<Melee>5</Melee>
+			<Cooking>7</Cooking>
+			<Social>3</Social>
+			<Medicine>3</Medicine>
+			<Intellectual>3</Intellectual>
 		</skillGains>
 		<forcedTraits>
 			<Nimble>0</Nimble>
@@ -516,22 +390,10 @@
 			<li>MinotaurGuardian</li>
 		</spawnCategories>
 		<skillGains>
-			<li>
-				<key>Shooting</key>
-				<value>6</value>
-			</li>
-			<li>
-				<key>Melee</key>
-				<value>7</value>
-			</li>
-			<li>
-				<key>Cooking</key>
-				<value>5</value>
-			</li>
-			<li>
-				<key>Social</key>
-				<value>-5</value>
-			</li>
+			<Shooting>6</Shooting>
+			<Melee>7</Melee>
+			<Cooking>5</Cooking>
+			<Social>-5</Social>
 		</skillGains>
 		<forcedTraits>
 			<Bisexual>0</Bisexual>
@@ -558,18 +420,9 @@
 			<li>MinotaurGuardian</li>
 		</spawnCategories>
 		<skillGains>
-			<li>
-				<key>Shooting</key>
-				<value>2</value>
-			</li>
-			<li>
-				<key>Melee</key>
-				<value>5</value>
-			</li>
-			<li>
-				<key>Animals</key>
-				<value>10</value>
-			</li>
+			<Shooting>2</Shooting>
+			<Melee>5</Melee>
+			<Animals>10</Animals>
 		</skillGains>
 		<forcedTraits>
 			<Nerves>1</Nerves>
@@ -598,10 +451,7 @@
 			<li>Minotaur</li>
 		</spawnCategories>
 		<skillGains>
-			<li>
-				<key>Social</key>
-				<value>5</value>
-			</li>
+			<Social>5</Social>
 		</skillGains>
 		<forcedTraits>
 			<Beauty>2</Beauty>
@@ -628,10 +478,7 @@
 			<li>MinotaurWild</li>
 		</spawnCategories>
 		<skillGains>
-			<li>
-				<key>Social</key>
-				<value>-3</value>
-			</li>
+			<Social>-3</Social>
 		</skillGains>
 		<forcedTraits>
 			<Nimble>0</Nimble>
@@ -656,18 +503,9 @@
 			<li>Minotaur</li>
 		</spawnCategories>
 		<skillGains>
-			<li>
-				<key>Social</key>
-				<value>-5</value>
-			</li>
-			<li>
-				<key>Plants</key>
-				<value>5</value>
-			</li>
-			<li>
-				<key>Construction</key>
-				<value>3</value>
-			</li>
+			<Social>-5</Social>
+			<Plants>5</Plants>
+			<Construction>3</Construction>
 		</skillGains>
 	</BackstoryDef>
 
@@ -687,18 +525,9 @@
 			<li>MinotaurWild</li>
 		</spawnCategories>
 		<skillGains>
-			<li>
-				<key>Social</key>
-				<value>-7</value>
-			</li>
-			<li>
-				<key>Melee</key>
-				<value>3</value>
-			</li>
-			<li>
-				<key>Plants</key>
-				<value>2</value>
-			</li>
+			<Social>-7</Social>
+			<Melee>3</Melee>
+			<Plants>2</Plants>
 		</skillGains>
 		<forcedTraits>
 			<Recluse>0</Recluse>
@@ -724,14 +553,8 @@
 			<li>MinotaurWild</li>
 		</spawnCategories>
 		<skillGains>
-			<li>
-				<key>Melee</key>
-				<value>9</value>
-			</li>
-			<li>
-				<key>Animals</key>
-				<value>5</value>
-			</li>
+			<Melee>9</Melee>
+			<Animals>5</Animals>
 		</skillGains>
 		<disallowedTraits>
 			<NaturalMood>2</NaturalMood>
@@ -759,14 +582,8 @@
 			<li>Minotaur</li>
 		</spawnCategories>
 		<skillGains>
-			<li>
-				<key>Social</key>
-				<value>7</value>
-			</li>
-			<li>
-				<key>Melee</key>
-				<value>-3</value>
-			</li>
+			<Social>7</Social>
+			<Melee>-3</Melee>
 		</skillGains>
 		<forcedTraits>
 			<Kind>0</Kind>
@@ -790,10 +607,7 @@
 			<li>Minotaur</li>
 		</spawnCategories>
 		<skillGains>
-			<li>
-				<key>Melee</key>
-				<value>11</value>
-			</li>
+			<Melee>11</Melee>
 		</skillGains>
 		<forcedTraits>
 			<Bloodlust>0</Bloodlust>
@@ -822,18 +636,9 @@
 			<li>Minotaur</li>
 		</spawnCategories>
 		<skillGains>
-			<li>
-				<key>Melee</key>
-				<value>3</value>
-			</li>
-			<li>
-				<key>Plants</key>
-				<value>7</value>
-			</li>
-			<li>
-				<key>Construction</key>
-				<value>2</value>
-			</li>
+			<Melee>3</Melee>
+			<Plants>7</Plants>
+			<Construction>2</Construction>
 		</skillGains>
 		<disallowedTraits>
 			<Wimp>0</Wimp>
@@ -859,10 +664,7 @@
 			<li>MinotaurWild</li>
 		</spawnCategories>
 		<skillGains>
-			<li>
-				<key>Melee</key>
-				<value>7</value>
-			</li>
+			<Melee>7</Melee>
 		</skillGains>
 		<forcedTraits>
 			<Nerves>-1</Nerves>
@@ -892,10 +694,7 @@
 			<li>Minotaur</li>
 		</spawnCategories>
 		<skillGains>
-			<li>
-				<key>Social</key>
-				<value>6</value>
-			</li>
+			<Social>6</Social>
 		</skillGains>
 		<forcedTraits>
 			<Beauty>1</Beauty>
@@ -925,10 +724,7 @@
 			<li>Minotaur</li>
 		</spawnCategories>
 		<skillGains>
-			<li>
-				<key>Melee</key>
-				<value>8</value>
-			</li>
+			<Melee>8</Melee>
 		</skillGains>
 		<forcedTraits>
 			<Undergrounder>0</Undergrounder>
@@ -957,14 +753,8 @@
 			<li>MinotaurWild</li>
 		</spawnCategories>
 		<skillGains>
-			<li>
-				<key>Melee</key>
-				<value>12</value>
-			</li>
-			<li>
-				<key>Animals</key>
-				<value>5</value>
-			</li>
+			<Melee>12</Melee>
+			<Animals>5</Animals>
 		</skillGains>
 		<forcedTraits>
 			<Psychopath>0</Psychopath>
