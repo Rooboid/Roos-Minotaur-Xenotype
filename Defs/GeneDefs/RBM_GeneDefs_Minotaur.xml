@@ -24,7 +24,13 @@
 		  <li>
 			<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
 			<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-			<texPath>Things/Pawn/Humanlike/Ears/RBM_Ears1/RBM_Ears1</texPath>
+			<texPaths>
+				<li>Things/Pawn/Humanlike/Ears/RBM_Ears1/RBM_Ears1</li>
+				<li>Things/Pawn/Humanlike/Ears/RBM_Ears2/RBM_Ears2</li>
+				<li>Things/Pawn/Humanlike/Ears/RBM_Ears3/RBM_Ears3</li>
+				<li>Things/Pawn/Humanlike/Ears/RBM_Ears4/RBM_Ears4</li>
+				<li>Things/Pawn/Humanlike/Ears/RBM_Ears5/RBM_Ears5</li>
+			</texPaths>
 			<colorType>Skin</colorType>
 			<parentTagDef>Head</parentTagDef>
 			<useSkinShader>true</useSkinShader>
@@ -76,11 +82,23 @@
 		  <li>
 			<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
 			<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-			<texPath>Things/Pawn/Humanlike/Horns/RBM_Horns1/RBM_Horns1</texPath>
-			<colorType>Skin</colorType>
+			<texPaths>
+				<li>Things/Pawn/Humanlike/Horns/RBM_Horns1/RBM_Horns1</li>
+				<li>Things/Pawn/Humanlike/Horns/RBM_Horns2/RBM_Horns2</li>
+				<li>Things/Pawn/Humanlike/Horns/RBM_Horns3/RBM_Horns3</li>
+				<li>Things/Pawn/Humanlike/Horns/RBM_Horns4/RBM_Horns4</li>
+				<li>Things/Pawn/Humanlike/Horns/RBM_Horns5/RBM_Horns5</li>
+				<li>Things/Pawn/Humanlike/Horns/RBM_Horns6/RBM_Horns6</li>
+				<li>Things/Pawn/Humanlike/Horns/RBM_Horns7/RBM_Horns7</li>
+				<li>Things/Pawn/Humanlike/Horns/RBM_Horns8/RBM_Horns8</li>
+				<li>Things/Pawn/Humanlike/Horns/RBM_Horns9/RBM_Horns9</li>
+				<li>Things/Pawn/Humanlike/Horns/RBM_Horns10/RBM_Horns10</li>
+			</texPaths>
+			<colorType>Custom</colorType>
+			<color>(255,255,255)</color>
 			<parentTagDef>Head</parentTagDef>
 			<useSkinShader>true</useSkinShader>
-			<useRottenColor>true</useRottenColor>
+			<useRottenColor>false</useRottenColor>
 			<rotDrawMode>Fresh, Rotting</rotDrawMode>
 			<drawData>
 			  <defaultData>
@@ -170,15 +188,44 @@
 			<li>
 				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
 				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-				<texPath>Things/Pawn/Humanlike/Markings/Head_NoseRing/Ring</texPath>
-				<colorType>Skin</colorType>
+				<texPaths>
+					<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
+					<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
+					<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
+					<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
+					<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
+					<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
+					<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
+					<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
+					<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
+					<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
+					<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
+					<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
+					<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
+					<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
+
+					<li>Things/Pawn/Humanlike/Markings/Head_NoseRing/Ring</li>
+					<li>Things/Pawn/Humanlike/Markings/Head_NoseRing/Ring</li>
+					<li>Things/Pawn/Humanlike/Markings/Head_NoseRing/Ring</li>
+
+					<li>Things/Pawn/Humanlike/Markings/Head_Bull1/Bull1</li>
+					<li>Things/Pawn/Humanlike/Markings/Head_Bull2/Bull2</li>
+					<li>Things/Pawn/Humanlike/Markings/Head_Bull3/Bull3</li>
+					<li>Things/Pawn/Humanlike/Markings/Head_Bull4/Bull4</li>
+					<li>Things/Pawn/Humanlike/Markings/Head_Cow1/Cow1</li>
+					<li>Things/Pawn/Humanlike/Markings/Head_Cow2/Cow2</li>
+					<li>Things/Pawn/Humanlike/Markings/Head_Cow3/Cow3</li>
+					<li>Things/Pawn/Humanlike/Markings/Head_Cow4/Cow4</li>
+				</texPaths>
+				<colorType>Custom</colorType>
+				<color>(255,215,0)</color>
 				<parentTagDef>Head</parentTagDef>
 				<useSkinShader>true</useSkinShader>
-				<useRottenColor>true</useRottenColor>
+				<useRottenColor>false</useRottenColor>
 				<rotDrawMode>Fresh, Rotting</rotDrawMode>
 				<drawData>
 				  <defaultData>
-					<layer>70</layer>
+					<layer>51</layer>
 				  </defaultData>
 				</drawData>
 			  </li>
@@ -266,6 +313,8 @@
 		<displayOrderInCategory>330</displayOrderInCategory>
 		<iconPath>UI/GeneIcons/RBM_BovineLegs</iconPath>
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<fur>RBM_UnguligradeLegs</fur>
+		<tattoosVisible>false</tattoosVisible>
 		<symbolPack>
 			<prefixSymbols>
 				<li><symbol>faun</symbol></li>
@@ -281,6 +330,18 @@
 				<li><symbol>ped</symbol></li>
 			</suffixSymbols>
 		</symbolPack>
+		<renderNodeProperties>
+		  <li>
+			<shaderTypeDef>CutoutSkinOverlay</shaderTypeDef>
+			<debugLabel>Fur</debugLabel>
+			<nodeClass>PawnRenderNode_Fur</nodeClass>
+			<workerClass>PawnRenderNodeWorker_Fur</workerClass>
+			<baseLayer>5</baseLayer>
+			<rotDrawMode>Fresh, Rotting</rotDrawMode>
+			<colorType>Hair</colorType>
+			<parentTagDef>Body</parentTagDef>
+		  </li>
+		</renderNodeProperties>
 		<!-- Thee following will occur if you ARE running vanilla framework expanded. If not, a patch is added to tie the gene buffs to the pawn, as opposed to the body part -->
 		<modExtensions>
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
