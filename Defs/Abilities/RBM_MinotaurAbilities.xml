@@ -66,6 +66,8 @@
 		<cooldownTicksRange>300000</cooldownTicksRange>
 		<aiCanUse>false</aiCanUse>
 		<warmupStartSound>RBM_Lactation</warmupStartSound>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
 		<statBases>
 			<Ability_Duration>0</Ability_Duration>
 			<Ability_EffectRadius>0</Ability_EffectRadius>
