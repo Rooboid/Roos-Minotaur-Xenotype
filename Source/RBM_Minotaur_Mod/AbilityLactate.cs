@@ -44,7 +44,7 @@ namespace RBM_Minotaur
                 return true;
             }
 
-            if (!this.parent.pawn.ageTracker.Adult)
+            if (this.parent.pawn.ageTracker.AgeBiologicalYears < 18)
             {
                 reason = "Pawn is not yet an adult.";
                 return true;

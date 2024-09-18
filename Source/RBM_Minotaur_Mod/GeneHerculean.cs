@@ -23,7 +23,7 @@ namespace RBM_Minotaur
             //If weapon or armour are Herculean, return true only if the parh has the herculean trait 
             if (thing.def.weaponClasses?.Contains(RBM_DefOf.RBM_HerculeanClass) == true || thing.def.apparel?.tags?.Contains("HerculeanApparel") == true)
             {
-                if (pawn.genes?.HasGene(RBM_DefOf.RBM_Herculean) == true)
+                if (pawn.genes?.HasActiveGene(RBM_DefOf.RBM_Herculean) == true)
                 {
                     return true;
                 }
@@ -43,7 +43,7 @@ namespace RBM_Minotaur
         {
             if (MinotaurSettings.debugMessages) { Log.Message("RBM Is Running: (Equip Postfix (crushed)) public static void MakeNewToils_Postfix(ref JobDriver_Lovin __instance, ref Verse.AI.TargetIndex ___PartnerInd)"); }
             Pawn Partner = (Pawn)((Thing)__instance.job.GetTarget(___PartnerInd));
-            if (Partner.genes.HasGene(RBM_DefOf.RBM_Herculean))
+            if (Partner.genes.HasActiveGene(RBM_DefOf.RBM_Herculean))
             {
                 if (__instance.pawn.story?.traits?.HasTrait(RBM_DefOf.Masochist) == true)  //Give a positive version to masochists
                 {

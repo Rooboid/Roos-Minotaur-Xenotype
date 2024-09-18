@@ -24,7 +24,7 @@ public static class WillEat_Minotaur
             return __result;
         }
 
-        if (p.genes?.HasGene(RBM_DefOf.RBM_RuminantStomach) == true)
+        if (p.genes?.HasActiveGene(RBM_DefOf.RBM_RuminantStomach) == true)
         {
             return true;
         }
@@ -38,7 +38,7 @@ public static class WillEat_Minotaur
     public static float Ingested_Postfix(float __result, Pawn ingester, Thing __instance)
     {
         if (RBM_Minotaur.MinotaurSettings.debugMessages) { Log.Message("RBM Is Running: (Eating Patch) public static float Ingested_Postfix(float __result, Pawn ingester, Thing __instance)  "); }
-        if (ingester != null && ingester.RaceProps.Humanlike && __instance.def.defName == "Hay" && !(ingester.genes.HasGene(RBM_DefOf.RBM_RuminantStomach)))
+        if (ingester != null && ingester.RaceProps.Humanlike && __instance.def.defName == "Hay" && !(ingester.genes.HasActiveGene(RBM_DefOf.RBM_RuminantStomach)))
         {
             Log.Warning("Pawn " + ingester.Name + " ate hay but doesnt have a Ruminant Stomach. No nutrition was gained - but this shouldn't happen without the pawn being forced.");
             return 0;
