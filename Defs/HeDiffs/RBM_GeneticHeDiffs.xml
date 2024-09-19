@@ -17,7 +17,7 @@
 		<initialSeverity>1</initialSeverity>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>-0.85</severityPerDay>
+				<severityPerDay>-2</severityPerDay>
 			</li>
 			<li Class="HediffCompProperties_Effecter">
 				<stateEffecter>RBM_TerrifiedEffect</stateEffecter>
@@ -36,7 +36,7 @@
 				</capMods>
 			</li>
 			<li>
-				<minSeverity>0.89</minSeverity>
+				<minSeverity>0.60</minSeverity>
 				<label>exhausted</label>
 				<capMods>
 					<li>
@@ -45,26 +45,26 @@
 					</li>
 					<li>
 						<capacity>Manipulation</capacity>
-						<offset>0.10</offset>
+						<offset>-0.20</offset>
 					</li>
 				</capMods>
 			</li>
 			<li>
-				<minSeverity>0.93</minSeverity>
+				<minSeverity>0.75</minSeverity>
 				<label>diminishing</label>
 				<capMods>
 					<li>
 						<capacity>Moving</capacity>
-						<offset>0.10</offset>
+						<offset>0.3</offset>
 					</li>
 					<li>
 						<capacity>Manipulation</capacity>
-						<offset>0.25</offset>
+						<offset>0.4</offset>
 					</li>
 				</capMods>
 			</li>
 			<li>
-				<minSeverity>0.96</minSeverity>
+				<minSeverity>0.90</minSeverity>
 				<label>intense</label>
 				<statOffsets>
 					<MeleeHitChance>15</MeleeHitChance>
@@ -74,11 +74,11 @@
 				<capMods>
 					<li>
 						<capacity>Moving</capacity>
-						<offset>0.50</offset>
+						<offset>0.7</offset>
 					</li>
 					<li>
 						<capacity>Manipulation</capacity>
-						<offset>0.80</offset>
+						<offset>1</offset>
 					</li>
 				</capMods>
 				<mentalStateGivers>
