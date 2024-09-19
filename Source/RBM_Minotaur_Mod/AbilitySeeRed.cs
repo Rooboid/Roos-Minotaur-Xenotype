@@ -1,4 +1,5 @@
 ﻿using RimWorld;
+using System;
 using Verse;
 
 namespace RBM_Minotaur
@@ -30,10 +31,25 @@ namespace RBM_Minotaur
             RBM_Utils.TerrifyInArea(position, map, radius, pawn);
         }
 
+        //Draws radius circle
         public override void DrawEffectPreview(LocalTargetInfo target)
         {
             if (MinotaurSettings.debugMessages) { Log.Message("RBM Is Running: (See Red) public override void DrawEffectPreview(LocalTargetInfo target)"); }
             GenDraw.DrawRadiusRing(target.Cell, MinotaurSettings.SeeRedFearRadius);
+        }
+        
+        //Allows AI to use ability only if 35% to pain threshold
+        public override bool AICanTargetNow(LocalTargetInfo target)
+        {
+            float? currentPain = this.parent?.pawn?.health?.hediffSet?.PainTotal;
+            float allowedPain = this.parent.pawn.GetStatValue(StatDefOf.PainShockThreshold) * 0.35f;
+            if (MinotaurSettings.debugMessages) { Log.Message("AI wants to use see red - pain is " + currentPain.ToString() + " / " + allowedPain.ToString()); }
+
+            if (currentPain > allowedPain)
+            {
+                return true;
+            }
+            return false;
         }
     }
 

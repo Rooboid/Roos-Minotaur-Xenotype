@@ -30,7 +30,13 @@ namespace RBM_Minotaur
         //Disables gizmo based on settings or life stage.
         public override bool GizmoDisabled(out string reason)
         {
-            if (MinotaurSettings.debugMessages) { Log.Message("RBM Is Running: (AbilityLactate) public override bool GizmoDisabled(out string reason)"); }
+            //if (MinotaurSettings.debugMessages) { Log.Message("RBM Is Running: (AbilityLactate) public override bool GizmoDisabled(out string reason)"); }
+
+            if (!this.parent.pawn.ageTracker.Adult)
+            {
+                reason = "Pawn is not yet an adult.";
+                return true;
+            }
 
             if (this.parent.pawn.gender == Gender.Male && !MinotaurSettings.milkableMales)
             {
@@ -44,11 +50,6 @@ namespace RBM_Minotaur
                 return true;
             }
 
-            if (this.parent.pawn.ageTracker.AgeBiologicalYears < 18)
-            {
-                reason = "Pawn is not yet an adult.";
-                return true;
-            }
             if (base.GizmoDisabled(out reason))
             {
                 return true;
