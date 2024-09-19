@@ -106,7 +106,7 @@ namespace RBM_Minotaur
             listingStandard.CheckboxLabeled("Despawns corpses rather than destroy", ref MinotaurSettings.midasDespawnDontDestroy, "Destroying a corpse is a volatile action, and can cause occasional errors. Despawning a pawn will may not trigger some on on-death events.");
             listingStandard.Label("Midaspear gold amount: " + MinotaurSettings.midasGoldAmount.ToString());
             listingStandard.IntAdjuster(ref MinotaurSettings.midasGoldAmount, 5);
-            listingStandard.CheckboxLabeled("Heculean pawns can equip heavy weapons", ref MinotaurSettings.canEquipHeavy, "Grants herculean pawns a trait allowing them to equip heavy weapons. May take a few seconds to apply. Does not work on pawns that had the herculean gene before this update - use dev mode to give them the gene again to fix this.");
+            listingStandard.CheckboxLabeled("Heculean pawns can equip Vanilla Expanded's heavy weapons", ref MinotaurSettings.canEquipHeavy, "Grants herculean pawns a trait allowing them to equip heavy weapons. May take a few seconds to apply. Does not work on pawns that had the herculean gene before this update - use dev mode to give them the gene again to fix this.");
             if (listingStandard.ButtonText("Reset to Default"))
             {
                 MinotaurSettings.milkableFemales = MinotaurSettings.milkableFemalesDefault;
