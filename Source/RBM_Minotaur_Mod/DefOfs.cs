@@ -14,6 +14,7 @@ public static class RBM_DefOf
     public static GeneDef RBM_RuminantStomach;
     public static GeneDef RBM_Herculean;
     public static GeneDef RBM_PeriodicLactation;
+    public static GeneDef RBM_UnguligradeLegs;
 
     //HeDiffs
     public static HediffDef HeDiffTerrified;
