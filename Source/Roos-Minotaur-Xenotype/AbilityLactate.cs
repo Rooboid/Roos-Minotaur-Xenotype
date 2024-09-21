@@ -40,13 +40,13 @@ namespace RBM_Minotaur
 
             if (this.parent.pawn.gender == Gender.Male && !MinotaurSettings.milkableMales)
             {
-                reason = "Males cannot be milked due to settings.";
+                reason = "Male pawns cannot be milked due to settings.";
                 return true;
             }
 
             if (this.parent.pawn.gender == Gender.Female && !MinotaurSettings.milkableFemales)
             {
-                reason = "Females cannot be milked due to settings.";
+                reason = "Female pawns cannot be milked due to settings.";
                 return true;
             }
 
