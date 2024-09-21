@@ -217,7 +217,7 @@
 		<stages>
 			<li>
 				<label>active</label>
-				<minSeverity>.0.001</minSeverity>
+				<minSeverity>0.001</minSeverity>
 				<becomeVisible>true</becomeVisible>
 				<capMods>
 					<li>
