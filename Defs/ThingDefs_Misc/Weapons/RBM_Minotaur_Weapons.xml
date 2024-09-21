@@ -248,13 +248,13 @@
 	<ThingDef ParentName="HerculeanBase">
 		<defName>RBM_Labrys</defName>
 		<label>labrys</label>
-		<description>An oversized, obsidian axe that's seen as a symbol of minotaur culture. Though its weight can be shifted with some effort, only pawns with the Herculean gene are strong enough to swing it in battle.</description>
+		<description>An oversized obsidian axe that's seen as a symbol of minotaur culture. Its counterweight against the wielder burdens it with an immense cooldown, but it can tear through its victims' necks like they were parchment. \n\nIt is such a heavy weapon that only pawns with the Herculean gene are strong enough to equip it.</description>
 		<!-- Basic Data -->
 		<uiIconScale>0.8</uiIconScale>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponMelee/RBM_Labrys/RBM_Labrys</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>2.3</drawSize>
+			<drawSize>2.0</drawSize>
 		</graphicData>
 		<!-- Obtaining -->
 		<soundInteract>RBM_Labrys_Equip</soundInteract>
@@ -269,7 +269,8 @@
 			<RoyalFavorValue>2</RoyalFavorValue>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.08</MoveSpeed>
+			<MoveSpeed>-0.1</MoveSpeed>
+			<MeleeHitChance>-7</MeleeHitChance>
 		</equippedStatOffsets>
 		<weaponClasses>
 			<li>Melee</li>

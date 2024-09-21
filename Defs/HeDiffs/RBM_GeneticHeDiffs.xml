@@ -17,7 +17,7 @@
 		<initialSeverity>1</initialSeverity>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>-2</severityPerDay>
+				<severityPerDay>-2.5</severityPerDay>
 			</li>
 			<li Class="HediffCompProperties_Effecter">
 				<stateEffecter>RBM_TerrifiedEffect</stateEffecter>
@@ -36,21 +36,21 @@
 				</capMods>
 			</li>
 			<li>
-				<minSeverity>0.60</minSeverity>
+				<minSeverity>0.65</minSeverity>
 				<label>exhausted</label>
 				<capMods>
 					<li>
 						<capacity>Moving</capacity>
-						<offset>-0.10</offset>
+						<offset>-0.50</offset>
 					</li>
 					<li>
 						<capacity>Manipulation</capacity>
-						<offset>-0.20</offset>
+						<offset>-0.50</offset>
 					</li>
 				</capMods>
 			</li>
 			<li>
-				<minSeverity>0.75</minSeverity>
+				<minSeverity>0.80</minSeverity>
 				<label>diminishing</label>
 				<capMods>
 					<li>
@@ -69,7 +69,7 @@
 				<statOffsets>
 					<MeleeHitChance>15</MeleeHitChance>
 					<PainShockThreshold>2</PainShockThreshold>
-					<StaggerDurationFactor>-0.3</StaggerDurationFactor>
+					<StaggerDurationFactor>-0.5</StaggerDurationFactor>
 				</statOffsets>
 				<capMods>
 					<li>
@@ -103,19 +103,14 @@
 		<everCurableByItem>false</everCurableByItem>
 		<tendable>false</tendable>
 		<displayWound>false</displayWound>
-		<description>This pawn is currently in heat.</description>
+		<description>This pawn is currently in heat.\n\n During this time, they suffer a constant penalty to their mood, but are also much more likely to instigate lovin'.</description>
 		<comps>
 			<li Class="HediffCompProperties_RemoveIfOtherHediff">
-				<hediffs><li>Sterilized</li></hediffs>
+				<hediffs>
+				<li>Sterilized</li>
+				</hediffs>
 			</li>
 		</comps>
-		<stages>
-			<li>
-				<statOffsets>
-					<MentalBreakThreshold>0.05</MentalBreakThreshold>
-				</statOffsets>
-			</li>
-		</stages>
 	</HediffDef>
 
 	<!-- Estrous Heat Thought -->
@@ -129,8 +124,8 @@
 		<stages>
 			<li>
 				<label>in heat</label>
-				<description>Being in heat really affects my emotions.</description>
-				<baseMoodEffect>-3</baseMoodEffect>
+				<description>Being in heat really affects my mood.</description>
+				<baseMoodEffect>-7</baseMoodEffect>
 			</li>
 		</stages>
 	</ThoughtDef>

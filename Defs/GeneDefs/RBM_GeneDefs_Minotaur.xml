@@ -55,8 +55,6 @@
 		</symbolPack>
 	</GeneDef>
 	
-	
-	
 	<!-- Bovine Horns -->
 
 	<GeneDef ParentName="GeneHeadboneBase">
@@ -132,7 +130,6 @@
 		<labelShortAdj>bovine</labelShortAdj>
 		<description>Carriers of this gene possess a bovine head.</description>
 		<iconPath>UI/GeneIcons/RBM_BovineHead</iconPath>
-		<biostatMet>1</biostatMet>
 		<displayCategory>Cosmetic</displayCategory>
 		<displayOrderInCategory>98</displayOrderInCategory>
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
@@ -227,6 +224,9 @@
 				  <defaultData>
 					<layer>51</layer>
 				  </defaultData>
+					<dataNorth>
+					<layer>-3</layer>
+					</dataNorth>
 				</drawData>
 			  </li>
 		</renderNodeProperties>
@@ -308,7 +308,7 @@
 		<label>unguligrade legs</label>
 		<description>Carriers of this gene are born with sturdy legs and cloven hooves. The fur on their legs extends up to their stomachs and covers their groin.</description>
 		<biostatCpx>1</biostatCpx>
-		<biostatMet>-1</biostatMet>
+		<biostatMet>-2</biostatMet>
 		<displayCategory>Miscellaneous</displayCategory>
 		<displayOrderInCategory>330</displayOrderInCategory>
 		<iconPath>UI/GeneIcons/RBM_BovineLegs</iconPath>
@@ -332,7 +332,6 @@
 		</symbolPack>
 		<renderNodeProperties>
 		  <li>
-			
 			<debugLabel>Fur</debugLabel>
 			<nodeClass>PawnRenderNode_Fur</nodeClass>
 			<workerClass>PawnRenderNodeWorker_Fur</workerClass>
@@ -363,26 +362,25 @@
 	<GeneDef>
 		<defName>RBM_Herculean</defName>
 		<label>Herculean</label>
-		<description>Carriers of this gene are staggeringly strong. Their herculean bodies prove them to be excellent pack mules, formidable foes in battle and rather painful lovers. There are some weapons that only Herculean pawns can equip.</description>
+		<description>Carriers of this gene are tall, broad and staggeringly strong. Their herculean bodies prove them to be excellent pack mules, formidable foes in battle and rather painful lovers. They also drop more meat and leather than standard pawns. \n\nThere are some weapons that only Herculean pawns can equip.</description>
 		<geneClass>RBM_Minotaur.Gene_RBM_Herculean</geneClass>
 		<biostatCpx>2</biostatCpx>
-		<biostatMet>-3</biostatMet>
+		<biostatMet>-2</biostatMet>
 		<displayCategory>Miscellaneous</displayCategory>
 		<displayOrderInCategory>580</displayOrderInCategory>
 		<iconPath>UI/GeneIcons/RBM_Herculean</iconPath>
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<randomChosen>true</randomChosen>
-		<statOffsets>
-			<MeleeDodgeChance>-10</MeleeDodgeChance>
-			<CarryingCapacity>4</CarryingCapacity>
-			<MoveSpeed>-0.2</MoveSpeed>
-		</statOffsets>
 		<statFactors>
-			<MeatAmount>1.3</MeatAmount>
-			<LeatherAmount>1.3</LeatherAmount>
+			<MeleeDamageFactor>1.3</MeleeDamageFactor>
 			<ArrestSuccessChance>1.5</ArrestSuccessChance>
-			<MeleeDPS>1.3</MeleeDPS>
+			<MeatAmount>1.5</MeatAmount>
+			<LeatherAmount>1.5</LeatherAmount>
 		</statFactors>
+		<statOffsets>
+			<MeleeDodgeChance>-15</MeleeDodgeChance>
+			<CarryingCapacity>25</CarryingCapacity>
+		</statOffsets>
 		<symbolPack>
 			<prefixSymbols>
 				<li><symbol>rip</symbol></li>
@@ -416,7 +414,7 @@
 		<label>Bovine Temper</label>
 		<description>Carriers of this gene become frighteningly aggressive when enraged. They possess the ability to 'See Red', a horrifying state of outrage that can only be ended by total exhaustion or death.</description>
 		<biostatCpx>1</biostatCpx>
-		<biostatMet>1</biostatMet>
+		<biostatMet>-1</biostatMet>
 		<displayCategory>Ability</displayCategory>
 		<displayOrderInCategory>200</displayOrderInCategory>
 		<iconPath>UI/GeneIcons/RBM_BovineTemper</iconPath>
@@ -427,7 +425,6 @@
 		<descriptionHyperlinks>
 			<AbilityDef>RBM_SeeRed</AbilityDef>
 		</descriptionHyperlinks>
-		<aggroMentalBreakSelectionChanceFactor>1.5</aggroMentalBreakSelectionChanceFactor>
 		<!-- Symbol -->
 		<symbolPack>
 			<wholeNameSymbols>
@@ -453,7 +450,7 @@
 	<GeneDef>
 		<defName>RBM_PeriodicLactation</defName>
 		<label>lactation</label>
-		<description>Carriers of this gene produce milk periodically. Pawns with this gene can manually be milked via their ability, or automatically via a milking machine. \n\n(By default, male and female pawns can both be milked. You can change this, or disable the functionality altogether, in the mod settings menu.)</description>
+		<description>Carriers of this gene periodically produce milk. Pawns with this gene can manually be milked via their ability or automatically by building a milking machine. \n\n(By default, male and female pawns can both be milked. You can change this, or disable the functionality altogether, in the mod settings menu.)</description>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>-1</biostatMet>
 		<minAgeActive>18</minAgeActive>
@@ -491,8 +488,8 @@
 	<GeneDef>
 		<defName>RBM_RuminantStomach</defName>
 		<label>ruminant stomach</label>
-		<description>Carriers of this gene are born with intricate digestive system that is slightly more hardy than a multi-fold stomach. They can digest hay with ease.</description>
-		<biostatCpx>3</biostatCpx>
+		<description>Carriers of this gene are born with an intricate digestive system that is slightly more hardy than a multi-fold stomach. Not can they consume hay, but they much prefer it to the taste of simple meals.</description>
+		<biostatCpx>2</biostatCpx>
 		<biostatMet>-2</biostatMet>
 		<displayCategory>Miscellaneous</displayCategory>
 		<displayOrderInCategory>11</displayOrderInCategory>
@@ -500,8 +497,8 @@
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<dontMindRawFood>true</dontMindRawFood>
 		<statFactors>
-			<RawNutritionFactor>2</RawNutritionFactor>
-			<MaxNutrition>1.5</MaxNutrition>
+			<RawNutritionFactor>1.5</RawNutritionFactor>
+			<MaxNutrition>2</MaxNutrition>
 		</statFactors>
 		<symbolPack>
 			<prefixSymbols>
@@ -522,10 +519,12 @@
 	<GeneDef ParentName="FertilityBase">
 		<defName>RBM_EstrousCycle</defName>
 		<label>estrous cycle</label>
-		<description>Carriers of this gene go into heat during Aprimay. While in heat, they will crave lovin' more than usual at the cost of also feeling more aggressive.</description>
+		<description>Carriers of this gene go into heat during Aprimay. While in heat, they will crave lovin' more than usual at the cost of a nasty mood debuff.
+		\n\nPawns that have been permanently sterilized will not experience the symptoms of heat.
+		</description>
 		<geneClass>RBM_Minotaur.Gene_RBM_EstrousCycle</geneClass>
 		<biostatCpx>1</biostatCpx>
-		<biostatMet>1</biostatMet>
+		<biostatMet>2</biostatMet>
 		<minAgeActive>18</minAgeActive>
 		<displayCategory>Reproduction</displayCategory>
 		<displayOrderInCategory>115</displayOrderInCategory>

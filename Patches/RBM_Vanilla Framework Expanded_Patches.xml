@@ -14,15 +14,14 @@
 			<xpath>Defs/GeneDef[defName="RBM_UnguligradeLegs"]</xpath>
 			<value>
 				<statOffsets>
-					<StaggerDurationFactor>-0.25</StaggerDurationFactor>
+					<!-- <StaggerDurationFactor>-0.25</StaggerDurationFactor> -->
 					<MoveSpeed>0.2</MoveSpeed>
-					<FilthRate>1.5</FilthRate>
-					<MeleeDodgeChance>5</MeleeDodgeChance>
+					<FilthRate>5</FilthRate>
+					<MeleeDodgeChance>10</MeleeDodgeChance>
 				</statOffsets>
 			</value>
 		</nomatch>
 	</Operation>
-	
 	
 	<!--If Medical System Expansion 2 is active, revert RBM_UnguligradeLegs to none-VFE version, as the two are not compatible.-->
 	
