@@ -314,7 +314,7 @@
 		<iconPath>UI/GeneIcons/RBM_BovineLegs</iconPath>
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<fur>RBM_UnguligradeLegs</fur>
-		<tattoosVisible>false</tattoosVisible>
+		<!-- <tattoosVisible>false</tattoosVisible> -->
 		<symbolPack>
 			<prefixSymbols>
 				<li><symbol>faun</symbol></li>
@@ -332,7 +332,7 @@
 		</symbolPack>
 		<renderNodeProperties>
 		  <li>
-			<shaderTypeDef>CutoutSkinOverlay</shaderTypeDef>
+			
 			<debugLabel>Fur</debugLabel>
 			<nodeClass>PawnRenderNode_Fur</nodeClass>
 			<workerClass>PawnRenderNodeWorker_Fur</workerClass>

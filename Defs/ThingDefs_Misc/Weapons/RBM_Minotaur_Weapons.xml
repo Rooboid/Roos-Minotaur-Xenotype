@@ -482,7 +482,7 @@
 					<li>Blunt</li>
 				</capacities>
 				<power>16.5</power>
-				<cooldownTime>1.0</cooldownTime>
+				<cooldownTime>2.0</cooldownTime>
 				<armorPenetration>0.5</armorPenetration>
 				<extraMeleeDamages>
 					<li>
@@ -496,8 +496,8 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>6</power>
-				<cooldownTime>0.8</cooldownTime>
+				<power>3</power>
+				<cooldownTime>1</cooldownTime>
 			</li>
 		</tools>
 	</ThingDef>
