@@ -216,13 +216,8 @@
 
 		<stages>
 			<li>
-				<label>hidden</label>
-				<minSeverity>.001</minSeverity>
-				<becomeVisible>false</becomeVisible>
-			</li>
-			<li>
 				<label>active</label>
-				<minSeverity>.5</minSeverity>
+				<minSeverity>.0.001</minSeverity>
 				<becomeVisible>true</becomeVisible>
 				<capMods>
 					<li>

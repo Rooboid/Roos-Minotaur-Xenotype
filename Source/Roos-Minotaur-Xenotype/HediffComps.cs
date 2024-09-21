@@ -29,7 +29,7 @@ namespace RBM_Minotaur
                 return;
             }
 
-            if (base.Pawn.health.hediffSet.GetFirstHediffOfDef(RBM_DefOf.MidasTouch).Severity < 0.5)
+            if (base.Pawn.health.hediffSet.GetFirstHediffOfDef(RBM_DefOf.MidasTouch).Severity < 0.001)
             {
                 return;
             }
