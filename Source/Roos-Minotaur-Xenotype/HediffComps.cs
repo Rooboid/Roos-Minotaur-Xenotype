@@ -36,6 +36,7 @@ namespace RBM_Minotaur
 
             if (this.Props.mote == null && this.Props.fleck == null)
             {
+                Log.Message("Null prop or fleck, cannot render midas spear effect");
                 return;
             }
 
@@ -75,7 +76,7 @@ namespace RBM_Minotaur
                 return;
             }
 
-            if (base.Pawn.health.hediffSet.GetFirstHediffOfDef(RBM_DefOf.MidasTouch).Severity < 0.5)
+            if (base.Pawn.health.hediffSet.GetFirstHediffOfDef(RBM_DefOf.MidasTouch).Severity < 0.001)
             {
                 return;
             }
