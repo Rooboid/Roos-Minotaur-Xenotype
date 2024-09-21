@@ -49,6 +49,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InHeat.cs" />
+    <Compile Include="MidasTouch.cs" />
     <Compile Include="MinoFur.cs" />
     <Compile Include="MapTick.cs" />
     <Compile Include="Harmony.cs" />
@@ -58,13 +60,14 @@
     <Compile Include="GeneHerculean.cs" />
     <Compile Include="GeneRuminantStomach.cs" />
     <Compile Include="PatchOperation.cs" />
-    <Compile Include="RBM_Utils.cs" />
     <Compile Include="Projectiles.cs" />
     <Compile Include="GeneEstrousCycle.cs" />
     <Compile Include="DefOfs.cs" />
     <Compile Include="AbilitySeeRed.cs" />
     <Compile Include="HediffComps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RBM_Utils.cs" />
+    <Compile Include="SeeRed.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Lib.Harmony">
