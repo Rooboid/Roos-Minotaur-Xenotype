@@ -442,7 +442,7 @@
 	<ThingDef ParentName="HerculeanBase">
 		<defName>RBM_Tunbell</defName>
 		<label>tunbell</label>
-		<description>An elusive, obsidian staff that resembles a large tuning fork. Its shrill chimes can cause its victims to suffer with tinnitus. \n\nIt's so heavy and unwieldy that only pawns with the Herculean trait can equip it.</description>
+		<description>An elusive, obsidian staff that resembles a large tuning fork. The shrill sound it makes upon impact is enough to make enemy pawns deaf. \n\nThis otherworldly weapon is so heavy that only pawns with the Herculean trait can equip it.</description>
 		<descriptionHyperlinks>
 			<HediffDef>HearingLoss</HediffDef>
 		</descriptionHyperlinks>

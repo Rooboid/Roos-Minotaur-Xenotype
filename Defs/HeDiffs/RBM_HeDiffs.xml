@@ -52,7 +52,7 @@
 
 	<!--====================== Bruise (Sound) ======================-->
 	<!-- A minimally altered bruise HeDiff inflicted by the Tunbell. -->
-	<!-- More Details: Acts as an invisible middleman to give pawns the HeDiff, Ringing, specifically to their ears using the HediffGiver_Random Class. Melee weapons cannot inflict HeDiffs to specific body parts upon attack, just the body parts they are aimed at. It felt weird seeing pawns having 'ringing' in their legs, so this is the only way I could think to do it. -->
+	<!-- More Details: Acts as an invisible middleman to give pawns the HeDiff Ringing, specifically to their ears using the HediffGiver_Random Class. Melee weapons cannot inflict HeDiffs to specific body parts upon attack, just the body parts they are aimed at. It felt weird seeing pawns having 'ringing' in their legs, so this is the only way I could think to do it. -->
 
 	<HediffDef ParentName="InjuryBase">
 		<defName>BruiseSound</defName>
@@ -102,7 +102,7 @@
 		<tendable>true</tendable>
 		<displayWound>false</displayWound>
 		<labelNounPretty>{0} in the {1}</labelNounPretty>
-		<description>Untended, ringing ears can lead to permanent hearing loss.</description>
+		<description>If left untreated, ringing ears can lead to permanent hearing loss.</description>
 		<comps>
 			<li Class="HediffCompProperties_TendDuration">
 				<severityPerDayTended>-500</severityPerDayTended>

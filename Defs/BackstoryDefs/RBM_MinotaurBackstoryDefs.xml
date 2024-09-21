@@ -10,7 +10,7 @@
 		<title>powerhouse</title>
 		<titleShort>guardian</titleShort>
 		<slot>Childhood</slot>
-		<baseDesc>[PAWN_nameDef]’s purpose was written before [PAWN_pronoun] was even born: to become a guardian: to serve, live and die for their master. The individuals that guardians usually serve belong to physically weak but mentally superb races, such as genies or seren, so it was paramount that [PAWN_nameDef] was bred to have enough strength for two.</baseDesc>
+		<baseDesc>[PAWN_nameDef]’s fate was sealed before [PAWN_pronoun] was even born: to become a guardian. To serve, honour, live and die for [PAWN_possessive] master. The masters that guardians serve are usually of physically weak but mentally superb races, such as genies or seren. As such, [PAWN_nameDef] was specifically bred to have enough strength for two.</baseDesc>
 		<bodyTypeMale>Hulk</bodyTypeMale>
 		<bodyTypeFemale>Hulk</bodyTypeFemale>
 		<spawnCategories>
@@ -44,7 +44,7 @@
 		<title>prospective guardian</title>
 		<titleShort>guardian</titleShort>
 		<slot>Childhood</slot>
-		<baseDesc>As a baby of royal blood is born, so is an assemblage of prospective guardians. These newborns are bred to possess the crème de la crème of minotaur genetics, fit, literally, for a king. Of these calves, only the strongest is bestowed the title of guardian. Their life, eternally pledged to the young royal. And their purpose, to forever protect and fight for their master, be it in confidence or even sacrifice. [PAWN_nameDef] was such a calf.</baseDesc>
+		<baseDesc>As a baby of royal blood is born, so is an assemblage of prospective guardians. These newborn powerhouses are bred to possess the crème-de-la-crème of minotaur genetics — ensuring that their bodies are fit, literally, for a king. \n\nOf all of the calves bred for this purpose, only the strongest can become a guardian, becoming bound to their royal master for life. [PAWN_nameDef] was such a calf.</baseDesc>
 		<bodyTypeMale>Hulk</bodyTypeMale>
 		<bodyTypeFemale>Hulk</bodyTypeFemale>
 		<spawnCategories>
@@ -76,7 +76,7 @@
 		<title>rejected guardian</title>
 		<titleShort>guardian</titleShort>
 		<slot>Childhood</slot>
-		<baseDesc>[PAWN_nameDef] was reared to become a guardian of a rather troublesome, young aristocrat. Upon meeting [PAWN_possessive] master for the first time, [PAWN_pronoun] was scorned and rejected, with [PAWN_possessive] master in disbelief that such an abhorrent creature could exist outside of fairy-tales. [PAWN_nameDef] never recovered from such rejection.</baseDesc>
+		<baseDesc>[PAWN_nameDef] was reared to become a guardian of a rather troublesome young aristocrat. Upon meeting [PAWN_possessive] master for the first time, [PAWN_pronoun] was scorned and rejected, with [PAWN_possessive] master in disbelief that such an abhorrent creature could exist outside of fairy-tales. [PAWN_nameDef] never recovered from such rejection.</baseDesc>
 		<bodyTypeMale>Hulk</bodyTypeMale>
 		<bodyTypeFemale>Hulk</bodyTypeFemale>
 		<spawnCategories>
@@ -108,7 +108,7 @@
 		<title>friendly guardian</title>
 		<titleShort>guardian</titleShort>
 		<slot>Childhood</slot>
-		<baseDesc>[PAWN_nameDef] was born to protect a young monarch, yet their relationship was more akin to siblinghood than anything else. As the two of them aged, learned, and played together, their bond became totally unbreakable. As much of [PAWN_possessive] time was spent playfighting with [PAWN_possessive] young master, [PAWN_nameDef] rarely had much time to practise [PAWN_possessive] domestic skills.</baseDesc>
+		<baseDesc>[PAWN_nameDef] was born to protect a young monarch, yet their relationship was more akin to siblinghood than anything else. As the two of them aged, learnt, and played together, their bond became totally unbreakable. Since most of [PAWN_possessive] time was spent playfighting with [PAWN_possessive] young master, [PAWN_nameDef] rarely had much time to practise [PAWN_possessive] domestic skills.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<spawnCategories>
@@ -141,7 +141,7 @@
 		<title>lab-grown guardian</title>
 		<titleShort>guardian</titleShort>
 		<slot>Childhood</slot>
-		<baseDesc>[PAWN_nameDef] was biologically engineered to be the perfect guardian, eventually taking [PAWN_possessive] first breath of life in a cold, austere laboratory. [PAWN_nameDef] was then taught the essensials: how to fight, serve and obey.</baseDesc>
+		<baseDesc>[PAWN_nameDef] was biologically engineered to be the perfect guardian to [PAWN_possessive] master. Grown within the clutches of a cold, glass vat, [PAWN_nameDef] was then raised to solely follow three principles: fight, serve, and obey.</baseDesc>
 		<bodyTypeMale>Hulk</bodyTypeMale>
 		<bodyTypeFemale>Hulk</bodyTypeFemale>
 		<spawnCategories>
@@ -176,7 +176,7 @@
 		<title>brave guardian</title>
 		<titleShort>guardian</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>[PAWN_nameDef] was a guardian to a very important figure in society. Though the relationship was initially rocky, the two gained an unbreakable, unconditional bond capable of weathering even the fiercest of storms. [PAWN_nameDef] isn’t afraid to look death in the eye for [PAWN_possessive] master.</baseDesc>
+		<baseDesc>[PAWN_nameDef] was a guardian to a very important figure in society. Though the relationship was initially rocky, the two gained an unbreakable, unconditional bond capable of weathering even the fiercest of storms. [PAWN_nameDef] was never afraid to look death in the eye for [PAWN_possessive] master.</baseDesc>
 		<bodyTypeMale>Hulk</bodyTypeMale>
 		<bodyTypeFemale>Hulk</bodyTypeFemale>
 		<spawnCategories>
@@ -205,7 +205,7 @@
 		<title>stoic guardian</title>
 		<titleShort>guardian</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>[PAWN_nameDef] matured into a disciplined and stoic guardian to [PAWN_possessive] master, uttering not even a sound unless it was by their request. Though [PAWN_possessive] spoke very little, [PAWN_possessive] was capable of penning the most saccharine and passionate poetry known to man. Well, that is, if man was ever able to see it.</baseDesc>
+		<baseDesc>[PAWN_nameDef] was a disciplined and stoic guardian to [PAWN_possessive] master, uttering not even the smallest of sounds unless it was by their request. Though [PAWN_possessive] spoke very little, [PAWN_possessive] was capable of penning the most saccharine and passionate poetry known to man. Well, that is, if man was ever able to see it.</baseDesc>
 		<bodyTypeMale>Hulk</bodyTypeMale>
 		<bodyTypeFemale>Hulk</bodyTypeFemale>
 		<spawnCategories>
@@ -235,7 +235,7 @@
 		<title>compassionate guardian</title>
 		<titleShort>guardian</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>[PAWN_nameDef] was a loving and compassionate guardian to [PAWN_possessive] master, readily repurposing [PAWN_possessive] body as a comforting pillow to them when days had been tough.</baseDesc>
+		<baseDesc>[PAWN_nameDef] was a loving and compassionate guardian to [PAWN_possessive] master, readily repurposing [PAWN_possessive] body as a comforting pillow to them when times were tough.</baseDesc>
 		<bodyTypeMale>Fat</bodyTypeMale>
 		<bodyTypeFemale>Fat</bodyTypeFemale>
 		<spawnCategories>
@@ -264,7 +264,7 @@
 		<title>pining guardian</title>
 		<titleShort>guardian</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>[PAWN_nameDef]’s unrequited feelings of love for [PAWN_possessive] master have forever brought [PAWN_objective] shame and anguish. Watching them fall in love with potential suitors over and over again has only worsened the wound that [PAWN_nameDef] has to hide.</baseDesc>
+		<baseDesc>[PAWN_nameDef]’s unrequited feelings of love for [PAWN_possessive] master forever brought [PAWN_objective] shame and anguish. Watching them fall in love with potential suitors over and over again has only worsened the wound that [PAWN_nameDef] had to hide.</baseDesc>
 		<bodyTypeMale>Hulk</bodyTypeMale>
 		<bodyTypeFemale>Hulk</bodyTypeFemale>
 		<spawnCategories>
@@ -287,14 +287,14 @@
 	</BackstoryDef>
 
 	<!--============================== Clumsy Guardian ============================-->
-	<!-- Pretty terrible all-round -->
+	<!-- Pretty terrible but we stan -->
 
 	<BackstoryDef>
 		<defName>RBM_ClumsyGuardian</defName>
 		<title>clumsy guardian</title>
 		<titleShort>guardian</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>Out of all of the guardians out there, [PAWN_nameDef] is certainly one of them. Though [PAWN_pronoun] really tries [PAWN_possessive] best, nothing can ever seem to go right for [PAWN_objective] and [PAWN_possessive] master.</baseDesc>
+		<baseDesc>Out of all of the guardians out there, [PAWN_nameDef] is certainly one of them. Though [PAWN_pronoun] really, really tries [PAWN_possessive] best, nothing can ever seem to go right for [PAWN_objective].</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<spawnCategories>
@@ -324,7 +324,7 @@
 		<title>guardian</title>
 		<titleShort>guardian</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>[PAWN_nameDef] became a guardian to a nobleperson, vowing to fight to the death to ensure [PAWN_possessive] master’s safety.</baseDesc>
+		<baseDesc>[PAWN_nameDef] was assigned to protect a member of the royal family, vowing to fight to the death to ensure [PAWN_possessive] master’s safety.</baseDesc>
 		<bodyTypeMale>Hulk</bodyTypeMale>
 		<bodyTypeFemale>Hulk</bodyTypeFemale>
 		<spawnCategories>
@@ -351,7 +351,7 @@
 		<title>elegant guardian</title>
 		<titleShort>guardian</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>[PAWN_nameDef] serves their master diligently. Whether it’s slaying a foe on the battlefield or pouring the finest cup of tea on this side of the rim, [PAWN_nameDef] executes such duties with finesse and class.</baseDesc>
+		<baseDesc>[PAWN_nameDef] served [PAWN_possessive] master diligently. Whether it was slaying a foe on the battlefield or pouring the finest cup of tea on this side of the rim, [PAWN_nameDef] executed such duties with finesse and class.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<spawnCategories>
@@ -383,7 +383,7 @@
 		<title>illicit guardian</title>
 		<titleShort>guardian</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>[PAWN_nameDef] developed illicit relations with [PAWN_possessive] master, punishable by death should the royal family find out. The two strategized the location and time of their steamy rendezvous in order to evade the public eye, until eventually, the two ended their relationship. [PAWN_nameDef] continued to guard [PAWN_possessive] master with a strained heart.</baseDesc>
+		<baseDesc>[PAWN_nameDef] developed illicit relations with [PAWN_possessive] master, an act only punishable by death. The two carefully strategized the location and time of their meetings in order to evade the public eye, until eventually, the two saw it best to end their relationship for their own safety.\n\n [PAWN_nameDef] continued to guard [PAWN_possessive] master with a broken heart and a tear in [PAWN_possessive] eye.</baseDesc>
 		<bodyTypeMale>Hulk</bodyTypeMale>
 		<bodyTypeFemale>Hulk</bodyTypeFemale>
 		<spawnCategories>
@@ -444,7 +444,7 @@
 		<title>show calf</title>
 		<titleShort>diva</titleShort>
 		<slot>Childhood</slot>
-		<baseDesc>[PAWN_nameDef] was the perfect show calf. Many show calves resented their human owners, but [PAWN_nameDef] rather enjoyed all of the attention.</baseDesc>
+		<baseDesc>[PAWN_nameDef] was the perfect show calf. Many show calves resented their human owners, but [PAWN_nameDef] somewhat enjoyed all of the attention.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<spawnCategories>
@@ -496,7 +496,7 @@
 		<title>isolated</title>
 		<titleShort>isolated</titleShort>
 		<slot>Childhood</slot>
-		<baseDesc>[PAWN_nameDef] lived most of [PAWN_possessive] childhood nestled in the bosom of a mountainous tundra. \n\nThe hamlet that surrounded [PAWN_objective] was quaint, but violently anti-human, with [PAWN_nameDef]’s father even warning [PAWN_objective] to check under [PAWN_possessive] bed every night for humans.</baseDesc>
+		<baseDesc>[PAWN_nameDef] lived most of [PAWN_possessive] childhood nestled in the bosom of a mountainous tundra. [PAWN_possessive] village was quaint and full of life, but violently anti-human. \n\n[PAWN_nameDef]’s father warned [PAWN_objective] to check under [PAWN_possessive] bed every night for humans — a habit that has rendered [PAWN_nameDef] skeptical of such horrifying creatures, even today. </baseDesc>
 		<bodyTypeMale>Hulk</bodyTypeMale>
 		<bodyTypeFemale>Hulk</bodyTypeFemale>
 		<spawnCategories>
@@ -517,7 +517,7 @@
 		<title>maze dweller</title>
 		<titleShort>protector</titleShort>
 		<slot>Childhood</slot>
-		<baseDesc>[PAWN_nameDef] was raised in a vast labyrinth, destined to guard the treasures that lay within there. But those shining, unknown treasures were just too tempting for [PAWN_nameDef]’s mother, who ultimately ventured into the golden vault and never returned.</baseDesc>
+		<baseDesc>[PAWN_nameDef] was raised in a vast labyrinth, destined to guard the treasures that lay within its depths. But those shining, unknown treasures were just too tempting for [PAWN_nameDef]’s parents, who ultimately ventured into the golden vault and never returned.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<spawnCategories>
@@ -551,6 +551,10 @@
 		<spawnCategories>
 			<li>Minotaur</li>
 			<li>MinotaurWild</li>
+			<li>Offworld</li>
+			<li>Outlander</li>
+			<li>Pirate</li>
+			<li>Cult</li>
 		</spawnCategories>
 		<skillGains>
 			<Melee>9</Melee>
@@ -565,6 +569,27 @@
 			<li>Social</li>
 			<li>Intellectual</li>
 		</workDisables>
+	</BackstoryDef>
+	
+	<!--============================== Roamer ============================-->
+	<!-- Fallback when game can't generate minotaur backstories -->
+
+	<BackstoryDef>
+		<defName>RBM_Roamer</defName>
+		<title>roamer</title>
+		<titleShort>roamer</titleShort>
+		<slot>Childhood</slot>
+		<baseDesc>[PAWN_nameDef] roamed the lands with a group of travelling merchants, picking up a few skills along the way.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>Minotaur</li>
+			<li>MinotaurWild</li>
+			<li>Offworld</li>
+			<li>Outlander</li>
+			<li>Pirate</li>
+			<li>Cult</li>
+		</spawnCategories>
 	</BackstoryDef>
 
 	<!--============================== City Dweller (Successful Fella) ============================-->
@@ -600,7 +625,7 @@
 		<title>human fighter</title>
 		<titleShort>fighter</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>[PAWN_nameDef] fought in the timeless minotaur tradition of humanfighting. Plucky gladiators would stride into the colosseum, only to soon cower under [PAWN_nameDef]’s might, with the climax of the performance being the ‘estocada’, in which [PAWN_pronoun] would pierce the heart or spine of the human with an elegant steel blade. All of this bloodshed didn’t trouble [PAWN_nameDef]. No, [PAWN_pronoun] lived for it.</baseDesc>
+		<baseDesc>[PAWN_nameDef] participated in the timeless minotaur tradition of 'humanfighting'. Plucky humans would stride into the ring bearing a red cloth, only to soon cower beneath it in an attempt to hide themselves from [PAWN_nameDef]’s frightful horns./n/n The climax of the performance was called the ‘estocada’, in which [PAWN_nameDef] would pierce the heart or spine of the human with an elegant steel blade. All of this bloodshed didn’t trouble [PAWN_nameDef]. No, [PAWN_pronoun] lived for it.</baseDesc>
 		<bodyTypeMale>Hulk</bodyTypeMale>
 		<bodyTypeFemale>Hulk</bodyTypeFemale>
 		<spawnCategories>
@@ -629,7 +654,7 @@
 		<title>logger</title>
 		<titleShort>logger</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>[PAWN_nameDef] felled trees for a living, sawing their trunks with ease and exporting the spoils to nearby human settlements.</baseDesc>
+		<baseDesc>[PAWN_nameDef] felled trees for a living. [PAWN_pronoun] sawed trunks with [PAWN_possessive] horns and exported the spoils to nearby human settlements.</baseDesc>
 		<bodyTypeMale>Hulk</bodyTypeMale>
 		<bodyTypeFemale>Hulk</bodyTypeFemale>
 		<spawnCategories>
@@ -657,8 +682,8 @@
 		<titleShort>berserk</titleShort>
 		<slot>Adulthood</slot>
 		<baseDesc>[PAWN_nameDef] was sold to an intergalactic butcher for [PAWN_possessive] delectable meat. Upon entering the trade ship, [PAWN_nameDef] broke free from [PAWN_possessive] shackles and made mincemeat of each and every one of the crew, leaving not one survivor to tell the tale, but [PAWN_objective].</baseDesc>
-		<bodyTypeMale>Fat</bodyTypeMale>
-		<bodyTypeFemale>Fat</bodyTypeFemale>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
 		<spawnCategories>
 			<li>Minotaur</li>
 			<li>MinotaurWild</li>
@@ -687,7 +712,7 @@
 		<title>xenohustler</title>
 		<titleShort>xenohustler</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>[PAWN_nameDef] made a living working in a ‘Xenobrothel’. The backbone of the business was, unsurprisingly, human tourists, who would slobber at the chance to experience lovin’ with exotic xenos. It wasn’t unusual for [PAWN_nameDef]’s clients to require medical attention after their tumble under the sheets.</baseDesc>
+		<baseDesc>[PAWN_nameDef] made a living working in a ‘xenobrothel’. The backbone of the business was, unsurprisingly, human tourists, who would slobber at the chance to experience lovin’ with the rim's rarest xenos. /n/nIt wasn’t unusual for [PAWN_nameDef]’s clients to require medical attention after their tumble under the sheets.</baseDesc>
 		<bodyTypeMale>Hulk</bodyTypeMale>
 		<bodyTypeFemale>Hulk</bodyTypeFemale>
 		<spawnCategories>
@@ -746,7 +771,7 @@
 		<title>feral</title>
 		<titleShort>feral</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>[PAWN_nameDef] returned to the wild like a feral beast. Those who came toe-to-hoof with [PAWN_nameDef] might have preferred a swift end, but this was never to be.</baseDesc>
+		<baseDesc>[PAWN_nameDef] returned to the wild like a feral beast. Those who came toe-to-hoof with [PAWN_objective] might have preferred a swift end, but [PAWN_nameDef] killed [PAWN_possessive] prey slowly.</baseDesc>
 		<bodyTypeMale>Hulk</bodyTypeMale>
 		<bodyTypeFemale>Hulk</bodyTypeFemale>
 		<spawnCategories>
@@ -775,5 +800,36 @@
 		<requiredWorkTags>
 			<li>Violent</li>
 		</requiredWorkTags>
+	</BackstoryDef>
+	
+	<!--============================== Hothead ============================-->
+	<!-- Violent Backstory -->
+
+	<BackstoryDef>
+		<defName>RBM_Hothead</defName>
+		<title>hothead</title>
+		<titleShort>hothead</titleShort>
+		<slot>Adulthood</slot>
+		<baseDesc>No matter what job [PAWN_nameDef] picked up, no matter what friendships [PAWN_pronoun] made, [PAWN_pronoun] could always be sure that [PAWN_possessive] explosive temper would be the end of them. [PAWN_nameDef] continues to wander, searching for [PAWN_possessive] red-hot place in the world.</baseDesc>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<spawnCategories>
+			<li>Minotaur</li>
+			<li>MinotaurWild</li>
+			<li>Offworld</li>
+			<li>Outlander</li>
+			<li>Pirate</li>
+			<li>Cult</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>5</Melee>
+		</skillGains>
+		<forcedTraits>
+			<Nerves>-2</Nerves>
+		</forcedTraits>
+		<disallowedTraits>
+			<Wimp>0</Wimp>
+			<TooSmart>0</TooSmart>
+		</disallowedTraits>
 	</BackstoryDef>
 </Defs>
