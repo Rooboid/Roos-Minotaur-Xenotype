@@ -52,7 +52,7 @@
 	<ThingDef ParentName="HerculeanBase">
 		<defName>RBM_Bullslinger</defName>
 		<label>bullslinger</label>
-		<description>An ancient, obsidian bow of unknown origin, passed down by countless generations of minotaur. It fires blisteringly cold arrows, accurate enough to trim the nosehair of a pigskin from five acres away. \n\nOnly pawns with the Herculean gene may equip it.</description>
+		<description>An ancient, obsidian bow of unknown origin, passed down by countless generations of minotaurs. It fires blisteringly cold arrows, accurate enough to trim the nosehair of a pigskin from five acres away. \n\nOnly pawns with the Herculean gene can equip it.</description>
 		<!-- Basic Data -->
 		<uiIconScale>0.8</uiIconScale>
 		<graphicData>
@@ -79,7 +79,7 @@
 			<SellPriceFactor>0.50</SellPriceFactor>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.05</MoveSpeed>
+			<MoveSpeed>-0.10</MoveSpeed>
 		</equippedStatOffsets>
 		<weaponClasses>
 			<li>Ranged</li>
@@ -146,7 +146,7 @@
 	<ThingDef ParentName="HerculeanBase">
 		<defName>RBM_TaurailGun</defName>
 		<label>taurail gun</label>
-		<description>An ancient, obsidian railgun powered by a glowing gemstone. Little is known about this fabled weapon, other than that victims of its blast seldom live to tell the tale. Those unfortunate enough to be in it's impact zone and still survive will become terrified and flee. \n\nThis railgun so massive that only pawns with the Herculean gene can equip it.</description>
+		<description>An ancient obsidian railgun powered by a glowing gemstone. Little is known about this fabled weapon, other than that victims of its blast seldom live to tell the tale. Those unfortunate enough to be in its impact zone and still survive will become terrified and flee the area. \n\nThis railgun so massive that only pawns with the Herculean gene can equip it.</description>
 		<!-- Basic Data -->
 		<uiIconScale>0.8</uiIconScale>
 		<equippedAngleOffset>45</equippedAngleOffset>
@@ -173,7 +173,7 @@
 			<RoyalFavorValue>2</RoyalFavorValue>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.07</MoveSpeed>
+			<MoveSpeed>-0.20</MoveSpeed>
 		</equippedStatOffsets>
 		<weaponTags>
 			<li>TaurailGun</li>
@@ -248,7 +248,7 @@
 	<ThingDef ParentName="HerculeanBase">
 		<defName>RBM_Labrys</defName>
 		<label>labrys</label>
-		<description>An oversized obsidian axe that's seen as a symbol of minotaur culture. Its counterweight against the wielder burdens it with an immense cooldown, but it can tear through its victims' necks like they were parchment. \n\nIt is such a heavy weapon that only pawns with the Herculean gene are strong enough to equip it.</description>
+		<description>An oversized obsidian axe that is seen as a symbol of minotaur culture. Its immense weight burdens it with an immense cooldown, but it can tear through its victims' necks like they were little more than parchment. \n\nOnly pawns with the Herculean gene are strong enough to equip it.</description>
 		<!-- Basic Data -->
 		<uiIconScale>0.8</uiIconScale>
 		<graphicData>
@@ -269,7 +269,7 @@
 			<RoyalFavorValue>2</RoyalFavorValue>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.1</MoveSpeed>
+			<MoveSpeed>-0.15</MoveSpeed>
 			<MeleeHitChance>-7</MeleeHitChance>
 		</equippedStatOffsets>
 		<weaponClasses>
@@ -323,7 +323,7 @@
 			<RoyalFavorValue>2</RoyalFavorValue>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.015</MoveSpeed>
+			<MoveSpeed>-0.05</MoveSpeed>
 			<SocialImpact>0.2</SocialImpact>
 			<MentalBreakThreshold>0.35</MentalBreakThreshold>
 		</equippedStatOffsets>
@@ -469,7 +469,7 @@
 			<RoyalFavorValue>2</RoyalFavorValue>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.05</MoveSpeed>
+			<MoveSpeed>-0.15</MoveSpeed>
 			<MeleeHitChance>-0.3</MeleeHitChance>
 		</equippedStatOffsets>
 		<weaponClasses>
@@ -508,7 +508,7 @@
 	<ThingDef ParentName="HerculeanBase">
 		<defName>RBM_Midaspear</defName>
 		<label>midaspear</label>
-		<description>An obsidian weapon with a gold-encrusted spearhead. Ancient fables describe this weapon as being able to turn its victims into gold. \n\nIt's so long and heavy that only a Herculean pawn can equip it.</description>
+		<description>An obsidian weapon with a gold-encrusted spearhead. If this weapon lands the killing blow to a pawn, there is a high chance that it will turn their bloodied corpse into gold. This only works on humanlikes though. \n\nThis weapon is so long and heavy that only a Herculean pawn can equip it.</description>
 		<descriptionHyperlinks>
 			<HediffDef>MidasTouch</HediffDef>
 		</descriptionHyperlinks>
@@ -532,7 +532,7 @@
 			<RoyalFavorValue>2</RoyalFavorValue>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.02</MoveSpeed>
+			<MoveSpeed>-0.15</MoveSpeed>
 		</equippedStatOffsets>
 		<weaponClasses>
 			<li>Melee</li>
@@ -559,7 +559,7 @@
 				<extraMeleeDamages>
 					<li>
 						<def>Mageia_Gold</def>
-						<amount>5</amount>
+						<amount>2</amount>
 					</li>
 				</extraMeleeDamages>
 			</li>

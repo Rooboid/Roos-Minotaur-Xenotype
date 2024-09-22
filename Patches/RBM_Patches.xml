@@ -174,24 +174,10 @@
 			<value>
 				<apparelRequired>
 					<li>RBApparel_Tailcoat</li>
-					<li>Apparel_HeavyShield</li>
-					<li>Apparel_ShirtRuffle</li>
+					<li>Apparel_ShieldBelt</li>
+					<li>Apparel_CollarShirt</li>
 					<li>Apparel_Pants</li>
 				</apparelRequired>
-			</value>
-		</match>
-	</Operation>
-
-	<!--Add Ideology apparel to Minotaur Guardian (High)-->
-
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Ideology</li>
-		</mods>
-		<match Class="PatchOperationAdd">
-			<xpath>Defs/PawnKindDef[defName="RBM_MinotaurGuardianHigh"]/apparelRequired</xpath>
-			<value>
-				<li>Apparel_Collar</li>
 			</value>
 		</match>
 	</Operation>

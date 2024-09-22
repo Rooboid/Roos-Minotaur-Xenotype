@@ -145,7 +145,7 @@
 						<clipFolderPath>RBM_Mageia/</clipFolderPath>
 					</li>
 				</grains>
-				<volumeRange>25</volumeRange>
+				<volumeRange>40</volumeRange>
 				<pitchRange>0.85~1.2</pitchRange>
 				<muteWhenPaused>true</muteWhenPaused>
 				<tempoAffectedByGameSpeed>true</tempoAffectedByGameSpeed>

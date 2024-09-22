@@ -29,7 +29,7 @@
 		<workerClass>DamageWorker_Frostbite</workerClass>
 		<hediff>Frostbite</hediff>
 		<externalViolence>true</externalViolence>
-		<defaultDamage>20</defaultDamage>
+		<defaultDamage>23</defaultDamage>
 		<canInterruptJobs>true</canInterruptJobs>
 		<makesAnimalsFlee>true</makesAnimalsFlee>
 		<impactSoundType>Bullet</impactSoundType>

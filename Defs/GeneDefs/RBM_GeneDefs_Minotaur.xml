@@ -313,7 +313,7 @@
 		<displayOrderInCategory>330</displayOrderInCategory>
 		<iconPath>UI/GeneIcons/RBM_BovineLegs</iconPath>
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
-		<!--><fur>RBM_UnguligradeLegs</fur><-->
+		<fur>RBM_UnguligradeLegs</fur> <!-- Will not work without Satyrs and Fauns Mod -->
 		
 			<!-- Added in patches> <statOffsets>
 					<MoveSpeed>0.15</MoveSpeed>
@@ -335,7 +335,7 @@
 					<li><symbol>ped</symbol></li>
 				</suffixSymbols>
 			</symbolPack>
-			<!--><renderNodeProperties>
+			<renderNodeProperties> <!-- Will not work without Satyrs and Fauns Mod -->
 				<li>
 					<debugLabel>Fur</debugLabel>
 					<nodeClass>PawnRenderNode_Fur</nodeClass>
@@ -345,7 +345,7 @@
 					<colorType>Hair</colorType>
 					<parentTagDef>Body</parentTagDef>
 				</li>
-			</renderNodeProperties><-->
+			</renderNodeProperties>
 				<!-- The following will occur if you ARE running vanilla framework expanded. If not, a patch is added to tie the gene buffs to the pawn, as opposed to the body part -->
 				<modExtensions>
 					<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">

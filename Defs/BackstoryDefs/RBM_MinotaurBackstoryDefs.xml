@@ -717,6 +717,7 @@
 		<bodyTypeFemale>Hulk</bodyTypeFemale>
 		<spawnCategories>
 			<li>Minotaur</li>
+			<li>MinotaurOutlander</li>
 		</spawnCategories>
 		<skillGains>
 			<Social>6</Social>
@@ -747,6 +748,7 @@
 		<bodyTypeFemale>Hulk</bodyTypeFemale>
 		<spawnCategories>
 			<li>Minotaur</li>
+			<li>MinotaurTribe</li>
 		</spawnCategories>
 		<skillGains>
 			<Melee>8</Melee>
@@ -815,9 +817,9 @@
 		<bodyTypeFemale>Hulk</bodyTypeFemale>
 		<spawnCategories>
 			<li>Minotaur</li>
+			<li>MinotaurTribe</li>
 			<li>MinotaurWild</li>
-			<li>Offworld</li>
-			<li>Outlander</li>
+			<li>MinotaurOutlander</li>
 			<li>Pirate</li>
 			<li>Cult</li>
 		</spawnCategories>

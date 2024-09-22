@@ -36,21 +36,21 @@
 				</capMods>
 			</li>
 			<li>
-				<minSeverity>0.65</minSeverity>
+				<minSeverity>0.76</minSeverity>
 				<label>exhausted</label>
 				<capMods>
 					<li>
 						<capacity>Moving</capacity>
-						<offset>-0.50</offset>
+						<offset>-0.10</offset>
 					</li>
 					<li>
 						<capacity>Manipulation</capacity>
-						<offset>-0.50</offset>
+						<offset>-0.10</offset>
 					</li>
 				</capMods>
 			</li>
 			<li>
-				<minSeverity>0.80</minSeverity>
+				<minSeverity>0.82</minSeverity>
 				<label>diminishing</label>
 				<capMods>
 					<li>
@@ -71,6 +71,9 @@
 					<PainShockThreshold>2</PainShockThreshold>
 					<StaggerDurationFactor>-0.5</StaggerDurationFactor>
 				</statOffsets>
+				 <statFactors>
+					<Flammability>0</Flammability>
+				</statFactors>
 				<capMods>
 					<li>
 						<capacity>Moving</capacity>
@@ -90,6 +93,8 @@
 			</li>
 		</stages>
 	</HediffDef>
+	
+	
 	
 	<!--====================== Estrous Heat ======================-->
 	<!-- Applied to pawns with the gene "Estrous Cycle" in Aprimay. PawnLovinMTB hours are adjusted in C#, but MentalBreakThreshold is adjusted in XML. -->

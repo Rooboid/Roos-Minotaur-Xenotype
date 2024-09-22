@@ -29,20 +29,28 @@
 		<weaponTags>
 			<li>HerculeanWeapon</li>
 		</weaponTags>
-		<apparelColor>(35,35,35)</apparelColor>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+		</apparelTags>
+		<apparelMoney>3000</apparelMoney>
 		<apparelRequired>
 			<li>RBApparel_Tailcoat</li>
-			<li>Apparel_HeavyShield</li>
 			<li>Apparel_CollarShirt</li>
 			<li>Apparel_Pants</li>
+			<li>Apparel_ShieldBelt</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Apparel_Collar</li>
 		</apparelRequired>
 		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
 		<specificApparelRequirements Inherit="False">
 			<li>
 				<bodyPartGroup>Torso</bodyPartGroup>
 				<apparelLayer>OnSkin</apparelLayer>
-				<stuff>Hyperweave</stuff>
 				<color>(220,220,220)</color>
+			</li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(25,25,25)</color>
 			</li>
 			<li>
 				<bodyPartGroup>Legs</bodyPartGroup>
