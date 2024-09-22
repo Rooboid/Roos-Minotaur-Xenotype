@@ -21,27 +21,27 @@
 			<layer>PostSkin</layer>
 		</graphicData> -->
 		<renderNodeProperties>
-		  <li>
-			<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
-			<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-			<texPaths>
-				<li>Things/Pawn/Humanlike/Ears/RBM_Ears1/RBM_Ears1</li>
-				<li>Things/Pawn/Humanlike/Ears/RBM_Ears2/RBM_Ears2</li>
-				<li>Things/Pawn/Humanlike/Ears/RBM_Ears3/RBM_Ears3</li>
-				<li>Things/Pawn/Humanlike/Ears/RBM_Ears4/RBM_Ears4</li>
-				<li>Things/Pawn/Humanlike/Ears/RBM_Ears5/RBM_Ears5</li>
-			</texPaths>
-			<colorType>Skin</colorType>
-			<parentTagDef>Head</parentTagDef>
-			<useSkinShader>true</useSkinShader>
-			<useRottenColor>true</useRottenColor>
-			<rotDrawMode>Fresh, Rotting</rotDrawMode>
-			<drawData>
-			  <defaultData>
-				<layer>70</layer>
-			  </defaultData>
-			</drawData>
-		  </li>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPaths>
+					<li>Things/Pawn/Humanlike/Ears/RBM_Ears1/RBM_Ears1</li>
+					<li>Things/Pawn/Humanlike/Ears/RBM_Ears2/RBM_Ears2</li>
+					<li>Things/Pawn/Humanlike/Ears/RBM_Ears3/RBM_Ears3</li>
+					<li>Things/Pawn/Humanlike/Ears/RBM_Ears4/RBM_Ears4</li>
+					<li>Things/Pawn/Humanlike/Ears/RBM_Ears5/RBM_Ears5</li>
+				</texPaths>
+				<colorType>Skin</colorType>
+				<parentTagDef>Head</parentTagDef>
+				<useSkinShader>true</useSkinShader>
+				<useRottenColor>true</useRottenColor>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<drawData>
+					<defaultData>
+						<layer>70</layer>
+					</defaultData>
+				</drawData>
+			</li>
 		</renderNodeProperties>
 		<symbolPack>
 			<prefixSymbols>
@@ -77,33 +77,33 @@
 			</graphicPaths>
 		</graphicData> -->
 		<renderNodeProperties>
-		  <li>
-			<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
-			<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-			<texPaths>
-				<li>Things/Pawn/Humanlike/Horns/RBM_Horns1/RBM_Horns1</li>
-				<li>Things/Pawn/Humanlike/Horns/RBM_Horns2/RBM_Horns2</li>
-				<li>Things/Pawn/Humanlike/Horns/RBM_Horns3/RBM_Horns3</li>
-				<li>Things/Pawn/Humanlike/Horns/RBM_Horns4/RBM_Horns4</li>
-				<li>Things/Pawn/Humanlike/Horns/RBM_Horns5/RBM_Horns5</li>
-				<li>Things/Pawn/Humanlike/Horns/RBM_Horns6/RBM_Horns6</li>
-				<li>Things/Pawn/Humanlike/Horns/RBM_Horns7/RBM_Horns7</li>
-				<li>Things/Pawn/Humanlike/Horns/RBM_Horns8/RBM_Horns8</li>
-				<li>Things/Pawn/Humanlike/Horns/RBM_Horns9/RBM_Horns9</li>
-				<li>Things/Pawn/Humanlike/Horns/RBM_Horns10/RBM_Horns10</li>
-			</texPaths>
-			<colorType>Custom</colorType>
-			<color>(255,255,255)</color>
-			<parentTagDef>Head</parentTagDef>
-			<useSkinShader>true</useSkinShader>
-			<useRottenColor>false</useRottenColor>
-			<rotDrawMode>Fresh, Rotting</rotDrawMode>
-			<drawData>
-			  <defaultData>
-				<layer>70</layer>
-			  </defaultData>
-			</drawData>
-		  </li>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPaths>
+					<li>Things/Pawn/Humanlike/Horns/RBM_Horns1/RBM_Horns1</li>
+					<li>Things/Pawn/Humanlike/Horns/RBM_Horns2/RBM_Horns2</li>
+					<li>Things/Pawn/Humanlike/Horns/RBM_Horns3/RBM_Horns3</li>
+					<li>Things/Pawn/Humanlike/Horns/RBM_Horns4/RBM_Horns4</li>
+					<li>Things/Pawn/Humanlike/Horns/RBM_Horns5/RBM_Horns5</li>
+					<li>Things/Pawn/Humanlike/Horns/RBM_Horns6/RBM_Horns6</li>
+					<li>Things/Pawn/Humanlike/Horns/RBM_Horns7/RBM_Horns7</li>
+					<li>Things/Pawn/Humanlike/Horns/RBM_Horns8/RBM_Horns8</li>
+					<li>Things/Pawn/Humanlike/Horns/RBM_Horns9/RBM_Horns9</li>
+					<li>Things/Pawn/Humanlike/Horns/RBM_Horns10/RBM_Horns10</li>
+				</texPaths>
+				<colorType>Custom</colorType>
+				<color>(255,255,255)</color>
+				<parentTagDef>Head</parentTagDef>
+				<useSkinShader>true</useSkinShader>
+				<useRottenColor>false</useRottenColor>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<drawData>
+					<defaultData>
+						<layer>70</layer>
+					</defaultData>
+				</drawData>
+			</li>
 		</renderNodeProperties>
 		<symbolPack>
 			<prefixSymbols>
@@ -221,14 +221,14 @@
 				<useRottenColor>false</useRottenColor>
 				<rotDrawMode>Fresh, Rotting</rotDrawMode>
 				<drawData>
-				  <defaultData>
-					<layer>51</layer>
-				  </defaultData>
+					<defaultData>
+						<layer>51</layer>
+					</defaultData>
 					<dataNorth>
-					<layer>-3</layer>
+						<layer>-3</layer>
 					</dataNorth>
 				</drawData>
-			  </li>
+			</li>
 		</renderNodeProperties>
 		<symbolPack>
 			<prefixSymbols>
@@ -253,7 +253,7 @@
 		<defName>RBM_EarthySkin</defName>
 		<label>earthy skin</label>
 		<labelShortAdj>earthen</labelShortAdj>
-		<description>Carriers of this gene possess skin of mild and earthy colours.</description>
+		<description>Carriers of this gene have patchy skin of earthy colours.</description>
 		<randomBrightnessFactor>6</randomBrightnessFactor>
 		<skinColorOverride>(200, 140, 110)</skinColorOverride>
 		<displayOrderInCategory>99</displayOrderInCategory>
@@ -277,7 +277,7 @@
 	<GeneDef ParentName="GeneVoiceBase">
 		<defName>RBM_BovineVoice</defName>
 		<label>bovine voice</label>
-		<description>Carriers of this gene will moo when pleased and exhale a loud puff from their nostrils when agitated.</description>
+		<description>Carriers of this gene will moo when pleased and exhale a loud puff from their nostrils when annoyed.</description>
 		<iconPath>UI/GeneIcons/RBM_BovineVoice</iconPath>
 		<displayOrderInCategory>135</displayOrderInCategory>
 		<soundCall>RBM_BovineCall</soundCall>
@@ -313,234 +313,248 @@
 		<displayOrderInCategory>330</displayOrderInCategory>
 		<iconPath>UI/GeneIcons/RBM_BovineLegs</iconPath>
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
-		<fur>RBM_UnguligradeLegs</fur>
-		<!-- <tattoosVisible>false</tattoosVisible> -->
-		<symbolPack>
-			<prefixSymbols>
-				<li><symbol>faun</symbol></li>
-				<li><symbol>jog</symbol></li>
-				<li><symbol>bov</symbol></li>
-				<li><symbol>bolt</symbol></li>
-			</prefixSymbols>
-			<suffixSymbols>
-				<li><symbol>yr</symbol></li>
-				<li><symbol>ine</symbol></li>
-				<li><symbol>trotter</symbol></li>
-				<li><symbol>hoof</symbol></li>
-				<li><symbol>ped</symbol></li>
-			</suffixSymbols>
-		</symbolPack>
-		<renderNodeProperties>
-		  <li>
-			<debugLabel>Fur</debugLabel>
-			<nodeClass>PawnRenderNode_Fur</nodeClass>
-			<workerClass>PawnRenderNodeWorker_Fur</workerClass>
-			<baseLayer>5</baseLayer>
-			<rotDrawMode>Fresh, Rotting</rotDrawMode>
-			<colorType>Hair</colorType>
-			<parentTagDef>Body</parentTagDef>
-		  </li>
-		</renderNodeProperties>
-		<!-- Thee following will occur if you ARE running vanilla framework expanded. If not, a patch is added to tie the gene buffs to the pawn, as opposed to the body part -->
-		<modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<hediffsToBodyParts>
-					<li>
-						<hediff>UnguligradeLegPart</hediff>
-						<bodyparts>
-							<li>Leg</li>
-							<li>Leg</li>
-						</bodyparts>
+		<!--><fur>RBM_UnguligradeLegs</fur><-->
+		
+			<!-- Added in patches> <statOffsets>
+					<MoveSpeed>0.15</MoveSpeed>
+					<FilthRate>5</FilthRate>
+					<MeleeDodgeChance>10</MeleeDodgeChance>
+				</statOffsets> <-->
+			<symbolPack>
+				<prefixSymbols>
+					<li><symbol>faun</symbol></li>
+					<li><symbol>jog</symbol></li>
+					<li><symbol>bov</symbol></li>
+					<li><symbol>bolt</symbol></li>
+				</prefixSymbols>
+				<suffixSymbols>
+					<li><symbol>yr</symbol></li>
+					<li><symbol>ine</symbol></li>
+					<li><symbol>trotter</symbol></li>
+					<li><symbol>hoof</symbol></li>
+					<li><symbol>ped</symbol></li>
+				</suffixSymbols>
+			</symbolPack>
+			<!--><renderNodeProperties>
+				<li>
+					<debugLabel>Fur</debugLabel>
+					<nodeClass>PawnRenderNode_Fur</nodeClass>
+					<workerClass>PawnRenderNodeWorker_Fur</workerClass>
+					<baseLayer>5</baseLayer>
+					<rotDrawMode>Fresh, Rotting</rotDrawMode>
+					<colorType>Hair</colorType>
+					<parentTagDef>Body</parentTagDef>
+				</li>
+			</renderNodeProperties><-->
+				<!-- The following will occur if you ARE running vanilla framework expanded. If not, a patch is added to tie the gene buffs to the pawn, as opposed to the body part -->
+				<modExtensions>
+					<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+						<hediffsToBodyParts>
+							<li>
+								<hediff>UnguligradeLegPart</hediff>
+								<bodyparts>
+									<li>Leg</li>
+									<li>Leg</li>
+								</bodyparts>
+							</li>
+						</hediffsToBodyParts>
 					</li>
-				</hediffsToBodyParts>
-			</li>
-		</modExtensions>
-	</GeneDef>
+				</modExtensions>
+			</GeneDef>
 	
-	<!-- Herculean -->
+			<!-- Herculean -->
   
-	<GeneDef>
-		<defName>RBM_Herculean</defName>
-		<label>Herculean</label>
-		<description>Carriers of this gene are tall, broad and staggeringly strong. Their herculean bodies prove them to be excellent pack mules, formidable foes in battle and rather painful lovers. They also drop more meat and leather than standard pawns. \n\nThere are some weapons that only Herculean pawns can equip.</description>
-		<geneClass>RBM_Minotaur.Gene_RBM_Herculean</geneClass>
-		<biostatCpx>2</biostatCpx>
-		<biostatMet>-2</biostatMet>
-		<displayCategory>Miscellaneous</displayCategory>
-		<displayOrderInCategory>580</displayOrderInCategory>
-		<iconPath>UI/GeneIcons/RBM_Herculean</iconPath>
-		<iconColor>(0.75, 0.75, 0.75)</iconColor>
-		<randomChosen>true</randomChosen>
-		<statFactors>
-			<MeleeDamageFactor>1.3</MeleeDamageFactor>
-			<ArrestSuccessChance>1.5</ArrestSuccessChance>
-			<MeatAmount>1.5</MeatAmount>
-			<LeatherAmount>1.5</LeatherAmount>
-		</statFactors>
-		<statOffsets>
-			<MeleeDodgeChance>-15</MeleeDodgeChance>
-			<CarryingCapacity>25</CarryingCapacity>
-		</statOffsets>
-		<symbolPack>
-			<prefixSymbols>
-				<li><symbol>rip</symbol></li>
-				<li><symbol>wall</symbol></li>
-				<li><symbol>hercu</symbol></li>
-				<li><symbol>hench</symbol></li>
-				<li><symbol>jack</symbol></li>
-				<li><symbol>aggro</symbol></li>
-				<li><symbol>vigor</symbol></li>
-			</prefixSymbols>
-			<suffixSymbols>
-				<li><symbol>roid</symbol></li>
-				<li><symbol>lean</symbol></li>
-				<li><symbol>bulk</symbol></li>
-				<li><symbol>rile</symbol></li>
-			</suffixSymbols>
-		</symbolPack>
-		<modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<caravanCarryingFactor>1.3</caravanCarryingFactor>
-				<bodyScaleFactor>1.35,1.35</bodyScaleFactor>
-				<headScaleFactor>1.1,1.1</headScaleFactor>
-			</li>
-		</modExtensions>
-	</GeneDef>
+			<GeneDef>
+				<defName>RBM_Herculean</defName>
+				<label>Herculean</label>
+				<description>Carriers of this gene are tall, broad and staggeringly strong. Their herculean bodies make them into excellent pack mules, formidable foes and rather painful lovers. They also drop more meat and leather than standard pawns. \n\nThere are some weapons that only Herculean pawns can equip.</description>
+				<geneClass>RBM_Minotaur.Gene_RBM_Herculean</geneClass>
+				<biostatCpx>2</biostatCpx>
+				<biostatMet>-2</biostatMet>
+				<displayCategory>Miscellaneous</displayCategory>
+				<displayOrderInCategory>580</displayOrderInCategory>
+				<iconPath>UI/GeneIcons/RBM_Herculean</iconPath>
+				<iconColor>(0.75, 0.75, 0.75)</iconColor>
+				<randomChosen>true</randomChosen>
+				<statFactors>
+					<MeleeDamageFactor>1.3</MeleeDamageFactor>
+					<ArrestSuccessChance>1.5</ArrestSuccessChance>
+					<MeatAmount>1.5</MeatAmount>
+					<LeatherAmount>1.5</LeatherAmount>
+				</statFactors>
+				<statOffsets>
+					<MeleeDodgeChance>-15</MeleeDodgeChance>
+					<CarryingCapacity>25</CarryingCapacity>
+				</statOffsets>
+				<symbolPack>
+					<prefixSymbols>
+						<li><symbol>rip</symbol></li>
+						<li><symbol>wall</symbol></li>
+						<li><symbol>hercu</symbol></li>
+						<li><symbol>hench</symbol></li>
+						<li><symbol>jack</symbol></li>
+						<li><symbol>aggro</symbol></li>
+						<li><symbol>vigor</symbol></li>
+					</prefixSymbols>
+					<suffixSymbols>
+						<li><symbol>roid</symbol></li>
+						<li><symbol>lean</symbol></li>
+						<li><symbol>bulk</symbol></li>
+						<li><symbol>rile</symbol></li>
+					</suffixSymbols>
+				</symbolPack>
+				<modExtensions>
+					<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+						<caravanCarryingFactor>1.3</caravanCarryingFactor>
+						<bodyScaleFactor>1.35,1.35</bodyScaleFactor>
+						<headScaleFactor>1.1,1.1</headScaleFactor>
+					</li>
+				</modExtensions>
+			</GeneDef>
 	
-	<!-- Bovine Temper -->
+			<!-- Bovine Temper -->
 	
-	<GeneDef>
-		<defName>RBM_BovineTemper</defName>
-		<label>Bovine Temper</label>
-		<description>Carriers of this gene become frighteningly aggressive when enraged. They possess the ability to 'See Red', a horrifying state of outrage that can only be ended by total exhaustion or death.</description>
-		<biostatCpx>1</biostatCpx>
-		<biostatMet>-1</biostatMet>
-		<displayCategory>Ability</displayCategory>
-		<displayOrderInCategory>200</displayOrderInCategory>
-		<iconPath>UI/GeneIcons/RBM_BovineTemper</iconPath>
-		<iconColor>(0.75, 0.75, 0.75)</iconColor>
-		<abilities>
-			<li>RBM_SeeRed</li>
-		</abilities>
-		<descriptionHyperlinks>
-			<AbilityDef>RBM_SeeRed</AbilityDef>
-		</descriptionHyperlinks>
-		<!-- Symbol -->
-		<symbolPack>
-			<wholeNameSymbols>
-				<li><symbol>minotaur</symbol></li>
-			</wholeNameSymbols>
-			<prefixSymbols>
-				<li><symbol>bull</symbol></li>
-				<li><symbol>steer</symbol></li>
-				<li><symbol>an</symbol></li>
-				<li><symbol>mino</symbol></li>
-			</prefixSymbols>
-			<suffixSymbols>
-				<li><symbol>vine</symbol></li>
-				<li><symbol>gus</symbol></li>
-				<li><symbol>ford</symbol></li>
-				<li><symbol>taur</symbol></li>
-			</suffixSymbols>
-		</symbolPack>
-	</GeneDef>
+			<GeneDef>
+				<defName>RBM_BovineTemper</defName>
+				<label>Bovine Temper</label>
+				<description>Carriers of this gene become frighteningly aggressive when enraged. They possess the ability to 'See Red', a horrifying state of outrage that can only be ended by total exhaustion or death.</description>
+				<biostatCpx>1</biostatCpx>
+				<biostatMet>-1</biostatMet>
+				<displayCategory>Ability</displayCategory>
+				<displayOrderInCategory>200</displayOrderInCategory>
+				<iconPath>UI/GeneIcons/RBM_BovineTemper</iconPath>
+				<iconColor>(0.75, 0.75, 0.75)</iconColor>
+				<abilities>
+					<li>RBM_SeeRed</li>
+				</abilities>
+				<descriptionHyperlinks>
+					<AbilityDef>RBM_SeeRed</AbilityDef>
+				</descriptionHyperlinks>
+				<!-- Symbol -->
+				<symbolPack>
+					<wholeNameSymbols>
+						<li><symbol>minotaur</symbol></li>
+					</wholeNameSymbols>
+					<prefixSymbols>
+						<li><symbol>bull</symbol></li>
+						<li><symbol>steer</symbol></li>
+						<li><symbol>an</symbol></li>
+						<li><symbol>mino</symbol></li>
+					</prefixSymbols>
+					<suffixSymbols>
+						<li><symbol>vine</symbol></li>
+						<li><symbol>gus</symbol></li>
+						<li><symbol>ford</symbol></li>
+						<li><symbol>taur</symbol></li>
+					</suffixSymbols>
+				</symbolPack>
+			</GeneDef>
 	
-	<!-- Periodic Lactation -->
+			<!-- Periodic Lactation -->
 	
-	<GeneDef>
-		<defName>RBM_PeriodicLactation</defName>
-		<label>lactation</label>
-		<description>Carriers of this gene periodically produce milk. Pawns with this gene can manually be milked via their ability or automatically by building a milking machine. \n\n(By default, male and female pawns can both be milked. You can change this, or disable the functionality altogether, in the mod settings menu.)</description>
-		<biostatCpx>1</biostatCpx>
-		<biostatMet>-1</biostatMet>
-		<minAgeActive>18</minAgeActive>
-		<displayCategory>Ability</displayCategory>
-		<displayOrderInCategory>200</displayOrderInCategory>
-		<iconPath>UI/GeneIcons/RBM_Lactation</iconPath>
-		<iconColor>(0.75, 0.75, 0.75)</iconColor>
-		<abilities>
-			<li>RBM_Lactation</li>
-		</abilities>
-		<descriptionHyperlinks>
-			<AbilityDef>RBM_Lactation</AbilityDef>
-		</descriptionHyperlinks>
-		<!-- Symbol -->
-		<symbolPack>
-			<wholeNameSymbols>
-				<li><symbol>minotaur</symbol></li>
-			</wholeNameSymbols>
-			<prefixSymbols>
-				<li><symbol>calci</symbol></li>
-				<li><symbol>lact</symbol></li>
-				<li><symbol>lai</symbol></li>
-				<li><symbol>mino</symbol></li>
-			</prefixSymbols>
-			<suffixSymbols>
-				<li><symbol>che</symbol></li>
-				<li><symbol>lac</symbol></li>
-				<li><symbol>mula</symbol></li>
-			</suffixSymbols>
-		</symbolPack>
-	</GeneDef>
+			<GeneDef>
+				<defName>RBM_PeriodicLactation</defName>
+				<label>lactation</label>
+				<description>Carriers of this gene periodically produce milk. Pawns with this gene can manually be milked via their ability or automatically by building a milking machine. \n\n(By default, male and female pawns can both be milked. You can change this, or disable the functionality altogether, in the mod settings menu.)</description>
+				<biostatCpx>1</biostatCpx>
+				<biostatMet>-1</biostatMet>
+				<minAgeActive>18</minAgeActive>
+				<displayCategory>Ability</displayCategory>
+				<displayOrderInCategory>200</displayOrderInCategory>
+				<iconPath>UI/GeneIcons/RBM_Lactation</iconPath>
+				<iconColor>(0.75, 0.75, 0.75)</iconColor>
+				<abilities>
+					<li>RBM_Lactation</li>
+				</abilities>
+				<descriptionHyperlinks>
+					<AbilityDef>RBM_Lactation</AbilityDef>
+				</descriptionHyperlinks>
+				<!-- Symbol -->
+				<symbolPack>
+					<wholeNameSymbols>
+						<li><symbol>minotaur</symbol></li>
+					</wholeNameSymbols>
+					<prefixSymbols>
+						<li><symbol>calci</symbol></li>
+						<li><symbol>lact</symbol></li>
+						<li><symbol>lai</symbol></li>
+						<li><symbol>mino</symbol></li>
+					</prefixSymbols>
+					<suffixSymbols>
+						<li><symbol>che</symbol></li>
+						<li><symbol>lac</symbol></li>
+						<li><symbol>mula</symbol></li>
+					</suffixSymbols>
+				</symbolPack>
+			</GeneDef>
 
-	<!-- Ruminant Stomach -->
+			<!-- Ruminant Stomach -->
 	
-	<GeneDef>
-		<defName>RBM_RuminantStomach</defName>
-		<label>ruminant stomach</label>
-		<description>Carriers of this gene are born with an intricate digestive system that is slightly more hardy than a multi-fold stomach. Not can they consume hay, but they much prefer it to the taste of simple meals.</description>
-		<biostatCpx>2</biostatCpx>
-		<biostatMet>-2</biostatMet>
-		<displayCategory>Miscellaneous</displayCategory>
-		<displayOrderInCategory>11</displayOrderInCategory>
-		<iconPath>UI/GeneIcons/RBM_RuminantStomach</iconPath>
-		<iconColor>(0.75, 0.75, 0.75)</iconColor>
-		<dontMindRawFood>true</dontMindRawFood>
-		<statFactors>
-			<RawNutritionFactor>1.5</RawNutritionFactor>
-			<MaxNutrition>2</MaxNutrition>
-		</statFactors>
-		<symbolPack>
-			<prefixSymbols>
-				<li><symbol>graze</symbol></li>
-				<li><symbol>hay</symbol></li>
-				<li><symbol>herbi</symbol></li>
-			</prefixSymbols>
-			<suffixSymbols>
-				<li><symbol>grazer</symbol></li>
-				<li><symbol>vore</symbol></li>
-				<li><symbol>dae</symbol></li>
-			</suffixSymbols>
-		</symbolPack>
-	</GeneDef>
+			<GeneDef>
+				<defName>RBM_RuminantStomach</defName>
+				<label>ruminant stomach</label>
+				<description>Carriers of this gene are born with an intricate digestive system that is slightly more hardy than a multi-fold stomach. Not can they consume hay, but they much prefer it to the taste of simple meals.</description>
+				<customEffectDescriptions>
+					<li>Can eat hay.</li>
+				</customEffectDescriptions>
+				<biostatCpx>2</biostatCpx>
+				<biostatMet>-2</biostatMet>
+				<displayCategory>Miscellaneous</displayCategory>
+				<displayOrderInCategory>11</displayOrderInCategory>
+				<iconPath>UI/GeneIcons/RBM_RuminantStomach</iconPath>
+				<iconColor>(0.75, 0.75, 0.75)</iconColor>
+				<dontMindRawFood>true</dontMindRawFood>
+				<statFactors>
+					<RawNutritionFactor>1.5</RawNutritionFactor>
+					<MaxNutrition>2</MaxNutrition>
+				</statFactors>
+				<symbolPack>
+					<prefixSymbols>
+						<li><symbol>graze</symbol></li>
+						<li><symbol>hay</symbol></li>
+						<li><symbol>herbi</symbol></li>
+					</prefixSymbols>
+					<suffixSymbols>
+						<li><symbol>grazer</symbol></li>
+						<li><symbol>vore</symbol></li>
+						<li><symbol>dae</symbol></li>
+					</suffixSymbols>
+				</symbolPack>
+			</GeneDef>
   
-	<!-- Estrous Cycle -->
+			<!-- Estrous Cycle -->
 	
-	<GeneDef ParentName="FertilityBase">
-		<defName>RBM_EstrousCycle</defName>
-		<label>estrous cycle</label>
-		<description>Carriers of this gene go into heat during Aprimay. While in heat, they will crave lovin' more than usual at the cost of a nasty mood debuff.
-		\n\nPawns that have been permanently sterilized will not experience the symptoms of heat.
-		</description>
-		<geneClass>RBM_Minotaur.Gene_RBM_EstrousCycle</geneClass>
-		<biostatCpx>1</biostatCpx>
-		<biostatMet>2</biostatMet>
-		<minAgeActive>18</minAgeActive>
-		<displayCategory>Reproduction</displayCategory>
-		<displayOrderInCategory>115</displayOrderInCategory>
-		<iconPath>UI/GeneIcons/RBM_EstrousCycle</iconPath>
-		<iconColor>(0.75, 0.75, 0.75)</iconColor>
-		<symbolPack>
-			<prefixSymbols>
-				<li><symbol>rut</symbol></li>
-				<li><symbol>heat</symbol></li>
-				<li><symbol>spring</symbol></li>
-			</prefixSymbols>
-			<suffixSymbols>
-				<li><symbol>dosis</symbol></li>
-				<li><symbol>mone</symbol></li>
-				<li><symbol>mate</symbol></li>
-			</suffixSymbols>
-		</symbolPack>
-	</GeneDef>
-</Defs>
+			<GeneDef>
+				<defName>RBM_EstrousCycle</defName>
+				<label>estrous cycle</label>
+				<description>Carriers of this gene go into heat during Aprimay. While in heat, they will crave lovin' more than usual at the cost of some nasty mood swings.\n\nPawns that are permanently sterilized via a medical procedure will not experience the symptoms of heat.
+				</description>
+				<customEffectDescriptions>
+					<li>Desire more lovin' during Aprimay.</li>
+					<li>Gain a mood debuff during Aprimay.</li>
+				</customEffectDescriptions>
+				<geneClass>RBM_Minotaur.Gene_RBM_EstrousCycle</geneClass>
+				<biostatCpx>1</biostatCpx>
+				<biostatMet>2</biostatMet>
+				<minAgeActive>18</minAgeActive>
+				<displayCategory>Reproduction</displayCategory>
+				<displayOrderInCategory>115</displayOrderInCategory>
+				<exclusionTags>
+					<li>RBM_Heat</li>
+				</exclusionTags>
+				<iconPath>UI/GeneIcons/RBM_EstrousCycle</iconPath>
+				<iconColor>(0.75, 0.75, 0.75)</iconColor>
+				<symbolPack>
+					<prefixSymbols>
+						<li><symbol>rut</symbol></li>
+						<li><symbol>heat</symbol></li>
+						<li><symbol>spring</symbol></li>
+					</prefixSymbols>
+					<suffixSymbols>
+						<li><symbol>dosis</symbol></li>
+						<li><symbol>mone</symbol></li>
+						<li><symbol>mate</symbol></li>
+					</suffixSymbols>
+				</symbolPack>
+			</GeneDef>
+		</Defs>

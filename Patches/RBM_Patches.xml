@@ -51,6 +51,30 @@
 			</value>
 		</match>
 	</Operation>
+	
+<!--============================== Estrous Cycle - Patches ============================-->
+<!--Pawns that are sterile will not be able to have the Estrous Cycle gene-->
+
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/GeneDef[defName="Sterile"]</xpath>
+	<match Class="PatchOperationConditional">
+		<xpath>Defs/GeneDef[defName="Sterile"]/exclusionTags</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/GeneDef[defName="Sterile"]/exclusionTags</xpath>
+			<value>
+				<li>RBM_Heat</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/GeneDef[defName="Sterile"]</xpath>
+			<value>
+				<exclusionTags>
+					<li>RBM_Heat</li>
+				</exclusionTags>
+			</value>
+		</nomatch>
+	</match>
+</Operation>
 
 	<!--============================== Apparel - Patches ============================-->
 	<!-- Unless you have Britannic Rim - Core installed, this patch adds a tailcoat to the game. If Britannic Rim is installed, we'll use the tailcoat introduced by that mod instead. -->

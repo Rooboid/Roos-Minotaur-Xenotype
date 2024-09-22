@@ -15,7 +15,7 @@
 			<value>
 				<statOffsets>
 					<!-- <StaggerDurationFactor>-0.25</StaggerDurationFactor> -->
-					<MoveSpeed>0.2</MoveSpeed>
+					<MoveSpeed>0.15</MoveSpeed>
 					<FilthRate>5</FilthRate>
 					<MeleeDodgeChance>10</MeleeDodgeChance>
 				</statOffsets>
@@ -49,9 +49,9 @@
 						<iconColor>(0.75, 0.75, 0.75)</iconColor>
 						<statOffsets>
 							<StaggerDurationFactor>-0.25</StaggerDurationFactor>
-							<MoveSpeed>0.2</MoveSpeed>
-							<FilthRate>1.5</FilthRate>
-							<MeleeDodgeChance>5</MeleeDodgeChance>
+							<MoveSpeed>0.15</MoveSpeed>
+							<FilthRate>5</FilthRate>
+							<MeleeDodgeChance>10</MeleeDodgeChance>
 						</statOffsets>
 						<symbolPack>
 							<prefixSymbols>

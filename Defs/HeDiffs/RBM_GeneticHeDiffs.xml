@@ -125,7 +125,7 @@
 			<li>
 				<label>in heat</label>
 				<description>Being in heat really affects my mood.</description>
-				<baseMoodEffect>-7</baseMoodEffect>
+				<baseMoodEffect>-10</baseMoodEffect>
 			</li>
 		</stages>
 	</ThoughtDef>
@@ -163,10 +163,9 @@
 			<li>
 				<minSeverity>0</minSeverity>
 				<statOffsets>
-					<StaggerDurationFactor>-0.13</StaggerDurationFactor>
-					<MoveSpeed>0.1</MoveSpeed>
-					<FilthRate>0.75</FilthRate>
-					<MeleeDodgeChance>2.5</MeleeDodgeChance>
+					<MoveSpeed>0.15</MoveSpeed>
+					<FilthRate>5</FilthRate>
+					<MeleeDodgeChance>10</MeleeDodgeChance>
 				</statOffsets>
 			</li>
 		</stages>
