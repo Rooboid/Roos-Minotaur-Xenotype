@@ -1,6 +1,5 @@
 ﻿using RimWorld;
 using Verse;
-using static RimWorld.PsychicRitualRoleDef;
 
 namespace RBM_Minotaur
 {

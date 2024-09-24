@@ -1,5 +1,4 @@
 ﻿using RimWorld;
-using System;
 using Verse;
 
 namespace RBM_Minotaur
@@ -37,7 +36,7 @@ namespace RBM_Minotaur
             if (MinotaurSettings.debugMessages) { Log.Message("RBM Is Running: (See Red) public override void DrawEffectPreview(LocalTargetInfo target)"); }
             GenDraw.DrawRadiusRing(target.Cell, MinotaurSettings.SeeRedFearRadius);
         }
-        
+
         //Allows AI to use ability only if 35% to pain threshold
         public override bool AICanTargetNow(LocalTargetInfo target)
         {

@@ -90,7 +90,7 @@ namespace RBM_Minotaur
             MinotaurSettings.SeeRedFearRadius = (float)Math.Round(MinotaurSettings.SeeRedFearRadius * 2.0) / 2;
             MinotaurSettings.SeeRedFleeRadius = listingStandard.SliderLabeled("See Red flee radius: " + MinotaurSettings.SeeRedFleeRadius.ToString(), MinotaurSettings.SeeRedFleeRadius, 1f, 50f, 0.5f, "The distance which pawns will flee from a pawn using the See Red ability. Lowest value of distance and time wins.");
             MinotaurSettings.SeeRedFleeRadius = (float)Math.Round(MinotaurSettings.SeeRedFleeRadius * 2.0) / 2;
-            float SeeRedFearDurationSeconds = (float)Math.Round((float)MinotaurSettings.SeeRedFearDuration / 60.0f, 1);
+            float SeeRedFearDurationSeconds = (float)Math.Round(MinotaurSettings.SeeRedFearDuration / 60.0f, 1);
             MinotaurSettings.SeeRedFearDuration = (int)listingStandard.SliderLabeled("See Red fear duration: " + SeeRedFearDurationSeconds.ToString() + "s (" + MinotaurSettings.SeeRedFearDuration.ToString() + " ticks)", MinotaurSettings.SeeRedFearDuration, 1f, 600f, 0.5f, "The time period which pawns will flee from a pawn using the See Red ability. Lowest value of distance and time wins.");
 
             listingStandard.Label(" ");

@@ -45,7 +45,7 @@ namespace RBM_Minotaur
 
             for (int i = 0; i < this.Props.moteCount; i++)
             {
-                Vector2 vector = Rand.InsideUnitCircle * this.Props.moteOffsetRange.RandomInRange * (float)Rand.Sign;
+                Vector2 vector = Rand.InsideUnitCircle * this.Props.moteOffsetRange.RandomInRange * Rand.Sign;
                 Vector3 loc = new Vector3(drawPos.x + vector.x, drawPos.y, drawPos.z + vector.y);
                 if (this.Props.mote != null)
                 {
