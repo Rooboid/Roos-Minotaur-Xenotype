@@ -65,7 +65,7 @@ namespace RBM_Minotaur
                 yield return cast;
                 yield break;
             }
-            Log.Warning("RBM_Minotaur: Tried to start Milking job with reserved object");
+            // Log.Warning("RBM_Minotaur: Tried to start Milking job with reserved object");
             yield break;
         }
         public override string GetReport()

@@ -1,5 +1,6 @@
 ﻿using RimWorld;
 using Verse;
+using static RimWorld.PsychicRitualRoleDef;
 
 namespace RBM_Minotaur
 {
@@ -38,23 +39,28 @@ namespace RBM_Minotaur
                 return true;
             }
 
-            if (this.parent.pawn.gender == Gender.Male && !MinotaurSettings.milkableMales)
-            {
-                reason = "Male pawns cannot be milked due to settings.";
-                return true;
-            }
-
-            if (this.parent.pawn.gender == Gender.Female && !MinotaurSettings.milkableFemales)
-            {
-                reason = "Female pawns cannot be milked due to settings.";
-                return true;
-            }
-
             if (base.GizmoDisabled(out reason))
             {
                 return true;
             }
             return false;
+        }
+
+        public override bool ShouldHideGizmo
+        {
+            get
+            {
+                if (this.parent.pawn.gender == Gender.Male && !MinotaurSettings.milkableMales)
+                {
+                    return true;
+                }
+
+                if (this.parent.pawn.gender == Gender.Female && !MinotaurSettings.milkableFemales)
+                {
+                    return true;
+                }
+                return false;
+            }
         }
     }
 
