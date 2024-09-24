@@ -12,7 +12,7 @@
 	<AbilityDef>
 		<defName>RBM_SeeRed</defName>
 		<label>see red</label>
-		<description>The user erupts into a monstrous rage, terrifying those around them. The user will attack both friends and foes with unrelenting strength and speed until they exhaust themselves or drop dead.</description>
+		<description>The user erupts into a monstrous rage, making pawns around them flee. The user will attack both friends and foes with unrelenting strength and speed until they exhaust themselves or drop dead.</description>
 		<jobDef>CastAbilityOnThingWithoutWeapon</jobDef>
 		<iconPath>UI/GeneIcons/RBM_Ability_SeeRed</iconPath>
 		<writeCombatLog>True</writeCombatLog>

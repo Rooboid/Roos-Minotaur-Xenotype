@@ -7,7 +7,7 @@
 	<GeneDef ParentName="GeneEarsBase">
 		<defName>RBM_BovineEars</defName>
 		<label>bovine ears</label>
-		<description>Carriers of this gene possess large, bovine ears.</description>
+		<description>Carriers of this gene have large, bovine ears.</description>
 		<iconPath>UI/GeneIcons/RBM_BovineEars</iconPath>
 		<!-- <graphicData>
 			<graphicPaths>
@@ -60,22 +60,8 @@
 	<GeneDef ParentName="GeneHeadboneBase">
 		<defName>RBM_BovineHorns</defName>
 		<label>bovine horns</label>
-		<description>Carriers of this gene sport a pair of formidable horns atop their head. It's not about how big they are, it's about how you use them.</description>
+		<description>Carriers of this gene sport a pair of formidable horns atop their head.</description>
 		<iconPath>UI/GeneIcons/RBM_BovineHorns</iconPath>
-		<!-- <graphicData>
-			<graphicPaths>
-				<li>Things/Pawn/Humanlike/Horns/RBM_Horns1/RBM_Horns1</li>
-				<li>Things/Pawn/Humanlike/Horns/RBM_Horns2/RBM_Horns2</li>
-				<li>Things/Pawn/Humanlike/Horns/RBM_Horns3/RBM_Horns3</li>
-				<li>Things/Pawn/Humanlike/Horns/RBM_Horns4/RBM_Horns4</li>
-				<li>Things/Pawn/Humanlike/Horns/RBM_Horns5/RBM_Horns5</li>
-				<li>Things/Pawn/Humanlike/Horns/RBM_Horns6/RBM_Horns6</li>
-				<li>Things/Pawn/Humanlike/Horns/RBM_Horns7/RBM_Horns7</li>
-				<li>Things/Pawn/Humanlike/Horns/RBM_Horns8/RBM_Horns8</li>
-				<li>Things/Pawn/Humanlike/Horns/RBM_Horns9/RBM_Horns9</li>
-				<li>Things/Pawn/Humanlike/Horns/RBM_Horns10/RBM_Horns10</li>
-			</graphicPaths>
-		</graphicData> -->
 		<renderNodeProperties>
 			<li>
 				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
@@ -128,7 +114,7 @@
 		<defName>RBM_BovineHead</defName>
 		<label>bovine head</label>
 		<labelShortAdj>bovine</labelShortAdj>
-		<description>Carriers of this gene possess a bovine head.</description>
+		<description>Carriers of this gene have a bovine head.</description>
 		<iconPath>UI/GeneIcons/RBM_BovineHead</iconPath>
 		<displayCategory>Cosmetic</displayCategory>
 		<displayOrderInCategory>98</displayOrderInCategory>
@@ -147,40 +133,6 @@
 			<li>RBM_NarrowHeadM2</li>
 			<li>RBM_NarrowHeadM3</li>
 		</forcedHeadTypes>
-		<!-- <graphicData>
-			<graphicPaths>
-
-				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
-				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
-				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
-				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
-				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
-				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
-				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
-				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
-				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
-				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
-				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
-				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
-				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
-				<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
-
-				<li>Things/Pawn/Humanlike/Markings/Head_NoseRing/Ring</li>
-				<li>Things/Pawn/Humanlike/Markings/Head_NoseRing/Ring</li>
-				<li>Things/Pawn/Humanlike/Markings/Head_NoseRing/Ring</li>
-
-				<li>Things/Pawn/Humanlike/Markings/Head_Bull1/Bull1</li>
-				<li>Things/Pawn/Humanlike/Markings/Head_Bull2/Bull2</li>
-				<li>Things/Pawn/Humanlike/Markings/Head_Bull3/Bull3</li>
-				<li>Things/Pawn/Humanlike/Markings/Head_Bull4/Bull4</li>
-				<li>Things/Pawn/Humanlike/Markings/Head_Cow1/Cow1</li>
-				<li>Things/Pawn/Humanlike/Markings/Head_Cow2/Cow2</li>
-				<li>Things/Pawn/Humanlike/Markings/Head_Cow3/Cow3</li>
-				<li>Things/Pawn/Humanlike/Markings/Head_Cow4/Cow4</li>
-			</graphicPaths>
-			<visibleNorth>false</visibleNorth>
-			<layer>PostSkin</layer>
-		</graphicData> -->
 		<renderNodeProperties>
 			<li>
 				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
@@ -253,7 +205,7 @@
 		<defName>RBM_EarthySkin</defName>
 		<label>earthy skin</label>
 		<labelShortAdj>earthen</labelShortAdj>
-		<description>Carriers of this gene have patchy skin of earthy colours.</description>
+		<description>Carriers of this gene have earthy-coloured skin.</description>
 		<randomBrightnessFactor>6</randomBrightnessFactor>
 		<skinColorOverride>(200, 140, 110)</skinColorOverride>
 		<displayOrderInCategory>99</displayOrderInCategory>
@@ -277,7 +229,7 @@
 	<GeneDef ParentName="GeneVoiceBase">
 		<defName>RBM_BovineVoice</defName>
 		<label>bovine voice</label>
-		<description>Carriers of this gene will moo when pleased and exhale a loud puff from their nostrils when annoyed.</description>
+		<description>Carriers of this gene have a cow-like voice, mooing when they are happy and huffing through their nostrils when they are mad.</description>
 		<iconPath>UI/GeneIcons/RBM_BovineVoice</iconPath>
 		<displayOrderInCategory>135</displayOrderInCategory>
 		<soundCall>RBM_BovineCall</soundCall>
@@ -367,7 +319,7 @@
 			<GeneDef>
 				<defName>RBM_Herculean</defName>
 				<label>Herculean</label>
-				<description>Carriers of this gene are tall, broad and staggeringly strong. Their herculean bodies make them into excellent pack mules, formidable foes and rather painful lovers. They also drop more meat and leather than standard pawns. \n\nThere are some weapons that only Herculean pawns can equip.</description>
+				<description>Carriers of this gene are tall, broad and staggeringly strong. The sheer size of these pawns makes them ruthless fighters at the cost of being much easier to hit and painful to do lovin' with.\n\nThere are some weapons that only Herculean pawns can equip.</description>
 				<geneClass>RBM_Minotaur.Gene_RBM_Herculean</geneClass>
 				<biostatCpx>2</biostatCpx>
 				<biostatMet>-2</biostatMet>
@@ -417,7 +369,7 @@
 			<GeneDef>
 				<defName>RBM_BovineTemper</defName>
 				<label>Bovine Temper</label>
-				<description>Carriers of this gene become frighteningly aggressive when enraged. They possess the ability to 'See Red', a horrifying state of outrage that can only be ended by total exhaustion or death.</description>
+				<description>Carriers of this gene possess the ability to 'See Red', sending them into a horrifying state of outrage that can only be ended by total exhaustion or death.</description>
 				<biostatCpx>1</biostatCpx>
 				<biostatMet>-1</biostatMet>
 				<displayCategory>Ability</displayCategory>
@@ -455,7 +407,7 @@
 			<GeneDef>
 				<defName>RBM_PeriodicLactation</defName>
 				<label>lactation</label>
-				<description>Carriers of this gene periodically produce milk. Pawns with this gene can manually be milked via their ability or automatically by building a milking machine. \n\n(By default, male and female pawns can both be milked. You can change this, or disable the functionality altogether, in the mod settings menu.)</description>
+				<description>Carriers of this gene periodically produce milk. They can manually be milked by using their ability or automatically be milked by building a milking machine. \n\n(By default, male and female pawns can be milked. You can change this in the mod settings menu.)</description>
 				<biostatCpx>1</biostatCpx>
 				<biostatMet>-1</biostatMet>
 				<minAgeActive>18</minAgeActive>
@@ -493,7 +445,7 @@
 			<GeneDef>
 				<defName>RBM_RuminantStomach</defName>
 				<label>ruminant stomach</label>
-				<description>Carriers of this gene are born with an intricate digestive system that is slightly more hardy than a multi-fold stomach. Not can they consume hay, but they much prefer it to the taste of simple meals.</description>
+				<description>Carriers of this gene are born with large and hardy digestive systems, allowing them to eat hay. They will eat hay when there are no fine meals around, however, they require a lot more food to feel full.</description>
 				<customEffectDescriptions>
 					<li>Can eat hay.</li>
 				</customEffectDescriptions>
@@ -527,8 +479,7 @@
 			<GeneDef>
 				<defName>RBM_EstrousCycle</defName>
 				<label>estrous cycle</label>
-				<description>Carriers of this gene go into heat during Aprimay. While in heat, they will crave lovin' more than usual at the cost of some nasty mood swings.\n\nPawns that are permanently sterilized via a medical procedure will not experience the symptoms of heat.
-				</description>
+				<description>Carriers of this gene go into heat during Aprimay. While in heat, they will crave lovin' more than usual at the cost of having intense mood swings.\n\nPawns that are permanently sterilized or pregnant will not go into heat.</description>
 				<customEffectDescriptions>
 					<li>Desire more lovin' during Aprimay.</li>
 					<li>Gain a mood debuff during Aprimay.</li>

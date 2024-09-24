@@ -3,6 +3,47 @@
 
 	<ThingDef ParentName="BuildingBase">
 		<defName>RBM_MilkingMachine</defName>
+		<label>milking spot</label>
+		<description>A place where pawns with the lactation gene will automatically produce milk. How much they produce can be toggled in the mod settings menu.</description>
+		<tickerType>Normal</tickerType>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<size>(1,1)</size>
+		<uiIconScale>0.7</uiIconScale>
+		<passability>Standable</passability>
+		<hasInteractionCell>True</hasInteractionCell>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<interactionCellOffset>(0,0,0)</interactionCellOffset>
+		<statBases>
+			<WorkToBuild>0</WorkToBuild>
+		</statBases>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.6,1.6)</drawSize>
+			<texPath>Things/Building/RBM_MilkingSpot</texPath>
+		</graphicData>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<placeWorkers>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<pathCost>50</pathCost>
+		<designationCategory>Production</designationCategory>
+		<uiOrder>2060</uiOrder>
+		<rotatable>false</rotatable>
+		<building>
+			<paintable>false</paintable>
+			<sowTag>SupportPlantsOnly</sowTag>
+			<canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+			<ai_chillDestination>false</ai_chillDestination>
+			<wakeDormantPawnsOnConstruction>false</wakeDormantPawnsOnConstruction>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+			<buildingTags>
+				<li>Production</li>
+			</buildingTags>
+		</building>
+	</ThingDef>
+
+<!-- 	<ThingDef ParentName="BuildingBase">
+		<defName>RBM_MilkingMachineExtra</defName>
 		<label>milking machine</label>
 		<description>A machine where pawns with the lactation gene can produce milk. How much they produce can be toggled in the mod settings menu.</description>
 		<drawerType>MapMeshAndRealTime</drawerType>
@@ -14,9 +55,9 @@
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,1)</interactionCellOffset>
 		<graphicData>
-			<drawSize>(1.1,1.1)</drawSize>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
 			<texPath>Things/Building/RBM_MilkingMachine</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
 			<shadowData>
 				<volume>(1,0.5,1)</volume>
 			</shadowData>
@@ -41,11 +82,11 @@
 			<Cleanliness>-5</Cleanliness>
 		</statBases>
 		<comps>
-			<li Class="CompProperties_Power">
+			 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
 				<shortCircuitInRain>false</shortCircuitInRain>
 				<basePowerConsumption>25</basePowerConsumption>
-			</li>
+			</li> 
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>
 			<li Class="CompProperties_Forbiddable"/>
@@ -60,13 +101,15 @@
 		<pathCost>50</pathCost>
 		<designationCategory>Production</designationCategory>
 		<uiOrder>2060</uiOrder>
-		<rotatable>false</rotatable>
+		<rotatable>true</rotatable>
 		<building>
 			<paintable>true</paintable>
 		</building>
 		<researchPrerequisites>
 			<li>Electricity</li>
 		</researchPrerequisites>
-	</ThingDef>
+	</ThingDef> -->
+	
+	
   
 </Defs>

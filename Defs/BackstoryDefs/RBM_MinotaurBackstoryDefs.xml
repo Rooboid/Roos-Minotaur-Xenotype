@@ -108,7 +108,7 @@
 		<title>friendly guardian</title>
 		<titleShort>guardian</titleShort>
 		<slot>Childhood</slot>
-		<baseDesc>[PAWN_nameDef] was born to protect a young monarch, yet their relationship was more akin to siblinghood than anything else. As the two of them aged, learnt, and played together, their bond became totally unbreakable. Since most of [PAWN_possessive] time was spent playfighting with [PAWN_possessive] young master, [PAWN_nameDef] rarely had much time to practise [PAWN_possessive] domestic skills.</baseDesc>
+		<baseDesc>[PAWN_nameDef] was born to protect a young monarch, yet their relationship was more akin to siblinghood than anything else. As the two of them aged, learnt, and played together, their bond became totally unbreakable.\n\nSince most of [PAWN_possessive] time was spent playfighting with [PAWN_possessive] young master, [PAWN_nameDef] rarely had much time to practise [PAWN_possessive] domestic skills.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<spawnCategories>
@@ -141,7 +141,7 @@
 		<title>lab-grown guardian</title>
 		<titleShort>guardian</titleShort>
 		<slot>Childhood</slot>
-		<baseDesc>[PAWN_nameDef] was biologically engineered to be the perfect guardian to [PAWN_possessive] master. Grown within the clutches of a cold, glass vat, [PAWN_nameDef] was then raised to solely follow three principles: fight, serve, and obey.</baseDesc>
+		<baseDesc>[PAWN_nameDef] was biologically engineered to be the perfect guardian to [PAWN_possessive] master. Grown within the clutches of a cold, glass vat, [PAWN_nameDef] was then raised to solely follow three principles. To fight, to serve, and to obey.</baseDesc>
 		<bodyTypeMale>Hulk</bodyTypeMale>
 		<bodyTypeFemale>Hulk</bodyTypeFemale>
 		<spawnCategories>
@@ -264,7 +264,7 @@
 		<title>pining guardian</title>
 		<titleShort>guardian</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>[PAWN_nameDef]’s unrequited feelings of love for [PAWN_possessive] master forever brought [PAWN_objective] shame and anguish. Watching them fall in love with potential suitors over and over again has only worsened the wound that [PAWN_nameDef] had to hide.</baseDesc>
+		<baseDesc>[PAWN_nameDef]’s unrequited feelings of love for [PAWN_possessive] master forever brought [PAWN_objective] shame and anguish. Watching them fall in love with potential suitors over and over again only worsened the wound that [PAWN_nameDef] had to hide.</baseDesc>
 		<bodyTypeMale>Hulk</bodyTypeMale>
 		<bodyTypeFemale>Hulk</bodyTypeFemale>
 		<spawnCategories>
@@ -351,7 +351,7 @@
 		<title>elegant guardian</title>
 		<titleShort>guardian</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>[PAWN_nameDef] served [PAWN_possessive] master diligently. Whether it was slaying a foe on the battlefield or pouring the finest cup of tea on this side of the rim, [PAWN_nameDef] executed such duties with finesse and class.</baseDesc>
+		<baseDesc>[PAWN_nameDef] served [PAWN_possessive] master diligently. Whether it was slaying a foe on the battlefield or pouring the finest cup of tea on this side of the rim, [PAWN_nameDef] executed [PAWN_possessive] duties with finesse and class.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<spawnCategories>
@@ -470,7 +470,7 @@
 		<title>runaway</title>
 		<titleShort>runaway</titleShort>
 		<slot>Childhood</slot>
-		<baseDesc>[PAWN_nameDef] was taken from [PAWN_possessive] family at birth: a standard procedure on a minotaur farm. These farms were typically established and maintained by humans, who would slaughter their minotaur for their desirable cuts of meat. [PAWN_nameDef] didn’t take too kindly to the thought of being someone’s supper, and so, escaped captivity in the dead of night.</baseDesc>
+		<baseDesc>[PAWN_nameDef] was taken from [PAWN_possessive] family at birth. A standard procedure on a minotaur farm. These farms were typically established by humans, who would slaughter minotaurs for their desirable and large amounts of meat.\n\n[PAWN_nameDef] didn’t take too kindly to the thought of being someone’s supper, and escaped captivity in the dead of night.</baseDesc>
 		<bodyTypeMale>Hulk</bodyTypeMale>
 		<bodyTypeFemale>Hulk</bodyTypeFemale>
 		<spawnCategories>
@@ -481,7 +481,7 @@
 			<Social>-3</Social>
 		</skillGains>
 		<forcedTraits>
-			<Nimble>0</Nimble>
+			<Tough>0</Tough>
 		</forcedTraits>
 		<disallowedTraits>
 			<SpeedOffset>-2</SpeedOffset>
@@ -579,7 +579,7 @@
 		<title>roamer</title>
 		<titleShort>roamer</titleShort>
 		<slot>Childhood</slot>
-		<baseDesc>[PAWN_nameDef] roamed the lands with a group of travelling merchants, picking up a few skills along the way.</baseDesc>
+		<baseDesc>[PAWN_nameDef] lived like a wild animal and roamed the lands on all-fours in search of food and shelter.</baseDesc>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<spawnCategories>
@@ -612,6 +612,35 @@
 		</skillGains>
 		<forcedTraits>
 			<Kind>0</Kind>
+		</forcedTraits>
+	</BackstoryDef>
+	
+	<!--============================== Veal ============================-->
+	<!-- New -->
+
+	<BackstoryDef>
+		<defName>RBM_Veal</defName>
+		<title>veal</title>
+		<titleShort>veal</titleShort>
+		<slot>Childhood</slot>
+		<baseDesc>Veal — the meat of young minotaur calves — was widely coveted on [PAWN_nameDef]’s home planet for its unique flavour. [PAWN_nameDef] was specifically bred to be large, fatty and eventually served up on a human’s dinner plate. But a cult of minotaur supremacists raided the operation, freeing [PAWN_nameDef] and releasing her into the wild.</baseDesc>
+		<bodyTypeMale>Fat</bodyTypeMale>
+		<bodyTypeFemale>Fat</bodyTypeFemale>
+		<spawnCategories>
+			<li>Minotaur</li>
+			<li>MinotaurTribe</li>
+			<li>MinotaurWild</li>
+			<li>MinotaurOutlander</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>3</Melee>
+			<Plants>3</Plants>
+		</skillGains>
+		<workDisables>
+			<li>Cooking</li>
+		</workDisables>
+		<forcedTraits>
+			<Gourmand>0</Gourmand>
 		</forcedTraits>
 	</BackstoryDef>
 
@@ -681,7 +710,7 @@
 		<title>cut of meat</title>
 		<titleShort>berserk</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>[PAWN_nameDef] was sold to an intergalactic butcher for [PAWN_possessive] delectable meat. Upon entering the trade ship, [PAWN_nameDef] broke free from [PAWN_possessive] shackles and made mincemeat of each and every one of the crew, leaving not one survivor to tell the tale, but [PAWN_objective].</baseDesc>
+		<baseDesc>[PAWN_nameDef] was sold to an intergalactic butcher for [PAWN_possessive] delectable meat. Upon entering the butcher's trade ship, [PAWN_nameDef] broke free from [PAWN_possessive] shackles and made mincemeat of each and every one of the crew, leaving not one survivor to tell the tale, but [PAWN_objective].</baseDesc>
 		<bodyTypeMale>Hulk</bodyTypeMale>
 		<bodyTypeFemale>Hulk</bodyTypeFemale>
 		<spawnCategories>
@@ -773,7 +802,7 @@
 		<title>feral</title>
 		<titleShort>feral</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>[PAWN_nameDef] returned to the wild like a feral beast. Those who came toe-to-hoof with [PAWN_objective] might have preferred a swift end, but [PAWN_nameDef] killed [PAWN_possessive] prey slowly.</baseDesc>
+		<baseDesc>[PAWN_nameDef] returned to the wild like a feral beast. Those who came toe-to-hoof with [PAWN_objective] might have preferred a swift end, but [PAWN_nameDef] made every one of [PAWN_possessive] kills last.</baseDesc>
 		<bodyTypeMale>Hulk</bodyTypeMale>
 		<bodyTypeFemale>Hulk</bodyTypeFemale>
 		<spawnCategories>
@@ -812,7 +841,7 @@
 		<title>hothead</title>
 		<titleShort>hothead</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>No matter what job [PAWN_nameDef] picked up, no matter what friendships [PAWN_pronoun] made, [PAWN_pronoun] could always be sure that [PAWN_possessive] explosive temper would be the end of them. [PAWN_nameDef] continues to wander, searching for [PAWN_possessive] red-hot place in the world.</baseDesc>
+		<baseDesc>No matter what job [PAWN_nameDef] picked up, no matter what friendships [PAWN_pronoun] made, [PAWN_pronoun] could always be sure that [PAWN_possessive] explosive temper would be the end of it.</baseDesc>
 		<bodyTypeMale>Hulk</bodyTypeMale>
 		<bodyTypeFemale>Hulk</bodyTypeFemale>
 		<spawnCategories>
@@ -834,4 +863,125 @@
 			<TooSmart>0</TooSmart>
 		</disallowedTraits>
 	</BackstoryDef>
+	
+	<!--============================== Alpha ============================-->
+	<!-- New -->
+
+	<BackstoryDef>
+		<defName>RBM_Alpha</defName>
+		<title>alpha</title>
+		<titleShort>alpha</titleShort>
+		<slot>Adulthood</slot>
+		<baseDesc>[PAWN_nameDef] was the leader of a tyrannical minotaur cult. [PAWN_pronoun] believed in dehorning [PAWN_possessive] followers to establish [PAWN_objective]self as the uncontested alpha.</baseDesc>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<spawnCategories>
+			<li>Minotaur</li>
+			<li>MinotaurTribe</li>
+			<li>MinotaurWild</li>
+			<li>MinotaurOutlander</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>8</Melee>
+			<Intellectual>5</Intellectual>
+		</skillGains>
+		<workDisables>
+			<li>Caring</li>
+		</workDisables>
+		<forcedTraits>
+			<Bloodlust>0</Bloodlust>
+			<Cannibal>0</Cannibal>
+		</forcedTraits>
+		<disallowedTraits>
+			<Kind>0</Kind>
+		</disallowedTraits>
+	</BackstoryDef>
+	
+	<!--============================== Beta ============================-->
+	<!-- New -->
+
+	<BackstoryDef>
+		<defName>RBM_MinotaurCultist</defName>
+		<title>minotaur cultist</title>
+		<titleShort>cultist</titleShort>
+		<slot>Adulthood</slot>
+		<baseDesc>[PAWN_nameDef] was a follower of an underground minotaur cult. Every member of the cult was branded with a hot iron to prove their devotion, and it was [PAWN_nameDef]’s hand that did it. [PAWN_pronoun] began to lose [PAWN_possessive] sense of both pain and empathy over time.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>Minotaur</li>
+			<li>MinotaurTribe</li>
+			<li>MinotaurWild</li>
+			<li>MinotaurOutlander</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>3</Melee>
+			<Intellectual>3</Intellectual>
+		</skillGains>
+		<workDisables>
+			<li>Caring</li>
+			<li>Social</li>
+		</workDisables>
+		<forcedTraits>
+			<Tough>0</Tough>
+			<Psychopath>0</Psychopath>
+		</forcedTraits>
+		<disallowedTraits>
+			<Kind>0</Kind>
+		</disallowedTraits>
+	</BackstoryDef>
+	
+	<!--============================== Akabeko ============================-->
+	<!-- New -->
+
+	<BackstoryDef>
+		<defName>RBM_Akabeko</defName>
+		<title>akabeko</title>
+		<titleShort>akabeko</titleShort>
+		<slot>Adulthood</slot>
+		<baseDesc>[PAWN_nameDef] was a healer in [PAWN_possessive] village’s temple. Other minotaurs said that [PAWN_nameDef]’s mere presence was enough to ward off diseases.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>Minotaur</li>
+			<li>MinotaurTribe</li>
+			<li>MinotaurWild</li>
+			<li>MinotaurOutlander</li>
+		</spawnCategories>
+		<skillGains>
+			<Medicine>8</Medicine>
+			<Plants>3</Plants>
+			<Intellectual>3</Intellectual>
+		</skillGains>
+	</BackstoryDef>
+	
+	<!--============================== Human Rancher ============================-->
+	<!-- New -->
+
+	<BackstoryDef>
+		<defName>RBM_HumanRancher</defName>
+		<title>human rancher</title>
+		<titleShort>rancher</titleShort>
+		<slot>Adulthood</slot>
+		<baseDesc>Turning the rhetoric on its head, [PAWN_nameDef] was a minotaur who worked on a human farm; breeding, feeding and slaughtering the little creatures for their meat. Though human meat wasn’t for everyone, [PAWN_nameDef] had never tasted something so delicious and tender.</baseDesc>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<spawnCategories>
+			<li>Minotaur</li>
+			<li>MinotaurTribe</li>
+			<li>MinotaurWild</li>
+			<li>MinotaurOutlander</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>5</Melee>
+			<Animals>5</Animals>
+			<Cooking>2</Cooking>
+		</skillGains>
+		<forcedTraits>
+			<Cannibal>0</Cannibal>
+			<Abrasive>0</Abrasive>
+		</forcedTraits>
+	</BackstoryDef>
+	
+	
 </Defs>

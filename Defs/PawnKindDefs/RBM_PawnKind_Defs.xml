@@ -13,7 +13,7 @@
 		<label>minotaur guardian</label>
 		<maxGenerationAge>50</maxGenerationAge>
 		<combatPower>120</combatPower>
-		<invNutrition>3.55</invNutrition>
+		<invNutrition>2.55</invNutrition>
 		<chemicalAddictionChance>0.03</chemicalAddictionChance>
 		<initialWillRange>2~3</initialWillRange>
 		<initialResistanceRange>20~36</initialResistanceRange>
@@ -37,8 +37,7 @@
 			<li>RBApparel_Tailcoat</li>
 			<li>Apparel_CollarShirt</li>
 			<li>Apparel_Pants</li>
-			<li>Apparel_ShieldBelt</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Apparel_Collar</li>
+			<li>Apparel_HeavyShield</li>
 		</apparelRequired>
 		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
 		<specificApparelRequirements Inherit="False">
@@ -59,9 +58,47 @@
 				<color>(35,35,35)</color>
 			</li>
 		</specificApparelRequirements>
+		<techHediffsTags>
+		<li>ArmorGland</li>
+		<li>Advanced</li>
+		<li>ImplantEmpireRoyal</li>
+		</techHediffsTags>
 		<techHediffsDisallowTags>
 			<li>PainCauser</li>
 		</techHediffsDisallowTags>
+		<styleItemTags>
+			<li>
+				<tag>Royalty</tag>
+				<baseWeight>10</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>Urban</tag>
+				<baseWeight>5</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardUrban</tag>
+				<baseWeight>5</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoBeard</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			 <li>
+        <tag>TattooFaceTribal</tag>
+        <baseWeight>0</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>TattooBodyTribal</tag>
+        <baseWeight>0</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+		</styleItemTags>
+		<humanPregnancyChance>0</humanPregnancyChance>
 		<useFactionXenotypes>false</useFactionXenotypes>
 		<xenotypeSet>
 			<xenotypeChances>
@@ -90,7 +127,7 @@
 		<label>minotaur bodyguard</label>
 		<maxGenerationAge>50</maxGenerationAge>
 		<combatPower>80</combatPower>
-		<invNutrition>3.55</invNutrition>
+		<invNutrition>2.55</invNutrition>
 		<chemicalAddictionChance>0.05</chemicalAddictionChance>
 		<initialWillRange>2~3</initialWillRange>
 		<initialResistanceRange>5~18</initialResistanceRange>
@@ -99,8 +136,6 @@
 			<li>
 				<categories>
 					<li>MinotaurGuardian</li>
-					<li>Minotaur</li>
-					<li>ImperialFighter</li>
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
@@ -112,10 +147,42 @@
 		</weaponTags>
 		<apparelRequired>
 			<li>RBApparel_Tailcoat</li>
-			<li>Apparel_HeavyShield</li>
+			<li>Apparel_FlakVest</li>
 			<li>Apparel_CollarShirt</li>
 			<li>Apparel_Pants</li>
 		</apparelRequired>
+				<styleItemTags>
+			<li>
+				<tag>Royalty</tag>
+				<baseWeight>10</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>Urban</tag>
+				<baseWeight>5</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardUrban</tag>
+				<baseWeight>5</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoBeard</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			 <li>
+        <tag>TattooFaceTribal</tag>
+        <baseWeight>0</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>TattooBodyTribal</tag>
+        <baseWeight>0</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+		</styleItemTags>
 		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
 		<specificApparelRequirements Inherit="False">
 			<li>
@@ -138,6 +205,10 @@
 				<color>(220,220,220)</color>
 			</li>
 		</specificApparelRequirements>
+		<techHediffsTags>
+		<li>ArmorGland</li>
+		<li>Advanced</li>
+		</techHediffsTags>
 		<techHediffsDisallowTags>
 			<li>PainCauser</li>
 		</techHediffsDisallowTags>
@@ -198,7 +269,7 @@
 		<trader>true</trader>
 		<combatPower>20</combatPower>
 		<label>protected monarch</label>
-		<invNutrition>3.55</invNutrition>
+		<invNutrition>2.55</invNutrition>
 		<chemicalAddictionChance>0.08</chemicalAddictionChance>
 		<initialWillRange>0~3</initialWillRange>
 		<initialResistanceRange>10~36</initialResistanceRange>
@@ -369,7 +440,6 @@
 				<bodyPartGroup>Torso</bodyPartGroup>
 				<color>(104,106,115)</color>
 				<apparelLayer>Shell</apparelLayer>
-				<stuff>Hyperweave</stuff>
 			</li>
 			<li>
 				<bodyPartGroup>Legs</bodyPartGroup>

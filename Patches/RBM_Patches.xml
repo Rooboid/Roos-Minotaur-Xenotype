@@ -174,15 +174,15 @@
 			<value>
 				<apparelRequired>
 					<li>RBApparel_Tailcoat</li>
-					<li>Apparel_ShieldBelt</li>
-					<li>Apparel_CollarShirt</li>
+					<li>Apparel_HeavyShield</li>
+					<li>Apparel_ShirtRuffle</li>
 					<li>Apparel_Pants</li>
 				</apparelRequired>
 			</value>
 		</match>
 	</Operation>
-
-	<!--Add Ideology apparel to Minotaur Feral-->
+	
+		<!--Add Ideology apparel to Minotaur Feral-->
 
 	<Operation Class="PatchOperationFindMod">
 		<mods>
@@ -193,6 +193,34 @@
 			<value>
 				<li>Apparel_Collar</li>
 				<li>Apparel_BodyStrap</li>
+			</value>
+		</match>
+	</Operation>
+
+	<!--Add Ideology apparel to Minotaur Guardian High-->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Ideology</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/PawnKindDef[defName="RBM_MinotaurGuardianHigh"]/apparelRequired</xpath>
+			<value>
+				<li>Apparel_Collar</li>
+			</value>
+		</match>
+	</Operation>
+	
+		<!--Add Ideology apparel to Minotaur Guardian Low -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Ideology</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/PawnKindDef[defName="RBM_MinotaurGuardianLow"]/apparelRequired</xpath>
+			<value>
+				<li>Apparel_Collar</li>
 			</value>
 		</match>
 	</Operation>
@@ -328,8 +356,8 @@
 					<guards>
 						<RBM_MinotaurGuardianHigh>0.02</RBM_MinotaurGuardianHigh>
 						<RBM_MinotaurGuardianLow>1</RBM_MinotaurGuardianLow>
-						<Empire_Fighter_Trooper>3</Empire_Fighter_Trooper>
-						<Empire_Fighter_Janissary>1</Empire_Fighter_Janissary>
+						<Empire_Fighter_Trooper>4</Empire_Fighter_Trooper>
+						<Empire_Fighter_Janissary>2</Empire_Fighter_Janissary>
 					</guards>
 				</li>
 			</value>
@@ -344,7 +372,7 @@
 			<xpath>Defs/FactionDef[defName="Empire"]/pawnGroupMakers/li[2]/options</xpath>
 			<value>
 				<RBM_MinotaurGuardianHigh>0.3</RBM_MinotaurGuardianHigh>
-				<RBM_MinotaurGuardianLow>1</RBM_MinotaurGuardianLow>
+				<RBM_MinotaurGuardianLow>0.6</RBM_MinotaurGuardianLow>
 			</value>
 		</match>
 	</Operation>
@@ -368,8 +396,8 @@
 		<match Class="PatchOperationAdd">
 			<xpath>Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[1]/options</xpath>
 			<value>
+				<RBM_MinotaurFighter>0.5</RBM_MinotaurFighter>
 				<RBM_MinotaurGuardianHigh>0.2</RBM_MinotaurGuardianHigh>
-				<RBM_MinotaurFighter>1</RBM_MinotaurFighter>
 			</value>
 		</match>
 	</Operation>
@@ -381,7 +409,7 @@
 		<match Class="PatchOperationAdd">
 			<xpath>Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[4]/options</xpath>
 			<value>
-				<RBM_MinotaurFighter>4</RBM_MinotaurFighter>
+				<RBM_MinotaurFighter>2</RBM_MinotaurFighter>
 				<RBM_MinotaurGuardianHigh>0.2</RBM_MinotaurGuardianHigh>
 			</value>
 		</match>
@@ -418,9 +446,9 @@
 		<match Class="PatchOperationAdd">
 			<xpath>Defs/FactionDef[defName="Pirate"]/pawnGroupMakers/li[4]/options</xpath>
 			<value>
-				<RBM_MinotaurFeral>0.5</RBM_MinotaurFeral>
-				<RBM_MinotaurMarauder>2</RBM_MinotaurMarauder>
-				<RBM_MinotaurFighter>3</RBM_MinotaurFighter>
+				<RBM_MinotaurFeral>0.2</RBM_MinotaurFeral>
+				<RBM_MinotaurMarauder>1</RBM_MinotaurMarauder>
+				<RBM_MinotaurFighter>2</RBM_MinotaurFighter>
 			</value>
 		</match>
 	</Operation>
@@ -432,8 +460,8 @@
 		<match Class="PatchOperationAdd">
 			<xpath>Defs/FactionDef[defName="Pirate"]/pawnGroupMakers/li[7]/options</xpath>
 			<value>
-				<RBM_MinotaurMarauder>1.5</RBM_MinotaurMarauder>
-				<RBM_MinotaurFighter>1</RBM_MinotaurFighter>
+				<RBM_MinotaurMarauder>0.5</RBM_MinotaurMarauder>
+				<RBM_MinotaurFighter>0.3</RBM_MinotaurFighter>
 			</value>
 		</match>
 	</Operation>

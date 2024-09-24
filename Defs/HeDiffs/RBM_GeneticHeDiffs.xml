@@ -94,28 +94,35 @@
 		</stages>
 	</HediffDef>
 	
-	
-	
 	<!--====================== Estrous Heat ======================-->
 	<!-- Applied to pawns with the gene "Estrous Cycle" in Aprimay. PawnLovinMTB hours are adjusted in C#, but MentalBreakThreshold is adjusted in XML. -->
 		
 	<HediffDef>
 		<defName>EstrousHeat</defName>
+		<hediffClass>HediffWithComps</hediffClass>
 		<label>in heat</label>
 		<labelNoun>heat</labelNoun>
 		<defaultLabelColor>(250, 150, 180)</defaultLabelColor>
-		<hediffClass>HediffWithComps</hediffClass>
-		<everCurableByItem>false</everCurableByItem>
+		<description>This pawn is currently in heat.</description>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<makesSickThought>false</makesSickThought>
 		<tendable>false</tendable>
-		<displayWound>false</displayWound>
-		<description>This pawn is currently in heat.\n\n During this time, they suffer a constant penalty to their mood, but are also much more likely to instigate lovin'.</description>
+		<makesAlert>false</makesAlert>
+		<isBad>false</isBad>
+		<initialSeverity>10</initialSeverity>
 		<comps>
 			<li Class="HediffCompProperties_RemoveIfOtherHediff">
 				<hediffs>
 				<li>Sterilized</li>
+				<li>PregnantHuman</li>
 				</hediffs>
 			</li>
 		</comps>
+		<stages>
+			<li>
+				<minSeverity>0</minSeverity>
+			</li>
+		</stages>
 	</HediffDef>
 
 	<!-- Estrous Heat Thought -->
@@ -134,46 +141,5 @@
 			</li>
 		</stages>
 	</ThoughtDef>
-
-	<!--====================== Unguligrade Legs ======================-->
-	<!-- Given to pawns with the "Unguligrade Legs" gene. -->
-	
-	<HediffDef ParentName="AddedBodyPartBase">
-		<defName>UnguligradeLegPart</defName>
-		<label>unguligrade leg</label>
-		<labelNoun>an unguligrade leg</labelNoun>
-		<description>An unguligrade leg with a cloven hoof, perfect for hotfooting it out of trouble, not-so-perfect for keeping the floor clean.</description>
-		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
-		<addedPartProps>
-			<solid>true</solid>
-			<partEfficiency>1</partEfficiency>
-		</addedPartProps>
-		<comps>
-			<li Class="HediffCompProperties_VerbGiver">
-				<tools>
-					<li>
-						<label>hoof</label>
-						<capacities>
-							<li>Blunt</li>
-						</capacities>
-						<power>8</power>
-						<cooldownTime>2</cooldownTime>
-						<soundMeleeHit>Pawn_Melee_Punch_HitPawn</soundMeleeHit>
-						<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
-					</li>
-				</tools>
-			</li>
-		</comps>
-		<stages>
-			<li>
-				<minSeverity>0</minSeverity>
-				<statOffsets>
-					<MoveSpeed>0.15</MoveSpeed>
-					<FilthRate>5</FilthRate>
-					<MeleeDodgeChance>10</MeleeDodgeChance>
-				</statOffsets>
-			</li>
-		</stages>
-	</HediffDef>
 
 </Defs>

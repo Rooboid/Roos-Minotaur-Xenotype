@@ -213,7 +213,7 @@
 			<li>
 				<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
 				<scale>1~2.5</scale>
-				<ticksBetweenMotes>50</ticksBetweenMotes>
+				<ticksBetweenMotes>20</ticksBetweenMotes>
 				<positionLerpFactor>0.2</positionLerpFactor>
 				<positionRadius>0.2</positionRadius>
 				<moteDef>Mote_TerrifiedGlow</moteDef>
