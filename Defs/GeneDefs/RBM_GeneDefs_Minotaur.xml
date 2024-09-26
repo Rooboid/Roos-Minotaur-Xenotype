@@ -9,17 +9,6 @@
 		<label>bovine ears</label>
 		<description>Carriers of this gene have large, bovine ears.</description>
 		<iconPath>UI/GeneIcons/RBM_BovineEars</iconPath>
-		<!-- <graphicData>
-			<graphicPaths>
-				<li>Things/Pawn/Humanlike/Ears/RBM_Ears1/RBM_Ears1</li>
-				<li>Things/Pawn/Humanlike/Ears/RBM_Ears2/RBM_Ears2</li>
-				<li>Things/Pawn/Humanlike/Ears/RBM_Ears3/RBM_Ears3</li>
-				<li>Things/Pawn/Humanlike/Ears/RBM_Ears4/RBM_Ears4</li>
-				<li>Things/Pawn/Humanlike/Ears/RBM_Ears5/RBM_Ears5</li>
-			</graphicPaths>
-			<colorType>Skin</colorType>
-			<layer>PostSkin</layer>
-		</graphicData> -->
 		<renderNodeProperties>
 			<li>
 				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
@@ -265,247 +254,239 @@
 		<displayOrderInCategory>330</displayOrderInCategory>
 		<iconPath>UI/GeneIcons/RBM_BovineLegs</iconPath>
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
-		<fur>RBM_UnguligradeLegs</fur> <!-- Will not work without Satyrs and Fauns Mod -->
+		<statOffsets>
+			<MoveSpeed>0.15</MoveSpeed>
+			<FilthRate>3</FilthRate>
+			<MeleeDodgeChance>10</MeleeDodgeChance>
+		</statOffsets>
+		<fur>RBM_UnguligradeLegs</fur><!-- Will not work without Satyrs and Fauns Mod -->
 		
-			<!-- Added in patches> <statOffsets>
-					<MoveSpeed>0.15</MoveSpeed>
-					<FilthRate>5</FilthRate>
-					<MeleeDodgeChance>10</MeleeDodgeChance>
-				</statOffsets> <-->
-			<symbolPack>
-				<prefixSymbols>
-					<li><symbol>faun</symbol></li>
-					<li><symbol>jog</symbol></li>
-					<li><symbol>bov</symbol></li>
-					<li><symbol>bolt</symbol></li>
-				</prefixSymbols>
-				<suffixSymbols>
-					<li><symbol>yr</symbol></li>
-					<li><symbol>ine</symbol></li>
-					<li><symbol>trotter</symbol></li>
-					<li><symbol>hoof</symbol></li>
-					<li><symbol>ped</symbol></li>
-				</suffixSymbols>
-			</symbolPack>
-			<renderNodeProperties> <!-- Will not work without Satyrs and Fauns Mod -->
-				<li>
-					<debugLabel>Fur</debugLabel>
-					<nodeClass>PawnRenderNode_Fur</nodeClass>
-					<workerClass>PawnRenderNodeWorker_Fur</workerClass>
-					<baseLayer>5</baseLayer>
-					<rotDrawMode>Fresh, Rotting</rotDrawMode>
-					<colorType>Hair</colorType>
-					<parentTagDef>Body</parentTagDef>
-				</li>
-			</renderNodeProperties>
-				<!-- The following will occur if you ARE running vanilla framework expanded. If not, a patch is added to tie the gene buffs to the pawn, as opposed to the body part -->
-				<modExtensions>
-					<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-						<hediffsToBodyParts>
-							<li>
-								<hediff>UnguligradeLegPart</hediff>
-								<bodyparts>
-									<li>Leg</li>
-									<li>Leg</li>
-								</bodyparts>
-							</li>
-						</hediffsToBodyParts>
-					</li>
-				</modExtensions>
-			</GeneDef>
+		<!-- Added in patches> 
+			<statOffsets>
+				<MoveSpeed>0.15</MoveSpeed>
+				<FilthRate>5</FilthRate>
+				<MeleeDodgeChance>10</MeleeDodgeChance>
+			</statOffsets> <-->
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>faun</symbol></li>
+				<li><symbol>jog</symbol></li>
+				<li><symbol>bov</symbol></li>
+				<li><symbol>bolt</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>yr</symbol></li>
+				<li><symbol>ine</symbol></li>
+				<li><symbol>trotter</symbol></li>
+				<li><symbol>hoof</symbol></li>
+				<li><symbol>ped</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+		<renderNodeProperties><!-- Will not work without Satyrs and Fauns Mod -->
+			<li>
+				<debugLabel>Fur</debugLabel>
+				<nodeClass>PawnRenderNode_Fur</nodeClass>
+				<workerClass>PawnRenderNodeWorker_Fur</workerClass>
+				<baseLayer>5</baseLayer>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<colorType>Hair</colorType>
+				<parentTagDef>Body</parentTagDef>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
 	
-			<!-- Herculean -->
+	<!-- Herculean -->
   
-			<GeneDef>
-				<defName>RBM_Herculean</defName>
-				<label>Herculean</label>
-				<description>Carriers of this gene are tall, broad and staggeringly strong. The sheer size of these pawns makes them ruthless fighters at the cost of being much easier to hit and painful to do lovin' with.\n\nThere are some weapons that only Herculean pawns can equip.</description>
-				<geneClass>RBM_Minotaur.Gene_RBM_Herculean</geneClass>
-				<biostatCpx>2</biostatCpx>
-				<biostatMet>-2</biostatMet>
-				<displayCategory>Miscellaneous</displayCategory>
-				<displayOrderInCategory>580</displayOrderInCategory>
-				<iconPath>UI/GeneIcons/RBM_Herculean</iconPath>
-				<iconColor>(0.75, 0.75, 0.75)</iconColor>
-				<randomChosen>true</randomChosen>
-				<statFactors>
-					<MeleeDamageFactor>1.3</MeleeDamageFactor>
-					<ArrestSuccessChance>1.5</ArrestSuccessChance>
-					<MeatAmount>1.5</MeatAmount>
-					<LeatherAmount>1.5</LeatherAmount>
-				</statFactors>
-				<statOffsets>
-					<MeleeDodgeChance>-15</MeleeDodgeChance>
-					<CarryingCapacity>25</CarryingCapacity>
-				</statOffsets>
-				<symbolPack>
-					<prefixSymbols>
-						<li><symbol>rip</symbol></li>
-						<li><symbol>wall</symbol></li>
-						<li><symbol>hercu</symbol></li>
-						<li><symbol>hench</symbol></li>
-						<li><symbol>jack</symbol></li>
-						<li><symbol>aggro</symbol></li>
-						<li><symbol>vigor</symbol></li>
-					</prefixSymbols>
-					<suffixSymbols>
-						<li><symbol>roid</symbol></li>
-						<li><symbol>lean</symbol></li>
-						<li><symbol>bulk</symbol></li>
-						<li><symbol>rile</symbol></li>
-					</suffixSymbols>
-				</symbolPack>
-				<modExtensions>
+	<GeneDef>
+		<defName>RBM_Herculean</defName>
+		<label>Herculean</label>
+		<description>Carriers of this gene are tall, broad and staggeringly strong. The sheer size of these pawns makes them ruthless fighters at the cost of being much easier to hit and painful to do lovin' with.\n\nThere are some weapons that only Herculean pawns can equip.</description>
+		<geneClass>RBM_Minotaur.Gene_RBM_Herculean</geneClass>
+		<biostatCpx>2</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<displayCategory>Miscellaneous</displayCategory>
+		<displayOrderInCategory>580</displayOrderInCategory>
+		<iconPath>UI/GeneIcons/RBM_Herculean</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<randomChosen>true</randomChosen>
+		<statFactors>
+			<MeleeDamageFactor>1.3</MeleeDamageFactor>
+			<ArrestSuccessChance>1.5</ArrestSuccessChance>
+			<MeatAmount>1.5</MeatAmount>
+			<LeatherAmount>1.5</LeatherAmount>
+		</statFactors>
+		<statOffsets>
+			<MeleeDodgeChance>-15</MeleeDodgeChance>
+			<CarryingCapacity>25</CarryingCapacity>
+		</statOffsets>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>rip</symbol></li>
+				<li><symbol>wall</symbol></li>
+				<li><symbol>hercu</symbol></li>
+				<li><symbol>hench</symbol></li>
+				<li><symbol>jack</symbol></li>
+				<li><symbol>aggro</symbol></li>
+				<li><symbol>vigor</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>roid</symbol></li>
+				<li><symbol>lean</symbol></li>
+				<li><symbol>bulk</symbol></li>
+				<li><symbol>rile</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+		<!-- 				<modExtensions>
 					<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
 						<caravanCarryingFactor>1.3</caravanCarryingFactor>
 						<bodyScaleFactor>1.35,1.35</bodyScaleFactor>
 						<headScaleFactor>1.1,1.1</headScaleFactor>
 					</li>
-				</modExtensions>
-			</GeneDef>
+				</modExtensions> -->
+	</GeneDef>
 	
-			<!-- Bovine Temper -->
+	<!-- Bovine Temper -->
 	
-			<GeneDef>
-				<defName>RBM_BovineTemper</defName>
-				<label>Bovine Temper</label>
-				<description>Carriers of this gene possess the ability to 'See Red', sending them into a horrifying state of outrage that can only be ended by total exhaustion or death.</description>
-				<biostatCpx>1</biostatCpx>
-				<biostatMet>-1</biostatMet>
-				<displayCategory>Ability</displayCategory>
-				<displayOrderInCategory>200</displayOrderInCategory>
-				<iconPath>UI/GeneIcons/RBM_BovineTemper</iconPath>
-				<iconColor>(0.75, 0.75, 0.75)</iconColor>
-				<abilities>
-					<li>RBM_SeeRed</li>
-				</abilities>
-				<descriptionHyperlinks>
-					<AbilityDef>RBM_SeeRed</AbilityDef>
-				</descriptionHyperlinks>
-				<!-- Symbol -->
-				<symbolPack>
-					<wholeNameSymbols>
-						<li><symbol>minotaur</symbol></li>
-					</wholeNameSymbols>
-					<prefixSymbols>
-						<li><symbol>bull</symbol></li>
-						<li><symbol>steer</symbol></li>
-						<li><symbol>an</symbol></li>
-						<li><symbol>mino</symbol></li>
-					</prefixSymbols>
-					<suffixSymbols>
-						<li><symbol>vine</symbol></li>
-						<li><symbol>gus</symbol></li>
-						<li><symbol>ford</symbol></li>
-						<li><symbol>taur</symbol></li>
-					</suffixSymbols>
-				</symbolPack>
-			</GeneDef>
+	<GeneDef>
+		<defName>RBM_BovineTemper</defName>
+		<label>Bovine Temper</label>
+		<description>Carriers of this gene possess the ability to 'See Red', sending them into a horrifying state of outrage that can only be ended by total exhaustion or death.</description>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<displayCategory>Ability</displayCategory>
+		<displayOrderInCategory>200</displayOrderInCategory>
+		<iconPath>UI/GeneIcons/RBM_BovineTemper</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<abilities>
+			<li>RBM_SeeRed</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>RBM_SeeRed</AbilityDef>
+		</descriptionHyperlinks>
+		<!-- Symbol -->
+		<symbolPack>
+			<wholeNameSymbols>
+				<li><symbol>minotaur</symbol></li>
+			</wholeNameSymbols>
+			<prefixSymbols>
+				<li><symbol>bull</symbol></li>
+				<li><symbol>steer</symbol></li>
+				<li><symbol>an</symbol></li>
+				<li><symbol>mino</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>vine</symbol></li>
+				<li><symbol>gus</symbol></li>
+				<li><symbol>ford</symbol></li>
+				<li><symbol>taur</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
 	
-			<!-- Periodic Lactation -->
+	<!-- Periodic Lactation -->
 	
-			<GeneDef>
-				<defName>RBM_PeriodicLactation</defName>
-				<label>lactation</label>
-				<description>Carriers of this gene periodically produce milk. They can manually be milked by using their ability or automatically be milked by building a milking machine. \n\n(By default, male and female pawns can be milked. You can change this in the mod settings menu.)</description>
-				<biostatCpx>1</biostatCpx>
-				<biostatMet>-1</biostatMet>
-				<minAgeActive>18</minAgeActive>
-				<displayCategory>Ability</displayCategory>
-				<displayOrderInCategory>200</displayOrderInCategory>
-				<iconPath>UI/GeneIcons/RBM_Lactation</iconPath>
-				<iconColor>(0.75, 0.75, 0.75)</iconColor>
-				<abilities>
-					<li>RBM_Lactation</li>
-				</abilities>
-				<descriptionHyperlinks>
-					<AbilityDef>RBM_Lactation</AbilityDef>
-				</descriptionHyperlinks>
-				<!-- Symbol -->
-				<symbolPack>
-					<wholeNameSymbols>
-						<li><symbol>minotaur</symbol></li>
-					</wholeNameSymbols>
-					<prefixSymbols>
-						<li><symbol>calci</symbol></li>
-						<li><symbol>lact</symbol></li>
-						<li><symbol>lai</symbol></li>
-						<li><symbol>mino</symbol></li>
-					</prefixSymbols>
-					<suffixSymbols>
-						<li><symbol>che</symbol></li>
-						<li><symbol>lac</symbol></li>
-						<li><symbol>mula</symbol></li>
-					</suffixSymbols>
-				</symbolPack>
-			</GeneDef>
+	<GeneDef>
+		<defName>RBM_PeriodicLactation</defName>
+		<label>lactation</label>
+		<description>Carriers of this gene periodically produce milk. They can manually be milked by using their ability or automatically be milked by building a milking machine. \n\n(By default, male and female pawns can be milked. You can change this in the mod settings menu.)</description>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<minAgeActive>18</minAgeActive>
+		<displayCategory>Ability</displayCategory>
+		<displayOrderInCategory>200</displayOrderInCategory>
+		<iconPath>UI/GeneIcons/RBM_Lactation</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<abilities>
+			<li>RBM_Lactation</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>RBM_Lactation</AbilityDef>
+		</descriptionHyperlinks>
+		<!-- Symbol -->
+		<symbolPack>
+			<wholeNameSymbols>
+				<li><symbol>minotaur</symbol></li>
+			</wholeNameSymbols>
+			<prefixSymbols>
+				<li><symbol>calci</symbol></li>
+				<li><symbol>lact</symbol></li>
+				<li><symbol>lai</symbol></li>
+				<li><symbol>mino</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>che</symbol></li>
+				<li><symbol>lac</symbol></li>
+				<li><symbol>mula</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
 
-			<!-- Ruminant Stomach -->
+	<!-- Ruminant Stomach -->
 	
-			<GeneDef>
-				<defName>RBM_RuminantStomach</defName>
-				<label>ruminant stomach</label>
-				<description>Carriers of this gene are born with large and hardy digestive systems, allowing them to eat hay. They will eat hay when there are no fine meals around, however, they require a lot more food to feel full.</description>
-				<customEffectDescriptions>
-					<li>Can eat hay.</li>
-				</customEffectDescriptions>
-				<biostatCpx>2</biostatCpx>
-				<biostatMet>-2</biostatMet>
-				<displayCategory>Miscellaneous</displayCategory>
-				<displayOrderInCategory>11</displayOrderInCategory>
-				<iconPath>UI/GeneIcons/RBM_RuminantStomach</iconPath>
-				<iconColor>(0.75, 0.75, 0.75)</iconColor>
-				<dontMindRawFood>true</dontMindRawFood>
-				<statFactors>
-					<RawNutritionFactor>1.5</RawNutritionFactor>
-					<MaxNutrition>2</MaxNutrition>
-				</statFactors>
-				<symbolPack>
-					<prefixSymbols>
-						<li><symbol>graze</symbol></li>
-						<li><symbol>hay</symbol></li>
-						<li><symbol>herbi</symbol></li>
-					</prefixSymbols>
-					<suffixSymbols>
-						<li><symbol>grazer</symbol></li>
-						<li><symbol>vore</symbol></li>
-						<li><symbol>dae</symbol></li>
-					</suffixSymbols>
-				</symbolPack>
-			</GeneDef>
+	<GeneDef>
+		<defName>RBM_RuminantStomach</defName>
+		<label>ruminant stomach</label>
+		<description>Carriers of this gene are born with large and hardy digestive systems, allowing them to eat hay. They will eat hay when there are no fine meals around, however, they require a lot more food to feel full.</description>
+		<customEffectDescriptions>
+			<li>Can eat hay.</li>
+		</customEffectDescriptions>
+		<biostatCpx>2</biostatCpx>
+		<biostatMet>-2</biostatMet>
+		<displayCategory>Miscellaneous</displayCategory>
+		<displayOrderInCategory>11</displayOrderInCategory>
+		<iconPath>UI/GeneIcons/RBM_RuminantStomach</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<dontMindRawFood>true</dontMindRawFood>
+		<statFactors>
+			<RawNutritionFactor>1.5</RawNutritionFactor>
+			<MaxNutrition>2</MaxNutrition>
+		</statFactors>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>graze</symbol></li>
+				<li><symbol>hay</symbol></li>
+				<li><symbol>herbi</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>grazer</symbol></li>
+				<li><symbol>vore</symbol></li>
+				<li><symbol>dae</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
   
-			<!-- Estrous Cycle -->
+	<!-- Estrous Cycle -->
 	
-			<GeneDef>
-				<defName>RBM_EstrousCycle</defName>
-				<label>estrous cycle</label>
-				<description>Carriers of this gene go into heat during Aprimay. While in heat, they will crave lovin' more than usual at the cost of having intense mood swings.\n\nPawns that are permanently sterilized or pregnant will not go into heat.</description>
-				<customEffectDescriptions>
-					<li>Desire more lovin' during Aprimay.</li>
-					<li>Gain a mood debuff during Aprimay.</li>
-				</customEffectDescriptions>
-				<geneClass>RBM_Minotaur.Gene_RBM_EstrousCycle</geneClass>
-				<biostatCpx>1</biostatCpx>
-				<biostatMet>2</biostatMet>
-				<minAgeActive>18</minAgeActive>
-				<displayCategory>Reproduction</displayCategory>
-				<displayOrderInCategory>115</displayOrderInCategory>
-				<exclusionTags>
-					<li>RBM_Heat</li>
-				</exclusionTags>
-				<iconPath>UI/GeneIcons/RBM_EstrousCycle</iconPath>
-				<iconColor>(0.75, 0.75, 0.75)</iconColor>
-				<symbolPack>
-					<prefixSymbols>
-						<li><symbol>rut</symbol></li>
-						<li><symbol>heat</symbol></li>
-						<li><symbol>spring</symbol></li>
-					</prefixSymbols>
-					<suffixSymbols>
-						<li><symbol>dosis</symbol></li>
-						<li><symbol>mone</symbol></li>
-						<li><symbol>mate</symbol></li>
-					</suffixSymbols>
-				</symbolPack>
-			</GeneDef>
-		</Defs>
+	<GeneDef>
+		<defName>RBM_EstrousCycle</defName>
+		<label>estrous cycle</label>
+		<description>Carriers of this gene go into heat during Aprimay. While in heat, they will crave lovin' more than usual at the cost of having intense mood swings.\n\nPawns that are permanently sterilized or pregnant will not go into heat.</description>
+		<customEffectDescriptions>
+			<li>Desire more lovin' during Aprimay.</li>
+			<li>Gain a mood debuff during Aprimay.</li>
+		</customEffectDescriptions>
+		<geneClass>RBM_Minotaur.Gene_RBM_EstrousCycle</geneClass>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>2</biostatMet>
+		<minAgeActive>18</minAgeActive>
+		<displayCategory>Reproduction</displayCategory>
+		<displayOrderInCategory>115</displayOrderInCategory>
+		<exclusionTags>
+			<li>RBM_Heat</li>
+		</exclusionTags>
+		<iconPath>UI/GeneIcons/RBM_EstrousCycle</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>rut</symbol></li>
+				<li><symbol>heat</symbol></li>
+				<li><symbol>spring</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>dosis</symbol></li>
+				<li><symbol>mone</symbol></li>
+				<li><symbol>mate</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+</Defs>

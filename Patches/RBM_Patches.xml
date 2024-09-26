@@ -482,6 +482,22 @@
 			</value>
 		</match>
 	</Operation>
+	
+		<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Genes</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/GeneDef[defName="RBM_RuminantStomach"]/displayCategory</xpath>
+			<value>
+				<displayCategory>
+					<li>AG_FoodConsumption</li>
+				</displayCategory>
+			</value>
+		</match>
+	</Operation>
+	
+	
 
 
 </Patch>

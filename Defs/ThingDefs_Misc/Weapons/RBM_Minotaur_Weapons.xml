@@ -16,7 +16,7 @@
 		<possessionCount>1</possessionCount>
 		<rotateInShelves>false</rotateInShelves>
 		<thingCategories>
-			<li>WeaponsMelee</li>
+			<li>RBSFE_HerculeanWeaponsCategory</li>
 		</thingCategories>
 		<inspectorTabs>
 			<li>ITab_Art</li>
