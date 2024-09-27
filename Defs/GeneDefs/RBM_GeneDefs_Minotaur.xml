@@ -255,18 +255,11 @@
 		<iconPath>UI/GeneIcons/RBM_BovineLegs</iconPath>
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
 		<statOffsets>
-			<MoveSpeed>0.15</MoveSpeed>
+			<MoveSpeed>0.10</MoveSpeed>
 			<FilthRate>3</FilthRate>
 			<MeleeDodgeChance>10</MeleeDodgeChance>
 		</statOffsets>
 		<fur>RBM_UnguligradeLegs</fur><!-- Will not work without Satyrs and Fauns Mod -->
-		
-		<!-- Added in patches> 
-			<statOffsets>
-				<MoveSpeed>0.15</MoveSpeed>
-				<FilthRate>5</FilthRate>
-				<MeleeDodgeChance>10</MeleeDodgeChance>
-			</statOffsets> <-->
 		<symbolPack>
 			<prefixSymbols>
 				<li><symbol>faun</symbol></li>
@@ -336,13 +329,11 @@
 				<li><symbol>rile</symbol></li>
 			</suffixSymbols>
 		</symbolPack>
-		<!-- 				<modExtensions>
-					<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-						<caravanCarryingFactor>1.3</caravanCarryingFactor>
-						<bodyScaleFactor>1.35,1.35</bodyScaleFactor>
-						<headScaleFactor>1.1,1.1</headScaleFactor>
-					</li>
-				</modExtensions> -->
+		<modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<sizeByAge>2,2</sizeByAge>
+			</li>
+		</modExtensions>
 	</GeneDef>
 	
 	<!-- Bovine Temper -->

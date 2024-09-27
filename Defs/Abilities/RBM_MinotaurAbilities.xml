@@ -35,7 +35,7 @@
 			<warmupTime>1.5</warmupTime>
 			<soundCast>SeeRed_Cast</soundCast>
 			<requireLineOfSight>false</requireLineOfSight>
-			<range>8</range>
+			<range>10</range>
 			<drawAimPie>false</drawAimPie>
 			<targetParams>
 				<canTargetSelf>true</canTargetSelf>
