@@ -40,11 +40,6 @@ namespace RBM_Minotaur
         //Allows AI to use ability only if 35% to pain threshold
         public override bool AICanTargetNow(LocalTargetInfo target)
         {
-            if (!parent.pawn.IsHashIntervalTick(60))
-            {
-                return false;
-            }
-
             float? currentPain = this.parent?.pawn?.health?.hediffSet?.PainTotal;
             float allowedPain = this.parent.pawn.GetStatValue(StatDefOf.PainShockThreshold) * 0.35f;
             if (MinotaurSettings.debugMessages) { Log.Message("AI wants to use see red - pain is " + currentPain.ToString() + " / " + allowedPain.ToString()); }
@@ -59,9 +54,13 @@ namespace RBM_Minotaur
             {
                 if (cell.GetFirstPawn(parent.pawn.Map)?.HostileTo(parent.pawn) == true) // if cell contains hostile pawn, return true
                 {
+                    //Log.Message("checked cell " + cell + " and found enemies - AI can use");
                     return true;
+
                 }
+                //Log.Message("checked cell " + cell + " No enemies.");
             }
+            //Log.Message(parent.pawn.Name + " found no enemies - AI CANNOT use see red");
             return false;
         }
     }
