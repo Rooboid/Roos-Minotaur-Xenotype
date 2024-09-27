@@ -40,13 +40,27 @@ namespace RBM_Minotaur
         //Allows AI to use ability only if 35% to pain threshold
         public override bool AICanTargetNow(LocalTargetInfo target)
         {
+            if (!parent.pawn.IsHashIntervalTick(60))
+            {
+                return false;
+            }
+
             float? currentPain = this.parent?.pawn?.health?.hediffSet?.PainTotal;
             float allowedPain = this.parent.pawn.GetStatValue(StatDefOf.PainShockThreshold) * 0.35f;
             if (MinotaurSettings.debugMessages) { Log.Message("AI wants to use see red - pain is " + currentPain.ToString() + " / " + allowedPain.ToString()); }
 
-            if (currentPain > allowedPain)
+            if (currentPain < allowedPain)
             {
-                return true;
+                return false;
+            }
+
+            var cellsAround = GenRadial.RadialCellsAround(parent.pawn.Position, MinotaurSettings.SeeRedFearRadius - 2, true);
+            foreach (var cell in cellsAround)
+            {
+                if (cell.GetFirstPawn(parent.pawn.Map)?.HostileTo(parent.pawn) == true) // if cell contains hostile pawn, return true
+                {
+                    return true;
+                }
             }
             return false;
         }
