@@ -175,8 +175,6 @@
 		</injuryProps>
 	</HediffDef>
 	
-
-	
 	<!--====================== MidasTouch ======================-->
 	<!-- Given to pawns attacked with the Midaspear -->
 
@@ -237,7 +235,7 @@
 		<validWhileDespawned>false</validWhileDespawned>
 		<stages>
 			<li>
-				<label>touched by midas</label>
+				<label>touched by the midaspear</label>
 				<description>I'm being turned into gold!</description>
 				<baseMoodEffect>-12</baseMoodEffect>
 			</li>

@@ -16,7 +16,7 @@
 		<possessionCount>1</possessionCount>
 		<rotateInShelves>false</rotateInShelves>
 		<thingCategories>
-			<li>WeaponsMelee</li>
+			<li>RBSFE_HerculeanWeaponsCategory</li>
 		</thingCategories>
 		<inspectorTabs>
 			<li>ITab_Art</li>
@@ -389,7 +389,7 @@
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponMelee/RBM_Oxenammer/RBM_Oxenammer</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.3</drawSize>
+			<drawSize>1.5</drawSize>
 		</graphicData>
 		<!-- Obtaining -->
 		<soundInteract>RBM_Oxenammer_Equip</soundInteract>

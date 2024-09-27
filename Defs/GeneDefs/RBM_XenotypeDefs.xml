@@ -38,6 +38,7 @@
 			<!-- Misc -->
 			<li>RBM_PeriodicLactation</li>
 			<li>Aggression_Aggressive</li>
+			<!-- <li MayRequire="void.charactereditor">SZBodySize_15</li> -->
 		</genes>
 	</XenotypeDef>
 </Defs>

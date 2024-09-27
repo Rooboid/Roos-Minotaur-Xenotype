@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ====================================== Herculean Apparel - Category =========================================== -->
+	
+	<ThingCategoryDef>
+		<defName>RBSFE_HerculeanApparelCategory</defName>
+		<label>herculean apparel</label>
+		<parent>Apparel</parent>
+	</ThingCategoryDef>
+	
+	<!-- ====================================== Herculean Weapons - Category =========================================== -->
+	
+	<ThingCategoryDef>
+		<defName>RBSFE_HerculeanWeaponsCategory</defName>
+		<label>herculean weapons</label>
+		<parent>Weapons</parent>
+	</ThingCategoryDef>
+	
+</Defs>
