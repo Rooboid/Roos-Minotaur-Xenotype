@@ -45,16 +45,17 @@ namespace RBM_Minotaur
             }
             return false;
         }
+        public override bool CanCast => base.CanCast;
 
         public override bool ShouldHideGizmo
         {
             get
             {
 
-                if (!parent.pawn.ageTracker.Adult || parent.pawn.ageTracker.AgeBiologicalYears < 18 || parent.pawn.ageTracker.CurLifeStage != LifeStageDefOf.HumanlikeAdult)
-                {
-                    return true;
-                }
+                //if (!parent.pawn.ageTracker.Adult || parent.pawn.ageTracker.AgeBiologicalYears < 18 || parent.pawn.ageTracker.CurLifeStage != LifeStageDefOf.HumanlikeAdult)
+                //{
+                //    return true;
+                //}
 
                 if (this.parent.pawn.gender == Gender.Male && !MinotaurSettings.milkableMales)
                 {
