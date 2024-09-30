@@ -21,7 +21,9 @@ namespace RBM_Minotaur
                 return null;
             }
 
-            if (pawn.abilities?.GetAbility(RBM_DefOf.RBM_Lactation)?.CanCast != true)
+            string outString;
+
+            if (pawn.abilities?.GetAbility(RBM_DefOf.RBM_Lactation)?.CanCast != true || pawn.abilities?.GetAbility(RBM_DefOf.RBM_Lactation)?.GizmoDisabled(out outString) == true )
             {
                 if (MinotaurSettings.debugMessages) { Log.Message("Can't take job: cannot cast lactate ability"); }
                 return null;

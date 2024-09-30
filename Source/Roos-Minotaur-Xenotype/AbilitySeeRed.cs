@@ -44,10 +44,23 @@ namespace RBM_Minotaur
             float allowedPain = this.parent.pawn.GetStatValue(StatDefOf.PainShockThreshold) * 0.35f;
             if (MinotaurSettings.debugMessages) { Log.Message("AI wants to use see red - pain is " + currentPain.ToString() + " / " + allowedPain.ToString()); }
 
-            if (currentPain > allowedPain)
+            if (currentPain < allowedPain)
             {
-                return true;
+                return false;
             }
+
+            var cellsAround = GenRadial.RadialCellsAround(parent.pawn.Position, MinotaurSettings.SeeRedFearRadius - 2, true);
+            foreach (var cell in cellsAround)
+            {
+                if (cell.GetFirstPawn(parent.pawn.Map)?.HostileTo(parent.pawn) == true) // if cell contains hostile pawn, return true
+                {
+                    //Log.Message("checked cell " + cell + " and found enemies - AI can use");
+                    return true;
+
+                }
+                //Log.Message("checked cell " + cell + " No enemies.");
+            }
+            //Log.Message(parent.pawn.Name + " found no enemies - AI CANNOT use see red");
             return false;
         }
     }

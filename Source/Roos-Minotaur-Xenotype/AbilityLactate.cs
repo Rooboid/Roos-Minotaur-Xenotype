@@ -1,5 +1,6 @@
 ﻿using RimWorld;
 using Verse;
+using static RimWorld.PsychicRitualRoleDef;
 
 namespace RBM_Minotaur
 {
@@ -32,7 +33,7 @@ namespace RBM_Minotaur
         {
             //if (MinotaurSettings.debugMessages) { Log.Message("RBM Is Running: (AbilityLactate) public override bool GizmoDisabled(out string reason)"); }
 
-            if (!this.parent.pawn.ageTracker.Adult)
+            if (!parent.pawn.ageTracker.Adult || parent.pawn.ageTracker.AgeBiologicalYears < 18 || parent.pawn.ageTracker.CurLifeStage != LifeStageDefOf.HumanlikeAdult)
             {
                 reason = "Pawn is not yet an adult.";
                 return true;
@@ -44,11 +45,18 @@ namespace RBM_Minotaur
             }
             return false;
         }
+        public override bool CanCast => base.CanCast;
 
         public override bool ShouldHideGizmo
         {
             get
             {
+
+                //if (!parent.pawn.ageTracker.Adult || parent.pawn.ageTracker.AgeBiologicalYears < 18 || parent.pawn.ageTracker.CurLifeStage != LifeStageDefOf.HumanlikeAdult)
+                //{
+                //    return true;
+                //}
+
                 if (this.parent.pawn.gender == Gender.Male && !MinotaurSettings.milkableMales)
                 {
                     return true;
@@ -58,6 +66,7 @@ namespace RBM_Minotaur
                 {
                     return true;
                 }
+
                 return false;
             }
         }
