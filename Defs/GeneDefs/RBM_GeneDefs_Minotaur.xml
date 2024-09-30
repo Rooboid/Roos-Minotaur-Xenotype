@@ -141,6 +141,9 @@
 					<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
 					<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
 					<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
+					<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
+					<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
+					<li>Things/Pawn/Humanlike/Markings/Head_Blank/Blank</li>
 
 					<li>Things/Pawn/Humanlike/Markings/Head_NoseRing/Ring</li>
 					<li>Things/Pawn/Humanlike/Markings/Head_NoseRing/Ring</li>
@@ -275,6 +278,9 @@
 				<li><symbol>ped</symbol></li>
 			</suffixSymbols>
 		</symbolPack>
+		<exclusionTags>
+			<li>AG_CarryingCapacity</li>
+		</exclusionTags>
 		<renderNodeProperties><!-- Will not work without Satyrs and Fauns Mod -->
 			<li>
 				<debugLabel>Fur</debugLabel>
@@ -331,7 +337,11 @@
 		</symbolPack>
 		<modExtensions>
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<sizeByAge>2,2</sizeByAge>
+				<sizeByAge>
+					<minOffset>0.3</minOffset>
+					<maxOffset>0.3</maxOffset>
+					<range>18</range>
+				</sizeByAge>
 			</li>
 		</modExtensions>
 	</GeneDef>

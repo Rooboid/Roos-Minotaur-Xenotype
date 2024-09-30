@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FurDef>
+		<defName>RBM_UnguligradeLegs</defName>
+		<noGraphic>true</noGraphic>
+		<bodyTypeGraphicPaths>
+			<Male>Things/Pawn/Humanlike/Unguligrade Legs/RB_UnguligradeLegs</Male>
+			<Female>Things/Pawn/Humanlike/Unguligrade Legs/RB_UnguligradeLegs</Female>
+			<Hulk>Things/Pawn/Humanlike/Unguligrade Legs/RB_UnguligradeLegs</Hulk>
+			<Fat>Things/Pawn/Humanlike/Unguligrade Legs/RB_UnguligradeLegs</Fat>
+			<Thin>Things/Pawn/Humanlike/Unguligrade Legs/RB_UnguligradeLegs</Thin>
+			<Child>Things/Pawn/Humanlike/Unguligrade Legs/RB_UnguligradeLegs</Child>
+			<Baby>Things/Pawn/Humanlike/Unguligrade Legs/RB_UnguligradeLegs</Baby>
+		</bodyTypeGraphicPaths>
+	</FurDef>
+  
+</Defs>

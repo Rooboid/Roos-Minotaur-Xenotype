@@ -25,7 +25,7 @@
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
-		<weaponMoney>1700~15000</weaponMoney>
+		<weaponMoney>1700~3000</weaponMoney>
 		<weaponTags>
 			<li>HerculeanWeapon</li>
 		</weaponTags>
@@ -144,6 +144,7 @@
 			<li>IndustrialGunAdvanced</li>
 			<li>MedievalMeleeDecent</li>
 			<li>UltratechMelee</li>
+			<li>MinoTribeDecent</li>
 		</weaponTags>
 		<apparelRequired>
 			<li>RBApparel_Tailcoat</li>
@@ -243,9 +244,10 @@
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
-		<weaponMoney>3000~8000</weaponMoney>
+		<weaponMoney>400</weaponMoney>
 		<weaponTags>
 			<li>NeolithicMeleeAdvanced</li>
+			<li>MinoTribeDecent</li>
 		</weaponTags>
 		<apparelColor>(35,35,35)</apparelColor>
 		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
@@ -257,7 +259,6 @@
 				<RBM_Minotaur MayRequire="Ludeon.RimWorld.Biotech">1</RBM_Minotaur>
 			</xenotypeChances>
 		</xenotypeSet>
-		<gearHealthRange>1</gearHealthRange>
 	</PawnKindDef>
 	
 	<!-- Protected Monarch - Usually not a minotaur -->
@@ -357,6 +358,7 @@
 			<li>IndustrialAdvanced</li>
 			<li>IndustrialMilitaryBasic</li>
 			<li>IndustrialMilitaryAdvanced</li>
+			<li>MinoTribeDecent</li>
 		</apparelTags>
 		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
 		<weaponMoney>250~350</weaponMoney>

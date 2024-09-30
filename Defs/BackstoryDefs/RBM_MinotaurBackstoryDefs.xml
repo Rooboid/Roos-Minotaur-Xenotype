@@ -654,7 +654,7 @@
 		<title>human fighter</title>
 		<titleShort>fighter</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>[PAWN_nameDef] participated in the timeless minotaur tradition of 'humanfighting'. Plucky humans would stride into the ring bearing a red cloth, only to soon cower beneath it in an attempt to hide themselves from [PAWN_nameDef]’s frightful horns./n/n The climax of the performance was called the ‘estocada’, in which [PAWN_nameDef] would pierce the heart or spine of the human with an elegant steel blade. All of this bloodshed didn’t trouble [PAWN_nameDef]. No, [PAWN_pronoun] lived for it.</baseDesc>
+		<baseDesc>[PAWN_nameDef] participated in the timeless minotaur tradition of 'humanfighting'. Plucky humans would stride into the ring bearing a red cloth, only to soon cower beneath it in an attempt to hide themselves from [PAWN_nameDef]’s frightful horns.\n\n The climax of the performance was called the ‘estocada’, in which [PAWN_nameDef] would pierce the heart or spine of the human with an elegant steel blade. All of this bloodshed didn’t trouble [PAWN_nameDef]. No, [PAWN_pronoun] lived for it.</baseDesc>
 		<bodyTypeMale>Hulk</bodyTypeMale>
 		<bodyTypeFemale>Hulk</bodyTypeFemale>
 		<spawnCategories>
@@ -741,7 +741,7 @@
 		<title>xenohustler</title>
 		<titleShort>xenohustler</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>[PAWN_nameDef] made a living working in a ‘xenobrothel’. The backbone of the business was, unsurprisingly, human tourists, who would slobber at the chance to experience lovin’ with the rim's rarest xenos. /n/nIt wasn’t unusual for [PAWN_nameDef]’s clients to require medical attention after their tumble under the sheets.</baseDesc>
+		<baseDesc>[PAWN_nameDef] made a living working in a ‘xenobrothel’. The backbone of the business was, unsurprisingly, human tourists, who would slobber at the chance to experience lovin’ with the rim's rarest xenos.\n\nIt wasn’t unusual for [PAWN_nameDef]’s clients to require medical attention after their tumble under the sheets.</baseDesc>
 		<bodyTypeMale>Hulk</bodyTypeMale>
 		<bodyTypeFemale>Hulk</bodyTypeFemale>
 		<spawnCategories>

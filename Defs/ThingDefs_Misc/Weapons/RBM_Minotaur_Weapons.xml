@@ -46,6 +46,74 @@
 			</li>
 		</comps>
 	</ThingDef>
+	
+	<!--====================== Epsilon Axe (Moved from Minotaurs Expanded) ======================-->
+	
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>RBME_EpsilonAxe</defName>
+		<label>epsilon axe</label>
+		<description>A skullshattering axe widely used by minotaur savages. Though it's burdened with a long cooldown and poor accuracy, it can cut its victims' heads clean off in a single swing. \n\nIt is so large that, even though a regular baseliner may indeed be able to pick it up, only pawns with the Herculean gene are strong enough to swing it in battle.</description>
+		<descriptionHyperlinks>
+			<GeneDef>RBM_Herculean</GeneDef>
+		</descriptionHyperlinks>
+		<thingCategories>
+			<li>RBSFE_HerculeanWeaponsCategory</li>
+		</thingCategories>
+		<possessionCount>1</possessionCount>
+		<rotateInShelves>false</rotateInShelves>
+		<uiIconScale>0.8</uiIconScale>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/RBM_EpsilonAxe/RBM_EpsilonAxe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<weaponTags>
+			<li>MinoTribeDecent</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>RBM_HerculeanClass</li>
+		</weaponClasses>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.10</MoveSpeed>
+			<MeleeHitChance>-5</MeleeHitChance>
+		</equippedStatOffsets>
+		<costStuffCount>100</costStuffCount>
+		<relicChance>2</relicChance>
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
+			<Mass>3</Mass>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Demolish</li>
+					<li>Cut</li>
+				</capacities>
+				<power>27</power>
+				<cooldownTime>4</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>Smithing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<displayPriority>450</displayPriority>
+		</recipeMaker>
+	</ThingDef>
 
 	<!--====================== Bullslinger ======================-->
 
@@ -325,7 +393,7 @@
 		<equippedStatOffsets>
 			<MoveSpeed>-0.05</MoveSpeed>
 			<SocialImpact>0.2</SocialImpact>
-			<MentalBreakThreshold>0.35</MentalBreakThreshold>
+			<MentalBreakThreshold>0.55</MentalBreakThreshold>
 		</equippedStatOffsets>
 		<weaponClasses>
 			<li>Melee</li>
@@ -346,7 +414,7 @@
 				<capacities>
 					<li>Stab</li>
 				</capacities>
-				<power>7.5</power>
+				<power>7.6</power>
 				<cooldownTime>1.2</cooldownTime>
 				<armorPenetration>0.13</armorPenetration>
 			</li>
@@ -355,7 +423,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>7.5</power>
+				<power>7.8</power>
 				<cooldownTime>1.3</cooldownTime>
 				<armorPenetration>0.02</armorPenetration>
 			</li>
@@ -365,13 +433,13 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>7.45</power>
+				<power>7.5</power>
 				<cooldownTime>1.3</cooldownTime>
 				<armorPenetration>0.1</armorPenetration>
 				<extraMeleeDamages>
 					<li>
 						<def>CritHit</def>
-						<amount>100</amount>
+						<amount>150</amount>
 					</li>
 				</extraMeleeDamages>
 			</li>
@@ -383,7 +451,7 @@
 	<ThingDef ParentName="HerculeanBase">
 		<defName>RBM_Oxenammer</defName>
 		<label>oxenammer</label>
-		<description>A tyrannical hammer, impossible for a baseliner to wield in battle. Its immense weight makes it exhausting to carry around, but it can crush bones into stardust in just one swing.</description>
+		<description>A tyrannical hammer, impossible for a baseliner to wield in battle. Its immense weight makes it impossible to dodge incoming attacks.\n\nIt's also exhausting to carry around, drastically reducing a pawn's ability to stay awake. However, it can crush bones into stardust in just one swing.</description>
 		<!-- Basic Data -->
 		<uiIconScale>0.7</uiIconScale>
 		<graphicData>
@@ -405,10 +473,10 @@
 			<RoyalFavorValue>2</RoyalFavorValue>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.18</MoveSpeed>
-			<MeleeHitChance>-0.15</MeleeHitChance>
-			<MeleeDodgeChance>-0.9</MeleeDodgeChance>
-			<RestFallRateFactor>0.15</RestFallRateFactor>
+			<MoveSpeed>-0.15</MoveSpeed>
+			<MeleeHitChance>-0.30</MeleeHitChance>
+			<MeleeDodgeChance>-1</MeleeDodgeChance>
+			<RestFallRateFactor>8</RestFallRateFactor>
 		</equippedStatOffsets>
 		<weaponClasses>
 			<li>Melee</li>
@@ -420,12 +488,12 @@
 				<capacities>
 					<li>Demolish</li>
 				</capacities>
-				<power>38</power>
+				<power>40</power>
 				<cooldownTime>5.3</cooldownTime>
 				<extraMeleeDamages>
 					<li>
 						<def>Earthshatter</def>
-						<amount>9</amount>
+						<amount>5</amount>
 					</li>
 				</extraMeleeDamages>
 				<armorPenetration>0.4</armorPenetration>
@@ -469,7 +537,7 @@
 			<RoyalFavorValue>2</RoyalFavorValue>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.15</MoveSpeed>
+			<MoveSpeed>-0.10</MoveSpeed>
 			<MeleeHitChance>-0.3</MeleeHitChance>
 		</equippedStatOffsets>
 		<weaponClasses>
@@ -553,7 +621,7 @@
 				<capacities>
 					<li>Stab</li>
 				</capacities>
-				<power>18</power>
+				<power>15</power>
 				<cooldownTime>1.6</cooldownTime>
 				<armorPenetration>0.50</armorPenetration>
 				<extraMeleeDamages>

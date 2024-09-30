@@ -5,4 +5,19 @@
 	
 	<!-- Removed functionality to turn unguligrade legs into individual HeDiffs; we were having too many compatibility issues with them and decided to remove it. -->
 	
+	
+	<!--  Patch for Herculean Gene - Make Body Size Bigger-->
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Expanded Framework</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/GeneDef[defName="RBM_Herculean"]/description</xpath>
+			<value>
+				<description>Carriers of this gene are tall, broad and staggeringly strong. The sheer size of these pawns makes them ruthless fighters at the cost of being much easier to hit and painful to do lovin' with.\n\nThey are visually larger than baseliners. There are some weapons that only Herculean pawns can equip.</description>
+			</value>
+		</match>
+	</Operation>
+	
 </Patch>
