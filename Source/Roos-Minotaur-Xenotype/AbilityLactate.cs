@@ -43,6 +43,19 @@ namespace RBM_Minotaur
             {
                 return true;
             }
+
+            if (this.parent.pawn.gender == Gender.Male && !MinotaurSettings.milkableMales)
+            {
+                reason = "Disabled in settings";
+                return true;
+            }
+
+            if (this.parent.pawn.gender == Gender.Female && !MinotaurSettings.milkableFemales)
+            {
+                reason = "Disabled in settings";
+                return true;
+            }
+
             return false;
         }
         public override bool CanCast => base.CanCast;
