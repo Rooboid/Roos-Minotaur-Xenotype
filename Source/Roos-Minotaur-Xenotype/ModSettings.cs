@@ -18,8 +18,8 @@ namespace RBM_Minotaur
         public const int SeeRedFearDurationDefault = 120;
         public const int lactateMilkAmountDefault = 25;
         public const bool debugMessagesDefault = false;
-        public const bool disableChunksDefault = false;
-        public const bool regenChunksDefault = true;
+        public const bool disableChunksDefault = true;
+        public const bool regenChunksDefault = false;
         public const bool canEquipHeavyDefault = true;
 
 

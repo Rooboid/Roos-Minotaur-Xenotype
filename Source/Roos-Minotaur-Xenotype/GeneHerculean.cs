@@ -45,19 +45,40 @@ namespace RBM_Minotaur
             Pawn Partner = (Pawn)((Thing)__instance.job.GetTarget(___PartnerInd));
             if (Partner.genes.HasActiveGene(RBM_DefOf.RBM_Herculean))
             {
+
+                MoteBubble moteBubble;
                 if (__instance.pawn.story?.traits?.HasTrait(RBM_DefOf.Masochist) == true)  //Give a positive version to masochists
                 {
                     __instance.pawn.needs.mood.thoughts.memories.TryGainMemory(RBM_DefOf.RBM_CrushedMasochist);
+                    moteBubble = (MoteBubble)ThingMaker.MakeThing(ThingDefOf.Mote_ThoughtGood);
                 }
                 else
                 {
                     __instance.pawn.needs.mood.thoughts.memories.TryGainMemory(RBM_DefOf.RBM_Crushed);
+                    moteBubble = (MoteBubble)ThingMaker.MakeThing(ThingDefOf.Mote_ThoughtBad);
                 }
+                MakeCrushedThoughtBubble(__instance.pawn, moteBubble);
+            }
 
+            MoteBubble MakeCrushedThoughtBubble(Pawn pawn, MoteBubble moteBubble)
+            {
+                if (Current.ProgramState != ProgramState.Playing)
+                {
+                    return null;
+                }
+                if (!pawn.Spawned)
+                {
+                    return null;
+                }
+                
+                moteBubble.SetupMoteBubble(RBM_DefOf.RBM_Crushed.Icon, null, null);
+                moteBubble.Attach(pawn);
+                GenSpawn.Spawn(moteBubble, pawn.Position, pawn.Map, WipeMode.Vanish);
+                return moteBubble;
             }
         }
     }
-
+    
     public class Gene_RBM_Herculean : Gene
     {
         // Adds the 'In Heat' hediff to pawns with the Estrous Cycle gene in ApriMay
