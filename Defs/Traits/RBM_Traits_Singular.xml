@@ -6,7 +6,7 @@
         <degreeDatas>
         <li>
             <label>Herculean</label>
-            <description>{PAWN_nameDef} is Herculean, and can use heavy weapons.</description> <!---->
+            <description>{PAWN_nameDef} is Herculean, and can use heavy weapons that baseliners cannot.</description>
         </li>
         </degreeDatas>
     </TraitDef>

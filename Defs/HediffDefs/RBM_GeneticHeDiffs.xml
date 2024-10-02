@@ -64,12 +64,13 @@
 				</capMods>
 			</li>
 			<li>
-				<minSeverity>0.90</minSeverity>
+				<minSeverity>0.88</minSeverity>
 				<label>intense</label>
 				<statOffsets>
 					<MeleeHitChance>15</MeleeHitChance>
 					<PainShockThreshold>2</PainShockThreshold>
 					<StaggerDurationFactor>-0.5</StaggerDurationFactor>
+					<IncomingDamageFactor>-0.5</IncomingDamageFactor>
 				</statOffsets>
 				 <statFactors>
 					<Flammability>0</Flammability>

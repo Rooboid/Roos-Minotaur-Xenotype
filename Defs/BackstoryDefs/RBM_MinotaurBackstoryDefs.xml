@@ -623,7 +623,7 @@
 		<title>veal</title>
 		<titleShort>veal</titleShort>
 		<slot>Childhood</slot>
-		<baseDesc>Veal — the meat of young minotaur calves — was widely coveted on [PAWN_nameDef]’s home planet for its unique flavour. [PAWN_nameDef] was specifically bred to be large, fatty and eventually served up on a human’s dinner plate. But a cult of minotaur supremacists raided the operation, freeing [PAWN_nameDef] and releasing her into the wild.</baseDesc>
+		<baseDesc>Veal — the meat of young minotaur calves — was widely coveted on [PAWN_nameDef]’s home planet for its unique flavour. [PAWN_nameDef] was specifically bred to be large, fatty and eventually served up on a human’s dinner plate. But a cult of minotaur supremacists raided the operation, freeing [PAWN_nameDef] and releasing [PAWN_objective] into the wild.</baseDesc>
 		<bodyTypeMale>Fat</bodyTypeMale>
 		<bodyTypeFemale>Fat</bodyTypeFemale>
 		<spawnCategories>
