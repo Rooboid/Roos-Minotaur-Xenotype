@@ -600,7 +600,7 @@
 			<RoyalFavorValue>2</RoyalFavorValue>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.15</MoveSpeed>
+			<MoveSpeed>-0.1</MoveSpeed>
 		</equippedStatOffsets>
 		<weaponClasses>
 			<li>Melee</li>
@@ -621,8 +621,8 @@
 				<capacities>
 					<li>Stab</li>
 				</capacities>
-				<power>15</power>
-				<cooldownTime>1.6</cooldownTime>
+				<power>16</power>
+				<cooldownTime>1.2</cooldownTime>
 				<armorPenetration>0.50</armorPenetration>
 				<extraMeleeDamages>
 					<li>
