@@ -286,8 +286,8 @@
 							<verbClass>Verb_ShootOneUse</verbClass>
 							<hasStandardCommand>true</hasStandardCommand>
 							<defaultProjectile>Proj_Chunk_Steel</defaultProjectile>
-							<forcedMissRadius>2.9</forcedMissRadius>
-							<warmupTime>4.5</warmupTime>
+							<forcedMissRadius>2.5</forcedMissRadius>
+							<warmupTime>3.5</warmupTime>
 							<ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
 							<range>13.6</range>
 							<burstShotCount>1</burstShotCount>
@@ -310,8 +310,8 @@
 							<verbClass>Verb_ShootOneUse</verbClass>
 							<hasStandardCommand>true</hasStandardCommand>
 							<defaultProjectile>Proj_Chunk_Steel</defaultProjectile>
-							<forcedMissRadius>2.9</forcedMissRadius>
-							<warmupTime>4.5</warmupTime>
+							<forcedMissRadius>2.5</forcedMissRadius>
+							<warmupTime>3.5</warmupTime>
 							<ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
 							<range>15.6</range>
 							<burstShotCount>1</burstShotCount>
@@ -342,8 +342,8 @@
 							<verbClass>Verb_ShootOneUse</verbClass>
 							<hasStandardCommand>true</hasStandardCommand>
 							<defaultProjectile>Proj_Chunk_Sandstone</defaultProjectile>
-							<forcedMissRadius>2.9</forcedMissRadius>
-							<warmupTime>4.5</warmupTime>
+							<forcedMissRadius>2.5</forcedMissRadius>
+							<warmupTime>3.5</warmupTime>
 							<ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
 							<range>15.6</range>
 							<burstShotCount>1</burstShotCount>
@@ -366,8 +366,8 @@
 							<verbClass>Verb_ShootOneUse</verbClass>
 							<hasStandardCommand>true</hasStandardCommand>
 							<defaultProjectile>Proj_Chunk_Sandstone</defaultProjectile>
-							<forcedMissRadius>2.9</forcedMissRadius>
-							<warmupTime>4.5</warmupTime>
+							<forcedMissRadius>2.5</forcedMissRadius>
+							<warmupTime>3.5</warmupTime>
 							<ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
 							<range>15.6</range>
 							<burstShotCount>1</burstShotCount>
@@ -398,8 +398,8 @@
 							<verbClass>Verb_ShootOneUse</verbClass>
 							<hasStandardCommand>true</hasStandardCommand>
 							<defaultProjectile>Proj_Chunk_Granite</defaultProjectile>
-							<forcedMissRadius>2.9</forcedMissRadius>
-							<warmupTime>4.5</warmupTime>
+							<forcedMissRadius>2.5</forcedMissRadius>
+							<warmupTime>3.5</warmupTime>
 							<ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
 							<range>15.6</range>
 							<burstShotCount>1</burstShotCount>
@@ -422,8 +422,8 @@
 							<verbClass>Verb_ShootOneUse</verbClass>
 							<hasStandardCommand>true</hasStandardCommand>
 							<defaultProjectile>Proj_Chunk_Granite</defaultProjectile>
-							<forcedMissRadius>2.9</forcedMissRadius>
-							<warmupTime>4.5</warmupTime>
+							<forcedMissRadius>2.5</forcedMissRadius>
+							<warmupTime>3.5</warmupTime>
 							<ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
 							<range>15.6</range>
 							<burstShotCount>1</burstShotCount>
@@ -454,8 +454,8 @@
 							<verbClass>Verb_ShootOneUse</verbClass>
 							<hasStandardCommand>true</hasStandardCommand>
 							<defaultProjectile>Proj_Chunk_Limestone</defaultProjectile>
-							<forcedMissRadius>2.9</forcedMissRadius>
-							<warmupTime>4.5</warmupTime>
+							<forcedMissRadius>2.5</forcedMissRadius>
+							<warmupTime>3.5</warmupTime>
 							<ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
 							<range>15.6</range>
 							<burstShotCount>1</burstShotCount>
@@ -478,8 +478,8 @@
 							<verbClass>Verb_ShootOneUse</verbClass>
 							<hasStandardCommand>true</hasStandardCommand>
 							<defaultProjectile>Proj_Chunk_Limestone</defaultProjectile>
-							<forcedMissRadius>2.9</forcedMissRadius>
-							<warmupTime>4.5</warmupTime>
+							<forcedMissRadius>2.5</forcedMissRadius>
+							<warmupTime>3.5</warmupTime>
 							<ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
 							<range>15.6</range>
 							<burstShotCount>1</burstShotCount>
@@ -510,8 +510,8 @@
 							<verbClass>Verb_ShootOneUse</verbClass>
 							<hasStandardCommand>true</hasStandardCommand>
 							<defaultProjectile>Proj_Chunk_Slate</defaultProjectile>
-							<forcedMissRadius>2.9</forcedMissRadius>
-							<warmupTime>4.5</warmupTime>
+							<forcedMissRadius>2.5</forcedMissRadius>
+							<warmupTime>3.5</warmupTime>
 							<ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
 							<range>15.6</range>
 							<burstShotCount>1</burstShotCount>
@@ -534,8 +534,8 @@
 							<verbClass>Verb_ShootOneUse</verbClass>
 							<hasStandardCommand>true</hasStandardCommand>
 							<defaultProjectile>Proj_Chunk_Slate</defaultProjectile>
-							<forcedMissRadius>2.9</forcedMissRadius>
-							<warmupTime>4.5</warmupTime>
+							<forcedMissRadius>2.5</forcedMissRadius>
+							<warmupTime>3.5</warmupTime>
 							<ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
 							<range>15.6</range>
 							<burstShotCount>1</burstShotCount>
@@ -566,8 +566,8 @@
 							<verbClass>Verb_ShootOneUse</verbClass>
 							<hasStandardCommand>true</hasStandardCommand>
 							<defaultProjectile>Proj_Chunk_Marble</defaultProjectile>
-							<forcedMissRadius>2.9</forcedMissRadius>
-							<warmupTime>4.5</warmupTime>
+							<forcedMissRadius>2.5</forcedMissRadius>
+							<warmupTime>3.5</warmupTime>
 							<ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
 							<range>15.6</range>
 							<burstShotCount>1</burstShotCount>
@@ -590,8 +590,8 @@
 							<verbClass>Verb_ShootOneUse</verbClass>
 							<hasStandardCommand>true</hasStandardCommand>
 							<defaultProjectile>Proj_Chunk_Marble</defaultProjectile>
-							<forcedMissRadius>2.9</forcedMissRadius>
-							<warmupTime>4.5</warmupTime>
+							<forcedMissRadius>2.5</forcedMissRadius>
+							<warmupTime>3.5</warmupTime>
 							<ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
 							<range>15.6</range>
 							<burstShotCount>1</burstShotCount>
