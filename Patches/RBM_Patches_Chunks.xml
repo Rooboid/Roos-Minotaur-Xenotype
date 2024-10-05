@@ -64,7 +64,7 @@
 				<xpath>Defs/ThingDef[@Name="ChunkBase"]</xpath>
 				<value>
 					<equippedStatOffsets>
-						<MoveSpeed>-0.05</MoveSpeed>
+						<MoveSpeed>-0.15</MoveSpeed>
 					</equippedStatOffsets>
 				</value>
 			</nomatch>
@@ -99,7 +99,7 @@
 						<compClass>CompEquippable</compClass>
 					</li>
 					<li Class="CompProperties_Explosive">
-						<explosiveRadius>7.8</explosiveRadius>
+						<explosiveRadius>5.3</explosiveRadius>
 						<explosiveDamageType>Bomb</explosiveDamageType>
 						<requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
 					</li>
@@ -251,7 +251,7 @@
 							<capacities>
 								<li>Blunt</li>
 							</capacities>
-							<power>22.5</power>
+							<power>17.5</power>
 							<cooldownTime>8</cooldownTime>
 						</li>
 					</tools>
@@ -265,7 +265,7 @@
 						<capacities>
 							<li>Blunt</li>
 						</capacities>
-						<power>22.5</power>
+						<power>17.5</power>
 						<cooldownTime>8</cooldownTime>
 					</li>
 				</value>
@@ -289,7 +289,7 @@
 							<forcedMissRadius>2.9</forcedMissRadius>
 							<warmupTime>4.5</warmupTime>
 							<ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
-							<range>15.6</range>
+							<range>13.6</range>
 							<burstShotCount>1</burstShotCount>
 							<soundCast>ThrowGrenade</soundCast>
 							<soundCastTail>GunTail_Heavy</soundCastTail>
