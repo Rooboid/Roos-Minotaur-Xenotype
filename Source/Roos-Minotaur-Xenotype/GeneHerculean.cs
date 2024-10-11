@@ -70,7 +70,7 @@ namespace RBM_Minotaur
                 {
                     return null;
                 }
-                
+
                 moteBubble.SetupMoteBubble(RBM_DefOf.RBM_Crushed.Icon, null, null);
                 moteBubble.Attach(pawn);
                 GenSpawn.Spawn(moteBubble, pawn.Position, pawn.Map, WipeMode.Vanish);
@@ -78,7 +78,7 @@ namespace RBM_Minotaur
             }
         }
     }
-    
+
     public class Gene_RBM_Herculean : Gene
     {
         // Adds the 'In Heat' hediff to pawns with the Estrous Cycle gene in ApriMay
