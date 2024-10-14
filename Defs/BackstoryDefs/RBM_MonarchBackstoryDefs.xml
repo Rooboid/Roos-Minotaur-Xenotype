@@ -61,6 +61,9 @@
 			<li>Crafting</li>
 			<li>PlantWork</li>
 		</workDisables>
+		<possessions>
+			<RBME_XenotypeIndexMinotaur MayRequire="Rooboid.Minotaur.Expanded">1</RBME_XenotypeIndexMinotaur>
+		</possessions>
 	</BackstoryDef>
 
 	<!--============================== Independent Monarch ============================-->
@@ -71,7 +74,7 @@
 		<title>protected monarch</title>
 		<titleShort>monarch</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>Resting [PAWN_possessive] head in the lap of luxury eventually took it’s toll on [PAWN_nameDef], who decided to embark [PAWN_objective] on the journey of living like the common folk. Now, that’s all well and good, but for someone who had never seen a frying pan before…independence felt like a lifetime away for [PAWN_objective]…</baseDesc>
+		<baseDesc>Resting [PAWN_possessive] head in the lap of luxury eventually took it’s toll on [PAWN_nameDef], who decided to embark [PAWN_objective] on the journey of living like the common folk. Now, that’s all well and good, but for someone who had never seen a frying pan before, independence felt like a lifetime away for [PAWN_objective]...</baseDesc>
 		<bodyTypeMale>Thin</bodyTypeMale>
 		<bodyTypeFemale>Thin</bodyTypeFemale>
 		<spawnCategories>
@@ -116,5 +119,9 @@
 			<li>ManualDumb</li>
 			<li>Cooking</li>
 		</workDisables>
+		<possessions>
+			<RBME_XenotypeIndexMinotaur MayRequire="Rooboid.Minotaur.Expanded">1</RBME_XenotypeIndexMinotaur>
+		</possessions>
 	</BackstoryDef>
+
 </Defs>

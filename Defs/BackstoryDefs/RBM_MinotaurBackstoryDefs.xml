@@ -225,6 +225,9 @@
 			<Nudist>0</Nudist>
 			<Kind>0</Kind>
 		</disallowedTraits>
+		<possessions>
+			<RBME_XenotypeIndexMinotaur MayRequire="Rooboid.Minotaur.Expanded">1</RBME_XenotypeIndexMinotaur>
+		</possessions>
 	</BackstoryDef>
 
 	<!--============================== Compassionate Guardian ============================-->
@@ -235,7 +238,7 @@
 		<title>compassionate guardian</title>
 		<titleShort>guardian</titleShort>
 		<slot>Adulthood</slot>
-		<baseDesc>[PAWN_nameDef] was a loving and compassionate guardian to [PAWN_possessive] master, readily repurposing [PAWN_possessive] body as a comforting pillow to them when times were tough.</baseDesc>
+		<baseDesc>[PAWN_nameDef] was a loving and compassionate guardian to [PAWN_possessive] master, readily using [PAWN_possessive] body as [PAWN_possessive] master's pillow to them when times were tough.</baseDesc>
 		<bodyTypeMale>Fat</bodyTypeMale>
 		<bodyTypeFemale>Fat</bodyTypeFemale>
 		<spawnCategories>
@@ -373,6 +376,9 @@
 			<Jealous>0</Jealous>
 			<Nudist>0</Nudist>
 		</disallowedTraits>
+		<possessions>
+			<RBME_XenotypeIndexMinotaur MayRequire="Rooboid.Minotaur.Expanded">1</RBME_XenotypeIndexMinotaur>
+		</possessions>
 	</BackstoryDef>
 
 	<!--============================== Illicit Guardian ============================-->
@@ -496,7 +502,7 @@
 		<title>isolated</title>
 		<titleShort>isolated</titleShort>
 		<slot>Childhood</slot>
-		<baseDesc>[PAWN_nameDef] lived most of [PAWN_possessive] childhood nestled in the bosom of a mountainous tundra. [PAWN_possessive] village was quaint and full of life, but violently anti-human. \n\n[PAWN_nameDef]’s father warned [PAWN_objective] to check under [PAWN_possessive] bed every night for humans — a habit that has rendered [PAWN_nameDef] skeptical of such horrifying creatures, even today. </baseDesc>
+		<baseDesc>[PAWN_nameDef] lived most of [PAWN_possessive] childhood nestled in the bosom of a mountainous tundra. [PAWN_possessive] village was quaint and full of life, but violently anti-human. \n\n[PAWN_nameDef]’s father warned [PAWN_objective] to check under [PAWN_possessive] bed every night for humans — a habit that has rendered [PAWN_nameDef] skeptical of such horrifying creatures, even today.</baseDesc>
 		<bodyTypeMale>Hulk</bodyTypeMale>
 		<bodyTypeFemale>Hulk</bodyTypeFemale>
 		<spawnCategories>
@@ -507,6 +513,9 @@
 			<Plants>5</Plants>
 			<Construction>3</Construction>
 		</skillGains>
+		<possessions>
+			<RBME_XenotypeIndexMinotaur MayRequire="Rooboid.Minotaur.Expanded">1</RBME_XenotypeIndexMinotaur>
+		</possessions>
 	</BackstoryDef>
 
 	<!--============================== Maze Dweller ============================-->
@@ -929,6 +938,9 @@
 		<disallowedTraits>
 			<Kind>0</Kind>
 		</disallowedTraits>
+		<possessions>
+			<RBME_XenotypeIndexMinotaur MayRequire="Rooboid.Minotaur.Expanded">1</RBME_XenotypeIndexMinotaur>
+		</possessions>
 	</BackstoryDef>
 	
 	<!--============================== Akabeko ============================-->
@@ -953,6 +965,9 @@
 			<Plants>3</Plants>
 			<Intellectual>3</Intellectual>
 		</skillGains>
+		<possessions>
+			<RBME_XenotypeIndexMinotaur MayRequire="Rooboid.Minotaur.Expanded">1</RBME_XenotypeIndexMinotaur>
+		</possessions>
 	</BackstoryDef>
 	
 	<!--============================== Human Rancher ============================-->
@@ -982,6 +997,5 @@
 			<Abrasive>0</Abrasive>
 		</forcedTraits>
 	</BackstoryDef>
-	
 	
 </Defs>
