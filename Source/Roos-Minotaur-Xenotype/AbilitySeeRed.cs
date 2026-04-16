@@ -26,7 +26,13 @@ namespace RBM_Minotaur
             base.Apply(target, dest);
 
             //pawn.health.AddHediff(RBM_DefOf.HeDiffSeeRed);
-            GenExplosion.DoExplosion(target.Cell, map, radius, DamageDefOf.Smoke, null, -1, -1f, null, null, null, null, null, 0f, 1, null, false, null, 0f, 1, 0f, false, null, null, null, true, 1f, 0f, true, null, 1f);
+            GenExplosion.DoExplosion(
+                center: target.Cell,
+                map: map,
+                radius: radius,
+                damType: DamageDefOf.Smoke,
+                instigator: pawn
+            );
             RBM_Utils.TerrifyInArea(position, map, radius, pawn);
         }
 
