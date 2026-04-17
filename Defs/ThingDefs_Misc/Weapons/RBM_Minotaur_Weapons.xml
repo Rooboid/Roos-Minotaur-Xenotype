@@ -633,7 +633,7 @@
 			</li>
 		</tools>
 		<modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VFECore.ThingDefExtension">
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Things.ThingDefExtension">
 				<weaponCarryDrawOffsets>
 					<north>
 						<drawOffset>(0.25, 0, 0.40)</drawOffset>

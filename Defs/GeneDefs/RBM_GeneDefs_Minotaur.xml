@@ -336,7 +336,7 @@
 			</suffixSymbols>
 		</symbolPack>
 		<modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Genes.GeneExtension">
 				<sizeByAge>
 					<minOffset>0.3</minOffset>
 					<maxOffset>0.3</maxOffset>
